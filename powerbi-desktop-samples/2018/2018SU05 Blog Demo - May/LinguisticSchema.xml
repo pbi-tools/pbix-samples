@@ -1,0 +1,57 @@
+<LinguisticSchema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Language="en-US" xmlns="http://schemas.microsoft.com/sqlserver/2016/01/linguisticschema">
+  <Entities>
+    <Entity Name="Overview" ConceptualEntity="Pod" Source="Generated">
+      <Words>
+        <Word>Overview</Word>
+      </Words>
+    </Entity>
+    <Entity Name="Germany" ConceptualEntity="Pod1" Source="Generated">
+      <Words>
+        <Word>Germany</Word>
+        <Word>Germany sales data</Word>
+        <Word>Germany sales</Word>
+        <Word>Germany information</Word>
+      </Words>
+    </Entity>
+    <Entity Name="Canada" ConceptualEntity="Pod2" Source="Generated">
+      <Words>
+        <Word>Canada</Word>
+      </Words>
+    </Entity>
+    <Entity Name="France" ConceptualEntity="Pod3" Source="Generated">
+      <Words>
+        <Word>France</Word>
+      </Words>
+    </Entity>
+    <Entity Name="Great_Britain" ConceptualEntity="Pod4" Source="Generated">
+      <Words>
+        <Word>Great Britain</Word>
+      </Words>
+    </Entity>
+    <Entity Name="Sales_Amount_tooltip" ConceptualEntity="Pod5" Source="Generated">
+      <Words>
+        <Word>Sales Amount tooltip</Word>
+      </Words>
+    </Entity>
+    <Entity Name="Brand__Class_tooltip" ConceptualEntity="Pod6" Source="Generated">
+      <Words>
+        <Word>Brand &amp; Class tooltip</Word>
+      </Words>
+    </Entity>
+    <Entity Name="Satisfaction_Comparison" ConceptualEntity="Pod7" Source="Generated">
+      <Words>
+        <Word>Satisfaction Comparison</Word>
+      </Words>
+    </Entity>
+    <Entity Name="Details_Page" ConceptualEntity="Pod8" Source="Generated">
+      <Words>
+        <Word>Details Page</Word>
+      </Words>
+    </Entity>
+    <Entity Name="Demo_page_for_other_features" ConceptualEntity="Pod9" Source="Generated">
+      <Words>
+        <Word>Demo page for other features</Word>
+      </Words>
+    </Entity>
+  </Entities>
+</LinguisticSchema>

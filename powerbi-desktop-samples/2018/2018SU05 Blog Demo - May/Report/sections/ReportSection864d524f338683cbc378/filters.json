@@ -1,0 +1,32 @@
+[
+  {
+    "name": "Filter",
+    "expression": {
+      "Column": {
+        "Expression": {
+          "SourceRef": {
+            "Entity": "Sales"
+          }
+        },
+        "Property": "Class"
+      }
+    },
+    "type": "Categorical",
+    "howCreated": 1
+  },
+  {
+    "name": "Filter1",
+    "expression": {
+      "Column": {
+        "Expression": {
+          "SourceRef": {
+            "Entity": "Sales"
+          }
+        },
+        "Property": "BrandName"
+      }
+    },
+    "type": "Categorical",
+    "howCreated": 1
+  }
+]

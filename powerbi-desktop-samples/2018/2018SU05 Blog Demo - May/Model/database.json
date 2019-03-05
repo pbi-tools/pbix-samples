@@ -1,0 +1,27 @@
+{
+  "name": "2018SU05 Blog Demo - May",
+  "compatibilityLevel": 1400,
+  "model": {
+    "culture": "en-US",
+    "relationships": [
+      {
+        "name": "25fb075a-ef0f-4f8c-9ebc-e68af7eb0f73",
+        "fromTable": "Sales",
+        "fromColumn": "OrderDate",
+        "toTable": "LocalDateTable_0b51e05f-c1c0-46c9-802c-55b15cfa43ff",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.58.5103.281 (PBIDesktop)"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+{
+  "name": "e27c05ff9024c63ad2c7",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 96,
+        "y": 0,
+        "z": 0,
+        "width": 1152,
+        "height": 720
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "basicShape",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "shapeType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'line'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "line": [
+        {
+          "properties": {
+            "lineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#D21B61'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

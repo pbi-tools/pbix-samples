@@ -1,0 +1,75 @@
+{
+  "relationships": [
+    {
+      "source": "72c2b0ce5abc7169a08a",
+      "target": "7935c4f6549289bb8ba6",
+      "type": 3
+    },
+    {
+      "source": "72c2b0ce5abc7169a08a",
+      "target": "392f26f9eee3954e4934",
+      "type": 3
+    },
+    {
+      "source": "72c2b0ce5abc7169a08a",
+      "target": "1e2f9cbd66151bed9959",
+      "type": 3
+    },
+    {
+      "source": "72c2b0ce5abc7169a08a",
+      "target": "6b45c66598e954b4922a",
+      "type": 3
+    },
+    {
+      "source": "72c2b0ce5abc7169a08a",
+      "target": "f9f5fce0c70a101c1767",
+      "type": 3
+    },
+    {
+      "source": "29f960f56490234d3438",
+      "target": "00ab672e72de96825d62",
+      "type": 3
+    },
+    {
+      "source": "29f960f56490234d3438",
+      "target": "3b5f9935101d9b0cda09",
+      "type": 3
+    },
+    {
+      "source": "29f960f56490234d3438",
+      "target": "1f38ac3f93b0eb06c5b0",
+      "type": 3
+    },
+    {
+      "source": "29f960f56490234d3438",
+      "target": "8c9691e84a26b6531b0c",
+      "type": 3
+    },
+    {
+      "source": "29f960f56490234d3438",
+      "target": "bb431337704d0a0aeade",
+      "type": 3
+    }
+  ],
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#C0CDD5'"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visibility": 1,
+  "acceptsAllFiltersWhenLinked": false
+}

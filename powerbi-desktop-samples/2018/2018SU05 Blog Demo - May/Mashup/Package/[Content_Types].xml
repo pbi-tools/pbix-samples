@@ -1,0 +1,4 @@
+<Types xmlns="http://schemas.openxmlformats.org/package/2006/content-types">
+  <Default Extension="xml" ContentType="text/xml" />
+  <Default Extension="m" ContentType="application/x-ms-m" />
+</Types>

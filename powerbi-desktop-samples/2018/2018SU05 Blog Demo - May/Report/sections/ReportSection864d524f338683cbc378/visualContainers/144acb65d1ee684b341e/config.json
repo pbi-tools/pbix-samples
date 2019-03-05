@@ -1,0 +1,119 @@
+{
+  "name": "144acb65d1ee684b341e",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 192,
+        "y": 144,
+        "z": 2000,
+        "width": 112,
+        "height": 80
+      }
+    }
+  ],
+  "singleVisual": {
+    "title": {
+      "show": true,
+      "fontColor": "#666666",
+      "alignment": "center",
+      "fontSize": "12"
+    },
+    "background": {
+      "show": true,
+      "transparency": "60"
+    },
+    "visualType": "card",
+    "projections": {
+      "Values": [
+        {
+          "queryRef": "Sum(Sales.PurchAgain)"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "s",
+          "Entity": "Sales"
+        }
+      ],
+      "Select": [
+        {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "s"
+                  }
+                },
+                "Property": "RePurch"
+              }
+            },
+            "Function": 1
+          },
+          "Name": "Sum(Sales.PurchAgain)"
+        }
+      ],
+      "OrderBy": [
+        {
+          "Direction": 2,
+          "Expression": {
+            "Aggregation": {
+              "Expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Source": "s"
+                    }
+                  },
+                  "Property": "NSAT"
+                }
+              },
+              "Function": 0
+            }
+          }
+        }
+      ]
+    },
+    "columnProperties": {
+      "Sum(Sales.PurchAgain)": {
+        "displayName": "Avg. RePurch"
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "categoryLabels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#666666'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {}
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,181 @@
+{
+  "objects": {
+    "data": [
+      {
+        "properties": {
+          "numericStart": {
+            "expr": {
+              "Literal": {
+                "Value": "4D"
+              }
+            }
+          },
+          "mode": {
+            "expr": {
+              "Literal": {
+                "Value": "'Between'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "general": [
+      {
+        "properties": {
+          "responsive": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          },
+          "filter": {
+            "filter": {
+              "Version": 2,
+              "From": [
+                {
+                  "Name": "s",
+                  "Entity": "Sales"
+                }
+              ],
+              "Where": [
+                {
+                  "Condition": {
+                    "Comparison": {
+                      "ComparisonKind": 2,
+                      "Left": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "s"
+                            }
+                          },
+                          "Property": "NSAT"
+                        }
+                      },
+                      "Right": {
+                        "Literal": {
+                          "Value": "4D"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "header": [
+      {
+        "properties": {
+          "textSize": {
+            "expr": {
+              "Literal": {
+                "Value": "8D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Values": [
+      0
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Net Satisfaction",
+        "Name": "Sales.NSAT",
+        "Type": 3,
+        "Format": "0"
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Values",
+          "Projection": 0,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Net Satisfaction",
+      "format": "0",
+      "queryName": "Sales.NSAT",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Sales"
+            }
+          },
+          "Property": "NSAT"
+        }
+      },
+      "aggregateSources": {
+        "min": {
+          "index": 1
+        },
+        "max": {
+          "index": 2
+        }
+      }
+    },
+    {
+      "displayName": "",
+      "queryName": "Min(Sales.NSAT)",
+      "expr": {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Sales"
+                }
+              },
+              "Property": "NSAT"
+            }
+          },
+          "Function": 3
+        }
+      }
+    },
+    {
+      "displayName": "",
+      "queryName": "Max(Sales.NSAT)",
+      "expr": {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Sales"
+                }
+              },
+              "Property": "NSAT"
+            }
+          },
+          "Function": 4
+        }
+      }
+    }
+  ]
+}

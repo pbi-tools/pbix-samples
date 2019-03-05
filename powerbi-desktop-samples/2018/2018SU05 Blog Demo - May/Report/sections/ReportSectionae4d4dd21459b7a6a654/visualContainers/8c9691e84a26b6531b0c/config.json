@@ -1,0 +1,150 @@
+{
+  "name": "8c9691e84a26b6531b0c",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 96,
+        "y": 240,
+        "z": 10000,
+        "width": 528,
+        "height": 256
+      }
+    }
+  ],
+  "singleVisual": {
+    "title": {
+      "fontSize": "14",
+      "show": true,
+      "alignment": "center",
+      "fontColor": "#666666",
+      "text": "Avg. Sales Amount"
+    },
+    "background": {
+      "show": true,
+      "transparency": 25
+    },
+    "visualType": "barChart",
+    "projections": {
+      "Category": [
+        {
+          "queryRef": "Sales.SubCategory",
+          "active": true
+        }
+      ],
+      "Y": [
+        {
+          "queryRef": "Avg(Sales.SalesAmount)"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "s",
+          "Entity": "Sales"
+        }
+      ],
+      "Select": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "s"
+              }
+            },
+            "Property": "SubCategory"
+          },
+          "Name": "Sales.SubCategory"
+        },
+        {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "s"
+                  }
+                },
+                "Property": "SalesAmount"
+              }
+            },
+            "Function": 1
+          },
+          "Name": "Avg(Sales.SalesAmount)"
+        }
+      ],
+      "OrderBy": [
+        {
+          "Direction": 2,
+          "Expression": {
+            "Aggregation": {
+              "Expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Source": "s"
+                    }
+                  },
+                  "Property": "SalesAmount"
+                }
+              },
+              "Function": 1
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1000D"
+                }
+              }
+            },
+            "labelOverflow": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "'10'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

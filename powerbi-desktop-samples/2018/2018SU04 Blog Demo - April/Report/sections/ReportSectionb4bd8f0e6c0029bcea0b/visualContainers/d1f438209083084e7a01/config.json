@@ -1,0 +1,45 @@
+{
+  "name": "d1f438209083084e7a01",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 76.321374431531069,
+        "y": 158.46387064173825,
+        "z": 4000,
+        "width": 194.03739262253663,
+        "height": 52.390096008084889
+      }
+    }
+  ],
+  "singleVisual": {
+    "title": {
+      "show": false,
+      "text": "Yellow Title"
+    },
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Germany",
+                    "textStyle": {
+                      "fontSize": "24px",
+                      "color": "#ffffff"
+                    }
+                  }
+                ],
+                "horizontalTextAlignment": "center"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,305 @@
+{
+  "name": "6a8f9044945f0b45f1ff",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 1088,
+        "y": 72,
+        "z": 10751,
+        "width": 104.00000000000001,
+        "height": 88
+      }
+    }
+  ],
+  "singleVisual": {
+    "background": {
+      "show": false,
+      "transparency": "0"
+    },
+    "visualType": "actionButton",
+    "visualLink": {
+      "type": "Qna",
+      "show": true,
+      "qna": {
+        "suggestedUtterances": [
+          {
+            "Version": "1.0",
+            "Utterance": "nsat by category",
+            "Spans": [
+              {
+                "StartIndex": 8,
+                "Length": 8,
+                "Binding": {
+                  "Property": {
+                    "ConceptualProperty": "Category",
+                    "ConceptualSchema": "",
+                    "Text": "category",
+                    "ConceptualEntity": "Sales"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "Version": "1.0",
+            "Utterance": "Units by order date",
+            "Spans": [
+              {
+                "StartIndex": 9,
+                "Length": 10,
+                "Binding": {
+                  "Property": {
+                    "ConceptualProperty": "OrderDate",
+                    "ConceptualSchema": "",
+                    "Text": "order date",
+                    "ConceptualEntity": "Sales"
+                  }
+                }
+              }
+            ]
+          },
+          {
+            "Version": "1.0",
+            "Utterance": "Sales amount by subcategory as treemap",
+            "Spans": [
+              {
+                "StartIndex": 31,
+                "Length": 7,
+                "Binding": {
+                  "VisType": {
+                    "Type": 17,
+                    "Text": "treemap"
+                  }
+                }
+              },
+              {
+                "StartIndex": 16,
+                "Length": 11,
+                "Binding": {
+                  "Property": {
+                    "ConceptualProperty": "SubCategory",
+                    "ConceptualSchema": "",
+                    "Text": "subcategory",
+                    "ConceptualEntity": "Sales"
+                  }
+                }
+              }
+            ]
+          }
+        ]
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "icon": [
+        {
+          "properties": {
+            "shapeType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'qna'"
+                }
+              }
+            },
+            "padding": {
+              "expr": {
+                "Literal": {
+                  "Value": "9L"
+                }
+              }
+            },
+            "lineWeight": {
+              "expr": {
+                "Literal": {
+                  "Value": "1L"
+                }
+              }
+            },
+            "horizontalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        },
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "lineWeight": {
+              "expr": {
+                "Literal": {
+                  "Value": "2L"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "hover"
+          }
+        },
+        {
+          "properties": {
+            "lineWeight": {
+              "expr": {
+                "Literal": {
+                  "Value": "2L"
+                }
+              }
+            },
+            "lineColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#000000'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "selected"
+          }
+        }
+      ],
+      "text": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "horizontalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'center'"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Q&A'"
+                }
+              }
+            },
+            "verticalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'top'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "'14'"
+                }
+              }
+            },
+            "padding": {
+              "expr": {
+                "Literal": {
+                  "Value": "23L"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        },
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "'16'"
+                }
+              }
+            },
+            "padding": {
+              "expr": {
+                "Literal": {
+                  "Value": "21L"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "hover"
+          }
+        },
+        {
+          "properties": {
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "'16'"
+                }
+              }
+            },
+            "padding": {
+              "expr": {
+                "Literal": {
+                  "Value": "21L"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#1a1a1a'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "selected"
+          }
+        }
+      ],
+      "fill": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

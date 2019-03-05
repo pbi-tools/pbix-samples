@@ -1,0 +1,178 @@
+{
+  "id": 1082485,
+  "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "ReportSection",
+      "id": 291984,
+      "name": "Pod",
+      "objectId": "765ab265-771a-4328-a667-29fbadd12242"
+    },
+    {
+      "boundSection": "ReportSectionb4bd8f0e6c0029bcea0b",
+      "id": 291985,
+      "name": "Pod1",
+      "objectId": "30fbeb1b-ec53-469c-841f-ff5af85accaf",
+      "parameters": "[{\"name\":\"Param_Filter\",\"boundFilter\":\"Filter\"}]"
+    },
+    {
+      "boundSection": "ReportSection5835adc50e179d5e68b0",
+      "id": 291986,
+      "name": "Pod2",
+      "objectId": "1cdf362e-c5dd-4e23-a67e-324bc19e6114"
+    },
+    {
+      "boundSection": "ReportSection14a662f9d2e9b0064070",
+      "id": 291987,
+      "name": "Pod3",
+      "objectId": "b0923883-aa38-463e-8ab4-d045af0fcdb0"
+    },
+    {
+      "boundSection": "ReportSection85b1cea78d612ae40884",
+      "id": 291988,
+      "name": "Pod4",
+      "objectId": "0e625f99-5c0b-417b-be6c-7d0cd37720c7"
+    },
+    {
+      "boundSection": "ReportSection9c6e78be000e943138b7",
+      "id": 291989,
+      "name": "Pod5",
+      "objectId": "e7f9904d-898d-416a-8541-19629ded6c3d"
+    },
+    {
+      "boundSection": "ReportSection864d524f338683cbc378",
+      "id": 291990,
+      "name": "Pod6",
+      "objectId": "88a7df78-a0bd-428c-b580-8f37f0b8b9fe"
+    }
+  ],
+  "reportId": 1086225,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "id": 234705,
+        "items": [
+          {
+            "id": 614866,
+            "name": "Sunset7262063261741989.json",
+            "path": "Sunset7262063261741989.json",
+            "resourcePackageId": 234705,
+            "type": 100
+          },
+          {
+            "id": 614867,
+            "name": "Overview980525157724317.png",
+            "path": "Overview980525157724317.png",
+            "resourcePackageId": 234705,
+            "type": 100
+          },
+          {
+            "id": 614868,
+            "name": "Yellow8043661616650397.png",
+            "path": "Yellow8043661616650397.png",
+            "resourcePackageId": 234705,
+            "type": 100
+          },
+          {
+            "id": 614869,
+            "name": "Orange49464188828017597.png",
+            "path": "Orange49464188828017597.png",
+            "resourcePackageId": 234705,
+            "type": 100
+          },
+          {
+            "id": 614870,
+            "name": "Pink3827537605272129.png",
+            "path": "Pink3827537605272129.png",
+            "resourcePackageId": 234705,
+            "type": 100
+          },
+          {
+            "id": 614871,
+            "name": "Purple750209706123921.png",
+            "path": "Purple750209706123921.png",
+            "resourcePackageId": 234705,
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    },
+    {
+      "resourcePackage": {
+        "id": 266842,
+        "items": [
+          {
+            "id": 673356,
+            "path": "HierarchySlicer.js",
+            "resourcePackageId": 266842,
+            "type": 0
+          },
+          {
+            "id": 673357,
+            "path": "HierarchySlicer.css",
+            "resourcePackageId": 266842,
+            "type": 1
+          },
+          {
+            "id": 673358,
+            "path": "icon.png",
+            "resourcePackageId": 266842,
+            "type": 3
+          }
+        ],
+        "name": "HierarchySlicer1458836712039",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "id": 266843,
+        "items": [
+          {
+            "id": 673359,
+            "path": "DonutChartGMO1461469098694.pbiviz.json",
+            "resourcePackageId": 266843,
+            "type": 5
+          }
+        ],
+        "name": "DonutChartGMO1461469098694",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "id": 266844,
+        "items": [
+          {
+            "id": 673360,
+            "path": "BulletChart1443347686880.pbiviz.json",
+            "resourcePackageId": 266844,
+            "type": 5
+          }
+        ],
+        "name": "BulletChart1443347686880",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "id": 272758,
+        "items": [
+          {
+            "id": 686018,
+            "name": "CY17SU12",
+            "path": "BaseThemes/CY17SU12.json",
+            "resourcePackageId": 272758,
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "reportId": 1086225,
+        "type": 2
+      }
+    }
+  ],
+  "theme": "Sunset7262063261741989.json"
+}

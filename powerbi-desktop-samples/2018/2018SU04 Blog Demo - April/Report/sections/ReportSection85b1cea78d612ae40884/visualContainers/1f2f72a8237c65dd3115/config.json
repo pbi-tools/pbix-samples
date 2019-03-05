@@ -1,0 +1,45 @@
+{
+  "name": "1f2f72a8237c65dd3115",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 76.968165740272866,
+        "y": 450.81354219302676,
+        "z": 2000,
+        "width": 192.74381000505306,
+        "height": 52.390096008084889
+      }
+    }
+  ],
+  "singleVisual": {
+    "title": {
+      "show": false,
+      "text": "Pink Title"
+    },
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Clothing",
+                    "textStyle": {
+                      "fontSize": "24px",
+                      "color": "#ffffff"
+                    }
+                  }
+                ],
+                "horizontalTextAlignment": "center"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

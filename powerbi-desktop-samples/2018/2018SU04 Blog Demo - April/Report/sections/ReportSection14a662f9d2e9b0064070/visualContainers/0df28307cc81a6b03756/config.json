@@ -1,0 +1,146 @@
+{
+  "name": "0df28307cc81a6b03756",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 332.00652528548125,
+        "y": 82.131593257205,
+        "z": 7250,
+        "width": 859.59760739532351,
+        "height": 315.9978249048396
+      }
+    }
+  ],
+  "singleVisual": {
+    "title": {
+      "fontSize": "14",
+      "show": true,
+      "alignment": "center",
+      "fontColor": "#666666",
+      "text": "Avg. List Price"
+    },
+    "background": {
+      "show": true,
+      "transparency": "60"
+    },
+    "visualType": "clusteredColumnChart",
+    "projections": {
+      "Y": [
+        {
+          "queryRef": "Sum(ProductCatalog.ListPrice)"
+        }
+      ],
+      "Category": [
+        {
+          "queryRef": "ProductCatalog.ProductSubcategory",
+          "active": true
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "p",
+          "Entity": "ProductCatalog"
+        }
+      ],
+      "Select": [
+        {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "p"
+                  }
+                },
+                "Property": "ListPrice"
+              }
+            },
+            "Function": 1
+          },
+          "Name": "Sum(ProductCatalog.ListPrice)"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "p"
+              }
+            },
+            "Property": "ProductSubcategory"
+          },
+          "Name": "ProductCatalog.ProductSubcategory"
+        }
+      ],
+      "OrderBy": [
+        {
+          "Direction": 2,
+          "Expression": {
+            "Aggregation": {
+              "Expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Source": "p"
+                    }
+                  },
+                  "Property": "ListPrice"
+                }
+              },
+              "Function": 1
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dataPoint": [
+        {
+          "properties": {
+            "defaultCategoryColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#D21B61'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

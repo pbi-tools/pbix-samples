@@ -1,0 +1,2752 @@
+{
+  "version": "3.15",
+  "activeSectionIndex": 0,
+  "bookmarks": [
+    {
+      "displayName": "Overview",
+      "name": "Bookmark9af6296101247180d00c",
+      "explorationState": {
+        "version": "1.0",
+        "activeSection": "ReportSection",
+        "sections": {
+          "ReportSection": {
+            "visualContainers": {
+              "e46ff12eadc134133ed7": {
+                "singleVisual": {
+                  "visualType": "textbox",
+                  "objects": {}
+                }
+              },
+              "228ef57a30535eca64bc": {
+                "singleVisual": {
+                  "visualType": "textbox",
+                  "objects": {}
+                }
+              },
+              "5d355e506c007ba3507e": {
+                "singleVisual": {
+                  "visualType": "textbox",
+                  "objects": {}
+                }
+              },
+              "31519210980e99dcbd38": {
+                "singleVisual": {
+                  "visualType": "textbox",
+                  "objects": {}
+                }
+              },
+              "47c135d63163870d0ead": {
+                "filters": {
+                  "byExpr": [
+                    {
+                      "name": "Filter",
+                      "type": "Categorical",
+                      "filter": {
+                        "Version": 2,
+                        "From": [
+                          {
+                            "Name": "s",
+                            "Entity": "Sales"
+                          }
+                        ],
+                        "Where": [
+                          {
+                            "Condition": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "s"
+                                        }
+                                      },
+                                      "Property": "Country"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "'Germany'"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sales"
+                            }
+                          },
+                          "Property": "Country"
+                        }
+                      },
+                      "howCreated": 1
+                    },
+                    {
+                      "type": "Advanced",
+                      "expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "Sales"
+                                }
+                              },
+                              "Property": "SalesAmount"
+                            }
+                          },
+                          "Function": 0
+                        }
+                      },
+                      "howCreated": 0
+                    }
+                  ]
+                },
+                "singleVisual": {
+                  "visualType": "card",
+                  "objects": {}
+                }
+              },
+              "ff9346e123837d3200bb": {
+                "filters": {
+                  "byExpr": [
+                    {
+                      "name": "Filter",
+                      "type": "Categorical",
+                      "filter": {
+                        "Version": 2,
+                        "From": [
+                          {
+                            "Name": "s",
+                            "Entity": "Sales"
+                          }
+                        ],
+                        "Where": [
+                          {
+                            "Condition": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "s"
+                                        }
+                                      },
+                                      "Property": "Country"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "'Canada'"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sales"
+                            }
+                          },
+                          "Property": "Country"
+                        }
+                      },
+                      "howCreated": 1
+                    },
+                    {
+                      "type": "Advanced",
+                      "expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "Sales"
+                                }
+                              },
+                              "Property": "SalesAmount"
+                            }
+                          },
+                          "Function": 0
+                        }
+                      },
+                      "howCreated": 0
+                    }
+                  ]
+                },
+                "singleVisual": {
+                  "visualType": "card",
+                  "objects": {}
+                }
+              },
+              "931b80fe891c8c467e5e": {
+                "filters": {
+                  "byExpr": [
+                    {
+                      "name": "Filter",
+                      "type": "Categorical",
+                      "filter": {
+                        "Version": 2,
+                        "From": [
+                          {
+                            "Name": "s",
+                            "Entity": "Sales"
+                          }
+                        ],
+                        "Where": [
+                          {
+                            "Condition": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "s"
+                                        }
+                                      },
+                                      "Property": "Country"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "'France'"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sales"
+                            }
+                          },
+                          "Property": "Country"
+                        }
+                      },
+                      "howCreated": 1
+                    },
+                    {
+                      "type": "Advanced",
+                      "expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "Sales"
+                                }
+                              },
+                              "Property": "SalesAmount"
+                            }
+                          },
+                          "Function": 0
+                        }
+                      },
+                      "howCreated": 0
+                    }
+                  ]
+                },
+                "singleVisual": {
+                  "visualType": "card",
+                  "objects": {}
+                }
+              },
+              "0c0ab879b55c0833b2d7": {
+                "filters": {
+                  "byExpr": [
+                    {
+                      "name": "Filter",
+                      "type": "Categorical",
+                      "filter": {
+                        "Version": 2,
+                        "From": [
+                          {
+                            "Name": "s",
+                            "Entity": "Sales"
+                          }
+                        ],
+                        "Where": [
+                          {
+                            "Condition": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "s"
+                                        }
+                                      },
+                                      "Property": "Country"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "'Great Britain'"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sales"
+                            }
+                          },
+                          "Property": "Country"
+                        }
+                      },
+                      "howCreated": 1
+                    },
+                    {
+                      "type": "Advanced",
+                      "expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "Sales"
+                                }
+                              },
+                              "Property": "SalesAmount"
+                            }
+                          },
+                          "Function": 0
+                        }
+                      },
+                      "howCreated": 0
+                    }
+                  ]
+                },
+                "singleVisual": {
+                  "visualType": "card",
+                  "objects": {}
+                }
+              },
+              "4e9883262660200aa95e": {
+                "filters": {
+                  "byExpr": [
+                    {
+                      "type": "TopN",
+                      "expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sales"
+                            }
+                          },
+                          "Property": "Category"
+                        }
+                      },
+                      "howCreated": 0
+                    },
+                    {
+                      "type": "Advanced",
+                      "expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "Sales"
+                                }
+                              },
+                              "Property": "SalesAmount"
+                            }
+                          },
+                          "Function": 0
+                        }
+                      },
+                      "howCreated": 0
+                    },
+                    {
+                      "type": "Advanced",
+                      "expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "Sales"
+                                }
+                              },
+                              "Property": "Units"
+                            }
+                          },
+                          "Function": 0
+                        }
+                      },
+                      "howCreated": 0
+                    }
+                  ]
+                },
+                "singleVisual": {
+                  "visualType": "columnChart",
+                  "objects": {},
+                  "orderBy": [
+                    {
+                      "Direction": 2,
+                      "Expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "Sales"
+                                }
+                              },
+                              "Property": "SalesAmount"
+                            }
+                          },
+                          "Function": 0
+                        }
+                      }
+                    }
+                  ],
+                  "activeProjections": {
+                    "Category": [
+                      {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sales"
+                            }
+                          },
+                          "Property": "Category"
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              "ac6a062d1b3d00740173": {
+                "filters": {
+                  "byExpr": [
+                    {
+                      "type": "Categorical",
+                      "expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sales"
+                            }
+                          },
+                          "Property": "Class"
+                        }
+                      },
+                      "howCreated": 0
+                    },
+                    {
+                      "type": "Advanced",
+                      "expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "Sales"
+                                }
+                              },
+                              "Property": "SalesAmount"
+                            }
+                          },
+                          "Function": 0
+                        }
+                      },
+                      "howCreated": 0
+                    }
+                  ]
+                },
+                "singleVisual": {
+                  "visualType": "barChart",
+                  "objects": {},
+                  "orderBy": [
+                    {
+                      "Direction": 2,
+                      "Expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "ProductCatalog"
+                                }
+                              },
+                              "Property": "ListPrice"
+                            }
+                          },
+                          "Function": 1
+                        }
+                      }
+                    }
+                  ],
+                  "activeProjections": {
+                    "Category": [
+                      {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sales"
+                            }
+                          },
+                          "Property": "Class"
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              "f17f9f7175803867b0d9": {
+                "filters": {
+                  "byExpr": [
+                    {
+                      "type": "Advanced",
+                      "expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "Sales"
+                                }
+                              },
+                              "Property": "NSAT"
+                            }
+                          },
+                          "Function": 1
+                        }
+                      },
+                      "howCreated": 0
+                    },
+                    {
+                      "type": "Advanced",
+                      "expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "Sales"
+                                }
+                              },
+                              "Property": "RePurch"
+                            }
+                          },
+                          "Function": 1
+                        }
+                      },
+                      "howCreated": 0
+                    },
+                    {
+                      "type": "Advanced",
+                      "expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "Sales"
+                                }
+                              },
+                              "Property": "Units"
+                            }
+                          },
+                          "Function": 0
+                        }
+                      },
+                      "howCreated": 0
+                    },
+                    {
+                      "type": "Categorical",
+                      "expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sales"
+                            }
+                          },
+                          "Property": "Class"
+                        }
+                      },
+                      "howCreated": 0
+                    },
+                    {
+                      "type": "Categorical",
+                      "expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sales"
+                            }
+                          },
+                          "Property": "BrandName"
+                        }
+                      },
+                      "howCreated": 0
+                    }
+                  ]
+                },
+                "singleVisual": {
+                  "visualType": "scatterChart",
+                  "objects": {},
+                  "orderBy": [
+                    {
+                      "Direction": 2,
+                      "Expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "ProductCatalog"
+                                }
+                              },
+                              "Property": "ListPrice"
+                            }
+                          },
+                          "Function": 0
+                        }
+                      }
+                    }
+                  ],
+                  "activeProjections": {
+                    "Category": [
+                      {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sales"
+                            }
+                          },
+                          "Property": "BrandName"
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              "45f3c9f8d03748bae120": {
+                "singleVisual": {
+                  "visualType": "basicShape",
+                  "objects": {}
+                }
+              },
+              "3f42eef24e0c0b1573de": {
+                "singleVisual": {
+                  "visualType": "basicShape",
+                  "objects": {}
+                }
+              },
+              "ac0726003c4179562deb": {
+                "singleVisual": {
+                  "visualType": "basicShape",
+                  "objects": {}
+                }
+              },
+              "e002fefe673d0a78d3cc": {
+                "singleVisual": {
+                  "visualType": "basicShape",
+                  "objects": {}
+                }
+              }
+            }
+          }
+        }
+      },
+      "options": {
+        "targetVisualNames": []
+      }
+    },
+    {
+      "displayName": "Yellow",
+      "name": "Bookmark0a7bee4f50c3b00ee579",
+      "explorationState": {
+        "version": "1.0",
+        "activeSection": "ReportSectionb4bd8f0e6c0029bcea0b",
+        "sections": {
+          "ReportSectionb4bd8f0e6c0029bcea0b": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "Filter1",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "s",
+                        "Entity": "Sales"
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "s"
+                                    }
+                                  },
+                                  "Property": "Country"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'Germany'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sales"
+                        }
+                      },
+                      "Property": "Country"
+                    }
+                  },
+                  "howCreated": 1
+                }
+              ]
+            },
+            "visualContainers": {
+              "742bfac0d5a5b0a76b88": {
+                "filters": {
+                  "byExpr": [
+                    {
+                      "type": "Advanced",
+                      "expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "Sales"
+                                }
+                              },
+                              "Property": "SalesAmount"
+                            }
+                          },
+                          "Function": 0
+                        }
+                      },
+                      "howCreated": 0
+                    }
+                  ]
+                },
+                "singleVisual": {
+                  "visualType": "card",
+                  "objects": {}
+                }
+              },
+              "d1f438209083084e7a01": {
+                "singleVisual": {
+                  "visualType": "textbox",
+                  "objects": {}
+                }
+              },
+              "12856d10e3598b810475": {
+                "singleVisual": {
+                  "visualType": "textbox",
+                  "objects": {}
+                }
+              },
+              "170c2bb0a1879ca40d18": {
+                "singleVisual": {
+                  "visualType": "textbox",
+                  "objects": {}
+                }
+              },
+              "3695c2bb19ed34aa9189": {
+                "singleVisual": {
+                  "visualType": "textbox",
+                  "objects": {}
+                }
+              },
+              "bd584af5e001d25a984a": {
+                "filters": {
+                  "byExpr": [
+                    {
+                      "type": "Categorical",
+                      "expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sales"
+                            }
+                          },
+                          "Property": "SubCategory"
+                        }
+                      },
+                      "howCreated": 0
+                    },
+                    {
+                      "type": "Advanced",
+                      "expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "Sales"
+                                }
+                              },
+                              "Property": "SalesAmount"
+                            }
+                          },
+                          "Function": 1
+                        }
+                      },
+                      "howCreated": 0
+                    }
+                  ]
+                },
+                "singleVisual": {
+                  "visualType": "clusteredColumnChart",
+                  "objects": {},
+                  "orderBy": [
+                    {
+                      "Direction": 2,
+                      "Expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "Sales"
+                                }
+                              },
+                              "Property": "SalesAmount"
+                            }
+                          },
+                          "Function": 1
+                        }
+                      }
+                    }
+                  ],
+                  "activeProjections": {
+                    "Category": [
+                      {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sales"
+                            }
+                          },
+                          "Property": "SubCategory"
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              "7d8d69b0902262d15c06": {
+                "filters": {
+                  "byExpr": [
+                    {
+                      "type": "TopN",
+                      "filter": {
+                        "Version": 2,
+                        "From": [
+                          {
+                            "Name": "subquery",
+                            "Expression": {
+                              "Subquery": {
+                                "Query": {
+                                  "Version": 2,
+                                  "From": [
+                                    {
+                                      "Name": "s",
+                                      "Entity": "Sales"
+                                    }
+                                  ],
+                                  "Select": [
+                                    {
+                                      "Column": {
+                                        "Expression": {
+                                          "SourceRef": {
+                                            "Source": "s"
+                                          }
+                                        },
+                                        "Property": "ProductName"
+                                      },
+                                      "Name": "field"
+                                    }
+                                  ],
+                                  "OrderBy": [
+                                    {
+                                      "Direction": 2,
+                                      "Expression": {
+                                        "Aggregation": {
+                                          "Expression": {
+                                            "Column": {
+                                              "Expression": {
+                                                "SourceRef": {
+                                                  "Source": "s"
+                                                }
+                                              },
+                                              "Property": "SalesAmount"
+                                            }
+                                          },
+                                          "Function": 0
+                                        }
+                                      }
+                                    }
+                                  ],
+                                  "Top": 8
+                                }
+                              }
+                            },
+                            "Type": 2
+                          },
+                          {
+                            "Name": "s",
+                            "Entity": "Sales"
+                          }
+                        ],
+                        "Where": [
+                          {
+                            "Condition": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "s"
+                                        }
+                                      },
+                                      "Property": "ProductName"
+                                    }
+                                  }
+                                ],
+                                "Table": {
+                                  "SourceRef": {
+                                    "Source": "subquery"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sales"
+                            }
+                          },
+                          "Property": "ProductName"
+                        }
+                      },
+                      "howCreated": 0
+                    },
+                    {
+                      "type": "Advanced",
+                      "expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "Sales"
+                                }
+                              },
+                              "Property": "SalesAmount"
+                            }
+                          },
+                          "Function": 0
+                        }
+                      },
+                      "howCreated": 0
+                    }
+                  ]
+                },
+                "singleVisual": {
+                  "visualType": "tableEx",
+                  "objects": {},
+                  "orderBy": [
+                    {
+                      "Direction": 2,
+                      "Expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "Sales"
+                                }
+                              },
+                              "Property": "SalesAmount"
+                            }
+                          },
+                          "Function": 0
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "0bea7d3b925002088805": {
+                "filters": {
+                  "byExpr": [
+                    {
+                      "type": "TopN",
+                      "filter": {
+                        "Version": 2,
+                        "From": [
+                          {
+                            "Name": "subquery",
+                            "Expression": {
+                              "Subquery": {
+                                "Query": {
+                                  "Version": 2,
+                                  "From": [
+                                    {
+                                      "Name": "s",
+                                      "Entity": "Sales"
+                                    }
+                                  ],
+                                  "Select": [
+                                    {
+                                      "Column": {
+                                        "Expression": {
+                                          "SourceRef": {
+                                            "Source": "s"
+                                          }
+                                        },
+                                        "Property": "ProductName"
+                                      },
+                                      "Name": "field"
+                                    }
+                                  ],
+                                  "OrderBy": [
+                                    {
+                                      "Direction": 1,
+                                      "Expression": {
+                                        "Aggregation": {
+                                          "Expression": {
+                                            "Column": {
+                                              "Expression": {
+                                                "SourceRef": {
+                                                  "Source": "s"
+                                                }
+                                              },
+                                              "Property": "SalesAmount"
+                                            }
+                                          },
+                                          "Function": 0
+                                        }
+                                      }
+                                    }
+                                  ],
+                                  "Top": 8
+                                }
+                              }
+                            },
+                            "Type": 2
+                          },
+                          {
+                            "Name": "s",
+                            "Entity": "Sales"
+                          }
+                        ],
+                        "Where": [
+                          {
+                            "Condition": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "s"
+                                        }
+                                      },
+                                      "Property": "ProductName"
+                                    }
+                                  }
+                                ],
+                                "Table": {
+                                  "SourceRef": {
+                                    "Source": "subquery"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sales"
+                            }
+                          },
+                          "Property": "ProductName"
+                        }
+                      },
+                      "howCreated": 0
+                    },
+                    {
+                      "type": "Advanced",
+                      "expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "Sales"
+                                }
+                              },
+                              "Property": "SalesAmount"
+                            }
+                          },
+                          "Function": 0
+                        }
+                      },
+                      "howCreated": 0
+                    }
+                  ]
+                },
+                "singleVisual": {
+                  "visualType": "tableEx",
+                  "objects": {},
+                  "orderBy": [
+                    {
+                      "Direction": 1,
+                      "Expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "Sales"
+                                }
+                              },
+                              "Property": "SalesAmount"
+                            }
+                          },
+                          "Function": 0
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "868146f80156c020de08": {
+                "singleVisual": {
+                  "visualType": "basicShape",
+                  "objects": {}
+                }
+              },
+              "dad6f918999dc2ddd889": {
+                "singleVisual": {
+                  "visualType": "basicShape",
+                  "objects": {}
+                }
+              },
+              "702206802641b66da070": {
+                "singleVisual": {
+                  "visualType": "basicShape",
+                  "objects": {}
+                }
+              },
+              "4f3035705ad7e6b75cb0": {
+                "singleVisual": {
+                  "visualType": "basicShape",
+                  "objects": {}
+                }
+              }
+            }
+          }
+        }
+      },
+      "options": {
+        "targetVisualNames": []
+      }
+    },
+    {
+      "displayName": "Orange",
+      "name": "Bookmarkbf19d5adab39048b044b",
+      "explorationState": {
+        "version": "1.0",
+        "activeSection": "ReportSection5835adc50e179d5e68b0",
+        "sections": {
+          "ReportSection5835adc50e179d5e68b0": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "Filter1",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "s",
+                        "Entity": "Sales"
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "s"
+                                    }
+                                  },
+                                  "Property": "Country"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'Canada'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sales"
+                        }
+                      },
+                      "Property": "Country"
+                    }
+                  },
+                  "howCreated": 1
+                }
+              ]
+            },
+            "visualContainers": {
+              "ee6244c56809678c267c": {
+                "singleVisual": {
+                  "visualType": "textbox",
+                  "objects": {}
+                }
+              },
+              "6ed6c6077425a484983a": {
+                "singleVisual": {
+                  "visualType": "textbox",
+                  "objects": {}
+                }
+              },
+              "2043803b9908ac7c0847": {
+                "singleVisual": {
+                  "visualType": "textbox",
+                  "objects": {}
+                }
+              },
+              "d3ea77b810064677ded0": {
+                "singleVisual": {
+                  "visualType": "textbox",
+                  "objects": {}
+                }
+              },
+              "e35dafddbbd1bdc3c009": {
+                "filters": {
+                  "byExpr": [
+                    {
+                      "type": "Advanced",
+                      "expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "Sales"
+                                }
+                              },
+                              "Property": "SalesAmount"
+                            }
+                          },
+                          "Function": 0
+                        }
+                      },
+                      "howCreated": 0
+                    }
+                  ]
+                },
+                "singleVisual": {
+                  "visualType": "card",
+                  "objects": {}
+                }
+              },
+              "b27afa42e3e5c2233eb5": {
+                "filters": {
+                  "byExpr": [
+                    {
+                      "type": "Categorical",
+                      "expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sales"
+                            }
+                          },
+                          "Property": "SubCategory"
+                        }
+                      },
+                      "howCreated": 0
+                    },
+                    {
+                      "type": "Advanced",
+                      "expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "Sales"
+                                }
+                              },
+                              "Property": "SalesAmount"
+                            }
+                          },
+                          "Function": 1
+                        }
+                      },
+                      "howCreated": 0
+                    }
+                  ]
+                },
+                "singleVisual": {
+                  "visualType": "clusteredColumnChart",
+                  "objects": {},
+                  "orderBy": [
+                    {
+                      "Direction": 2,
+                      "Expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "Sales"
+                                }
+                              },
+                              "Property": "SalesAmount"
+                            }
+                          },
+                          "Function": 1
+                        }
+                      }
+                    }
+                  ],
+                  "activeProjections": {
+                    "Category": [
+                      {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sales"
+                            }
+                          },
+                          "Property": "SubCategory"
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              "8063dd1b59201019b40d": {
+                "filters": {
+                  "byExpr": [
+                    {
+                      "type": "TopN",
+                      "filter": {
+                        "Version": 2,
+                        "From": [
+                          {
+                            "Name": "subquery",
+                            "Expression": {
+                              "Subquery": {
+                                "Query": {
+                                  "Version": 2,
+                                  "From": [
+                                    {
+                                      "Name": "s",
+                                      "Entity": "Sales"
+                                    }
+                                  ],
+                                  "Select": [
+                                    {
+                                      "Column": {
+                                        "Expression": {
+                                          "SourceRef": {
+                                            "Source": "s"
+                                          }
+                                        },
+                                        "Property": "ProductName"
+                                      },
+                                      "Name": "field"
+                                    }
+                                  ],
+                                  "OrderBy": [
+                                    {
+                                      "Direction": 2,
+                                      "Expression": {
+                                        "Aggregation": {
+                                          "Expression": {
+                                            "Column": {
+                                              "Expression": {
+                                                "SourceRef": {
+                                                  "Source": "s"
+                                                }
+                                              },
+                                              "Property": "SalesAmount"
+                                            }
+                                          },
+                                          "Function": 0
+                                        }
+                                      }
+                                    }
+                                  ],
+                                  "Top": 8
+                                }
+                              }
+                            },
+                            "Type": 2
+                          },
+                          {
+                            "Name": "s",
+                            "Entity": "Sales"
+                          }
+                        ],
+                        "Where": [
+                          {
+                            "Condition": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "s"
+                                        }
+                                      },
+                                      "Property": "ProductName"
+                                    }
+                                  }
+                                ],
+                                "Table": {
+                                  "SourceRef": {
+                                    "Source": "subquery"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sales"
+                            }
+                          },
+                          "Property": "ProductName"
+                        }
+                      },
+                      "howCreated": 0
+                    },
+                    {
+                      "type": "Advanced",
+                      "expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "Sales"
+                                }
+                              },
+                              "Property": "SalesAmount"
+                            }
+                          },
+                          "Function": 0
+                        }
+                      },
+                      "howCreated": 0
+                    }
+                  ]
+                },
+                "singleVisual": {
+                  "visualType": "tableEx",
+                  "objects": {},
+                  "orderBy": [
+                    {
+                      "Direction": 2,
+                      "Expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "Sales"
+                                }
+                              },
+                              "Property": "SalesAmount"
+                            }
+                          },
+                          "Function": 0
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "bb9c9a80c38eaa503e52": {
+                "filters": {
+                  "byExpr": [
+                    {
+                      "type": "TopN",
+                      "filter": {
+                        "Version": 2,
+                        "From": [
+                          {
+                            "Name": "subquery",
+                            "Expression": {
+                              "Subquery": {
+                                "Query": {
+                                  "Version": 2,
+                                  "From": [
+                                    {
+                                      "Name": "s",
+                                      "Entity": "Sales"
+                                    }
+                                  ],
+                                  "Select": [
+                                    {
+                                      "Column": {
+                                        "Expression": {
+                                          "SourceRef": {
+                                            "Source": "s"
+                                          }
+                                        },
+                                        "Property": "ProductName"
+                                      },
+                                      "Name": "field"
+                                    }
+                                  ],
+                                  "OrderBy": [
+                                    {
+                                      "Direction": 1,
+                                      "Expression": {
+                                        "Aggregation": {
+                                          "Expression": {
+                                            "Column": {
+                                              "Expression": {
+                                                "SourceRef": {
+                                                  "Source": "s"
+                                                }
+                                              },
+                                              "Property": "SalesAmount"
+                                            }
+                                          },
+                                          "Function": 0
+                                        }
+                                      }
+                                    }
+                                  ],
+                                  "Top": 8
+                                }
+                              }
+                            },
+                            "Type": 2
+                          },
+                          {
+                            "Name": "s",
+                            "Entity": "Sales"
+                          }
+                        ],
+                        "Where": [
+                          {
+                            "Condition": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "s"
+                                        }
+                                      },
+                                      "Property": "ProductName"
+                                    }
+                                  }
+                                ],
+                                "Table": {
+                                  "SourceRef": {
+                                    "Source": "subquery"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Sales"
+                            }
+                          },
+                          "Property": "ProductName"
+                        }
+                      },
+                      "howCreated": 0
+                    },
+                    {
+                      "type": "Advanced",
+                      "expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "Sales"
+                                }
+                              },
+                              "Property": "SalesAmount"
+                            }
+                          },
+                          "Function": 0
+                        }
+                      },
+                      "howCreated": 0
+                    }
+                  ]
+                },
+                "singleVisual": {
+                  "visualType": "tableEx",
+                  "objects": {},
+                  "orderBy": [
+                    {
+                      "Direction": 1,
+                      "Expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "Sales"
+                                }
+                              },
+                              "Property": "SalesAmount"
+                            }
+                          },
+                          "Function": 0
+                        }
+                      }
+                    }
+                  ]
+                }
+              },
+              "aa58170454a7254678a2": {
+                "singleVisual": {
+                  "visualType": "basicShape",
+                  "objects": {}
+                }
+              },
+              "87acfcd40c432a730db3": {
+                "singleVisual": {
+                  "visualType": "basicShape",
+                  "objects": {}
+                }
+              },
+              "591ea3bd00022b59955d": {
+                "singleVisual": {
+                  "visualType": "basicShape",
+                  "objects": {}
+                }
+              },
+              "be1c3e7e5c092ee9c7a5": {
+                "singleVisual": {
+                  "visualType": "basicShape",
+                  "objects": {}
+                }
+              }
+            }
+          }
+        }
+      },
+      "options": {
+        "targetVisualNames": []
+      }
+    },
+    {
+      "displayName": "Pink",
+      "name": "Bookmarkd5ae04f1e1a907552e46",
+      "explorationState": {
+        "version": "1.0",
+        "activeSection": "ReportSection14a662f9d2e9b0064070",
+        "sections": {
+          "ReportSection14a662f9d2e9b0064070": {
+            "filters": {
+              "byExpr": [
+                {
+                  "name": "Filter",
+                  "type": "Categorical",
+                  "filter": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "p",
+                        "Entity": "ProductCatalog"
+                      }
+                    ],
+                    "Where": [
+                      {
+                        "Condition": {
+                          "In": {
+                            "Expressions": [
+                              {
+                                "Column": {
+                                  "Expression": {
+                                    "SourceRef": {
+                                      "Source": "p"
+                                    }
+                                  },
+                                  "Property": "ProductCategory"
+                                }
+                              }
+                            ],
+                            "Values": [
+                              [
+                                {
+                                  "Literal": {
+                                    "Value": "'Clothing'"
+                                  }
+                                }
+                              ]
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "expression": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "ProductCatalog"
+                        }
+                      },
+                      "Property": "ProductCategory"
+                    }
+                  },
+                  "howCreated": 1
+                }
+              ]
+            },
+            "visualContainers": {
+              "b11742b21098a0e56e84": {
+                "singleVisual": {
+                  "visualType": "textbox",
+                  "objects": {
+                    "remove": []
+                  }
+                }
+              },
+              "3531879a70215b218b32": {
+                "singleVisual": {
+                  "visualType": "textbox",
+                  "objects": {
+                    "remove": []
+                  }
+                }
+              },
+              "54be129a8cec3a02a200": {
+                "singleVisual": {
+                  "visualType": "textbox",
+                  "objects": {
+                    "remove": []
+                  }
+                }
+              },
+              "76ee20de0e9b9752ed2e": {
+                "singleVisual": {
+                  "visualType": "textbox",
+                  "objects": {
+                    "remove": []
+                  }
+                }
+              },
+              "c034cdb3c67301863e97": {
+                "filters": {
+                  "byExpr": [
+                    {
+                      "name": "Filter",
+                      "type": "Categorical",
+                      "filter": {
+                        "Version": 2,
+                        "From": [
+                          {
+                            "Name": "p",
+                            "Entity": "ProductCatalog"
+                          }
+                        ],
+                        "Where": [
+                          {
+                            "Condition": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "p"
+                                        }
+                                      },
+                                      "Property": "ProductCategory"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "'Clothing'"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "ProductCatalog"
+                            }
+                          },
+                          "Property": "ProductCategory"
+                        }
+                      },
+                      "howCreated": 1
+                    },
+                    {
+                      "type": "Advanced",
+                      "expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "ProductCatalog"
+                                }
+                              },
+                              "Property": "ListPrice"
+                            }
+                          },
+                          "Function": 0
+                        }
+                      },
+                      "howCreated": 0
+                    }
+                  ]
+                },
+                "singleVisual": {
+                  "visualType": "card",
+                  "objects": {
+                    "remove": []
+                  }
+                }
+              },
+              "0df28307cc81a6b03756": {
+                "filters": {
+                  "byExpr": [
+                    {
+                      "type": "Advanced",
+                      "expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "ProductCatalog"
+                                }
+                              },
+                              "Property": "ListPrice"
+                            }
+                          },
+                          "Function": 1
+                        }
+                      },
+                      "howCreated": 0
+                    },
+                    {
+                      "type": "Categorical",
+                      "expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "ProductCatalog"
+                            }
+                          },
+                          "Property": "ProductSubcategory"
+                        }
+                      },
+                      "howCreated": 0
+                    }
+                  ]
+                },
+                "singleVisual": {
+                  "visualType": "clusteredColumnChart",
+                  "objects": {
+                    "remove": []
+                  },
+                  "orderBy": [
+                    {
+                      "Direction": 2,
+                      "Expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "ProductCatalog"
+                                }
+                              },
+                              "Property": "ListPrice"
+                            }
+                          },
+                          "Function": 1
+                        }
+                      }
+                    }
+                  ],
+                  "activeProjections": {
+                    "Category": [
+                      {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "ProductCatalog"
+                            }
+                          },
+                          "Property": "ProductSubcategory"
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              "434135e0c01804441270": {
+                "filters": {
+                  "byExpr": [
+                    {
+                      "type": "TopN",
+                      "filter": {
+                        "Version": 2,
+                        "From": [
+                          {
+                            "Name": "subquery",
+                            "Expression": {
+                              "Subquery": {
+                                "Query": {
+                                  "Version": 2,
+                                  "From": [
+                                    {
+                                      "Name": "p",
+                                      "Entity": "ProductCatalog"
+                                    }
+                                  ],
+                                  "Select": [
+                                    {
+                                      "Column": {
+                                        "Expression": {
+                                          "SourceRef": {
+                                            "Source": "p"
+                                          }
+                                        },
+                                        "Property": "ProductModel"
+                                      },
+                                      "Name": "field"
+                                    }
+                                  ],
+                                  "OrderBy": [
+                                    {
+                                      "Direction": 2,
+                                      "Expression": {
+                                        "Aggregation": {
+                                          "Expression": {
+                                            "Column": {
+                                              "Expression": {
+                                                "SourceRef": {
+                                                  "Source": "p"
+                                                }
+                                              },
+                                              "Property": "ListPrice"
+                                            }
+                                          },
+                                          "Function": 0
+                                        }
+                                      }
+                                    }
+                                  ],
+                                  "Top": 9
+                                }
+                              }
+                            },
+                            "Type": 2
+                          },
+                          {
+                            "Name": "p",
+                            "Entity": "ProductCatalog"
+                          }
+                        ],
+                        "Where": [
+                          {
+                            "Condition": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "p"
+                                        }
+                                      },
+                                      "Property": "ProductModel"
+                                    }
+                                  }
+                                ],
+                                "Table": {
+                                  "SourceRef": {
+                                    "Source": "subquery"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "ProductCatalog"
+                            }
+                          },
+                          "Property": "ProductModel"
+                        }
+                      },
+                      "howCreated": 0
+                    },
+                    {
+                      "type": "Advanced",
+                      "expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "ProductCatalog"
+                                }
+                              },
+                              "Property": "ListPrice"
+                            }
+                          },
+                          "Function": 1
+                        }
+                      },
+                      "howCreated": 0
+                    }
+                  ]
+                },
+                "singleVisual": {
+                  "visualType": "tableEx",
+                  "objects": {
+                    "remove": []
+                  }
+                }
+              },
+              "006e1f6e6c788bc10d1c": {
+                "filters": {
+                  "byExpr": [
+                    {
+                      "type": "TopN",
+                      "filter": {
+                        "Version": 2,
+                        "From": [
+                          {
+                            "Name": "subquery",
+                            "Expression": {
+                              "Subquery": {
+                                "Query": {
+                                  "Version": 2,
+                                  "From": [
+                                    {
+                                      "Name": "p",
+                                      "Entity": "ProductCatalog"
+                                    }
+                                  ],
+                                  "Select": [
+                                    {
+                                      "Column": {
+                                        "Expression": {
+                                          "SourceRef": {
+                                            "Source": "p"
+                                          }
+                                        },
+                                        "Property": "ProductModel"
+                                      },
+                                      "Name": "field"
+                                    }
+                                  ],
+                                  "OrderBy": [
+                                    {
+                                      "Direction": 1,
+                                      "Expression": {
+                                        "Aggregation": {
+                                          "Expression": {
+                                            "Column": {
+                                              "Expression": {
+                                                "SourceRef": {
+                                                  "Source": "p"
+                                                }
+                                              },
+                                              "Property": "ListPrice"
+                                            }
+                                          },
+                                          "Function": 0
+                                        }
+                                      }
+                                    }
+                                  ],
+                                  "Top": 9
+                                }
+                              }
+                            },
+                            "Type": 2
+                          },
+                          {
+                            "Name": "p",
+                            "Entity": "ProductCatalog"
+                          }
+                        ],
+                        "Where": [
+                          {
+                            "Condition": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "p"
+                                        }
+                                      },
+                                      "Property": "ProductModel"
+                                    }
+                                  }
+                                ],
+                                "Table": {
+                                  "SourceRef": {
+                                    "Source": "subquery"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "ProductCatalog"
+                            }
+                          },
+                          "Property": "ProductModel"
+                        }
+                      },
+                      "howCreated": 0
+                    },
+                    {
+                      "type": "Advanced",
+                      "expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "ProductCatalog"
+                                }
+                              },
+                              "Property": "ListPrice"
+                            }
+                          },
+                          "Function": 1
+                        }
+                      },
+                      "howCreated": 0
+                    }
+                  ]
+                },
+                "singleVisual": {
+                  "visualType": "tableEx",
+                  "objects": {
+                    "remove": []
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "options": {
+        "targetVisualNames": []
+      }
+    },
+    {
+      "displayName": "Purple",
+      "name": "Bookmark66b53729ec48906308d1",
+      "explorationState": {
+        "version": "1.0",
+        "activeSection": "ReportSection85b1cea78d612ae40884",
+        "sections": {
+          "ReportSection85b1cea78d612ae40884": {
+            "visualContainers": {
+              "0feac1e37742dc277849": {
+                "singleVisual": {
+                  "visualType": "textbox",
+                  "objects": {
+                    "remove": []
+                  }
+                }
+              },
+              "5cbb1b9512c20b105cc5": {
+                "singleVisual": {
+                  "visualType": "textbox",
+                  "objects": {
+                    "remove": []
+                  }
+                }
+              },
+              "1f2f72a8237c65dd3115": {
+                "singleVisual": {
+                  "visualType": "textbox",
+                  "objects": {
+                    "remove": []
+                  }
+                }
+              },
+              "e4ec1b2b415c832760b5": {
+                "singleVisual": {
+                  "visualType": "textbox",
+                  "objects": {
+                    "remove": []
+                  }
+                }
+              },
+              "11537f00e91a2398c2d8": {
+                "filters": {
+                  "byExpr": [
+                    {
+                      "name": "Filter",
+                      "type": "Categorical",
+                      "filter": {
+                        "Version": 2,
+                        "From": [
+                          {
+                            "Name": "p",
+                            "Entity": "ProductCatalog"
+                          }
+                        ],
+                        "Where": [
+                          {
+                            "Condition": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "p"
+                                        }
+                                      },
+                                      "Property": "ProductCategory"
+                                    }
+                                  }
+                                ],
+                                "Values": [
+                                  [
+                                    {
+                                      "Literal": {
+                                        "Value": "'Components'"
+                                      }
+                                    }
+                                  ]
+                                ]
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "ProductCatalog"
+                            }
+                          },
+                          "Property": "ProductCategory"
+                        }
+                      },
+                      "howCreated": 1
+                    },
+                    {
+                      "type": "Advanced",
+                      "expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "ProductCatalog"
+                                }
+                              },
+                              "Property": "ListPrice"
+                            }
+                          },
+                          "Function": 0
+                        }
+                      },
+                      "howCreated": 0
+                    }
+                  ]
+                },
+                "singleVisual": {
+                  "visualType": "card",
+                  "objects": {
+                    "remove": []
+                  }
+                }
+              },
+              "79267768d39086207664": {
+                "filters": {
+                  "byExpr": [
+                    {
+                      "type": "Advanced",
+                      "expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "ProductCatalog"
+                                }
+                              },
+                              "Property": "ListPrice"
+                            }
+                          },
+                          "Function": 1
+                        }
+                      },
+                      "howCreated": 0
+                    },
+                    {
+                      "type": "Categorical",
+                      "expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "ProductCatalog"
+                            }
+                          },
+                          "Property": "ProductSubcategory"
+                        }
+                      },
+                      "howCreated": 0
+                    }
+                  ]
+                },
+                "singleVisual": {
+                  "visualType": "clusteredColumnChart",
+                  "objects": {
+                    "remove": []
+                  },
+                  "orderBy": [
+                    {
+                      "Direction": 2,
+                      "Expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "ProductCatalog"
+                                }
+                              },
+                              "Property": "ListPrice"
+                            }
+                          },
+                          "Function": 1
+                        }
+                      }
+                    }
+                  ],
+                  "activeProjections": {
+                    "Category": [
+                      {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "ProductCatalog"
+                            }
+                          },
+                          "Property": "ProductSubcategory"
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              "1e8756e04e4b7c650592": {
+                "filters": {
+                  "byExpr": [
+                    {
+                      "type": "TopN",
+                      "filter": {
+                        "Version": 2,
+                        "From": [
+                          {
+                            "Name": "subquery",
+                            "Expression": {
+                              "Subquery": {
+                                "Query": {
+                                  "Version": 2,
+                                  "From": [
+                                    {
+                                      "Name": "p",
+                                      "Entity": "ProductCatalog"
+                                    }
+                                  ],
+                                  "Select": [
+                                    {
+                                      "Column": {
+                                        "Expression": {
+                                          "SourceRef": {
+                                            "Source": "p"
+                                          }
+                                        },
+                                        "Property": "ProductModel"
+                                      },
+                                      "Name": "field"
+                                    }
+                                  ],
+                                  "OrderBy": [
+                                    {
+                                      "Direction": 2,
+                                      "Expression": {
+                                        "Aggregation": {
+                                          "Expression": {
+                                            "Column": {
+                                              "Expression": {
+                                                "SourceRef": {
+                                                  "Source": "p"
+                                                }
+                                              },
+                                              "Property": "ListPrice"
+                                            }
+                                          },
+                                          "Function": 0
+                                        }
+                                      }
+                                    }
+                                  ],
+                                  "Top": 9
+                                }
+                              }
+                            },
+                            "Type": 2
+                          },
+                          {
+                            "Name": "p",
+                            "Entity": "ProductCatalog"
+                          }
+                        ],
+                        "Where": [
+                          {
+                            "Condition": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "p"
+                                        }
+                                      },
+                                      "Property": "ProductModel"
+                                    }
+                                  }
+                                ],
+                                "Table": {
+                                  "SourceRef": {
+                                    "Source": "subquery"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "ProductCatalog"
+                            }
+                          },
+                          "Property": "ProductModel"
+                        }
+                      },
+                      "howCreated": 0
+                    },
+                    {
+                      "type": "Advanced",
+                      "expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "ProductCatalog"
+                                }
+                              },
+                              "Property": "ListPrice"
+                            }
+                          },
+                          "Function": 1
+                        }
+                      },
+                      "howCreated": 0
+                    }
+                  ]
+                },
+                "singleVisual": {
+                  "visualType": "tableEx",
+                  "objects": {
+                    "remove": []
+                  }
+                }
+              },
+              "ffae4e22835c595cde39": {
+                "filters": {
+                  "byExpr": [
+                    {
+                      "type": "TopN",
+                      "filter": {
+                        "Version": 2,
+                        "From": [
+                          {
+                            "Name": "subquery",
+                            "Expression": {
+                              "Subquery": {
+                                "Query": {
+                                  "Version": 2,
+                                  "From": [
+                                    {
+                                      "Name": "p",
+                                      "Entity": "ProductCatalog"
+                                    }
+                                  ],
+                                  "Select": [
+                                    {
+                                      "Column": {
+                                        "Expression": {
+                                          "SourceRef": {
+                                            "Source": "p"
+                                          }
+                                        },
+                                        "Property": "ProductModel"
+                                      },
+                                      "Name": "field"
+                                    }
+                                  ],
+                                  "OrderBy": [
+                                    {
+                                      "Direction": 1,
+                                      "Expression": {
+                                        "Aggregation": {
+                                          "Expression": {
+                                            "Column": {
+                                              "Expression": {
+                                                "SourceRef": {
+                                                  "Source": "p"
+                                                }
+                                              },
+                                              "Property": "ListPrice"
+                                            }
+                                          },
+                                          "Function": 0
+                                        }
+                                      }
+                                    }
+                                  ],
+                                  "Top": 9
+                                }
+                              }
+                            },
+                            "Type": 2
+                          },
+                          {
+                            "Name": "p",
+                            "Entity": "ProductCatalog"
+                          }
+                        ],
+                        "Where": [
+                          {
+                            "Condition": {
+                              "In": {
+                                "Expressions": [
+                                  {
+                                    "Column": {
+                                      "Expression": {
+                                        "SourceRef": {
+                                          "Source": "p"
+                                        }
+                                      },
+                                      "Property": "ProductModel"
+                                    }
+                                  }
+                                ],
+                                "Table": {
+                                  "SourceRef": {
+                                    "Source": "subquery"
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        ]
+                      },
+                      "expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "ProductCatalog"
+                            }
+                          },
+                          "Property": "ProductModel"
+                        }
+                      },
+                      "howCreated": 0
+                    },
+                    {
+                      "type": "Advanced",
+                      "expression": {
+                        "Aggregation": {
+                          "Expression": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Entity": "ProductCatalog"
+                                }
+                              },
+                              "Property": "ListPrice"
+                            }
+                          },
+                          "Function": 1
+                        }
+                      },
+                      "howCreated": 0
+                    }
+                  ]
+                },
+                "singleVisual": {
+                  "visualType": "tableEx",
+                  "objects": {
+                    "remove": []
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "options": {
+        "targetVisualNames": []
+      }
+    }
+  ],
+  "baseTheme": "CY17SU12",
+  "defaultDrillFilterOtherVisuals": true
+}

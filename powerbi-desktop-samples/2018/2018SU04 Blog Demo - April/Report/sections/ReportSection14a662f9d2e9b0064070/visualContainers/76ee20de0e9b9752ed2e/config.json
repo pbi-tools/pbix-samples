@@ -1,0 +1,45 @@
+{
+  "name": "76ee20de0e9b9752ed2e",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 77.614957049014649,
+        "y": 598.28196058615458,
+        "z": 1500,
+        "width": 192.09701869631127,
+        "height": 52.390096008084889
+      }
+    }
+  ],
+  "singleVisual": {
+    "title": {
+      "show": false,
+      "text": "Purple Title"
+    },
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Components",
+                    "textStyle": {
+                      "fontSize": "24px",
+                      "color": "#ffffff"
+                    }
+                  }
+                ],
+                "horizontalTextAlignment": "center"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

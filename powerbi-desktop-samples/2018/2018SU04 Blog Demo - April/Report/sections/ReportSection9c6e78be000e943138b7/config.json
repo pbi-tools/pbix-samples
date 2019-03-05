@@ -1,0 +1,38 @@
+{
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#C0CDD5'"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visibility": 1,
+  "type": 1,
+  "linkFields": [
+    {
+      "asAggregation": true,
+      "fieldExpr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Sales"
+            }
+          },
+          "Property": "SalesAmount"
+        }
+      }
+    }
+  ]
+}

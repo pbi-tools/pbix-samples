@@ -10,7 +10,7 @@ Various [Power BI Ideas](https://ideas.powerbi.com/forums/265200-power-bi-ideas)
 - https://ideas.powerbi.com/forums/265200-power-bi-ideas/suggestions/9677517-source-control
 - https://ideas.powerbi.com/forums/265200-power-bi-ideas/suggestions/9080776-using-git-or-some-other-sccs-to-store-m-queries-n
 
-This repository contains a number of PBIX files that have been converted into a source control compatible format, to serve as a proof-of-concept, a format proposal, as well as a discussion place for the community and, ideally, the Power BI team.
+**This repository contains a number of PBIX files that have been converted into a source control compatible format, to serve as a proof-of-concept, a format proposal, as well as a discussion place for the community and, ideally, the Power BI team.**
 
 The format proposed here is loss-less, i.e. would be sufficient to re-assemble a fully functioning PBIX file from sources only.
 

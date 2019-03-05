@@ -1,0 +1,7 @@
+<Measure Name="U YoY">
+  <Expression><![CDATA[(DIVIDe(SUM(Sales[Units]),CALCULATE(SUM(Sales[Units]),PREVIOUSYEAR('Calendar'[Date])))-1)]]></Expression>
+  <FormatString>0%;-0%;0%</FormatString>
+  <Annotation Name="Format">
+    <Format Format="Percentage" Accuracy="0" />
+  </Annotation>
+</Measure>

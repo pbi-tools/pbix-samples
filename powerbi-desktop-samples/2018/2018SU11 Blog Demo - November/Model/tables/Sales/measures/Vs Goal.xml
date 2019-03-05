@@ -1,0 +1,7 @@
+<Measure Name="Vs Goal">
+  <Expression><![CDATA[DIVIDE(SUM(Sales[SalesAmount]),(DIVIDE(CALCULATE(SUM(Sales[SalesAmount]),PREVIOUSYEAR('Calendar'[Date])),.2))+(CALCULATE(SUM(Sales[SalesAmount]),PREVIOUSYEAR('Calendar'[Date]))))-1]]></Expression>
+  <FormatString>#,0%;-#,0%;#,0%</FormatString>
+  <Annotation Name="Format">
+    <Format Format="Percentage" Accuracy="0" ThousandSeparator="True" />
+  </Annotation>
+</Measure>

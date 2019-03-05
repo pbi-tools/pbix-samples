@@ -1,0 +1,93 @@
+{
+  "name": "032c060a5cc6a0501715",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 239.80467915534973,
+        "y": 644.0820187330246,
+        "z": 5500,
+        "width": 1027.44140625,
+        "height": 172.94921875
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Using Hierarchies",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "20px",
+                      "color": "#666666"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "A hierarchy is an ordered set of columns.  For example, a Country, State, and City would be an example of a hierarchy.  Hierarchies can come in various forms with in a report.  Using the hierarchy in a visual allows the user to see the data at various levels. "
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Demo of Navigatin Hierarchies",
+                    "textStyle": {},
+                    "url": "https://powerbi.tips/2018/09/how-to-navigate-hierarchies/"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Hierarchies'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

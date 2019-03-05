@@ -1,0 +1,37 @@
+{
+	"name":"CY17SU12",
+	"visualStyles": {
+		"*": {
+			"*": {
+				"*": [
+					{
+						"wordWrap":true
+					}
+			  	],
+			  	"wordWrap": [
+					{
+						"show":true
+					}
+			  	]
+		   	}
+		},
+		"scatterChart": {
+		    "*": {
+				"fillPoint": [
+					{
+						"show":true
+				 	}
+			  	]
+		   	}
+		},
+		"slicer": {
+			"*": {
+				"general": [
+					{
+						"responsive": true
+					}
+				]
+			}
+		}
+	}
+ }

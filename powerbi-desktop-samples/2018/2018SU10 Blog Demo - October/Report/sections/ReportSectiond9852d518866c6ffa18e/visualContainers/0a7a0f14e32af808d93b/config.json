@@ -1,0 +1,92 @@
+{
+  "name": "0a7a0f14e32af808d93b",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 238.71094584465027,
+        "y": 838.2226437330246,
+        "z": 5000,
+        "width": 1027.44140625,
+        "height": 172.94921875
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Tooltips",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "20px"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Some visuals are built with tooltips.  A tooltip can be found by moving your cursor over top of a data element.  Waiting a second or two a tooltip will appear over the data point."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Demo of Tooltips",
+                    "textStyle": {},
+                    "url": "https://powerbi.tips/2018/09/how-to-use-tooltips-in-power-bi/"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Tooltips'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

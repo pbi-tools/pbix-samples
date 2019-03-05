@@ -1,0 +1,106 @@
+[
+  {
+    "expression": {
+      "Column": {
+        "Expression": {
+          "SourceRef": {
+            "Entity": "Calendar"
+          }
+        },
+        "Property": "Month"
+      }
+    },
+    "type": "Categorical",
+    "howCreated": 1
+  },
+  {
+    "expression": {
+      "Aggregation": {
+        "Expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Sales"
+              }
+            },
+            "Property": "SalesAmount"
+          }
+        },
+        "Function": 0
+      }
+    },
+    "type": "Advanced",
+    "howCreated": 1
+  },
+  {
+    "expression": {
+      "Column": {
+        "Expression": {
+          "SourceRef": {
+            "Entity": "Calendar"
+          }
+        },
+        "Property": "Year"
+      }
+    },
+    "type": "Categorical",
+    "howCreated": 1
+  },
+  {
+    "expression": {
+      "Aggregation": {
+        "Expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Sales"
+              }
+            },
+            "Property": "SalesAmount"
+          }
+        },
+        "Function": 6
+      }
+    },
+    "type": "Advanced",
+    "howCreated": 1
+  },
+  {
+    "expression": {
+      "Aggregation": {
+        "Expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Sales"
+              }
+            },
+            "Property": "NSAT"
+          }
+        },
+        "Function": 0
+      }
+    },
+    "type": "Advanced",
+    "howCreated": 1
+  },
+  {
+    "expression": {
+      "Aggregation": {
+        "Expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Sales"
+              }
+            },
+            "Property": "NSAT"
+          }
+        },
+        "Function": 1
+      }
+    },
+    "type": "Advanced",
+    "howCreated": 1
+  }
+]

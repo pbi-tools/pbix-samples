@@ -1,0 +1,94 @@
+{
+  "name": "2018SU10 Blog Demo - October",
+  "compatibilityLevel": 1455,
+  "model": {
+    "culture": "en-US",
+    "relationships": [
+      {
+        "name": "d3d6ab16-d20f-4464-baac-6680746eaeef",
+        "fromTable": "Calendar",
+        "fromColumn": "Date",
+        "toTable": "LocalDateTable_8369bfaf-356a-4b8d-a282-dd2c1868a321",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "c058f796-d10d-4f49-9a70-90bfd27d69e7",
+        "fromTable": "Sales",
+        "fromColumn": "OrderDate",
+        "toTable": "Calendar",
+        "toColumn": "Date"
+      },
+      {
+        "name": "e0b5ec9f-7571-43d8-9b9f-bdd2b1366c97",
+        "fromTable": "Orders",
+        "fromColumn": "OrderDate",
+        "toTable": "LocalDateTable_f733b2a4-65b9-4d48-934c-db3a4a5b4d53",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "3003bc12-83e9-4e3b-8283-cfdd95329358",
+        "fromTable": "Orders",
+        "fromColumn": "RequiredDate",
+        "toTable": "LocalDateTable_f46a4af6-e1a9-474b-85ad-bcd91c972e2b",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "ff7cf5f2-9ebc-4960-a00e-e067f7895b4e",
+        "fromTable": "Orders",
+        "fromColumn": "ShippedDate",
+        "toTable": "LocalDateTable_fe17fb1e-3efb-43da-9dfa-0a78874be335",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "eb88687b-9a60-4261-97e7-4e1ba0c68718",
+        "fromTable": "Orders",
+        "fromColumn": "CustomerID",
+        "toTable": "Customers",
+        "toColumn": "CustomerID"
+      },
+      {
+        "name": "cd9731d2-e880-4187-9f50-288e1aaa174c",
+        "fromTable": "Order Details",
+        "fromColumn": "OrderID",
+        "toTable": "Orders",
+        "toColumn": "OrderID"
+      },
+      {
+        "name": "81e084c2-ab85-42cf-bd65-f174ee004e7e",
+        "fromTable": "Order Details",
+        "fromColumn": "ProductID",
+        "toTable": "Products",
+        "toColumn": "ProductID"
+      },
+      {
+        "name": "13573ae4-5f63-4eda-820c-15e638339678",
+        "fromTable": "Products",
+        "fromColumn": "CategoryID",
+        "toTable": "Categories",
+        "toColumn": "CategoryID"
+      }
+    ],
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": "<LinguisticMetadata><LinguisticSchema Language=\"en-US\" DynamicImprovement=\"HighConfidence\" xmlns=\"http://schemas.microsoft.com/sqlserver/2016/01/linguisticschema\" /></LinguisticMetadata>"
+        }
+      }
+    ],
+    "annotations": [
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.63.5257.3 (Main)"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      }
+    ]
+  }
+}

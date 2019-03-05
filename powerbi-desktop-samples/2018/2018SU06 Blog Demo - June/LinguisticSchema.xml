@@ -1,0 +1,42 @@
+<LinguisticSchema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Language="en-US" xmlns="http://schemas.microsoft.com/sqlserver/2016/01/linguisticschema">
+  <Entities>
+    <Entity ConceptualEntity="Pod" Source="Generated" Name="Overview">
+      <Words>
+        <Word>Overview</Word>
+      </Words>
+    </Entity>
+    <Entity ConceptualEntity="Pod1" Source="Generated" Name="Germany">
+      <Words>
+        <Word>Germany</Word>
+        <Word>Germany sales data</Word>
+        <Word>Germany sales</Word>
+        <Word>Germany information</Word>
+      </Words>
+    </Entity>
+    <Entity ConceptualEntity="Pod2" Source="Generated" Name="Canada">
+      <Words>
+        <Word>Canada</Word>
+      </Words>
+    </Entity>
+    <Entity ConceptualEntity="Pod3" Source="Generated" Name="France">
+      <Words>
+        <Word>France</Word>
+      </Words>
+    </Entity>
+    <Entity ConceptualEntity="Pod4" Source="Generated" Name="Great_Britain">
+      <Words>
+        <Word>Great Britain</Word>
+      </Words>
+    </Entity>
+    <Entity ConceptualEntity="Pod8" Source="Generated" Name="Details_Page">
+      <Words>
+        <Word>Details Page</Word>
+      </Words>
+    </Entity>
+    <Entity ConceptualEntity="Pod5" Source="Generated" Name="Duplicate_of_Overview">
+      <Words>
+        <Word>Duplicate of Overview</Word>
+      </Words>
+    </Entity>
+  </Entities>
+</LinguisticSchema>

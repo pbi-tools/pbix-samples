@@ -1,0 +1,35 @@
+{
+  "relationships": [
+    {
+      "source": "4e9883262660200aa95e",
+      "target": "ac6a062d1b3d00740173",
+      "type": 2
+    }
+  ],
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "21D"
+              }
+            }
+          },
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#666666'"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "showHiddenFields": false,
+  "isRelationshipAutodetectionEnabled": true,
+  "isParallelQueryLoadingEnabled": true,
+  "isAutoRecoveryEnabledForThisFile": true,
+  "isQnaEnabledForThisFile": true,
+  "userConsentsToCompositeModels": false,
+  "userConsentsToQnaForLiveConnect": false
+}

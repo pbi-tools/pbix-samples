@@ -1,0 +1,35 @@
+{
+  "Commands": [
+    {
+      "SemanticQueryDataShapeCommand": {
+        "Query": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "s",
+              "Entity": "Sales"
+            }
+          ],
+          "Select": [
+            {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Source": "s"
+                      }
+                    },
+                    "Property": "Units"
+                  }
+                },
+                "Function": 0
+              },
+              "Name": "Sum(Sales.Units)"
+            }
+          ]
+        }
+      }
+    }
+  ]
+}

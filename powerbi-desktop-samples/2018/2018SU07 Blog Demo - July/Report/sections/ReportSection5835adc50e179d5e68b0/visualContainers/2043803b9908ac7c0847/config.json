@@ -1,0 +1,63 @@
+{
+  "name": "2043803b9908ac7c0847",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 76.968165740272866,
+        "y": 450.81354219302676,
+        "z": 4187,
+        "width": 192.74381000505306,
+        "height": 52.390096008084889
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "France",
+                    "textStyle": {
+                      "fontSize": "24px",
+                      "color": "#ffffff"
+                    }
+                  }
+                ],
+                "horizontalTextAlignment": "center"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Pink Title'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

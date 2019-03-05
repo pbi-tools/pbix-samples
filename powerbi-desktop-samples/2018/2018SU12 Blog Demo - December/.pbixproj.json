@@ -1,0 +1,12 @@
+{
+  "version": "0.3.1",
+  "queries": {
+    "Sales": "53f928fb-e2a6-4c37-8722-e900bbbb8de6",
+    "Calendar": "2b6e225d-aae2-46b6-b0b1-8fb934a108e2",
+    "Customers": "fff11338-73f1-4366-820b-46aaa6ea01d6",
+    "Categories": "a20ac478-6488-454e-a86a-063ad8e8ca13",
+    "Orders": "a839b0b7-3139-4cf3-b1fd-6258dd0aa631",
+    "Order Details": "9105a6e3-6e2e-4f8c-a7c8-0387af7ceeda",
+    "Products": "9f3eaa39-f370-4369-8a1b-d184e6643e2c"
+  }
+}

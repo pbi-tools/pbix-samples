@@ -1,0 +1,571 @@
+{
+  "AllFormulas": {
+    "Relationships": "AAAAAA==",
+    "RunBackgroundAnalysis": "False"
+  },
+  "Formulas": {
+    "Section1/Sales": {
+      "BufferNextRefresh": 0,
+      "FillColumnNames": [
+        "SalesOrderID",
+        "Country",
+        "OrderDate",
+        "SalesChannelCode",
+        "ProdID",
+        "StyleName",
+        "CustomerAccountNumber",
+        "StoreKey",
+        "ProductLabel",
+        "ProductName",
+        "ProductDescription",
+        "Manufacturer",
+        "BrandName",
+        "Class",
+        "Color",
+        "StockType",
+        "UnitCost",
+        "Units",
+        "UnitPrice",
+        "SalesTax",
+        "Freight",
+        "SalesAmount",
+        "PurchAgain",
+        "NSAT",
+        "SubCategory",
+        "Category",
+        "Sale Size"
+      ],
+      "IsDirectQuery": 0,
+      "IsLastAnalysisServicesFormulaTextCollection": 1,
+      "IsPrivate": 0,
+      "LastAnalysisServicesFormulaText": {
+        "IncludesReferencedQueries": true
+      },
+      "LoadedToAnalysisServices": 1,
+      "NameUpdatedAfterFill": 1,
+      "NavigationStepName": "Navigation",
+      "RelationshipInfoContainer": {
+        "columnCount": 27,
+        "keyColumnNames": [],
+        "queryRelationships": [],
+        "columnIdentities": [
+          "Section1/Sales/Changed Type.{SalesOrderID,0}",
+          "Section1/Sales/Changed Type.{Country,1}",
+          "Section1/Sales/Changed Type.{OrderDate,2}",
+          "Section1/Sales/Changed Type.{SalesChannelCode,3}",
+          "Section1/Sales/Changed Type.{ProdID,4}",
+          "Section1/Sales/Changed Type.{StyleName,5}",
+          "Section1/Sales/Changed Type.{CustomerAccountNumber,6}",
+          "Section1/Sales/Changed Type.{StoreKey,7}",
+          "Section1/Sales/Changed Type.{ProductLabel,8}",
+          "Section1/Sales/Changed Type1.{ProductName.1,9}",
+          "Section1/Sales/Changed Type.{ProductDescription,10}",
+          "Section1/Sales/Changed Type.{Manufacturer,11}",
+          "Section1/Sales/Changed Type.{BrandName,12}",
+          "Section1/Sales/Changed Type.{Class,13}",
+          "Section1/Sales/Changed Type.{Color,14}",
+          "Section1/Sales/Changed Type.{StockType,15}",
+          "Section1/Sales/Sales_Table.{UnitCost,16}",
+          "Section1/Sales/Changed Type.{Units,17}",
+          "Section1/Sales/Sales_Table.{UnitPrice,18}",
+          "Section1/Sales/Sales_Table.{SalesTax,19}",
+          "Section1/Sales/Sales_Table.{Freight,20}",
+          "Section1/Sales/Changed Type.{SalesAmount,21}",
+          "Section1/Sales/Sales_Table.{PurchAgain,22}",
+          "Section1/Sales/Changed Type.{NSAT,23}",
+          "Section1/Sales/Changed Type.{SubCategory,24}",
+          "Section1/Sales/Changed Type.{Category,25}",
+          "Section1/Sales/Added Conditional Column.{Custom,26}"
+        ],
+        "ColumnCount": 27,
+        "KeyColumnNames": [],
+        "ColumnIdentities": [
+          "Section1/Sales/Changed Type.{SalesOrderID,0}",
+          "Section1/Sales/Changed Type.{Country,1}",
+          "Section1/Sales/Changed Type.{OrderDate,2}",
+          "Section1/Sales/Changed Type.{SalesChannelCode,3}",
+          "Section1/Sales/Changed Type.{ProdID,4}",
+          "Section1/Sales/Changed Type.{StyleName,5}",
+          "Section1/Sales/Changed Type.{CustomerAccountNumber,6}",
+          "Section1/Sales/Changed Type.{StoreKey,7}",
+          "Section1/Sales/Changed Type.{ProductLabel,8}",
+          "Section1/Sales/Changed Type1.{ProductName.1,9}",
+          "Section1/Sales/Changed Type.{ProductDescription,10}",
+          "Section1/Sales/Changed Type.{Manufacturer,11}",
+          "Section1/Sales/Changed Type.{BrandName,12}",
+          "Section1/Sales/Changed Type.{Class,13}",
+          "Section1/Sales/Changed Type.{Color,14}",
+          "Section1/Sales/Changed Type.{StockType,15}",
+          "Section1/Sales/Sales_Table.{UnitCost,16}",
+          "Section1/Sales/Changed Type.{Units,17}",
+          "Section1/Sales/Sales_Table.{UnitPrice,18}",
+          "Section1/Sales/Sales_Table.{SalesTax,19}",
+          "Section1/Sales/Sales_Table.{Freight,20}",
+          "Section1/Sales/Changed Type.{SalesAmount,21}",
+          "Section1/Sales/Sales_Table.{PurchAgain,22}",
+          "Section1/Sales/Changed Type.{NSAT,23}",
+          "Section1/Sales/Changed Type.{SubCategory,24}",
+          "Section1/Sales/Changed Type.{Category,25}",
+          "Section1/Sales/Added Conditional Column.{Custom,26}"
+        ],
+        "RelationshipInfo": []
+      },
+      "ResultType": "Table"
+    },
+    "Section1/Sales/Source": null,
+    "Section1/Sales/Sales_Table": null,
+    "Section1/Sales/Changed Type": null,
+    "Section1/Sales/Added Conditional Column": null,
+    "Section1/Sales/Split Column by Delimiter": null,
+    "Section1/Sales/Changed Type1": null,
+    "Section1/Sales/Removed Columns": null,
+    "Section1/Sales/Renamed Columns1": null,
+    "Section1/Calendar": {
+      "BufferNextRefresh": 0,
+      "FillColumnNames": [
+        "Date",
+        "Month",
+        "MonthN",
+        "Year"
+      ],
+      "IsDirectQuery": 0,
+      "IsLastAnalysisServicesFormulaTextCollection": 1,
+      "IsPrivate": 0,
+      "LastAnalysisServicesFormulaText": {
+        "IncludesReferencedQueries": true
+      },
+      "LoadedToAnalysisServices": 1,
+      "NameUpdatedAfterFill": 1,
+      "NavigationStepName": "Navigation",
+      "RelationshipInfoContainer": {
+        "columnCount": 4,
+        "keyColumnNames": [],
+        "queryRelationships": [],
+        "columnIdentities": [
+          "Section1/Calendar/Changed Type.{Date,0}",
+          "Section1/Calendar/Extracted First Characters.{Month Name,1}",
+          "Section1/Calendar/Inserted Month.{Month.1,3}",
+          "Section1/Calendar/Changed Type1.{Year,2}"
+        ],
+        "ColumnCount": 4,
+        "KeyColumnNames": [],
+        "ColumnIdentities": [
+          "Section1/Calendar/Changed Type.{Date,0}",
+          "Section1/Calendar/Extracted First Characters.{Month Name,1}",
+          "Section1/Calendar/Inserted Month.{Month.1,3}",
+          "Section1/Calendar/Changed Type1.{Year,2}"
+        ],
+        "RelationshipInfo": []
+      },
+      "ResultType": "Table"
+    },
+    "Section1/Calendar/Source": null,
+    "Section1/Calendar/Changed Type": null,
+    "Section1/Calendar/Inserted Month Name": null,
+    "Section1/Calendar/Extracted First Characters": null,
+    "Section1/Calendar/Renamed Columns": null,
+    "Section1/Calendar/Inserted Year": null,
+    "Section1/Calendar/Changed Type1": null,
+    "Section1/Calendar/Inserted Month": null,
+    "Section1/Calendar/Renamed Columns1": null,
+    "Section1/Calendar/Reordered Columns": null,
+    "Section1/Customers": {
+      "BufferNextRefresh": 0,
+      "FillColumnNames": [
+        "CustomerID",
+        "CompanyName",
+        "ContactName",
+        "ContactTitle",
+        "Address",
+        "City",
+        "Region",
+        "PostalCode",
+        "Country",
+        "Phone",
+        "Fax"
+      ],
+      "IsDirectQuery": 0,
+      "IsLastAnalysisServicesFormulaTextCollection": 1,
+      "IsPrivate": 0,
+      "LastAnalysisServicesFormulaText": {
+        "IncludesReferencedQueries": true
+      },
+      "LoadedToAnalysisServices": 1,
+      "NameUpdatedAfterFill": 1,
+      "NavigationStepName": "Navigation",
+      "RelationshipInfoContainer": {
+        "columnCount": 11,
+        "keyColumnNames": [
+          "CustomerID"
+        ],
+        "queryRelationships": [],
+        "columnIdentities": [
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Customers.{CustomerID,0}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Customers.{CompanyName,1}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Customers.{ContactName,2}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Customers.{ContactTitle,3}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Customers.{Address,4}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Customers.{City,5}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Customers.{Region,6}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Customers.{PostalCode,7}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Customers.{Country,8}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Customers.{Phone,9}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Customers.{Fax,10}"
+        ],
+        "ColumnCount": 11,
+        "KeyColumnNames": [
+          "CustomerID"
+        ],
+        "ColumnIdentities": [
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Customers.{CustomerID,0}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Customers.{CompanyName,1}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Customers.{ContactName,2}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Customers.{ContactTitle,3}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Customers.{Address,4}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Customers.{City,5}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Customers.{Region,6}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Customers.{PostalCode,7}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Customers.{Country,8}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Customers.{Phone,9}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Customers.{Fax,10}"
+        ],
+        "RelationshipInfo": []
+      },
+      "ResultType": "Table"
+    },
+    "Section1/Customers/Source": null,
+    "Section1/Customers/Customers_table": null,
+    "Section1/Categories": {
+      "BufferNextRefresh": 0,
+      "FillColumnNames": [
+        "CategoryID",
+        "CategoryName",
+        "Description"
+      ],
+      "IsDirectQuery": 0,
+      "IsLastAnalysisServicesFormulaTextCollection": 1,
+      "IsPrivate": 0,
+      "LastAnalysisServicesFormulaText": {
+        "IncludesReferencedQueries": true
+      },
+      "LoadedToAnalysisServices": 1,
+      "NameUpdatedAfterFill": 1,
+      "NavigationStepName": "Navigation",
+      "RelationshipInfoContainer": {
+        "columnCount": 4,
+        "keyColumnNames": [
+          "CategoryID"
+        ],
+        "queryRelationships": [],
+        "columnIdentities": [
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Categories.{CategoryID,0}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Categories.{CategoryName,1}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Categories.{Description,2}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Categories.{Picture,3}"
+        ],
+        "ColumnCount": 4,
+        "KeyColumnNames": [
+          "CategoryID"
+        ],
+        "ColumnIdentities": [
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Categories.{CategoryID,0}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Categories.{CategoryName,1}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Categories.{Description,2}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Categories.{Picture,3}"
+        ],
+        "RelationshipInfo": []
+      },
+      "ResultType": "Table"
+    },
+    "Section1/Categories/Source": null,
+    "Section1/Categories/Categories_table": null,
+    "Section1/Orders": {
+      "BufferNextRefresh": 0,
+      "FillColumnNames": [
+        "OrderID",
+        "CustomerID",
+        "EmployeeID",
+        "OrderDate",
+        "RequiredDate",
+        "ShippedDate",
+        "ShipVia",
+        "Freight",
+        "ShipName",
+        "ShipAddress",
+        "ShipCity",
+        "ShipRegion",
+        "ShipPostalCode",
+        "ShipCountry"
+      ],
+      "IsDirectQuery": 0,
+      "IsLastAnalysisServicesFormulaTextCollection": 1,
+      "IsPrivate": 0,
+      "LastAnalysisServicesFormulaText": {
+        "IncludesReferencedQueries": true
+      },
+      "LoadedToAnalysisServices": 1,
+      "NameUpdatedAfterFill": 1,
+      "NavigationStepName": "Navigation",
+      "RelationshipInfoContainer": {
+        "columnCount": 14,
+        "keyColumnNames": [
+          "OrderID"
+        ],
+        "queryRelationships": [
+          {
+            "keyColumnCount": 1,
+            "keyColumn": 1,
+            "otherKeyColumnIdentity": "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Customers.{CustomerID,0}",
+            "KeyColumnCount": 1
+          },
+          {
+            "keyColumnCount": 1,
+            "keyColumn": 2,
+            "otherKeyColumnIdentity": "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Employees.{EmployeeID,0}",
+            "KeyColumnCount": 1
+          },
+          {
+            "keyColumnCount": 1,
+            "keyColumn": 6,
+            "otherKeyColumnIdentity": "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Shippers.{ShipperID,0}",
+            "KeyColumnCount": 1
+          }
+        ],
+        "columnIdentities": [
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Orders.{OrderID,0}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Orders.{CustomerID,1}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Orders.{EmployeeID,2}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Orders.{OrderDate,3}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Orders.{RequiredDate,4}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Orders.{ShippedDate,5}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Orders.{ShipVia,6}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Orders.{Freight,7}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Orders.{ShipName,8}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Orders.{ShipAddress,9}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Orders.{ShipCity,10}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Orders.{ShipRegion,11}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Orders.{ShipPostalCode,12}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Orders.{ShipCountry,13}"
+        ],
+        "ColumnCount": 14,
+        "KeyColumnNames": [
+          "OrderID"
+        ],
+        "ColumnIdentities": [
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Orders.{OrderID,0}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Orders.{CustomerID,1}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Orders.{EmployeeID,2}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Orders.{OrderDate,3}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Orders.{RequiredDate,4}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Orders.{ShippedDate,5}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Orders.{ShipVia,6}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Orders.{Freight,7}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Orders.{ShipName,8}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Orders.{ShipAddress,9}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Orders.{ShipCity,10}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Orders.{ShipRegion,11}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Orders.{ShipPostalCode,12}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Orders.{ShipCountry,13}"
+        ],
+        "RelationshipInfo": [
+          {
+            "keyColumnCount": 1,
+            "keyColumn": 1,
+            "otherKeyColumnIdentity": "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Customers.{CustomerID,0}",
+            "KeyColumnCount": 1
+          },
+          {
+            "keyColumnCount": 1,
+            "keyColumn": 2,
+            "otherKeyColumnIdentity": "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Employees.{EmployeeID,0}",
+            "KeyColumnCount": 1
+          },
+          {
+            "keyColumnCount": 1,
+            "keyColumn": 6,
+            "otherKeyColumnIdentity": "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Shippers.{ShipperID,0}",
+            "KeyColumnCount": 1
+          }
+        ]
+      },
+      "ResultType": "Table"
+    },
+    "Section1/Orders/Source": null,
+    "Section1/Orders/Orders_table": null,
+    "Section1/Order Details": {
+      "BufferNextRefresh": 0,
+      "FillColumnNames": [
+        "OrderID",
+        "ProductID",
+        "UnitPrice",
+        "Quantity",
+        "Discount"
+      ],
+      "IsDirectQuery": 0,
+      "IsLastAnalysisServicesFormulaTextCollection": 1,
+      "IsPrivate": 0,
+      "LastAnalysisServicesFormulaText": {
+        "IncludesReferencedQueries": true
+      },
+      "LoadedToAnalysisServices": 1,
+      "NameUpdatedAfterFill": 1,
+      "NavigationStepName": "Navigation",
+      "RelationshipInfoContainer": {
+        "columnCount": 5,
+        "keyColumnNames": [
+          "OrderID",
+          "ProductID"
+        ],
+        "queryRelationships": [
+          {
+            "keyColumnCount": 1,
+            "keyColumn": 0,
+            "otherKeyColumnIdentity": "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Orders.{OrderID,0}",
+            "KeyColumnCount": 1
+          },
+          {
+            "keyColumnCount": 1,
+            "keyColumn": 1,
+            "otherKeyColumnIdentity": "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Products.{ProductID,0}",
+            "KeyColumnCount": 1
+          }
+        ],
+        "columnIdentities": [
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Order_Details.{OrderID,0}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Order_Details.{ProductID,1}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Order_Details.{UnitPrice,2}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Order_Details.{Quantity,3}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Order_Details.{Discount,4}"
+        ],
+        "ColumnCount": 5,
+        "KeyColumnNames": [
+          "OrderID",
+          "ProductID"
+        ],
+        "ColumnIdentities": [
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Order_Details.{OrderID,0}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Order_Details.{ProductID,1}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Order_Details.{UnitPrice,2}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Order_Details.{Quantity,3}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Order_Details.{Discount,4}"
+        ],
+        "RelationshipInfo": [
+          {
+            "keyColumnCount": 1,
+            "keyColumn": 0,
+            "otherKeyColumnIdentity": "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Orders.{OrderID,0}",
+            "KeyColumnCount": 1
+          },
+          {
+            "keyColumnCount": 1,
+            "keyColumn": 1,
+            "otherKeyColumnIdentity": "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Products.{ProductID,0}",
+            "KeyColumnCount": 1
+          }
+        ]
+      },
+      "ResultType": "Table"
+    },
+    "Section1/Order Details/Source": null,
+    "Section1/Order Details/Order_Details_table": null,
+    "Section1/Products": {
+      "BufferNextRefresh": 0,
+      "FillColumnNames": [
+        "ProductID",
+        "ProductName",
+        "SupplierID",
+        "CategoryID",
+        "QuantityPerUnit",
+        "UnitPrice",
+        "UnitsInStock",
+        "UnitsOnOrder",
+        "ReorderLevel",
+        "Discontinued"
+      ],
+      "IsDirectQuery": 0,
+      "IsLastAnalysisServicesFormulaTextCollection": 1,
+      "IsPrivate": 0,
+      "LastAnalysisServicesFormulaText": {
+        "IncludesReferencedQueries": true
+      },
+      "LoadedToAnalysisServices": 1,
+      "NameUpdatedAfterFill": 1,
+      "NavigationStepName": "Navigation",
+      "RelationshipInfoContainer": {
+        "columnCount": 10,
+        "keyColumnNames": [
+          "ProductID"
+        ],
+        "queryRelationships": [
+          {
+            "keyColumnCount": 1,
+            "keyColumn": 3,
+            "otherKeyColumnIdentity": "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Categories.{CategoryID,0}",
+            "KeyColumnCount": 1
+          },
+          {
+            "keyColumnCount": 1,
+            "keyColumn": 2,
+            "otherKeyColumnIdentity": "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Suppliers.{SupplierID,0}",
+            "KeyColumnCount": 1
+          }
+        ],
+        "columnIdentities": [
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Products.{ProductID,0}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Products.{ProductName,1}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Products.{SupplierID,2}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Products.{CategoryID,3}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Products.{QuantityPerUnit,4}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Products.{UnitPrice,5}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Products.{UnitsInStock,6}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Products.{UnitsOnOrder,7}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Products.{ReorderLevel,8}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Products.{Discontinued,9}"
+        ],
+        "ColumnCount": 10,
+        "KeyColumnNames": [
+          "ProductID"
+        ],
+        "ColumnIdentities": [
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Products.{ProductID,0}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Products.{ProductName,1}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Products.{SupplierID,2}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Products.{CategoryID,3}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Products.{QuantityPerUnit,4}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Products.{UnitPrice,5}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Products.{UnitsInStock,6}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Products.{UnitsOnOrder,7}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Products.{ReorderLevel,8}",
+          "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Products.{Discontinued,9}"
+        ],
+        "RelationshipInfo": [
+          {
+            "keyColumnCount": 1,
+            "keyColumn": 3,
+            "otherKeyColumnIdentity": "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Categories.{CategoryID,0}",
+            "KeyColumnCount": 1
+          },
+          {
+            "keyColumnCount": 1,
+            "keyColumn": 2,
+            "otherKeyColumnIdentity": "OData/https:\\/\\/services.odata.org:443\\/V3\\/Northwind\\/Northwind.svc\\//Suppliers.{SupplierID,0}",
+            "KeyColumnCount": 1
+          }
+        ]
+      },
+      "ResultType": "Table"
+    },
+    "Section1/Products/Source": null,
+    "Section1/Products/Products_table": null,
+    "Section1/FileLocation": {
+      "BufferNextRefresh": 1,
+      "FillEnabled": 0,
+      "FillObjectType": "ConnectionOnly",
+      "FillToDataModelEnabled": 0,
+      "IsPrivate": 0,
+      "LoadToReportDisabled": 1,
+      "NavigationStepName": "Navigation",
+      "ResultType": "Text"
+    }
+  }
+}

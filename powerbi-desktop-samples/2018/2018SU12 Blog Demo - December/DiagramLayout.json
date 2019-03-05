@@ -1,0 +1,444 @@
+{
+  "version": "1.0.0",
+  "diagrams": [
+    {
+      "name": "All tables",
+      "zoomValue": 60.977647540860779,
+      "isDefault": true,
+      "tables": [
+        "Calendar",
+        "Categories",
+        "Customers",
+        "Order Details",
+        "Orders",
+        "Products",
+        "Sales"
+      ],
+      "layout": {
+        "nodes": [
+          {
+            "layedOut": false,
+            "nodeIndex": "Calendar",
+            "width": 180,
+            "height": 210,
+            "left": 293.46488469498507,
+            "top": 793.2045812751345
+          },
+          {
+            "layedOut": false,
+            "nodeIndex": "Categories",
+            "width": 180,
+            "height": 220,
+            "left": 1525.4078255301538,
+            "top": 145.98414066642843
+          },
+          {
+            "layedOut": false,
+            "nodeIndex": "Customers",
+            "width": 180,
+            "height": 220,
+            "left": 1.1368683772161603E-13,
+            "top": 795.12607482145256
+          },
+          {
+            "layedOut": false,
+            "nodeIndex": "Order Details",
+            "width": 180,
+            "height": 220,
+            "left": 10.253412693327732,
+            "top": 1.1368683772161603E-13
+          },
+          {
+            "layedOut": false,
+            "nodeIndex": "Orders",
+            "width": 180,
+            "height": 220,
+            "left": 324.55607875107512,
+            "top": 397.56303741072634
+          },
+          {
+            "layedOut": false,
+            "nodeIndex": "Products",
+            "width": 180,
+            "height": 220,
+            "left": 1527.1320940335791,
+            "top": 760.70940804660313
+          },
+          {
+            "layedOut": false,
+            "nodeIndex": "Sales",
+            "width": 266,
+            "height": 807,
+            "left": 791.068727925813,
+            "top": 30.94945456345242
+          }
+        ],
+        "edges": [
+          {
+            "layedOut": true,
+            "fromNodeIndex": "Sales",
+            "fromNodeItem": "OrderDate",
+            "fromLocation": {
+              "x": 913.068728,
+              "y": 837.94945456345238
+            },
+            "fromShapeRotateAngle": 90,
+            "toNodeIndex": "Calendar",
+            "toNodeItem": "Date",
+            "toLocation": {
+              "x": 473.46488469498496,
+              "y": 898.204581
+            },
+            "toShapeRotateAngle": 360,
+            "points": [
+              {
+                "x": 913.068728,
+                "y": 855.94945456345238
+              },
+              {
+                "x": 913.068728,
+                "y": 896.204581
+              },
+              {
+                "x": 911.068728,
+                "y": 898.204581
+              },
+              {
+                "x": 491.464884694985,
+                "y": 898.204581
+              }
+            ],
+            "crossFilterLocation": {
+              "x": 701.26680634749255,
+              "y": 898.204581
+            },
+            "crossFilterAngle": 0
+          },
+          {
+            "layedOut": true,
+            "fromNodeIndex": "Orders",
+            "fromNodeItem": "CustomerID",
+            "fromLocation": {
+              "x": 414.556079,
+              "y": 617.56303741072634
+            },
+            "fromShapeRotateAngle": 90,
+            "toNodeIndex": "Customers",
+            "toNodeItem": "CustomerID",
+            "toLocation": {
+              "x": 90,
+              "y": 795.12607482145256
+            },
+            "toShapeRotateAngle": 270,
+            "points": [
+              {
+                "x": 414.556079,
+                "y": 635.56303741072634
+              },
+              {
+                "x": 414.556079,
+                "y": 704.344556
+              },
+              {
+                "x": 412.556079,
+                "y": 706.344556
+              },
+              {
+                "x": 92,
+                "y": 706.344556
+              },
+              {
+                "x": 90,
+                "y": 708.344556
+              },
+              {
+                "x": 90,
+                "y": 777.12607482145256
+              }
+            ],
+            "crossFilterLocation": {
+              "x": 252.2780395,
+              "y": 706.344556
+            },
+            "crossFilterAngle": 0
+          },
+          {
+            "layedOut": true,
+            "fromNodeIndex": "Order Details",
+            "fromNodeItem": "OrderID",
+            "fromLocation": {
+              "x": 100.253413,
+              "y": 220.00000000000014
+            },
+            "fromShapeRotateAngle": 90,
+            "toNodeIndex": "Orders",
+            "toNodeItem": "OrderID",
+            "toLocation": {
+              "x": 414.556079,
+              "y": 397.56303741072645
+            },
+            "toShapeRotateAngle": 270,
+            "points": [
+              {
+                "x": 100.253413,
+                "y": 238.00000000000014
+              },
+              {
+                "x": 100.253413,
+                "y": 306.781518
+              },
+              {
+                "x": 102.253413,
+                "y": 308.781518
+              },
+              {
+                "x": 412.556079,
+                "y": 308.781518
+              },
+              {
+                "x": 414.556079,
+                "y": 310.781518
+              },
+              {
+                "x": 414.556079,
+                "y": 379.56303741072645
+              }
+            ],
+            "crossFilterLocation": {
+              "x": 257.404746,
+              "y": 308.781518
+            },
+            "crossFilterAngle": 180
+          },
+          {
+            "layedOut": true,
+            "fromNodeIndex": "Products",
+            "fromNodeItem": "CategoryID",
+            "fromLocation": {
+              "x": 1627.26996,
+              "y": 760.70940804660313
+            },
+            "fromShapeRotateAngle": 270,
+            "toNodeIndex": "Categories",
+            "toNodeItem": "CategoryID",
+            "toLocation": {
+              "x": 1605.26996,
+              "y": 365.98414066642852
+            },
+            "toShapeRotateAngle": 90,
+            "points": [
+              {
+                "x": 1627.26996,
+                "y": 742.70940804660313
+              },
+              {
+                "x": 1627.26996,
+                "y": 565.346774
+              },
+              {
+                "x": 1625.26996,
+                "y": 563.346774
+              },
+              {
+                "x": 1607.26996,
+                "y": 563.346774
+              },
+              {
+                "x": 1605.26996,
+                "y": 561.346774
+              },
+              {
+                "x": 1605.26996,
+                "y": 383.98414066642852
+              }
+            ],
+            "crossFilterLocation": {
+              "x": 1627.26996,
+              "y": 654.02809102330161
+            },
+            "crossFilterAngle": 90
+          },
+          {
+            "layedOut": true,
+            "fromNodeIndex": "Sales",
+            "fromNodeItem": "SalesOrderID",
+            "fromLocation": {
+              "x": 791.06872792581316,
+              "y": 434.449455
+            },
+            "fromShapeRotateAngle": 180,
+            "toNodeIndex": "Orders",
+            "toNodeItem": "OrderID",
+            "toLocation": {
+              "x": 504.55607875107506,
+              "y": 507.563037
+            },
+            "toShapeRotateAngle": 360,
+            "points": [
+              {
+                "x": 773.06872792581316,
+                "y": 434.449455
+              },
+              {
+                "x": 649.8124035,
+                "y": 434.449455
+              },
+              {
+                "x": 647.8124035,
+                "y": 436.449455
+              },
+              {
+                "x": 647.8124035,
+                "y": 505.563037
+              },
+              {
+                "x": 645.8124035,
+                "y": 507.563037
+              },
+              {
+                "x": 522.55607875107512,
+                "y": 507.563037
+              }
+            ],
+            "crossFilterLocation": {
+              "x": 647.8124035,
+              "y": 471.00624600000003
+            },
+            "crossFilterAngle": 270
+          },
+          {
+            "layedOut": true,
+            "fromNodeIndex": "Sales",
+            "fromNodeItem": "ProdID",
+            "fromLocation": {
+              "x": 935.068728,
+              "y": 837.94945456345238
+            },
+            "fromShapeRotateAngle": 90,
+            "toNodeIndex": "Products",
+            "toNodeItem": "ProductID",
+            "toLocation": {
+              "x": 1527.1320940335791,
+              "y": 870.709408
+            },
+            "toShapeRotateAngle": 180,
+            "points": [
+              {
+                "x": 935.068728,
+                "y": 855.94945456345238
+              },
+              {
+                "x": 935.068728,
+                "y": 868.709408
+              },
+              {
+                "x": 937.068728,
+                "y": 870.709408
+              },
+              {
+                "x": 1509.1320940335791,
+                "y": 870.709408
+              }
+            ],
+            "crossFilterLocation": {
+              "x": 1223.1004110167896,
+              "y": 870.709408
+            },
+            "crossFilterAngle": 180
+          }
+        ],
+        "boundingBoxPosition": {
+          "x": 0,
+          "y": 0
+        },
+        "boundingBoxWidth": 1707.1320940335791,
+        "boundingBoxHeight": 1015.1260748214524
+      }
+    },
+    {
+      "name": "Simple view",
+      "zoomValue": 56.820819690404335,
+      "isDefault": false,
+      "tables": [
+        "Calendar",
+        "Sales"
+      ],
+      "layout": {
+        "nodes": [
+          {
+            "layedOut": false,
+            "nodeIndex": "Calendar",
+            "width": 180,
+            "height": 217,
+            "left": 575.68106517412355,
+            "top": 263.97753059243678
+          },
+          {
+            "layedOut": false,
+            "nodeIndex": "Sales",
+            "width": 180,
+            "height": 219,
+            "left": 235.66297592981232,
+            "top": 264.31225656975926
+          }
+        ],
+        "edges": [
+          {
+            "layedOut": true,
+            "fromNodeIndex": "Sales",
+            "fromNodeItem": "OrderDate",
+            "fromLocation": {
+              "x": 415.66297592981232,
+              "y": 384.144894
+            },
+            "fromShapeRotateAngle": 360,
+            "toNodeIndex": "Calendar",
+            "toNodeItem": "Date",
+            "toLocation": {
+              "x": 575.68106517412366,
+              "y": 362.144894
+            },
+            "toShapeRotateAngle": 180,
+            "points": [
+              {
+                "x": 433.66297592981232,
+                "y": 384.144894
+              },
+              {
+                "x": 493.67202050000003,
+                "y": 384.144894
+              },
+              {
+                "x": 495.67202050000003,
+                "y": 382.144894
+              },
+              {
+                "x": 495.67202050000003,
+                "y": 364.144894
+              },
+              {
+                "x": 497.67202050000003,
+                "y": 362.144894
+              },
+              {
+                "x": 557.68106517412366,
+                "y": 362.144894
+              }
+            ],
+            "crossFilterLocation": {
+              "x": 495.67202050000003,
+              "y": 373.144894
+            },
+            "crossFilterAngle": 90
+          }
+        ],
+        "boundingBoxPosition": {
+          "x": 0,
+          "y": 0
+        },
+        "boundingBoxWidth": 520.01808924431123,
+        "boundingBoxHeight": 219.33472597732248
+      }
+    }
+  ]
+}

@@ -1,0 +1,310 @@
+{
+  "AllFormulas": {
+    "Relationships": "AAAAAA=="
+  },
+  "Formulas": {
+    "Section1/Company": {
+      "BufferNextRefresh": 0,
+      "FillColumnNames": [
+        "Company ID",
+        "Company Size"
+      ],
+      "IsDirectQuery": 0,
+      "IsLastAnalysisServicesFormulaTextCollection": 1,
+      "IsPrivate": 0,
+      "LastAnalysisServicesFormulaText": {
+        "IncludesReferencedQueries": true
+      },
+      "LoadedToAnalysisServices": 1,
+      "NavigationStepName": "Navigation",
+      "RelationshipInfoContainer": {
+        "columnCount": 2,
+        "keyColumnNames": [],
+        "queryRelationships": [],
+        "columnIdentities": [
+          "Section1/Company/Changed Type.{Company ID,0}",
+          "Section1/Company/Changed Type.{Company Size,1}"
+        ],
+        "ColumnCount": 2,
+        "KeyColumnNames": [],
+        "ColumnIdentities": [
+          "Section1/Company/Changed Type.{Company ID,0}",
+          "Section1/Company/Changed Type.{Company Size,1}"
+        ],
+        "RelationshipInfo": []
+      },
+      "ResultType": "Table"
+    },
+    "Section1/Company/Source": null,
+    "Section1/Company/Company_Sheet": null,
+    "Section1/Customer Table": {
+      "BufferNextRefresh": 0,
+      "FillColumnNames": [
+        "Customer ID",
+        "Tenure",
+        "Geography ID",
+        "Completed tutorial",
+        "Subscription ID",
+        "Role",
+        "Company ID",
+        "Rating",
+        "Theme",
+        "Original Score"
+      ],
+      "IsDirectQuery": 0,
+      "IsLastAnalysisServicesFormulaTextCollection": 1,
+      "IsPrivate": 0,
+      "LastAnalysisServicesFormulaText": {
+        "IncludesReferencedQueries": true
+      },
+      "LoadedToAnalysisServices": 1,
+      "NavigationStepName": "Navigation",
+      "RelationshipInfoContainer": {
+        "columnCount": 10,
+        "keyColumnNames": [],
+        "queryRelationships": [],
+        "columnIdentities": [
+          "Section1/Customer Table/Changed Type.{Customer ID,0}",
+          "Section1/Customer Table/Changed Type.{Tenure,1}",
+          "Section1/Customer Table/Changed Type.{Geography ID,2}",
+          "Section1/Customer Table/Changed Type.{Completed tutorial,3}",
+          "Section1/Customer Table/Changed Type.{Subscription ID,4}",
+          "Section1/Customer Table/Changed Type.{Role,5}",
+          "Section1/Customer Table/Changed Type.{Company ID,6}",
+          "Section1/Customer Table/Changed Type.{Rating,7}",
+          "Section1/Customer Table/Changed Type.{Theme,8}",
+          "Section1/Customer Table/Changed Type.{Original Score,9}"
+        ],
+        "ColumnCount": 10,
+        "KeyColumnNames": [],
+        "ColumnIdentities": [
+          "Section1/Customer Table/Changed Type.{Customer ID,0}",
+          "Section1/Customer Table/Changed Type.{Tenure,1}",
+          "Section1/Customer Table/Changed Type.{Geography ID,2}",
+          "Section1/Customer Table/Changed Type.{Completed tutorial,3}",
+          "Section1/Customer Table/Changed Type.{Subscription ID,4}",
+          "Section1/Customer Table/Changed Type.{Role,5}",
+          "Section1/Customer Table/Changed Type.{Company ID,6}",
+          "Section1/Customer Table/Changed Type.{Rating,7}",
+          "Section1/Customer Table/Changed Type.{Theme,8}",
+          "Section1/Customer Table/Changed Type.{Original Score,9}"
+        ],
+        "RelationshipInfo": []
+      },
+      "ResultType": "Table"
+    },
+    "Section1/Customer Table/Source": null,
+    "Section1/Customer Table/Customer Table_Sheet": null,
+    "Section1/Customer Table/Promoted Headers": null,
+    "Section1/Customer Table/Changed Type": null,
+    "Section1/Device": {
+      "BufferNextRefresh": 0,
+      "FillColumnNames": [
+        "ID",
+        "Customer ID",
+        "device"
+      ],
+      "IsDirectQuery": 0,
+      "IsLastAnalysisServicesFormulaTextCollection": 1,
+      "IsPrivate": 0,
+      "LastAnalysisServicesFormulaText": {
+        "IncludesReferencedQueries": true
+      },
+      "LoadedToAnalysisServices": 1,
+      "NavigationStepName": "Navigation",
+      "RelationshipInfoContainer": {
+        "columnCount": 3,
+        "keyColumnNames": [],
+        "queryRelationships": [],
+        "columnIdentities": [
+          "Section1/Device/Changed Type.{ID,0}",
+          "Section1/Device/Changed Type.{Customer ID,1}",
+          "Section1/Device/Changed Type.{device,2}"
+        ],
+        "ColumnCount": 3,
+        "KeyColumnNames": [],
+        "ColumnIdentities": [
+          "Section1/Device/Changed Type.{ID,0}",
+          "Section1/Device/Changed Type.{Customer ID,1}",
+          "Section1/Device/Changed Type.{device,2}"
+        ],
+        "RelationshipInfo": []
+      },
+      "ResultType": "Table"
+    },
+    "Section1/Device/Source": null,
+    "Section1/Device/Device_Sheet": null,
+    "Section1/Device/Promoted Headers": null,
+    "Section1/Device/Changed Type": null,
+    "Section1/Geography": {
+      "BufferNextRefresh": 0,
+      "FillColumnNames": [
+        "Geography ID",
+        "Continent",
+        "Country-Region"
+      ],
+      "IsDirectQuery": 0,
+      "IsLastAnalysisServicesFormulaTextCollection": 1,
+      "IsPrivate": 0,
+      "LastAnalysisServicesFormulaText": {
+        "IncludesReferencedQueries": true
+      },
+      "LoadedToAnalysisServices": 1,
+      "NavigationStepName": "Navigation",
+      "RelationshipInfoContainer": {
+        "columnCount": 3,
+        "keyColumnNames": [],
+        "queryRelationships": [],
+        "columnIdentities": [
+          "Section1/Geography/Changed Type.{Geography ID,0}",
+          "Section1/Geography/Changed Type.{Continent,1}",
+          "Section1/Geography/Changed Type.{Country-Region,2}"
+        ],
+        "ColumnCount": 3,
+        "KeyColumnNames": [],
+        "ColumnIdentities": [
+          "Section1/Geography/Changed Type.{Geography ID,0}",
+          "Section1/Geography/Changed Type.{Continent,1}",
+          "Section1/Geography/Changed Type.{Country-Region,2}"
+        ],
+        "RelationshipInfo": []
+      },
+      "ResultType": "Table"
+    },
+    "Section1/Geography/Source": null,
+    "Section1/Geography/Geography_Sheet": null,
+    "Section1/Geography/Promoted Headers": null,
+    "Section1/Geography/Changed Type": null,
+    "Section1/Role": {
+      "BufferNextRefresh": 0,
+      "FillColumnNames": [
+        "Role ID",
+        "Role in Org"
+      ],
+      "IsDirectQuery": 0,
+      "IsLastAnalysisServicesFormulaTextCollection": 1,
+      "IsPrivate": 0,
+      "LastAnalysisServicesFormulaText": {
+        "IncludesReferencedQueries": true
+      },
+      "LoadedToAnalysisServices": 1,
+      "NavigationStepName": "Navigation",
+      "RelationshipInfoContainer": {
+        "columnCount": 2,
+        "keyColumnNames": [],
+        "queryRelationships": [],
+        "columnIdentities": [
+          "Section1/Role/Changed Type.{Role ID,0}",
+          "Section1/Role/Changed Type.{Role in Org,1}"
+        ],
+        "ColumnCount": 2,
+        "KeyColumnNames": [],
+        "ColumnIdentities": [
+          "Section1/Role/Changed Type.{Role ID,0}",
+          "Section1/Role/Changed Type.{Role in Org,1}"
+        ],
+        "RelationshipInfo": []
+      },
+      "ResultType": "Table"
+    },
+    "Section1/Role/Source": null,
+    "Section1/Role/Role_Sheet": null,
+    "Section1/Role/Promoted Headers": null,
+    "Section1/Role/Changed Type": null,
+    "Section1/Subscription": {
+      "BufferNextRefresh": 0,
+      "FillColumnNames": [
+        "Subscription ID",
+        "Subscription Type"
+      ],
+      "IsDirectQuery": 0,
+      "IsLastAnalysisServicesFormulaTextCollection": 1,
+      "IsPrivate": 0,
+      "LastAnalysisServicesFormulaText": {
+        "IncludesReferencedQueries": true
+      },
+      "LoadedToAnalysisServices": 1,
+      "NavigationStepName": "Navigation",
+      "RelationshipInfoContainer": {
+        "columnCount": 2,
+        "keyColumnNames": [],
+        "queryRelationships": [],
+        "columnIdentities": [
+          "Section1/Subscription/Changed Type.{Subscription ID,0}",
+          "Section1/Subscription/Changed Type.{Subscription Type,1}"
+        ],
+        "ColumnCount": 2,
+        "KeyColumnNames": [],
+        "ColumnIdentities": [
+          "Section1/Subscription/Changed Type.{Subscription ID,0}",
+          "Section1/Subscription/Changed Type.{Subscription Type,1}"
+        ],
+        "RelationshipInfo": []
+      },
+      "ResultType": "Table"
+    },
+    "Section1/Support Tickets": {
+      "BufferNextRefresh": 0,
+      "FillColumnNames": [
+        "Support Ticket ID",
+        "Customer ID",
+        "Date Created",
+        "Date Completed",
+        "Escalated",
+        "Duration"
+      ],
+      "IsDirectQuery": 0,
+      "IsLastAnalysisServicesFormulaTextCollection": 1,
+      "IsPrivate": 0,
+      "LastAnalysisServicesFormulaText": {
+        "IncludesReferencedQueries": true
+      },
+      "LoadedToAnalysisServices": 1,
+      "NavigationStepName": "Navigation",
+      "RelationshipInfoContainer": {
+        "columnCount": 6,
+        "keyColumnNames": [],
+        "queryRelationships": [],
+        "columnIdentities": [
+          "Section1/Support Tickets/Changed Type.{Support Ticket ID,0}",
+          "Section1/Support Tickets/Changed Type.{Customer ID,1}",
+          "Section1/Support Tickets/Changed Type.{Date Created,2}",
+          "Section1/Support Tickets/Changed Type.{Date Completed,3}",
+          "Section1/Support Tickets/Changed Type.{Escalated,4}",
+          "Section1/Support Tickets/Changed Type.{Duration,5}"
+        ],
+        "ColumnCount": 6,
+        "KeyColumnNames": [],
+        "ColumnIdentities": [
+          "Section1/Support Tickets/Changed Type.{Support Ticket ID,0}",
+          "Section1/Support Tickets/Changed Type.{Customer ID,1}",
+          "Section1/Support Tickets/Changed Type.{Date Created,2}",
+          "Section1/Support Tickets/Changed Type.{Date Completed,3}",
+          "Section1/Support Tickets/Changed Type.{Escalated,4}",
+          "Section1/Support Tickets/Changed Type.{Duration,5}"
+        ],
+        "RelationshipInfo": []
+      },
+      "ResultType": "Table"
+    },
+    "Section1/Support Tickets/Source": null,
+    "Section1/Support Tickets/Support Tickets_Sheet": null,
+    "Section1/Support Tickets/Promoted Headers": null,
+    "Section1/Support Tickets/Changed Type": null,
+    "Section1/Company/Promoted Headers": null,
+    "Section1/Company/Changed Type": null,
+    "Section1/Filepath": {
+      "FillEnabled": 0,
+      "FillObjectType": "ConnectionOnly",
+      "FillToDataModelEnabled": 0,
+      "IsPrivate": 0,
+      "LoadToReportDisabled": 1,
+      "NavigationStepName": "Navigation",
+      "ResultType": "Text"
+    },
+    "Section1/Subscription/Source": null,
+    "Section1/Subscription/Subscription_Sheet": null,
+    "Section1/Subscription/Promoted Headers": null,
+    "Section1/Subscription/Changed Type": null
+  }
+}

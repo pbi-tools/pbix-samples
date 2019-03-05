@@ -1,0 +1,82 @@
+{
+  "name": "Company",
+  "columns": [
+    {
+      "name": "Company ID",
+      "dataType": "int64",
+      "sourceColumn": "Company ID",
+      "formatString": "0",
+      "summarizeBy": "none",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Int64#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "Company ID"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "Company Size",
+      "dataType": "string",
+      "sourceColumn": "Company Size",
+      "summarizeBy": "none",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"Text\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "String#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "Company Size"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    }
+  ],
+  "partitions": [
+    {
+      "name": "Company-55bf1cc3-660c-41d7-aede-3d6bf599b179",
+      "mode": "import",
+      "source": {
+        "query": "SELECT * FROM [Company]",
+        "dataSource": "55e2e353-f4eb-406a-b037-97a74bb064d1"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "a66267dc-f3b5-4d31-aee3-a0e18e96edf4"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "Company"
+    }
+  ]
+}

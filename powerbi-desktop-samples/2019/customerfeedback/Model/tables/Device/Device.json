@@ -1,0 +1,111 @@
+{
+  "name": "Device",
+  "columns": [
+    {
+      "name": "ID",
+      "dataType": "int64",
+      "sourceColumn": "ID",
+      "formatString": "0",
+      "summarizeBy": "count",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Int64#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "ID"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "Customer ID",
+      "dataType": "int64",
+      "sourceColumn": "Customer ID",
+      "formatString": "0",
+      "summarizeBy": "none",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Int64#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "Customer ID"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "device",
+      "dataType": "string",
+      "sourceColumn": "device",
+      "summarizeBy": "none",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"Text\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "String#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "device"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    }
+  ],
+  "partitions": [
+    {
+      "name": "Device-262d3174-2c63-47ef-a012-b2f19c909da2",
+      "mode": "import",
+      "source": {
+        "query": "SELECT * FROM [Device]",
+        "dataSource": "0c1b5e4e-d9d4-45ba-b7ec-fb799c6971ab"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "49b94b15-6466-45c5-a512-99b380717b89"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "Device"
+    }
+  ]
+}

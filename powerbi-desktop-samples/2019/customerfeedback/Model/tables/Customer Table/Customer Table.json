@@ -1,0 +1,312 @@
+{
+  "name": "Customer Table",
+  "columns": [
+    {
+      "name": "Customer ID",
+      "dataType": "int64",
+      "sourceColumn": "Customer ID",
+      "formatString": "0",
+      "summarizeBy": "none",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Int64#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "Customer ID"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "Tenure",
+      "dataType": "int64",
+      "sourceColumn": "Tenure",
+      "formatString": "0",
+      "summarizeBy": "sum",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Int64#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "Tenure"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "Geography ID",
+      "dataType": "int64",
+      "sourceColumn": "Geography ID",
+      "formatString": "0",
+      "summarizeBy": "none",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Int64#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "Geography ID"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "Completed tutorial",
+      "dataType": "string",
+      "sourceColumn": "Completed tutorial",
+      "summarizeBy": "none",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"Text\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "String#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "Completed tutorial"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "Subscription ID",
+      "dataType": "int64",
+      "sourceColumn": "Subscription ID",
+      "formatString": "0",
+      "summarizeBy": "none",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Int64#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "Subscription ID"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "Role",
+      "dataType": "int64",
+      "sourceColumn": "Role",
+      "formatString": "0",
+      "summarizeBy": "none",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Int64#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "Role"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "Company ID",
+      "dataType": "int64",
+      "sourceColumn": "Company ID",
+      "formatString": "0",
+      "summarizeBy": "none",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Int64#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "Company ID"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "Rating",
+      "dataType": "string",
+      "sourceColumn": "Rating",
+      "summarizeBy": "none",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"Text\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "String#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "Rating"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "Theme",
+      "dataType": "string",
+      "sourceColumn": "Theme",
+      "summarizeBy": "none",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"Text\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "String#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "Theme"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "Original Score",
+      "dataType": "int64",
+      "sourceColumn": "Original Score",
+      "formatString": "0",
+      "summarizeBy": "sum",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Int64#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "Original Score"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    }
+  ],
+  "partitions": [
+    {
+      "name": "Customer Table-d8a5a18a-64e4-4a2b-8b4d-e636df7f13ea",
+      "mode": "import",
+      "source": {
+        "query": "SELECT * FROM [Customer Table]",
+        "dataSource": "4ad7d04f-32d3-4bea-ae74-7ff6ad6f6ba6"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "470719d4-2aa4-457b-ac19-c389ce78625e"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "Customer Table"
+    }
+  ]
+}

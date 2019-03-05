@@ -1,0 +1,32 @@
+{
+  "version": "3.20",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY18SU07",
+      "version": "3.22",
+      "type": 2
+    }
+  },
+  "activeSectionIndex": 0,
+  "defaultDrillFilterOtherVisuals": true,
+  "settings": {
+    "useStylableVisualContainerHeader": true,
+    "exportDataMode": 1,
+    "useNewFilterPaneExperience": true
+  },
+  "objects": {
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

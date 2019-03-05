@@ -1,0 +1,85 @@
+{
+  "name": "customerfeedback",
+  "compatibilityLevel": 1465,
+  "model": {
+    "culture": "en-US",
+    "relationships": [
+      {
+        "name": "7150b82e-1d0a-41bc-bbef-8ec08d84dda9",
+        "fromTable": "Support Tickets",
+        "fromColumn": "Date Created",
+        "toTable": "LocalDateTable_554232b0-b557-4ee7-8e22-2e21332a5111",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "d56e6dcb-8703-423a-b6e7-c4029768ce87",
+        "fromTable": "Support Tickets",
+        "fromColumn": "Date Completed",
+        "toTable": "LocalDateTable_c743a80e-9b75-4d85-8e4e-256be17fd40b",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "e3e4a71c-746a-4150-8ec0-1ae406e850ba",
+        "fromTable": "Customer Table",
+        "fromColumn": "Company ID",
+        "toTable": "Company",
+        "toColumn": "Company ID"
+      },
+      {
+        "name": "1939f036-fb5e-4aed-abef-7fa1dabd2f45",
+        "fromTable": "Device",
+        "fromColumn": "Customer ID",
+        "toTable": "Customer Table",
+        "toColumn": "Customer ID"
+      },
+      {
+        "name": "b78aaa71-6295-4ea2-bb7c-221867cd5014",
+        "fromTable": "Support Tickets",
+        "fromColumn": "Customer ID",
+        "toTable": "Customer Table",
+        "toColumn": "Customer ID"
+      },
+      {
+        "name": "21b58d75-c637-4b6d-94b0-89edcd939783",
+        "fromTable": "Customer Table",
+        "fromColumn": "Geography ID",
+        "toTable": "Geography",
+        "toColumn": "Geography ID"
+      },
+      {
+        "name": "fa3c94ec-70b1-4ea0-9e14-097fdaf0037c",
+        "fromTable": "Customer Table",
+        "fromColumn": "Subscription ID",
+        "toTable": "Subscription",
+        "toColumn": "Subscription ID"
+      },
+      {
+        "name": "82416c82-703f-4ce3-97ea-802c07d350e7",
+        "fromTable": "Customer Table",
+        "fromColumn": "Role",
+        "toTable": "Role",
+        "toColumn": "Role ID"
+      }
+    ],
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": "<LinguisticMetadata><LinguisticSchema Language=\"en-US\" DynamicImprovement=\"HighConfidence\" xmlns=\"http://schemas.microsoft.com/sqlserver/2016/01/linguisticschema\" /></LinguisticMetadata>"
+        }
+      }
+    ],
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.66.5376.1501 (19.02)"
+      }
+    ]
+  }
+}

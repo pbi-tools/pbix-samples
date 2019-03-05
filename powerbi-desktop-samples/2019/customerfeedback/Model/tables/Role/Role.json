@@ -1,0 +1,82 @@
+{
+  "name": "Role",
+  "columns": [
+    {
+      "name": "Role ID",
+      "dataType": "int64",
+      "sourceColumn": "Role ID",
+      "formatString": "0",
+      "summarizeBy": "none",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Int64#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "Role ID"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "Role in Org",
+      "dataType": "string",
+      "sourceColumn": "Role in Org",
+      "summarizeBy": "none",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"Text\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "String#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "Role in Org"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    }
+  ],
+  "partitions": [
+    {
+      "name": "Role-cddc80a9-a2b4-40eb-b140-90116506a47f",
+      "mode": "import",
+      "source": {
+        "query": "SELECT * FROM [Role]",
+        "dataSource": "fd977169-8b99-4c23-926f-c15569468797"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "33cb5260-706f-4178-ad87-b3016b64df55"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "Role"
+    }
+  ]
+}

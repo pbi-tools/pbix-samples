@@ -1,0 +1,5 @@
+{
+  "name": "5c5a9238-dc38-4374-90c9-109dc4f4f412",
+  "connectionString": "Provider=Microsoft.PowerBI.OleDb;location=Geography",
+  "impersonationMode": "impersonateCurrentUser"
+}

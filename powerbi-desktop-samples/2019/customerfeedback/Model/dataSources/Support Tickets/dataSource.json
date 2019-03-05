@@ -1,0 +1,5 @@
+{
+  "name": "ca32f204-db8f-42aa-ac77-7e8834fd40e9",
+  "connectionString": "Provider=Microsoft.PowerBI.OleDb;location=\"Support Tickets\"",
+  "impersonationMode": "impersonateCurrentUser"
+}

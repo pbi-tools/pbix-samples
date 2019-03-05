@@ -1,0 +1,229 @@
+{
+  "name": "Support Tickets",
+  "columns": [
+    {
+      "name": "Support Ticket ID",
+      "dataType": "int64",
+      "sourceColumn": "Support Ticket ID",
+      "formatString": "0",
+      "summarizeBy": "count",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Int64#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "Support Ticket ID"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "Customer ID",
+      "dataType": "int64",
+      "sourceColumn": "Customer ID",
+      "formatString": "0",
+      "summarizeBy": "none",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Int64#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "Customer ID"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "Date Created",
+      "dataType": "dateTime",
+      "sourceColumn": "Date Created",
+      "formatString": "dddd\\, mmmm d\\, yyyy",
+      "summarizeBy": "none",
+      "variations": [
+        {
+          "name": "Variation",
+          "relationship": "7150b82e-1d0a-41bc-bbef-8ec08d84dda9",
+          "defaultHierarchy": {
+            "table": "LocalDateTable_554232b0-b557-4ee7-8e22-2e21332a5111",
+            "hierarchy": "Date Hierarchy"
+          },
+          "isDefault": true
+        }
+      ],
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "UnderlyingDateTimeDataType",
+          "value": "Date"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"1033\" Group=\"LongDate\" FormatString=\"dddd, MMMM d, yyyy\" /></DateTimes></Format>"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "DateTime#####Date"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "Date Created"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "Date Completed",
+      "dataType": "dateTime",
+      "sourceColumn": "Date Completed",
+      "formatString": "dddd\\, mmmm d\\, yyyy",
+      "summarizeBy": "none",
+      "variations": [
+        {
+          "name": "Variation",
+          "relationship": "d56e6dcb-8703-423a-b6e7-c4029768ce87",
+          "defaultHierarchy": {
+            "table": "LocalDateTable_c743a80e-9b75-4d85-8e4e-256be17fd40b",
+            "hierarchy": "Date Hierarchy"
+          },
+          "isDefault": true
+        }
+      ],
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "UnderlyingDateTimeDataType",
+          "value": "Date"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"1033\" Group=\"LongDate\" FormatString=\"dddd, MMMM d, yyyy\" /></DateTimes></Format>"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "DateTime#####Date"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "Date Completed"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "Escalated",
+      "dataType": "int64",
+      "sourceColumn": "Escalated",
+      "formatString": "0",
+      "summarizeBy": "sum",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Int64#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "Escalated"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "Duration",
+      "dataType": "int64",
+      "sourceColumn": "Duration",
+      "formatString": "0",
+      "summarizeBy": "sum",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Int64#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "Duration"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    }
+  ],
+  "partitions": [
+    {
+      "name": "Support Tickets-10d5f326-c270-4a0a-832d-00965048ccd7",
+      "mode": "import",
+      "source": {
+        "query": "SELECT * FROM [Support Tickets]",
+        "dataSource": "ca32f204-db8f-42aa-ac77-7e8834fd40e9"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "d636ce44-ff33-403f-a72c-85131f8cd851"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "Support Tickets"
+    }
+  ]
+}

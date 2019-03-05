@@ -1,0 +1,12 @@
+{
+  "version": "1.0.0",
+  "diagrams": [
+    {
+      "name": "All tables",
+      "zoomValue": 100,
+      "isDefault": true,
+      "tables": [],
+      "layout": {}
+    }
+  ]
+}

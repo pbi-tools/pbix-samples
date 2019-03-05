@@ -1,0 +1,82 @@
+{
+  "name": "Subscription",
+  "columns": [
+    {
+      "name": "Subscription ID",
+      "dataType": "int64",
+      "sourceColumn": "Subscription ID",
+      "formatString": "0",
+      "summarizeBy": "none",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Int64#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "Subscription ID"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "Subscription Type",
+      "dataType": "string",
+      "sourceColumn": "Subscription Type",
+      "summarizeBy": "none",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"Text\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "String#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "Subscription Type"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    }
+  ],
+  "partitions": [
+    {
+      "name": "Subscription-dd7ce544-0a90-44d0-b7fc-85b55feaf97e",
+      "mode": "import",
+      "source": {
+        "query": "SELECT * FROM [Subscription]",
+        "dataSource": "b6c7924e-e8f9-411a-b4c4-a3673db596b5"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "7a367061-8f39-44e9-a08b-b0e0b64bda07"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "Subscription"
+    }
+  ]
+}

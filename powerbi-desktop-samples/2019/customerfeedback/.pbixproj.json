@@ -1,0 +1,12 @@
+{
+  "version": "0.3.1",
+  "queries": {
+    "Company": "55e2e353-f4eb-406a-b037-97a74bb064d1",
+    "Customer Table": "4ad7d04f-32d3-4bea-ae74-7ff6ad6f6ba6",
+    "Device": "0c1b5e4e-d9d4-45ba-b7ec-fb799c6971ab",
+    "Geography": "5c5a9238-dc38-4374-90c9-109dc4f4f412",
+    "Role": "fd977169-8b99-4c23-926f-c15569468797",
+    "Subscription": "b6c7924e-e8f9-411a-b4c4-a3673db596b5",
+    "Support Tickets": "ca32f204-db8f-42aa-ac77-7e8834fd40e9"
+  }
+}

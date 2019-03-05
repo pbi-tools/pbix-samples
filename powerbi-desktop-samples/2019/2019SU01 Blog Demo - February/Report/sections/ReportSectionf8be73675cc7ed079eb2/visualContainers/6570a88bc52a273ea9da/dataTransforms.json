@@ -1,0 +1,408 @@
+{
+  "objects": {
+    "legend": [
+      {
+        "properties": {
+          "show": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          },
+          "position": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          },
+          "showTitle": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          },
+          "labelColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "ThemeDataColor": {
+                    "ColorId": 1,
+                    "Percent": 0.4
+                  }
+                }
+              }
+            }
+          },
+          "fontSize": {
+            "expr": {
+              "Literal": {
+                "Value": "'9'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "valueAxis": [
+      {
+        "properties": {
+          "show": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          },
+          "fontSize": {
+            "expr": {
+              "Literal": {
+                "Value": "'13'"
+              }
+            }
+          },
+          "titleFontFamily": {
+            "expr": {
+              "Literal": {
+                "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "scalarKey": [
+      {
+        "properties": {
+          "min": {
+            "expr": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "LocalDateTable_8369bfaf-356a-4b8d-a282-dd2c1868a321"
+                      }
+                    },
+                    "Property": "Date"
+                  }
+                },
+                "Function": 3
+              }
+            }
+          }
+        },
+        "selector": {
+          "data": [
+            {
+              "roles": [
+                "Category"
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Category": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "Y": [
+      4
+    ],
+    "Series": [
+      5
+    ]
+  },
+  "projectionActiveItems": {
+    "Category": [
+      {
+        "queryRef": "Calendar.Date.Variation.Date Hierarchy.Year",
+        "suppressConcat": false
+      },
+      {
+        "queryRef": "Calendar.Date.Variation.Date Hierarchy.Quarter",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Year",
+        "Name": "Calendar.Date.Variation.Date Hierarchy.Year",
+        "Type": 3
+      },
+      {
+        "Restatement": "Quarter",
+        "Name": "Calendar.Date.Variation.Date Hierarchy.Quarter",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Month",
+        "Name": "Calendar.Date.Variation.Date Hierarchy.Month",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Day",
+        "Name": "Calendar.Date.Variation.Date Hierarchy.Day",
+        "Type": 3
+      },
+      {
+        "Restatement": "SalesAmount",
+        "Name": "Sum(Sales.SalesAmount)",
+        "Type": 1,
+        "Format": "\\$#,0;(\\$#,0);\\$#,0"
+      },
+      {
+        "Restatement": "Class",
+        "Name": "Sales.Class",
+        "Type": 2048
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Category",
+          "Projection": 0,
+          "isActive": true
+        },
+        {
+          "Name": "Category",
+          "Projection": 1,
+          "isActive": true
+        },
+        {
+          "Name": "Category",
+          "Projection": 2,
+          "isActive": false
+        },
+        {
+          "Name": "Category",
+          "Projection": 3,
+          "isActive": false
+        },
+        {
+          "Name": "Y",
+          "Projection": 4,
+          "isActive": false
+        },
+        {
+          "Name": "Series",
+          "Projection": 5,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Year",
+      "queryName": "Calendar.Date.Variation.Date Hierarchy.Year",
+      "roles": {
+        "Category": true
+      },
+      "type": {
+        "category": "Years",
+        "underlyingType": 66308
+      },
+      "expr": {
+        "HierarchyLevel": {
+          "Expression": {
+            "Hierarchy": {
+              "Expression": {
+                "PropertyVariationSource": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Calendar"
+                    }
+                  },
+                  "Name": "Variation",
+                  "Property": "Date"
+                }
+              },
+              "Hierarchy": "Date Hierarchy"
+            }
+          },
+          "Level": "Year"
+        }
+      }
+    },
+    {
+      "displayName": "Quarter",
+      "queryName": "Calendar.Date.Variation.Date Hierarchy.Quarter",
+      "roles": {
+        "Category": true
+      },
+      "type": {
+        "category": "Quarters",
+        "underlyingType": 262657
+      },
+      "expr": {
+        "HierarchyLevel": {
+          "Expression": {
+            "Hierarchy": {
+              "Expression": {
+                "PropertyVariationSource": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Calendar"
+                    }
+                  },
+                  "Name": "Variation",
+                  "Property": "Date"
+                }
+              },
+              "Hierarchy": "Date Hierarchy"
+            }
+          },
+          "Level": "Quarter"
+        }
+      }
+    },
+    {
+      "displayName": "Month",
+      "queryName": "Calendar.Date.Variation.Date Hierarchy.Month",
+      "roles": {
+        "Category": true
+      },
+      "type": {
+        "category": "Months",
+        "underlyingType": 131585
+      },
+      "expr": {
+        "HierarchyLevel": {
+          "Expression": {
+            "Hierarchy": {
+              "Expression": {
+                "PropertyVariationSource": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Calendar"
+                    }
+                  },
+                  "Name": "Variation",
+                  "Property": "Date"
+                }
+              },
+              "Hierarchy": "Date Hierarchy"
+            }
+          },
+          "Level": "Month"
+        }
+      }
+    },
+    {
+      "displayName": "Day",
+      "queryName": "Calendar.Date.Variation.Date Hierarchy.Day",
+      "roles": {
+        "Category": true
+      },
+      "type": {
+        "category": "DayOfMonth",
+        "underlyingType": 328452
+      },
+      "expr": {
+        "HierarchyLevel": {
+          "Expression": {
+            "Hierarchy": {
+              "Expression": {
+                "PropertyVariationSource": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Calendar"
+                    }
+                  },
+                  "Name": "Variation",
+                  "Property": "Date"
+                }
+              },
+              "Hierarchy": "Date Hierarchy"
+            }
+          },
+          "Level": "Day"
+        }
+      }
+    },
+    {
+      "displayName": "SalesAmount",
+      "format": "\\$#,0;(\\$#,0);\\$#,0",
+      "queryName": "Sum(Sales.SalesAmount)",
+      "roles": {
+        "Y": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Sales"
+                }
+              },
+              "Property": "SalesAmount"
+            }
+          },
+          "Function": 0
+        }
+      }
+    },
+    {
+      "displayName": "Class",
+      "queryName": "Sales.Class",
+      "roles": {
+        "Series": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Sales"
+            }
+          },
+          "Property": "Class"
+        }
+      }
+    },
+    {
+      "displayName": "Earliest Date",
+      "queryName": "Min(LocalDateTable_8369bfaf-356a-4b8d-a282-dd2c1868a321.Date)",
+      "roles": {},
+      "type": {
+        "category": "PaddedDateTableDates",
+        "underlyingType": 197127
+      },
+      "expr": {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "LocalDateTable_8369bfaf-356a-4b8d-a282-dd2c1868a321"
+                }
+              },
+              "Property": "Date"
+            }
+          },
+          "Function": 3
+        }
+      }
+    }
+  ]
+}

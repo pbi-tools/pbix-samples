@@ -1,0 +1,47 @@
+{
+  "version": "1.0.0",
+  "diagrams": [
+    {
+      "name": "All tables",
+      "zoomValue": 63.609254520368033,
+      "isDefault": true,
+      "tables": [],
+      "layout": {}
+    },
+    {
+      "name": "Simple view",
+      "zoomValue": 56.820819690404335,
+      "isDefault": false,
+      "tables": [
+        "Calendar",
+        "Sales"
+      ],
+      "layout": {
+        "boundingBoxHeight": 483.31225656975926,
+        "boundingBoxPosition": {
+          "x": 0,
+          "y": 0
+        },
+        "boundingBoxWidth": 755.68106517412355,
+        "nodes": [
+          {
+            "height": 217,
+            "layedOut": false,
+            "left": 575.68106517412355,
+            "nodeIndex": "Calendar",
+            "top": 263.97753059243678,
+            "width": 180
+          },
+          {
+            "height": 219,
+            "layedOut": false,
+            "left": 235.66297592981232,
+            "nodeIndex": "Sales",
+            "top": 264.31225656975926,
+            "width": 180
+          }
+        ]
+      }
+    }
+  ]
+}

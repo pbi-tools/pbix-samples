@@ -1,0 +1,5 @@
+{
+  "name": "300b9251-6ab8-4b82-98f7-19eaa32fa325",
+  "connectionString": "Provider=Microsoft.PowerBI.OleDb;location=Inventory",
+  "impersonationMode": "impersonateCurrentUser"
+}

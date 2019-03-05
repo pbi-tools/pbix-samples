@@ -1,0 +1,190 @@
+{
+  "id": 334102,
+  "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "ReportSection9962cb544dac62946fb5",
+      "id": 81055,
+      "name": "Pod6",
+      "parameters": "[{\"name\":\"Param_Filter\",\"boundFilter\":\"Filter\"}]"
+    },
+    {
+      "boundSection": "ReportSectionf8be73675cc7ed079eb2",
+      "name": "Pod4"
+    },
+    {
+      "boundSection": "ReportSectiond9852d518866c6ffa18e",
+      "name": "Pod"
+    },
+    {
+      "boundSection": "ReportSectionec0822a108ae5aab4978",
+      "name": "Pod1"
+    },
+    {
+      "boundSection": "ReportSection249be58f6d3543f04715",
+      "name": "Pod2"
+    },
+    {
+      "boundSection": "ReportSectiona412b15b015ff13cf371",
+      "name": "Pod3"
+    },
+    {
+      "boundSection": "ReportSection6aba98b0aef8bc432a7e",
+      "name": "Pod5"
+    },
+    {
+      "boundSection": "ReportSection2bc49ce390eda112064c",
+      "name": "Pod7"
+    },
+    {
+      "boundSection": "ReportSection0343ad445c1044784da9",
+      "name": "Pod8"
+    },
+    {
+      "boundSection": "ReportSectionebed226091df4ed77e2c",
+      "name": "Pod9"
+    },
+    {
+      "boundSection": "ReportSectionba707fe45428fea04e3d",
+      "name": "Pod10"
+    },
+    {
+      "boundSection": "ReportSectionf277cf69540d9c3ffea2",
+      "name": "Pod11"
+    },
+    {
+      "boundSection": "ReportSection4172f67f5672a2d41a7f",
+      "name": "Pod12"
+    },
+    {
+      "boundSection": "ReportSectionb244952135d67b0212bf",
+      "name": "Pod14"
+    }
+  ],
+  "reportId": 627757,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "id": 162446,
+        "items": [
+          {
+            "name": "Website_Power_BI_Design_-_elements_and_bckground-04801243543403698.png",
+            "path": "Website_Power_BI_Design_-_elements_and_bckground-04801243543403698.png",
+            "type": 100
+          },
+          {
+            "name": "Shadow6961340889754823.png",
+            "path": "Shadow6961340889754823.png",
+            "type": 100
+          },
+          {
+            "name": "Artboard_1@2x14176765482640863.png",
+            "path": "Artboard_1@2x14176765482640863.png",
+            "type": 100
+          },
+          {
+            "name": "drillthrough5753228608540546.png",
+            "path": "drillthrough5753228608540546.png",
+            "type": 100
+          },
+          {
+            "name": "Ellipsis14729861762089502.png",
+            "path": "Ellipsis14729861762089502.png",
+            "type": 100
+          },
+          {
+            "name": "Focus_Mode46871284598599794.png",
+            "path": "Focus_Mode46871284598599794.png",
+            "type": 100
+          },
+          {
+            "name": "Hierarchies911895360370147.png",
+            "path": "Hierarchies911895360370147.png",
+            "type": 100
+          },
+          {
+            "name": "Tooltips5927140036291298.png",
+            "path": "Tooltips5927140036291298.png",
+            "type": 100
+          },
+          {
+            "name": "Page_2@2x7452685890373283.png",
+            "path": "Page_2@2x7452685890373283.png",
+            "type": 100
+          },
+          {
+            "name": "Page_3@2x8881612016255598.png",
+            "path": "Page_3@2x8881612016255598.png",
+            "type": 100
+          },
+          {
+            "name": "Page_4@2x9866863041054998.png",
+            "path": "Page_4@2x9866863041054998.png",
+            "type": 100
+          },
+          {
+            "name": "Page_5@2x25401822510616867.png",
+            "path": "Page_5@2x25401822510616867.png",
+            "type": 100
+          },
+          {
+            "name": "Page_6@2x15389807742486772.png",
+            "path": "Page_6@2x15389807742486772.png",
+            "type": 100
+          },
+          {
+            "name": "Page_7@2x8365049534119138.png",
+            "path": "Page_7@2x8365049534119138.png",
+            "type": 100
+          },
+          {
+            "name": "Page_8@2x754907260164239.png",
+            "path": "Page_8@2x754907260164239.png",
+            "type": 100
+          },
+          {
+            "name": "Page_9@2x26608432799685056.png",
+            "path": "Page_9@2x26608432799685056.png",
+            "type": 100
+          },
+          {
+            "name": "Page_10@2x6678556045590478.png",
+            "path": "Page_10@2x6678556045590478.png",
+            "type": 100
+          },
+          {
+            "name": "Page_Extra@2x1829140280995194.png",
+            "path": "Page_Extra@2x1829140280995194.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "id": 164729,
+        "items": [
+          {
+            "id": 397473,
+            "name": "CY17SU12",
+            "path": "BaseThemes/CY17SU12.json",
+            "resourcePackageId": 164729,
+            "type": 202
+          },
+          {
+            "name": "Twilight",
+            "path": "BuiltInThemes/Twilight.json",
+            "type": 201
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "theme": "Twilight"
+}

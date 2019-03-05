@@ -1,0 +1,281 @@
+{
+  "objects": {
+    "total": [
+      {
+        "properties": {
+          "totals": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "values": [
+      {
+        "properties": {
+          "fontSize": {
+            "expr": {
+              "Literal": {
+                "Value": "'10'"
+              }
+            }
+          }
+        }
+      },
+      {
+        "properties": {},
+        "selector": {
+          "data": [
+            {
+              "roles": [
+                "Values"
+              ]
+            }
+          ],
+          "metadata": "Sum(Sales.SalesAmount)"
+        }
+      },
+      {
+        "properties": {},
+        "selector": {
+          "data": [
+            {
+              "roles": [
+                "Values"
+              ]
+            }
+          ],
+          "metadata": "Sales.ProductName"
+        }
+      },
+      {
+        "properties": {
+          "backColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Aggregation": {
+                    "Expression": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Sales"
+                          }
+                        },
+                        "Property": "Color"
+                      }
+                    },
+                    "Function": 3
+                  }
+                }
+              }
+            }
+          },
+          "fontColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Aggregation": {
+                    "Expression": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Sales"
+                          }
+                        },
+                        "Property": "Color"
+                      }
+                    },
+                    "Function": 3
+                  }
+                }
+              }
+            }
+          }
+        },
+        "selector": {
+          "data": [
+            {
+              "roles": [
+                "Values"
+              ]
+            }
+          ],
+          "metadata": "Sales.Color"
+        }
+      }
+    ],
+    "columnHeaders": [
+      {
+        "properties": {
+          "fontSize": {
+            "expr": {
+              "Literal": {
+                "Value": "'11'"
+              }
+            }
+          },
+          "fontColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#666666'"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "columnWidth": [
+      {
+        "properties": {
+          "value": {
+            "expr": {
+              "Literal": {
+                "Value": "268.0066947353988D"
+              }
+            }
+          }
+        },
+        "selector": {
+          "metadata": "Sales.ProductName"
+        }
+      },
+      {
+        "properties": {
+          "value": {
+            "expr": {
+              "Literal": {
+                "Value": "100.09773293744973D"
+              }
+            }
+          }
+        },
+        "selector": {
+          "metadata": "Sum(Sales.SalesAmount)"
+        }
+      }
+    ],
+    "grid": [
+      {
+        "properties": {
+          "textSize": {
+            "expr": {
+              "Literal": {
+                "Value": "8D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Values": [
+      1,
+      0
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "SalesAmount",
+        "Name": "Sum(Sales.SalesAmount)",
+        "Type": 1,
+        "Format": "\\$#,0.00;(\\$#,0.00);\\$#,0.00"
+      },
+      {
+        "Restatement": "ProductName",
+        "Name": "Sales.ProductName",
+        "Type": 2048
+      }
+    ],
+    "Filters": [
+      {
+        "type": 5,
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Sales"
+              }
+            },
+            "Property": "ProductName"
+          }
+        }
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Values",
+          "Projection": 1,
+          "isActive": false
+        },
+        {
+          "Name": "Values",
+          "Projection": 0,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "SalesAmount",
+      "format": "\\$#,0.00;(\\$#,0.00);\\$#,0.00",
+      "queryName": "Sum(Sales.SalesAmount)",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Sales"
+                }
+              },
+              "Property": "SalesAmount"
+            }
+          },
+          "Function": 0
+        }
+      }
+    },
+    {
+      "displayName": "ProductName",
+      "queryName": "Sales.ProductName",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Sales"
+            }
+          },
+          "Property": "ProductName"
+        }
+      }
+    }
+  ]
+}

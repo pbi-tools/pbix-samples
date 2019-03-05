@@ -1,0 +1,107 @@
+{
+  "name": "efff2669e573a4410b8f",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 78.108484005563284,
+        "y": 376.19250301525557,
+        "z": 4750,
+        "width": 192.26703755215578,
+        "height": 98.136300417246176
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "card",
+    "projections": {
+      "Values": [
+        {
+          "queryRef": "Sum(Sales.SalesAmount)"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "s",
+          "Entity": "Sales"
+        }
+      ],
+      "Select": [
+        {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "s"
+                  }
+                },
+                "Property": "SalesAmount"
+              }
+            },
+            "Function": 0
+          },
+          "Name": "Sum(Sales.SalesAmount)"
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "categoryLabels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Orange Card'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

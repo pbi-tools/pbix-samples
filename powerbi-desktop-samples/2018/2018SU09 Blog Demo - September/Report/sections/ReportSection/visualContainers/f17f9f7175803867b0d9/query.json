@@ -1,0 +1,133 @@
+{
+  "Commands": [
+    {
+      "SemanticQueryDataShapeCommand": {
+        "Query": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "s",
+              "Entity": "Sales"
+            }
+          ],
+          "Select": [
+            {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Source": "s"
+                      }
+                    },
+                    "Property": "SalesAmount"
+                  }
+                },
+                "Function": 0
+              },
+              "Name": "Sum(Sales.SalesAmount)"
+            },
+            {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "s"
+                  }
+                },
+                "Property": "Class"
+              },
+              "Name": "Sales.Class"
+            },
+            {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "s"
+                  }
+                },
+                "Property": "Sale Size"
+              },
+              "Name": "Sales.Sale Size"
+            },
+            {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Source": "s"
+                      }
+                    },
+                    "Property": "Units"
+                  }
+                },
+                "Function": 0
+              },
+              "Name": "Sum(Sales.Units)"
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Comparison": {
+                  "ComparisonKind": 2,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "s"
+                        }
+                      },
+                      "Property": "OrderDate"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "datetime'2014-01-01T00:00:00'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "Binding": {
+          "Primary": {
+            "Groupings": [
+              {
+                "Projections": [
+                  2
+                ]
+              }
+            ]
+          },
+          "Secondary": {
+            "Groupings": [
+              {
+                "Projections": [
+                  0,
+                  1,
+                  3
+                ]
+              }
+            ]
+          },
+          "DataReduction": {
+            "DataVolume": 4,
+            "Primary": {
+              "Window": {
+                "Count": 200
+              }
+            },
+            "Secondary": {
+              "Top": {
+                "Count": 60
+              }
+            }
+          },
+          "Version": 1
+        }
+      }
+    }
+  ]
+}

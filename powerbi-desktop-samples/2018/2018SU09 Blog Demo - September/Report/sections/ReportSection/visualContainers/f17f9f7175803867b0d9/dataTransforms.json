@@ -1,0 +1,272 @@
+{
+  "objects": {
+    "dataPoint": [
+      {
+        "properties": {
+          "defaultCategoryColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#666666'"
+                  }
+                }
+              }
+            }
+          },
+          "fillRule": {
+            "linearGradient3": {
+              "min": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#d0a8c9'"
+                    }
+                  }
+                }
+              },
+              "mid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#b87cad'"
+                    }
+                  }
+                }
+              },
+              "max": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#671c59'"
+                    }
+                  }
+                }
+              },
+              "nullColoringStrategy": {
+                "strategy": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'asZero'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "valueAxis": [
+      {
+        "properties": {
+          "show": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "legend": [
+      {
+        "properties": {
+          "show": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "categoryAxis": [
+      {
+        "properties": {
+          "innerPadding": {
+            "expr": {
+              "Literal": {
+                "Value": "25L"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Y": [
+      0
+    ],
+    "Series": [
+      1
+    ],
+    "X": [
+      2
+    ],
+    "Size": [
+      3
+    ]
+  },
+  "projectionActiveItems": {
+    "X": [
+      {
+        "queryRef": "Sales.Sale Size",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "SalesAmount",
+        "Name": "Sum(Sales.SalesAmount)",
+        "Type": 1,
+        "Format": "\\$#,0.00;(\\$#,0.00);\\$#,0.00"
+      },
+      {
+        "Restatement": "Class",
+        "Name": "Sales.Class",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Sale Size",
+        "Name": "Sales.Sale Size",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Units",
+        "Name": "Sum(Sales.Units)",
+        "Type": 3,
+        "Format": "0"
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Y",
+          "Projection": 0,
+          "isActive": false
+        },
+        {
+          "Name": "Series",
+          "Projection": 1,
+          "isActive": false
+        },
+        {
+          "Name": "X",
+          "Projection": 2,
+          "isActive": true
+        },
+        {
+          "Name": "Size",
+          "Projection": 3,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "SalesAmount",
+      "format": "\\$#,0.00;(\\$#,0.00);\\$#,0.00",
+      "queryName": "Sum(Sales.SalesAmount)",
+      "roles": {
+        "Y": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Sales"
+                }
+              },
+              "Property": "SalesAmount"
+            }
+          },
+          "Function": 0
+        }
+      }
+    },
+    {
+      "displayName": "Class",
+      "queryName": "Sales.Class",
+      "roles": {
+        "Series": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Sales"
+            }
+          },
+          "Property": "Class"
+        }
+      }
+    },
+    {
+      "displayName": "Sale Size",
+      "queryName": "Sales.Sale Size",
+      "roles": {
+        "X": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Sales"
+            }
+          },
+          "Property": "Sale Size"
+        }
+      }
+    },
+    {
+      "displayName": "Units",
+      "format": "0",
+      "queryName": "Sum(Sales.Units)",
+      "roles": {
+        "Size": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Sales"
+                }
+              },
+              "Property": "Units"
+            }
+          },
+          "Function": 0
+        }
+      }
+    }
+  ]
+}

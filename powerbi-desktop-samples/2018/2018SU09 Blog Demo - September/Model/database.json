@@ -1,0 +1,35 @@
+{
+  "name": "2018SU09 Blog Demo - September",
+  "compatibilityLevel": 1455,
+  "model": {
+    "culture": "en-US",
+    "relationships": [
+      {
+        "name": "25fb075a-ef0f-4f8c-9ebc-e68af7eb0f73",
+        "fromTable": "Sales",
+        "fromColumn": "OrderDate",
+        "toTable": "LocalDateTable_0b51e05f-c1c0-46c9-802c-55b15cfa43ff",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      }
+    ],
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": "<LinguisticMetadata><LinguisticSchema Language=\"en-US\" DynamicImprovement=\"HighConfidence\" xmlns=\"http://schemas.microsoft.com/sqlserver/2016/01/linguisticschema\" /></LinguisticMetadata>"
+        }
+      }
+    ],
+    "annotations": [
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.62.5222.322 (18.09)"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      }
+    ]
+  }
+}

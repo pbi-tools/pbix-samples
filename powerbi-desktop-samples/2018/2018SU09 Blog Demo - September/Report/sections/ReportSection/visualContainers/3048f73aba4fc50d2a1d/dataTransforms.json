@@ -1,0 +1,181 @@
+{
+  "objects": {
+    "data": [
+      {
+        "properties": {
+          "startDate": {
+            "expr": {
+              "Literal": {
+                "Value": "datetime'2014-01-01T00:00:00'"
+              }
+            }
+          },
+          "mode": {
+            "expr": {
+              "Literal": {
+                "Value": "'Between'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "general": [
+      {
+        "properties": {
+          "responsive": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          },
+          "filter": {
+            "filter": {
+              "Version": 2,
+              "From": [
+                {
+                  "Name": "s",
+                  "Entity": "Sales"
+                }
+              ],
+              "Where": [
+                {
+                  "Condition": {
+                    "Comparison": {
+                      "ComparisonKind": 2,
+                      "Left": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "s"
+                            }
+                          },
+                          "Property": "OrderDate"
+                        }
+                      },
+                      "Right": {
+                        "Literal": {
+                          "Value": "datetime'2014-01-01T00:00:00'"
+                        }
+                      }
+                    }
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "header": [
+      {
+        "properties": {
+          "textSize": {
+            "expr": {
+              "Literal": {
+                "Value": "8D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Values": [
+      0
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "OrderDate",
+        "Name": "Sales.OrderDate",
+        "Type": 4,
+        "Format": "%M/%d/yyyy"
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Values",
+          "Projection": 0,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "OrderDate",
+      "format": "%M/%d/yyyy",
+      "queryName": "Sales.OrderDate",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 519
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Sales"
+            }
+          },
+          "Property": "OrderDate"
+        }
+      },
+      "aggregateSources": {
+        "min": {
+          "index": 1
+        },
+        "max": {
+          "index": 2
+        }
+      }
+    },
+    {
+      "displayName": "",
+      "queryName": "Min(Sales.OrderDate)",
+      "expr": {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Sales"
+                }
+              },
+              "Property": "OrderDate"
+            }
+          },
+          "Function": 3
+        }
+      }
+    },
+    {
+      "displayName": "",
+      "queryName": "Max(Sales.OrderDate)",
+      "expr": {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Sales"
+                }
+              },
+              "Property": "OrderDate"
+            }
+          },
+          "Function": 4
+        }
+      }
+    }
+  ]
+}

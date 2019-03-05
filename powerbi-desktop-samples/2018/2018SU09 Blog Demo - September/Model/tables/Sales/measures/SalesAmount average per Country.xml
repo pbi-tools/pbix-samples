@@ -1,0 +1,21 @@
+<Measure Name="SalesAmount average per Country">
+  <Expression><![CDATA[
+AVERAGEX(
+	KEEPFILTERS(VALUES('Sales'[Country])),
+	CALCULATE(SUM('Sales'[SalesAmount]))
+)]]></Expression>
+  <FormatString>\$#,0.00;(\$#,0.00);\$#,0.00</FormatString>
+  <ExtendedProperty><![CDATA[{
+  "type": "json",
+  "name": "MeasureTemplate",
+  "value": {
+    "version": 0,
+    "daxTemplateName": "AveragePerCategory"
+  }
+}]]></ExtendedProperty>
+  <Annotation Name="Format">
+    <Format Format="CurrencyCustom" Accuracy="2" ThousandSeparator="True">
+      <Currency LCID="1033" DisplayName="$ English (United States)" Symbol="$" PositivePattern="0" NegativePattern="0" />
+    </Format>
+  </Annotation>
+</Measure>

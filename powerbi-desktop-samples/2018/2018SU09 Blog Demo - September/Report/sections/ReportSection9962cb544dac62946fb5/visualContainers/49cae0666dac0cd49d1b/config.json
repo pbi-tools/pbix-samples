@@ -1,0 +1,91 @@
+{
+  "name": "49cae0666dac0cd49d1b",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 134,
+        "y": 5,
+        "z": 1000,
+        "width": 185,
+        "height": 229
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "barChart",
+    "projections": {
+      "Y": [
+        {
+          "queryRef": "Sum(Sales.SalesAmount)"
+        }
+      ],
+      "Category": [
+        {
+          "queryRef": "Sales.Sale Size",
+          "active": true
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "s",
+          "Entity": "Sales"
+        }
+      ],
+      "Select": [
+        {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "s"
+                  }
+                },
+                "Property": "SalesAmount"
+              }
+            },
+            "Function": 0
+          },
+          "Name": "Sum(Sales.SalesAmount)"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "s"
+              }
+            },
+            "Property": "Sale Size"
+          },
+          "Name": "Sales.Sale Size"
+        }
+      ],
+      "OrderBy": [
+        {
+          "Direction": 2,
+          "Expression": {
+            "Aggregation": {
+              "Expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Source": "s"
+                    }
+                  },
+                  "Property": "SalesAmount"
+                }
+              },
+              "Function": 0
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "hasDefaultSort": true
+  }
+}

@@ -1,0 +1,120 @@
+{
+  "name": "47c135d63163870d0ead",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 77.370095440084839,
+        "y": 74.655355249204675,
+        "z": 8000,
+        "width": 192.067868504772,
+        "height": 97.7306468716861
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "card",
+    "projections": {
+      "Values": [
+        {
+          "queryRef": "Sum(Sales.SalesAmount)"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "s",
+          "Entity": "Sales"
+        }
+      ],
+      "Select": [
+        {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "s"
+                  }
+                },
+                "Property": "SalesAmount"
+              }
+            },
+            "Function": 0
+          },
+          "Name": "Sum(Sales.SalesAmount)"
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "categoryLabels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Yellow Card'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "name": "7f2529bc8b30a73343ad",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 99.368421052631575,
+        "y": 99.368421052631575,
+        "z": 52000,
+        "width": 67.368421052631575,
+        "height": 67.368421052631575
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "basicShape",
+    "display": {
+      "mode": "hidden"
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "shapeType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'rectangle'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'..................Slicers...................'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

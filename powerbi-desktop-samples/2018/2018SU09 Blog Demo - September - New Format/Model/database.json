@@ -1,0 +1,42 @@
+{
+  "name": "2018SU09 Blog Demo - September - New Format",
+  "compatibilityLevel": 1455,
+  "model": {
+    "culture": "en-US",
+    "relationships": [
+      {
+        "name": "d3d6ab16-d20f-4464-baac-6680746eaeef",
+        "fromTable": "Calendar",
+        "fromColumn": "Date",
+        "toTable": "LocalDateTable_8369bfaf-356a-4b8d-a282-dd2c1868a321",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "c058f796-d10d-4f49-9a70-90bfd27d69e7",
+        "fromTable": "Sales",
+        "fromColumn": "OrderDate",
+        "toTable": "Calendar",
+        "toColumn": "Date"
+      }
+    ],
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": "<LinguisticMetadata><LinguisticSchema Language=\"en-US\" DynamicImprovement=\"HighConfidence\" xmlns=\"http://schemas.microsoft.com/sqlserver/2016/01/linguisticschema\" /></LinguisticMetadata>"
+        }
+      }
+    ],
+    "annotations": [
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.62.5222.582 (18.09)"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      }
+    ]
+  }
+}

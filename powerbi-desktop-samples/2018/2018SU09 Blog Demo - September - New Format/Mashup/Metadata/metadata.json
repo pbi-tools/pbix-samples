@@ -1,0 +1,162 @@
+{
+  "AllFormulas": {
+    "Relationships": "AAAAAA==",
+    "RunBackgroundAnalysis": "False"
+  },
+  "Formulas": {
+    "Section1/Sales": {
+      "BufferNextRefresh": 0,
+      "FillColumnNames": [
+        "SalesOrderID",
+        "Country",
+        "OrderDate",
+        "SalesChannelCode",
+        "ProdID",
+        "StyleName",
+        "CustomerAccountNumber",
+        "StoreKey",
+        "ProductLabel",
+        "ProductName",
+        "ProductDescription",
+        "Manufacturer",
+        "BrandName",
+        "Class",
+        "Color",
+        "StockType",
+        "Units",
+        "SalesAmount",
+        "RePurch",
+        "NSAT",
+        "SubCategory",
+        "Category",
+        "Sale Size"
+      ],
+      "IsDirectQuery": 0,
+      "IsLastAnalysisServicesFormulaTextCollection": 1,
+      "IsPrivate": 0,
+      "LastAnalysisServicesFormulaText": {
+        "IncludesReferencedQueries": true
+      },
+      "LoadedToAnalysisServices": 1,
+      "NameUpdatedAfterFill": 1,
+      "NavigationStepName": "Navigation",
+      "RelationshipInfoContainer": {
+        "columnCount": 23,
+        "keyColumnNames": [],
+        "queryRelationships": [],
+        "columnIdentities": [
+          "Section1/Sales/Changed Type.{SalesOrderID,0}",
+          "Section1/Sales/Changed Type.{Country,1}",
+          "Section1/Sales/Changed Type.{OrderDate,2}",
+          "Section1/Sales/Changed Type.{SalesChannelCode,3}",
+          "Section1/Sales/Changed Type.{ProdID,4}",
+          "Section1/Sales/Changed Type.{StyleName,5}",
+          "Section1/Sales/Changed Type.{CustomerAccountNumber,6}",
+          "Section1/Sales/Changed Type.{StoreKey,7}",
+          "Section1/Sales/Changed Type.{ProductLabel,8}",
+          "Section1/Sales/Changed Type1.{ProductName.1,9}",
+          "Section1/Sales/Changed Type.{ProductDescription,10}",
+          "Section1/Sales/Changed Type.{Manufacturer,11}",
+          "Section1/Sales/Changed Type.{BrandName,12}",
+          "Section1/Sales/Changed Type.{Class,13}",
+          "Section1/Sales/Changed Type.{Color,14}",
+          "Section1/Sales/Changed Type.{StockType,15}",
+          "Section1/Sales/Changed Type.{Units,16}",
+          "Section1/Sales/Changed Type.{SalesAmount,17}",
+          "Section1/Sales/Changed Type.{PurchAgain,18}",
+          "Section1/Sales/Changed Type.{NSAT,19}",
+          "Section1/Sales/Changed Type.{SubCategory,20}",
+          "Section1/Sales/Changed Type.{Category,21}",
+          "Section1/Sales/Added Conditional Column.{Custom,22}"
+        ],
+        "ColumnCount": 23,
+        "KeyColumnNames": [],
+        "ColumnIdentities": [
+          "Section1/Sales/Changed Type.{SalesOrderID,0}",
+          "Section1/Sales/Changed Type.{Country,1}",
+          "Section1/Sales/Changed Type.{OrderDate,2}",
+          "Section1/Sales/Changed Type.{SalesChannelCode,3}",
+          "Section1/Sales/Changed Type.{ProdID,4}",
+          "Section1/Sales/Changed Type.{StyleName,5}",
+          "Section1/Sales/Changed Type.{CustomerAccountNumber,6}",
+          "Section1/Sales/Changed Type.{StoreKey,7}",
+          "Section1/Sales/Changed Type.{ProductLabel,8}",
+          "Section1/Sales/Changed Type1.{ProductName.1,9}",
+          "Section1/Sales/Changed Type.{ProductDescription,10}",
+          "Section1/Sales/Changed Type.{Manufacturer,11}",
+          "Section1/Sales/Changed Type.{BrandName,12}",
+          "Section1/Sales/Changed Type.{Class,13}",
+          "Section1/Sales/Changed Type.{Color,14}",
+          "Section1/Sales/Changed Type.{StockType,15}",
+          "Section1/Sales/Changed Type.{Units,16}",
+          "Section1/Sales/Changed Type.{SalesAmount,17}",
+          "Section1/Sales/Changed Type.{PurchAgain,18}",
+          "Section1/Sales/Changed Type.{NSAT,19}",
+          "Section1/Sales/Changed Type.{SubCategory,20}",
+          "Section1/Sales/Changed Type.{Category,21}",
+          "Section1/Sales/Added Conditional Column.{Custom,22}"
+        ],
+        "RelationshipInfo": []
+      },
+      "ResultType": "Exception"
+    },
+    "Section1/Sales/Source": null,
+    "Section1/Sales/Sales_Table": null,
+    "Section1/Sales/Changed Type": null,
+    "Section1/Sales/Added Conditional Column": null,
+    "Section1/Sales/Renamed Columns": null,
+    "Section1/Sales/Split Column by Delimiter": null,
+    "Section1/Sales/Changed Type1": null,
+    "Section1/Sales/Removed Columns": null,
+    "Section1/Sales/Renamed Columns1": null,
+    "Section1/Calendar": {
+      "BufferNextRefresh": 0,
+      "FillColumnNames": [
+        "Date",
+        "Month",
+        "MonthN",
+        "Year"
+      ],
+      "IsDirectQuery": 0,
+      "IsLastAnalysisServicesFormulaTextCollection": 1,
+      "IsPrivate": 0,
+      "LastAnalysisServicesFormulaText": {
+        "IncludesReferencedQueries": true
+      },
+      "LoadedToAnalysisServices": 1,
+      "NameUpdatedAfterFill": 1,
+      "NavigationStepName": "Navigation",
+      "RelationshipInfoContainer": {
+        "columnCount": 4,
+        "keyColumnNames": [],
+        "queryRelationships": [],
+        "columnIdentities": [
+          "Section1/Calendar/Changed Type.{Date,0}",
+          "Section1/Calendar/Extracted First Characters.{Month Name,1}",
+          "Section1/Calendar/Inserted Month.{Month.1,3}",
+          "Section1/Calendar/Changed Type1.{Year,2}"
+        ],
+        "ColumnCount": 4,
+        "KeyColumnNames": [],
+        "ColumnIdentities": [
+          "Section1/Calendar/Changed Type.{Date,0}",
+          "Section1/Calendar/Extracted First Characters.{Month Name,1}",
+          "Section1/Calendar/Inserted Month.{Month.1,3}",
+          "Section1/Calendar/Changed Type1.{Year,2}"
+        ],
+        "RelationshipInfo": []
+      },
+      "ResultType": "Table"
+    },
+    "Section1/Calendar/Source": null,
+    "Section1/Calendar/Changed Type": null,
+    "Section1/Calendar/Inserted Month Name": null,
+    "Section1/Calendar/Extracted First Characters": null,
+    "Section1/Calendar/Renamed Columns": null,
+    "Section1/Calendar/Inserted Year": null,
+    "Section1/Calendar/Changed Type1": null,
+    "Section1/Calendar/Inserted Month": null,
+    "Section1/Calendar/Renamed Columns1": null,
+    "Section1/Calendar/Reordered Columns": null
+  }
+}

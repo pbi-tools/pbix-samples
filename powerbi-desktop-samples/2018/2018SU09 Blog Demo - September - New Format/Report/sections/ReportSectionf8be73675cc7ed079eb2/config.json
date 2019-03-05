@@ -1,0 +1,39 @@
+{
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#EDEDED'"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspace": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#cbcbcb'"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "acceptsAllFiltersWhenLinked": true
+}

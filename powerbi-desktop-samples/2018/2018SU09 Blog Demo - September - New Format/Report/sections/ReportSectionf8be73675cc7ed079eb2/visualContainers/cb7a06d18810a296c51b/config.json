@@ -1,0 +1,56 @@
+{
+  "name": "cb7a06d18810a296c51b",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 1060,
+        "y": 6,
+        "z": 55000,
+        "width": 171,
+        "height": 66.255506607929519
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "display": {
+      "mode": "hidden"
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "SLICERS",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontFamily": "Segoe UI",
+                      "color": "#000000"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Use filters to display records",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "12px",
+                      "color": "#2f2f2f"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

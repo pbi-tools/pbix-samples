@@ -1,0 +1,61 @@
+<Measure Name="Sparkline Line">
+  <Expression><![CDATA[
+// Issue: SparklineMeasure var won't work when referenced (all bars end up 100%)
+// Issue: Refactor to avoid nested SUMMARIZEs
+// Issue: Negative values currently will not appear
+
+VAR SparklineMeasure = SUM(Sales[SalesAmount]) // don't use this below per issue above
+VAR SparklineMeasureTarget = SUM(Sales[SalesAmount])
+VAR PointCount = DISTINCTCOUNT(Sales[OrderDate]) + 1
+VAR PointWidth = INT(DIVIDE(100,PointCount))
+VAR LineColor = "#01B8AA"
+VAR Lines = 
+CONCATENATEX (
+    ADDCOLUMNS (
+        SUMMARIZE (
+            'Sales',
+            'Sales'[OrderDate],
+            /*"MeasureValue", MeasureValue,
+            "MaxMeasureValue", MAXX (
+                SUMMARIZE (
+                    ALLSELECTED('Table'),
+                    'Table'[Date],
+                    "MeasureValue", MeasureValue
+                ),
+                [MeasureValue]
+            ),*/
+            "Height", INT (
+                100
+                    * DIVIDE (
+                        SUM(Sales[SalesAmount]),
+                        MAXX (
+                            SUMMARIZE (
+                                ALLSELECTED('Sales'),
+                                'Sales'[OrderDate],
+                                "MeasureValue", SUM(Sales[SalesAmount])
+                            ),
+                            [MeasureValue]
+                        )
+                    )
+            )
+        ),
+	// The Index provides the horizontal axis for the sparkline
+        "Index", RANKX ( 'Sales', 'Sales'[OrderDate], 'Sales'[OrderDate], ASC, DENSE )
+    ),
+    // Concatenate the (x,y) points to form the line
+    PointWidth*[Index] & "," & 100-[Height],",",[Index],ASC) 
+
+    // Add points to line and remember to set Data Category to Image URL
+RETURN IF(HASONEVALUE('Sales'[SubCategory]),
+    "data:image/svg+xml;utf8," & 
+    "<svg xmlns='http://www.w3.org/2000/svg' x='0px' y='0px'
+	 width='100' height='100' viewBox='0 0 100 100'>" &
+     "<polyline
+     fill='none' stroke='" & LineColor & 
+     "' stroke-width='3' points='" & Lines & "'/>" &
+     "</svg>",
+     BLANK())]]></Expression>
+  <Annotation Name="Format">
+    <Format Format="Text" />
+  </Annotation>
+</Measure>

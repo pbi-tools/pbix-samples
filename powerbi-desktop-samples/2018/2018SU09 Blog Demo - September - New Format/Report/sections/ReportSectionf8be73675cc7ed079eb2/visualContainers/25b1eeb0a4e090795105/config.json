@@ -1,0 +1,122 @@
+{
+  "name": "25b1eeb0a4e090795105",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 514.61172741679877,
+        "y": 353.72424722662441,
+        "z": 66500,
+        "width": 460.06974451515453,
+        "height": 45.641838351822507
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Bubble Size:",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "12px",
+                      "color": "#000000"
+                    }
+                  },
+                  {
+                    "value": "  %GT Sales     ",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "12px",
+                      "color": "#808080"
+                    }
+                  },
+                  {
+                    "value": "Color Gradient:",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "12px",
+                      "color": "#000000"
+                    }
+                  },
+                  {
+                    "value": " Units Sold  ( High ",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "12px",
+                      "color": "#808080"
+                    }
+                  },
+                  {
+                    "value": "l",
+                    "textStyle": {
+                      "fontFamily": "Wingdings",
+                      "fontSize": "16px",
+                      "color": "#63c345"
+                    }
+                  },
+                  {
+                    "value": "l",
+                    "textStyle": {
+                      "fontFamily": "Wingdings",
+                      "fontSize": "16px",
+                      "color": "#c2ce47"
+                    }
+                  },
+                  {
+                    "value": "l",
+                    "textStyle": {
+                      "fontFamily": "Wingdings",
+                      "fontSize": "16px",
+                      "color": "#f2c811"
+                    }
+                  },
+                  {
+                    "value": "l",
+                    "textStyle": {
+                      "fontFamily": "Wingdings",
+                      "fontSize": "16px",
+                      "color": "#f19c42"
+                    }
+                  },
+                  {
+                    "value": "l",
+                    "textStyle": {
+                      "fontFamily": "Wingdings",
+                      "fontSize": "16px",
+                      "color": "#e82c3a"
+                    }
+                  },
+                  {
+                    "value": " ",
+                    "textStyle": {
+                      "fontSize": "12px",
+                      "color": "#808080"
+                    }
+                  },
+                  {
+                    "value": "Low )",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "12px",
+                      "color": "#808080"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

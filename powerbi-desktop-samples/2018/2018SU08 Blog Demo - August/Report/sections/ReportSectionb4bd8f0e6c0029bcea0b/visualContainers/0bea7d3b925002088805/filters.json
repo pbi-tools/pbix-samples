@@ -1,0 +1,16 @@
+[
+  {
+    "expression": {
+      "Column": {
+        "Expression": {
+          "SourceRef": {
+            "Entity": "Sales"
+          }
+        },
+        "Property": "ProductName"
+      }
+    },
+    "type": "TopN",
+    "howCreated": 1
+  }
+]

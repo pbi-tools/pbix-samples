@@ -1,0 +1,186 @@
+{
+  "id": 334102,
+  "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "ReportSection",
+      "id": 80439,
+      "name": "Pod"
+    },
+    {
+      "boundSection": "ReportSectionb4bd8f0e6c0029bcea0b",
+      "id": 80440,
+      "name": "Pod1",
+      "parameters": "[{\"name\":\"Param_Filter\",\"boundFilter\":\"Filter\"}]"
+    },
+    {
+      "boundSection": "ReportSection5835adc50e179d5e68b0",
+      "id": 80441,
+      "name": "Pod2"
+    },
+    {
+      "boundSection": "ReportSection14a662f9d2e9b0064070",
+      "id": 80442,
+      "name": "Pod3"
+    },
+    {
+      "boundSection": "ReportSection9962cb544dac62946fb5",
+      "id": 81055,
+      "name": "Pod6",
+      "parameters": "[{\"name\":\"Param_Filter\",\"boundFilter\":\"Filter\"}]"
+    },
+    {
+      "boundSection": "ReportSection1ea08ff0145da6ba84da",
+      "id": 81136,
+      "name": "Pod7",
+      "parameters": "[{\"name\":\"Param_Filter\",\"boundFilter\":\"Filter\"}]"
+    }
+  ],
+  "reportId": 627757,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "id": 161114,
+        "items": [
+          {
+            "id": 389609,
+            "path": "BulletChart1443347686880.pbiviz.json",
+            "resourcePackageId": 161114,
+            "type": 5
+          }
+        ],
+        "name": "BulletChart1443347686880",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "id": 161115,
+        "items": [
+          {
+            "id": 389610,
+            "path": "DonutChartGMO1461469098694.pbiviz.json",
+            "resourcePackageId": 161115,
+            "type": 5
+          }
+        ],
+        "name": "DonutChartGMO1461469098694",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "id": 161116,
+        "items": [
+          {
+            "id": 389611,
+            "path": "HierarchySlicer.js",
+            "resourcePackageId": 161116,
+            "type": 0
+          },
+          {
+            "id": 389612,
+            "path": "HierarchySlicer.css",
+            "resourcePackageId": 161116,
+            "type": 1
+          },
+          {
+            "id": 389613,
+            "path": "icon.png",
+            "resourcePackageId": 161116,
+            "type": 3
+          }
+        ],
+        "name": "HierarchySlicer1458836712039",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "id": 162446,
+        "items": [
+          {
+            "id": 392524,
+            "name": "20180430_132950-EFFECTS2162965461136228.jpg",
+            "path": "20180430_132950-EFFECTS2162965461136228.jpg",
+            "resourcePackageId": 162446,
+            "type": 100
+          },
+          {
+            "id": 392525,
+            "name": "Sunset6620761580390517.json",
+            "path": "Sunset6620761580390517.json",
+            "resourcePackageId": 162446,
+            "type": 100
+          },
+          {
+            "id": 392526,
+            "name": "Overview980525157724317.png",
+            "path": "Overview980525157724317.png",
+            "resourcePackageId": 162446,
+            "type": 100
+          },
+          {
+            "id": 392527,
+            "name": "Yellow8043661616650397.png",
+            "path": "Yellow8043661616650397.png",
+            "resourcePackageId": 162446,
+            "type": 100
+          },
+          {
+            "id": 392528,
+            "name": "Orange49464188828017597.png",
+            "path": "Orange49464188828017597.png",
+            "resourcePackageId": 162446,
+            "type": 100
+          },
+          {
+            "id": 392529,
+            "name": "Pink3827537605272129.png",
+            "path": "Pink3827537605272129.png",
+            "resourcePackageId": 162446,
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "id": 164729,
+        "items": [
+          {
+            "id": 397473,
+            "name": "CY17SU12",
+            "path": "BaseThemes/CY17SU12.json",
+            "resourcePackageId": 164729,
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "PBI_CV_EB3A4088_75C5_4746_9D8B_255A7B7ECD6C.pbiviz.json",
+            "path": "PBI_CV_EB3A4088_75C5_4746_9D8B_255A7B7ECD6C.pbiviz.json",
+            "type": 5
+          }
+        ],
+        "name": "PBI_CV_EB3A4088_75C5_4746_9D8B_255A7B7ECD6C",
+        "type": 0
+      }
+    }
+  ],
+  "theme": "Sunset6620761580390517.json"
+}

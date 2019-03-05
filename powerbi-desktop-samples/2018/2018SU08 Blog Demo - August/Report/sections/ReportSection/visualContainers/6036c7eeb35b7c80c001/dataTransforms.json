@@ -1,0 +1,113 @@
+{
+  "objects": {
+    "values": [
+      {
+        "properties": {
+          "urlIcon": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          },
+          "fontSize": {
+            "expr": {
+              "Literal": {
+                "Value": "'20'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "columnHeaders": [
+      {
+        "properties": {
+          "fontColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#C0CDD5'"
+                  }
+                }
+              }
+            }
+          },
+          "outline": {
+            "expr": {
+              "Literal": {
+                "Value": "'None'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "columnWidth": [
+      {
+        "properties": {
+          "value": {
+            "expr": {
+              "Literal": {
+                "Value": "54.31046931407941D"
+              }
+            }
+          }
+        },
+        "selector": {
+          "metadata": "Sales.Measure"
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Values": [
+      0
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "A Report Link",
+        "Name": "Sales.Measure",
+        "Type": 2048,
+        "DataCategory": 17
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Values",
+          "Projection": 0,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "A Report Link",
+      "queryName": "Sales.Measure",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": "WebUrl",
+        "underlyingType": 13240321
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Sales"
+            }
+          },
+          "Property": "A Report Link"
+        }
+      }
+    }
+  ]
+}

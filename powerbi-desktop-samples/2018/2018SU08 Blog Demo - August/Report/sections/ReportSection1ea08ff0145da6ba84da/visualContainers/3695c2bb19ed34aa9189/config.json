@@ -1,0 +1,76 @@
+{
+  "name": "3695c2bb19ed34aa9189",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 77.614957049014649,
+        "y": 598.28196058615458,
+        "z": 500,
+        "width": 192.09701869631127,
+        "height": 52.390096008084889
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Great Britian",
+                    "textStyle": {
+                      "fontSize": "24px",
+                      "color": "#892577"
+                    }
+                  }
+                ],
+                "horizontalTextAlignment": "center"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Purple Title'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "version": "3.19",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY18SU07",
+      "version": "3.19",
+      "type": 2
+    }
+  },
+  "activeSectionIndex": 0,
+  "defaultDrillFilterOtherVisuals": true,
+  "settings": {
+    "useStylableVisualContainerHeader": true,
+    "exportDataMode": 1
+  }
+}

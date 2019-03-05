@@ -1,0 +1,8 @@
+{
+  "version": "0.3.1",
+  "queries": {
+    "Numbers": "9e638869-21dd-4871-a76b-5ffb1d69acea",
+    "Customers": "bab1e37c-9370-4bed-8e6b-f4a36739db17",
+    "Orders": "093abcde-7ee8-47b1-a5ba-1a8178b14598"
+  }
+}

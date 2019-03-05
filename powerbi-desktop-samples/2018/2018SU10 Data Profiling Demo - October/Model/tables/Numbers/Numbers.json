@@ -1,0 +1,54 @@
+{
+  "name": "Numbers",
+  "columns": [
+    {
+      "name": "Column1",
+      "dataType": "int64",
+      "sourceColumn": "Column1",
+      "formatString": "0",
+      "summarizeBy": "sum",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Int64#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "Column1"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    }
+  ],
+  "partitions": [
+    {
+      "name": "Numbers-6fac9525-0d95-404d-b55d-830caeabb7d3",
+      "mode": "import",
+      "source": {
+        "query": "SELECT * FROM [Numbers]",
+        "dataSource": "9e638869-21dd-4871-a76b-5ffb1d69acea"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "d1c109bd-0aa0-4285-8cf8-3a967ee84d15"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "Numbers"
+    }
+  ]
+}

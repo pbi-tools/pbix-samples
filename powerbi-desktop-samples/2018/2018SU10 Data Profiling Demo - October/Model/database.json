@@ -1,0 +1,58 @@
+{
+  "name": "2018SU10 Data Profiling Demo - October",
+  "compatibilityLevel": 1455,
+  "model": {
+    "culture": "en-US",
+    "relationships": [
+      {
+        "name": "256b0cf8-d18a-4631-91de-a042e1c1344d",
+        "fromTable": "Orders",
+        "fromColumn": "OrderDate",
+        "toTable": "LocalDateTable_4e215a5d-84a0-4382-a1a4-fa9aca5802de",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "05a7b974-afe7-4939-bdb5-896fe1624a83",
+        "fromTable": "Orders",
+        "fromColumn": "RequiredDate",
+        "toTable": "LocalDateTable_49867f5a-779b-41d5-a53f-f14479577782",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "379f7d58-b002-4367-bbcb-5ec1a4076d9e",
+        "fromTable": "Orders",
+        "fromColumn": "ShippedDate",
+        "toTable": "LocalDateTable_fc40ce61-4ee5-4f8d-9efc-5bde7d7411a6",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "e6388cb1-ed45-48c8-9951-920ac30386c6",
+        "fromTable": "Orders",
+        "fromColumn": "CustomerID",
+        "toTable": "Customers",
+        "toColumn": "CustomerID"
+      }
+    ],
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": "<LinguisticMetadata><LinguisticSchema Language=\"en-US\" DynamicImprovement=\"HighConfidence\" xmlns=\"http://schemas.microsoft.com/sqlserver/2016/01/linguisticschema\" /></LinguisticMetadata>"
+        }
+      }
+    ],
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.63.3272.40262 (18.10)"
+      }
+    ]
+  }
+}

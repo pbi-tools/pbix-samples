@@ -1,0 +1,456 @@
+{
+  "name": "Orders",
+  "columns": [
+    {
+      "name": "OrderID",
+      "dataType": "int64",
+      "sourceColumn": "OrderID",
+      "formatString": "0",
+      "summarizeBy": "count",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Int64#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "OrderID"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "CustomerID",
+      "dataType": "string",
+      "sourceColumn": "CustomerID",
+      "summarizeBy": "none",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"Text\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "String#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "CustomerID"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "EmployeeID",
+      "dataType": "int64",
+      "sourceColumn": "EmployeeID",
+      "formatString": "0",
+      "summarizeBy": "count",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Int64#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "EmployeeID"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "OrderDate",
+      "dataType": "dateTime",
+      "sourceColumn": "OrderDate",
+      "formatString": "General Date",
+      "summarizeBy": "none",
+      "variations": [
+        {
+          "name": "Variation",
+          "relationship": "256b0cf8-d18a-4631-91de-a042e1c1344d",
+          "defaultHierarchy": {
+            "table": "LocalDateTable_4e215a5d-84a0-4382-a1a4-fa9aca5802de",
+            "hierarchy": "Date Hierarchy"
+          },
+          "isDefault": true
+        }
+      ],
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"1033\" Group=\"GeneralDateTimeLong\" FormatString=\"G\" /></DateTimes></Format>"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "DateTime#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "OrderDate"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "RequiredDate",
+      "dataType": "dateTime",
+      "sourceColumn": "RequiredDate",
+      "formatString": "General Date",
+      "summarizeBy": "none",
+      "variations": [
+        {
+          "name": "Variation",
+          "relationship": "05a7b974-afe7-4939-bdb5-896fe1624a83",
+          "defaultHierarchy": {
+            "table": "LocalDateTable_49867f5a-779b-41d5-a53f-f14479577782",
+            "hierarchy": "Date Hierarchy"
+          },
+          "isDefault": true
+        }
+      ],
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"1033\" Group=\"GeneralDateTimeLong\" FormatString=\"G\" /></DateTimes></Format>"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "DateTime#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "RequiredDate"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "ShippedDate",
+      "dataType": "dateTime",
+      "sourceColumn": "ShippedDate",
+      "formatString": "General Date",
+      "summarizeBy": "none",
+      "variations": [
+        {
+          "name": "Variation",
+          "relationship": "379f7d58-b002-4367-bbcb-5ec1a4076d9e",
+          "defaultHierarchy": {
+            "table": "LocalDateTable_fc40ce61-4ee5-4f8d-9efc-5bde7d7411a6",
+            "hierarchy": "Date Hierarchy"
+          },
+          "isDefault": true
+        }
+      ],
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"1033\" Group=\"GeneralDateTimeLong\" FormatString=\"G\" /></DateTimes></Format>"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "DateTime#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "ShippedDate"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "ShipVia",
+      "dataType": "int64",
+      "sourceColumn": "ShipVia",
+      "formatString": "0",
+      "summarizeBy": "sum",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Int64#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "ShipVia"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "Freight",
+      "dataType": "double",
+      "sourceColumn": "Freight",
+      "summarizeBy": "sum",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"General\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Double#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "Freight"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "ShipName",
+      "dataType": "string",
+      "sourceColumn": "ShipName",
+      "summarizeBy": "none",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"Text\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "String#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "ShipName"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "ShipAddress",
+      "dataType": "string",
+      "sourceColumn": "ShipAddress",
+      "summarizeBy": "none",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"Text\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "String#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "ShipAddress"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "ShipCity",
+      "dataType": "string",
+      "sourceColumn": "ShipCity",
+      "summarizeBy": "none",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"Text\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "String#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "ShipCity"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "ShipRegion",
+      "dataType": "string",
+      "sourceColumn": "ShipRegion",
+      "summarizeBy": "none",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"Text\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "String#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "ShipRegion"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "ShipPostalCode",
+      "dataType": "string",
+      "sourceColumn": "ShipPostalCode",
+      "summarizeBy": "none",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"Text\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "String#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "ShipPostalCode"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "ShipCountry",
+      "dataType": "string",
+      "sourceColumn": "ShipCountry",
+      "summarizeBy": "none",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"Text\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "String#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "ShipCountry"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    }
+  ],
+  "partitions": [
+    {
+      "name": "Orders-7f1b807e-4ef7-44b5-902e-9e66ea8fb7c1",
+      "mode": "import",
+      "source": {
+        "query": "SELECT * FROM [Orders]",
+        "dataSource": "093abcde-7ee8-47b1-a5ba-1a8178b14598"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "50119d82-64e3-4bd1-9eab-90480f6cd402"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "Orders"
+    }
+  ]
+}

@@ -1,0 +1,222 @@
+{
+  "AllFormulas": null,
+  "Formulas": {
+    "Section1/Numbers": {
+      "BufferNextRefresh": 0,
+      "FillColumnNames": [
+        "Column1"
+      ],
+      "IsDirectQuery": 0,
+      "IsLastAnalysisServicesFormulaTextCollection": 1,
+      "IsPrivate": 0,
+      "LastAnalysisServicesFormulaText": {
+        "IncludesReferencedQueries": true
+      },
+      "LoadedToAnalysisServices": 1,
+      "NameUpdatedAfterFill": 1,
+      "NavigationStepName": "Navigation",
+      "RelationshipInfoContainer": {
+        "columnCount": 1,
+        "keyColumnNames": [],
+        "queryRelationships": [],
+        "columnIdentities": [
+          "Section1/Numbers/Changed Type1.{Column1,0}"
+        ],
+        "ColumnCount": 1,
+        "KeyColumnNames": [],
+        "ColumnIdentities": [
+          "Section1/Numbers/Changed Type1.{Column1,0}"
+        ],
+        "RelationshipInfo": []
+      },
+      "ResultType": "Table"
+    },
+    "Section1/Numbers/Source": null,
+    "Section1/Numbers/Converted to Table": null,
+    "Section1/Numbers/Changed Type": null,
+    "Section1/Numbers/Replaced Value": null,
+    "Section1/Numbers/Replaced Value1": null,
+    "Section1/Numbers/Replaced Value2": null,
+    "Section1/Numbers/Replaced Value3": null,
+    "Section1/Numbers/Changed Type1": null,
+    "Section1/Customers": {
+      "BufferNextRefresh": 0,
+      "FillColumnNames": [
+        "CustomerID",
+        "CompanyName",
+        "ContactName",
+        "ContactTitle",
+        "Address",
+        "City",
+        "Region",
+        "PostalCode",
+        "Country",
+        "Phone",
+        "Fax"
+      ],
+      "IsDirectQuery": 0,
+      "IsLastAnalysisServicesFormulaTextCollection": 1,
+      "IsPrivate": 0,
+      "LastAnalysisServicesFormulaText": {
+        "IncludesReferencedQueries": true
+      },
+      "LoadedToAnalysisServices": 1,
+      "NameUpdatedAfterFill": 1,
+      "NavigationStepName": "Navigation",
+      "RelationshipInfoContainer": {
+        "columnCount": 11,
+        "keyColumnNames": [
+          "CustomerID"
+        ],
+        "queryRelationships": [],
+        "columnIdentities": [
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Customers.{CustomerID,0}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Customers.{CompanyName,1}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Customers.{ContactName,2}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Customers.{ContactTitle,3}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Customers.{Address,4}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Customers.{City,5}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Customers.{Region,6}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Customers.{PostalCode,7}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Customers.{Country,8}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Customers.{Phone,9}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Customers.{Fax,10}"
+        ],
+        "ColumnCount": 11,
+        "KeyColumnNames": [
+          "CustomerID"
+        ],
+        "ColumnIdentities": [
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Customers.{CustomerID,0}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Customers.{CompanyName,1}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Customers.{ContactName,2}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Customers.{ContactTitle,3}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Customers.{Address,4}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Customers.{City,5}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Customers.{Region,6}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Customers.{PostalCode,7}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Customers.{Country,8}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Customers.{Phone,9}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Customers.{Fax,10}"
+        ],
+        "RelationshipInfo": []
+      },
+      "ResultType": "Table"
+    },
+    "Section1/Customers/Source": null,
+    "Section1/Customers/Customers_table": null,
+    "Section1/Orders": {
+      "BufferNextRefresh": 0,
+      "FillColumnNames": [
+        "OrderID",
+        "CustomerID",
+        "EmployeeID",
+        "OrderDate",
+        "RequiredDate",
+        "ShippedDate",
+        "ShipVia",
+        "Freight",
+        "ShipName",
+        "ShipAddress",
+        "ShipCity",
+        "ShipRegion",
+        "ShipPostalCode",
+        "ShipCountry"
+      ],
+      "IsDirectQuery": 0,
+      "IsLastAnalysisServicesFormulaTextCollection": 1,
+      "IsPrivate": 0,
+      "LastAnalysisServicesFormulaText": {
+        "IncludesReferencedQueries": true
+      },
+      "LoadedToAnalysisServices": 1,
+      "NameUpdatedAfterFill": 1,
+      "NavigationStepName": "Navigation",
+      "RelationshipInfoContainer": {
+        "columnCount": 14,
+        "keyColumnNames": [
+          "OrderID"
+        ],
+        "queryRelationships": [
+          {
+            "keyColumnCount": 1,
+            "keyColumn": 1,
+            "otherKeyColumnIdentity": "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Customers.{CustomerID,0}",
+            "KeyColumnCount": 1
+          },
+          {
+            "keyColumnCount": 1,
+            "keyColumn": 2,
+            "otherKeyColumnIdentity": "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Employees.{EmployeeID,0}",
+            "KeyColumnCount": 1
+          },
+          {
+            "keyColumnCount": 1,
+            "keyColumn": 6,
+            "otherKeyColumnIdentity": "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Shippers.{ShipperID,0}",
+            "KeyColumnCount": 1
+          }
+        ],
+        "columnIdentities": [
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Orders.{OrderID,0}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Orders.{CustomerID,1}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Orders.{EmployeeID,2}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Orders.{OrderDate,3}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Orders.{RequiredDate,4}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Orders.{ShippedDate,5}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Orders.{ShipVia,6}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Orders.{Freight,7}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Orders.{ShipName,8}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Orders.{ShipAddress,9}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Orders.{ShipCity,10}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Orders.{ShipRegion,11}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Orders.{ShipPostalCode,12}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Orders.{ShipCountry,13}"
+        ],
+        "ColumnCount": 14,
+        "KeyColumnNames": [
+          "OrderID"
+        ],
+        "ColumnIdentities": [
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Orders.{OrderID,0}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Orders.{CustomerID,1}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Orders.{EmployeeID,2}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Orders.{OrderDate,3}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Orders.{RequiredDate,4}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Orders.{ShippedDate,5}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Orders.{ShipVia,6}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Orders.{Freight,7}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Orders.{ShipName,8}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Orders.{ShipAddress,9}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Orders.{ShipCity,10}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Orders.{ShipRegion,11}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Orders.{ShipPostalCode,12}",
+          "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Orders.{ShipCountry,13}"
+        ],
+        "RelationshipInfo": [
+          {
+            "keyColumnCount": 1,
+            "keyColumn": 1,
+            "otherKeyColumnIdentity": "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Customers.{CustomerID,0}",
+            "KeyColumnCount": 1
+          },
+          {
+            "keyColumnCount": 1,
+            "keyColumn": 2,
+            "otherKeyColumnIdentity": "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Employees.{EmployeeID,0}",
+            "KeyColumnCount": 1
+          },
+          {
+            "keyColumnCount": 1,
+            "keyColumn": 6,
+            "otherKeyColumnIdentity": "OData/http:\\/\\/services.odata.org\\/V4\\/Northwind\\/Northwind.svc\\//Shippers.{ShipperID,0}",
+            "KeyColumnCount": 1
+          }
+        ]
+      },
+      "ResultType": "Table"
+    },
+    "Section1/Orders/Source": null,
+    "Section1/Orders/Orders_table": null
+  }
+}

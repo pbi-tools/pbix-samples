@@ -1,0 +1,18 @@
+<Measure Name="SalesAmount for 2014">
+  <Expression><![CDATA[
+CALCULATE(SUM('Sales'[SalesAmount]), 'Calendar'[Date].[Year] IN { 2014 })]]></Expression>
+  <FormatString>\$#,0;(\$#,0);\$#,0</FormatString>
+  <ExtendedProperty><![CDATA[{
+  "type": "json",
+  "name": "MeasureTemplate",
+  "value": {
+    "version": 0,
+    "daxTemplateName": "FilteredMeasure"
+  }
+}]]></ExtendedProperty>
+  <Annotation Name="Format">
+    <Format Format="CurrencyCustom" Accuracy="0" ThousandSeparator="True">
+      <Currency LCID="1033" DisplayName="$ English (United States)" Symbol="$" PositivePattern="0" NegativePattern="0" />
+    </Format>
+  </Annotation>
+</Measure>

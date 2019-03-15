@@ -1,0 +1,71 @@
+{
+  "name": "2019SU03 Blog Demo - March",
+  "compatibilityLevel": 1465,
+  "model": {
+    "culture": "en-US",
+    "relationships": [
+      {
+        "name": "d3d6ab16-d20f-4464-baac-6680746eaeef",
+        "fromTable": "Calendar",
+        "fromColumn": "Date",
+        "toTable": "LocalDateTable_8369bfaf-356a-4b8d-a282-dd2c1868a321",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "c058f796-d10d-4f49-9a70-90bfd27d69e7",
+        "fromTable": "Sales",
+        "fromColumn": "OrderDate",
+        "toTable": "Calendar",
+        "toColumn": "Date"
+      },
+      {
+        "name": "180cf287-07e5-4458-b4dd-c22e9d38f4ba",
+        "fromTable": "Inventory",
+        "fromColumn": "InvDate",
+        "toTable": "LocalDateTable_f7a0d7fe-233b-4557-ad80-800373cd4ad4",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "9be759e0-f636-4dba-88c8-5a79334a1827",
+        "fromTable": "Inventory",
+        "fromColumn": "ProductKey",
+        "toTable": "Products",
+        "toColumn": "ProductKey"
+      },
+      {
+        "name": "7fd74bd9-2f47-4cb6-9ddf-13ade5378ed4",
+        "fromTable": "Sales",
+        "fromColumn": "StoreKey",
+        "toTable": "Stores",
+        "toColumn": "StoreKey"
+      },
+      {
+        "name": "9a3174bf-7472-45b9-8fa6-4cdd669a8f41",
+        "fromTable": "Sales",
+        "fromColumn": "ProdID",
+        "toTable": "Products",
+        "toColumn": "ProductKey"
+      }
+    ],
+    "cultures": [
+      {
+        "name": "en-US",
+        "linguisticMetadata": {
+          "content": "<LinguisticMetadata><LinguisticSchema xmlns:xsd=\"http://www.w3.org/2001/XMLSchema\" xmlns:xsi=\"http://www.w3.org/2001/XMLSchema-instance\" Language=\"en-US\" DynamicImprovement=\"HighConfidence\" xmlns=\"http://schemas.microsoft.com/sqlserver/2016/01/linguisticschema\"><Entities><Entity ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale\"><Words><Word>sale table</Word></Words></Entity><Entity ConceptualProperty=\".\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.property\"><Words><Word>.</Word></Words></Entity><Entity ConceptualProperty=\"A Report Link\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.a_report_link\"><Words><Word>a report link</Word></Words></Entity><Entity ConceptualProperty=\"BrandName\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.brand_name\"><Words><Word>brand name</Word></Words></Entity><Entity ConceptualProperty=\"Category\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.category\"><Words><Word>category</Word></Words></Entity><Entity ConceptualProperty=\"Class\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.class\"><Words><Word>class</Word></Words></Entity><Entity ConceptualProperty=\"Color\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.color\"><Words><Word>color</Word></Words></Entity><Entity ConceptualProperty=\"ColorKPI\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.color_KPI\"><Words><Word>color KPI</Word></Words></Entity><Entity ConceptualProperty=\"Country\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.country\"><Words><Word>country</Word></Words></Entity><Entity ConceptualProperty=\"CustomerAccountNumber\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.customer_account_number\"><Words><Word>customer account number</Word></Words></Entity><Entity ConceptualProperty=\"Freight\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.freight\"><Words><Word>freight</Word></Words></Entity><Entity ConceptualProperty=\"Manufacturer\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.manufacturer\"><Words><Word>manufacturer</Word></Words></Entity><Entity ConceptualProperty=\"NSAT\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.NSAT\"><Words><Word>NSAT</Word></Words></Entity><Entity ConceptualProperty=\"OrderDate\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.order_date\"><Words><Word>order date</Word></Words></Entity><Entity ConceptualProperty=\"ProdID\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.prod_ID\"><Words><Word>prod ID</Word></Words></Entity><Entity ConceptualProperty=\"ProductDescription\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.product_description\"><Words><Word>product description</Word></Words></Entity><Entity ConceptualProperty=\"ProductLabel\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.product_label\"><Words><Word>product label</Word></Words></Entity><Entity ConceptualProperty=\"ProductName\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.product_name\"><Words><Word>product name</Word><Word>product</Word><Word>products</Word></Words></Entity><Entity ConceptualProperty=\"PurchAgain\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.purch_again\"><Words><Word>purch again</Word></Words></Entity><Entity ConceptualProperty=\"Sale Size\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.sale_size\"><Words><Word>sale size</Word></Words></Entity><Entity ConceptualProperty=\"Sales Size Sort\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.sales_size_sort\"><Words><Word>sales size sort</Word></Words></Entity><Entity ConceptualProperty=\"SalesAmount\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.sales_amount\"><Words><Word>sales amount</Word><Word>sales</Word><Word>sale</Word></Words></Entity><Entity ConceptualProperty=\"SalesAmount average per Country\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.SalesAmount_average_per_country\"><Words><Word>SalesAmount average per country</Word></Words></Entity><Entity ConceptualProperty=\"SalesChannelCode\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.sales_channel_code\"><Words><Word>sales channel code</Word></Words></Entity><Entity ConceptualProperty=\"SalesOrderID\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.sales_order_ID\"><Words><Word>sales order ID</Word></Words></Entity><Entity ConceptualProperty=\"SalesTax\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.sales_tax\"><Words><Word>sales tax</Word></Words></Entity><Entity ConceptualProperty=\"Sparkline Line\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.sparkline_line\"><Words><Word>sparkline line</Word></Words></Entity><Entity ConceptualProperty=\"StockType\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.stock_type\"><Words><Word>stock type</Word></Words></Entity><Entity ConceptualProperty=\"StoreKey\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.store_key\"><Words><Word>store key</Word></Words></Entity><Entity ConceptualProperty=\"StyleName\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.style_name\"><Words><Word>style name</Word></Words></Entity><Entity ConceptualProperty=\"SubCategory\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.sub_category\"><Words><Word>sub category</Word></Words></Entity><Entity ConceptualProperty=\"U Vs Goal\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.u_vs_goal\"><Words><Word>u vs goal</Word></Words></Entity><Entity ConceptualProperty=\"U YoY\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.u_YoY\"><Words><Word>u YoY</Word></Words></Entity><Entity ConceptualProperty=\"UnitCost\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.unit_cost\"><Words><Word>unit cost</Word></Words></Entity><Entity ConceptualProperty=\"UnitPrice\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.unit_price\"><Words><Word>unit price</Word></Words></Entity><Entity ConceptualProperty=\"Units\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.unit\"><Words><Word>unit</Word></Words></Entity><Entity ConceptualProperty=\"Vs Goal\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.vs_goal\"><Words><Word>vs goal</Word></Words></Entity><Entity ConceptualProperty=\"YoY\" ConceptualEntity=\"Sales\" Source=\"Generated\" Name=\"sale.yo_Y\"><Words><Word>yo Y</Word></Words></Entity></Entities></LinguisticSchema></LinguisticMetadata>"
+        }
+      }
+    ],
+    "annotations": [
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.67.5404.341 (19.03)"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      }
+    ]
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "4b758acb233352746d58",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 27.699219584465027,
+        "y": 451.171875,
+        "z": 7312,
+        "width": 182.51953125,
+        "height": 174.31640625
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "image",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "imageUrl": {
+              "expr": {
+                "ResourcePackageItem": {
+                  "PackageName": "RegisteredResources",
+                  "PackageType": 1,
+                  "ItemName": "Focus_Mode46871284598599794.png"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

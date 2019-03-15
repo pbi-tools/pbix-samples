@@ -1,0 +1,36 @@
+{
+  "name": "d06fc18ad335fd9451d2",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 27.015625834465027,
+        "y": 256.34765625,
+        "z": 8562,
+        "width": 183.88671875,
+        "height": 175.68359375
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "image",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "imageUrl": {
+              "expr": {
+                "ResourcePackageItem": {
+                  "PackageName": "RegisteredResources",
+                  "PackageType": 1,
+                  "ItemName": "Ellipsis14729861762089502.png"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

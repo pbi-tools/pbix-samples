@@ -1,0 +1,74 @@
+{
+  "name": "653a6aa29b089f4fe617",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 1205.6983240223462,
+        "y": 3.016759776536313,
+        "z": 30000,
+        "width": 47.262569832402235,
+        "height": 54.30167597765363,
+        "tabOrder": 23000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "actionButton",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "icon": [
+        {
+          "properties": {
+            "shapeType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'help'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "visualLink": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "type": {
+              "expr": {
+                "Literal": {
+                  "Value": "'WebUrl'"
+                }
+              }
+            },
+            "webUrl": {
+              "expr": {
+                "Literal": {
+                  "Value": "'https://support.powerbi.com'"
+                }
+              }
+            },
+            "tooltip": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Power BI Support Page'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

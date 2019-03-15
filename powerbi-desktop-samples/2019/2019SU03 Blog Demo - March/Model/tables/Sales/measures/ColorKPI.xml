@@ -1,0 +1,12 @@
+<Measure Name="ColorKPI">
+  <Expression><![CDATA[SWITCH(
+            TRUE()
+            ,SUM(Sales[SalesAmount]) < 10000, "#b20000"
+            ,SUM(Sales[SalesAmount]) < 14000, "#ffc04c"
+            ,SUM(Sales[SalesAmount]) < 15000, "#a500ff"
+            ,"#198c19"
+        )]]></Expression>
+  <Annotation Name="Format">
+    <Format Format="Text" />
+  </Annotation>
+</Measure>

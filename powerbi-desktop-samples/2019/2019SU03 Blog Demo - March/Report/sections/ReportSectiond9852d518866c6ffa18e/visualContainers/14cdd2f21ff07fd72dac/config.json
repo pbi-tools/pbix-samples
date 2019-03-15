@@ -1,0 +1,93 @@
+{
+  "name": "14cdd2f21ff07fd72dac",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 239.2578125,
+        "y": 449.9413937330246,
+        "z": 7000,
+        "width": 1027.44140625,
+        "height": 172.94921875
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Focus Mode",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "20px",
+                      "color": "#666666"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Focus Mode allows a user to focus the attention of the report to only one visual.  Full functionality of the visual is still preserved while allowing the user to see all the visual details on the full report canvas.  Only one visual at a time can enter focus mode."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Demo of Focus Mode",
+                    "textStyle": {},
+                    "url": "https://powerbi.tips/2018/09/how-to-use-focus-mode-in-power-bi/"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Focus Mode'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

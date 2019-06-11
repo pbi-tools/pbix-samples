@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Filter",
+    "expression": {
+      "Column": {
+        "Expression": {
+          "SourceRef": {
+            "Entity": "Sales"
+          }
+        },
+        "Property": "Freight"
+      }
+    },
+    "type": "Advanced",
+    "howCreated": 1
+  }
+]

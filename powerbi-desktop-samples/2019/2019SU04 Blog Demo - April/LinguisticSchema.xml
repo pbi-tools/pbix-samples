@@ -1,0 +1,74 @@
+<LinguisticSchema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Language="en-US" DynamicImprovement="Full" xmlns="http://schemas.microsoft.com/sqlserver/2016/01/linguisticschema">
+  <Entities>
+    <Entity ConceptualEntity="Pod6" Source="Generated" Name="Tooltip">
+      <Words>
+        <Word>Tooltip</Word>
+      </Words>
+    </Entity>
+    <Entity ConceptualEntity="Pod4" Source="Generated" Name="P1">
+      <Words>
+        <Word>P1</Word>
+      </Words>
+    </Entity>
+    <Entity ConceptualEntity="Pod" Source="Generated" Name="Report_Features">
+      <Words>
+        <Word>Report Features</Word>
+      </Words>
+    </Entity>
+    <Entity ConceptualEntity="Pod1" Source="Generated" Name="P2">
+      <Words>
+        <Word>P2</Word>
+      </Words>
+    </Entity>
+    <Entity ConceptualEntity="Pod2" Source="Generated" Name="P3">
+      <Words>
+        <Word>P3</Word>
+      </Words>
+    </Entity>
+    <Entity ConceptualEntity="Pod3" Source="Generated" Name="PreFormatted_Visuals">
+      <Words>
+        <Word>Pre-Formatted Visuals</Word>
+      </Words>
+    </Entity>
+    <Entity ConceptualEntity="Pod5" Source="Generated" Name="P4">
+      <Words>
+        <Word>P4</Word>
+      </Words>
+    </Entity>
+    <Entity ConceptualEntity="Pod7" Source="Generated" Name="P5">
+      <Words>
+        <Word>P5</Word>
+      </Words>
+    </Entity>
+    <Entity ConceptualEntity="Pod8" Source="Generated" Name="P6">
+      <Words>
+        <Word>P6</Word>
+      </Words>
+    </Entity>
+    <Entity ConceptualEntity="Pod9" Source="Generated" Name="P7">
+      <Words>
+        <Word>P7</Word>
+      </Words>
+    </Entity>
+    <Entity ConceptualEntity="Pod10" Source="Generated" Name="P8">
+      <Words>
+        <Word>P8</Word>
+      </Words>
+    </Entity>
+    <Entity ConceptualEntity="Pod11" Source="Generated" Name="P9">
+      <Words>
+        <Word>P9</Word>
+      </Words>
+    </Entity>
+    <Entity ConceptualEntity="Pod12" Source="Generated" Name="P10">
+      <Words>
+        <Word>P10</Word>
+      </Words>
+    </Entity>
+    <Entity ConceptualEntity="Pod14" Source="Generated" Name="P10__Bonus_Extra">
+      <Words>
+        <Word>P10 - Bonus Extra</Word>
+      </Words>
+    </Entity>
+  </Entities>
+</LinguisticSchema>

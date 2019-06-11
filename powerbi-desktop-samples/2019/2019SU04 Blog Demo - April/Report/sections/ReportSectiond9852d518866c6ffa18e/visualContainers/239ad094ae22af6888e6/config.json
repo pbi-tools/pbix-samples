@@ -1,0 +1,93 @@
+{
+  "name": "239ad094ae22af6888e6",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 238.71094584465027,
+        "y": 256.8945437669754,
+        "z": 8250,
+        "width": 1027.44140625,
+        "height": 172.94921875
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Ellipsis",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "20px",
+                      "color": "#666666"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "The three little dots found on the upper left hand corner of a visual.  Click these dots (the Ellipsis) enables a dropdown menu of additional options relating to the visual.  Note: not all visuals will be enabled with the Ellipsis option."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Demo of Ellipsis",
+                    "textStyle": {},
+                    "url": "https://powerbi.tips/2018/09/how-to-use-the-ellipsis-in-power-bi/"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Ellipsis'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

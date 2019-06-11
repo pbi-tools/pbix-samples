@@ -1,0 +1,155 @@
+{
+  "name": "Calendar",
+  "columns": [
+    {
+      "name": "Date",
+      "dataType": "dateTime",
+      "sourceColumn": "Date",
+      "formatString": "dddd\\, mmmm d\\, yyyy",
+      "summarizeBy": "none",
+      "variations": [
+        {
+          "name": "Variation",
+          "relationship": "d3d6ab16-d20f-4464-baac-6680746eaeef",
+          "defaultHierarchy": {
+            "table": "LocalDateTable_8369bfaf-356a-4b8d-a282-dd2c1868a321",
+            "hierarchy": "Date Hierarchy"
+          },
+          "isDefault": true
+        }
+      ],
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "UnderlyingDateTimeDataType",
+          "value": "Date"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"1033\" Group=\"LongDate\" FormatString=\"dddd, MMMM d, yyyy\" /></DateTimes></Format>"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "DateTime#####Date"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "Date"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "Month",
+      "dataType": "string",
+      "sourceColumn": "Month",
+      "sortByColumn": "MonthN",
+      "summarizeBy": "none",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"Text\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "String#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "Month"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "Year",
+      "dataType": "string",
+      "sourceColumn": "Year",
+      "summarizeBy": "none",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"Text\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "String#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "Year"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "MonthN",
+      "dataType": "int64",
+      "sourceColumn": "MonthN",
+      "formatString": "0",
+      "summarizeBy": "sum",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Int64#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "MonthN"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    }
+  ],
+  "partitions": [
+    {
+      "name": "Calendar-e4ea7b44-1334-4796-85ec-5675221ab475",
+      "mode": "import",
+      "source": {
+        "query": "SELECT * FROM [Calendar]",
+        "dataSource": "2b6e225d-aae2-46b6-b0b1-8fb934a108e2"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "e5b9ad38-d5c6-4e78-b776-bf31f13e2a6b"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "Calendar"
+    }
+  ]
+}

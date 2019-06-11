@@ -1,0 +1,36 @@
+{
+  "name": "9224e4f5f74d193c1b03",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 27.357422709465027,
+        "y": 828.515625,
+        "z": 5125,
+        "width": 183.203125,
+        "height": 194.82421875
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "image",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "imageUrl": {
+              "expr": {
+                "ResourcePackageItem": {
+                  "PackageName": "RegisteredResources",
+                  "PackageType": 1,
+                  "ItemName": "Tooltips5927140036291298.png"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

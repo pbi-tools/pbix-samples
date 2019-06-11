@@ -1,0 +1,6 @@
+<Measure Name="Line chart title">
+  <Expression><![CDATA["Units by Time and Class for " & SELECTEDVALUE(Sales[BrandName])]]></Expression>
+  <Annotation Name="Format">
+    <Format Format="Text" />
+  </Annotation>
+</Measure>

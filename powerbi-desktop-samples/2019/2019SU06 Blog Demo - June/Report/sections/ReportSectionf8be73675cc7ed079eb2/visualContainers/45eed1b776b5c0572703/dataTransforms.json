@@ -1,0 +1,138 @@
+{
+  "objects": {
+    "indicator": [
+      {
+        "properties": {
+          "fontSize": {
+            "expr": {
+              "Literal": {
+                "Value": "'28'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "trendline": [
+      {
+        "properties": {
+          "show": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Indicator": [
+      0
+    ],
+    "TrendLine": [
+      1
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Great Britain",
+        "Name": "Sum(Sales.SalesAmount)",
+        "Type": 1,
+        "Format": "\\$#,0;(\\$#,0);\\$#,0"
+      },
+      {
+        "Restatement": "OrderDate",
+        "Name": "Sales.OrderDate",
+        "Type": 4,
+        "Format": "%M/%d/yyyy"
+      }
+    ],
+    "Filters": [
+      {
+        "type": 0,
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Sales"
+              }
+            },
+            "Property": "Country"
+          }
+        }
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Indicator",
+          "Projection": 0,
+          "isActive": false
+        },
+        {
+          "Name": "TrendLine",
+          "Projection": 1,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Great Britain",
+      "format": "\\$#,0;(\\$#,0);\\$#,0",
+      "queryName": "Sum(Sales.SalesAmount)",
+      "roles": {
+        "Indicator": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Sales"
+                }
+              },
+              "Property": "Sales Amount"
+            }
+          },
+          "Function": 0
+        }
+      }
+    },
+    {
+      "displayName": "OrderDate",
+      "format": "%M/%d/yyyy",
+      "queryName": "Sales.OrderDate",
+      "roles": {
+        "TrendLine": true
+      },
+      "sort": 1,
+      "sortOrder": 0,
+      "type": {
+        "category": null,
+        "underlyingType": 519
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Sales"
+            }
+          },
+          "Property": "OrderDate"
+        }
+      }
+    }
+  ]
+}

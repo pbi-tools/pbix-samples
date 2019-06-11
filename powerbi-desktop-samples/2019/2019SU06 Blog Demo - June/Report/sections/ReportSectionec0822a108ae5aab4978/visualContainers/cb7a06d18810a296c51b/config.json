@@ -1,0 +1,79 @@
+{
+  "name": "cb7a06d18810a296c51b",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 1059.7402597402597,
+        "y": 5.9369202226345088,
+        "z": 36500,
+        "width": 170.98330241187384,
+        "height": 51.294978040932286,
+        "tabOrder": 34000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "display": {
+      "mode": "hidden"
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "SLICERS",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontFamily": "Segoe UI",
+                      "color": "#000000"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Use filters to display records",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "12px",
+                      "color": "#2f2f2f"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Slicers - Title Text'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

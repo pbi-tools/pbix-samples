@@ -1,0 +1,10 @@
+{
+  "version": "0.4",
+  "queries": {
+    "Sales": "09ff2c17-8f32-43ad-8f49-784290a61301",
+    "Calendar": "f72c3f57-9abd-4e53-93a4-1aab2329193c",
+    "Products": "a8334a9c-7cb6-41ab-9f1b-e451cb0f7d36",
+    "Stores": "a0b5cefd-56c5-4d4c-ac95-3d73496d82d6",
+    "Inventory": "9307bb97-dc38-41d7-909b-3a58239b7c01"
+  }
+}

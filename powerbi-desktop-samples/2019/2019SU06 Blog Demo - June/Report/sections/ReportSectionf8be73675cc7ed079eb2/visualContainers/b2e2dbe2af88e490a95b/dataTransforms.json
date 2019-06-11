@@ -1,0 +1,272 @@
+{
+  "objects": {
+    "grid": [
+      {
+        "properties": {
+          "textSize": {
+            "expr": {
+              "Literal": {
+                "Value": "10D"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "rowHeaders": [
+      {
+        "properties": {
+          "stepped": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Rows": [
+      0,
+      3
+    ],
+    "Values": [
+      1
+    ],
+    "Columns": [
+      2
+    ]
+  },
+  "projectionActiveItems": {
+    "Rows": [
+      {
+        "queryRef": "Sales.Country",
+        "suppressConcat": false
+      },
+      {
+        "queryRef": "Sales.Class",
+        "suppressConcat": false
+      }
+    ],
+    "Columns": [
+      {
+        "queryRef": "Sales.Sale Size",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Country",
+        "Name": "Sales.Country",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Sales",
+        "Name": "Sum(Sales.SalesAmount)",
+        "Type": 1,
+        "Format": "\\$#,0;(\\$#,0);\\$#,0"
+      },
+      {
+        "Restatement": "Sale Size",
+        "Name": "Sales.Sale Size",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Class",
+        "Name": "Sales.Class",
+        "Type": 2048
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Rows",
+          "Projection": 0,
+          "isActive": true
+        },
+        {
+          "Name": "Rows",
+          "Projection": 3,
+          "isActive": true
+        },
+        {
+          "Name": "Values",
+          "Projection": 1,
+          "isActive": false
+        },
+        {
+          "Name": "Columns",
+          "Projection": 2,
+          "isActive": true
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Country",
+      "queryName": "Sales.Country",
+      "roles": {
+        "Rows": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Sales"
+            }
+          },
+          "Property": "Country"
+        }
+      }
+    },
+    {
+      "displayName": "Sales",
+      "format": "\\$#,0;(\\$#,0);\\$#,0",
+      "queryName": "Sum(Sales.SalesAmount)",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Sales"
+                }
+              },
+              "Property": "Sales Amount"
+            }
+          },
+          "Function": 1
+        }
+      }
+    },
+    {
+      "displayName": "Sale Size",
+      "queryName": "Sales.Sale Size",
+      "roles": {
+        "Columns": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Sales"
+            }
+          },
+          "Property": "Sale Size"
+        }
+      }
+    },
+    {
+      "displayName": "Class",
+      "queryName": "Sales.Class",
+      "roles": {
+        "Rows": true
+      },
+      "sort": 1,
+      "sortOrder": 0,
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Sales"
+            }
+          },
+          "Property": "Class"
+        }
+      }
+    }
+  ],
+  "expansionStates": [
+    {
+      "roles": [
+        "Rows"
+      ],
+      "levels": [
+        {
+          "queryRefs": [
+            "Sales.Country"
+          ],
+          "identityKeys": [
+            {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Sales"
+                  }
+                },
+                "Property": "Country"
+              }
+            }
+          ]
+        },
+        {
+          "queryRefs": [
+            "Sales.Class"
+          ],
+          "isCollapsed": true
+        }
+      ],
+      "root": {
+        "identityValues": null,
+        "children": [
+          {
+            "identityValues": [
+              {
+                "Literal": {
+                  "Value": "'Canada'"
+                }
+              }
+            ],
+            "isToggled": true
+          },
+          {
+            "identityValues": [
+              {
+                "Literal": {
+                  "Value": "'France'"
+                }
+              }
+            ],
+            "isToggled": true
+          },
+          {
+            "identityValues": [
+              {
+                "Literal": {
+                  "Value": "'Germany'"
+                }
+              }
+            ],
+            "isToggled": true
+          }
+        ]
+      }
+    }
+  ]
+}

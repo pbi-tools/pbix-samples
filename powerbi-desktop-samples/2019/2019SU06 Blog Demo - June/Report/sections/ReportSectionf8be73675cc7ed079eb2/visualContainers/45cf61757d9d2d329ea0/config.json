@@ -1,0 +1,409 @@
+{
+  "name": "45cf61757d9d2d329ea0",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 808.90156918687592,
+        "y": 64.821683309557784,
+        "z": 35006,
+        "width": 448.2738944365193,
+        "height": 629.04422253922974,
+        "tabOrder": 21005
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "keyDriversVisual",
+    "projections": {
+      "ExplainBy": [
+        {
+          "queryRef": "Sales.Class"
+        },
+        {
+          "queryRef": "Sales.Country"
+        },
+        {
+          "queryRef": "Sales.BrandName"
+        },
+        {
+          "queryRef": "Sales.Sale Size"
+        },
+        {
+          "queryRef": "Sum(Sales.Units)"
+        },
+        {
+          "queryRef": "Sum(Sales.Freight)"
+        },
+        {
+          "queryRef": "Sales.Color"
+        },
+        {
+          "queryRef": "Sum(Sales.NSAT)"
+        },
+        {
+          "queryRef": "Sum(Sales.PurchAgain)"
+        },
+        {
+          "queryRef": "Sales.StockType"
+        },
+        {
+          "queryRef": "Sum(Sales.UnitPrice)"
+        },
+        {
+          "queryRef": "Sum(Sales.UnitCost)"
+        },
+        {
+          "queryRef": "Sales.Category"
+        },
+        {
+          "queryRef": "Sales.SubCategory"
+        }
+      ],
+      "Target": [
+        {
+          "queryRef": "Sales.SalesAmount"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "s",
+          "Entity": "Sales"
+        }
+      ],
+      "Select": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "s"
+              }
+            },
+            "Property": "Class"
+          },
+          "Name": "Sales.Class"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "s"
+              }
+            },
+            "Property": "Country"
+          },
+          "Name": "Sales.Country"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "s"
+              }
+            },
+            "Property": "Brand Name"
+          },
+          "Name": "Sales.BrandName"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "s"
+              }
+            },
+            "Property": "Sale Size"
+          },
+          "Name": "Sales.Sale Size"
+        },
+        {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "s"
+                  }
+                },
+                "Property": "Units"
+              }
+            },
+            "Function": 0
+          },
+          "Name": "Sum(Sales.Units)"
+        },
+        {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "s"
+                  }
+                },
+                "Property": "Freight"
+              }
+            },
+            "Function": 0
+          },
+          "Name": "Sum(Sales.Freight)"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "s"
+              }
+            },
+            "Property": "Color"
+          },
+          "Name": "Sales.Color"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "s"
+              }
+            },
+            "Property": "Sales Amount"
+          },
+          "Name": "Sales.SalesAmount"
+        },
+        {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "s"
+                  }
+                },
+                "Property": "NSAT"
+              }
+            },
+            "Function": 0
+          },
+          "Name": "Sum(Sales.NSAT)"
+        },
+        {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "s"
+                  }
+                },
+                "Property": "PurchAgain"
+              }
+            },
+            "Function": 0
+          },
+          "Name": "Sum(Sales.PurchAgain)"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "s"
+              }
+            },
+            "Property": "StockType"
+          },
+          "Name": "Sales.StockType"
+        },
+        {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "s"
+                  }
+                },
+                "Property": "Unit Price"
+              }
+            },
+            "Function": 0
+          },
+          "Name": "Sum(Sales.UnitPrice)"
+        },
+        {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "s"
+                  }
+                },
+                "Property": "Unit Cost"
+              }
+            },
+            "Function": 0
+          },
+          "Name": "Sum(Sales.UnitCost)"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "s"
+              }
+            },
+            "Property": "Category"
+          },
+          "Name": "Sales.Category"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "s"
+              }
+            },
+            "Property": "SubCategory"
+          },
+          "Name": "Sales.SubCategory"
+        }
+      ],
+      "OrderBy": [
+        {
+          "Direction": 1,
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Source": "s"
+                }
+              },
+              "Property": "Class"
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "hasDefaultSort": true,
+    "objects": {
+      "keyDrivers": [
+        {
+          "properties": {
+            "targetValue": {
+              "expr": {
+                "Literal": {
+                  "Value": "'0.95D'"
+                }
+              }
+            },
+            "numericTargetSelectedKind": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "selectedNumericAnalysis": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Continuous'"
+                }
+              }
+            },
+            "selectedAnalysis": {
+              "expr": {
+                "Literal": {
+                  "Value": "'keyInfluencers'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "title": [
+        {
+          "properties": {
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "showTooltipButton": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeaderTooltip": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Click on the bubbles to see a visual with more information.'"
+                }
+              }
+            },
+            "section": {
+              "expr": {
+                "Literal": {
+                  "Value": "'none'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

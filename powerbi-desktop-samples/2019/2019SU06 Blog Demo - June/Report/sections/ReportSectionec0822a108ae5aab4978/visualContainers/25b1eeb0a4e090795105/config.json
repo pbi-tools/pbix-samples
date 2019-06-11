@@ -1,0 +1,145 @@
+{
+  "name": "25b1eeb0a4e090795105",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 554.844336750818,
+        "y": 675.07433726204647,
+        "z": 750,
+        "width": 459.91671624033313,
+        "height": 44.925639500297443,
+        "tabOrder": 42000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Bubble Size:",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "12px",
+                      "color": "#000000"
+                    }
+                  },
+                  {
+                    "value": "  %GT Sales     ",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "12px",
+                      "color": "#808080"
+                    }
+                  },
+                  {
+                    "value": "Color Gradient:",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "12px",
+                      "color": "#000000"
+                    }
+                  },
+                  {
+                    "value": " Units Sold  ( High ",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "12px",
+                      "color": "#808080"
+                    }
+                  },
+                  {
+                    "value": "l",
+                    "textStyle": {
+                      "fontFamily": "Wingdings",
+                      "fontSize": "16px",
+                      "color": "#63c345"
+                    }
+                  },
+                  {
+                    "value": "l",
+                    "textStyle": {
+                      "fontFamily": "Wingdings",
+                      "fontSize": "16px",
+                      "color": "#c2ce47"
+                    }
+                  },
+                  {
+                    "value": "l",
+                    "textStyle": {
+                      "fontFamily": "Wingdings",
+                      "fontSize": "16px",
+                      "color": "#f2c811"
+                    }
+                  },
+                  {
+                    "value": "l",
+                    "textStyle": {
+                      "fontFamily": "Wingdings",
+                      "fontSize": "16px",
+                      "color": "#f19c42"
+                    }
+                  },
+                  {
+                    "value": "l",
+                    "textStyle": {
+                      "fontFamily": "Wingdings",
+                      "fontSize": "16px",
+                      "color": "#e82c3a"
+                    }
+                  },
+                  {
+                    "value": " ",
+                    "textStyle": {
+                      "fontSize": "12px",
+                      "color": "#808080"
+                    }
+                  },
+                  {
+                    "value": "Low )",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontSize": "12px",
+                      "color": "#808080"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Bubble Chart Legend'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

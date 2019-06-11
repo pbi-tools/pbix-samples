@@ -1,0 +1,9 @@
+<Measure Name="Sales Last Year">
+  <Expression><![CDATA[CALCULATE(SUM(Sales[Sales Amount]),PREVIOUSYEAR('Calendar'[Date]))]]></Expression>
+  <FormatString>\$#,0.00;(\$#,0.00);\$#,0.00</FormatString>
+  <Annotation Name="Format">
+    <Format Format="CurrencyCustom" Accuracy="2" ThousandSeparator="True">
+      <Currency LCID="1033" DisplayName="$ English (United States)" Symbol="$" PositivePattern="0" NegativePattern="0" />
+    </Format>
+  </Annotation>
+</Measure>

@@ -1,0 +1,6 @@
+<Measure Name="Sum of Sales">
+  <Expression><![CDATA[SUM(Sales[SalesAmount])]]></Expression>
+  <Annotation Name="Format">
+    <Format Format="General" />
+  </Annotation>
+</Measure>

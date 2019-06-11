@@ -1,0 +1,429 @@
+{
+  "name": "Inventory",
+  "isHidden": true,
+  "columns": [
+    {
+      "name": "InventoryRecID",
+      "dataType": "int64",
+      "isHidden": true,
+      "sourceColumn": "InventoryRecID",
+      "formatString": "0",
+      "summarizeBy": "count",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Int64#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "InventoryRecID"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "InvDate",
+      "dataType": "dateTime",
+      "isHidden": true,
+      "sourceColumn": "InvDate",
+      "formatString": "dddd\\, mmmm d\\, yyyy",
+      "summarizeBy": "none",
+      "variations": [
+        {
+          "name": "Variation",
+          "relationship": "180cf287-07e5-4458-b4dd-c22e9d38f4ba",
+          "defaultHierarchy": {
+            "table": "LocalDateTable_f7a0d7fe-233b-4557-ad80-800373cd4ad4",
+            "hierarchy": "Date Hierarchy"
+          },
+          "isDefault": true
+        }
+      ],
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "UnderlyingDateTimeDataType",
+          "value": "Date"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"1033\" Group=\"LongDate\" FormatString=\"dddd, MMMM d, yyyy\" /></DateTimes></Format>"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "DateTime#####Date"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "InvDate"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "StoreKey",
+      "dataType": "int64",
+      "isHidden": true,
+      "sourceColumn": "StoreKey",
+      "formatString": "0",
+      "summarizeBy": "count",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Int64#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "StoreKey"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "ProductKey",
+      "dataType": "int64",
+      "isHidden": true,
+      "sourceColumn": "ProductKey",
+      "formatString": "0",
+      "summarizeBy": "none",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Int64#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "ProductKey"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "ComboKey",
+      "dataType": "double",
+      "isHidden": true,
+      "sourceColumn": "ComboKey",
+      "summarizeBy": "count",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"General\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Double#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "ComboKey"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "OnHandQuantity",
+      "dataType": "int64",
+      "isHidden": true,
+      "sourceColumn": "OnHandQuantity",
+      "formatString": "0",
+      "summarizeBy": "sum",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Int64#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "OnHandQuantity"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "OnOrderQuantity",
+      "dataType": "int64",
+      "isHidden": true,
+      "sourceColumn": "OnOrderQuantity",
+      "formatString": "0",
+      "summarizeBy": "sum",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Int64#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "OnOrderQuantity"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "SafetyStockQuantity",
+      "dataType": "int64",
+      "isHidden": true,
+      "sourceColumn": "SafetyStockQuantity",
+      "formatString": "0",
+      "summarizeBy": "sum",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Int64#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "SafetyStockQuantity"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "UnitCost",
+      "dataType": "double",
+      "isHidden": true,
+      "sourceColumn": "UnitCost",
+      "summarizeBy": "sum",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"General\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Double#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "UnitCost"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "DaysInStock",
+      "dataType": "int64",
+      "isHidden": true,
+      "sourceColumn": "DaysInStock",
+      "formatString": "0",
+      "summarizeBy": "sum",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Int64#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "DaysInStock"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "MinDayInStock",
+      "dataType": "int64",
+      "isHidden": true,
+      "sourceColumn": "MinDayInStock",
+      "formatString": "0",
+      "summarizeBy": "sum",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Int64#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "MinDayInStock"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "MaxDayInStock",
+      "dataType": "int64",
+      "isHidden": true,
+      "sourceColumn": "MaxDayInStock",
+      "formatString": "0",
+      "summarizeBy": "sum",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Int64#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "MaxDayInStock"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    },
+    {
+      "name": "Aging",
+      "dataType": "int64",
+      "isHidden": true,
+      "sourceColumn": "Aging",
+      "formatString": "0",
+      "summarizeBy": "sum",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "Automatic"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Int64#####not a type"
+        },
+        {
+          "name": "PBI_NameAtRefresh",
+          "value": "Aging"
+        },
+        {
+          "name": "PBI_WasHiddenAtRefresh",
+          "value": "False"
+        }
+      ]
+    }
+  ],
+  "partitions": [
+    {
+      "name": "Inventory-374fbeb9-772f-4520-9686-369e7921e87d",
+      "mode": "import",
+      "source": {
+        "query": "SELECT * FROM [Inventory]",
+        "dataSource": "300b9251-6ab8-4b82-98f7-19eaa32fa325"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "edcbe87b-8a28-4c57-9d32-f43d5d5478f1"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "Inventory"
+    }
+  ]
+}

@@ -1,0 +1,218 @@
+{
+  "name": "LocalDateTable_8369bfaf-356a-4b8d-a282-dd2c1868a321",
+  "isHidden": true,
+  "showAsVariationsOnly": true,
+  "columns": [
+    {
+      "type": "calculatedTableColumn",
+      "name": "Date",
+      "dataType": "dateTime",
+      "isNameInferred": true,
+      "isDataTypeInferred": true,
+      "isHidden": true,
+      "sourceColumn": "[Date]",
+      "dataCategory": "PaddedDateTableDates",
+      "summarizeBy": "none",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "User"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"1033\" Group=\"GeneralDateTimeLong\" FormatString=\"G\" /></DateTimes></Format>"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "DateTime#####not a type"
+        }
+      ]
+    },
+    {
+      "type": "calculated",
+      "name": "Year",
+      "dataType": "int64",
+      "isDataTypeInferred": true,
+      "isHidden": true,
+      "expression": "YEAR([Date])",
+      "dataCategory": "Years",
+      "summarizeBy": "none",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "User"
+        },
+        {
+          "name": "TemplateId",
+          "value": "Year"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Int64#####not a type"
+        }
+      ]
+    },
+    {
+      "type": "calculated",
+      "name": "MonthNo",
+      "dataType": "int64",
+      "isDataTypeInferred": true,
+      "isHidden": true,
+      "expression": "MONTH([Date])",
+      "dataCategory": "MonthOfYear",
+      "summarizeBy": "none",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "User"
+        },
+        {
+          "name": "TemplateId",
+          "value": "MonthNumber"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Int64#####not a type"
+        }
+      ]
+    },
+    {
+      "type": "calculated",
+      "name": "Month",
+      "dataType": "string",
+      "isDataTypeInferred": true,
+      "isHidden": true,
+      "expression": "FORMAT([Date], \"MMMM\")",
+      "sortByColumn": "MonthNo",
+      "dataCategory": "Months",
+      "summarizeBy": "none",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "User"
+        },
+        {
+          "name": "TemplateId",
+          "value": "Month"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"Text\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "String#####not a type"
+        }
+      ]
+    },
+    {
+      "type": "calculated",
+      "name": "QuarterNo",
+      "dataType": "int64",
+      "isDataTypeInferred": true,
+      "isHidden": true,
+      "expression": "INT(([MonthNo] + 2) / 3)",
+      "dataCategory": "QuarterOfYear",
+      "summarizeBy": "none",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "User"
+        },
+        {
+          "name": "TemplateId",
+          "value": "QuarterNumber"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Int64#####not a type"
+        }
+      ]
+    },
+    {
+      "type": "calculated",
+      "name": "Quarter",
+      "dataType": "string",
+      "isDataTypeInferred": true,
+      "isHidden": true,
+      "expression": "\"Qtr \" & [QuarterNo]",
+      "sortByColumn": "QuarterNo",
+      "dataCategory": "Quarters",
+      "summarizeBy": "none",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "User"
+        },
+        {
+          "name": "TemplateId",
+          "value": "Quarter"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"Text\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "String#####not a type"
+        }
+      ]
+    },
+    {
+      "type": "calculated",
+      "name": "Day",
+      "dataType": "int64",
+      "isDataTypeInferred": true,
+      "isHidden": true,
+      "expression": "DAY([Date])",
+      "dataCategory": "DayOfMonth",
+      "summarizeBy": "none",
+      "annotations": [
+        {
+          "name": "SummarizationSetBy",
+          "value": "User"
+        },
+        {
+          "name": "TemplateId",
+          "value": "Day"
+        },
+        {
+          "name": "Format",
+          "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+        },
+        {
+          "name": "DataTypeAtRefresh",
+          "value": "Int64#####not a type"
+        }
+      ]
+    }
+  ],
+  "partitions": [
+    {
+      "name": "LocalDateTable_8369bfaf-356a-4b8d-a282-dd2c1868a321-1bd7825a-a335-4663-85d1-d0d8cdf9ed96",
+      "mode": "import",
+      "source": {
+        "type": "calculated",
+        "expression": "Calendar(Date(Year(MIN('Calendar'[Date])), 1, 1), Date(Year(MAX('Calendar'[Date])), 12, 31))"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "__PBI_LocalDateTable",
+      "value": "true"
+    }
+  ]
+}

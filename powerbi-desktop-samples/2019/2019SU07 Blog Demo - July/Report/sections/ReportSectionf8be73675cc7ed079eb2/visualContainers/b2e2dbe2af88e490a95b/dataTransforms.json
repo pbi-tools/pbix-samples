@@ -1,0 +1,597 @@
+{
+  "objects": {
+    "grid": [
+      {
+        "properties": {
+          "textSize": {
+            "expr": {
+              "Literal": {
+                "Value": "10D"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "rowHeaders": [
+      {
+        "properties": {
+          "stepped": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "values": [
+      {
+        "properties": {
+          "icon": {
+            "kind": "Icon",
+            "layout": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Before'"
+                }
+              }
+            },
+            "verticalAlignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Top'"
+                }
+              }
+            },
+            "value": {
+              "expr": {
+                "Conditional": {
+                  "Cases": [
+                    {
+                      "Condition": {
+                        "Comparison": {
+                          "ComparisonKind": 2,
+                          "Left": {
+                            "SelectRef": {
+                              "ExpressionName": "Sum(Sales.SalesAmount)"
+                            }
+                          },
+                          "Right": {
+                            "RangePercent": {
+                              "Min": {
+                                "ScopedEval": {
+                                  "Expression": {
+                                    "Aggregation": {
+                                      "Expression": {
+                                        "ScopedEval": {
+                                          "Expression": {
+                                            "SelectRef": {
+                                              "ExpressionName": "Sum(Sales.SalesAmount)"
+                                            }
+                                          },
+                                          "Scope": [
+                                            {
+                                              "AllRolesRef": {}
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      "Function": 3
+                                    }
+                                  },
+                                  "Scope": []
+                                }
+                              },
+                              "Max": {
+                                "ScopedEval": {
+                                  "Expression": {
+                                    "Aggregation": {
+                                      "Expression": {
+                                        "ScopedEval": {
+                                          "Expression": {
+                                            "SelectRef": {
+                                              "ExpressionName": "Sum(Sales.SalesAmount)"
+                                            }
+                                          },
+                                          "Scope": [
+                                            {
+                                              "AllRolesRef": {}
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      "Function": 4
+                                    }
+                                  },
+                                  "Scope": []
+                                }
+                              },
+                              "Percent": 0.67
+                            }
+                          }
+                        }
+                      },
+                      "Value": {
+                        "Literal": {
+                          "Value": "'CircleHigh'"
+                        }
+                      }
+                    },
+                    {
+                      "Condition": {
+                        "And": {
+                          "Left": {
+                            "Comparison": {
+                              "ComparisonKind": 2,
+                              "Left": {
+                                "SelectRef": {
+                                  "ExpressionName": "Sum(Sales.SalesAmount)"
+                                }
+                              },
+                              "Right": {
+                                "RangePercent": {
+                                  "Min": {
+                                    "ScopedEval": {
+                                      "Expression": {
+                                        "Aggregation": {
+                                          "Expression": {
+                                            "ScopedEval": {
+                                              "Expression": {
+                                                "SelectRef": {
+                                                  "ExpressionName": "Sum(Sales.SalesAmount)"
+                                                }
+                                              },
+                                              "Scope": [
+                                                {
+                                                  "AllRolesRef": {}
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "Function": 3
+                                        }
+                                      },
+                                      "Scope": []
+                                    }
+                                  },
+                                  "Max": {
+                                    "ScopedEval": {
+                                      "Expression": {
+                                        "Aggregation": {
+                                          "Expression": {
+                                            "ScopedEval": {
+                                              "Expression": {
+                                                "SelectRef": {
+                                                  "ExpressionName": "Sum(Sales.SalesAmount)"
+                                                }
+                                              },
+                                              "Scope": [
+                                                {
+                                                  "AllRolesRef": {}
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "Function": 4
+                                        }
+                                      },
+                                      "Scope": []
+                                    }
+                                  },
+                                  "Percent": 0.33
+                                }
+                              }
+                            }
+                          },
+                          "Right": {
+                            "Comparison": {
+                              "ComparisonKind": 3,
+                              "Left": {
+                                "SelectRef": {
+                                  "ExpressionName": "Sum(Sales.SalesAmount)"
+                                }
+                              },
+                              "Right": {
+                                "RangePercent": {
+                                  "Min": {
+                                    "ScopedEval": {
+                                      "Expression": {
+                                        "Aggregation": {
+                                          "Expression": {
+                                            "ScopedEval": {
+                                              "Expression": {
+                                                "SelectRef": {
+                                                  "ExpressionName": "Sum(Sales.SalesAmount)"
+                                                }
+                                              },
+                                              "Scope": [
+                                                {
+                                                  "AllRolesRef": {}
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "Function": 3
+                                        }
+                                      },
+                                      "Scope": []
+                                    }
+                                  },
+                                  "Max": {
+                                    "ScopedEval": {
+                                      "Expression": {
+                                        "Aggregation": {
+                                          "Expression": {
+                                            "ScopedEval": {
+                                              "Expression": {
+                                                "SelectRef": {
+                                                  "ExpressionName": "Sum(Sales.SalesAmount)"
+                                                }
+                                              },
+                                              "Scope": [
+                                                {
+                                                  "AllRolesRef": {}
+                                                }
+                                              ]
+                                            }
+                                          },
+                                          "Function": 4
+                                        }
+                                      },
+                                      "Scope": []
+                                    }
+                                  },
+                                  "Percent": 0.67
+                                }
+                              }
+                            }
+                          }
+                        }
+                      },
+                      "Value": {
+                        "Literal": {
+                          "Value": "'SignMedium'"
+                        }
+                      }
+                    },
+                    {
+                      "Condition": {
+                        "Comparison": {
+                          "ComparisonKind": 3,
+                          "Left": {
+                            "SelectRef": {
+                              "ExpressionName": "Sum(Sales.SalesAmount)"
+                            }
+                          },
+                          "Right": {
+                            "RangePercent": {
+                              "Min": {
+                                "ScopedEval": {
+                                  "Expression": {
+                                    "Aggregation": {
+                                      "Expression": {
+                                        "ScopedEval": {
+                                          "Expression": {
+                                            "SelectRef": {
+                                              "ExpressionName": "Sum(Sales.SalesAmount)"
+                                            }
+                                          },
+                                          "Scope": [
+                                            {
+                                              "AllRolesRef": {}
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      "Function": 3
+                                    }
+                                  },
+                                  "Scope": []
+                                }
+                              },
+                              "Max": {
+                                "ScopedEval": {
+                                  "Expression": {
+                                    "Aggregation": {
+                                      "Expression": {
+                                        "ScopedEval": {
+                                          "Expression": {
+                                            "SelectRef": {
+                                              "ExpressionName": "Sum(Sales.SalesAmount)"
+                                            }
+                                          },
+                                          "Scope": [
+                                            {
+                                              "AllRolesRef": {}
+                                            }
+                                          ]
+                                        }
+                                      },
+                                      "Function": 4
+                                    }
+                                  },
+                                  "Scope": []
+                                }
+                              },
+                              "Percent": 0.33
+                            }
+                          }
+                        }
+                      },
+                      "Value": {
+                        "Literal": {
+                          "Value": "'SignLow'"
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        },
+        "selector": {
+          "data": [
+            {
+              "dataViewWildcard": {
+                "matchingOption": 1
+              }
+            }
+          ],
+          "metadata": "Sum(Sales.SalesAmount)"
+        }
+      },
+      {
+        "properties": {
+          "fontColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Conditional": {
+                    "Cases": [
+                      {
+                        "Condition": {
+                          "Comparison": {
+                            "ComparisonKind": 3,
+                            "Left": {
+                              "Aggregation": {
+                                "Expression": {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Entity": "Sales"
+                                      }
+                                    },
+                                    "Property": "Sales Amount"
+                                  }
+                                },
+                                "Function": 1
+                              }
+                            },
+                            "Right": {
+                              "Literal": {
+                                "Value": "1000D"
+                              }
+                            }
+                          }
+                        },
+                        "Value": {
+                          "Literal": {
+                            "Value": "'#FD625E'"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        },
+        "selector": {
+          "data": [
+            {
+              "roles": [
+                "Rows",
+                "Columns"
+              ]
+            }
+          ],
+          "metadata": "Sum(Sales.SalesAmount)"
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Rows": [
+      0,
+      2
+    ],
+    "Values": [
+      1
+    ],
+    "Columns": [
+      3
+    ]
+  },
+  "projectionActiveItems": {
+    "Rows": [
+      {
+        "queryRef": "Sales.Country",
+        "suppressConcat": false
+      },
+      {
+        "queryRef": "Sales.Class",
+        "suppressConcat": false
+      }
+    ],
+    "Columns": [
+      {
+        "queryRef": "Calendar.Year",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Country",
+        "Name": "Sales.Country",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Sales",
+        "Name": "Sum(Sales.SalesAmount)",
+        "Type": 1,
+        "Format": "\\$#,0;(\\$#,0);\\$#,0"
+      },
+      {
+        "Restatement": "Class",
+        "Name": "Sales.Class",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Year",
+        "Name": "Calendar.Year",
+        "Type": 2048
+      }
+    ],
+    "Filters": [
+      {
+        "type": 0,
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Calendar"
+              }
+            },
+            "Property": "Year"
+          }
+        }
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Rows",
+          "Projection": 0,
+          "isActive": true
+        },
+        {
+          "Name": "Rows",
+          "Projection": 2,
+          "isActive": true
+        },
+        {
+          "Name": "Values",
+          "Projection": 1,
+          "isActive": false
+        },
+        {
+          "Name": "Columns",
+          "Projection": 3,
+          "isActive": true
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Country",
+      "queryName": "Sales.Country",
+      "roles": {
+        "Rows": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Sales"
+            }
+          },
+          "Property": "Country"
+        }
+      }
+    },
+    {
+      "displayName": "Sales",
+      "format": "\\$#,0;(\\$#,0);\\$#,0",
+      "queryName": "Sum(Sales.SalesAmount)",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Sales"
+                }
+              },
+              "Property": "Sales Amount"
+            }
+          },
+          "Function": 1
+        }
+      }
+    },
+    {
+      "displayName": "Class",
+      "queryName": "Sales.Class",
+      "roles": {
+        "Rows": true
+      },
+      "sort": 1,
+      "sortOrder": 0,
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Sales"
+            }
+          },
+          "Property": "Class"
+        }
+      }
+    },
+    {
+      "displayName": "Year",
+      "queryName": "Calendar.Year",
+      "roles": {
+        "Columns": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Calendar"
+            }
+          },
+          "Property": "Year"
+        }
+      }
+    }
+  ]
+}

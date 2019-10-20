@@ -1,0 +1,84 @@
+{
+  "name": "3ee4cd20b815000eb2c7",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 765.15108240125835,
+        "y": 27.069803573655967,
+        "z": 4000,
+        "width": 120.22099447513813,
+        "height": 40.073664825046045,
+        "tabOrder": -6001
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "UK",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "color": "#b3b3b3"
+                    }
+                  }
+                ],
+                "horizontalTextAlignment": "center"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "visualHeader": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "100D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Header - Card Label 5'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

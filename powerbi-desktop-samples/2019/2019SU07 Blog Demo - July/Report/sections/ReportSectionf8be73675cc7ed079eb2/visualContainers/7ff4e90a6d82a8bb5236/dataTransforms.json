@@ -1,0 +1,314 @@
+{
+  "objects": {
+    "legend": [
+      {
+        "properties": {
+          "show": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "dataPoint": [
+      {
+        "properties": {
+          "fill": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "ThemeDataColor": {
+                    "ColorId": 6,
+                    "Percent": 0
+                  }
+                }
+              }
+            }
+          }
+        },
+        "selector": {
+          "data": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sales"
+                        }
+                      },
+                      "Property": "Class"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Deluxe'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      },
+      {
+        "properties": {
+          "fill": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#001eff'"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "selector": {
+          "data": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Sales"
+                        }
+                      },
+                      "Property": "Class"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Economy'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "X": [
+      0
+    ],
+    "Y": [
+      1
+    ],
+    "Category": [
+      2
+    ],
+    "Play": [
+      3
+    ],
+    "Series": [
+      4
+    ]
+  },
+  "projectionActiveItems": {
+    "X": [
+      {
+        "queryRef": "Sum(Sales.NSAT)",
+        "suppressConcat": false
+      }
+    ],
+    "Category": [
+      {
+        "queryRef": "Sales.Country",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Average of NSAT",
+        "Name": "Sum(Sales.NSAT)",
+        "Type": 1,
+        "Format": "0.00"
+      },
+      {
+        "Restatement": "Average of PurchAgain",
+        "Name": "Sum(Sales.PurchAgain)",
+        "Type": 1,
+        "Format": "0.00"
+      },
+      {
+        "Restatement": "Country",
+        "Name": "Sales.Country",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Year",
+        "Name": "Calendar.Year",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Class",
+        "Name": "Sales.Class",
+        "Type": 2048
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "X",
+          "Projection": 0,
+          "isActive": true
+        },
+        {
+          "Name": "Y",
+          "Projection": 1,
+          "isActive": false
+        },
+        {
+          "Name": "Category",
+          "Projection": 2,
+          "isActive": true
+        },
+        {
+          "Name": "Play",
+          "Projection": 3,
+          "isActive": false
+        },
+        {
+          "Name": "Series",
+          "Projection": 4,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Average of NSAT",
+      "format": "0.00",
+      "queryName": "Sum(Sales.NSAT)",
+      "roles": {
+        "X": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Sales"
+                }
+              },
+              "Property": "NSAT"
+            }
+          },
+          "Function": 1
+        }
+      }
+    },
+    {
+      "displayName": "Average of PurchAgain",
+      "format": "0.00",
+      "queryName": "Sum(Sales.PurchAgain)",
+      "roles": {
+        "Y": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Sales"
+                }
+              },
+              "Property": "PurchAgain"
+            }
+          },
+          "Function": 1
+        }
+      }
+    },
+    {
+      "displayName": "Country",
+      "queryName": "Sales.Country",
+      "roles": {
+        "Category": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Sales"
+            }
+          },
+          "Property": "Country"
+        }
+      }
+    },
+    {
+      "displayName": "Year",
+      "queryName": "Calendar.Year",
+      "roles": {
+        "Play": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Calendar"
+            }
+          },
+          "Property": "Year"
+        }
+      }
+    },
+    {
+      "displayName": "Class",
+      "queryName": "Sales.Class",
+      "roles": {
+        "Series": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Sales"
+            }
+          },
+          "Property": "Class"
+        }
+      }
+    }
+  ]
+}

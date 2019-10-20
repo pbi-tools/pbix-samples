@@ -1,0 +1,5 @@
+{
+  "name": "f72c3f57-9abd-4e53-93a4-1aab2329193c",
+  "connectionString": "Provider=Microsoft.PowerBI.OleDb;location=Calendar",
+  "impersonationMode": "impersonateCurrentUser"
+}

@@ -1,0 +1,64 @@
+{
+  "name": "8cd0448e3061e22c2028",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 137,
+        "y": 107,
+        "z": 15000,
+        "width": 92,
+        "height": 40
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "  % VAR from Goal",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI",
+                      "fontStyle": "italic",
+                      "fontSize": "9px",
+                      "color": "#b3b3b3"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

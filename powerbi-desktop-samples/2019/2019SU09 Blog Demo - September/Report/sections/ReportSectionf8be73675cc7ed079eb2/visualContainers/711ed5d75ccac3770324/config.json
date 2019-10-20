@@ -1,0 +1,35 @@
+{
+  "name": "711ed5d75ccac3770324",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "height": 67.182320441988949,
+        "width": 120.35359116022096,
+        "x": 125.72060476650995,
+        "y": 0,
+        "z": 4000
+      }
+    }
+  ],
+  "singleVisualGroup": {
+    "displayName": "Canada",
+    "groupMode": 0,
+    "objects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "parentGroupName": "648bafd380589f72f255"
+}

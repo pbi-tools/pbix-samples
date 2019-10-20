@@ -1,0 +1,34 @@
+{
+  "name": "648bafd380589f72f255",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "height": 68.324128985163583,
+        "width": 797.40297021170431,
+        "x": 232.21226569836489,
+        "y": -0.038852043286940141,
+        "z": 14000
+      }
+    }
+  ],
+  "singleVisualGroup": {
+    "displayName": "Cards",
+    "groupMode": 0,
+    "objects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

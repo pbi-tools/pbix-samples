@@ -1,0 +1,91 @@
+{
+  "name": "e6aaef2ad56c25601a85",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 10,
+        "y": 0,
+        "width": 280,
+        "height": 280,
+        "z": 0
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "gauge",
+    "projections": {
+      "Y": [
+        {
+          "queryRef": "Sum(Sales.Sales Amount)"
+        }
+      ],
+      "TargetValue": [
+        {
+          "queryRef": "Sales.Avg. Sales"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "s",
+          "Entity": "Sales"
+        }
+      ],
+      "Select": [
+        {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "s"
+                  }
+                },
+                "Property": "Sales Amount"
+              }
+            },
+            "Function": 0
+          },
+          "Name": "Sum(Sales.Sales Amount)"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "s"
+              }
+            },
+            "Property": "Avg. Sales"
+          },
+          "Name": "Sales.Avg. Sales"
+        }
+      ],
+      "OrderBy": [
+        {
+          "Direction": 2,
+          "Expression": {
+            "Aggregation": {
+              "Expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Source": "s"
+                    }
+                  },
+                  "Property": "Sales Amount"
+                }
+              },
+              "Function": 0
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "hasDefaultSort": true,
+    "objects": {}
+  }
+}

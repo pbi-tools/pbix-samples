@@ -1,0 +1,36 @@
+{
+  "name": "73167211a422e30e1290",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 27.699219584465027,
+        "y": 63.4375125169754,
+        "z": 10000,
+        "width": 182.51953125,
+        "height": 170.21484375
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "image",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "imageUrl": {
+              "expr": {
+                "ResourcePackageItem": {
+                  "PackageName": "RegisteredResources",
+                  "PackageType": 1,
+                  "ItemName": "drillthrough5753228608540546.png"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

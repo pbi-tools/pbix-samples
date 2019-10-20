@@ -1,0 +1,126 @@
+{
+  "name": "9eeda37e714947c98c9b",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 384.71910112359546,
+        "y": 128.53932584269663,
+        "z": 2000,
+        "width": 862.92134831460669,
+        "height": 548.314606741573
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "keyDriversVisual",
+    "projections": {
+      "Target": [
+        {
+          "queryRef": "Sales.Brand Name"
+        }
+      ],
+      "ExplainBy": [
+        {
+          "queryRef": "Sum(Sales.NSAT)"
+        },
+        {
+          "queryRef": "Sales.Class"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "s",
+          "Entity": "Sales"
+        }
+      ],
+      "Select": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "s"
+              }
+            },
+            "Property": "Brand Name"
+          },
+          "Name": "Sales.Brand Name"
+        },
+        {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "s"
+                  }
+                },
+                "Property": "NSAT"
+              }
+            },
+            "Function": 0
+          },
+          "Name": "Sum(Sales.NSAT)"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "s"
+              }
+            },
+            "Property": "Class"
+          },
+          "Name": "Sales.Class"
+        }
+      ],
+      "OrderBy": [
+        {
+          "Direction": 2,
+          "Expression": {
+            "Aggregation": {
+              "Expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Source": "s"
+                    }
+                  },
+                  "Property": "NSAT"
+                }
+              },
+              "Function": 0
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "hasDefaultSort": true,
+    "objects": {
+      "keyDrivers": [
+        {
+          "properties": {
+            "targetValue": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''A. Datum'''"
+                }
+              }
+            },
+            "selectedAnalysis": {
+              "expr": {
+                "Literal": {
+                  "Value": "'topProfiles'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

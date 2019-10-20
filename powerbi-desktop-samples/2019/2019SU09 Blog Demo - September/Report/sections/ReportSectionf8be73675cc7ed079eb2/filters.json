@@ -1,0 +1,116 @@
+[
+  {
+    "name": "Filter2",
+    "expression": {
+      "Column": {
+        "Expression": {
+          "SourceRef": {
+            "Entity": "Sales"
+          }
+        },
+        "Property": "OrderDate"
+      }
+    },
+    "type": "Categorical",
+    "howCreated": 1,
+    "displayName": "Date of Order"
+  },
+  {
+    "name": "Filter",
+    "expression": {
+      "Column": {
+        "Expression": {
+          "SourceRef": {
+            "Entity": "Sales"
+          }
+        },
+        "Property": "Category"
+      }
+    },
+    "filter": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "s",
+          "Entity": "Sales"
+        }
+      ],
+      "Where": [
+        {
+          "Condition": {
+            "In": {
+              "Expressions": [
+                {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Source": "s"
+                      }
+                    },
+                    "Property": "Category"
+                  }
+                }
+              ],
+              "Values": [
+                [
+                  {
+                    "Literal": {
+                      "Value": "'Cameras and camcorders'"
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "type": "Categorical",
+    "howCreated": 1
+  },
+  {
+    "name": "Filter1",
+    "expression": {
+      "Column": {
+        "Expression": {
+          "SourceRef": {
+            "Entity": "Sales"
+          }
+        },
+        "Property": "Class"
+      }
+    },
+    "type": "Categorical",
+    "howCreated": 1
+  },
+  {
+    "name": "Filter3",
+    "expression": {
+      "Column": {
+        "Expression": {
+          "SourceRef": {
+            "Entity": "Sales"
+          }
+        },
+        "Property": "Country"
+      }
+    },
+    "type": "Categorical",
+    "howCreated": 1
+  },
+  {
+    "name": "Filter4",
+    "expression": {
+      "Column": {
+        "Expression": {
+          "SourceRef": {
+            "Entity": "Stores"
+          }
+        },
+        "Property": "StoreName"
+      }
+    },
+    "type": "Categorical",
+    "howCreated": 5
+  }
+]

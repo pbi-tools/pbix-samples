@@ -1,0 +1,3 @@
+<Measure Name="Avg. Sales">
+  <Expression><![CDATA[AVERAGE(Sales[Sales Amount])]]></Expression>
+</Measure>

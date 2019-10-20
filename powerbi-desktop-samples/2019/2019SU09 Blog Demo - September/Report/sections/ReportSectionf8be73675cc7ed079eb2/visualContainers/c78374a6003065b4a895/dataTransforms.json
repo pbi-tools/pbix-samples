@@ -1,0 +1,138 @@
+{
+  "objects": {
+    "legend": [
+      {
+        "properties": {
+          "show": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "dataPoint": [
+      {
+        "properties": {
+          "showAllDataPoints": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Y": [
+      0
+    ],
+    "Category": [
+      1
+    ],
+    "Series": [
+      1
+    ]
+  },
+  "projectionActiveItems": {
+    "Category": [
+      {
+        "queryRef": "Sales.Color",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Units",
+        "Name": "Sum(Sales.Units)",
+        "Type": 3,
+        "Format": "#,0"
+      },
+      {
+        "Restatement": "Color",
+        "Name": "Sales.Color",
+        "Type": 2048
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Y",
+          "Projection": 0,
+          "isActive": false
+        },
+        {
+          "Name": "Category",
+          "Projection": 1,
+          "isActive": true
+        },
+        {
+          "Name": "Series",
+          "Projection": 1,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Units",
+      "format": "#,0",
+      "queryName": "Sum(Sales.Units)",
+      "roles": {
+        "Y": true
+      },
+      "sort": 2,
+      "sortOrder": 0,
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Sales"
+                }
+              },
+              "Property": "Units"
+            }
+          },
+          "Function": 0
+        }
+      }
+    },
+    {
+      "displayName": "Color",
+      "queryName": "Sales.Color",
+      "roles": {
+        "Category": true,
+        "Series": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Sales"
+            }
+          },
+          "Property": "Color"
+        }
+      }
+    }
+  ]
+}

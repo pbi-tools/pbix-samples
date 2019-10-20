@@ -1,0 +1,26 @@
+<Measure Name="SalesAmount YoY%">
+  <Expression><![CDATA[
+IF(
+	ISFILTERED('Calendar'[Date]),
+	ERROR("Time intelligence quick measures can only be grouped or filtered by the Power BI-provided date hierarchy or primary date column."),
+	VAR __PREV_YEAR =
+		CALCULATE(
+			SUM('Sales'[Sales Amount]),
+			DATEADD('Calendar'[Date].[Date], -1, YEAR)
+		)
+	RETURN
+		DIVIDE(SUM('Sales'[Sales Amount]) - __PREV_YEAR, __PREV_YEAR)
+)]]></Expression>
+  <FormatString>0.00%;-0.00%;0.00%</FormatString>
+  <ExtendedProperty><![CDATA[{
+  "type": "json",
+  "name": "MeasureTemplate",
+  "value": {
+    "version": 0,
+    "daxTemplateName": "YearOverYear"
+  }
+}]]></ExtendedProperty>
+  <Annotation Name="Format">
+    <Format Format="Percentage" Accuracy="2" />
+  </Annotation>
+</Measure>

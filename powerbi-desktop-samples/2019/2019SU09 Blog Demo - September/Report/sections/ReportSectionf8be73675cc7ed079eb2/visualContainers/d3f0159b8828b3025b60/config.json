@@ -1,0 +1,35 @@
+{
+  "name": "d3f0159b8828b3025b60",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "height": 67.182320441988949,
+        "width": 120.22099447513813,
+        "x": 385.92269406436429,
+        "y": 0,
+        "z": 2000
+      }
+    }
+  ],
+  "singleVisualGroup": {
+    "displayName": "Germany",
+    "groupMode": 0,
+    "objects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "parentGroupName": "648bafd380589f72f255"
+}

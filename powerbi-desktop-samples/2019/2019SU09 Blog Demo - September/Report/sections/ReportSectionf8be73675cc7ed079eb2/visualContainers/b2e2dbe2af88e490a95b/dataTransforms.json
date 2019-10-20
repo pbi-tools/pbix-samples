@@ -1,0 +1,298 @@
+{
+  "objects": {
+    "grid": [
+      {
+        "properties": {
+          "textSize": {
+            "expr": {
+              "Literal": {
+                "Value": "10D"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "rowHeaders": [
+      {
+        "properties": {
+          "stepped": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "values": [
+      {
+        "properties": {},
+        "selector": {
+          "data": [
+            {
+              "dataViewWildcard": {
+                "matchingOption": 1
+              }
+            }
+          ],
+          "metadata": "Sum(Sales.SalesAmount)"
+        }
+      },
+      {
+        "properties": {
+          "backColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "FillRule": {
+                    "Input": {
+                      "SelectRef": {
+                        "ExpressionName": "Sum(Sales.SalesAmount)"
+                      }
+                    },
+                    "FillRule": {
+                      "linearGradient2": {
+                        "min": {
+                          "color": {
+                            "Literal": {
+                              "Value": "'minColor'"
+                            }
+                          }
+                        },
+                        "max": {
+                          "color": {
+                            "Literal": {
+                              "Value": "'maxColor'"
+                            }
+                          }
+                        },
+                        "nullColoringStrategy": {
+                          "strategy": {
+                            "Literal": {
+                              "Value": "'asZero'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "selector": {
+          "data": [
+            {
+              "roles": [
+                "Rows",
+                "Columns"
+              ]
+            }
+          ],
+          "metadata": "Sum(Sales.SalesAmount)"
+        }
+      }
+    ],
+    "columnFormatting": [
+      {
+        "properties": {},
+        "selector": {
+          "metadata": "Sum(Sales.SalesAmount)"
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Rows": [
+      0,
+      2
+    ],
+    "Values": [
+      1
+    ],
+    "Columns": [
+      3
+    ]
+  },
+  "projectionActiveItems": {
+    "Rows": [
+      {
+        "queryRef": "Sales.Country",
+        "suppressConcat": false
+      },
+      {
+        "queryRef": "Sales.Class",
+        "suppressConcat": false
+      }
+    ],
+    "Columns": [
+      {
+        "queryRef": "Calendar.Year",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Country",
+        "Name": "Sales.Country",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Sales",
+        "Name": "Sum(Sales.SalesAmount)",
+        "Type": 1,
+        "Format": "$#,##0;($#,##0)"
+      },
+      {
+        "Restatement": "Class",
+        "Name": "Sales.Class",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Year",
+        "Name": "Calendar.Year",
+        "Type": 2048
+      }
+    ],
+    "Filters": [
+      {
+        "type": 0,
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Calendar"
+              }
+            },
+            "Property": "Year"
+          }
+        }
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Rows",
+          "Projection": 0,
+          "isActive": true
+        },
+        {
+          "Name": "Rows",
+          "Projection": 2,
+          "isActive": true
+        },
+        {
+          "Name": "Values",
+          "Projection": 1,
+          "isActive": false
+        },
+        {
+          "Name": "Columns",
+          "Projection": 3,
+          "isActive": true
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Country",
+      "queryName": "Sales.Country",
+      "roles": {
+        "Rows": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Sales"
+            }
+          },
+          "Property": "Country"
+        }
+      }
+    },
+    {
+      "displayName": "Sales",
+      "format": "$#,##0;($#,##0)",
+      "queryName": "Sum(Sales.SalesAmount)",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Sales"
+                }
+              },
+              "Property": "Sales Amount"
+            }
+          },
+          "Function": 1
+        }
+      }
+    },
+    {
+      "displayName": "Class",
+      "queryName": "Sales.Class",
+      "roles": {
+        "Rows": true
+      },
+      "sort": 1,
+      "sortOrder": 0,
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Sales"
+            }
+          },
+          "Property": "Class"
+        }
+      }
+    },
+    {
+      "displayName": "Year",
+      "queryName": "Calendar.Year",
+      "roles": {
+        "Columns": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Calendar"
+            }
+          },
+          "Property": "Year"
+        }
+      }
+    }
+  ]
+}

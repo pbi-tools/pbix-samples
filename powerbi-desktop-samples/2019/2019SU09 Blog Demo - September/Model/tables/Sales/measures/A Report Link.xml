@@ -1,0 +1,7 @@
+<Measure Name="A Report Link">
+  <Expression><![CDATA["https://app.powerbi.com/groups/me/reports/f1c7906a-4584-4178-83c6-c1991fdc08a2/ReportSection9c6e78be000e943138b7?filter=Sales/BrandName eq " & SELECTEDVALUE(Sales[Brand Name])]]></Expression>
+  <DataCategory>WebUrl</DataCategory>
+  <Annotation Name="Format">
+    <Format Format="Text" />
+  </Annotation>
+</Measure>

@@ -1,0 +1,143 @@
+{
+  "objects": {
+    "grid": [
+      {
+        "properties": {
+          "outlineColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "ThemeDataColor": {
+                    "ColorId": 9,
+                    "Percent": 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Values": [
+      0,
+      1,
+      2
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Brand Name",
+        "Name": "Sales.Brand Name",
+        "Type": 2048
+      },
+      {
+        "Restatement": "NSAT",
+        "Name": "Sum(Sales.NSAT)",
+        "Type": 3,
+        "Format": "0"
+      },
+      {
+        "Restatement": "Class",
+        "Name": "Sales.Class",
+        "Type": 2048
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Values",
+          "Projection": 0,
+          "isActive": false
+        },
+        {
+          "Name": "Values",
+          "Projection": 1,
+          "isActive": false
+        },
+        {
+          "Name": "Values",
+          "Projection": 2,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Brand Name",
+      "queryName": "Sales.Brand Name",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Sales"
+            }
+          },
+          "Property": "Brand Name"
+        }
+      }
+    },
+    {
+      "displayName": "NSAT",
+      "format": "0",
+      "queryName": "Sum(Sales.NSAT)",
+      "roles": {
+        "Values": true
+      },
+      "sort": 2,
+      "sortOrder": 0,
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Sales"
+                }
+              },
+              "Property": "NSAT"
+            }
+          },
+          "Function": 0
+        }
+      }
+    },
+    {
+      "displayName": "Class",
+      "queryName": "Sales.Class",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Sales"
+            }
+          },
+          "Property": "Class"
+        }
+      }
+    }
+  ]
+}

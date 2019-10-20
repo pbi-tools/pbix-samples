@@ -1,0 +1,93 @@
+{
+  "name": "4afb7e2cd0e5a51e5325",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 237.20703125,
+        "y": 62.890625,
+        "z": 9500,
+        "width": 1027.9882729053497,
+        "height": 173.22263121604919
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Drillthrough",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "20px",
+                      "color": "#666666"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "During a Right click event on a chart the drop down option for Drillthrough will appear.  This allows you to navigate to a new page within the report using the filter context of the clicked item from the visualization.  "
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Demo of Drillthrough",
+                    "textStyle": {},
+                    "url": "https://powerbi.tips/2018/09/drillthrough/"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Drillthrough'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

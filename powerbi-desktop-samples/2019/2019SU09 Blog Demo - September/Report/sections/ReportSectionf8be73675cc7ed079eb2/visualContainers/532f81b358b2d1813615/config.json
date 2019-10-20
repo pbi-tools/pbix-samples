@@ -1,0 +1,35 @@
+{
+  "name": "532f81b358b2d1813615",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "height": 67.182320441988949,
+        "width": 120.22099447513813,
+        "x": 532.93881670289352,
+        "y": 0,
+        "z": 1000
+      }
+    }
+  ],
+  "singleVisualGroup": {
+    "displayName": "UK",
+    "groupMode": 0,
+    "objects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "parentGroupName": "648bafd380589f72f255"
+}

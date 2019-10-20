@@ -1,0 +1,37 @@
+{
+  "name": "8c2a07050b520007c756",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 849.09747292418785,
+        "y": 259.927797833935,
+        "z": 1000,
+        "width": 99.6389891696751,
+        "height": 39.855595667870041
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "actionButton",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "icon": [
+        {
+          "properties": {
+            "shapeType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'leftArrow'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "id": "default"
+          }
+        }
+      ]
+    }
+  }
+}

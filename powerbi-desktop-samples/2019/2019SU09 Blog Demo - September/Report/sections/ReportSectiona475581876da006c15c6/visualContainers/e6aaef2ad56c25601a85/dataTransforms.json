@@ -1,0 +1,92 @@
+{
+  "objects": {},
+  "projectionOrdering": {
+    "Y": [
+      0
+    ],
+    "TargetValue": [
+      1
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Sales Amount",
+        "Name": "Sum(Sales.Sales Amount)",
+        "Type": 1,
+        "Format": "\\$#,0;(\\$#,0);\\$#,0"
+      },
+      {
+        "Restatement": "Avg. Sales",
+        "Name": "Sales.Avg. Sales",
+        "Type": 1
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Y",
+          "Projection": 0,
+          "isActive": false
+        },
+        {
+          "Name": "TargetValue",
+          "Projection": 1,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Sales Amount",
+      "format": "\\$#,0;(\\$#,0);\\$#,0",
+      "queryName": "Sum(Sales.Sales Amount)",
+      "roles": {
+        "Y": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Sales"
+                }
+              },
+              "Property": "Sales Amount"
+            }
+          },
+          "Function": 0
+        }
+      }
+    },
+    {
+      "displayName": "Avg. Sales",
+      "queryName": "Sales.Avg. Sales",
+      "roles": {
+        "TargetValue": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Sales"
+            }
+          },
+          "Property": "Avg. Sales"
+        }
+      }
+    }
+  ]
+}

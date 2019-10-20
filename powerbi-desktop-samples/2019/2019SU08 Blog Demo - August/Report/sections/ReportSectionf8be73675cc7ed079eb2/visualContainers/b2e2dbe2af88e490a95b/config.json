@@ -1,0 +1,1055 @@
+{
+  "name": "b2e2dbe2af88e490a95b",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 23.432494279176204,
+        "y": 67.368421052631575,
+        "z": 13000,
+        "width": 394.44698703279943,
+        "height": 625.84286803966438,
+        "tabOrder": 11000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "pivotTable",
+    "projections": {
+      "Rows": [
+        {
+          "queryRef": "Sales.Country",
+          "active": true
+        },
+        {
+          "queryRef": "Sales.Class",
+          "active": true
+        }
+      ],
+      "Values": [
+        {
+          "queryRef": "Sum(Sales.SalesAmount)"
+        }
+      ],
+      "Columns": [
+        {
+          "queryRef": "Calendar.Year",
+          "active": true
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "s",
+          "Entity": "Sales"
+        },
+        {
+          "Name": "c",
+          "Entity": "Calendar"
+        }
+      ],
+      "Select": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "s"
+              }
+            },
+            "Property": "Country"
+          },
+          "Name": "Sales.Country"
+        },
+        {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "s"
+                  }
+                },
+                "Property": "Sales Amount"
+              }
+            },
+            "Function": 1
+          },
+          "Name": "Sum(Sales.SalesAmount)"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "s"
+              }
+            },
+            "Property": "Class"
+          },
+          "Name": "Sales.Class"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "c"
+              }
+            },
+            "Property": "Year"
+          },
+          "Name": "Calendar.Year"
+        }
+      ],
+      "OrderBy": [
+        {
+          "Direction": 1,
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Source": "s"
+                }
+              },
+              "Property": "Class"
+            }
+          }
+        }
+      ]
+    },
+    "columnProperties": {
+      "Sum(Sales.SalesAmount)": {
+        "displayName": "Sales"
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "grid": [
+        {
+          "properties": {
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "rowHeaders": [
+        {
+          "properties": {
+            "stepped": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "values": [
+        {
+          "properties": {
+            "icon": {
+              "kind": "Icon",
+              "layout": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Before'"
+                  }
+                }
+              },
+              "verticalAlignment": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Top'"
+                  }
+                }
+              },
+              "value": {
+                "expr": {
+                  "Conditional": {
+                    "Cases": [
+                      {
+                        "Condition": {
+                          "Comparison": {
+                            "ComparisonKind": 2,
+                            "Left": {
+                              "Aggregation": {
+                                "Expression": {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Entity": "Sales"
+                                      }
+                                    },
+                                    "Property": "Sales Amount"
+                                  }
+                                },
+                                "Function": 1
+                              }
+                            },
+                            "Right": {
+                              "RangePercent": {
+                                "Min": {
+                                  "ScopedEval": {
+                                    "Expression": {
+                                      "Aggregation": {
+                                        "Expression": {
+                                          "ScopedEval": {
+                                            "Expression": {
+                                              "Aggregation": {
+                                                "Expression": {
+                                                  "Column": {
+                                                    "Expression": {
+                                                      "SourceRef": {
+                                                        "Entity": "Sales"
+                                                      }
+                                                    },
+                                                    "Property": "Sales Amount"
+                                                  }
+                                                },
+                                                "Function": 1
+                                              }
+                                            },
+                                            "Scope": [
+                                              {
+                                                "AllRolesRef": {}
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        "Function": 3
+                                      }
+                                    },
+                                    "Scope": []
+                                  }
+                                },
+                                "Max": {
+                                  "ScopedEval": {
+                                    "Expression": {
+                                      "Aggregation": {
+                                        "Expression": {
+                                          "ScopedEval": {
+                                            "Expression": {
+                                              "Aggregation": {
+                                                "Expression": {
+                                                  "Column": {
+                                                    "Expression": {
+                                                      "SourceRef": {
+                                                        "Entity": "Sales"
+                                                      }
+                                                    },
+                                                    "Property": "Sales Amount"
+                                                  }
+                                                },
+                                                "Function": 1
+                                              }
+                                            },
+                                            "Scope": [
+                                              {
+                                                "AllRolesRef": {}
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        "Function": 4
+                                      }
+                                    },
+                                    "Scope": []
+                                  }
+                                },
+                                "Percent": 0.8
+                              }
+                            }
+                          }
+                        },
+                        "Value": {
+                          "Literal": {
+                            "Value": "'SignalBarFull'"
+                          }
+                        }
+                      },
+                      {
+                        "Condition": {
+                          "And": {
+                            "Left": {
+                              "Comparison": {
+                                "ComparisonKind": 2,
+                                "Left": {
+                                  "Aggregation": {
+                                    "Expression": {
+                                      "Column": {
+                                        "Expression": {
+                                          "SourceRef": {
+                                            "Entity": "Sales"
+                                          }
+                                        },
+                                        "Property": "Sales Amount"
+                                      }
+                                    },
+                                    "Function": 1
+                                  }
+                                },
+                                "Right": {
+                                  "RangePercent": {
+                                    "Min": {
+                                      "ScopedEval": {
+                                        "Expression": {
+                                          "Aggregation": {
+                                            "Expression": {
+                                              "ScopedEval": {
+                                                "Expression": {
+                                                  "Aggregation": {
+                                                    "Expression": {
+                                                      "Column": {
+                                                        "Expression": {
+                                                          "SourceRef": {
+                                                            "Entity": "Sales"
+                                                          }
+                                                        },
+                                                        "Property": "Sales Amount"
+                                                      }
+                                                    },
+                                                    "Function": 1
+                                                  }
+                                                },
+                                                "Scope": [
+                                                  {
+                                                    "AllRolesRef": {}
+                                                  }
+                                                ]
+                                              }
+                                            },
+                                            "Function": 3
+                                          }
+                                        },
+                                        "Scope": []
+                                      }
+                                    },
+                                    "Max": {
+                                      "ScopedEval": {
+                                        "Expression": {
+                                          "Aggregation": {
+                                            "Expression": {
+                                              "ScopedEval": {
+                                                "Expression": {
+                                                  "Aggregation": {
+                                                    "Expression": {
+                                                      "Column": {
+                                                        "Expression": {
+                                                          "SourceRef": {
+                                                            "Entity": "Sales"
+                                                          }
+                                                        },
+                                                        "Property": "Sales Amount"
+                                                      }
+                                                    },
+                                                    "Function": 1
+                                                  }
+                                                },
+                                                "Scope": [
+                                                  {
+                                                    "AllRolesRef": {}
+                                                  }
+                                                ]
+                                              }
+                                            },
+                                            "Function": 4
+                                          }
+                                        },
+                                        "Scope": []
+                                      }
+                                    },
+                                    "Percent": 0.6
+                                  }
+                                }
+                              }
+                            },
+                            "Right": {
+                              "Comparison": {
+                                "ComparisonKind": 3,
+                                "Left": {
+                                  "Aggregation": {
+                                    "Expression": {
+                                      "Column": {
+                                        "Expression": {
+                                          "SourceRef": {
+                                            "Entity": "Sales"
+                                          }
+                                        },
+                                        "Property": "Sales Amount"
+                                      }
+                                    },
+                                    "Function": 1
+                                  }
+                                },
+                                "Right": {
+                                  "RangePercent": {
+                                    "Min": {
+                                      "ScopedEval": {
+                                        "Expression": {
+                                          "Aggregation": {
+                                            "Expression": {
+                                              "ScopedEval": {
+                                                "Expression": {
+                                                  "Aggregation": {
+                                                    "Expression": {
+                                                      "Column": {
+                                                        "Expression": {
+                                                          "SourceRef": {
+                                                            "Entity": "Sales"
+                                                          }
+                                                        },
+                                                        "Property": "Sales Amount"
+                                                      }
+                                                    },
+                                                    "Function": 1
+                                                  }
+                                                },
+                                                "Scope": [
+                                                  {
+                                                    "AllRolesRef": {}
+                                                  }
+                                                ]
+                                              }
+                                            },
+                                            "Function": 3
+                                          }
+                                        },
+                                        "Scope": []
+                                      }
+                                    },
+                                    "Max": {
+                                      "ScopedEval": {
+                                        "Expression": {
+                                          "Aggregation": {
+                                            "Expression": {
+                                              "ScopedEval": {
+                                                "Expression": {
+                                                  "Aggregation": {
+                                                    "Expression": {
+                                                      "Column": {
+                                                        "Expression": {
+                                                          "SourceRef": {
+                                                            "Entity": "Sales"
+                                                          }
+                                                        },
+                                                        "Property": "Sales Amount"
+                                                      }
+                                                    },
+                                                    "Function": 1
+                                                  }
+                                                },
+                                                "Scope": [
+                                                  {
+                                                    "AllRolesRef": {}
+                                                  }
+                                                ]
+                                              }
+                                            },
+                                            "Function": 4
+                                          }
+                                        },
+                                        "Scope": []
+                                      }
+                                    },
+                                    "Percent": 0.8
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "Value": {
+                          "Literal": {
+                            "Value": "'SignalBarMedium2'"
+                          }
+                        }
+                      },
+                      {
+                        "Condition": {
+                          "And": {
+                            "Left": {
+                              "Comparison": {
+                                "ComparisonKind": 2,
+                                "Left": {
+                                  "Aggregation": {
+                                    "Expression": {
+                                      "Column": {
+                                        "Expression": {
+                                          "SourceRef": {
+                                            "Entity": "Sales"
+                                          }
+                                        },
+                                        "Property": "Sales Amount"
+                                      }
+                                    },
+                                    "Function": 1
+                                  }
+                                },
+                                "Right": {
+                                  "RangePercent": {
+                                    "Min": {
+                                      "ScopedEval": {
+                                        "Expression": {
+                                          "Aggregation": {
+                                            "Expression": {
+                                              "ScopedEval": {
+                                                "Expression": {
+                                                  "Aggregation": {
+                                                    "Expression": {
+                                                      "Column": {
+                                                        "Expression": {
+                                                          "SourceRef": {
+                                                            "Entity": "Sales"
+                                                          }
+                                                        },
+                                                        "Property": "Sales Amount"
+                                                      }
+                                                    },
+                                                    "Function": 1
+                                                  }
+                                                },
+                                                "Scope": [
+                                                  {
+                                                    "AllRolesRef": {}
+                                                  }
+                                                ]
+                                              }
+                                            },
+                                            "Function": 3
+                                          }
+                                        },
+                                        "Scope": []
+                                      }
+                                    },
+                                    "Max": {
+                                      "ScopedEval": {
+                                        "Expression": {
+                                          "Aggregation": {
+                                            "Expression": {
+                                              "ScopedEval": {
+                                                "Expression": {
+                                                  "Aggregation": {
+                                                    "Expression": {
+                                                      "Column": {
+                                                        "Expression": {
+                                                          "SourceRef": {
+                                                            "Entity": "Sales"
+                                                          }
+                                                        },
+                                                        "Property": "Sales Amount"
+                                                      }
+                                                    },
+                                                    "Function": 1
+                                                  }
+                                                },
+                                                "Scope": [
+                                                  {
+                                                    "AllRolesRef": {}
+                                                  }
+                                                ]
+                                              }
+                                            },
+                                            "Function": 4
+                                          }
+                                        },
+                                        "Scope": []
+                                      }
+                                    },
+                                    "Percent": 0.4
+                                  }
+                                }
+                              }
+                            },
+                            "Right": {
+                              "Comparison": {
+                                "ComparisonKind": 3,
+                                "Left": {
+                                  "Aggregation": {
+                                    "Expression": {
+                                      "Column": {
+                                        "Expression": {
+                                          "SourceRef": {
+                                            "Entity": "Sales"
+                                          }
+                                        },
+                                        "Property": "Sales Amount"
+                                      }
+                                    },
+                                    "Function": 1
+                                  }
+                                },
+                                "Right": {
+                                  "RangePercent": {
+                                    "Min": {
+                                      "ScopedEval": {
+                                        "Expression": {
+                                          "Aggregation": {
+                                            "Expression": {
+                                              "ScopedEval": {
+                                                "Expression": {
+                                                  "Aggregation": {
+                                                    "Expression": {
+                                                      "Column": {
+                                                        "Expression": {
+                                                          "SourceRef": {
+                                                            "Entity": "Sales"
+                                                          }
+                                                        },
+                                                        "Property": "Sales Amount"
+                                                      }
+                                                    },
+                                                    "Function": 1
+                                                  }
+                                                },
+                                                "Scope": [
+                                                  {
+                                                    "AllRolesRef": {}
+                                                  }
+                                                ]
+                                              }
+                                            },
+                                            "Function": 3
+                                          }
+                                        },
+                                        "Scope": []
+                                      }
+                                    },
+                                    "Max": {
+                                      "ScopedEval": {
+                                        "Expression": {
+                                          "Aggregation": {
+                                            "Expression": {
+                                              "ScopedEval": {
+                                                "Expression": {
+                                                  "Aggregation": {
+                                                    "Expression": {
+                                                      "Column": {
+                                                        "Expression": {
+                                                          "SourceRef": {
+                                                            "Entity": "Sales"
+                                                          }
+                                                        },
+                                                        "Property": "Sales Amount"
+                                                      }
+                                                    },
+                                                    "Function": 1
+                                                  }
+                                                },
+                                                "Scope": [
+                                                  {
+                                                    "AllRolesRef": {}
+                                                  }
+                                                ]
+                                              }
+                                            },
+                                            "Function": 4
+                                          }
+                                        },
+                                        "Scope": []
+                                      }
+                                    },
+                                    "Percent": 0.6
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "Value": {
+                          "Literal": {
+                            "Value": "'SignalBarMedium'"
+                          }
+                        }
+                      },
+                      {
+                        "Condition": {
+                          "And": {
+                            "Left": {
+                              "Comparison": {
+                                "ComparisonKind": 2,
+                                "Left": {
+                                  "Aggregation": {
+                                    "Expression": {
+                                      "Column": {
+                                        "Expression": {
+                                          "SourceRef": {
+                                            "Entity": "Sales"
+                                          }
+                                        },
+                                        "Property": "Sales Amount"
+                                      }
+                                    },
+                                    "Function": 1
+                                  }
+                                },
+                                "Right": {
+                                  "RangePercent": {
+                                    "Min": {
+                                      "ScopedEval": {
+                                        "Expression": {
+                                          "Aggregation": {
+                                            "Expression": {
+                                              "ScopedEval": {
+                                                "Expression": {
+                                                  "Aggregation": {
+                                                    "Expression": {
+                                                      "Column": {
+                                                        "Expression": {
+                                                          "SourceRef": {
+                                                            "Entity": "Sales"
+                                                          }
+                                                        },
+                                                        "Property": "Sales Amount"
+                                                      }
+                                                    },
+                                                    "Function": 1
+                                                  }
+                                                },
+                                                "Scope": [
+                                                  {
+                                                    "AllRolesRef": {}
+                                                  }
+                                                ]
+                                              }
+                                            },
+                                            "Function": 3
+                                          }
+                                        },
+                                        "Scope": []
+                                      }
+                                    },
+                                    "Max": {
+                                      "ScopedEval": {
+                                        "Expression": {
+                                          "Aggregation": {
+                                            "Expression": {
+                                              "ScopedEval": {
+                                                "Expression": {
+                                                  "Aggregation": {
+                                                    "Expression": {
+                                                      "Column": {
+                                                        "Expression": {
+                                                          "SourceRef": {
+                                                            "Entity": "Sales"
+                                                          }
+                                                        },
+                                                        "Property": "Sales Amount"
+                                                      }
+                                                    },
+                                                    "Function": 1
+                                                  }
+                                                },
+                                                "Scope": [
+                                                  {
+                                                    "AllRolesRef": {}
+                                                  }
+                                                ]
+                                              }
+                                            },
+                                            "Function": 4
+                                          }
+                                        },
+                                        "Scope": []
+                                      }
+                                    },
+                                    "Percent": 0.2
+                                  }
+                                }
+                              }
+                            },
+                            "Right": {
+                              "Comparison": {
+                                "ComparisonKind": 3,
+                                "Left": {
+                                  "Aggregation": {
+                                    "Expression": {
+                                      "Column": {
+                                        "Expression": {
+                                          "SourceRef": {
+                                            "Entity": "Sales"
+                                          }
+                                        },
+                                        "Property": "Sales Amount"
+                                      }
+                                    },
+                                    "Function": 1
+                                  }
+                                },
+                                "Right": {
+                                  "RangePercent": {
+                                    "Min": {
+                                      "ScopedEval": {
+                                        "Expression": {
+                                          "Aggregation": {
+                                            "Expression": {
+                                              "ScopedEval": {
+                                                "Expression": {
+                                                  "Aggregation": {
+                                                    "Expression": {
+                                                      "Column": {
+                                                        "Expression": {
+                                                          "SourceRef": {
+                                                            "Entity": "Sales"
+                                                          }
+                                                        },
+                                                        "Property": "Sales Amount"
+                                                      }
+                                                    },
+                                                    "Function": 1
+                                                  }
+                                                },
+                                                "Scope": [
+                                                  {
+                                                    "AllRolesRef": {}
+                                                  }
+                                                ]
+                                              }
+                                            },
+                                            "Function": 3
+                                          }
+                                        },
+                                        "Scope": []
+                                      }
+                                    },
+                                    "Max": {
+                                      "ScopedEval": {
+                                        "Expression": {
+                                          "Aggregation": {
+                                            "Expression": {
+                                              "ScopedEval": {
+                                                "Expression": {
+                                                  "Aggregation": {
+                                                    "Expression": {
+                                                      "Column": {
+                                                        "Expression": {
+                                                          "SourceRef": {
+                                                            "Entity": "Sales"
+                                                          }
+                                                        },
+                                                        "Property": "Sales Amount"
+                                                      }
+                                                    },
+                                                    "Function": 1
+                                                  }
+                                                },
+                                                "Scope": [
+                                                  {
+                                                    "AllRolesRef": {}
+                                                  }
+                                                ]
+                                              }
+                                            },
+                                            "Function": 4
+                                          }
+                                        },
+                                        "Scope": []
+                                      }
+                                    },
+                                    "Percent": 0.4
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        },
+                        "Value": {
+                          "Literal": {
+                            "Value": "'SignalBarLow'"
+                          }
+                        }
+                      },
+                      {
+                        "Condition": {
+                          "Comparison": {
+                            "ComparisonKind": 3,
+                            "Left": {
+                              "Aggregation": {
+                                "Expression": {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Entity": "Sales"
+                                      }
+                                    },
+                                    "Property": "Sales Amount"
+                                  }
+                                },
+                                "Function": 1
+                              }
+                            },
+                            "Right": {
+                              "RangePercent": {
+                                "Min": {
+                                  "ScopedEval": {
+                                    "Expression": {
+                                      "Aggregation": {
+                                        "Expression": {
+                                          "ScopedEval": {
+                                            "Expression": {
+                                              "Aggregation": {
+                                                "Expression": {
+                                                  "Column": {
+                                                    "Expression": {
+                                                      "SourceRef": {
+                                                        "Entity": "Sales"
+                                                      }
+                                                    },
+                                                    "Property": "Sales Amount"
+                                                  }
+                                                },
+                                                "Function": 1
+                                              }
+                                            },
+                                            "Scope": [
+                                              {
+                                                "AllRolesRef": {}
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        "Function": 3
+                                      }
+                                    },
+                                    "Scope": []
+                                  }
+                                },
+                                "Max": {
+                                  "ScopedEval": {
+                                    "Expression": {
+                                      "Aggregation": {
+                                        "Expression": {
+                                          "ScopedEval": {
+                                            "Expression": {
+                                              "Aggregation": {
+                                                "Expression": {
+                                                  "Column": {
+                                                    "Expression": {
+                                                      "SourceRef": {
+                                                        "Entity": "Sales"
+                                                      }
+                                                    },
+                                                    "Property": "Sales Amount"
+                                                  }
+                                                },
+                                                "Function": 1
+                                              }
+                                            },
+                                            "Scope": [
+                                              {
+                                                "AllRolesRef": {}
+                                              }
+                                            ]
+                                          }
+                                        },
+                                        "Function": 4
+                                      }
+                                    },
+                                    "Scope": []
+                                  }
+                                },
+                                "Percent": 0.2
+                              }
+                            }
+                          }
+                        },
+                        "Value": {
+                          "Literal": {
+                            "Value": "'SignalBarEmpty'"
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ],
+            "metadata": "Sum(Sales.SalesAmount)"
+          }
+        },
+        {
+          "properties": {},
+          "selector": {
+            "data": [
+              {
+                "roles": [
+                  "Rows",
+                  "Columns"
+                ]
+              }
+            ],
+            "metadata": "Sum(Sales.SalesAmount)"
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 1,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "'10'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "version": "1.0.0",
+  "diagrams": [
+    {
+      "name": "All tables",
+      "zoomValue": 69.9386999793636,
+      "isDefault": true,
+      "tables": [
+        "Calendar",
+        "Inventory",
+        "Products",
+        "Sales",
+        "Stores"
+      ],
+      "layout": {
+        "boundingBoxWidth": 1105.306189906986,
+        "boundingBoxHeight": 903.18029862800654,
+        "boundingBoxPosition": {
+          "x": 0,
+          "y": 5.6843418860808015E-14
+        },
+        "nodes": [
+          {
+            "height": 138,
+            "layedOut": true,
+            "left": 647.8810496693693,
+            "nodeIndex": "Calendar",
+            "top": 765.18029862800654,
+            "width": 180
+          },
+          {
+            "height": 300,
+            "layedOut": true,
+            "left": 0,
+            "nodeIndex": "Inventory",
+            "top": 123.71216804317572,
+            "width": 180
+          },
+          {
+            "height": 300,
+            "layedOut": true,
+            "left": 343.06846642928173,
+            "nodeIndex": "Products",
+            "top": 298.81357143979432,
+            "width": 180
+          },
+          {
+            "height": 300,
+            "layedOut": true,
+            "left": 582.23772347770432,
+            "nodeIndex": "Sales",
+            "top": 302.11183219872487,
+            "width": 180
+          },
+          {
+            "height": 300,
+            "layedOut": true,
+            "left": 925.306189906986,
+            "nodeIndex": "Stores",
+            "top": 5.6843418860808015E-14,
+            "width": 180
+          }
+        ]
+      }
+    },
+    {
+      "name": "Simple view",
+      "zoomValue": 56.820819690404335,
+      "isDefault": false,
+      "tables": [
+        "Calendar",
+        "Sales"
+      ],
+      "layout": {
+        "boundingBoxWidth": 520.01808924431123,
+        "boundingBoxHeight": 219.33472597732248,
+        "boundingBoxPosition": {
+          "x": 235.66297592981232,
+          "y": 263.97753059243678
+        },
+        "nodes": [
+          {
+            "height": 217,
+            "layedOut": false,
+            "left": 575.68106517412355,
+            "nodeIndex": "Calendar",
+            "top": 263.97753059243678,
+            "width": 180
+          },
+          {
+            "height": 219,
+            "layedOut": false,
+            "left": 235.66297592981232,
+            "nodeIndex": "Sales",
+            "top": 264.31225656975926,
+            "width": 180
+          }
+        ]
+      }
+    }
+  ]
+}

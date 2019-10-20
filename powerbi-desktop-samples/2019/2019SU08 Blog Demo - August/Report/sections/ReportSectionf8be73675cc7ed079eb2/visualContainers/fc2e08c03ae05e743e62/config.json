@@ -1,0 +1,20 @@
+{
+  "name": "fc2e08c03ae05e743e62",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "height": 67.182320441988949,
+        "width": 120.26519337016566,
+        "x": 248.33464768233472,
+        "y": 1.1418085431746334,
+        "z": 3000
+      }
+    }
+  ],
+  "singleVisualGroup": {
+    "displayName": "France",
+    "groupMode": 0
+  },
+  "parentGroupName": "648bafd380589f72f255"
+}

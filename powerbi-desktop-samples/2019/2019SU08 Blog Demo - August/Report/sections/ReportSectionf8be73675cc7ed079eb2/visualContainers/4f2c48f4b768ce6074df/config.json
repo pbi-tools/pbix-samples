@@ -1,0 +1,20 @@
+{
+  "name": "4f2c48f4b768ce6074df",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "height": 67.143468398702012,
+        "width": 120.22099447513824,
+        "x": 677.18197573656607,
+        "y": 0.038852043286940141,
+        "z": 0
+      }
+    }
+  ],
+  "singleVisualGroup": {
+    "displayName": "USA",
+    "groupMode": 0
+  },
+  "parentGroupName": "648bafd380589f72f255"
+}

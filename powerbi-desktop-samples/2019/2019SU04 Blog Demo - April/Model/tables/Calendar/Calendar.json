@@ -137,6 +137,7 @@
       "name": "Calendar-e4ea7b44-1334-4796-85ec-5675221ab475",
       "mode": "import",
       "source": {
+        "type": "query",
         "query": "SELECT * FROM [Calendar]",
         "dataSource": "2b6e225d-aae2-46b6-b0b1-8fb934a108e2"
       }

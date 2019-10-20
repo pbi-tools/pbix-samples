@@ -825,6 +825,7 @@
       "name": "Sales-ff1c7e79-7767-47f1-bce2-33fea907d2ca",
       "mode": "import",
       "source": {
+        "type": "query",
         "query": "SELECT * FROM [Sales]",
         "dataSource": "09ff2c17-8f32-43ad-8f49-784290a61301"
       }

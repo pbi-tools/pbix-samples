@@ -508,6 +508,7 @@
       "name": "Stores-be1b2c91-aca2-4233-a48e-3fee54dc948e",
       "mode": "import",
       "source": {
+        "type": "query",
         "query": "SELECT * FROM [Stores]",
         "dataSource": "a0b5cefd-56c5-4d4c-ac95-3d73496d82d6"
       }

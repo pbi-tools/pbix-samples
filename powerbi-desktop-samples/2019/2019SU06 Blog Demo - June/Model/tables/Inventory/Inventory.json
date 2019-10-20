@@ -411,6 +411,7 @@
       "name": "Inventory-374fbeb9-772f-4520-9686-369e7921e87d",
       "mode": "import",
       "source": {
+        "type": "query",
         "query": "SELECT * FROM [Inventory]",
         "dataSource": "9307bb97-dc38-41d7-909b-3a58239b7c01"
       }

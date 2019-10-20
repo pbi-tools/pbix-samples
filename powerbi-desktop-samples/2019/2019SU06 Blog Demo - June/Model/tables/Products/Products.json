@@ -417,6 +417,7 @@
       "name": "Products-3809c005-b51f-4329-83ea-d1c264aff7a1",
       "mode": "import",
       "source": {
+        "type": "query",
         "query": "SELECT * FROM [Products]",
         "dataSource": "a8334a9c-7cb6-41ab-9f1b-e451cb0f7d36"
       }

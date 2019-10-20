@@ -55,6 +55,7 @@ RETURN IF(HASONEVALUE('Sales'[SubCategory]),
      "' stroke-width='3' points='" & Lines & "'/>" &
      "</svg>",
      BLANK())]]></Expression>
+  <DataCategory>ImageUrl</DataCategory>
   <Annotation Name="Format">
     <Format Format="Text" />
   </Annotation>

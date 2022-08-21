@@ -1,0 +1,9 @@
+{
+  "name": "Net Sales Label",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"Text\" />"
+    }
+  ]
+}

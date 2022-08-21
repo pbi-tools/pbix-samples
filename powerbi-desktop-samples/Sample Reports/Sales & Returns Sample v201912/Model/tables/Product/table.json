@@ -1,0 +1,28 @@
+{
+  "name": "Product",
+  "partitions": [
+    {
+      "name": "Product-9f1e37c0-cc3c-40e9-b0aa-e33d9a0f7edc",
+      "mode": "import",
+      "source": {
+        "type": "query",
+        "query": "SELECT * FROM [Product]",
+        "dataSource": "f25f98b5-2e23-401a-bac4-f57ca109014c"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "8f8bc9b8-754d-43dc-bad1-d530b7276b18"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "Product"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    }
+  ]
+}

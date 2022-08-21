@@ -1,0 +1,32 @@
+{
+  "name": "Sales",
+  "partitions": [
+    {
+      "name": "Sales-113fd51a-9d45-46f4-89f4-240116e9b48a",
+      "mode": "import",
+      "source": {
+        "type": "query",
+        "query": "SELECT * FROM [Sales]",
+        "dataSource": "aecca296-4abd-44ba-9cdb-e1e57a6b1902"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "f73f685a-3133-4df5-9eac-a889e8140e8f"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "Sales"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_QueryRelationships",
+      "value": "{\"columnCount\":7,\"keyColumnNames\":[],\"queryRelationships\":[{\"keyColumnCount\":1,\"keyColumn\":1,\"otherKeyColumnIdentity\":\"Section1/Product/Changed Type.{ProductID,1}\",\"KeyColumnCount\":1}],\"columnIdentities\":[\"Section1/Sales/Changed Type.{ID,0}\",\"Section1/Sales/Changed Type.{ProductID,1}\",\"Section1/Sales/Changed Type.{StoreID,2}\",\"Section1/Sales/Changed Type.{Unit,3}\",\"Section1/Sales/Changed Type.{Status,7}\",\"Section1/Sales/Inserted Multiplication.{Multiplication,9}\",\"Section1/Calendar/Changed Type1.{Date,0}\"],\"ColumnCount\":7,\"KeyColumnNames\":[],\"ColumnIdentities\":[\"Section1/Sales/Changed Type.{ID,0}\",\"Section1/Sales/Changed Type.{ProductID,1}\",\"Section1/Sales/Changed Type.{StoreID,2}\",\"Section1/Sales/Changed Type.{Unit,3}\",\"Section1/Sales/Changed Type.{Status,7}\",\"Section1/Sales/Inserted Multiplication.{Multiplication,9}\",\"Section1/Calendar/Changed Type1.{Date,0}\"],\"RelationshipInfo\":[{\"keyColumnCount\":1,\"keyColumn\":1,\"otherKeyColumnIdentity\":\"Section1/Product/Changed Type.{ProductID,1}\",\"KeyColumnCount\":1}]}"
+    }
+  ]
+}

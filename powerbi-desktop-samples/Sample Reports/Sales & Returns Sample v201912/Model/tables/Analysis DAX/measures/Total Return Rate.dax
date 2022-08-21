@@ -1,0 +1,1 @@
+CALCULATE([Return Rate],ALL('Calendar'[Date].[Month]))

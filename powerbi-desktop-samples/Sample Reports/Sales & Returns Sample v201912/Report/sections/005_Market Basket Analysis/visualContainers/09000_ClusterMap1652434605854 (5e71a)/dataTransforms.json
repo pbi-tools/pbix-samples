@@ -1,0 +1,271 @@
+{
+  "objects": {
+    "presentation": [
+      {
+        "properties": {
+          "initialCount": {
+            "expr": {
+              "Literal": {
+                "Value": "10D"
+              }
+            }
+          },
+          "normalColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "ThemeDataColor": {
+                    "ColorId": 2,
+                    "Percent": 0
+                  }
+                }
+              }
+            }
+          },
+          "selectedColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#9BEF0A'"
+                  }
+                }
+              }
+            }
+          },
+          "layout": {
+            "expr": {
+              "Literal": {
+                "Value": "'orbital'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "general": [
+      {
+        "properties": {
+          "displayBuildVersion": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "PersonaGroup": [
+      0
+    ],
+    "ReferenceCount": [
+      1
+    ],
+    "ReferenceImageUrl": [
+      2
+    ],
+    "ReferenceName": [
+      3
+    ],
+    "ReferenceBucket": [
+      4
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "RuleID",
+        "Name": "Association.RuleID",
+        "Type": 3,
+        "Format": "0"
+      },
+      {
+        "Restatement": "Probability",
+        "Name": "Sum(Association.Probability)",
+        "Type": 1,
+        "Format": "0.0%;-0.0%;0.0%"
+      },
+      {
+        "Restatement": "Product Image",
+        "Name": "Associated Product.Product Image",
+        "Type": 2048,
+        "DataCategory": 9
+      },
+      {
+        "Restatement": "Product",
+        "Name": "Associated Product.Product",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Segmented by",
+        "Name": "Associated Product.Segment by",
+        "Type": 2048
+      }
+    ],
+    "Filters": [
+      {
+        "type": 5,
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Association"
+              }
+            },
+            "Property": "RightItemSetId"
+          }
+        }
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "PersonaGroup",
+          "Projection": 0,
+          "isActive": false
+        },
+        {
+          "Name": "ReferenceCount",
+          "Projection": 1,
+          "isActive": false
+        },
+        {
+          "Name": "ReferenceImageUrl",
+          "Projection": 2,
+          "isActive": false
+        },
+        {
+          "Name": "ReferenceName",
+          "Projection": 3,
+          "isActive": false
+        },
+        {
+          "Name": "ReferenceBucket",
+          "Projection": 4,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "RuleID",
+      "format": "0",
+      "queryName": "Association.RuleID",
+      "roles": {
+        "PersonaGroup": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Association"
+            }
+          },
+          "Property": "RuleID"
+        }
+      }
+    },
+    {
+      "displayName": "Probability",
+      "format": "0.0%;-0.0%;0.0%",
+      "queryName": "Sum(Association.Probability)",
+      "roles": {
+        "ReferenceCount": true
+      },
+      "sort": 2,
+      "sortOrder": 0,
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Association"
+                }
+              },
+              "Property": "Probability"
+            }
+          },
+          "Function": 0
+        }
+      }
+    },
+    {
+      "displayName": "Product Image",
+      "queryName": "Associated Product.Product Image",
+      "roles": {
+        "ReferenceImageUrl": true
+      },
+      "type": {
+        "category": "ImageUrl",
+        "underlyingType": 13174785
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Associated Product"
+            }
+          },
+          "Property": "Product Image"
+        }
+      }
+    },
+    {
+      "displayName": "Product",
+      "queryName": "Associated Product.Product",
+      "roles": {
+        "ReferenceName": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Associated Product"
+            }
+          },
+          "Property": "Product"
+        }
+      }
+    },
+    {
+      "displayName": "Segmented by",
+      "queryName": "Associated Product.Segment by",
+      "roles": {
+        "ReferenceBucket": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Associated Product"
+            }
+          },
+          "Property": "Segmented by"
+        }
+      }
+    }
+  ]
+}

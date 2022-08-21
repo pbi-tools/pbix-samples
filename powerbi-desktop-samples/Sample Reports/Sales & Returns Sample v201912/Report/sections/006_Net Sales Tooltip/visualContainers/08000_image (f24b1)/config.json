@@ -1,0 +1,37 @@
+{
+  "name": "f24b1175d6c169080ac5",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 59.587955625990496,
+        "y": 246.59270998415215,
+        "z": 8000,
+        "width": 131.85419968304279,
+        "height": 114.10459587955627,
+        "tabOrder": 8000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "image",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "imageUrl": {
+              "expr": {
+                "ResourcePackageItem": {
+                  "PackageName": "RegisteredResources",
+                  "PackageType": 1,
+                  "ItemName": "circle-038230595798535065.png"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

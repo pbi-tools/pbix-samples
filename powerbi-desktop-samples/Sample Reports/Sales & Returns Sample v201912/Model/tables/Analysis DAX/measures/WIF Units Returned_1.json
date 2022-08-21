@@ -1,0 +1,10 @@
+{
+  "name": "WIF Units Returned_1",
+  "formatString": "0",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+    }
+  ]
+}

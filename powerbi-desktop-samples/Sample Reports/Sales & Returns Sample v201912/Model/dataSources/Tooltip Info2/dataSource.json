@@ -1,0 +1,5 @@
+{
+  "name": "a5e9171f-39da-429b-9e38-9b7dc6f97c7e",
+  "connectionString": "provider=Microsoft.PowerBI.OleDb;location=\"Tooltip Info2\"",
+  "impersonationMode": "impersonateCurrentUser"
+}

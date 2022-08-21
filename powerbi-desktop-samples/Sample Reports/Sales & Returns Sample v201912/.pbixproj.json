@@ -1,0 +1,21 @@
+{
+  "version": "0.12",
+  "created": "2022-08-21T22:30:49.8886092+01:00",
+  "queries": {
+    "Association": "cce48e03-9bf2-4450-a7f9-5eb8e75c8552",
+    "Sales": "aecca296-4abd-44ba-9cdb-e1e57a6b1902",
+    "Store": "543e8beb-4074-42ee-ba48-5ae31da96611",
+    "Calendar": "3e6c0291-65b4-44eb-a2b0-74e9c7058fe9",
+    "Associated Product": "7fb47e7e-a395-40e7-8e5f-3de7e34a5358",
+    "Analysis DAX": "90357580-ffed-4730-949c-604dfd2acac9",
+    "Product": "f25f98b5-2e23-401a-bac4-f57ca109014c",
+    "Design DAX": "bdddca9f-184a-441d-b2cf-f9355149b851",
+    "Customer": "66969c20-f12f-47e3-a8fc-9673dd277bdd",
+    "Issues and Promotions": "6afe342a-2534-47ec-9492-b1517d617e73",
+    "Age": "4228e500-bca8-4d92-954a-62e192635a74",
+    "STable": "ed7777e4-10dc-4672-bba8-0a2d10b316a6",
+    "Tooltip Info": "5e33e785-d5d8-4744-a106-0305b4244719",
+    "Tooltip Info2": "a5e9171f-39da-429b-9e38-9b7dc6f97c7e",
+    "Details": "f603f86d-4771-48e1-81c0-9b9d9568eee6"
+  }
+}

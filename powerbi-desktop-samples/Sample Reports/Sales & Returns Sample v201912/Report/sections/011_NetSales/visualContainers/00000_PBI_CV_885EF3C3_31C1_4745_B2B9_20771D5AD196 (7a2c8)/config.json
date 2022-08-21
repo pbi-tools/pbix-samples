@@ -1,0 +1,78 @@
+{
+  "name": "7a2c874b200312dd4284",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "width": 400,
+        "height": 400
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "PBI_CV_885EF3C3_31C1_4745_B2B9_20771D5AD196",
+    "projections": {
+      "category": [
+        {
+          "queryRef": "GIF.URL"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "g",
+          "Entity": "Tooltip Info"
+        }
+      ],
+      "Select": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "g"
+              }
+            },
+            "Property": "URL"
+          },
+          "Name": "GIF.URL"
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "imageOptions": [
+        {
+          "properties": {
+            "circle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

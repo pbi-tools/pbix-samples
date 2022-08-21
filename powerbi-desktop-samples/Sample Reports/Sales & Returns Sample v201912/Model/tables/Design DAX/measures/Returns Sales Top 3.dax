@@ -1,0 +1,1 @@
+IF([StoreR Top N]<4,[Returns],0)

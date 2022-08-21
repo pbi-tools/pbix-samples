@@ -1,0 +1,9 @@
+{
+  "name": "Units Sold Indicator",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"Text\" />"
+    }
+  ]
+}

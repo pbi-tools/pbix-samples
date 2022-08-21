@@ -1,0 +1,10 @@
+{
+  "name": "Info Tooltip",
+  "dataCategory": "ImageUrl",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"Text\" />"
+    }
+  ]
+}

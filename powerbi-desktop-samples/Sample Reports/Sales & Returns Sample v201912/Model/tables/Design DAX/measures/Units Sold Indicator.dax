@@ -1,0 +1,1 @@
+CONCATENATE(IF([Units Sold Variance %]<=0,"","+"),FORMAT([Units Sold Variance %],"0.0%"))

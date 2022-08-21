@@ -1,0 +1,1 @@
+CONCATENATE(IF([Net Sales Variance %]<=0,"","+"),FORMAT([Net Sales Variance %],"0.0%"))

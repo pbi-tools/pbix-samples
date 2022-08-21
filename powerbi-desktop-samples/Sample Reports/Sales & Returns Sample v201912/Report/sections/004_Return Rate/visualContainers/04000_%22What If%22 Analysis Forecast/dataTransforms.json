@@ -1,0 +1,412 @@
+{
+  "objects": {
+    "general": [
+      {
+        "properties": {
+          "responsive": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "lineStyles": [
+      {
+        "properties": {
+          "strokeWidth": {
+            "expr": {
+              "Literal": {
+                "Value": "3D"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "forecast": [
+      {
+        "properties": {
+          "show": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          },
+          "transform": {
+            "algorithm": "Forecast",
+            "parameters": [
+              {
+                "Literal": {
+                  "Value": "7D"
+                },
+                "Name": "Unit"
+              },
+              {
+                "Literal": {
+                  "Value": "5D"
+                },
+                "Name": "ForecastLength"
+              },
+              {
+                "Literal": {
+                  "Value": "0D"
+                },
+                "Name": "IgnoreLast"
+              },
+              {
+                "Literal": {
+                  "Value": "0.85D"
+                },
+                "Name": "ConfidenceLevel"
+              },
+              {
+                "Literal": {
+                  "Value": "5D"
+                },
+                "Name": "MaxSeasonality"
+              }
+            ]
+          },
+          "displayName": {
+            "expr": {
+              "Literal": {
+                "Value": "'Forecast 1'"
+              }
+            }
+          },
+          "lineColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "ThemeDataColor": {
+                    "ColorId": 1,
+                    "Percent": 0
+                  }
+                }
+              }
+            }
+          }
+        },
+        "selector": {
+          "metadata": "Analysis DAX.WIF Total Forecast",
+          "id": "1"
+        }
+      }
+    ],
+    "dataPoint": [
+      {
+        "properties": {
+          "fill": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#8560C5'"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "selector": {
+          "metadata": "Analysis DAX.WIF Total Forecast"
+        }
+      }
+    ],
+    "valueAxis": [
+      {
+        "properties": {
+          "gridlineShow": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          },
+          "labelColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#AFAFBF'"
+                  }
+                }
+              }
+            }
+          },
+          "showAxisTitle": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          },
+          "gridlineColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#AFAFBF'"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "categoryAxis": [
+      {
+        "properties": {
+          "labelColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#252423'"
+                  }
+                }
+              }
+            }
+          },
+          "fontSize": {
+            "expr": {
+              "Literal": {
+                "Value": "'10'"
+              }
+            }
+          },
+          "showAxisTitle": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          },
+          "titleFontFamily": {
+            "expr": {
+              "Literal": {
+                "Value": "'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'"
+              }
+            }
+          },
+          "titleColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "ThemeDataColor": {
+                    "ColorId": 1,
+                    "Percent": 0
+                  }
+                }
+              }
+            }
+          },
+          "titleFontSize": {
+            "expr": {
+              "Literal": {
+                "Value": "'10'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "y1AxisReferenceLine": [
+      {
+        "properties": {
+          "show": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          },
+          "displayName": {
+            "expr": {
+              "Literal": {
+                "Value": "'Constant line 1'"
+              }
+            }
+          },
+          "position": {
+            "expr": {
+              "Literal": {
+                "Value": "'back'"
+              }
+            }
+          },
+          "style": {
+            "expr": {
+              "Literal": {
+                "Value": "'dotted'"
+              }
+            }
+          }
+        },
+        "selector": {
+          "id": "1"
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Y": [
+      1
+    ],
+    "Category": [
+      0
+    ],
+    "forecast.ForecastValue": [
+      2
+    ],
+    "forecast.ConfidenceHighBound": [
+      3
+    ],
+    "forecast.ConfidenceLowBound": [
+      4
+    ]
+  },
+  "projectionActiveItems": {
+    "Category": [
+      {
+        "queryRef": "Calendar.Date",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "splits": [
+    {
+      "selects": {
+        "0": true,
+        "1": true
+      }
+    },
+    {
+      "selects": {
+        "0": true,
+        "2": true,
+        "3": true,
+        "4": true
+      }
+    }
+  ],
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Date",
+        "Name": "Calendar.Date",
+        "Type": 4,
+        "Format": "dddd\\, MMMM %d\\, yyyy"
+      },
+      {
+        "Restatement": "WIF Total Forecast",
+        "Name": "Analysis DAX.WIF Total Forecast",
+        "Type": 1,
+        "Format": "\\$#,0;-\\$#,0;\\$#,0"
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Y",
+          "Projection": 1,
+          "isActive": false
+        },
+        {
+          "Name": "Category",
+          "Projection": 0,
+          "isActive": true
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Date",
+      "format": "dddd\\, MMMM %d\\, yyyy",
+      "queryName": "Calendar.Date",
+      "roles": {
+        "Category": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 519
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Calendar"
+            }
+          },
+          "Property": "Date"
+        }
+      }
+    },
+    {
+      "displayName": "WIF Total Forecast",
+      "format": "\\$#,0;-\\$#,0;\\$#,0",
+      "queryName": "Analysis DAX.WIF Total Forecast",
+      "roles": {
+        "Y": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Analysis DAX"
+            }
+          },
+          "Property": "WIF Total Forecast"
+        }
+      }
+    },
+    {
+      "displayName": "forecastValue",
+      "queryName": "forecastValue",
+      "roles": {
+        "forecast.ForecastValue": true
+      },
+      "expr": {
+        "TransformOutputRoleRef": {
+          "Role": "Forecast"
+        }
+      }
+    },
+    {
+      "displayName": "confidenceHighBound",
+      "queryName": "confidenceHighBound",
+      "roles": {
+        "forecast.ConfidenceHighBound": true
+      },
+      "expr": {
+        "TransformOutputRoleRef": {
+          "Role": "UpperBound"
+        }
+      }
+    },
+    {
+      "displayName": "confidenceLowBound",
+      "queryName": "confidenceLowBound",
+      "roles": {
+        "forecast.ConfidenceLowBound": true
+      },
+      "expr": {
+        "TransformOutputRoleRef": {
+          "Role": "LowerBound"
+        }
+      }
+    }
+  ]
+}

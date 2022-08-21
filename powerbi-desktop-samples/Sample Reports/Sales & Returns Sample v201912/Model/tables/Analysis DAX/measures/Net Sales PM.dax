@@ -1,0 +1,1 @@
+CALCULATE([Net Sales],PREVIOUSMONTH('Calendar'[Date]))

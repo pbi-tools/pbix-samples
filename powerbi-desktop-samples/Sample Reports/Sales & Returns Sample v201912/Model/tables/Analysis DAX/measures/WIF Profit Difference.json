@@ -1,0 +1,10 @@
+{
+  "name": "WIF Profit Difference",
+  "formatString": "0.0%;-0.0%;0.0%",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"Percentage\" Accuracy=\"1\" />"
+    }
+  ]
+}

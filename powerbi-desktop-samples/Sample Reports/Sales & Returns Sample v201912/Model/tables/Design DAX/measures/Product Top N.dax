@@ -1,0 +1,9 @@
+
+SWITCH(
+    TRUE(),
+    ISINSCOPE('Product'[Product]),
+    RANKX(ALL('Product'[Product]),[Net Sales],,DESC),
+    ISINSCOPE('Product'[Segment]),
+    RANKX(ALL('Product'[Segment]),[Net Sales],,DESC),
+    RANKX(ALL('Product'[Category]),[Net Sales],,DESC)
+)

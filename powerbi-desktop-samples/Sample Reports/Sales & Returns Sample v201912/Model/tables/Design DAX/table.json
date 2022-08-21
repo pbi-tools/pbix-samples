@@ -1,0 +1,28 @@
+{
+  "name": "Design DAX",
+  "partitions": [
+    {
+      "name": "Design DAX-7094b577-15d0-4809-b6aa-45ca87420cf2",
+      "mode": "import",
+      "source": {
+        "type": "query",
+        "query": "SELECT * FROM [Design DAX]",
+        "dataSource": "bdddca9f-184a-441d-b2cf-f9355149b851"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "9eaaf4e6-b99a-4202-b751-21c2d740bdf3"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "Design DAX"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "name": "bdddca9f-184a-441d-b2cf-f9355149b851",
+  "connectionString": "provider=Microsoft.PowerBI.OleDb;location=\"Design DAX\"",
+  "impersonationMode": "impersonateCurrentUser"
+}

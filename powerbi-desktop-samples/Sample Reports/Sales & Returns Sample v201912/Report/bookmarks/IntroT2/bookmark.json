@@ -1,0 +1,141 @@
+{
+  "displayName": "IntroT2",
+  "name": "Bookmark31c98d5b3f7e668ac559",
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "ReportSection1dea67c2520bce38f54f",
+    "filters": {
+      "byExpr": [
+        {
+          "name": "Filter",
+          "type": "Categorical",
+          "filter": {
+            "Version": 2,
+            "From": [
+              {
+                "Name": "l",
+                "Entity": "LocalDateTable_d9fbe243-4814-4038-8eec-593e864a563b"
+              }
+            ],
+            "Where": [
+              {
+                "Condition": {
+                  "In": {
+                    "Expressions": [
+                      {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "l"
+                            }
+                          },
+                          "Property": "Month"
+                        }
+                      }
+                    ],
+                    "Values": [
+                      [
+                        {
+                          "Literal": {
+                            "Value": "'June'"
+                          }
+                        }
+                      ]
+                    ]
+                  }
+                }
+              }
+            ]
+          },
+          "expression": {
+            "HierarchyLevel": {
+              "Expression": {
+                "Hierarchy": {
+                  "Expression": {
+                    "PropertyVariationSource": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Calendar"
+                        }
+                      },
+                      "Name": "Variation",
+                      "Property": "Date"
+                    }
+                  },
+                  "Hierarchy": "Date Hierarchy"
+                }
+              },
+              "Level": "Month"
+            }
+          },
+          "howCreated": 1,
+          "cachedDisplayNames": [
+            {
+              "id": {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "LocalDateTable_d9fbe243-4814-4038-8eec-593e864a563b"
+                          }
+                        },
+                        "Property": "Month"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'June'"
+                      }
+                    }
+                  }
+                }
+              },
+              "displayName": "June"
+            }
+          ]
+        }
+      ]
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "options": {
+    "targetVisualNames": [
+      "89cc1e93c1c5966e544e",
+      "23db26b3cd172f49276c",
+      "5da3c3f81d93a9c81069",
+      "51ce430d668caa914894",
+      "8d760e8e3896c49aca93",
+      "6f5c60443649d316b648",
+      "1983b56feab63cd10919",
+      "a125e8594debec7bbd9d",
+      "c5c752cddfd93db49c9e",
+      "15c415aa8b6550fb4fb5",
+      "3e0614aa04dc4560ee62",
+      "920f4a4319a513fb9498",
+      "fcfceba358998a8d92bb",
+      "94e00a62024369b7a40e"
+    ],
+    "suppressData": true,
+    "suppressActiveSection": true,
+    "applyOnlyToTargetVisuals": true
+  }
+}

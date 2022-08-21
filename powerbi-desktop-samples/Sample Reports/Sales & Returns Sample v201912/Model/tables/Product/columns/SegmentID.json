@@ -1,0 +1,29 @@
+{
+  "name": "SegmentID",
+  "dataType": "int64",
+  "sourceColumn": "SegmentID",
+  "formatString": "0",
+  "summarizeBy": "count",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "Format",
+      "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+    },
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "Int64#####not a type"
+    },
+    {
+      "name": "PBI_NameAtRefresh",
+      "value": "SegmentID"
+    },
+    {
+      "name": "PBI_WasHiddenAtRefresh",
+      "value": "False"
+    }
+  ]
+}

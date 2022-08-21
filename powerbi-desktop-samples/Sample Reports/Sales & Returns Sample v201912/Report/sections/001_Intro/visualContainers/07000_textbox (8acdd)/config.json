@@ -1,0 +1,100 @@
+{
+  "name": "8acdd971b07684691201",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 81.901743264659274,
+        "y": 305.9270998415214,
+        "z": 1000,
+        "width": 544.405705229794,
+        "height": 269.79397781299525,
+        "tabOrder": 7000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "DESCRIPTION",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "12pt",
+                      "color": "#ffffff"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "\tThis Interactive Sales & Return Analytics Dashboard of a Skateboard Company allows you to drill into the data and explore all the factors that impact Sales and Returns. It also analyzes what types of products are most popular in different regions and provides insights into areas to focus marketing efforts. ",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "color": "#ffffff"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "\tThis Report is loaded with Power BI Features that will allow the user to understand a large amount of data with an easy to use interface. By integrating Power Apps within this Power BI Report, the users are able to get from Data to Insights to Action rapidly.",
+                    "textStyle": {
+                      "fontSize": "11pt",
+                      "color": "#ffffff"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

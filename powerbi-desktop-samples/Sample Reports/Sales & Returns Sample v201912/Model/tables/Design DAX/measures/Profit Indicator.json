@@ -1,0 +1,9 @@
+{
+  "name": "Profit Indicator",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"Text\" />"
+    }
+  ]
+}

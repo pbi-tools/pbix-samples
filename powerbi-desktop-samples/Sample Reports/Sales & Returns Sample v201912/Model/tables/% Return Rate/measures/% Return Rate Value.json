@@ -1,0 +1,9 @@
+{
+  "name": "% Return Rate Value",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"General\" />"
+    }
+  ]
+}

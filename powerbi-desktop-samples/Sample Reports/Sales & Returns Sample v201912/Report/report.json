@@ -1,0 +1,257 @@
+{
+  "id": 0,
+  "layoutOptimization": 1,
+  "pods": [
+    {
+      "boundSection": "ReportSection4b3fbaa7dd7908d906d9",
+      "config": "{}",
+      "name": "Pod1"
+    },
+    {
+      "boundSection": "ReportSection998e2850a99cabad87e8",
+      "config": "{}",
+      "name": "Pod2"
+    },
+    {
+      "boundSection": "ReportSectiona37d01e834c17d07bbeb",
+      "config": "{\"acceptsFilterContext\":1}",
+      "name": "Pod",
+      "parameters": "[{\"name\":\"Param_Filter\",\"boundFilter\":\"Filter\",\"fieldExpr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Product\"}},\"Property\":\"Product\"}}}]",
+      "type": 1
+    },
+    {
+      "boundSection": "ReportSectionc0cfc0e4243d2494dbe0",
+      "config": "{}",
+      "name": "Pod3"
+    },
+    {
+      "boundSection": "ReportSection2453dea2053ed300eb7c",
+      "config": "{}",
+      "name": "Pod4"
+    },
+    {
+      "boundSection": "ReportSectiona63d9045ac68091ae138",
+      "config": "{}",
+      "name": "Pod5"
+    },
+    {
+      "boundSection": "ReportSectionefae9520722c310c4ba0",
+      "config": "{}",
+      "name": "Pod6"
+    },
+    {
+      "boundSection": "ReportSectionf037c36b9a1a39cc3b14",
+      "config": "{}",
+      "name": "Pod7"
+    },
+    {
+      "boundSection": "ReportSection76e99cbc27dbb0759922",
+      "config": "{}",
+      "name": "Pod8"
+    },
+    {
+      "boundSection": "ReportSection44182d852270e8b765cb",
+      "config": "{}",
+      "name": "Pod9"
+    },
+    {
+      "boundSection": "ReportSection79828a20a2b300a5d99b",
+      "config": "{}",
+      "name": "Pod10"
+    },
+    {
+      "boundSection": "ReportSection23904f9ac2e638d5ed18",
+      "config": "{}",
+      "name": "Pod11"
+    },
+    {
+      "boundSection": "ReportSection406bc05d6280a2c44873",
+      "config": "{}",
+      "name": "Pod12"
+    },
+    {
+      "boundSection": "ReportSectione5a0c158d21b780789a8",
+      "config": "{}",
+      "name": "Pod13",
+      "parameters": "[{\"name\":\"Param_Filter\",\"boundFilter\":\"Filter\",\"fieldExpr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Product\"}},\"Property\":\"Product\"}}}]",
+      "type": 1
+    },
+    {
+      "boundSection": "ReportSectionac989ac185c4a0764a5e",
+      "config": "{}",
+      "name": "Pod14"
+    },
+    {
+      "boundSection": "ReportSection3cf1f64a09676ebe5725",
+      "config": "{}",
+      "name": "Pod15"
+    },
+    {
+      "boundSection": "ReportSection1dea67c2520bce38f54f",
+      "config": "{}",
+      "name": "Pod17"
+    },
+    {
+      "boundSection": "ReportSectiond8ab5d035cceb8586528",
+      "config": "{}",
+      "name": "Pod16"
+    }
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY19SU06",
+            "path": "BaseThemes/CY19SU06.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "Sales_and_Marketing_Demo-01022326640429172206.png",
+            "path": "Sales_and_Marketing_Demo-01022326640429172206.png",
+            "type": 100
+          },
+          {
+            "name": "Music_Charts3284044798188317.json",
+            "path": "Music_Charts3284044798188317.json",
+            "type": 201
+          },
+          {
+            "name": "Sales_and_Marketing_Demo-018077117149643644.png",
+            "path": "Sales_and_Marketing_Demo-018077117149643644.png",
+            "type": 100
+          },
+          {
+            "name": "Sales_and_Marketing_Demo_2-029422097016286679.png",
+            "path": "Sales_and_Marketing_Demo_2-029422097016286679.png",
+            "type": 100
+          },
+          {
+            "name": "circle-038230595798535065.png",
+            "path": "circle-038230595798535065.png",
+            "type": 100
+          },
+          {
+            "name": "Sales_and_Marketing_Demo_2-0221746543918385175.png",
+            "path": "Sales_and_Marketing_Demo_2-0221746543918385175.png",
+            "type": 100
+          },
+          {
+            "name": "Bimbo_Main-043722306403038511.png",
+            "path": "Bimbo_Main-043722306403038511.png",
+            "type": 100
+          },
+          {
+            "name": "Bimbo_Main-043527792099355527.png",
+            "path": "Bimbo_Main-043527792099355527.png",
+            "type": 100
+          },
+          {
+            "name": "Phone-019914151903574486.png",
+            "path": "Phone-019914151903574486.png",
+            "type": 100
+          },
+          {
+            "name": "BACKGROUND-0111693359225616518.png",
+            "path": "BACKGROUND-0111693359225616518.png",
+            "type": 100
+          },
+          {
+            "name": "BACKGROUND-012689548225955105.png",
+            "path": "BACKGROUND-012689548225955105.png",
+            "type": 100
+          },
+          {
+            "name": "BACKGROUND-019722732447750158.png",
+            "path": "BACKGROUND-019722732447750158.png",
+            "type": 100
+          },
+          {
+            "name": "BACKGROUND-013543932410258568.png",
+            "path": "BACKGROUND-013543932410258568.png",
+            "type": 100
+          },
+          {
+            "name": "BACKGROUND-01838499897238703.png",
+            "path": "BACKGROUND-01838499897238703.png",
+            "type": 100
+          },
+          {
+            "name": "8867.Microsoft_5F00_Logo_2D00_for_2D00_screen3879405041076949.jpg",
+            "path": "8867.Microsoft_5F00_Logo_2D00_for_2D00_screen3879405041076949.jpg",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "PBI_CV_EB3A4088_75C5_4746_9D8B_255A7B7ECD6C.pbiviz.json",
+            "path": "PBI_CV_EB3A4088_75C5_4746_9D8B_255A7B7ECD6C.pbiviz.json",
+            "type": 5
+          }
+        ],
+        "name": "PBI_CV_EB3A4088_75C5_4746_9D8B_255A7B7ECD6C",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "simpleImageEBC4593F96F1425FB3D84C5BF02B5075.pbiviz.json",
+            "path": "simpleImageEBC4593F96F1425FB3D84C5BF02B5075.pbiviz.json",
+            "type": 5
+          }
+        ],
+        "name": "simpleImageEBC4593F96F1425FB3D84C5BF02B5075",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "PBI_CV_885EF3C3_31C1_4745_B2B9_20771D5AD196.pbiviz.json",
+            "path": "PBI_CV_885EF3C3_31C1_4745_B2B9_20771D5AD196.pbiviz.json",
+            "type": 5
+          }
+        ],
+        "name": "PBI_CV_885EF3C3_31C1_4745_B2B9_20771D5AD196",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "ClusterMap1652434605854.pbiviz.json",
+            "path": "ClusterMap1652434605854.pbiviz.json",
+            "type": 5
+          }
+        ],
+        "name": "ClusterMap1652434605854",
+        "type": 0
+      }
+    }
+  ],
+  "theme": "Music_Charts3284044798188317.json"
+}

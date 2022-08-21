@@ -1,0 +1,28 @@
+{
+  "name": "Tooltip Info2",
+  "partitions": [
+    {
+      "name": "Tooltip Info2-46834bd6-8728-401a-83e6-ae749d0386dd",
+      "mode": "import",
+      "source": {
+        "type": "query",
+        "query": "SELECT * FROM [Tooltip Info2]",
+        "dataSource": "a5e9171f-39da-429b-9e38-9b7dc6f97c7e"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "e807b3a8-7e35-4c25-9410-dca9bdb57fd2"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "Tooltip Info2"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    }
+  ]
+}

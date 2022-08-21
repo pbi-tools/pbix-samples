@@ -1,0 +1,326 @@
+{
+  "Commands": [
+    {
+      "SemanticQueryDataShapeCommand": {
+        "Query": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "a",
+              "Entity": "Analysis DAX"
+            },
+            {
+              "Name": "c",
+              "Entity": "Calendar"
+            },
+            {
+              "Name": "%",
+              "Entity": "% Return Rate"
+            },
+            {
+              "Name": "p",
+              "Entity": "Product"
+            },
+            {
+              "Name": "l",
+              "Entity": "LocalDateTable_d9fbe243-4814-4038-8eec-593e864a563b"
+            }
+          ],
+          "Select": [
+            {
+              "Column": {
+                "Expression": {
+                  "TransformTableRef": {
+                    "Source": "output0"
+                  }
+                },
+                "Property": "Calendar.Date"
+              },
+              "Name": "Calendar.Date"
+            },
+            {
+              "Column": {
+                "Expression": {
+                  "TransformTableRef": {
+                    "Source": "output0"
+                  }
+                },
+                "Property": "Analysis DAX.WIF Total Forecast"
+              },
+              "Name": "Analysis DAX.WIF Total Forecast"
+            },
+            {
+              "Column": {
+                "Expression": {
+                  "TransformTableRef": {
+                    "Source": "output0"
+                  }
+                },
+                "Property": "forecastValue"
+              },
+              "Name": "forecastValue"
+            },
+            {
+              "Column": {
+                "Expression": {
+                  "TransformTableRef": {
+                    "Source": "output0"
+                  }
+                },
+                "Property": "confidenceHighBound"
+              },
+              "Name": "confidenceHighBound"
+            },
+            {
+              "Column": {
+                "Expression": {
+                  "TransformTableRef": {
+                    "Source": "output0"
+                  }
+                },
+                "Property": "confidenceLowBound"
+              },
+              "Name": "confidenceLowBound"
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "%"
+                        }
+                      },
+                      "Property": "% Return Rate"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "25D"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "p"
+                          }
+                        },
+                        "Property": "Product"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'OneNote'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            },
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "l"
+                          }
+                        },
+                        "Property": "Month"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'June'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ],
+          "Transform": [
+            {
+              "Name": "Forecast",
+              "Algorithm": "Forecast",
+              "Input": {
+                "Parameters": [
+                  {
+                    "Literal": {
+                      "Value": "7D"
+                    },
+                    "Name": "Unit"
+                  },
+                  {
+                    "Literal": {
+                      "Value": "5D"
+                    },
+                    "Name": "ForecastLength"
+                  },
+                  {
+                    "Literal": {
+                      "Value": "0D"
+                    },
+                    "Name": "IgnoreLast"
+                  },
+                  {
+                    "Literal": {
+                      "Value": "0.85D"
+                    },
+                    "Name": "ConfidenceLevel"
+                  },
+                  {
+                    "Literal": {
+                      "Value": "5D"
+                    },
+                    "Name": "MaxSeasonality"
+                  }
+                ],
+                "Table": {
+                  "Name": "input0",
+                  "Columns": [
+                    {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "c"
+                            }
+                          },
+                          "Property": "Date"
+                        },
+                        "Name": "Calendar.Date"
+                      },
+                      "Role": "X"
+                    },
+                    {
+                      "Expression": {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "a"
+                            }
+                          },
+                          "Property": "WIF Total Forecast"
+                        },
+                        "Name": "Analysis DAX.WIF Total Forecast"
+                      },
+                      "Role": "Y"
+                    }
+                  ]
+                }
+              },
+              "Output": {
+                "Table": {
+                  "Name": "output0",
+                  "Columns": [
+                    {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "TransformTableRef": {
+                              "Source": "input0"
+                            }
+                          },
+                          "Property": "Calendar.Date"
+                        },
+                        "Name": "Calendar.Date"
+                      }
+                    },
+                    {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "TransformTableRef": {
+                              "Source": "input0"
+                            }
+                          },
+                          "Property": "Analysis DAX.WIF Total Forecast"
+                        },
+                        "Name": "Analysis DAX.WIF Total Forecast"
+                      }
+                    },
+                    {
+                      "Expression": {
+                        "TransformOutputRoleRef": {
+                          "Role": "Forecast"
+                        },
+                        "Name": "forecastValue"
+                      },
+                      "Role": "forecast.ForecastValue"
+                    },
+                    {
+                      "Expression": {
+                        "TransformOutputRoleRef": {
+                          "Role": "UpperBound"
+                        },
+                        "Name": "confidenceHighBound"
+                      },
+                      "Role": "forecast.ConfidenceHighBound"
+                    },
+                    {
+                      "Expression": {
+                        "TransformOutputRoleRef": {
+                          "Role": "LowerBound"
+                        },
+                        "Name": "confidenceLowBound"
+                      },
+                      "Role": "forecast.ConfidenceLowBound"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "Binding": {
+          "Primary": {
+            "Groupings": [
+              {
+                "Projections": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4
+                ],
+                "ShowItemsWithNoData": [
+                  0
+                ]
+              }
+            ]
+          },
+          "DataReduction": {
+            "DataVolume": 4,
+            "Primary": {
+              "BinnedLineSample": {}
+            }
+          },
+          "Version": 1
+        }
+      }
+    }
+  ]
+}

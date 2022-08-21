@@ -1,0 +1,183 @@
+{
+  "name": "035e36420182d78d0e30",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 865.33575317604357,
+        "y": 217.20508166969145,
+        "z": 5000,
+        "width": 392.59528130671504,
+        "height": 442.540834845735,
+        "tabOrder": 21000
+      }
+    },
+    {
+      "id": 1,
+      "position": {
+        "x": 0,
+        "y": 1140,
+        "width": 324,
+        "height": 420
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "qnaVisual",
+    "projections": {},
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [],
+      "Select": []
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "hiddenProperties": [
+        {
+          "properties": {
+            "savedUtterance": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Show me Returns Over Time. Only Leo, Contoso, Fama, and Pomum'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "inputBox": [
+        {
+          "properties": {
+            "acceptedColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#698EE2'"
+                    }
+                  }
+                }
+              }
+            },
+            "errorColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#D73A01'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "suggestions": [
+        {
+          "properties": {
+            "cardBackground": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 5,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "'12'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "foreground": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#9494AA'"
+                    }
+                  }
+                }
+              }
+            },
+            "showDrillDownExpandButton": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "showTooltipButton": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeaderTooltip": [
+        {
+          "properties": {
+            "section": {
+              "expr": {
+                "Literal": {
+                  "Value": "'ReportSection3cf1f64a09676ebe5725'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

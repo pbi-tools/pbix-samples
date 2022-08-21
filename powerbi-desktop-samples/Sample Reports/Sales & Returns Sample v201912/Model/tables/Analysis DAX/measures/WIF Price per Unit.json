@@ -1,0 +1,9 @@
+{
+  "name": "WIF Price per Unit",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"General\" />"
+    }
+  ]
+}

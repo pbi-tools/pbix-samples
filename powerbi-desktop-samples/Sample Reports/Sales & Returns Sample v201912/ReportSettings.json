@@ -1,0 +1,12 @@
+{
+  "showHiddenFields": false,
+  "isRelationshipAutodetectionEnabled": true,
+  "isParallelQueryLoadingEnabled": true,
+  "isAutoRecoveryEnabledForThisFile": true,
+  "isQnaEnabledForThisFile": true,
+  "isQnaEnabledForLiveConnect": false,
+  "userConsentsToCompositeModels": false,
+  "userConsentsToDynamicQueryParameter": false,
+  "userConsentsToQnaForLiveConnect": false,
+  "qnaLsdlSharingPermission": 0
+}

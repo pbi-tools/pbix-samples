@@ -1,0 +1,29 @@
+{
+  "name": "Amount",
+  "dataType": "int64",
+  "sourceColumn": "Amount",
+  "formatString": "\\$#,0;-\\$#,0;\\$#,0",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "Format",
+      "value": "<Format Format=\"CurrencyCustom\" Accuracy=\"0\" ThousandSeparator=\"True\"><Currency LCID=\"4105\" DisplayName=\"$ English (Canada)\" Symbol=\"$\" PositivePattern=\"0\" NegativePattern=\"1\" /></Format>"
+    },
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "Int64#####not a type"
+    },
+    {
+      "name": "PBI_NameAtRefresh",
+      "value": "Amount"
+    },
+    {
+      "name": "PBI_WasHiddenAtRefresh",
+      "value": "False"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "Store",
+  "partitions": [
+    {
+      "name": "Store-6ef38b87-82a5-486d-ac13-9e4fbd79c1be",
+      "mode": "import",
+      "source": {
+        "type": "query",
+        "query": "SELECT * FROM [Store]",
+        "dataSource": "543e8beb-4074-42ee-ba48-5ae31da96611"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "f1746d41-48af-4748-a581-103379c49b8e"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "Store"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    }
+  ]
+}

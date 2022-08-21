@@ -1,0 +1,1 @@
+IF([ProductR Top N]<4,[Returns],0)

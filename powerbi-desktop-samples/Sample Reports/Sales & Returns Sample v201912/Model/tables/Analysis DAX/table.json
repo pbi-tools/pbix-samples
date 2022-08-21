@@ -1,0 +1,24 @@
+{
+  "name": "Analysis DAX",
+  "partitions": [
+    {
+      "name": "Analysis DAX-974df033-112a-4cf0-a45f-a45006d690ca",
+      "mode": "import",
+      "source": {
+        "type": "query",
+        "query": "SELECT * FROM [Analysis DAX]",
+        "dataSource": "90357580-ffed-4730-949c-604dfd2acac9"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "67334ddb-2ca7-4df2-aa43-24423a295af6"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "Analysis DAX"
+    }
+  ]
+}

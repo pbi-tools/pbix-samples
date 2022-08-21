@@ -1,0 +1,6 @@
+{
+  "name": "en-US",
+  "linguisticMetadata": {
+    "content": "<LinguisticMetadata><LinguisticSchema Language=\"en-US\" DynamicImprovement=\"HighConfidence\" xmlns=\"http://schemas.microsoft.com/sqlserver/2016/01/linguisticschema\" /></LinguisticMetadata>"
+  }
+}

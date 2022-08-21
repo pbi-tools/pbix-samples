@@ -1,0 +1,186 @@
+{
+  "name": "2fc7f09bae457060010c",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 51.969924812030072,
+        "y": 172.15037593984962,
+        "z": 0,
+        "width": 395.187969924812,
+        "height": 460.1503759398496
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "\t",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#171717"
+                    }
+                  },
+                  {
+                    "value": "©Microsoft Corporation. All rights reserved.",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "12pt",
+                      "color": "#171717"
+                    }
+                  },
+                  {
+                    "value": " The documents, sample reports, and sample data are provided \"as-is.\" Information and views expressed in the sample reports, including URL and other Internet Web site references, may change without notice. You bear the risk of using it. Some examples are for illustration only and are fictitious. No real association is intended or inferred. Microsoft makes no warranties, express or implied, with respect to the information provided here. ",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#171717"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "\tThe sample reports and data do not provide you with any legal rights to any intellectual property in any Microsoft product. You may copy and use this report for your internal, reference purposes.",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#171717"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "This report uses the following visual(s) from",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#171717"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "AppSource: ",
+                    "textStyle": {
+                      "fontSize": "12pt"
+                    }
+                  },
+                  {
+                    "value": "Mapbox Visual",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "12pt",
+                      "color": "#000000"
+                    },
+                    "url": "https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Faz158878.vo.msecnd.net%2Fmarketing%2FPartner_21474847737%2FProduct_42949681766%2FAsset_41e553f5-4792-406d-a472-03fa654268f3%2FTermsofserviceMapbox.pdf&data=02%7C01%7CMiguel.Myers%40microsoft.com%7C1b01ec847ad64f57615208d77a984f7d%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637112666901006850&sdata=k0x%2FQW%2B5amARJ973TN6aO2PgYb2xYtKYgvEqq3KtuEY%3D&reserved=0"
+                  },
+                  {
+                    "value": ", ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "12pt",
+                      "color": "#000000"
+                    }
+                  },
+                  {
+                    "value": "Cluster",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "12pt",
+                      "color": "#000000"
+                    },
+                    "url": "https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fpinpointprod.blob.core.windows.net%2Fmarketing%2FPartner_21474836617%2FProduct_42949680639%2FAsset_855a1e58-d2c9-40c6-b447-da4425cc3d7a%2FPowerBIDefaultCustomVisualEULA.pdf&data=02%7C01%7CMiguel.Myers%40microsoft.com%7C1b01ec847ad64f57615208d77a984f7d%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637112666901006850&sdata=%2BtVmd50tYRpIFc1yXlCAUs2%2BCBoFZs3B8GTDKuPj%2BTo%3D&reserved=0"
+                  },
+                  {
+                    "value": " ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "12pt",
+                      "color": "#000000"
+                    },
+                    "url": "https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Faz158878.vo.msecnd.net%2Fmarketing%2FPartner_21474847737%2FProduct_42949681766%2FAsset_41e553f5-4792-406d-a472-03fa654268f3%2FTermsofserviceMapbox.pdf&data=02%7C01%7CMiguel.Myers%40microsoft.com%7C1b01ec847ad64f57615208d77a984f7d%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637112666901006850&sdata=k0x%2FQW%2B5amARJ973TN6aO2PgYb2xYtKYgvEqq3KtuEY%3D&reserved=0"
+                  },
+                  {
+                    "value": "Map",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "12pt",
+                      "color": "#000000"
+                    },
+                    "url": "https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Fpinpointprod.blob.core.windows.net%2Fmarketing%2FPartner_21474836617%2FProduct_42949680639%2FAsset_855a1e58-d2c9-40c6-b447-da4425cc3d7a%2FPowerBIDefaultCustomVisualEULA.pdf&data=02%7C01%7CMiguel.Myers%40microsoft.com%7C1b01ec847ad64f57615208d77a984f7d%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637112666901006850&sdata=%2BtVmd50tYRpIFc1yXlCAUs2%2BCBoFZs3B8GTDKuPj%2BTo%3D&reserved=0"
+                  },
+                  {
+                    "value": ", ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "12pt",
+                      "color": "#000000"
+                    }
+                  },
+                  {
+                    "value": "Simple Image",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "12pt",
+                      "color": "#000000"
+                    },
+                    "url": "https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Faz158878.vo.msecnd.net%2Fmarketing%2FPartner_21474847737%2FProduct_42949681766%2FAsset_41e553f5-4792-406d-a472-03fa654268f3%2FTermsofserviceMapbox.pdf&data=02%7C01%7CMiguel.Myers%40microsoft.com%7C1b01ec847ad64f57615208d77a984f7d%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637112666901006850&sdata=k0x%2FQW%2B5amARJ973TN6aO2PgYb2xYtKYgvEqq3KtuEY%3D&reserved=0"
+                  },
+                  {
+                    "value": ", & ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "12pt",
+                      "color": "#000000"
+                    }
+                  },
+                  {
+                    "value": "Image",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "12pt",
+                      "color": "#000000"
+                    },
+                    "url": "https://nam06.safelinks.protection.outlook.com/?url=https%3A%2F%2Faz158878.vo.msecnd.net%2Fmarketing%2FPartner_21474847737%2FProduct_42949681766%2FAsset_41e553f5-4792-406d-a472-03fa654268f3%2FTermsofserviceMapbox.pdf&data=02%7C01%7CMiguel.Myers%40microsoft.com%7C1b01ec847ad64f57615208d77a984f7d%7C72f988bf86f141af91ab2d7cd011db47%7C1%7C0%7C637112666901006850&sdata=k0x%2FQW%2B5amARJ973TN6aO2PgYb2xYtKYgvEqq3KtuEY%3D&reserved=0"
+                  },
+                  {
+                    "value": ".  Click on the links to see their license agreement.",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#171717"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "name": "Association",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"General\" />"
+    }
+  ]
+}

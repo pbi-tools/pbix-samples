@@ -1,0 +1,73 @@
+{
+  "objects": {
+    "imageSettings": [
+      {
+        "properties": {
+          "scalingMode": {
+            "expr": {
+              "Literal": {
+                "Value": "'normal'"
+              }
+            }
+          },
+          "imageAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'center'"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "imageURL": [
+      0
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Product Image",
+        "Name": "Product.Product Image",
+        "Type": 2048,
+        "DataCategory": 9
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "imageURL",
+          "Projection": 0,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Product Image",
+      "queryName": "Product.Product Image",
+      "roles": {
+        "imageURL": true
+      },
+      "type": {
+        "category": "ImageUrl",
+        "underlyingType": 13174785
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Product"
+            }
+          },
+          "Property": "Product Image"
+        }
+      }
+    }
+  ]
+}

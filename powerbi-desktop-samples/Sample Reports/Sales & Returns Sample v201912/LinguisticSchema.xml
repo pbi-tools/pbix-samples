@@ -1,0 +1,94 @@
+<LinguisticSchema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Language="en-US" DynamicImprovement="Default" xmlns="http://schemas.microsoft.com/sqlserver/2016/01/linguisticschema">
+  <Entities>
+    <Entity Source="Generated" ConceptualEntity="Pod1" Name="Net_Sales">
+      <Words>
+        <Word>Net Sales</Word>
+      </Words>
+    </Entity>
+    <Entity Source="Generated" ConceptualEntity="Pod2" Name="Returns">
+      <Words>
+        <Word>Returns</Word>
+      </Words>
+    </Entity>
+    <Entity Source="Generated" ConceptualEntity="Pod3" Name="Net_Sales_Tooltip">
+      <Words>
+        <Word>Net Sales Tooltip</Word>
+      </Words>
+    </Entity>
+    <Entity Source="Generated" ConceptualEntity="Pod4" Name="Returns_Tooltip">
+      <Words>
+        <Word>Returns Tooltip</Word>
+      </Words>
+    </Entity>
+    <Entity Source="Generated" ConceptualEntity="Pod" Name="Return_Rate">
+      <Words>
+        <Word>Return Rate</Word>
+      </Words>
+    </Entity>
+    <Entity Source="Generated" ConceptualEntity="Pod5" Name="CathegoryBreackdown">
+      <Words>
+        <Word>CathegoryBreackdown</Word>
+      </Words>
+    </Entity>
+    <Entity Source="Generated" ConceptualEntity="Pod6" Name="KeyInfluencers">
+      <Words>
+        <Word>KeyInfluencers</Word>
+      </Words>
+    </Entity>
+    <Entity Source="Generated" ConceptualEntity="Pod7" Name="StoreBreackdown">
+      <Words>
+        <Word>StoreBreackdown</Word>
+      </Words>
+    </Entity>
+    <Entity Source="Generated" ConceptualEntity="Pod8" Name="NetSales">
+      <Words>
+        <Word>NetSales</Word>
+      </Words>
+    </Entity>
+    <Entity Source="Generated" ConceptualEntity="Pod9" Name="WhatIf">
+      <Words>
+        <Word>WhatIf</Word>
+      </Words>
+    </Entity>
+    <Entity Source="Generated" ConceptualEntity="Pod10" Name="RetCategory">
+      <Words>
+        <Word>RetCategory</Word>
+      </Words>
+    </Entity>
+    <Entity Source="Generated" ConceptualEntity="Pod11" Name="RetKeyInf">
+      <Words>
+        <Word>RetKeyInf</Word>
+      </Words>
+    </Entity>
+    <Entity Source="Generated" ConceptualEntity="Pod12" Name="RetStoreBre">
+      <Words>
+        <Word>RetStoreBre</Word>
+      </Words>
+    </Entity>
+    <Entity Source="Generated" ConceptualEntity="Pod13" Name="Market_Basket_Analysis">
+      <Words>
+        <Word>Market Basket Analysis</Word>
+      </Words>
+    </Entity>
+    <Entity Source="Generated" ConceptualEntity="Pod14" Name="QA1">
+      <Words>
+        <Word>Q&amp;A1</Word>
+      </Words>
+    </Entity>
+    <Entity Source="Generated" ConceptualEntity="Pod15" Name="QA2">
+      <Words>
+        <Word>Q&amp;A2</Word>
+      </Words>
+    </Entity>
+    <Entity Source="Generated" ConceptualEntity="Pod17" Name="Intro">
+      <Words>
+        <Word>Intro</Word>
+      </Words>
+    </Entity>
+    <Entity Source="Generated" ConceptualEntity="Pod16" Name="Legal">
+      <Words>
+        <Word>Legal</Word>
+      </Words>
+    </Entity>
+  </Entities>
+</LinguisticSchema>

@@ -1,0 +1,9 @@
+{
+  "name": "Net Sales Indicator",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"Text\" />"
+    }
+  ]
+}

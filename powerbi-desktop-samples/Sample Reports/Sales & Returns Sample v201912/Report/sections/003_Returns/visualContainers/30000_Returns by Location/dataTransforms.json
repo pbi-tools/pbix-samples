@@ -1,0 +1,310 @@
+{
+  "objects": {
+    "api": [
+      {
+        "properties": {
+          "accessToken": {
+            "expr": {
+              "Literal": {
+                "Value": "'pk.eyJ1IjoibWlndWVsbXllcnMiLCJhIjoiY2pua3N6djRmMDBidTNxcHZyc29xNTdoNCJ9.JLYYaLBkDGvDfCZKXHbfaQ'"
+              }
+            }
+          },
+          "style": {
+            "expr": {
+              "Literal": {
+                "Value": "'custom'"
+              }
+            }
+          },
+          "styleUrl": {
+            "expr": {
+              "Literal": {
+                "Value": "'mapbox://styles/miguelmyers/ck1rhs5rd4m1h1dqkt4hkia5l'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "geocoder": [
+      {
+        "properties": {
+          "show": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "circle": [
+      {
+        "properties": {
+          "legend": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          },
+          "radius": {
+            "expr": {
+              "Literal": {
+                "Value": "4D"
+              }
+            }
+          },
+          "minColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "ThemeDataColor": {
+                    "ColorId": 5,
+                    "Percent": 0.6
+                  }
+                }
+              }
+            }
+          },
+          "maxColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "ThemeDataColor": {
+                    "ColorId": 5,
+                    "Percent": 0
+                  }
+                }
+              }
+            }
+          },
+          "opacity": {
+            "expr": {
+              "Literal": {
+                "Value": "50D"
+              }
+            }
+          },
+          "strokeColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "ThemeDataColor": {
+                    "ColorId": 5,
+                    "Percent": -0.25
+                  }
+                }
+              }
+            }
+          },
+          "strokeOpacity": {
+            "expr": {
+              "Literal": {
+                "Value": "80D"
+              }
+            }
+          },
+          "maxZoom": {
+            "expr": {
+              "Literal": {
+                "Value": "55D"
+              }
+            }
+          },
+          "highlightColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "ThemeDataColor": {
+                    "ColorId": 2,
+                    "Percent": 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "latitude": [
+      0
+    ],
+    "longitude": [
+      1
+    ],
+    "tooltips": [
+      2,
+      3
+    ],
+    "color": [
+      3
+    ],
+    "size": [
+      3
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Latitude",
+        "Name": "Store.Latitude",
+        "Type": 1,
+        "DataCategory": 10
+      },
+      {
+        "Restatement": "Longitude",
+        "Name": "Store.Longitude",
+        "Type": 1,
+        "DataCategory": 11
+      },
+      {
+        "Restatement": "First Store",
+        "Name": "Min(Store.Manufacturer)",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Returns",
+        "Name": "Analysis DAX.02 Returns",
+        "Type": 3,
+        "Format": "\\$#,0;-\\$#,0;\\$#,0"
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "latitude",
+          "Projection": 0,
+          "isActive": false
+        },
+        {
+          "Name": "longitude",
+          "Projection": 1,
+          "isActive": false
+        },
+        {
+          "Name": "tooltips",
+          "Projection": 2,
+          "isActive": false
+        },
+        {
+          "Name": "tooltips",
+          "Projection": 3,
+          "isActive": false
+        },
+        {
+          "Name": "color",
+          "Projection": 3,
+          "isActive": false
+        },
+        {
+          "Name": "size",
+          "Projection": 3,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Latitude",
+      "queryName": "Store.Latitude",
+      "roles": {
+        "latitude": true
+      },
+      "type": {
+        "category": "Latitude",
+        "underlyingType": 7144707
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Store"
+            }
+          },
+          "Property": "Latitude"
+        }
+      }
+    },
+    {
+      "displayName": "Longitude",
+      "queryName": "Store.Longitude",
+      "roles": {
+        "longitude": true
+      },
+      "type": {
+        "category": "Longitude",
+        "underlyingType": 7210243
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Store"
+            }
+          },
+          "Property": "Longitude"
+        }
+      }
+    },
+    {
+      "displayName": "First Store",
+      "queryName": "Min(Store.Manufacturer)",
+      "roles": {
+        "tooltips": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Store"
+                }
+              },
+              "Property": "Store"
+            }
+          },
+          "Function": 3
+        }
+      }
+    },
+    {
+      "displayName": "Returns",
+      "format": "\\$#,0;-\\$#,0;\\$#,0",
+      "queryName": "Analysis DAX.02 Returns",
+      "roles": {
+        "tooltips": true,
+        "color": true,
+        "size": true
+      },
+      "sort": 2,
+      "sortOrder": 0,
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Analysis DAX"
+            }
+          },
+          "Property": "Returns"
+        }
+      }
+    }
+  ]
+}

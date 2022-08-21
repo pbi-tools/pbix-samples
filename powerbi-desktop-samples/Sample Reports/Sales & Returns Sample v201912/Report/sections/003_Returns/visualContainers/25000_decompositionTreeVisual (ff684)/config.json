@@ -1,0 +1,235 @@
+{
+  "name": "ff684e8bd3052b108d01",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 154.15094339622644,
+        "y": 120.99056603773586,
+        "z": 30000,
+        "width": 971.50943396226421,
+        "height": 537,
+        "tabOrder": 25000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "decompositionTreeVisual",
+    "projections": {
+      "Analyze": [
+        {
+          "queryRef": "Sum(Customer.Amount)"
+        }
+      ],
+      "ExplainBy": [
+        {
+          "queryRef": "Customer.Category"
+        },
+        {
+          "queryRef": "Customer.Product"
+        },
+        {
+          "queryRef": "Customer.Gender"
+        },
+        {
+          "queryRef": "Customer.Age"
+        },
+        {
+          "queryRef": "Customer.Issue"
+        },
+        {
+          "queryRef": "Customer.Store"
+        },
+        {
+          "queryRef": "Customer.Segment"
+        },
+        {
+          "queryRef": "Customer.Type"
+        },
+        {
+          "queryRef": "Customer.Price Range"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "c",
+          "Entity": "Customer"
+        }
+      ],
+      "Select": [
+        {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "c"
+                  }
+                },
+                "Property": "Amount"
+              }
+            },
+            "Function": 0
+          },
+          "Name": "Sum(Customer.Amount)"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "c"
+              }
+            },
+            "Property": "Category"
+          },
+          "Name": "Customer.Category"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "c"
+              }
+            },
+            "Property": "Product"
+          },
+          "Name": "Customer.Product"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "c"
+              }
+            },
+            "Property": "Gender"
+          },
+          "Name": "Customer.Gender"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "c"
+              }
+            },
+            "Property": "Age"
+          },
+          "Name": "Customer.Age"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "c"
+              }
+            },
+            "Property": "Issue"
+          },
+          "Name": "Customer.Issue"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "c"
+              }
+            },
+            "Property": "Store"
+          },
+          "Name": "Customer.Store"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "c"
+              }
+            },
+            "Property": "Segment"
+          },
+          "Name": "Customer.Segment"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "c"
+              }
+            },
+            "Property": "Type"
+          },
+          "Name": "Customer.Type"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "c"
+              }
+            },
+            "Property": "Price Range"
+          },
+          "Name": "Customer.Price Range"
+        }
+      ],
+      "OrderBy": [
+        {
+          "Direction": 2,
+          "Expression": {
+            "Aggregation": {
+              "Expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Source": "c"
+                    }
+                  },
+                  "Property": "Amount"
+                }
+              },
+              "Function": 0
+            }
+          }
+        }
+      ]
+    },
+    "display": {
+      "mode": "hidden"
+    },
+    "drillFilterOtherVisuals": true,
+    "hasDefaultSort": true,
+    "objects": {},
+    "vcObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

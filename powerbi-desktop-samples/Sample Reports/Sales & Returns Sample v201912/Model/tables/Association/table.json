@@ -1,0 +1,28 @@
+{
+  "name": "Association",
+  "partitions": [
+    {
+      "name": "Association-7d9865cc-e0f7-465e-8a07-5176d6094e2a",
+      "mode": "import",
+      "source": {
+        "type": "query",
+        "query": "SELECT * FROM [Association]",
+        "dataSource": "cce48e03-9bf2-4450-a7f9-5eb8e75c8552"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "1962b83a-7b2e-45b8-899d-aae4331673a1"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "Association"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    }
+  ]
+}

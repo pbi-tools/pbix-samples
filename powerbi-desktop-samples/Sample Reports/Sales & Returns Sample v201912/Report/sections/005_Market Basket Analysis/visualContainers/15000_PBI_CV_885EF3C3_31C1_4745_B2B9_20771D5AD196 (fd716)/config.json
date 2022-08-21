@@ -1,0 +1,81 @@
+{
+  "name": "fd71685024d3d7546326",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 293.70741482965934,
+        "y": 114.14829659318637,
+        "z": 17000,
+        "width": 301.40280561122245,
+        "height": 527.13426853707415,
+        "tabOrder": 15000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "PBI_CV_885EF3C3_31C1_4745_B2B9_20771D5AD196",
+    "projections": {
+      "category": [
+        {
+          "queryRef": "Tooltip Info.URL"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "t",
+          "Entity": "Tooltip Info"
+        }
+      ],
+      "Select": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "t"
+              }
+            },
+            "Property": "URL"
+          },
+          "Name": "Tooltip Info.URL"
+        }
+      ]
+    },
+    "display": {
+      "mode": "hidden"
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {},
+    "vcObjects": {
+      "visualHeader": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1 @@
+CONCATENATE(FORMAT(SUM(Association[Importance]),"0.0"),"x")

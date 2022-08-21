@@ -1,0 +1,67 @@
+{
+  "_queryNameToKeyMapping": [
+    {
+      "key": "Association",
+      "value": "1962b83a-7b2e-45b8-899d-aae4331673a1"
+    },
+    {
+      "key": "Sales",
+      "value": "f73f685a-3133-4df5-9eac-a889e8140e8f"
+    },
+    {
+      "key": "Store",
+      "value": "f1746d41-48af-4748-a581-103379c49b8e"
+    },
+    {
+      "key": "Product",
+      "value": "8f8bc9b8-754d-43dc-bad1-d530b7276b18"
+    },
+    {
+      "key": "Calendar",
+      "value": "770ab9de-12ce-4d89-9f9d-c9647878bee2"
+    },
+    {
+      "key": "Associated Product",
+      "value": "adaeac4e-cb8f-451e-a6ed-f6622dcf3997"
+    },
+    {
+      "key": "Analysis DAX",
+      "value": "67334ddb-2ca7-4df2-aa43-24423a295af6"
+    },
+    {
+      "key": "Design DAX",
+      "value": "9eaaf4e6-b99a-4202-b751-21c2d740bdf3"
+    },
+    {
+      "key": "Customer",
+      "value": "2fe0858c-886a-44c1-9826-2f17b53c5335"
+    },
+    {
+      "key": "Issues and Promotions",
+      "value": "25382b81-13a6-4d19-8b0b-fcb915cff321"
+    },
+    {
+      "key": "Age",
+      "value": "886aefa5-519b-4aa6-9d5c-658275aacf16"
+    },
+    {
+      "key": "STable",
+      "value": "00e49c25-f4fd-4d1b-a361-d1971144e645"
+    },
+    {
+      "key": "Tooltip Info",
+      "value": "96ad535a-2cb7-4d94-876e-78d58cd41f9a"
+    },
+    {
+      "key": "Tooltip Info2",
+      "value": "e807b3a8-7e35-4c25-9410-dca9bdb57fd2"
+    },
+    {
+      "key": "Details",
+      "value": "cd823783-8fa4-4630-9cb6-ee803cd39e12"
+    }
+  ],
+  "version": 4,
+  "autoCreatedRelationships": [],
+  "fileDescription": ""
+}

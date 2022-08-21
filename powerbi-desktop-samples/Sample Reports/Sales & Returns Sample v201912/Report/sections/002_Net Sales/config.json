@@ -1,0 +1,135 @@
+{
+  "relationships": [
+    {
+      "source": "959bd7e9814a46692ddf",
+      "target": "3a28c5fee26bd29ff352",
+      "type": 1
+    },
+    {
+      "source": "3a28c5fee26bd29ff352",
+      "target": "d55aa7aa40745de10d55",
+      "type": 1
+    },
+    {
+      "source": "3a28c5fee26bd29ff352",
+      "target": "959bd7e9814a46692ddf",
+      "type": 1
+    },
+    {
+      "source": "d55aa7aa40745de10d55",
+      "target": "3a28c5fee26bd29ff352",
+      "type": 1
+    },
+    {
+      "source": "d55aa7aa40745de10d55",
+      "target": "959bd7e9814a46692ddf",
+      "type": 1
+    },
+    {
+      "source": "959bd7e9814a46692ddf",
+      "target": "d55aa7aa40745de10d55",
+      "type": 1
+    },
+    {
+      "source": "2b50de60e6ee0542184b",
+      "target": "3a28c5fee26bd29ff352",
+      "type": 1
+    },
+    {
+      "source": "2b50de60e6ee0542184b",
+      "target": "959bd7e9814a46692ddf",
+      "type": 1
+    }
+  ],
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          },
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "ThemeDataColor": {
+                    "ColorId": 3,
+                    "Percent": 0.6
+                  }
+                }
+              }
+            }
+          },
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'BACKGROUND-01.png'"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "ResourcePackageItem": {
+                    "PackageName": "RegisteredResources",
+                    "PackageType": 1,
+                    "ItemName": "BACKGROUND-012689548225955105.png"
+                  }
+                }
+              },
+              "scaling": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Fit'"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspace": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#CECEDB'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "12D"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "width": {
+            "expr": {
+              "Literal": {
+                "Value": "258L"
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

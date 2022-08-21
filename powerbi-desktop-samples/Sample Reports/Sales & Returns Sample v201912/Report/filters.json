@@ -1,0 +1,108 @@
+[
+  {
+    "name": "Filter",
+    "expression": {
+      "HierarchyLevel": {
+        "Expression": {
+          "Hierarchy": {
+            "Expression": {
+              "PropertyVariationSource": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Calendar"
+                  }
+                },
+                "Name": "Variation",
+                "Property": "Date"
+              }
+            },
+            "Hierarchy": "Date Hierarchy"
+          }
+        },
+        "Level": "Month"
+      }
+    },
+    "filter": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "l",
+          "Entity": "LocalDateTable_d9fbe243-4814-4038-8eec-593e864a563b"
+        }
+      ],
+      "Where": [
+        {
+          "Condition": {
+            "In": {
+              "Expressions": [
+                {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Source": "l"
+                      }
+                    },
+                    "Property": "Month"
+                  }
+                }
+              ],
+              "Values": [
+                [
+                  {
+                    "Literal": {
+                      "Value": "'June'"
+                    }
+                  }
+                ]
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "type": "Categorical",
+    "cachedDisplayNames": [
+      {
+        "id": {
+          "scopeId": {
+            "Comparison": {
+              "ComparisonKind": 0,
+              "Left": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "LocalDateTable_d9fbe243-4814-4038-8eec-593e864a563b"
+                    }
+                  },
+                  "Property": "Month"
+                }
+              },
+              "Right": {
+                "Literal": {
+                  "Value": "'June'"
+                }
+              }
+            }
+          }
+        },
+        "displayName": "June"
+      }
+    ],
+    "howCreated": 1,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "requireSingleSelect": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+]

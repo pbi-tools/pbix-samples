@@ -1,0 +1,37 @@
+{
+  "singleVisual": {
+    "visualType": "qnaVisual",
+    "objects": {
+      "merge": {
+        "hiddenProperties": [
+          {
+            "properties": {
+              "savedUtterance": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Returns, Net Sales, Return rate per week. Show me only Aliqui, Contoso, Fama, and Pomum as Scatter Chart'"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "orderBy": [
+      {
+        "Direction": 1,
+        "Expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Sales"
+              }
+            },
+            "Property": "Dates"
+          }
+        }
+      }
+    ]
+  }
+}

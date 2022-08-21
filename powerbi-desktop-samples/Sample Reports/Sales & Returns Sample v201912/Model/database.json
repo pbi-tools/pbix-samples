@@ -1,0 +1,88 @@
+{
+  "name": "Sales _ Returns Sample v201912",
+  "compatibilityLevel": 1465,
+  "model": {
+    "culture": "en-US",
+    "relationships": [
+      {
+        "name": "677d2c0d-f04e-4bfb-ab65-d6e85634f934",
+        "fromTable": "Calendar",
+        "fromColumn": "Date",
+        "toTable": "LocalDateTable_d9fbe243-4814-4038-8eec-593e864a563b",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "708dbd48-5eb4-4303-9248-e96d09238555",
+        "fromTable": "Association",
+        "fromColumn": "RightItemSetId",
+        "toTable": "Associated Product",
+        "toColumn": "ProductID"
+      },
+      {
+        "name": "ebdef1d9-12f1-42bd-8a10-738d6e1c950d",
+        "fromTable": "Sales",
+        "fromColumn": "StoreID",
+        "toTable": "Store",
+        "toColumn": "StoreID"
+      },
+      {
+        "name": "a826c6b3-bded-41a8-8f05-5a9ee4812391",
+        "fromTable": "Sales",
+        "fromColumn": "ProductID",
+        "toTable": "Product",
+        "toColumn": "ProductID"
+      },
+      {
+        "name": "a3dbf965-d829-4162-96fc-d8c4a82aaefc",
+        "fromTable": "Sales",
+        "fromColumn": "Date",
+        "toTable": "Calendar",
+        "toColumn": "Date"
+      },
+      {
+        "name": "bd728e6c-e5e7-4b83-98c6-677efdcc0eb6",
+        "fromCardinality": "one",
+        "fromTable": "Customer",
+        "fromColumn": "ID",
+        "toTable": "Sales",
+        "toColumn": "ID",
+        "crossFilteringBehavior": "bothDirections"
+      },
+      {
+        "name": "fc9659a9-cbb8-4acb-9331-54826be4ab0a",
+        "fromTable": "Association",
+        "fromColumn": "LeftItemSetId",
+        "toTable": "Product",
+        "toColumn": "ProductID"
+      },
+      {
+        "name": "5fb6421a-c1c5-4969-95e5-0939e04d5c72",
+        "fromCardinality": "one",
+        "fromTable": "Product",
+        "fromColumn": "Product",
+        "toTable": "Associated Product",
+        "toColumn": "Product",
+        "isActive": false,
+        "crossFilteringBehavior": "bothDirections"
+      },
+      {
+        "name": "a8a5301f-8eb0-4f8a-8182-c2455b89988a",
+        "fromTable": "Customer",
+        "fromColumn": "Product",
+        "toTable": "Associated Product",
+        "toColumn": "Product"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.76.5678.541 (19.12)"
+      }
+    ]
+  }
+}

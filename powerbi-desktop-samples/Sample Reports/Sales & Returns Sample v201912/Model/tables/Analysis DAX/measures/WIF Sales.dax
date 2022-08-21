@@ -1,0 +1,1 @@
+CALCULATE([Net Sales],ALL('Calendar'[Date].[Month]))

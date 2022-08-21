@@ -1,0 +1,1 @@
+CALCULATE([Returns],PREVIOUSMONTH('Calendar'[Date]))

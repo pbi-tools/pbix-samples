@@ -1,0 +1,10 @@
+{
+  "name": "Last 2 Months Net Sales",
+  "formatString": "0",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+    }
+  ]
+}

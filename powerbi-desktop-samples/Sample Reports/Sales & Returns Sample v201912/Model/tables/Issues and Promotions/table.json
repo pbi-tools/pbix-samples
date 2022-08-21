@@ -1,0 +1,28 @@
+{
+  "name": "Issues and Promotions",
+  "partitions": [
+    {
+      "name": "Issues and Promotions-4fcca441-ca28-47a0-ade9-7ea141432e0e",
+      "mode": "import",
+      "source": {
+        "type": "query",
+        "query": "SELECT * FROM [Issues and Promotions]",
+        "dataSource": "6afe342a-2534-47ec-9492-b1517d617e73"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "25382b81-13a6-4d19-8b0b-fcb915cff321"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "Issues and Promotions"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    }
+  ]
+}

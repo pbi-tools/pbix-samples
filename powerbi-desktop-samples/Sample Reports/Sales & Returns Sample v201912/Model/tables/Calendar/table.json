@@ -1,0 +1,28 @@
+{
+  "name": "Calendar",
+  "partitions": [
+    {
+      "name": "Calendar-e63c2b10-f169-4be4-bbe5-8ec70193c03b",
+      "mode": "import",
+      "source": {
+        "type": "query",
+        "query": "SELECT * FROM [Calendar]",
+        "dataSource": "3e6c0291-65b4-44eb-a2b0-74e9c7058fe9"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "770ab9de-12ce-4d89-9f9d-c9647878bee2"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "Calendar"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    }
+  ]
+}

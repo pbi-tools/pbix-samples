@@ -1,0 +1,24 @@
+{
+  "name": "Age",
+  "partitions": [
+    {
+      "name": "Age-3e4824bd-a87e-4e01-bfbf-166592b94c64",
+      "mode": "import",
+      "source": {
+        "type": "query",
+        "query": "SELECT * FROM [Age]",
+        "dataSource": "4228e500-bca8-4d92-954a-62e192635a74"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "886aefa5-519b-4aa6-9d5c-658275aacf16"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "Age"
+    }
+  ]
+}

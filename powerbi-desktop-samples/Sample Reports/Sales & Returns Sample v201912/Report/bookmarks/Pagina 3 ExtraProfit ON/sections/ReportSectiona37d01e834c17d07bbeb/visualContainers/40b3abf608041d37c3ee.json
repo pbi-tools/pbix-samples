@@ -1,0 +1,81 @@
+{
+  "filters": {
+    "byExpr": [
+      {
+        "type": "Advanced",
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "% Return Rate"
+              }
+            },
+            "Property": "% Return Rate"
+          }
+        },
+        "howCreated": 0
+      }
+    ]
+  },
+  "singleVisual": {
+    "visualType": "slicer",
+    "objects": {
+      "merge": {
+        "general": [
+          {
+            "properties": {
+              "filter": {
+                "filter": {
+                  "Version": 2,
+                  "From": [
+                    {
+                      "Name": "%",
+                      "Entity": "% Return Rate"
+                    }
+                  ],
+                  "Where": [
+                    {
+                      "Condition": {
+                        "Comparison": {
+                          "ComparisonKind": 0,
+                          "Left": {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "%"
+                                }
+                              },
+                              "Property": "% Return Rate"
+                            }
+                          },
+                          "Right": {
+                            "Literal": {
+                              "Value": "23D"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          }
+        ],
+        "data": [
+          {
+            "properties": {
+              "numericStart": {
+                "expr": {
+                  "Literal": {
+                    "Value": "23D"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "name": "82f0f62f79d0741d703e",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 119.8171238570241,
+        "y": 119.8171238570241,
+        "z": 27000,
+        "width": 9.476309226932667,
+        "height": 9.476309226932667,
+        "tabOrder": 31000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "basicShape",
+    "display": {
+      "mode": "hidden"
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "shapeType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'rectangle'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'------------------------------------'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

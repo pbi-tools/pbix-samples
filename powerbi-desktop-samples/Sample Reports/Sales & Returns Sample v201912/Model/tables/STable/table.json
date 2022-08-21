@@ -1,0 +1,24 @@
+{
+  "name": "STable",
+  "partitions": [
+    {
+      "name": "STable-cdeb67bb-8833-4c1c-ae4a-afc03823abe2",
+      "mode": "import",
+      "source": {
+        "type": "query",
+        "query": "SELECT * FROM [STable]",
+        "dataSource": "ed7777e4-10dc-4672-bba8-0a2d10b316a6"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "00e49c25-f4fd-4d1b-a361-d1971144e645"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "STable"
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "filters": {
+    "byExpr": [
+      {
+        "type": "Advanced",
+        "expression": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Details"
+              }
+            },
+            "Property": "Info Tooltip"
+          }
+        },
+        "howCreated": 0
+      }
+    ]
+  },
+  "singleVisual": {
+    "visualType": "PBI_CV_885EF3C3_31C1_4745_B2B9_20771D5AD196",
+    "objects": {},
+    "display": {
+      "mode": "hidden"
+    }
+  }
+}

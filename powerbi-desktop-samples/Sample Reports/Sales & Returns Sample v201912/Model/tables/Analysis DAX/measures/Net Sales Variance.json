@@ -1,0 +1,10 @@
+{
+  "name": "Net Sales Variance",
+  "formatString": "\\$#,0;-\\$#,0;\\$#,0",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"CurrencyCustom\" Accuracy=\"0\" ThousandSeparator=\"True\"><Currency LCID=\"4105\" DisplayName=\"$ English (Canada)\" Symbol=\"$\" PositivePattern=\"0\" NegativePattern=\"1\" /></Format>"
+    }
+  ]
+}

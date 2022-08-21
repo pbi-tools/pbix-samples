@@ -1,0 +1,166 @@
+{
+  "version": "1.0.0",
+  "diagrams": [
+    {
+      "name": "All tables",
+      "zoomValue": 60,
+      "isDefault": true,
+      "tables": [
+        "% Return Rate",
+        "Age",
+        "Analysis DAX",
+        "Associated Product",
+        "Association",
+        "Calendar",
+        "Customer",
+        "Design DAX",
+        "Details",
+        "Issues and Promotions",
+        "Product",
+        "STable",
+        "Sales",
+        "Store",
+        "Tooltip Info",
+        "Tooltip Info2"
+      ],
+      "layout": {
+        "boundingBoxWidth": 2581.4405393862794,
+        "boundingBoxHeight": 605.16666666666674,
+        "boundingBoxPosition": {
+          "x": 0,
+          "y": 0
+        },
+        "nodes": [
+          {
+            "height": 176,
+            "layedOut": true,
+            "left": 0,
+            "nodeIndex": "Association",
+            "top": 0,
+            "width": 180
+          },
+          {
+            "height": 176,
+            "layedOut": true,
+            "left": 100.61085825246479,
+            "nodeIndex": "Store",
+            "top": 390.33333333333331,
+            "width": 180
+          },
+          {
+            "height": 273,
+            "layedOut": true,
+            "left": 386.45261881807613,
+            "nodeIndex": "Sales",
+            "top": 332.16666666666669,
+            "width": 228
+          },
+          {
+            "height": 81,
+            "layedOut": true,
+            "left": 1185.117454647135,
+            "nodeIndex": "Analysis DAX",
+            "top": 0,
+            "width": 180
+          },
+          {
+            "height": 267,
+            "layedOut": true,
+            "left": 391.09724885422185,
+            "nodeIndex": "Product",
+            "top": 0,
+            "width": 226
+          },
+          {
+            "height": 81,
+            "layedOut": true,
+            "left": 931.67820773587641,
+            "nodeIndex": "Design DAX",
+            "top": 0,
+            "width": 180
+          },
+          {
+            "height": 157,
+            "layedOut": true,
+            "left": 717.89003489172683,
+            "nodeIndex": "Calendar",
+            "top": 343.33333333333331,
+            "width": 180
+          },
+          {
+            "height": 176,
+            "layedOut": true,
+            "left": 1498.6090274148569,
+            "nodeIndex": "% Return Rate",
+            "top": 0,
+            "width": 180
+          },
+          {
+            "height": 290,
+            "layedOut": true,
+            "left": 713.96392229679486,
+            "nodeIndex": "Customer",
+            "top": 0,
+            "width": 180
+          },
+          {
+            "height": 119,
+            "layedOut": true,
+            "left": 1499.730720555649,
+            "nodeIndex": "Issues and Promotions",
+            "top": 180,
+            "width": 180
+          },
+          {
+            "height": 100,
+            "layedOut": true,
+            "left": 1499.3537795431394,
+            "nodeIndex": "Age",
+            "top": 304,
+            "width": 180
+          },
+          {
+            "height": 100,
+            "layedOut": true,
+            "left": 1499.9768385306297,
+            "nodeIndex": "STable",
+            "top": 411,
+            "width": 180
+          },
+          {
+            "height": 138,
+            "layedOut": true,
+            "left": 1798.1821683597029,
+            "nodeIndex": "Tooltip Info",
+            "top": 0,
+            "width": 180
+          },
+          {
+            "height": 100,
+            "layedOut": true,
+            "left": 0,
+            "nodeIndex": "Associated Product",
+            "top": 215,
+            "width": 180
+          },
+          {
+            "height": 119,
+            "layedOut": true,
+            "left": 2087.9489666185573,
+            "nodeIndex": "Tooltip Info2",
+            "top": 0,
+            "width": 180
+          },
+          {
+            "height": 176,
+            "layedOut": true,
+            "left": 2401.4405393862794,
+            "nodeIndex": "Details",
+            "top": 0,
+            "width": 180
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+{
+  "name": "7fb47e7e-a395-40e7-8e5f-3de7e34a5358",
+  "connectionString": "provider=Microsoft.PowerBI.OleDb;location=\"Associated Product\"",
+  "impersonationMode": "impersonateCurrentUser"
+}

@@ -1,0 +1,22 @@
+{
+  "singleVisual": {
+    "visualType": "qnaVisual",
+    "objects": {
+      "merge": {
+        "hiddenProperties": [
+          {
+            "properties": {
+              "savedUtterance": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Net Sales vs Net Sales PM by Date as Stacked Column Chart'"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

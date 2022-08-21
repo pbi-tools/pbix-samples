@@ -1,0 +1,1 @@
+DIVIDE((SUM(Sales[Unit])*'% Return Rate'[% Return Rate Value]),1,0)

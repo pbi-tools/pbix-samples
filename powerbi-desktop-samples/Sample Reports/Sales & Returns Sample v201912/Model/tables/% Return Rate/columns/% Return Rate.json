@@ -1,0 +1,32 @@
+{
+  "type": "calculatedTableColumn",
+  "name": "% Return Rate",
+  "dataType": "double",
+  "isNameInferred": false,
+  "sourceColumn": "[Value]",
+  "formatString": "#,0",
+  "summarizeBy": "none",
+  "extendedProperties": [
+    {
+      "type": "json",
+      "name": "ParameterMetadata",
+      "value": {
+        "version": 0
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "User"
+    },
+    {
+      "name": "Format",
+      "value": "<Format Format=\"NumberDecimal\" Accuracy=\"0\" ThousandSeparator=\"True\" />"
+    },
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "Double#####not a type"
+    }
+  ]
+}

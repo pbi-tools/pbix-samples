@@ -1,0 +1,9 @@
+{
+  "name": "Info Tooltip 2",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"Text\" />"
+    }
+  ]
+}

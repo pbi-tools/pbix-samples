@@ -1,0 +1,36 @@
+{
+  "name": "Details",
+  "partitions": [
+    {
+      "name": "Details-a325cc9e-ad76-41a3-ab77-56cf74f9ea9d",
+      "mode": "import",
+      "source": {
+        "type": "query",
+        "query": "SELECT * FROM [Details]",
+        "dataSource": "f603f86d-4771-48e1-81c0-9b9d9568eee6"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "cd823783-8fa4-4630-9cb6-ee803cd39e12"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "Details"
+    },
+    {
+      "name": "PBI_QueryRelationships",
+      "value": "{\"columnCount\":4,\"keyColumnNames\":[],\"queryRelationships\":[],\"columnIdentities\":[\"Section1/Details/Source.{Design Factor,0}\",\"Section1/Details/Changed Type.{DFSort,1}\",\"Section1/Details/Source.{Topic,2}\",\"Section1/Details/Changed Type.{TSort,3}\"],\"ColumnCount\":4,\"KeyColumnNames\":[],\"ColumnIdentities\":[\"Section1/Details/Source.{Design Factor,0}\",\"Section1/Details/Changed Type.{DFSort,1}\",\"Section1/Details/Source.{Topic,2}\",\"Section1/Details/Changed Type.{TSort,3}\"],\"RelationshipInfo\":[]}"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    }
+  ]
+}

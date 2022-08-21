@@ -1,0 +1,216 @@
+{
+  "name": "5e71aaa61bae010c96e3",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 640,
+        "y": 67.975951903807612,
+        "z": 1000,
+        "width": 615.63126252505015,
+        "height": 632.30460921843689,
+        "tabOrder": 9000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "ClusterMap1652434605854",
+    "projections": {
+      "PersonaGroup": [
+        {
+          "queryRef": "Association.RuleID"
+        }
+      ],
+      "ReferenceCount": [
+        {
+          "queryRef": "Sum(Association.Probability)"
+        }
+      ],
+      "ReferenceImageUrl": [
+        {
+          "queryRef": "Associated Product.Product Image"
+        }
+      ],
+      "ReferenceName": [
+        {
+          "queryRef": "Associated Product.Product"
+        }
+      ],
+      "ReferenceBucket": [
+        {
+          "queryRef": "Associated Product.Segment by"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "a",
+          "Entity": "Association"
+        },
+        {
+          "Name": "a1",
+          "Entity": "Associated Product"
+        }
+      ],
+      "Select": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "a"
+              }
+            },
+            "Property": "RuleID"
+          },
+          "Name": "Association.RuleID"
+        },
+        {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "a"
+                  }
+                },
+                "Property": "Probability"
+              }
+            },
+            "Function": 0
+          },
+          "Name": "Sum(Association.Probability)"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "a1"
+              }
+            },
+            "Property": "Product Image"
+          },
+          "Name": "Associated Product.Product Image"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "a1"
+              }
+            },
+            "Property": "Product"
+          },
+          "Name": "Associated Product.Product"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "a1"
+              }
+            },
+            "Property": "Segmented by"
+          },
+          "Name": "Associated Product.Segment by"
+        }
+      ],
+      "OrderBy": [
+        {
+          "Direction": 2,
+          "Expression": {
+            "Aggregation": {
+              "Expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Source": "a"
+                    }
+                  },
+                  "Property": "Probability"
+                }
+              },
+              "Function": 0
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "hasDefaultSort": true,
+    "objects": {
+      "presentation": [
+        {
+          "properties": {
+            "initialCount": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            },
+            "normalColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "selectedColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#9BEF0A'"
+                    }
+                  }
+                }
+              }
+            },
+            "layout": {
+              "expr": {
+                "Literal": {
+                  "Value": "'orbital'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "displayBuildVersion": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1 @@
+IF([Store Top N]<4,[Net Sales],0)

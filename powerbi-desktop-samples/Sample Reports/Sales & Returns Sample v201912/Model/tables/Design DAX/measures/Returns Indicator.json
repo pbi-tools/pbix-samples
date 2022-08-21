@@ -1,0 +1,9 @@
+{
+  "name": "Returns Indicator",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"Text\" />"
+    }
+  ]
+}

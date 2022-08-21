@@ -1,0 +1,1 @@
+RANKX(ALL('Store'[Store]),[Net Sales],,DESC)

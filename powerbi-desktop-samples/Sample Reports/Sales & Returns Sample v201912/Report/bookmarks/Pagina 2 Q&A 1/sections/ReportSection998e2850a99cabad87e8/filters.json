@@ -1,0 +1,19 @@
+{
+  "byExpr": [
+    {
+      "name": "Filter",
+      "type": "Categorical",
+      "expression": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Sales"
+            }
+          },
+          "Property": "Status"
+        }
+      },
+      "howCreated": 1
+    }
+  ]
+}

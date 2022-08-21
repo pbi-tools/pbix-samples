@@ -1,0 +1,856 @@
+<LocalPackageMetadataFile>
+  <Items>
+    <Item>
+      <ItemLocation>
+        <ItemType>AllFormulas</ItemType>
+        <ItemPath />
+      </ItemLocation>
+      <StableEntries>
+        <Entry Type="Relationships" Value="sAAAAAA==" />
+      </StableEntries>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Association</ItemPath>
+      </ItemLocation>
+      <StableEntries>
+        <Entry Type="IsPrivate" Value="l0" />
+        <Entry Type="IsDirectQuery" Value="l0" />
+        <Entry Type="RelationshipInfoContainer" Value="s{&quot;columnCount&quot;:7,&quot;keyColumnNames&quot;:[&quot;Merged&quot;],&quot;queryRelationships&quot;:[],&quot;columnIdentities&quot;:[&quot;Section1/Association/Changed Type.{RuleID,0}&quot;,&quot;Section1/Association/Changed Type.{LeftItemSetId,1}&quot;,&quot;Section1/Association/Changed Type.{RightItemSetId,2}&quot;,&quot;Section1/Association/Changed Type.{Probability,3}&quot;,&quot;Section1/Association/Changed Type.{Importance,4}&quot;,&quot;Section1/Association/Changed Type.{Support,5}&quot;,&quot;Section1/Association/Inserted Merged Column.{Merged,6}&quot;],&quot;ColumnCount&quot;:7,&quot;KeyColumnNames&quot;:[&quot;Merged&quot;],&quot;ColumnIdentities&quot;:[&quot;Section1/Association/Changed Type.{RuleID,0}&quot;,&quot;Section1/Association/Changed Type.{LeftItemSetId,1}&quot;,&quot;Section1/Association/Changed Type.{RightItemSetId,2}&quot;,&quot;Section1/Association/Changed Type.{Probability,3}&quot;,&quot;Section1/Association/Changed Type.{Importance,4}&quot;,&quot;Section1/Association/Changed Type.{Support,5}&quot;,&quot;Section1/Association/Inserted Merged Column.{Merged,6}&quot;],&quot;RelationshipInfo&quot;:[]}" />
+        <Entry Type="FillColumnNames" Value="s[&quot;RuleID&quot;,&quot;LeftItemSetId&quot;,&quot;RightItemSetId&quot;,&quot;Probability&quot;,&quot;Importance&quot;,&quot;Support&quot;,&quot;Merged&quot;]" />
+        <Entry Type="LastAnalysisServicesFormulaText" Value="s{&quot;IncludesReferencedQueries&quot;:true,&quot;RootFormulaText&quot;:&quot;let\r\n    Source = Excel.Workbook(File.Contents(\&quot;C:\\Users\\mimyersm\\Dropbox\\Data-27-09-2019.xlsx\&quot;), null, true),\r\n    Association_Sheet = Source{[Item=\&quot;Association\&quot;,Kind=\&quot;Sheet\&quot;]}[Data],\r\n    #\&quot;Promoted Headers\&quot; = Table.PromoteHeaders(Association_Sheet, [PromoteAllScalars=true]),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(#\&quot;Promoted Headers\&quot;,{{\&quot;RuleID\&quot;, Int64.Type}, {\&quot;LeftItemSetId\&quot;, Int64.Type}, {\&quot;RightItemSetId\&quot;, Int64.Type}, {\&quot;Probability\&quot;, type number}, {\&quot;Importance\&quot;, type number}, {\&quot;Support\&quot;, Int64.Type}}),\r\n    #\&quot;Inserted Merged Column\&quot; = Table.AddColumn(#\&quot;Changed Type\&quot;, \&quot;Merged\&quot;, each Text.Combine({Text.From([LeftItemSetId], \&quot;en-CA\&quot;), Text.From([RightItemSetId], \&quot;en-CA\&quot;)}, \&quot;\&quot;), type text),\r\n    #\&quot;Removed Duplicates\&quot; = Table.Distinct(#\&quot;Inserted Merged Column\&quot;, {\&quot;Merged\&quot;}),\r\n    #\&quot;Removed Columns\&quot; = Table.RemoveColumns(#\&quot;Removed Duplicates\&quot;,{\&quot;Merged\&quot;})\r\nin\r\n    #\&quot;Removed Columns\&quot;&quot;,&quot;ReferencedQueriesFormulaText&quot;:{}}" />
+        <Entry Type="IsLastAnalysisServicesFormulaTextCollection" Value="l1" />
+        <Entry Type="LoadedToAnalysisServices" Value="l1" />
+        <Entry Type="ResultType" Value="sException" />
+        <Entry Type="BufferNextRefresh" Value="l0" />
+        <Entry Type="NavigationStepName" Value="sNavigation" />
+      </StableEntries>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Association/Source</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Association/Association_Sheet</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Association/Promoted%20Headers</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Association/Changed%20Type</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Store</ItemPath>
+      </ItemLocation>
+      <StableEntries>
+        <Entry Type="IsPrivate" Value="l0" />
+        <Entry Type="IsDirectQuery" Value="l0" />
+        <Entry Type="FillColumnNames" Value="s[&quot;StoreID&quot;,&quot;Store&quot;,&quot;Type&quot;,&quot;Longitude&quot;,&quot;Latitude&quot;,&quot;image&quot;]" />
+        <Entry Type="RelationshipInfoContainer" Value="s{&quot;columnCount&quot;:6,&quot;keyColumnNames&quot;:[],&quot;queryRelationships&quot;:[],&quot;columnIdentities&quot;:[&quot;Section1/Store/Changed Type.{ManufacturerID,0}&quot;,&quot;Section1/Store/Changed Type.{Manufacturer,1}&quot;,&quot;Section1/Store/Changed Type.{Type,2}&quot;,&quot;Section1/Store/Changed Type.{Longitude,3}&quot;,&quot;Section1/Store/Changed Type.{Latitude,4}&quot;,&quot;Section1/Store/Changed Type.{image,5}&quot;],&quot;ColumnCount&quot;:6,&quot;KeyColumnNames&quot;:[],&quot;ColumnIdentities&quot;:[&quot;Section1/Store/Changed Type.{ManufacturerID,0}&quot;,&quot;Section1/Store/Changed Type.{Manufacturer,1}&quot;,&quot;Section1/Store/Changed Type.{Type,2}&quot;,&quot;Section1/Store/Changed Type.{Longitude,3}&quot;,&quot;Section1/Store/Changed Type.{Latitude,4}&quot;,&quot;Section1/Store/Changed Type.{image,5}&quot;],&quot;RelationshipInfo&quot;:[]}" />
+        <Entry Type="LastAnalysisServicesFormulaText" Value="s{&quot;IncludesReferencedQueries&quot;:true,&quot;RootFormulaText&quot;:&quot;let\r\n    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\&quot;bZLNasNADITfxec0SPsjrY5paaFQSkohl5DDus3B4NjUsUsfv6tk7VKyJ8sLn0Yz0n5fYbWqNnUdz+n7+DMehy62qbwLvGZ21tv043At5MlKqqvDal8Zhdrma2oKFIrx2tWZNaBxxs2UtrqPQx1vIRJvxWQpH4TCDCn9HtvvqTSgMyySKUT6k/KpeIonVXru/jECQYAzA44uo14YSsXLsS/JMFp3RYJFNn5GtM8udpvh/HlsS6D3EK4gpwBhAfXxNY7TUMrCWnA5dnZgYHGlVrexLdmiQCZkW2yQabGFoFQzTKdbqQBANsfOQF4WKVR+259KlJcgIVMklI5kofT1bWrq0rYCIVieY0z7Ws4J1e1D3439uS9Ys4HAzJxmunA67q75GPuhKWXCHn3eG4ulfFSHXw==\&quot;, BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type text) meta [Serialized.Text = true]) in type table [ManufacturerID = _t, Manufacturer = _t, Type = _t, Longitude = _t, Latitude = _t, image = _t]),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(Source,{{\&quot;ManufacturerID\&quot;, Int64.Type}, {\&quot;Manufacturer\&quot;, type text}, {\&quot;Type\&quot;, type text}, {\&quot;Longitude\&quot;, type number}, {\&quot;Latitude\&quot;, type number}, {\&quot;image\&quot;, type text}}),\r\n    #\&quot;Renamed Columns\&quot; = Table.RenameColumns(#\&quot;Changed Type\&quot;,{{\&quot;ManufacturerID\&quot;, \&quot;StoreID\&quot;}, {\&quot;Manufacturer\&quot;, \&quot;Store\&quot;}})\r\nin\r\n    #\&quot;Renamed Columns\&quot;&quot;,&quot;ReferencedQueriesFormulaText&quot;:{}}" />
+        <Entry Type="IsLastAnalysisServicesFormulaTextCollection" Value="l1" />
+        <Entry Type="LoadedToAnalysisServices" Value="l1" />
+        <Entry Type="ResultType" Value="sTable" />
+        <Entry Type="NameUpdatedAfterFill" Value="l1" />
+        <Entry Type="NavigationStepName" Value="sNavigation" />
+        <Entry Type="BufferNextRefresh" Value="l0" />
+      </StableEntries>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Store/Source</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Store/Changed%20Type</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Analysis%20DAX</ItemPath>
+      </ItemLocation>
+      <StableEntries>
+        <Entry Type="IsPrivate" Value="l0" />
+        <Entry Type="IsDirectQuery" Value="l0" />
+        <Entry Type="FillColumnNames" Value="s[&quot;Column1&quot;]" />
+        <Entry Type="RelationshipInfoContainer" Value="s{&quot;columnCount&quot;:1,&quot;keyColumnNames&quot;:[],&quot;queryRelationships&quot;:[],&quot;columnIdentities&quot;:[&quot;Section1/Analysis DAX (2)/Changed Type.{Column1,0}&quot;],&quot;ColumnCount&quot;:1,&quot;KeyColumnNames&quot;:[],&quot;ColumnIdentities&quot;:[&quot;Section1/Analysis DAX (2)/Changed Type.{Column1,0}&quot;],&quot;RelationshipInfo&quot;:[]}" />
+        <Entry Type="IsLastAnalysisServicesFormulaTextCollection" Value="l1" />
+        <Entry Type="LastAnalysisServicesFormulaText" Value="s{&quot;IncludesReferencedQueries&quot;:true,&quot;RootFormulaText&quot;:&quot;let\r\n    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\&quot;i44FAA==\&quot;, BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type text) meta [Serialized.Text = true]) in type table [Column1 = _t]),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(Source,{{\&quot;Column1\&quot;, type text}}),\r\n    #\&quot;Removed Columns\&quot; = Table.RemoveColumns(#\&quot;Changed Type\&quot;,{\&quot;Column1\&quot;})\r\nin\r\n    #\&quot;Removed Columns\&quot;&quot;,&quot;ReferencedQueriesFormulaText&quot;:{}}" />
+        <Entry Type="LoadedToAnalysisServices" Value="l1" />
+        <Entry Type="ResultType" Value="sTable" />
+        <Entry Type="NameUpdatedAfterFill" Value="l1" />
+        <Entry Type="NavigationStepName" Value="sNavigation" />
+        <Entry Type="BufferNextRefresh" Value="l0" />
+      </StableEntries>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Analysis%20DAX/Source</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Analysis%20DAX/Changed%20Type</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Analysis%20DAX/Removed%20Columns</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Product</ItemPath>
+      </ItemLocation>
+      <StableEntries>
+        <Entry Type="IsPrivate" Value="l0" />
+        <Entry Type="IsDirectQuery" Value="l0" />
+        <Entry Type="FillColumnNames" Value="s[&quot;Product&quot;,&quot;ProductID&quot;,&quot;Category&quot;,&quot;CategoryID&quot;,&quot;Segment&quot;,&quot;SegmentID&quot;,&quot;Product Image&quot;,&quot;Category Image&quot;,&quot;Segement Color&quot;,&quot;Segment image&quot;,&quot;Price&quot;,&quot;Price Range&quot;]" />
+        <Entry Type="RelationshipInfoContainer" Value="s{&quot;columnCount&quot;:12,&quot;keyColumnNames&quot;:[],&quot;queryRelationships&quot;:[],&quot;columnIdentities&quot;:[&quot;Section1/Product/Changed Type.{Product,0}&quot;,&quot;Section1/Product/Changed Type.{ProductID,1}&quot;,&quot;Section1/Product/Changed Type.{Category,2}&quot;,&quot;Section1/Product/Changed Type.{CategoryID,3}&quot;,&quot;Section1/Product/Changed Type.{Segment,4}&quot;,&quot;Section1/Product/Changed Type.{SegmentID,5}&quot;,&quot;Section1/Product/Changed Type.{Product Image,6}&quot;,&quot;Section1/Product/Changed Type.{Category Image,7}&quot;,&quot;Section1/Product/Changed Type.{Segement Color,8}&quot;,&quot;Section1/Product/Changed Type.{Segment image,9}&quot;,&quot;Section1/Product/Changed Type.{Price,10}&quot;,&quot;Section1/Product/Source.{Price Range,11}&quot;],&quot;ColumnCount&quot;:12,&quot;KeyColumnNames&quot;:[],&quot;ColumnIdentities&quot;:[&quot;Section1/Product/Changed Type.{Product,0}&quot;,&quot;Section1/Product/Changed Type.{ProductID,1}&quot;,&quot;Section1/Product/Changed Type.{Category,2}&quot;,&quot;Section1/Product/Changed Type.{CategoryID,3}&quot;,&quot;Section1/Product/Changed Type.{Segment,4}&quot;,&quot;Section1/Product/Changed Type.{SegmentID,5}&quot;,&quot;Section1/Product/Changed Type.{Product Image,6}&quot;,&quot;Section1/Product/Changed Type.{Category Image,7}&quot;,&quot;Section1/Product/Changed Type.{Segement Color,8}&quot;,&quot;Section1/Product/Changed Type.{Segment image,9}&quot;,&quot;Section1/Product/Changed Type.{Price,10}&quot;,&quot;Section1/Product/Source.{Price Range,11}&quot;],&quot;RelationshipInfo&quot;:[]}" />
+        <Entry Type="LastAnalysisServicesFormulaText" Value="s{&quot;IncludesReferencedQueries&quot;:true,&quot;RootFormulaText&quot;:&quot;let\r\n    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\&quot;xZlbU+JKEMe/imXt4+72ZC65nDcuwopCooAG9+xDhAEiIYFcUPj0ZwZxq04lW0UrWz4AIanBmV/9u/vf7c+f57XxWGbZ+ddzQ73c6TQcyzNmisONWzlR75Z6zfN8lf0DEC6DWbiT6Xd9IbN5MF58HydLdX/mUAoWowxYNiw6/vdVPDt2oQFUWAReLo3gKsYtdJgwwZ/vltdzzEIOnBEL/IF3wdhhoSDq7QsnZ9/Ovljk/NfXn+cXL2MZqbu0ik4nmEj1wY/HYwtHwLZ2PSEWZrMMTGFaENV/pCmSq6C2BfWXvvTu/g6eeRDPNAVWRaixDeLD5ZH7tZlgMBzE1m0NuV/DsYBGuS8SHFqHCg43IrBb0V8g5Mayl+RvMikB6qofjvNAXdnHq8jkFoPH0ct6scKJwbbVUZ+ajfVmizuqyYgNu2S6uUFFZxUjRx/034IQJn8zKvIoSRYa4ClExMHi1IaUR/MFSkRaC5Y6Z+HW2r1PA8Ttkoi85FmmXhLGuXpkVjFy00MYmsfLyDFsGN8+bYtnzJYpCFOR6sh2R2ZISIQbcPGUT9rso5BsUlKRVzxGYTaX6aFilRgNinRdJGH2lq2OPC5jnMHWn8otxXEyDdsBLtru3MGFqQpvBnGcLy47H+YkSpz68yCVb2KyTwaKgU2YBSzcxA83uPMawrCg77aKtvg0UGY5dfcX25VG4JwmKdnENGBN89YcuVnTsQU0zHbH739eUhIlPHdhFiYaAal0jsk2iM7qUSEP7ulYo2PZHLxCNC9RQaOslUFM6BGzNTaQ6Ywp2V4NZ+mPD9d/XhbRfZJqC21U2+t3QVKZm5ocwsFktOkiUxJ1YDhdT3yUizwpI6ucuf2662simsDhWqeddipljPPXDoXu3fXDCCUB1XyYjgkX7qB3E2AjzITheOI9LnE8qVrXMNPM7f1ZOco5NtNwo6VhVJprrG50ATZMWBRB3LlGNlmOcpzS9xcP409LQey3cRwrUHtEo2C53Nd7o9JcvyewtEvuxh5HBRYHw1H9Wf3+ub1rfR4gWgKko+nM7V1oIOLD0UWJJSATt5NZjuw7uLBgSu3WGIn1b8bX3lSf1S81G+2aX797UZBPk3R5oDSSUZQ8HzqTow0jERBNRlFjgDutan0NWDQv2WSDOy5XfQtMdhub2Mi/yGyYssud9/hnv3gVhLsg0i2qUWmr8T2+Y6jt+q77coXqshgY2lGncbJ20Xn6ZFFW0eMrzcTxax6q9NPYOZEe93ACV9vuHUF5RbWQKgkVsr99Qg2YTjonomYpD7VURO2HjJVe+l39hgGMKvcfDBcDnuLCxXIEgel4MWNPn9ZvUFKCtE9AtdUqe3tcykg6wXffMzGiWhtcsvkFcrq6b1qWs8hxZ0g92Q6DxOsOot0HUxIry2kgg72caKWr9op0Fb01bkfGDVXNOrhZcIezjoqsYakS1WNOiCptChCxTaiNBs0WsiZWaKnsjPp5qhjpZ5WTa+RcXzWvVBnAWer7HirWmFqoSv99XTYbyBIuVDGD0ZXkg9GH+fCygpJvTd280kpn/b6+TOUHrhJL4+l6fT3F7dlRUZbZtV0fNdA9aV/GWDlrv1qfPb7KXNSTSYzGxJWPJAS2de/+DlXG9XhWh2pv+Zgh/wtiOdyB2XAtQ2T/UspG1Pk/pl//AQ==\&quot;, BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type text) meta [Serialized.Text = true]) in type table [Product = _t, ProductID = _t, Category = _t, CategoryID = _t, Segment = _t, SegmentID = _t, #\&quot;Product Image\&quot; = _t, #\&quot;Category Image\&quot; = _t, #\&quot;Segement Color\&quot; = _t, #\&quot;Segment image\&quot; = _t, Price = _t, #\&quot;Price Range\&quot; = _t]),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(Source,{{\&quot;Product\&quot;, type text}, {\&quot;ProductID\&quot;, Int64.Type}, {\&quot;Category\&quot;, type text}, {\&quot;CategoryID\&quot;, Int64.Type}, {\&quot;Segment\&quot;, type text}, {\&quot;SegmentID\&quot;, Int64.Type}, {\&quot;Product Image\&quot;, type text}, {\&quot;Category Image\&quot;, type text}, {\&quot;Segement Color\&quot;, type text}, {\&quot;Segment image\&quot;, type text}, {\&quot;Price\&quot;, Int64.Type}})\r\nin\r\n    #\&quot;Changed Type\&quot;&quot;,&quot;ReferencedQueriesFormulaText&quot;:{}}" />
+        <Entry Type="IsLastAnalysisServicesFormulaTextCollection" Value="l1" />
+        <Entry Type="LoadedToAnalysisServices" Value="l1" />
+        <Entry Type="ResultType" Value="sTable" />
+        <Entry Type="NameUpdatedAfterFill" Value="l1" />
+        <Entry Type="NavigationStepName" Value="sNavigation" />
+        <Entry Type="BufferNextRefresh" Value="l0" />
+      </StableEntries>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Product/Source</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Product/Changed%20Type</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Design%20DAX</ItemPath>
+      </ItemLocation>
+      <StableEntries>
+        <Entry Type="IsPrivate" Value="l0" />
+        <Entry Type="IsDirectQuery" Value="l0" />
+        <Entry Type="RelationshipInfoContainer" Value="s{&quot;columnCount&quot;:0,&quot;keyColumnNames&quot;:[],&quot;queryRelationships&quot;:[],&quot;columnIdentities&quot;:[],&quot;ColumnCount&quot;:0,&quot;KeyColumnNames&quot;:[],&quot;ColumnIdentities&quot;:[],&quot;RelationshipInfo&quot;:[]}" />
+        <Entry Type="FillColumnNames" Value="s[]" />
+        <Entry Type="IsLastAnalysisServicesFormulaTextCollection" Value="l1" />
+        <Entry Type="LastAnalysisServicesFormulaText" Value="s{&quot;IncludesReferencedQueries&quot;:true,&quot;RootFormulaText&quot;:&quot;let\r\n    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\&quot;i44FAA==\&quot;, BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type text) meta [Serialized.Text = true]) in type table [Column1 = _t]),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(Source,{{\&quot;Column1\&quot;, type text}}),\r\n    #\&quot;Removed Columns\&quot; = Table.RemoveColumns(#\&quot;Changed Type\&quot;,{\&quot;Column1\&quot;})\r\nin\r\n    #\&quot;Removed Columns\&quot;&quot;,&quot;ReferencedQueriesFormulaText&quot;:{}}" />
+        <Entry Type="LoadedToAnalysisServices" Value="l1" />
+        <Entry Type="ResultType" Value="sTable" />
+        <Entry Type="NameUpdatedAfterFill" Value="l1" />
+        <Entry Type="NavigationStepName" Value="sNavigation" />
+        <Entry Type="BufferNextRefresh" Value="l0" />
+      </StableEntries>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Design%20DAX/Source</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Design%20DAX/Changed%20Type</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Design%20DAX/Removed%20Columns</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Sales</ItemPath>
+      </ItemLocation>
+      <StableEntries>
+        <Entry Type="IsPrivate" Value="l0" />
+        <Entry Type="IsDirectQuery" Value="l0" />
+        <Entry Type="RelationshipInfoContainer" Value="s{&quot;columnCount&quot;:7,&quot;keyColumnNames&quot;:[],&quot;queryRelationships&quot;:[{&quot;keyColumnCount&quot;:1,&quot;keyColumn&quot;:1,&quot;otherKeyColumnIdentity&quot;:&quot;Section1/Product/Changed Type.{ProductID,1}&quot;,&quot;KeyColumnCount&quot;:1}],&quot;columnIdentities&quot;:[&quot;Section1/Sales/Changed Type.{ID,0}&quot;,&quot;Section1/Sales/Changed Type.{ProductID,1}&quot;,&quot;Section1/Sales/Changed Type.{StoreID,2}&quot;,&quot;Section1/Sales/Changed Type.{Unit,3}&quot;,&quot;Section1/Sales/Changed Type.{Status,7}&quot;,&quot;Section1/Sales/Inserted Multiplication.{Multiplication,9}&quot;,&quot;Section1/Calendar/Changed Type1.{Date,0}&quot;],&quot;ColumnCount&quot;:7,&quot;KeyColumnNames&quot;:[],&quot;ColumnIdentities&quot;:[&quot;Section1/Sales/Changed Type.{ID,0}&quot;,&quot;Section1/Sales/Changed Type.{ProductID,1}&quot;,&quot;Section1/Sales/Changed Type.{StoreID,2}&quot;,&quot;Section1/Sales/Changed Type.{Unit,3}&quot;,&quot;Section1/Sales/Changed Type.{Status,7}&quot;,&quot;Section1/Sales/Inserted Multiplication.{Multiplication,9}&quot;,&quot;Section1/Calendar/Changed Type1.{Date,0}&quot;],&quot;RelationshipInfo&quot;:[{&quot;keyColumnCount&quot;:1,&quot;keyColumn&quot;:1,&quot;otherKeyColumnIdentity&quot;:&quot;Section1/Product/Changed Type.{ProductID,1}&quot;,&quot;KeyColumnCount&quot;:1}]}" />
+        <Entry Type="FillColumnNames" Value="s[&quot;ID&quot;,&quot;ProductID&quot;,&quot;StoreID&quot;,&quot;Unit&quot;,&quot;Status&quot;,&quot;Amount&quot;,&quot;Date&quot;]" />
+        <Entry Type="IsLastAnalysisServicesFormulaTextCollection" Value="l1" />
+        <Entry Type="LastAnalysisServicesFormulaText" Value="s{&quot;IncludesReferencedQueries&quot;:true,&quot;RootFormulaText&quot;:&quot;let\r\n    Source = Excel.Workbook(File.Contents(\&quot;C:\\Users\\mimyersm\\Desktop\\Sales \u0026 Marketing Datas.xlsx\&quot;), null, true),\r\n    Data_Sheet = Source{[Item=\&quot;Data\&quot;,Kind=\&quot;Sheet\&quot;]}[Data],\r\n    #\&quot;Promoted Headers\&quot; = Table.PromoteHeaders(Data_Sheet, [PromoteAllScalars=true]),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(#\&quot;Promoted Headers\&quot;,{{\&quot;ID\&quot;, Int64.Type}, {\&quot;ProductID\&quot;, Int64.Type}, {\&quot;StoreID\&quot;, Int64.Type}, {\&quot;Unit\&quot;, Int64.Type}, {\&quot;Week\&quot;, Int64.Type}, {\&quot;Gender\&quot;, type text}, {\&quot;Age\&quot;, Int64.Type}, {\&quot;Status\&quot;, type text}}),\r\n    #\&quot;Replaced Value\&quot; = Table.ReplaceValue(#\&quot;Changed Type\&quot;,1,2,Replacer.ReplaceValue,{\&quot;Week\&quot;}),\r\n    #\&quot;Merged Queries\&quot; = Table.NestedJoin(#\&quot;Replaced Value\&quot;, {\&quot;ProductID\&quot;}, Product, {\&quot;ProductID\&quot;}, \&quot;Product\&quot;, JoinKind.LeftOuter),\r\n    #\&quot;Expanded Product\&quot; = Table.ExpandTableColumn(#\&quot;Merged Queries\&quot;, \&quot;Product\&quot;, {\&quot;Price\&quot;}, {\&quot;Price\&quot;}),\r\n    #\&quot;Inserted Multiplication\&quot; = Table.AddColumn(#\&quot;Expanded Product\&quot;, \&quot;Multiplication\&quot;, each [Price] * [Unit], Int64.Type),\r\n    #\&quot;Renamed Columns\&quot; = Table.RenameColumns(#\&quot;Inserted Multiplication\&quot;,{{\&quot;Multiplication\&quot;, \&quot;Amount\&quot;}}),\r\n    #\&quot;Removed Columns\&quot; = Table.RemoveColumns(#\&quot;Renamed Columns\&quot;,{\&quot;Price\&quot;}),\r\n    #\&quot;Merged Queries1\&quot; = Table.NestedJoin(#\&quot;Removed Columns\&quot;, {\&quot;Week\&quot;}, Calendar, {\&quot;Week\&quot;}, \&quot;Calendar\&quot;, JoinKind.LeftOuter),\r\n    #\&quot;Expanded Calendar\&quot; = Table.ExpandTableColumn(#\&quot;Merged Queries1\&quot;, \&quot;Calendar\&quot;, {\&quot;Date\&quot;}, {\&quot;Date\&quot;}),\r\n    #\&quot;Removed Columns1\&quot; = Table.RemoveColumns(#\&quot;Expanded Calendar\&quot;,{\&quot;Week\&quot;, \&quot;Gender\&quot;, \&quot;Age\&quot;})\r\nin\r\n    #\&quot;Removed Columns1\&quot;&quot;,&quot;ReferencedQueriesFormulaText&quot;:{&quot;Calendar&quot;:&quot;let\r\n    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\&quot;fZSxisMwDIZfJWQuqSQ7dtztlg6FPkHpkIMbrxyFG+7tq4vcwD9I4IQUvg/kfk5ut5H4qEuI28ByItI1rNPwPY2HkfW6rI/+xOP9oHzxeQFeNp6Tzyfg08YL+XwGPhtffX4Gfrb5dR5x+KLX+euz76TY/OTzFfhqfPX5BfjF5s8+34Bv+/zJ60V6u67P/tfqz/cOXIPR4H0PriFoyL4L10hoWOfEgZHRsNKkU2XP+E/98fPsh4StNefAKGhYbeHAqGhYb1kCY0HDitN81OUYbdv5Xz+8bM1ZfEMIDOnNW2AwGtZcSmAIGtZcj61+DBxje7V/H/2lEmtOLTAyGtacS2DMaFhzSYFR0LDmiQKjoqHN7y8=\&quot;, BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type text) meta [Serialized.Text = true]) in type table [Date = _t, Week = _t, #\&quot;Month Name\&quot; = _t, MonthSort = _t, #\&quot;Week of Year\&quot; = _t]),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(Source,{{\&quot;Date\&quot;, type datetime}, {\&quot;Week\&quot;, Int64.Type}, {\&quot;Month Name\&quot;, type text}, {\&quot;MonthSort\&quot;, Int64.Type}, {\&quot;Week of Year\&quot;, Int64.Type}}),\r\n    #\&quot;Renamed Columns\&quot; = Table.RenameColumns(#\&quot;Changed Type\&quot;,{{\&quot;Month Name\&quot;, \&quot;Month\&quot;}}),\r\n    #\&quot;Changed Type1\&quot; = Table.TransformColumnTypes(#\&quot;Renamed Columns\&quot;,{{\&quot;Date\&quot;, type date}}),\r\n    #\&quot;Removed Columns\&quot; = Table.RemoveColumns(#\&quot;Changed Type1\&quot;,{\&quot;Week of Year\&quot;})\r\nin\r\n    #\&quot;Removed Columns\&quot;&quot;,&quot;Product&quot;:&quot;let\r\n    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\&quot;xZlbU+JKEMe/imXt4+72ZC65nDcuwopCooAG9+xDhAEiIYFcUPj0ZwZxq04lW0UrWz4AIanBmV/9u/vf7c+f57XxWGbZ+ddzQ73c6TQcyzNmisONWzlR75Z6zfN8lf0DEC6DWbiT6Xd9IbN5MF58HydLdX/mUAoWowxYNiw6/vdVPDt2oQFUWAReLo3gKsYtdJgwwZ/vltdzzEIOnBEL/IF3wdhhoSDq7QsnZ9/Ovljk/NfXn+cXL2MZqbu0ik4nmEj1wY/HYwtHwLZ2PSEWZrMMTGFaENV/pCmSq6C2BfWXvvTu/g6eeRDPNAVWRaixDeLD5ZH7tZlgMBzE1m0NuV/DsYBGuS8SHFqHCg43IrBb0V8g5Mayl+RvMikB6qofjvNAXdnHq8jkFoPH0ct6scKJwbbVUZ+ajfVmizuqyYgNu2S6uUFFZxUjRx/034IQJn8zKvIoSRYa4ClExMHi1IaUR/MFSkRaC5Y6Z+HW2r1PA8Ttkoi85FmmXhLGuXpkVjFy00MYmsfLyDFsGN8+bYtnzJYpCFOR6sh2R2ZISIQbcPGUT9rso5BsUlKRVzxGYTaX6aFilRgNinRdJGH2lq2OPC5jnMHWn8otxXEyDdsBLtru3MGFqQpvBnGcLy47H+YkSpz68yCVb2KyTwaKgU2YBSzcxA83uPMawrCg77aKtvg0UGY5dfcX25VG4JwmKdnENGBN89YcuVnTsQU0zHbH739eUhIlPHdhFiYaAal0jsk2iM7qUSEP7ulYo2PZHLxCNC9RQaOslUFM6BGzNTaQ6Ywp2V4NZ+mPD9d/XhbRfZJqC21U2+t3QVKZm5ocwsFktOkiUxJ1YDhdT3yUizwpI6ucuf2662simsDhWqeddipljPPXDoXu3fXDCCUB1XyYjgkX7qB3E2AjzITheOI9LnE8qVrXMNPM7f1ZOco5NtNwo6VhVJprrG50ATZMWBRB3LlGNlmOcpzS9xcP409LQey3cRwrUHtEo2C53Nd7o9JcvyewtEvuxh5HBRYHw1H9Wf3+ub1rfR4gWgKko+nM7V1oIOLD0UWJJSATt5NZjuw7uLBgSu3WGIn1b8bX3lSf1S81G+2aX797UZBPk3R5oDSSUZQ8HzqTow0jERBNRlFjgDutan0NWDQv2WSDOy5XfQtMdhub2Mi/yGyYssud9/hnv3gVhLsg0i2qUWmr8T2+Y6jt+q77coXqshgY2lGncbJ20Xn6ZFFW0eMrzcTxax6q9NPYOZEe93ACV9vuHUF5RbWQKgkVsr99Qg2YTjonomYpD7VURO2HjJVe+l39hgGMKvcfDBcDnuLCxXIEgel4MWNPn9ZvUFKCtE9AtdUqe3tcykg6wXffMzGiWhtcsvkFcrq6b1qWs8hxZ0g92Q6DxOsOot0HUxIry2kgg72caKWr9op0Fb01bkfGDVXNOrhZcIezjoqsYakS1WNOiCptChCxTaiNBs0WsiZWaKnsjPp5qhjpZ5WTa+RcXzWvVBnAWer7HirWmFqoSv99XTYbyBIuVDGD0ZXkg9GH+fCygpJvTd280kpn/b6+TOUHrhJL4+l6fT3F7dlRUZbZtV0fNdA9aV/GWDlrv1qfPb7KXNSTSYzGxJWPJAS2de/+DlXG9XhWh2pv+Zgh/wtiOdyB2XAtQ2T/UspG1Pk/pl//AQ==\&quot;, BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type text) meta [Serialized.Text = true]) in type table [Product = _t, ProductID = _t, Category = _t, CategoryID = _t, Segment = _t, SegmentID = _t, #\&quot;Product Image\&quot; = _t, #\&quot;Category Image\&quot; = _t, #\&quot;Segement Color\&quot; = _t, #\&quot;Segment image\&quot; = _t, Price = _t, #\&quot;Price Range\&quot; = _t]),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(Source,{{\&quot;Product\&quot;, type text}, {\&quot;ProductID\&quot;, Int64.Type}, {\&quot;Category\&quot;, type text}, {\&quot;CategoryID\&quot;, Int64.Type}, {\&quot;Segment\&quot;, type text}, {\&quot;SegmentID\&quot;, Int64.Type}, {\&quot;Product Image\&quot;, type text}, {\&quot;Category Image\&quot;, type text}, {\&quot;Segement Color\&quot;, type text}, {\&quot;Segment image\&quot;, type text}, {\&quot;Price\&quot;, Int64.Type}})\r\nin\r\n    #\&quot;Changed Type\&quot;&quot;}}" />
+        <Entry Type="LoadedToAnalysisServices" Value="l1" />
+        <Entry Type="ResultType" Value="sException" />
+        <Entry Type="NameUpdatedAfterFill" Value="l1" />
+        <Entry Type="BufferNextRefresh" Value="l0" />
+        <Entry Type="NavigationStepName" Value="sNavigation" />
+      </StableEntries>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Sales/Source</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Calendar</ItemPath>
+      </ItemLocation>
+      <StableEntries>
+        <Entry Type="IsPrivate" Value="l0" />
+        <Entry Type="IsDirectQuery" Value="l0" />
+        <Entry Type="FillColumnNames" Value="s[&quot;Date&quot;,&quot;Week&quot;,&quot;Month&quot;,&quot;MonthSort&quot;]" />
+        <Entry Type="RelationshipInfoContainer" Value="s{&quot;columnCount&quot;:4,&quot;keyColumnNames&quot;:[],&quot;queryRelationships&quot;:[],&quot;columnIdentities&quot;:[&quot;Section1/Calendar/Changed Type1.{Date,0}&quot;,&quot;Section1/Calendar/Changed Type.{Week,1}&quot;,&quot;Section1/Calendar/Changed Type.{Month Name,2}&quot;,&quot;Section1/Calendar/Changed Type.{MonthSort,3}&quot;],&quot;ColumnCount&quot;:4,&quot;KeyColumnNames&quot;:[],&quot;ColumnIdentities&quot;:[&quot;Section1/Calendar/Changed Type1.{Date,0}&quot;,&quot;Section1/Calendar/Changed Type.{Week,1}&quot;,&quot;Section1/Calendar/Changed Type.{Month Name,2}&quot;,&quot;Section1/Calendar/Changed Type.{MonthSort,3}&quot;],&quot;RelationshipInfo&quot;:[]}" />
+        <Entry Type="IsLastAnalysisServicesFormulaTextCollection" Value="l1" />
+        <Entry Type="LastAnalysisServicesFormulaText" Value="s{&quot;IncludesReferencedQueries&quot;:true,&quot;RootFormulaText&quot;:&quot;let\r\n    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\&quot;fZSxisMwDIZfJWQuqSQ7dtztlg6FPkHpkIMbrxyFG+7tq4vcwD9I4IQUvg/kfk5ut5H4qEuI28ByItI1rNPwPY2HkfW6rI/+xOP9oHzxeQFeNp6Tzyfg08YL+XwGPhtffX4Gfrb5dR5x+KLX+euz76TY/OTzFfhqfPX5BfjF5s8+34Bv+/zJ60V6u67P/tfqz/cOXIPR4H0PriFoyL4L10hoWOfEgZHRsNKkU2XP+E/98fPsh4StNefAKGhYbeHAqGhYb1kCY0HDitN81OUYbdv5Xz+8bM1ZfEMIDOnNW2AwGtZcSmAIGtZcj61+DBxje7V/H/2lEmtOLTAyGtacS2DMaFhzSYFR0LDmiQKjoqHN7y8=\&quot;, BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type text) meta [Serialized.Text = true]) in type table [Date = _t, Week = _t, #\&quot;Month Name\&quot; = _t, MonthSort = _t, #\&quot;Week of Year\&quot; = _t]),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(Source,{{\&quot;Date\&quot;, type datetime}, {\&quot;Week\&quot;, Int64.Type}, {\&quot;Month Name\&quot;, type text}, {\&quot;MonthSort\&quot;, Int64.Type}, {\&quot;Week of Year\&quot;, Int64.Type}}),\r\n    #\&quot;Renamed Columns\&quot; = Table.RenameColumns(#\&quot;Changed Type\&quot;,{{\&quot;Month Name\&quot;, \&quot;Month\&quot;}}),\r\n    #\&quot;Changed Type1\&quot; = Table.TransformColumnTypes(#\&quot;Renamed Columns\&quot;,{{\&quot;Date\&quot;, type date}}),\r\n    #\&quot;Removed Columns\&quot; = Table.RemoveColumns(#\&quot;Changed Type1\&quot;,{\&quot;Week of Year\&quot;})\r\nin\r\n    #\&quot;Removed Columns\&quot;&quot;,&quot;ReferencedQueriesFormulaText&quot;:{}}" />
+        <Entry Type="LoadedToAnalysisServices" Value="l1" />
+        <Entry Type="BufferNextRefresh" Value="l0" />
+        <Entry Type="ResultType" Value="sTable" />
+        <Entry Type="NameUpdatedAfterFill" Value="l1" />
+        <Entry Type="NavigationStepName" Value="sNavigation" />
+      </StableEntries>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Calendar/Source</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Calendar/Changed%20Type</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Calendar/Renamed%20Columns</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Sales/Data_Sheet</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Sales/Promoted%20Headers</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Sales/Changed%20Type</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Store/Renamed%20Columns</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Sales/Merged%20Queries</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Sales/Expanded%20Product</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Sales/Inserted%20Multiplication</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Sales/Renamed%20Columns</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Sales/Removed%20Columns</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Calendar/Changed%20Type1</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Sales/Merged%20Queries1</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Sales/Expanded%20Calendar</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Sales/Removed%20Columns1</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Sales/Replaced%20Value</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Calendar/Removed%20Columns</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Customer</ItemPath>
+      </ItemLocation>
+      <StableEntries>
+        <Entry Type="IsPrivate" Value="l0" />
+        <Entry Type="IsDirectQuery" Value="l0" />
+        <Entry Type="IsLastAnalysisServicesFormulaTextCollection" Value="l1" />
+        <Entry Type="LastAnalysisServicesFormulaText" Value="s{&quot;IncludesReferencedQueries&quot;:true,&quot;RootFormulaText&quot;:&quot;let\r\n    Source = Excel.Workbook(File.Contents(\&quot;C:\\Users\\mimyersm\\Desktop\\Sales \u0026 Marketing Datas.xlsx\&quot;), null, true),\r\n    Data_Sheet = Source{[Item=\&quot;Data\&quot;,Kind=\&quot;Sheet\&quot;]}[Data],\r\n    #\&quot;Promoted Headers\&quot; = Table.PromoteHeaders(Data_Sheet, [PromoteAllScalars=true]),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(#\&quot;Promoted Headers\&quot;,{{\&quot;ID\&quot;, Int64.Type}, {\&quot;ProductID\&quot;, Int64.Type}, {\&quot;StoreID\&quot;, Int64.Type}, {\&quot;Unit\&quot;, Int64.Type}, {\&quot;Week\&quot;, Int64.Type}, {\&quot;Gender\&quot;, type text}, {\&quot;Age\&quot;, Int64.Type}, {\&quot;Status\&quot;, type text}}),\r\n    #\&quot;Removed Columns\&quot; = Table.RemoveColumns(#\&quot;Changed Type\&quot;,{\&quot;Status\&quot;}),\r\n    #\&quot;Merged Queries\&quot; = Table.NestedJoin(#\&quot;Removed Columns\&quot;, {\&quot;ProductID\&quot;}, Product, {\&quot;ProductID\&quot;}, \&quot;Product\&quot;, JoinKind.LeftOuter),\r\n    #\&quot;Expanded Product\&quot; = Table.ExpandTableColumn(#\&quot;Merged Queries\&quot;, \&quot;Product\&quot;, {\&quot;Product\&quot;, \&quot;Category\&quot;, \&quot;Segment\&quot;, \&quot;Price\&quot;, \&quot;Price Range\&quot;}, {\&quot;Product.1\&quot;, \&quot;Category\&quot;, \&quot;Segment\&quot;, \&quot;Price\&quot;, \&quot;Price Range\&quot;}),\r\n    #\&quot;Renamed Columns\&quot; = Table.RenameColumns(#\&quot;Expanded Product\&quot;,{{\&quot;Product.1\&quot;, \&quot;Product\&quot;}}),\r\n    #\&quot;Removed Columns1\&quot; = Table.RemoveColumns(#\&quot;Renamed Columns\&quot;,{\&quot;ProductID\&quot;}),\r\n    #\&quot;Replaced Value\&quot; = Table.ReplaceValue(#\&quot;Removed Columns1\&quot;,\&quot;M\&quot;,\&quot;Male\&quot;,Replacer.ReplaceText,{\&quot;Gender\&quot;}),\r\n    #\&quot;Replaced Value1\&quot; = Table.ReplaceValue(#\&quot;Replaced Value\&quot;,\&quot;F\&quot;,\&quot;Female\&quot;,Replacer.ReplaceText,{\&quot;Gender\&quot;}),\r\n    #\&quot;Merged Queries1\&quot; = Table.NestedJoin(#\&quot;Replaced Value1\&quot;, {\&quot;StoreID\&quot;}, Store, {\&quot;StoreID\&quot;}, \&quot;Store\&quot;, JoinKind.LeftOuter),\r\n    #\&quot;Expanded Store\&quot; = Table.ExpandTableColumn(#\&quot;Merged Queries1\&quot;, \&quot;Store\&quot;, {\&quot;Store\&quot;, \&quot;Type\&quot;}, {\&quot;Store.1\&quot;, \&quot;Type\&quot;}),\r\n    #\&quot;Renamed Columns1\&quot; = Table.RenameColumns(#\&quot;Expanded Store\&quot;,{{\&quot;Store.1\&quot;, \&quot;Store\&quot;}}),\r\n    #\&quot;Merged Queries2\&quot; = Table.NestedJoin(#\&quot;Renamed Columns1\&quot;, {\&quot;ID\&quot;}, #\&quot;Issues and Promotions\&quot;, {\&quot;ID\&quot;}, \&quot;Issues and Promotions\&quot;, JoinKind.LeftOuter),\r\n    #\&quot;Removed Columns2\&quot; = Table.RemoveColumns(#\&quot;Merged Queries2\&quot;,{\&quot;StoreID\&quot;}),\r\n    #\&quot;Expanded Issues and Promotions\&quot; = Table.ExpandTableColumn(#\&quot;Removed Columns2\&quot;, \&quot;Issues and Promotions\&quot;, {\&quot;Issue\&quot;, \&quot;Promotion\&quot;}, {\&quot;Issue\&quot;, \&quot;Promotion\&quot;}),\r\n    #\&quot;Removed Columns3\&quot; = Table.RemoveColumns(#\&quot;Expanded Issues and Promotions\&quot;,{\&quot;Week\&quot;}),\r\n    #\&quot;Merged Queries3\&quot; = Table.NestedJoin(#\&quot;Removed Columns3\&quot;, {\&quot;ID\&quot;}, Sales, {\&quot;ID\&quot;}, \&quot;Sales\&quot;, JoinKind.LeftOuter),\r\n    #\&quot;Expanded Sales\&quot; = Table.ExpandTableColumn(#\&quot;Merged Queries3\&quot;, \&quot;Sales\&quot;, {\&quot;Amount\&quot;}, {\&quot;Amount\&quot;}),\r\n    #\&quot;Merged Queries4\&quot; = Table.NestedJoin(#\&quot;Expanded Sales\&quot;, {\&quot;Age\&quot;}, Age, {\&quot;Age\&quot;}, \&quot;Age.1\&quot;, JoinKind.LeftOuter),\r\n    #\&quot;Expanded Age.1\&quot; = Table.ExpandTableColumn(#\&quot;Merged Queries4\&quot;, \&quot;Age.1\&quot;, {\&quot;Age Bucket\&quot;}, {\&quot;Age Bucket\&quot;}),\r\n    #\&quot;Removed Columns4\&quot; = Table.RemoveColumns(#\&quot;Expanded Age.1\&quot;,{\&quot;Age\&quot;}),\r\n    #\&quot;Renamed Columns2\&quot; = Table.RenameColumns(#\&quot;Removed Columns4\&quot;,{{\&quot;Age Bucket\&quot;, \&quot;Age\&quot;}}),\r\n    #\&quot;Removed Columns5\&quot; = Table.RemoveColumns(#\&quot;Renamed Columns2\&quot;,{\&quot;Price\&quot;})\r\nin\r\n    #\&quot;Removed Columns5\&quot;&quot;,&quot;ReferencedQueriesFormulaText&quot;:{&quot;Sales&quot;:&quot;let\r\n    Source = Excel.Workbook(File.Contents(\&quot;C:\\Users\\mimyersm\\Desktop\\Sales \u0026 Marketing Datas.xlsx\&quot;), null, true),\r\n    Data_Sheet = Source{[Item=\&quot;Data\&quot;,Kind=\&quot;Sheet\&quot;]}[Data],\r\n    #\&quot;Promoted Headers\&quot; = Table.PromoteHeaders(Data_Sheet, [PromoteAllScalars=true]),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(#\&quot;Promoted Headers\&quot;,{{\&quot;ID\&quot;, Int64.Type}, {\&quot;ProductID\&quot;, Int64.Type}, {\&quot;StoreID\&quot;, Int64.Type}, {\&quot;Unit\&quot;, Int64.Type}, {\&quot;Week\&quot;, Int64.Type}, {\&quot;Gender\&quot;, type text}, {\&quot;Age\&quot;, Int64.Type}, {\&quot;Status\&quot;, type text}}),\r\n    #\&quot;Replaced Value\&quot; = Table.ReplaceValue(#\&quot;Changed Type\&quot;,1,2,Replacer.ReplaceValue,{\&quot;Week\&quot;}),\r\n    #\&quot;Merged Queries\&quot; = Table.NestedJoin(#\&quot;Replaced Value\&quot;, {\&quot;ProductID\&quot;}, Product, {\&quot;ProductID\&quot;}, \&quot;Product\&quot;, JoinKind.LeftOuter),\r\n    #\&quot;Expanded Product\&quot; = Table.ExpandTableColumn(#\&quot;Merged Queries\&quot;, \&quot;Product\&quot;, {\&quot;Price\&quot;}, {\&quot;Price\&quot;}),\r\n    #\&quot;Inserted Multiplication\&quot; = Table.AddColumn(#\&quot;Expanded Product\&quot;, \&quot;Multiplication\&quot;, each [Price] * [Unit], Int64.Type),\r\n    #\&quot;Renamed Columns\&quot; = Table.RenameColumns(#\&quot;Inserted Multiplication\&quot;,{{\&quot;Multiplication\&quot;, \&quot;Amount\&quot;}}),\r\n    #\&quot;Removed Columns\&quot; = Table.RemoveColumns(#\&quot;Renamed Columns\&quot;,{\&quot;Price\&quot;}),\r\n    #\&quot;Merged Queries1\&quot; = Table.NestedJoin(#\&quot;Removed Columns\&quot;, {\&quot;Week\&quot;}, Calendar, {\&quot;Week\&quot;}, \&quot;Calendar\&quot;, JoinKind.LeftOuter),\r\n    #\&quot;Expanded Calendar\&quot; = Table.ExpandTableColumn(#\&quot;Merged Queries1\&quot;, \&quot;Calendar\&quot;, {\&quot;Date\&quot;}, {\&quot;Date\&quot;}),\r\n    #\&quot;Removed Columns1\&quot; = Table.RemoveColumns(#\&quot;Expanded Calendar\&quot;,{\&quot;Week\&quot;, \&quot;Gender\&quot;, \&quot;Age\&quot;})\r\nin\r\n    #\&quot;Removed Columns1\&quot;&quot;,&quot;Store&quot;:&quot;let\r\n    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\&quot;bZLNasNADITfxec0SPsjrY5paaFQSkohl5DDus3B4NjUsUsfv6tk7VKyJ8sLn0Yz0n5fYbWqNnUdz+n7+DMehy62qbwLvGZ21tv043At5MlKqqvDal8Zhdrma2oKFIrx2tWZNaBxxs2UtrqPQx1vIRJvxWQpH4TCDCn9HtvvqTSgMyySKUT6k/KpeIonVXru/jECQYAzA44uo14YSsXLsS/JMFp3RYJFNn5GtM8udpvh/HlsS6D3EK4gpwBhAfXxNY7TUMrCWnA5dnZgYHGlVrexLdmiQCZkW2yQabGFoFQzTKdbqQBANsfOQF4WKVR+259KlJcgIVMklI5kofT1bWrq0rYCIVieY0z7Ws4J1e1D3439uS9Ys4HAzJxmunA67q75GPuhKWXCHn3eG4ulfFSHXw==\&quot;, BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type text) meta [Serialized.Text = true]) in type table [ManufacturerID = _t, Manufacturer = _t, Type = _t, Longitude = _t, Latitude = _t, image = _t]),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(Source,{{\&quot;ManufacturerID\&quot;, Int64.Type}, {\&quot;Manufacturer\&quot;, type text}, {\&quot;Type\&quot;, type text}, {\&quot;Longitude\&quot;, type number}, {\&quot;Latitude\&quot;, type number}, {\&quot;image\&quot;, type text}}),\r\n    #\&quot;Renamed Columns\&quot; = Table.RenameColumns(#\&quot;Changed Type\&quot;,{{\&quot;ManufacturerID\&quot;, \&quot;StoreID\&quot;}, {\&quot;Manufacturer\&quot;, \&quot;Store\&quot;}})\r\nin\r\n    #\&quot;Renamed Columns\&quot;&quot;,&quot;Calendar&quot;:&quot;let\r\n    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\&quot;fZSxisMwDIZfJWQuqSQ7dtztlg6FPkHpkIMbrxyFG+7tq4vcwD9I4IQUvg/kfk5ut5H4qEuI28ByItI1rNPwPY2HkfW6rI/+xOP9oHzxeQFeNp6Tzyfg08YL+XwGPhtffX4Gfrb5dR5x+KLX+euz76TY/OTzFfhqfPX5BfjF5s8+34Bv+/zJ60V6u67P/tfqz/cOXIPR4H0PriFoyL4L10hoWOfEgZHRsNKkU2XP+E/98fPsh4StNefAKGhYbeHAqGhYb1kCY0HDitN81OUYbdv5Xz+8bM1ZfEMIDOnNW2AwGtZcSmAIGtZcj61+DBxje7V/H/2lEmtOLTAyGtacS2DMaFhzSYFR0LDmiQKjoqHN7y8=\&quot;, BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type text) meta [Serialized.Text = true]) in type table [Date = _t, Week = _t, #\&quot;Month Name\&quot; = _t, MonthSort = _t, #\&quot;Week of Year\&quot; = _t]),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(Source,{{\&quot;Date\&quot;, type datetime}, {\&quot;Week\&quot;, Int64.Type}, {\&quot;Month Name\&quot;, type text}, {\&quot;MonthSort\&quot;, Int64.Type}, {\&quot;Week of Year\&quot;, Int64.Type}}),\r\n    #\&quot;Renamed Columns\&quot; = Table.RenameColumns(#\&quot;Changed Type\&quot;,{{\&quot;Month Name\&quot;, \&quot;Month\&quot;}}),\r\n    #\&quot;Changed Type1\&quot; = Table.TransformColumnTypes(#\&quot;Renamed Columns\&quot;,{{\&quot;Date\&quot;, type date}}),\r\n    #\&quot;Removed Columns\&quot; = Table.RemoveColumns(#\&quot;Changed Type1\&quot;,{\&quot;Week of Year\&quot;})\r\nin\r\n    #\&quot;Removed Columns\&quot;&quot;,&quot;Product&quot;:&quot;let\r\n    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\&quot;xZlbU+JKEMe/imXt4+72ZC65nDcuwopCooAG9+xDhAEiIYFcUPj0ZwZxq04lW0UrWz4AIanBmV/9u/vf7c+f57XxWGbZ+ddzQ73c6TQcyzNmisONWzlR75Z6zfN8lf0DEC6DWbiT6Xd9IbN5MF58HydLdX/mUAoWowxYNiw6/vdVPDt2oQFUWAReLo3gKsYtdJgwwZ/vltdzzEIOnBEL/IF3wdhhoSDq7QsnZ9/Ovljk/NfXn+cXL2MZqbu0ik4nmEj1wY/HYwtHwLZ2PSEWZrMMTGFaENV/pCmSq6C2BfWXvvTu/g6eeRDPNAVWRaixDeLD5ZH7tZlgMBzE1m0NuV/DsYBGuS8SHFqHCg43IrBb0V8g5Mayl+RvMikB6qofjvNAXdnHq8jkFoPH0ct6scKJwbbVUZ+ajfVmizuqyYgNu2S6uUFFZxUjRx/034IQJn8zKvIoSRYa4ClExMHi1IaUR/MFSkRaC5Y6Z+HW2r1PA8Ttkoi85FmmXhLGuXpkVjFy00MYmsfLyDFsGN8+bYtnzJYpCFOR6sh2R2ZISIQbcPGUT9rso5BsUlKRVzxGYTaX6aFilRgNinRdJGH2lq2OPC5jnMHWn8otxXEyDdsBLtru3MGFqQpvBnGcLy47H+YkSpz68yCVb2KyTwaKgU2YBSzcxA83uPMawrCg77aKtvg0UGY5dfcX25VG4JwmKdnENGBN89YcuVnTsQU0zHbH739eUhIlPHdhFiYaAal0jsk2iM7qUSEP7ulYo2PZHLxCNC9RQaOslUFM6BGzNTaQ6Ywp2V4NZ+mPD9d/XhbRfZJqC21U2+t3QVKZm5ocwsFktOkiUxJ1YDhdT3yUizwpI6ucuf2662simsDhWqeddipljPPXDoXu3fXDCCUB1XyYjgkX7qB3E2AjzITheOI9LnE8qVrXMNPM7f1ZOco5NtNwo6VhVJprrG50ATZMWBRB3LlGNlmOcpzS9xcP409LQey3cRwrUHtEo2C53Nd7o9JcvyewtEvuxh5HBRYHw1H9Wf3+ub1rfR4gWgKko+nM7V1oIOLD0UWJJSATt5NZjuw7uLBgSu3WGIn1b8bX3lSf1S81G+2aX797UZBPk3R5oDSSUZQ8HzqTow0jERBNRlFjgDutan0NWDQv2WSDOy5XfQtMdhub2Mi/yGyYssud9/hnv3gVhLsg0i2qUWmr8T2+Y6jt+q77coXqshgY2lGncbJ20Xn6ZFFW0eMrzcTxax6q9NPYOZEe93ACV9vuHUF5RbWQKgkVsr99Qg2YTjonomYpD7VURO2HjJVe+l39hgGMKvcfDBcDnuLCxXIEgel4MWNPn9ZvUFKCtE9AtdUqe3tcykg6wXffMzGiWhtcsvkFcrq6b1qWs8hxZ0g92Q6DxOsOot0HUxIry2kgg72caKWr9op0Fb01bkfGDVXNOrhZcIezjoqsYakS1WNOiCptChCxTaiNBs0WsiZWaKnsjPp5qhjpZ5WTa+RcXzWvVBnAWer7HirWmFqoSv99XTYbyBIuVDGD0ZXkg9GH+fCygpJvTd280kpn/b6+TOUHrhJL4+l6fT3F7dlRUZbZtV0fNdA9aV/GWDlrv1qfPb7KXNSTSYzGxJWPJAS2de/+DlXG9XhWh2pv+Zgh/wtiOdyB2XAtQ2T/UspG1Pk/pl//AQ==\&quot;, BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type text) meta [Serialized.Text = true]) in type table [Product = _t, ProductID = _t, Category = _t, CategoryID = _t, Segment = _t, SegmentID = _t, #\&quot;Product Image\&quot; = _t, #\&quot;Category Image\&quot; = _t, #\&quot;Segement Color\&quot; = _t, #\&quot;Segment image\&quot; = _t, Price = _t, #\&quot;Price Range\&quot; = _t]),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(Source,{{\&quot;Product\&quot;, type text}, {\&quot;ProductID\&quot;, Int64.Type}, {\&quot;Category\&quot;, type text}, {\&quot;CategoryID\&quot;, Int64.Type}, {\&quot;Segment\&quot;, type text}, {\&quot;SegmentID\&quot;, Int64.Type}, {\&quot;Product Image\&quot;, type text}, {\&quot;Category Image\&quot;, type text}, {\&quot;Segement Color\&quot;, type text}, {\&quot;Segment image\&quot;, type text}, {\&quot;Price\&quot;, Int64.Type}})\r\nin\r\n    #\&quot;Changed Type\&quot;&quot;,&quot;Issues and Promotions&quot;:&quot;let\r\n    Source = Excel.Workbook(File.Contents(\&quot;C:\\Users\\mimyersm\\Desktop\\Sales \u0026 Marketing Datas.xlsx\&quot;), null, true),\r\n    #\&quot;Issues and Promotions_Sheet\&quot; = Source{[Item=\&quot;Issues and Promotions\&quot;,Kind=\&quot;Sheet\&quot;]}[Data],\r\n    #\&quot;Promoted Headers\&quot; = Table.PromoteHeaders(#\&quot;Issues and Promotions_Sheet\&quot;, [PromoteAllScalars=true]),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(#\&quot;Promoted Headers\&quot;,{{\&quot;ID\&quot;, Int64.Type}, {\&quot;Issue\&quot;, type text}, {\&quot;Promotion\&quot;, type text}})\r\nin\r\n    #\&quot;Changed Type\&quot;&quot;,&quot;Age&quot;:&quot;let\r\n    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\&quot;dc8rDsAgEIThqxA0AnZZHmchCER1k7amty+gaMKYEZ/6pxTtRJs+6jkVWfUe7bp1Nd0D8Ag8Ac97JwvcdSc3XVYn4AzcAxfg4y+F4fzricAT8Lx3tsDHX549vPYwAWfgHrhsvH4=\&quot;, BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type text) meta [Serialized.Text = true]) in type table [Age = _t, #\&quot;Age Bucket\&quot; = _t]),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(Source,{{\&quot;Age\&quot;, Int64.Type}, {\&quot;Age Bucket\&quot;, type text}})\r\nin\r\n    #\&quot;Changed Type\&quot;&quot;}}" />
+        <Entry Type="LoadedToAnalysisServices" Value="l1" />
+        <Entry Type="ResultType" Value="sException" />
+        <Entry Type="NameUpdatedAfterFill" Value="l1" />
+        <Entry Type="BufferNextRefresh" Value="l0" />
+        <Entry Type="NavigationStepName" Value="sNavigation" />
+        <Entry Type="FillErrorCode" Value="sUnknown" />
+        <Entry Type="FillLastUpdated" Value="d2019-10-15T17:55:41.4585856Z" />
+        <Entry Type="FillColumnNames" Value="s[&quot;ID&quot;,&quot;Unit&quot;,&quot;Gender&quot;,&quot;Product&quot;,&quot;Category&quot;,&quot;Segment&quot;,&quot;Price Range&quot;,&quot;Store&quot;,&quot;Type&quot;,&quot;Issue&quot;,&quot;Promotion&quot;,&quot;Amount&quot;,&quot;Age&quot;]" />
+        <Entry Type="RelationshipInfoContainer" Value="s{&quot;columnCount&quot;:13,&quot;keyColumnNames&quot;:[],&quot;queryRelationships&quot;:[{&quot;keyColumnCount&quot;:1,&quot;keyColumn&quot;:0,&quot;otherKeyColumnIdentity&quot;:&quot;Section1/Issues and Promotions/Changed Type.{ID,0}&quot;,&quot;KeyColumnCount&quot;:1},{&quot;keyColumnCount&quot;:1,&quot;keyColumn&quot;:0,&quot;otherKeyColumnIdentity&quot;:&quot;Section1/Sales/Changed Type.{ID,0}&quot;,&quot;KeyColumnCount&quot;:1}],&quot;columnIdentities&quot;:[&quot;Section1/Customer/Changed Type.{ID,0}&quot;,&quot;Section1/Customer/Changed Type.{Unit,3}&quot;,&quot;Section1/Customer/Replaced Value1.{Gender,4}&quot;,&quot;Section1/Product/Changed Type.{Product,0}&quot;,&quot;Section1/Product/Changed Type.{Category,2}&quot;,&quot;Section1/Product/Changed Type.{Segment,4}&quot;,&quot;Section1/Product/Source.{Price Range,11}&quot;,&quot;Section1/Store/Changed Type.{Manufacturer,1}&quot;,&quot;Section1/Store/Changed Type.{Type,2}&quot;,&quot;Section1/Issues and Promotions/Changed Type.{Issue,1}&quot;,&quot;Section1/Issues and Promotions/Changed Type.{Promotion,2}&quot;,&quot;Section1/Sales/Inserted Multiplication.{Multiplication,9}&quot;,&quot;Section1/Age/Changed Type.{Age Bucket,1}&quot;],&quot;ColumnCount&quot;:13,&quot;KeyColumnNames&quot;:[],&quot;ColumnIdentities&quot;:[&quot;Section1/Customer/Changed Type.{ID,0}&quot;,&quot;Section1/Customer/Changed Type.{Unit,3}&quot;,&quot;Section1/Customer/Replaced Value1.{Gender,4}&quot;,&quot;Section1/Product/Changed Type.{Product,0}&quot;,&quot;Section1/Product/Changed Type.{Category,2}&quot;,&quot;Section1/Product/Changed Type.{Segment,4}&quot;,&quot;Section1/Product/Source.{Price Range,11}&quot;,&quot;Section1/Store/Changed Type.{Manufacturer,1}&quot;,&quot;Section1/Store/Changed Type.{Type,2}&quot;,&quot;Section1/Issues and Promotions/Changed Type.{Issue,1}&quot;,&quot;Section1/Issues and Promotions/Changed Type.{Promotion,2}&quot;,&quot;Section1/Sales/Inserted Multiplication.{Multiplication,9}&quot;,&quot;Section1/Age/Changed Type.{Age Bucket,1}&quot;],&quot;RelationshipInfo&quot;:[{&quot;keyColumnCount&quot;:1,&quot;keyColumn&quot;:0,&quot;otherKeyColumnIdentity&quot;:&quot;Section1/Issues and Promotions/Changed Type.{ID,0}&quot;,&quot;KeyColumnCount&quot;:1},{&quot;keyColumnCount&quot;:1,&quot;keyColumn&quot;:0,&quot;otherKeyColumnIdentity&quot;:&quot;Section1/Sales/Changed Type.{ID,0}&quot;,&quot;KeyColumnCount&quot;:1}]}" />
+      </StableEntries>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Customer/Source</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Customer/Data_Sheet</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Customer/Promoted%20Headers</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Customer/Changed%20Type</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Customer/Removed%20Columns</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Customer/Replaced%20Value</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Customer/Replaced%20Value1</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Customer/Merged%20Queries</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Customer/Expanded%20Product</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Customer/Renamed%20Columns</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Customer/Removed%20Columns1</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Customer/Merged%20Queries1</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Customer/Expanded%20Store</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Customer/Renamed%20Columns1</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Issues%20and%20Promotions</ItemPath>
+      </ItemLocation>
+      <StableEntries>
+        <Entry Type="IsPrivate" Value="l0" />
+        <Entry Type="IsDirectQuery" Value="l0" />
+        <Entry Type="BufferNextRefresh" Value="l0" />
+        <Entry Type="ResultType" Value="sException" />
+        <Entry Type="FillColumnNames" Value="s[&quot;ID&quot;,&quot;Issue&quot;,&quot;Promotion&quot;]" />
+        <Entry Type="RelationshipInfoContainer" Value="s{&quot;columnCount&quot;:3,&quot;keyColumnNames&quot;:[],&quot;queryRelationships&quot;:[],&quot;columnIdentities&quot;:[&quot;Section1/Issues and Promotions/Changed Type.{ID,0}&quot;,&quot;Section1/Issues and Promotions/Changed Type.{Issue,1}&quot;,&quot;Section1/Issues and Promotions/Changed Type.{Promotion,2}&quot;],&quot;ColumnCount&quot;:3,&quot;KeyColumnNames&quot;:[],&quot;ColumnIdentities&quot;:[&quot;Section1/Issues and Promotions/Changed Type.{ID,0}&quot;,&quot;Section1/Issues and Promotions/Changed Type.{Issue,1}&quot;,&quot;Section1/Issues and Promotions/Changed Type.{Promotion,2}&quot;],&quot;RelationshipInfo&quot;:[]}" />
+        <Entry Type="LastAnalysisServicesFormulaText" Value="s{&quot;IncludesReferencedQueries&quot;:true,&quot;RootFormulaText&quot;:&quot;let\r\n    Source = Excel.Workbook(File.Contents(\&quot;C:\\Users\\mimyersm\\Desktop\\Sales \u0026 Marketing Datas.xlsx\&quot;), null, true),\r\n    #\&quot;Issues and Promotions_Sheet\&quot; = Source{[Item=\&quot;Issues and Promotions\&quot;,Kind=\&quot;Sheet\&quot;]}[Data],\r\n    #\&quot;Promoted Headers\&quot; = Table.PromoteHeaders(#\&quot;Issues and Promotions_Sheet\&quot;, [PromoteAllScalars=true]),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(#\&quot;Promoted Headers\&quot;,{{\&quot;ID\&quot;, Int64.Type}, {\&quot;Issue\&quot;, type text}, {\&quot;Promotion\&quot;, type text}})\r\nin\r\n    #\&quot;Changed Type\&quot;&quot;,&quot;ReferencedQueriesFormulaText&quot;:{}}" />
+        <Entry Type="IsLastAnalysisServicesFormulaTextCollection" Value="l1" />
+        <Entry Type="LoadedToAnalysisServices" Value="l1" />
+        <Entry Type="NavigationStepName" Value="sNavigation" />
+      </StableEntries>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Issues%20and%20Promotions/Source</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Issues%20and%20Promotions/Issues%20and%20Promotions_Sheet</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Issues%20and%20Promotions/Promoted%20Headers</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Issues%20and%20Promotions/Changed%20Type</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Customer/Merged%20Queries2</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Customer/Removed%20Columns2</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Customer/Expanded%20Issues%20and%20Promotions</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Customer/Removed%20Columns3</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Customer/Merged%20Queries3</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Customer/Expanded%20Sales</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Age</ItemPath>
+      </ItemLocation>
+      <StableEntries>
+        <Entry Type="IsPrivate" Value="l0" />
+        <Entry Type="IsDirectQuery" Value="l0" />
+        <Entry Type="FillColumnNames" Value="s[&quot;Age&quot;,&quot;Age Bucket&quot;]" />
+        <Entry Type="RelationshipInfoContainer" Value="s{&quot;columnCount&quot;:2,&quot;keyColumnNames&quot;:[],&quot;queryRelationships&quot;:[],&quot;columnIdentities&quot;:[&quot;Section1/Age/Changed Type.{Age,0}&quot;,&quot;Section1/Age/Changed Type.{Age Bucket,1}&quot;],&quot;ColumnCount&quot;:2,&quot;KeyColumnNames&quot;:[],&quot;ColumnIdentities&quot;:[&quot;Section1/Age/Changed Type.{Age,0}&quot;,&quot;Section1/Age/Changed Type.{Age Bucket,1}&quot;],&quot;RelationshipInfo&quot;:[]}" />
+        <Entry Type="LastAnalysisServicesFormulaText" Value="s{&quot;IncludesReferencedQueries&quot;:true,&quot;RootFormulaText&quot;:&quot;let\r\n    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\&quot;dc8rDsAgEIThqxA0AnZZHmchCER1k7amty+gaMKYEZ/6pxTtRJs+6jkVWfUe7bp1Nd0D8Ag8Ac97JwvcdSc3XVYn4AzcAxfg4y+F4fzricAT8Lx3tsDHX549vPYwAWfgHrhsvH4=\&quot;, BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type text) meta [Serialized.Text = true]) in type table [Age = _t, #\&quot;Age Bucket\&quot; = _t]),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(Source,{{\&quot;Age\&quot;, Int64.Type}, {\&quot;Age Bucket\&quot;, type text}})\r\nin\r\n    #\&quot;Changed Type\&quot;&quot;,&quot;ReferencedQueriesFormulaText&quot;:{}}" />
+        <Entry Type="IsLastAnalysisServicesFormulaTextCollection" Value="l1" />
+        <Entry Type="LoadedToAnalysisServices" Value="l1" />
+        <Entry Type="BufferNextRefresh" Value="l0" />
+        <Entry Type="ResultType" Value="sTable" />
+        <Entry Type="NameUpdatedAfterFill" Value="l1" />
+      </StableEntries>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Age/Source</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Age/Changed%20Type</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Customer/Merged%20Queries4</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Customer/Expanded%20Age.1</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Customer/Removed%20Columns4</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Customer/Renamed%20Columns2</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Customer/Removed%20Columns5</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/STable</ItemPath>
+      </ItemLocation>
+      <StableEntries>
+        <Entry Type="IsPrivate" Value="l0" />
+        <Entry Type="IsDirectQuery" Value="l0" />
+        <Entry Type="FillColumnNames" Value="s[&quot;Metric&quot;,&quot;Sort&quot;]" />
+        <Entry Type="RelationshipInfoContainer" Value="s{&quot;columnCount&quot;:2,&quot;keyColumnNames&quot;:[],&quot;queryRelationships&quot;:[],&quot;columnIdentities&quot;:[&quot;Section1/STable/Changed Type.{Metric,0}&quot;,&quot;Section1/STable/Changed Type.{Sort,1}&quot;],&quot;ColumnCount&quot;:2,&quot;KeyColumnNames&quot;:[],&quot;ColumnIdentities&quot;:[&quot;Section1/STable/Changed Type.{Metric,0}&quot;,&quot;Section1/STable/Changed Type.{Sort,1}&quot;],&quot;RelationshipInfo&quot;:[]}" />
+        <Entry Type="LastAnalysisServicesFormulaText" Value="s{&quot;IncludesReferencedQueries&quot;:true,&quot;RootFormulaText&quot;:&quot;let\r\n    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\&quot;i45Wci4tKkrNK1HwSy1RCE7MSS1W0lEyVIrViVZyrSgpSlQIKMpPyywBChopxcYCAA==\&quot;, BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type text) meta [Serialized.Text = true]) in type table [Metric = _t, Sort = _t]),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(Source,{{\&quot;Metric\&quot;, type text}, {\&quot;Sort\&quot;, Int64.Type}})\r\nin\r\n    #\&quot;Changed Type\&quot;&quot;,&quot;ReferencedQueriesFormulaText&quot;:{}}" />
+        <Entry Type="IsLastAnalysisServicesFormulaTextCollection" Value="l1" />
+        <Entry Type="LoadedToAnalysisServices" Value="l1" />
+        <Entry Type="BufferNextRefresh" Value="l0" />
+        <Entry Type="ResultType" Value="sTable" />
+        <Entry Type="NameUpdatedAfterFill" Value="l1" />
+      </StableEntries>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/STable/Source</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/STable/Changed%20Type</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Tooltip%20Info</ItemPath>
+      </ItemLocation>
+      <StableEntries>
+        <Entry Type="IsPrivate" Value="l0" />
+        <Entry Type="IsDirectQuery" Value="l0" />
+        <Entry Type="RelationshipInfoContainer" Value="s{&quot;columnCount&quot;:3,&quot;keyColumnNames&quot;:[],&quot;queryRelationships&quot;:[],&quot;columnIdentities&quot;:[&quot;Section1/Tooltip Info/Changed Type.{nombre,0}&quot;,&quot;Section1/Tooltip Info/Changed Type.{URL,1}&quot;,&quot;Section1/Tooltip Info/Changed Type.{DLINK,2}&quot;],&quot;ColumnCount&quot;:3,&quot;KeyColumnNames&quot;:[],&quot;ColumnIdentities&quot;:[&quot;Section1/Tooltip Info/Changed Type.{nombre,0}&quot;,&quot;Section1/Tooltip Info/Changed Type.{URL,1}&quot;,&quot;Section1/Tooltip Info/Changed Type.{DLINK,2}&quot;],&quot;RelationshipInfo&quot;:[]}" />
+        <Entry Type="FillColumnNames" Value="s[&quot;nombre&quot;,&quot;URL&quot;,&quot;DLINK&quot;]" />
+        <Entry Type="IsLastAnalysisServicesFormulaTextCollection" Value="l1" />
+        <Entry Type="LastAnalysisServicesFormulaText" Value="s{&quot;IncludesReferencedQueries&quot;:true,&quot;RootFormulaText&quot;:&quot;let\r\n    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\&quot;pZJBT8IwGIb/SrMz8o2Wjs0bARLloEjkYAiHbpRtGWtnW8Dx651pQnBoCnprmqd93u/Nt1x6T9wgzbZcozuUMMNTqWoUK86KtTwIr+NlxlT6HiAvWZofuep+HbjOWFJ0E1k292mEMQQhjeCt3i/iXTfNN62H5zxUpeVSb9X5HkAbqfjt9j6QHgngMRTJ/Nlpl5a7tBe8RrnYbHdcJFzpa+09oNj3Ybpm40XltG8tZ+1zbnZK/K/6PlAa+MDHU1nE7uEt19a3ikfXywc4CEHF0xf24ZZbri3/Y+8YaN8PIA9mRZa5d85y526kmtIbvzjtwF6jQ8YMuvjr1xAECKGQPZTvi6Mzg7DcTxlu1GKIKA5hXkyS4at7dstZ70weuBpW1dU9E8DRIIJ1PZqQkXtGyzWu1Sc=\&quot;, BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type text) meta [Serialized.Text = true]) in type table [nombre = _t, URL = _t, DLINK = _t]),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(Source,{{\&quot;nombre\&quot;, type text}, {\&quot;URL\&quot;, type text}, {\&quot;DLINK\&quot;, type text}})\r\nin\r\n    #\&quot;Changed Type\&quot;&quot;,&quot;ReferencedQueriesFormulaText&quot;:{}}" />
+        <Entry Type="LoadedToAnalysisServices" Value="l1" />
+        <Entry Type="NameUpdatedAfterFill" Value="l1" />
+        <Entry Type="ResultType" Value="sTable" />
+        <Entry Type="BufferNextRefresh" Value="l0" />
+        <Entry Type="NavigationStepName" Value="sNavigation" />
+      </StableEntries>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Tooltip%20Info/Source</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Tooltip%20Info/Changed%20Type</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Associated%20Product</ItemPath>
+      </ItemLocation>
+      <StableEntries>
+        <Entry Type="IsPrivate" Value="l0" />
+        <Entry Type="IsDirectQuery" Value="l0" />
+        <Entry Type="FillColumnNames" Value="s[&quot;ProductID&quot;,&quot;Product Image&quot;,&quot;Product&quot;]" />
+        <Entry Type="RelationshipInfoContainer" Value="s{&quot;columnCount&quot;:3,&quot;keyColumnNames&quot;:[],&quot;queryRelationships&quot;:[{&quot;keyColumnCount&quot;:1,&quot;keyColumn&quot;:0,&quot;otherKeyColumnIdentity&quot;:&quot;Section1/Product/Changed Type.{ProductID,1}&quot;,&quot;KeyColumnCount&quot;:1}],&quot;columnIdentities&quot;:[&quot;Section1/Associated Product/Changed Type.{ProductID,0}&quot;,&quot;Section1/Associated Product/Changed Type.{Product Image,1}&quot;,&quot;Section1/Product/Changed Type.{Product,0}&quot;],&quot;ColumnCount&quot;:3,&quot;KeyColumnNames&quot;:[],&quot;ColumnIdentities&quot;:[&quot;Section1/Associated Product/Changed Type.{ProductID,0}&quot;,&quot;Section1/Associated Product/Changed Type.{Product Image,1}&quot;,&quot;Section1/Product/Changed Type.{Product,0}&quot;],&quot;RelationshipInfo&quot;:[{&quot;keyColumnCount&quot;:1,&quot;keyColumn&quot;:0,&quot;otherKeyColumnIdentity&quot;:&quot;Section1/Product/Changed Type.{ProductID,1}&quot;,&quot;KeyColumnCount&quot;:1}]}" />
+        <Entry Type="IsLastAnalysisServicesFormulaTextCollection" Value="l1" />
+        <Entry Type="LastAnalysisServicesFormulaText" Value="s{&quot;IncludesReferencedQueries&quot;:true,&quot;RootFormulaText&quot;:&quot;let\r\n    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\&quot;ldRZb4JAEAfw78KzcZi9t2/W2Naj1mIPj/igqIgUKohH/fTdpgn7urwQQvILs7P/mfncQ6/h7crycLwDiNNlFN82RfPvZXPcLcOkGX6n5nukCQNUSoB4jMOo1zxkkbdozD3iyhFQM2iX/tvqqdLUVVNQVEvo58ktsJy51y4oJ9CN8mTUrzh3/zvVgkEsHtYdrLhwP7pA8wjWpwvfV1y6Fy+F1JAEcRG0K65qNN7nAkL6Lrv23rT72SWa1p1n3UnxVXH069w7UdDJsvQSW18jdspHCS013OYd651zR4Ci0kB7sdrb5qNz8gggckh/Xgq/a3mN5CkU8OEPR9uV5c7JQ2AoKezOvfZAW+8cPQKEMwW3oxy2fOtrZA8JkTC+5odka71z+CgwxXzI0uHs+WS9c/rM6FAzeVxdp/xml45z+ogZPVSw+jy2cmm9c/oIKKIF3HOcFtx65/SZ/jGN8DoWk/hgfY29h8rUv+7sB1lqfZ3Fx83anZTlfhD9+8Uv\&quot;, BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type text) meta [Serialized.Text = true]) in type table [ProductID = _t, #\&quot;Product Image\&quot; = _t]),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(Source,{{\&quot;ProductID\&quot;, Int64.Type}, {\&quot;Product Image\&quot;, type text}}),\r\n    #\&quot;Merged Queries\&quot; = Table.NestedJoin(#\&quot;Changed Type\&quot;, {\&quot;ProductID\&quot;}, Product, {\&quot;ProductID\&quot;}, \&quot;Product\&quot;, JoinKind.LeftOuter),\r\n    #\&quot;Expanded Product\&quot; = Table.ExpandTableColumn(#\&quot;Merged Queries\&quot;, \&quot;Product\&quot;, {\&quot;Product\&quot;}, {\&quot;Product.1\&quot;}),\r\n    #\&quot;Renamed Columns\&quot; = Table.RenameColumns(#\&quot;Expanded Product\&quot;,{{\&quot;Product.1\&quot;, \&quot;Product\&quot;}})\r\nin\r\n    #\&quot;Renamed Columns\&quot;&quot;,&quot;ReferencedQueriesFormulaText&quot;:{&quot;Product&quot;:&quot;let\r\n    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\&quot;xZlbU+JKEMe/imXt4+72ZC65nDcuwopCooAG9+xDhAEiIYFcUPj0ZwZxq04lW0UrWz4AIanBmV/9u/vf7c+f57XxWGbZ+ddzQ73c6TQcyzNmisONWzlR75Z6zfN8lf0DEC6DWbiT6Xd9IbN5MF58HydLdX/mUAoWowxYNiw6/vdVPDt2oQFUWAReLo3gKsYtdJgwwZ/vltdzzEIOnBEL/IF3wdhhoSDq7QsnZ9/Ovljk/NfXn+cXL2MZqbu0ik4nmEj1wY/HYwtHwLZ2PSEWZrMMTGFaENV/pCmSq6C2BfWXvvTu/g6eeRDPNAVWRaixDeLD5ZH7tZlgMBzE1m0NuV/DsYBGuS8SHFqHCg43IrBb0V8g5Mayl+RvMikB6qofjvNAXdnHq8jkFoPH0ct6scKJwbbVUZ+ajfVmizuqyYgNu2S6uUFFZxUjRx/034IQJn8zKvIoSRYa4ClExMHi1IaUR/MFSkRaC5Y6Z+HW2r1PA8Ttkoi85FmmXhLGuXpkVjFy00MYmsfLyDFsGN8+bYtnzJYpCFOR6sh2R2ZISIQbcPGUT9rso5BsUlKRVzxGYTaX6aFilRgNinRdJGH2lq2OPC5jnMHWn8otxXEyDdsBLtru3MGFqQpvBnGcLy47H+YkSpz68yCVb2KyTwaKgU2YBSzcxA83uPMawrCg77aKtvg0UGY5dfcX25VG4JwmKdnENGBN89YcuVnTsQU0zHbH739eUhIlPHdhFiYaAal0jsk2iM7qUSEP7ulYo2PZHLxCNC9RQaOslUFM6BGzNTaQ6Ywp2V4NZ+mPD9d/XhbRfZJqC21U2+t3QVKZm5ocwsFktOkiUxJ1YDhdT3yUizwpI6ucuf2662simsDhWqeddipljPPXDoXu3fXDCCUB1XyYjgkX7qB3E2AjzITheOI9LnE8qVrXMNPM7f1ZOco5NtNwo6VhVJprrG50ATZMWBRB3LlGNlmOcpzS9xcP409LQey3cRwrUHtEo2C53Nd7o9JcvyewtEvuxh5HBRYHw1H9Wf3+ub1rfR4gWgKko+nM7V1oIOLD0UWJJSATt5NZjuw7uLBgSu3WGIn1b8bX3lSf1S81G+2aX797UZBPk3R5oDSSUZQ8HzqTow0jERBNRlFjgDutan0NWDQv2WSDOy5XfQtMdhub2Mi/yGyYssud9/hnv3gVhLsg0i2qUWmr8T2+Y6jt+q77coXqshgY2lGncbJ20Xn6ZFFW0eMrzcTxax6q9NPYOZEe93ACV9vuHUF5RbWQKgkVsr99Qg2YTjonomYpD7VURO2HjJVe+l39hgGMKvcfDBcDnuLCxXIEgel4MWNPn9ZvUFKCtE9AtdUqe3tcykg6wXffMzGiWhtcsvkFcrq6b1qWs8hxZ0g92Q6DxOsOot0HUxIry2kgg72caKWr9op0Fb01bkfGDVXNOrhZcIezjoqsYakS1WNOiCptChCxTaiNBs0WsiZWaKnsjPp5qhjpZ5WTa+RcXzWvVBnAWer7HirWmFqoSv99XTYbyBIuVDGD0ZXkg9GH+fCygpJvTd280kpn/b6+TOUHrhJL4+l6fT3F7dlRUZbZtV0fNdA9aV/GWDlrv1qfPb7KXNSTSYzGxJWPJAS2de/+DlXG9XhWh2pv+Zgh/wtiOdyB2XAtQ2T/UspG1Pk/pl//AQ==\&quot;, BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type text) meta [Serialized.Text = true]) in type table [Product = _t, ProductID = _t, Category = _t, CategoryID = _t, Segment = _t, SegmentID = _t, #\&quot;Product Image\&quot; = _t, #\&quot;Category Image\&quot; = _t, #\&quot;Segement Color\&quot; = _t, #\&quot;Segment image\&quot; = _t, Price = _t, #\&quot;Price Range\&quot; = _t]),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(Source,{{\&quot;Product\&quot;, type text}, {\&quot;ProductID\&quot;, Int64.Type}, {\&quot;Category\&quot;, type text}, {\&quot;CategoryID\&quot;, Int64.Type}, {\&quot;Segment\&quot;, type text}, {\&quot;SegmentID\&quot;, Int64.Type}, {\&quot;Product Image\&quot;, type text}, {\&quot;Category Image\&quot;, type text}, {\&quot;Segement Color\&quot;, type text}, {\&quot;Segment image\&quot;, type text}, {\&quot;Price\&quot;, Int64.Type}})\r\nin\r\n    #\&quot;Changed Type\&quot;&quot;}}" />
+        <Entry Type="LoadedToAnalysisServices" Value="l1" />
+        <Entry Type="NameUpdatedAfterFill" Value="l1" />
+        <Entry Type="ResultType" Value="sTable" />
+        <Entry Type="BufferNextRefresh" Value="l0" />
+        <Entry Type="NavigationStepName" Value="sNavigation" />
+      </StableEntries>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Associated%20Product/Source</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Associated%20Product/Changed%20Type</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Association/Inserted%20Merged%20Column</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Association/Removed%20Duplicates</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Associated%20Product/Merged%20Queries</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Associated%20Product/Expanded%20Product</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Associated%20Product/Renamed%20Columns</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Association/Removed%20Columns</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Tooltip%20Info2</ItemPath>
+      </ItemLocation>
+      <StableEntries>
+        <Entry Type="IsPrivate" Value="l0" />
+        <Entry Type="IsDirectQuery" Value="l0" />
+        <Entry Type="NavigationStepName" Value="sNavigation" />
+        <Entry Type="NameUpdatedAfterFill" Value="l1" />
+        <Entry Type="ResultType" Value="sTable" />
+        <Entry Type="BufferNextRefresh" Value="l0" />
+        <Entry Type="FillColumnNames" Value="s[&quot;Nombre&quot;,&quot;URL&quot;,&quot;DLINK&quot;]" />
+        <Entry Type="RelationshipInfoContainer" Value="s{&quot;columnCount&quot;:3,&quot;keyColumnNames&quot;:[],&quot;queryRelationships&quot;:[],&quot;columnIdentities&quot;:[&quot;Section1/Tooltip Info2/Changed Type.{Nombre,0}&quot;,&quot;Section1/Tooltip Info2/Changed Type.{URL,1}&quot;,&quot;Section1/Tooltip Info2/Changed Type.{DLINK,2}&quot;],&quot;ColumnCount&quot;:3,&quot;KeyColumnNames&quot;:[],&quot;ColumnIdentities&quot;:[&quot;Section1/Tooltip Info2/Changed Type.{Nombre,0}&quot;,&quot;Section1/Tooltip Info2/Changed Type.{URL,1}&quot;,&quot;Section1/Tooltip Info2/Changed Type.{DLINK,2}&quot;],&quot;RelationshipInfo&quot;:[]}" />
+        <Entry Type="LastAnalysisServicesFormulaText" Value="s{&quot;IncludesReferencedQueries&quot;:true,&quot;RootFormulaText&quot;:&quot;let\r\n    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\&quot;i45W8kstUQhOzEktVtBVCIwpNTAwMnNU0lHKKCkpKLbS18/MTUxPLc5ITM7WS87P1c/UL8gPKC8IzyhIR1OUWZVapIeuOjfd0shE39zU0kAfoksvPTNNKVYnWikotaS0KI9oS3PDvXLyAlOJttRI38LM1EgfogtiaSwA\&quot;, BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type text) meta [Serialized.Text = true]) in type table [Nombre = _t, URL = _t, DLINK = _t]),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(Source,{{\&quot;Nombre\&quot;, type text}, {\&quot;URL\&quot;, type text}, {\&quot;DLINK\&quot;, type text}})\r\nin\r\n    #\&quot;Changed Type\&quot;&quot;,&quot;ReferencedQueriesFormulaText&quot;:{}}" />
+        <Entry Type="IsLastAnalysisServicesFormulaTextCollection" Value="l1" />
+        <Entry Type="LoadedToAnalysisServices" Value="l1" />
+      </StableEntries>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Tooltip%20Info2/Source</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Tooltip%20Info2/Changed%20Type</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Details</ItemPath>
+      </ItemLocation>
+      <StableEntries>
+        <Entry Type="IsPrivate" Value="l0" />
+        <Entry Type="IsDirectQuery" Value="l0" />
+        <Entry Type="RelationshipInfoContainer" Value="s{&quot;columnCount&quot;:4,&quot;keyColumnNames&quot;:[],&quot;queryRelationships&quot;:[],&quot;columnIdentities&quot;:[&quot;Section1/Details/Source.{Design Factor,0}&quot;,&quot;Section1/Details/Changed Type.{DFSort,1}&quot;,&quot;Section1/Details/Source.{Topic,2}&quot;,&quot;Section1/Details/Changed Type.{TSort,3}&quot;],&quot;ColumnCount&quot;:4,&quot;KeyColumnNames&quot;:[],&quot;ColumnIdentities&quot;:[&quot;Section1/Details/Source.{Design Factor,0}&quot;,&quot;Section1/Details/Changed Type.{DFSort,1}&quot;,&quot;Section1/Details/Source.{Topic,2}&quot;,&quot;Section1/Details/Changed Type.{TSort,3}&quot;],&quot;RelationshipInfo&quot;:[]}" />
+        <Entry Type="FillColumnNames" Value="s[&quot;Design Factor&quot;,&quot;DFSort&quot;,&quot;Topic&quot;,&quot;TSort&quot;]" />
+        <Entry Type="IsLastAnalysisServicesFormulaTextCollection" Value="l1" />
+        <Entry Type="LastAnalysisServicesFormulaText" Value="s{&quot;IncludesReferencedQueries&quot;:true,&quot;RootFormulaText&quot;:&quot;let\r\n    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\&quot;lVXbcpswEP0VDc/OxMF2mjzKgBtNsWEwzmXSPChY2JrIKCNEU/ep39JP65dUK18mDYEQZjxjpLO7hz1npft7By98Esy8wOk5Z+YXxUGCUxLNcGjeXOehV4Ngs3eXEs8iBhYRhzidRMnUhvScOLoJEjQmyA/m39IoNkvD93Bo/yTsWSqNrjl7QWZ51JpzGo1JCFwuOqScykcu2DHzpQ1ZkNPFreXec0J8Fy1S+LJ+be+Qy5NFyUvNCo1CupWVBvhZDe5FYZTAltuYacozJUuZa5NTSFUCetCIvuKrNRTXipa25rAGHSd45pPZV9gddSgb5TnPOBUoVnJZZdoyOP9MYChX0kZ9qUWRWRokE7wzykVjUlLoimv+gwGsrsix64JRhXyqKfJN9xV/rDSXBehclyq4Nb49mNSta3NsqXw5SSVgmkXyqBBIS4SzQ71miaa84JtqY8jy7Ana4tY1MszAoHhPrlkmz/S6PIkF1blUG8A2K5MwIx9bGkMaX2ZbAO8EsdM5J3M7cz1nEuB0kQRz9L3q991z5OEYm/khKQkA4l68F3Qo4ituWjGVS5DKvfwQqtdKVqs1UO23gVMphebPgDtrw+2fv7//IJ/ltBIwBQO3Y8j+CIjpCugPBm1h17ysjLmvGF0yBehhxyL7T0Ep+2nJjT4Z94bkeVv4zZpqRHLAvav1AYcLKra/bL5WeV/RIUWmGC3Zqc92fyC4VfBXwRNeLA05phjSa17+N67Ivue52SygQcNWY0y40EyZbhRAYNhqjrGUTxuqnmC5qyUMs2dBt2jOBMu0GZ+d7hDQag9zCC85fI7xyMTMJtWaFysAdfWJPcfsoQ+Yzi7hWthOtPribZkxtTfL8GOTaJ5ZZFebwE2oKdyDfKdQZ4tIxbLdLTYyDnj4Bw==\&quot;, BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type text) meta [Serialized.Text = true]) in type table [#\&quot;Design Factor\&quot; = _t, DFSort = _t, Topic = _t, TSort = _t]),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(Source,{{\&quot;DFSort\&quot;, Int64.Type}, {\&quot;TSort\&quot;, Int64.Type}})\r\nin\r\n    #\&quot;Changed Type\&quot;&quot;,&quot;ReferencedQueriesFormulaText&quot;:{}}" />
+        <Entry Type="LoadedToAnalysisServices" Value="l1" />
+        <Entry Type="NameUpdatedAfterFill" Value="l1" />
+        <Entry Type="ResultType" Value="sTable" />
+        <Entry Type="BufferNextRefresh" Value="l0" />
+        <Entry Type="NavigationStepName" Value="sNavigation" />
+      </StableEntries>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Details/Source</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Details/Changed%20Type</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+  </Items>
+</LocalPackageMetadataFile>

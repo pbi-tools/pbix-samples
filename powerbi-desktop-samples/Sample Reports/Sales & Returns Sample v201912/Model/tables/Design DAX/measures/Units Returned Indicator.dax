@@ -1,0 +1,1 @@
+CONCATENATE(IF([Returns Variance %]<=0,"","+"),FORMAT([Returns Variance %],"0.0%"))

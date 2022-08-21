@@ -1,0 +1,57 @@
+{
+  "byExpr": [
+    {
+      "name": "Filter",
+      "type": "Categorical",
+      "filter": {
+        "Version": 2,
+        "From": [
+          {
+            "Name": "p",
+            "Entity": "Product"
+          }
+        ],
+        "Where": [
+          {
+            "Condition": {
+              "In": {
+                "Expressions": [
+                  {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "p"
+                        }
+                      },
+                      "Property": "Product"
+                    }
+                  }
+                ],
+                "Values": [
+                  [
+                    {
+                      "Literal": {
+                        "Value": "'OneNote'"
+                      }
+                    }
+                  ]
+                ]
+              }
+            }
+          }
+        ]
+      },
+      "expression": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Product"
+            }
+          },
+          "Property": "Product"
+        }
+      },
+      "howCreated": 5
+    }
+  ]
+}

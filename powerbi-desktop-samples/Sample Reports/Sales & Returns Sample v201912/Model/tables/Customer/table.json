@@ -1,0 +1,32 @@
+{
+  "name": "Customer",
+  "partitions": [
+    {
+      "name": "Customer-7e8cffbe-9644-4d2a-9653-8804b02c15eb",
+      "mode": "import",
+      "source": {
+        "type": "query",
+        "query": "SELECT * FROM [Customer]",
+        "dataSource": "66969c20-f12f-47e3-a8fc-9673dd277bdd"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "2fe0858c-886a-44c1-9826-2f17b53c5335"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "Customer"
+    },
+    {
+      "name": "PBI_QueryRelationships",
+      "value": "{\"columnCount\":13,\"keyColumnNames\":[],\"queryRelationships\":[{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Section1/Issues and Promotions/Changed Type.{ID,0}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Section1/Sales/Changed Type.{ID,0}\",\"KeyColumnCount\":1}],\"columnIdentities\":[\"Section1/Customer/Changed Type.{ID,0}\",\"Section1/Customer/Changed Type.{Unit,3}\",\"Section1/Customer/Replaced Value1.{Gender,4}\",\"Section1/Product/Changed Type.{Product,0}\",\"Section1/Product/Changed Type.{Category,2}\",\"Section1/Product/Changed Type.{Segment,4}\",\"Section1/Product/Source.{Price Range,11}\",\"Section1/Store/Changed Type.{Manufacturer,1}\",\"Section1/Store/Changed Type.{Type,2}\",\"Section1/Issues and Promotions/Changed Type.{Issue,1}\",\"Section1/Issues and Promotions/Changed Type.{Promotion,2}\",\"Section1/Sales/Inserted Multiplication.{Multiplication,9}\",\"Section1/Age/Changed Type.{Age Bucket,1}\"],\"ColumnCount\":13,\"KeyColumnNames\":[],\"ColumnIdentities\":[\"Section1/Customer/Changed Type.{ID,0}\",\"Section1/Customer/Changed Type.{Unit,3}\",\"Section1/Customer/Replaced Value1.{Gender,4}\",\"Section1/Product/Changed Type.{Product,0}\",\"Section1/Product/Changed Type.{Category,2}\",\"Section1/Product/Changed Type.{Segment,4}\",\"Section1/Product/Source.{Price Range,11}\",\"Section1/Store/Changed Type.{Manufacturer,1}\",\"Section1/Store/Changed Type.{Type,2}\",\"Section1/Issues and Promotions/Changed Type.{Issue,1}\",\"Section1/Issues and Promotions/Changed Type.{Promotion,2}\",\"Section1/Sales/Inserted Multiplication.{Multiplication,9}\",\"Section1/Age/Changed Type.{Age Bucket,1}\"],\"RelationshipInfo\":[{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Section1/Issues and Promotions/Changed Type.{ID,0}\",\"KeyColumnCount\":1},{\"keyColumnCount\":1,\"keyColumn\":0,\"otherKeyColumnIdentity\":\"Section1/Sales/Changed Type.{ID,0}\",\"KeyColumnCount\":1}]}"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    }
+  ]
+}

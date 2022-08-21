@@ -1,0 +1,63 @@
+{
+  "displayName": "Daily County",
+  "name": "Bookmark731869eb0c1cdcf1126e",
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "ReportSection52ab9a1d2e999300e824",
+    "filters": {
+      "byExpr": [
+        {
+          "name": "Filter",
+          "type": "Categorical",
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "COVID"
+                }
+              },
+              "Property": "Date"
+            }
+          },
+          "howCreated": 1
+        }
+      ]
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "options": {
+    "targetVisualNames": [
+      "4231a0c96f8f4e82520c",
+      "aac9656969adea82f281",
+      "f898a0a6ea09ee398368",
+      "f56147e5b5404813efc2",
+      "178738100808f7f7c70b",
+      "85e676090d1faf75e3b3",
+      "a2282587cf9bb519537b",
+      "7c2c2d3c430f29407d50",
+      "15435a466ce6d8177442",
+      "b5cd42b677a37417dff5",
+      "d610e3df7e7aaa9aecf7",
+      "f128ef19b8f7c9930025"
+    ],
+    "suppressData": true,
+    "suppressActiveSection": true,
+    "applyOnlyToTargetVisuals": true
+  }
+}

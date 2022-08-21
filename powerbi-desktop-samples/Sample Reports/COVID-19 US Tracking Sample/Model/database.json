@@ -1,0 +1,80 @@
+{
+  "name": "COVID-19 US Tracking Sample",
+  "compatibilityLevel": 1550,
+  "model": {
+    "culture": "en-US",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-US",
+    "relationships": [
+      {
+        "name": "61d3981d-89bc-4f78-b2b7-ab908a42ac71",
+        "fromTable": "COVID",
+        "fromColumn": "Date",
+        "toTable": "LocalDateTable_a0f5b894-4f57-4a54-a9d5-5508aa5843d0",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "7cd80576-d9a4-4516-aad6-c8e06584bf7c",
+        "fromTable": "COVID",
+        "fromColumn": "State",
+        "toTable": "StateDim",
+        "toColumn": "State code"
+      }
+    ],
+    "expressions": [
+      {
+        "name": "Cases",
+        "kind": "m",
+        "annotations": [
+          {
+            "name": "PBI_DescriptionAtRefresh"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "Deaths",
+        "kind": "m",
+        "annotations": [
+          {
+            "name": "PBI_DescriptionAtRefresh"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      }
+    ],
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.95.622.0 (21.07)"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"Cases\",\"Deaths\",\"COVID\",\"StateDim\",\"Table\",\"COVID measures\"]"
+      }
+    ]
+  }
+}

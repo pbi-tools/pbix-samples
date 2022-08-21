@@ -1,0 +1,37 @@
+{
+  "name": "c2d991797c88fb74b26f",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 466.31649831649833,
+        "y": 379.25925925925924,
+        "z": 9000,
+        "width": 149.97979797979798,
+        "height": 31.892255892255893,
+        "tabOrder": 23000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "image",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "imageUrl": {
+              "expr": {
+                "ResourcePackageItem": {
+                  "PackageName": "RegisteredResources",
+                  "PackageType": 1,
+                  "ItemName": "Gradation_with_text894674291833967.GIF"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

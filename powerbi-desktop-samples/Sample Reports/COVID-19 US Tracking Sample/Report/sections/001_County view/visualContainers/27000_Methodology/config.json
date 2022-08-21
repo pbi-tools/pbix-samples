@@ -1,0 +1,104 @@
+{
+  "name": "b99ef9ce1a3d99adcf1a",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "width": 274.962962962963,
+        "height": 115.5016835016835,
+        "tabOrder": 27000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "This interactive feature aggregates data from the Centers for Disease Control and Prevention (CDC), state- and local-level public health agencies. County-level data is confirmed by referencing state and local agencies directly (",
+                    "textStyle": {
+                      "fontSize": "8pt",
+                      "color": "#999999"
+                    }
+                  },
+                  {
+                    "value": "link",
+                    "textStyle": {
+                      "fontSize": "8pt",
+                      "color": "#999999"
+                    },
+                    "url": "https://www.cdc.gov/publichealthgateway/healthdirectories/healthdepartments.html"
+                  },
+                  {
+                    "value": ").",
+                    "textStyle": {
+                      "fontSize": "8pt",
+                      "color": "#999999"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Methodology'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "'8'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#999999'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "parentGroupName": "c1e3a6f59a2d46aaa2b4"
+}

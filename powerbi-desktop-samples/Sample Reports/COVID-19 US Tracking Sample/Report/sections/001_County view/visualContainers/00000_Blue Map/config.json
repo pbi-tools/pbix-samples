@@ -1,0 +1,20 @@
+{
+  "name": "b3d79ea376363224cb14",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 437.00004800048316,
+        "y": 50.19308591610482,
+        "z": 2000,
+        "width": 486.20155038759685,
+        "height": 369.7426016959248
+      }
+    }
+  ],
+  "singleVisualGroup": {
+    "displayName": "Blue Map",
+    "groupMode": 0,
+    "isHidden": false
+  }
+}

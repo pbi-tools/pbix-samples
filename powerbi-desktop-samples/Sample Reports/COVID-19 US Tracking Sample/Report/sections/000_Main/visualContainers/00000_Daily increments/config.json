@@ -1,0 +1,20 @@
+{
+  "name": "1db4337d730b5edbef99",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 459.46683199008055,
+        "y": 418.99566026038434,
+        "z": 7000,
+        "width": 791.965282083075,
+        "height": 281.71109733415989
+      }
+    }
+  ],
+  "singleVisualGroup": {
+    "displayName": "Daily increments",
+    "groupMode": 0,
+    "isHidden": false
+  }
+}

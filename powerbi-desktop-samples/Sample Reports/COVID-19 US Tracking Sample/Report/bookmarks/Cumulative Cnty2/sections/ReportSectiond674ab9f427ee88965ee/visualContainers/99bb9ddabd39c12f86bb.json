@@ -1,0 +1,69 @@
+{
+  "filters": {
+    "byExpr": [
+      {
+        "type": "Categorical",
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "COVID"
+              }
+            },
+            "Property": "Date"
+          }
+        },
+        "howCreated": 0
+      }
+    ]
+  },
+  "singleVisual": {
+    "visualType": "slicer",
+    "objects": {
+      "merge": {
+        "data": [
+          {
+            "properties": {
+              "mode": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Between'"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    "orderBy": [
+      {
+        "Direction": 1,
+        "Expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "COVID"
+              }
+            },
+            "Property": "Date"
+          }
+        }
+      }
+    ],
+    "activeProjections": {
+      "Values": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "COVID"
+              }
+            },
+            "Property": "Date"
+          }
+        }
+      ]
+    }
+  }
+}

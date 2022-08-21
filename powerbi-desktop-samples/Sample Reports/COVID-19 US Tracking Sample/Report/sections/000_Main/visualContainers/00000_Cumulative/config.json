@@ -1,0 +1,20 @@
+{
+  "name": "75283747d885f2cee033",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 459,
+        "y": 419.99817559979812,
+        "z": 6000,
+        "width": 791.965282083075,
+        "height": 281.00182440020188
+      }
+    }
+  ],
+  "singleVisualGroup": {
+    "displayName": "Cumulative",
+    "groupMode": 0,
+    "isHidden": true
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "displayName": "Daily State",
+  "name": "Bookmark4cc6602194c4837639e8",
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "ReportSection0e72bac688f60e7252ea",
+    "filters": {
+      "byExpr": [
+        {
+          "name": "Filter",
+          "type": "Categorical",
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "COVID"
+                }
+              },
+              "Property": "Date"
+            }
+          },
+          "howCreated": 1
+        }
+      ]
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "options": {
+    "targetVisualNames": [
+      "75283747d885f2cee033",
+      "1db4337d730b5edbef99",
+      "bb6cb5734968896b2377",
+      "47a3a67684ca52aab4af",
+      "6b27b7c87f18083f2387",
+      "f99fc22f6074d5af9198",
+      "96d138c560c5e2a80644",
+      "a03d3fe608a1513034fc",
+      "925c57e40448405cae83",
+      "f128ef19b8f7c9930025",
+      "d610e3df7e7aaa9aecf7",
+      "b5cd42b677a37417dff5"
+    ],
+    "applyOnlyToTargetVisuals": true,
+    "suppressData": true,
+    "suppressActiveSection": true
+  }
+}

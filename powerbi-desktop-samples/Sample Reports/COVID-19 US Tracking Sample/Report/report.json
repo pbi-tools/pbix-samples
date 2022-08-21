@@ -1,0 +1,133 @@
+{
+  "id": 370818,
+  "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "ReportSection0e72bac688f60e7252ea",
+      "config": "{}",
+      "id": 2096851,
+      "name": "Pod"
+    },
+    {
+      "boundSection": "ReportSectiond674ab9f427ee88965ee",
+      "config": "{}",
+      "id": 2096852,
+      "name": "Pod1",
+      "parameters": "[{\"name\":\"Param_Filter\",\"boundFilter\":\"Filter\",\"fieldExpr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"StateDim\"}},\"Property\":\"State\"}}}]",
+      "type": 1
+    }
+  ],
+  "publicCustomVisuals": [],
+  "reportId": 43531,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "id": 143353,
+        "items": [
+          {
+            "id": 521211,
+            "path": "choropleth4C77906D867C4C09AFE83BA5E2AA106A.pbiviz.json",
+            "resourcePackageId": 143353,
+            "resourcePackageItemBlobInfoId": 874292,
+            "type": 5
+          }
+        ],
+        "name": "choropleth4C77906D867C4C09AFE83BA5E2AA106A",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "id": 143354,
+        "items": [
+          {
+            "id": 521212,
+            "path": "PBI_CV_16948668_E17D_454B_8664_2F2C470EA8C1.pbiviz.json",
+            "resourcePackageId": 143354,
+            "resourcePackageItemBlobInfoId": 874294,
+            "type": 5
+          }
+        ],
+        "name": "PBI_CV_16948668_E17D_454B_8664_2F2C470EA8C1",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "id": 143355,
+        "items": [
+          {
+            "id": 521213,
+            "path": "PBI_CV_FFFE680D_D220_4F62_B16C_C7B5C5732654.pbiviz.json",
+            "resourcePackageId": 143355,
+            "resourcePackageItemBlobInfoId": 874296,
+            "type": 5
+          }
+        ],
+        "name": "PBI_CV_FFFE680D_D220_4F62_B16C_C7B5C5732654",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "id": 143356,
+        "items": [
+          {
+            "id": 521214,
+            "name": "Frame_2_(4)9974572814303304.png",
+            "path": "Frame_2_(4)9974572814303304.png",
+            "resourcePackageId": 143356,
+            "resourcePackageItemBlobInfoId": 874297,
+            "type": 100
+          },
+          {
+            "id": 521215,
+            "name": "Gradation_with_text894674291833967.GIF",
+            "path": "Gradation_with_text894674291833967.GIF",
+            "resourcePackageId": 143356,
+            "resourcePackageItemBlobInfoId": 874298,
+            "type": 100
+          },
+          {
+            "id": 521216,
+            "name": "USAFacts_Wordmark_blue8192537517759648.png",
+            "path": "USAFacts_Wordmark_blue8192537517759648.png",
+            "resourcePackageId": 143356,
+            "resourcePackageItemBlobInfoId": 874299,
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "id": 143357,
+        "items": [
+          {
+            "id": 521217,
+            "name": "CY19SU12",
+            "path": "BaseThemes/CY19SU12.json",
+            "resourcePackageId": 143357,
+            "type": 202
+          },
+          {
+            "id": 521218,
+            "name": "usa.states.topo",
+            "path": "Shapemaps/usa.states.topo.json",
+            "resourcePackageId": 143357,
+            "type": 200
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "StateDim",
+  "partitions": [
+    {
+      "name": "StateDim-44150ab7-d238-4a8e-be80-b5d1ac40ecec",
+      "mode": "import",
+      "source": {
+        "type": "m"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_DescriptionAtRefresh"
+    }
+  ]
+}

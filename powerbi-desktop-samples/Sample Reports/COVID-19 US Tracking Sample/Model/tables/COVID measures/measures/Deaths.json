@@ -1,0 +1,10 @@
+{
+  "name": "Deaths",
+  "formatString": "#,0",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" ThousandSeparator=\"True\" />"
+    }
+  ]
+}

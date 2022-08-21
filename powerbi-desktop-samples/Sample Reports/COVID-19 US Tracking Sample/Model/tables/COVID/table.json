@@ -1,0 +1,25 @@
+{
+  "name": "COVID",
+  "partitions": [
+    {
+      "name": "COVID-2e509512-c6a9-426c-b8d3-3b5c4542fa79",
+      "mode": "import",
+      "source": {
+        "type": "m"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    },
+    {
+      "name": "PBI_DescriptionAtRefresh"
+    }
+  ]
+}

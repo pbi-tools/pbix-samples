@@ -1,0 +1,15 @@
+
+VAR __CountyName = 'COVID'[County Name]
+VAR __State = 'COVID'[State]
+VAR __Yesterday =  DATEADD(COVID[Date],-1,DAY)
+VAR __TodaysCases = 'COVID'[Cases]
+
+RETURN  __TodaysCases - CALCULATE(
+    SUM('COVID'[Cases]) , 
+    FILTER(
+        COVID, 
+        COVID[Date] = __Yesterday &&
+        COVID[County Name] = __CountyName &&
+        COVID[State] = __State
+    )
+) + 0

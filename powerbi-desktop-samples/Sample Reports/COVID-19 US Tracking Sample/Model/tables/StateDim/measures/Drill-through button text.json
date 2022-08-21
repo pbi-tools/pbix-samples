@@ -1,0 +1,9 @@
+{
+  "name": "Drill-through button text",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"Text\" />"
+    }
+  ]
+}

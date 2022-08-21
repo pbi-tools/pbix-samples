@@ -1,0 +1,20 @@
+{
+  "name": "6e7309534528324c92a5",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "height": 368,
+        "width": 497.51072961373393,
+        "x": 437.05082319255558,
+        "y": 52,
+        "z": 1000
+      }
+    }
+  ],
+  "singleVisualGroup": {
+    "displayName": "Pink Map",
+    "groupMode": 0,
+    "isHidden": true
+  }
+}

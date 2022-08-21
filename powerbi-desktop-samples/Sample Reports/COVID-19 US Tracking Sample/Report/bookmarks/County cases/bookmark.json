@@ -1,0 +1,61 @@
+{
+  "displayName": "County cases",
+  "name": "Bookmark2c6711259e07e54a81db",
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "ReportSectiond674ab9f427ee88965ee",
+    "filters": {
+      "byExpr": [
+        {
+          "name": "Filter",
+          "type": "Categorical",
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "COVID"
+                }
+              },
+              "Property": "Date"
+            }
+          },
+          "howCreated": 1
+        }
+      ]
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "options": {
+    "targetVisualNames": [
+      "b3d79ea376363224cb14",
+      "6e7309534528324c92a5",
+      "46e0729e3686fc3939f4",
+      "6194f6eac715ea6976f9",
+      "1486da12974cb74bee22",
+      "943e86fb14c21ac4b661",
+      "765fab34f553a39f40b2",
+      "97869c2ae02865855b99",
+      "f8fe716025ccbfc5557e",
+      "3638ab3b3629634c6bb0"
+    ],
+    "applyOnlyToTargetVisuals": true,
+    "suppressActiveSection": true,
+    "suppressData": true
+  }
+}

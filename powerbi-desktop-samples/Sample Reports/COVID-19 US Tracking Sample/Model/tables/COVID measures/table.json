@@ -1,0 +1,25 @@
+{
+  "name": "COVID measures",
+  "partitions": [
+    {
+      "name": "COVID measures-b4337b49-e425-4b90-acb0-30bb0500cb95",
+      "mode": "import",
+      "source": {
+        "type": "m"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    },
+    {
+      "name": "PBI_DescriptionAtRefresh"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Max date",
+  "formatString": "General Date",
+  "isHidden": true,
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"1033\" Group=\"GeneralDateTimeLong\" FormatString=\"G\" /></DateTimes></Format>"
+    }
+  ]
+}

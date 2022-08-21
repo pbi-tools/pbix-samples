@@ -1,0 +1,143 @@
+{
+  "relationships": [
+    {
+      "source": "2733d13e23bb26ccf586",
+      "target": "b5cd42b677a37417dff5",
+      "type": 1
+    },
+    {
+      "source": "2733d13e23bb26ccf586",
+      "target": "d610e3df7e7aaa9aecf7",
+      "type": 1
+    },
+    {
+      "source": "2733d13e23bb26ccf586",
+      "target": "925c57e40448405cae83",
+      "type": 1
+    },
+    {
+      "source": "1486da12974cb74bee22",
+      "target": "d610e3df7e7aaa9aecf7",
+      "type": 1
+    },
+    {
+      "source": "1486da12974cb74bee22",
+      "target": "925c57e40448405cae83",
+      "type": 1
+    },
+    {
+      "source": "1486da12974cb74bee22",
+      "target": "6b27b7c87f18083f2387",
+      "type": 1
+    },
+    {
+      "source": "1486da12974cb74bee22",
+      "target": "47a3a67684ca52aab4af",
+      "type": 1
+    },
+    {
+      "source": "2733d13e23bb26ccf586",
+      "target": "47a3a67684ca52aab4af",
+      "type": 1
+    },
+    {
+      "source": "2733d13e23bb26ccf586",
+      "target": "6b27b7c87f18083f2387",
+      "type": 1
+    },
+    {
+      "source": "f8fe716025ccbfc5557e",
+      "target": "47a3a67684ca52aab4af",
+      "type": 1
+    },
+    {
+      "source": "f8fe716025ccbfc5557e",
+      "target": "6b27b7c87f18083f2387",
+      "type": 1
+    },
+    {
+      "source": "f8fe716025ccbfc5557e",
+      "target": "d610e3df7e7aaa9aecf7",
+      "type": 1
+    },
+    {
+      "source": "f8fe716025ccbfc5557e",
+      "target": "925c57e40448405cae83",
+      "type": 1
+    }
+  ],
+  "objects": {
+    "background": [
+      {
+        "properties": {
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          },
+          "image": {
+            "image": {
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Frame 2 (4).png'"
+                  }
+                }
+              },
+              "url": {
+                "expr": {
+                  "ResourcePackageItem": {
+                    "PackageName": "RegisteredResources",
+                    "PackageType": 1,
+                    "ItemName": "Frame_2_(4)9974572814303304.png"
+                  }
+                }
+              },
+              "scaling": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Fit'"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspace": [
+      {
+        "properties": {
+          "color": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "ThemeDataColor": {
+                    "ColorId": 0,
+                    "Percent": -0.1
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "displayArea": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Middle'"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "visibility": 1
+}

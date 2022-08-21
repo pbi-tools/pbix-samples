@@ -1,0 +1,61 @@
+{
+  "displayName": "Blue States",
+  "name": "Bookmarka9fdaaf217e5a62d683c",
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "ReportSection52ab9a1d2e999300e824",
+    "filters": {
+      "byExpr": [
+        {
+          "name": "Filter",
+          "type": "Categorical",
+          "expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "COVID"
+                }
+              },
+              "Property": "Date"
+            }
+          },
+          "howCreated": 1
+        }
+      ]
+    },
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "options": {
+    "targetVisualNames": [
+      "9f6c3a962a40cf45a15e",
+      "2a328220380adfc7a970",
+      "eee1839b4ba79e481436",
+      "07b43f0ff73da3e52494",
+      "14de160d11d2455109e1",
+      "e9a4645cd0cdf46a9485",
+      "3638ab3b3629634c6bb0",
+      "d6be75e8d41e139a29ba",
+      "765fab34f553a39f40b2",
+      "97869c2ae02865855b99"
+    ],
+    "applyOnlyToTargetVisuals": true,
+    "suppressData": true,
+    "suppressActiveSection": true
+  }
+}

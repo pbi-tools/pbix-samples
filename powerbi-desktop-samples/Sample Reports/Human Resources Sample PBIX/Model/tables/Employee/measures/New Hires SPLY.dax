@@ -1,0 +1,1 @@
+CALCULATE([New Hires],SAMEPERIODLASTYEAR('Date'[Date]))

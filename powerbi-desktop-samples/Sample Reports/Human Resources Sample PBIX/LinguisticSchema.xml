@@ -1,0 +1,19 @@
+<LinguisticSchema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Language="en-US" xmlns="http://schemas.microsoft.com/sqlserver/2016/01/linguisticschema">
+  <Entities>
+    <Entity Name="Actives_and_Separations" ConceptualEntity="Pod" Source="Generated">
+      <Words>
+        <Word>Actives and Separations</Word>
+      </Words>
+    </Entity>
+    <Entity Name="Info" ConceptualEntity="Pod1" Source="Generated">
+      <Words>
+        <Word>Info</Word>
+      </Words>
+    </Entity>
+    <Entity Name="New_Hires_Scorecard" ConceptualEntity="Pod2" Source="Generated">
+      <Words>
+        <Word>New Hires Scorecard</Word>
+      </Words>
+    </Entity>
+  </Entities>
+</LinguisticSchema>

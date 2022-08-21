@@ -1,0 +1,119 @@
+{
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 4,
+        "y": 166,
+        "z": 2,
+        "width": 286,
+        "height": 112
+      }
+    }
+  ],
+  "singleVisual": {
+    "title": {
+      "show": true
+    },
+    "visualType": "lineChart",
+    "projections": {
+      "Category": [
+        {
+          "queryRef": "Date.Month",
+          "active": true
+        }
+      ],
+      "Y": [
+        {
+          "queryRef": "Employee.New Hires"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "d",
+          "Entity": "Date"
+        },
+        {
+          "Name": "e",
+          "Entity": "Employee"
+        }
+      ],
+      "Select": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "d"
+              }
+            },
+            "Property": "Month"
+          },
+          "Name": "Date.Month"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "e"
+              }
+            },
+            "Property": "New Hires"
+          },
+          "Name": "Employee.New Hires"
+        }
+      ]
+    },
+    "objects": {
+      "categoryAxis": [
+        {
+          "properties": {
+            "axisType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Categorical'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Top'"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "name": "VisualContainer2"
+}

@@ -1,0 +1,169 @@
+{
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 483.76470588235293,
+        "y": 73.63636363636364,
+        "z": 6,
+        "width": 480.94117647058823,
+        "height": 261.81818181818181
+      }
+    }
+  ],
+  "singleVisual": {
+    "title": {
+      "show": true
+    },
+    "visualType": "lineStackedColumnComboChart",
+    "projections": {
+      "Category": [
+        {
+          "queryRef": "select",
+          "active": true
+        },
+        {
+          "queryRef": "select1"
+        }
+      ],
+      "Series": [
+        {
+          "queryRef": "Ethnicity.Ethnicity"
+        }
+      ],
+      "Y": [
+        {
+          "queryRef": "Employee.New Hires"
+        }
+      ],
+      "Y2": [
+        {
+          "queryRef": "Employee.Actives"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "b",
+          "Entity": "BU"
+        },
+        {
+          "Name": "e",
+          "Entity": "Ethnicity"
+        },
+        {
+          "Name": "e1",
+          "Entity": "Employee"
+        }
+      ],
+      "Select": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "b"
+              }
+            },
+            "Property": "Region"
+          },
+          "Name": "select"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "b"
+              }
+            },
+            "Property": "VP"
+          },
+          "Name": "select1"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "e"
+              }
+            },
+            "Property": "Ethnicity"
+          },
+          "Name": "Ethnicity.Ethnicity"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "e1"
+              }
+            },
+            "Property": "New Hires"
+          },
+          "Name": "Employee.New Hires"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "e1"
+              }
+            },
+            "Property": "Actives"
+          },
+          "Name": "Employee.Actives"
+        }
+      ]
+    },
+    "objects": {
+      "categoryAxis": [
+        {
+          "properties": {
+            "axisType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Categorical'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Top'"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "name": "VisualContainer6"
+}

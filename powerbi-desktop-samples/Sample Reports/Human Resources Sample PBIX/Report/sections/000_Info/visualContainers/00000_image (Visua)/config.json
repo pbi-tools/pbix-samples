@@ -1,0 +1,35 @@
+{
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 1.3913043478260869,
+        "y": 19.478260869565219,
+        "z": 1,
+        "width": 1277.2173913043478,
+        "height": 699.13043478260875
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "image",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "imageUrl": {
+              "expr": {
+                "ResourcePackageItem": {
+                  "PackageName": "RegisteredResources",
+                  "PackageType": 1,
+                  "ItemName": "power-bi-obvience-splash26753389625810087.png"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "name": "VisualContainer"
+}

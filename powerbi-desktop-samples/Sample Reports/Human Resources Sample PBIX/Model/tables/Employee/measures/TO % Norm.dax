@@ -1,0 +1,1 @@
+CALCULATE([TO %], all(Gender[Gender]), ALL(Ethnicity[Ethnicity]))

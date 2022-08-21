@@ -1,0 +1,50 @@
+{
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 28,
+        "y": 0,
+        "z": 0,
+        "width": 417,
+        "height": 62
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "New Hires",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI Light",
+                      "fontSize": "37.33px",
+                      "fontStyle": "normal",
+                      "fontWeight": "bold"
+                    }
+                  },
+                  {
+                    "value": " ",
+                    "textStyle": {
+                      "fontFamily": "Segoe UI Light",
+                      "fontSize": "37.33px",
+                      "fontStyle": "normal",
+                      "fontWeight": "normal"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "name": "VisualContainer"
+}

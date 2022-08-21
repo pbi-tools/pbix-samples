@@ -1,0 +1,17 @@
+{
+  "name": "TermReason",
+  "dataType": "string",
+  "isHidden": true,
+  "sourceColumn": "TermReason",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "String#####not a type"
+    },
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

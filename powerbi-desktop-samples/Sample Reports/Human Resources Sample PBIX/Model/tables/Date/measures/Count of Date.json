@@ -1,0 +1,9 @@
+{
+  "name": "Count of Date",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"General\" />"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "name": "PayType",
+  "partitions": [
+    {
+      "name": "PayGroup",
+      "source": {
+        "type": "query",
+        "query": "SELECT [PayType].* FROM [PayType]",
+        "dataSource": "f0c5823a-3320-4d72-8bf9-0e6d1addcccf"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "4dffb944-534f-4ad4-aac8-c4c23e41ff1b"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "PayType"
+    }
+  ]
+}

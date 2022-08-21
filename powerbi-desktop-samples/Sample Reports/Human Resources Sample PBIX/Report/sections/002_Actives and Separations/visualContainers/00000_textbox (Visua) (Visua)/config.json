@@ -1,0 +1,39 @@
+{
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 877.89473684210532,
+        "y": 0,
+        "z": 7,
+        "width": 401.68421052631578,
+        "height": 36.631578947368425
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Tap the arrows above on the left to drill down. To drill up, tap the up arrow.",
+                    "textStyle": {
+                      "fontSize": "12px"
+                    }
+                  }
+                ],
+                "horizontalTextAlignment": "center"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "name": "VisualContainer8"
+}

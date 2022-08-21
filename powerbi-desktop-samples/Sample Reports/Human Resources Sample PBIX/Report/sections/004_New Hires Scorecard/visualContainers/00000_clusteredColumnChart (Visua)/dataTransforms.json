@@ -1,0 +1,145 @@
+{
+  "objects": {
+    "legend": [
+      {
+        "properties": {
+          "position": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Y": [
+      0
+    ],
+    "Category": [
+      1
+    ],
+    "Series": [
+      2
+    ]
+  },
+  "projectionActiveItems": {
+    "Category": [
+      {
+        "queryRef": "FP.FPDesc",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "New Hires",
+        "Name": "Employee.New Hires",
+        "Type": 3,
+        "Format": "#,0"
+      },
+      {
+        "Restatement": "FPDesc",
+        "Name": "FP.FPDesc",
+        "Type": 2048
+      },
+      {
+        "Restatement": "AgeGroup",
+        "Name": "AgeGroup.AgeGroup",
+        "Type": 2048
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Y",
+          "Projection": 0,
+          "isActive": false
+        },
+        {
+          "Name": "Category",
+          "Projection": 1,
+          "isActive": true
+        },
+        {
+          "Name": "Series",
+          "Projection": 2,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "New Hires",
+      "format": "#,0",
+      "queryName": "Employee.New Hires",
+      "roles": {
+        "Y": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Employee"
+            }
+          },
+          "Property": "New Hires"
+        }
+      }
+    },
+    {
+      "displayName": "FPDesc",
+      "queryName": "FP.FPDesc",
+      "roles": {
+        "Category": true
+      },
+      "sort": 1,
+      "sortOrder": 0,
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "FP"
+            }
+          },
+          "Property": "FPDesc"
+        }
+      }
+    },
+    {
+      "displayName": "AgeGroup",
+      "queryName": "AgeGroup.AgeGroup",
+      "roles": {
+        "Series": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "AgeGroup"
+            }
+          },
+          "Property": "AgeGroup"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "name": "RegionSeq",
+  "dataType": "string",
+  "sourceColumn": "RegionSeq",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "String#####not a type"
+    },
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

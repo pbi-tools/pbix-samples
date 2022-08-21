@@ -1,0 +1,1 @@
+CEILING([TenureDays]/30, 1) -1

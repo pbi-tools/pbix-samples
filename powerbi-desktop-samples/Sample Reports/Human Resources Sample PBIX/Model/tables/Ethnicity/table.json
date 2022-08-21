@@ -1,0 +1,24 @@
+{
+  "name": "Ethnicity",
+  "partitions": [
+    {
+      "name": "Ethnicity",
+      "mode": "import",
+      "source": {
+        "type": "query",
+        "query": "SELECT [Ethnicity].* FROM [Ethnicity]",
+        "dataSource": "94f5c514-57f9-4005-bb09-baad54fd6d3a"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "eace0d55-7fe9-4b68-b619-be7097adbe01"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "Ethnicity"
+    }
+  ]
+}

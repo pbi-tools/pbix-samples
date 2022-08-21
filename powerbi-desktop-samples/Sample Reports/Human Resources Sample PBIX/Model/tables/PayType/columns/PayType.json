@@ -1,0 +1,16 @@
+{
+  "name": "PayType",
+  "dataType": "string",
+  "sourceColumn": "PayType",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "String#####not a type"
+    },
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

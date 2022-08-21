@@ -1,0 +1,1 @@
+CALCULATE([Actives],SAMEPERIODLASTYEAR('Date'[Date]))

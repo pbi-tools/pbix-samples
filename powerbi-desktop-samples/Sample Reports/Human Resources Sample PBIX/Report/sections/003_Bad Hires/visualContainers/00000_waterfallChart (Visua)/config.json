@@ -1,0 +1,111 @@
+{
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 309.048128342246,
+        "y": 0,
+        "z": 5,
+        "width": 631.44385026737962,
+        "height": 219.31034482758619
+      }
+    }
+  ],
+  "singleVisual": {
+    "title": {
+      "show": true
+    },
+    "visualType": "waterfallChart",
+    "projections": {
+      "Category": [
+        {
+          "queryRef": "AgeGroup.AgeGroup",
+          "active": true
+        }
+      ],
+      "Y": [
+        {
+          "queryRef": "Employee.BadHire%ofActives"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "e",
+          "Entity": "Employee"
+        },
+        {
+          "Name": "a",
+          "Entity": "AgeGroup"
+        }
+      ],
+      "Select": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "e"
+              }
+            },
+            "Property": "BadHire%ofActives"
+          },
+          "Name": "Employee.BadHire%ofActives"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "a"
+              }
+            },
+            "Property": "AgeGroup"
+          },
+          "Name": "AgeGroup.AgeGroup"
+        }
+      ]
+    },
+    "objects": {
+      "categoryAxis": [
+        {
+          "properties": {}
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Top'"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "name": "VisualContainer5"
+}

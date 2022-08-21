@@ -1,0 +1,24 @@
+{
+  "name": "Date",
+  "dataCategory": "Time",
+  "partitions": [
+    {
+      "name": "Date",
+      "source": {
+        "type": "query",
+        "query": "SELECT [Date].* FROM [Date]",
+        "dataSource": "c26febe9-cb41-4418-9ef5-95998c8dd785"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "fe877417-f25c-431b-a9e9-7f5b60625a51"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "Date"
+    }
+  ]
+}

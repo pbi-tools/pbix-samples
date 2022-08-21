@@ -1,0 +1,106 @@
+{
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 707.76470588235293,
+        "y": 402.9545454545455,
+        "z": 4,
+        "width": 262.58823529411762,
+        "height": 283.29545454545456
+      }
+    }
+  ],
+  "singleVisual": {
+    "title": {
+      "show": false
+    },
+    "visualType": "waterfallChart",
+    "projections": {
+      "Category": [
+        {
+          "queryRef": "AgeGroup.AgeGroup",
+          "active": true
+        }
+      ],
+      "Y": [
+        {
+          "queryRef": "Employee.New Hires"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "a",
+          "Entity": "AgeGroup"
+        },
+        {
+          "Name": "e",
+          "Entity": "Employee"
+        }
+      ],
+      "Select": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "a"
+              }
+            },
+            "Property": "AgeGroup"
+          },
+          "Name": "AgeGroup.AgeGroup"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "e"
+              }
+            },
+            "Property": "New Hires"
+          },
+          "Name": "Employee.New Hires"
+        }
+      ]
+    },
+    "objects": {
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Top'"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "name": "VisualContainer4"
+}

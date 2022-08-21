@@ -1,0 +1,24 @@
+{
+  "name": "Employee",
+  "isHidden": true,
+  "partitions": [
+    {
+      "name": "Employee",
+      "source": {
+        "type": "query",
+        "query": "SELECT [Employee].* FROM [Employee]",
+        "dataSource": "c64b9c7b-ea86-46e1-8c66-1cbcaa783269"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "1a98b2d6-b968-4f9b-9e37-5d7b31f7ae37"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "Employee"
+    }
+  ]
+}

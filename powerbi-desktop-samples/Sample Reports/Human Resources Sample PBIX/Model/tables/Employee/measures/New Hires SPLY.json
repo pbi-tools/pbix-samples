@@ -1,0 +1,10 @@
+{
+  "name": "New Hires SPLY",
+  "formatString": "#,0",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"NumberWhole\" ThousandSeparator=\"True\" />"
+    }
+  ]
+}

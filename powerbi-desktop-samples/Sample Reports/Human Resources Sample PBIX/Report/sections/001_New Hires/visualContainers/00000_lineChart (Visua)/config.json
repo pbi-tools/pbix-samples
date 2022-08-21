@@ -1,0 +1,139 @@
+{
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 19.764705882352942,
+        "y": 368.18181818181819,
+        "z": 2,
+        "width": 460.23529411764707,
+        "height": 318.06818181818181
+      }
+    }
+  ],
+  "singleVisual": {
+    "title": {
+      "show": true
+    },
+    "visualType": "lineChart",
+    "projections": {
+      "Category": [
+        {
+          "queryRef": "Date.Month",
+          "active": true
+        }
+      ],
+      "Series": [
+        {
+          "queryRef": "FP.FPDesc"
+        }
+      ],
+      "Y": [
+        {
+          "queryRef": "Employee.New Hires"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "d",
+          "Entity": "Date"
+        },
+        {
+          "Name": "f",
+          "Entity": "FP"
+        },
+        {
+          "Name": "e",
+          "Entity": "Employee"
+        }
+      ],
+      "Select": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "d"
+              }
+            },
+            "Property": "Month"
+          },
+          "Name": "Date.Month"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "f"
+              }
+            },
+            "Property": "FPDesc"
+          },
+          "Name": "FP.FPDesc"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "e"
+              }
+            },
+            "Property": "New Hires"
+          },
+          "Name": "Employee.New Hires"
+        }
+      ]
+    },
+    "objects": {
+      "categoryAxis": [
+        {
+          "properties": {
+            "axisType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Categorical'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Top'"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "name": "VisualContainer1"
+}

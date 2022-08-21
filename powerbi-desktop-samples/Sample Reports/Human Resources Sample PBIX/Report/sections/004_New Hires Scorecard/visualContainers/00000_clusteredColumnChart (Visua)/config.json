@@ -1,0 +1,103 @@
+{
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 6,
+        "y": 290,
+        "z": 6,
+        "width": 279,
+        "height": 160
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "clusteredColumnChart",
+    "projections": {
+      "Y": [
+        {
+          "queryRef": "Employee.New Hires"
+        }
+      ],
+      "Category": [
+        {
+          "queryRef": "FP.FPDesc",
+          "active": true
+        }
+      ],
+      "Series": [
+        {
+          "queryRef": "AgeGroup.AgeGroup"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "e",
+          "Entity": "Employee"
+        },
+        {
+          "Name": "f",
+          "Entity": "FP"
+        },
+        {
+          "Name": "a",
+          "Entity": "AgeGroup"
+        }
+      ],
+      "Select": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "e"
+              }
+            },
+            "Property": "New Hires"
+          },
+          "Name": "Employee.New Hires"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "f"
+              }
+            },
+            "Property": "FPDesc"
+          },
+          "Name": "FP.FPDesc"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "a"
+              }
+            },
+            "Property": "AgeGroup"
+          },
+          "Name": "AgeGroup.AgeGroup"
+        }
+      ]
+    },
+    "objects": {
+      "legend": [
+        {
+          "properties": {
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Top'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "name": "VisualContainer5"
+}

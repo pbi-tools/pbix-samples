@@ -1,0 +1,15 @@
+{
+  "version": "0.12",
+  "created": "2022-08-21T22:23:36.1106128+01:00",
+  "queries": {
+    "BU": "f1baaec0-4b1b-4ff0-a70a-8a434a666c02",
+    "FP": "2c13963b-9356-4dd5-bc45-7be8c1638474",
+    "PayType": "f0c5823a-3320-4d72-8bf9-0e6d1addcccf",
+    "SeparationReason": "1fabd8f6-a003-497e-9971-411edba93480",
+    "Date": "c26febe9-cb41-4418-9ef5-95998c8dd785",
+    "Employee": "c64b9c7b-ea86-46e1-8c66-1cbcaa783269",
+    "Ethnicity": "94f5c514-57f9-4005-bb09-baad54fd6d3a",
+    "Gender": "7bbfc22e-f8b5-4f03-90aa-3090fe9ec636",
+    "AgeGroup": "6a34130a-374a-4696-a28f-ea5ff620f7c9"
+  }
+}

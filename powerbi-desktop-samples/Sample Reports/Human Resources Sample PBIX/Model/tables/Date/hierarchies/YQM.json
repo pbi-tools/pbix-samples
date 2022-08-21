@@ -1,0 +1,20 @@
+{
+  "name": "YQM",
+  "levels": [
+    {
+      "name": "Year",
+      "ordinal": 0,
+      "column": "Year"
+    },
+    {
+      "name": "QtrNumber",
+      "ordinal": 1,
+      "column": "QtrNumber"
+    },
+    {
+      "name": "PeriodNumber",
+      "ordinal": 2,
+      "column": "PeriodNumber"
+    }
+  ]
+}

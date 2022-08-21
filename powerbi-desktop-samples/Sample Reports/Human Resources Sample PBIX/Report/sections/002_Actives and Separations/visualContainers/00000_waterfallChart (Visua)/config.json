@@ -1,0 +1,125 @@
+{
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 879.1578947368422,
+        "y": 51.789473684210527,
+        "z": 7,
+        "width": 389.0526315789474,
+        "height": 192
+      }
+    }
+  ],
+  "singleVisual": {
+    "title": {
+      "show": true
+    },
+    "visualType": "waterfallChart",
+    "projections": {
+      "Category": [
+        {
+          "queryRef": "select",
+          "active": true
+        },
+        {
+          "queryRef": "select1"
+        }
+      ],
+      "Y": [
+        {
+          "queryRef": "Employee.Actives YoY Var"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "b",
+          "Entity": "BU"
+        },
+        {
+          "Name": "e",
+          "Entity": "Employee"
+        }
+      ],
+      "Select": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "b"
+              }
+            },
+            "Property": "Region"
+          },
+          "Name": "select"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "b"
+              }
+            },
+            "Property": "VP"
+          },
+          "Name": "select1"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "e"
+              }
+            },
+            "Property": "Actives YoY Var"
+          },
+          "Name": "Employee.Actives YoY Var"
+        }
+      ]
+    },
+    "objects": {
+      "categoryAxis": [
+        {
+          "properties": {}
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Right'"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "name": "VisualContainer4"
+}

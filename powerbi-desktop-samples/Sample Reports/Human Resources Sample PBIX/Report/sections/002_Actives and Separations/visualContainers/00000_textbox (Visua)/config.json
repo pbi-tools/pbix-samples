@@ -1,0 +1,41 @@
+{
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 26,
+        "y": 2,
+        "z": 2,
+        "width": 586,
+        "height": 64
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Active Employees vs Separations",
+                    "textStyle": {
+                      "fontFamily": "Heading",
+                      "fontSize": "37.33px",
+                      "fontStyle": "normal",
+                      "fontWeight": "bold"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "name": "VisualContainer"
+}

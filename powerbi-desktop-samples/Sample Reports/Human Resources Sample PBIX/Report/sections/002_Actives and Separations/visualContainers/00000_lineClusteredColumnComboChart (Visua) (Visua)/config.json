@@ -1,0 +1,181 @@
+{
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 13.894736842105264,
+        "y": 413.0526315789474,
+        "z": 10,
+        "width": 496.42105263157896,
+        "height": 280.42105263157896
+      }
+    }
+  ],
+  "singleVisual": {
+    "title": {
+      "show": false
+    },
+    "visualType": "lineClusteredColumnComboChart",
+    "projections": {
+      "Category": [
+        {
+          "queryRef": "select",
+          "active": true
+        },
+        {
+          "queryRef": "select1"
+        },
+        {
+          "queryRef": "select2"
+        }
+      ],
+      "Y": [
+        {
+          "queryRef": "Employee.Seps"
+        },
+        {
+          "queryRef": "Employee.Seps SPLY"
+        }
+      ],
+      "Y2": [
+        {
+          "queryRef": "Employee.Actives YoY % Change"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "d",
+          "Entity": "Date"
+        },
+        {
+          "Name": "b",
+          "Entity": "BU"
+        },
+        {
+          "Name": "e",
+          "Entity": "Employee"
+        }
+      ],
+      "Select": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "d"
+              }
+            },
+            "Property": "Month"
+          },
+          "Name": "select"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "b"
+              }
+            },
+            "Property": "Region"
+          },
+          "Name": "select1"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "b"
+              }
+            },
+            "Property": "VP"
+          },
+          "Name": "select2"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "e"
+              }
+            },
+            "Property": "Seps"
+          },
+          "Name": "Employee.Seps"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "e"
+              }
+            },
+            "Property": "Seps SPLY"
+          },
+          "Name": "Employee.Seps SPLY"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "e"
+              }
+            },
+            "Property": "Actives YoY % Change"
+          },
+          "Name": "Employee.Actives YoY % Change"
+        }
+      ]
+    },
+    "objects": {
+      "categoryAxis": [
+        {
+          "properties": {
+            "axisType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Categorical'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Top'"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "name": "VisualContainer6"
+}

@@ -1,0 +1,105 @@
+{
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 150,
+        "y": 467,
+        "z": 3,
+        "width": 144,
+        "height": 125
+      }
+    }
+  ],
+  "singleVisual": {
+    "title": {
+      "show": true
+    },
+    "visualType": "pieChart",
+    "projections": {
+      "Y": [
+        {
+          "queryRef": "select1"
+        }
+      ],
+      "Series": [
+        {
+          "queryRef": "PayType.PayType"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "e",
+          "Entity": "Employee"
+        },
+        {
+          "Name": "p",
+          "Entity": "PayType"
+        }
+      ],
+      "Select": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "e"
+              }
+            },
+            "Property": "New Hires"
+          },
+          "Name": "select1"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "p"
+              }
+            },
+            "Property": "PayType"
+          },
+          "Name": "PayType.PayType"
+        }
+      ]
+    },
+    "objects": {
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Right'"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "name": "VisualContainer4"
+}

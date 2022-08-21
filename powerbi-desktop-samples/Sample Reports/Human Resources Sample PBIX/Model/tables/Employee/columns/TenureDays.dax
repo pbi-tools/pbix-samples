@@ -1,0 +1,1 @@
+IF([date]-[HireDate]<0,[HireDate]-[date],[date]-[HireDate])

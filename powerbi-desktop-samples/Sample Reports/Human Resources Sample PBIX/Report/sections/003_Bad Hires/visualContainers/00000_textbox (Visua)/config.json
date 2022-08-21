@@ -1,0 +1,55 @@
+{
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 24.641711229946523,
+        "y": 6.2068965517241379,
+        "z": 0,
+        "width": 240.2566844919786,
+        "height": 90
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Bad Hires",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "37.33px"
+                    }
+                  },
+                  {
+                    "value": " ",
+                    "textStyle": {
+                      "fontSize": "18.67px"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "(<60 day employment)",
+                    "textStyle": {
+                      "fontSize": "18.67px"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "name": "VisualContainer"
+}

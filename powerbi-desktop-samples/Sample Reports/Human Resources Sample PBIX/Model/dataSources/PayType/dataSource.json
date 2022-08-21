@@ -1,0 +1,5 @@
+{
+  "name": "f0c5823a-3320-4d72-8bf9-0e6d1addcccf",
+  "connectionString": "provider=Microsoft.PowerBI.OleDb;location=PayType",
+  "impersonationMode": "impersonateCurrentUser"
+}

@@ -1,0 +1,32 @@
+{
+  "name": "MonthStartDate",
+  "dataType": "dateTime",
+  "sourceColumn": "MonthStartDate",
+  "formatString": "General Date",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "f496f9ad-5665-4785-a30e-b1bbcf7be215",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_d2ea5b26-668d-4c17-b228-695669b066a6",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"1033\" Group=\"GeneralDateTimeLong\" FormatString=\"G\" /></DateTimes></Format>"
+    },
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "DateTime#####not a type"
+    },
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

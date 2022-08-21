@@ -1,0 +1,33 @@
+{
+  "name": "TermDate",
+  "dataType": "dateTime",
+  "isHidden": true,
+  "sourceColumn": "TermDate",
+  "formatString": "General Date",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "e020e64e-e74a-4b8f-bed8-e879143ea6d8",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_cc28ef26-f63a-4bc3-b357-93ab34cd6d9b",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"1033\" Group=\"GeneralDateTimeLong\" FormatString=\"G\" /></DateTimes></Format>"
+    },
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "DateTime#####not a type"
+    },
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

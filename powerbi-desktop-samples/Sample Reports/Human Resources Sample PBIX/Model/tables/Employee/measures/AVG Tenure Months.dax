@@ -1,0 +1,1 @@
+ROUND([AVG Tenure Days]/30, 1)-1

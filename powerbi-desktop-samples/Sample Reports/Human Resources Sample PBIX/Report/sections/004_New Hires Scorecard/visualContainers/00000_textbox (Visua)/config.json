@@ -1,0 +1,57 @@
+{
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 23,
+        "y": 0,
+        "z": 0,
+        "width": 247,
+        "height": 80
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "New Hires",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "32px"
+                    }
+                  },
+                  {
+                    "value": " ",
+                    "textStyle": {
+                      "fontSize": "18.67px"
+                    }
+                  }
+                ],
+                "horizontalTextAlignment": "center"
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "for",
+                    "textStyle": {
+                      "fontSize": "20px"
+                    }
+                  }
+                ],
+                "horizontalTextAlignment": "center"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "name": "VisualContainer"
+}

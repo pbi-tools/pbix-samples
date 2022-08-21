@@ -1,0 +1,17 @@
+{
+  "name": "PayTypeID",
+  "dataType": "string",
+  "isHidden": true,
+  "sourceColumn": "PayTypeID",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "String#####not a type"
+    },
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

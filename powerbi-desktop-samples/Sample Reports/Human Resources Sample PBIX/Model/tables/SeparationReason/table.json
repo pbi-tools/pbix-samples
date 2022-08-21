@@ -1,0 +1,23 @@
+{
+  "name": "SeparationReason",
+  "partitions": [
+    {
+      "name": "TermReason",
+      "source": {
+        "type": "query",
+        "query": "SELECT [SeparationReason].* FROM [SeparationReason]",
+        "dataSource": "1fabd8f6-a003-497e-9971-411edba93480"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "af1bb3c4-c305-467a-ac53-a70a447626a2"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "SeparationReason"
+    }
+  ]
+}

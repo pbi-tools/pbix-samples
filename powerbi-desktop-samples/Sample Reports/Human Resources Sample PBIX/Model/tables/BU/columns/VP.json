@@ -1,0 +1,16 @@
+{
+  "name": "VP",
+  "dataType": "string",
+  "sourceColumn": "VP",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "String#####not a type"
+    },
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

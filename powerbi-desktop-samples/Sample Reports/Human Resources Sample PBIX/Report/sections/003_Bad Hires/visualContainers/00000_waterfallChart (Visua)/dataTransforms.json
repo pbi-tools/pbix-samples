@@ -1,0 +1,134 @@
+{
+  "objects": {
+    "categoryAxis": [
+      {
+        "properties": {}
+      }
+    ],
+    "labels": [
+      {
+        "properties": {
+          "show": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "legend": [
+      {
+        "properties": {
+          "position": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          },
+          "show": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Category": [
+      1
+    ],
+    "Y": [
+      0
+    ]
+  },
+  "projectionActiveItems": {
+    "Category": [
+      {
+        "queryRef": "AgeGroup.AgeGroup",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "BadHire%ofActives",
+        "Name": "Employee.BadHire%ofActives",
+        "Type": 1,
+        "Format": "0.00 %;-0.00 %;0.00 %"
+      },
+      {
+        "Restatement": "AgeGroup",
+        "Name": "AgeGroup.AgeGroup",
+        "Type": 2048
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Category",
+          "Projection": 1,
+          "isActive": true
+        },
+        {
+          "Name": "Y",
+          "Projection": 0,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "BadHire%ofActives",
+      "format": "0.00 %;-0.00 %;0.00 %",
+      "queryName": "Employee.BadHire%ofActives",
+      "roles": {
+        "Y": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Employee"
+            }
+          },
+          "Property": "BadHire%ofActives"
+        }
+      }
+    },
+    {
+      "displayName": "AgeGroup",
+      "queryName": "AgeGroup.AgeGroup",
+      "roles": {
+        "Category": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "AgeGroup"
+            }
+          },
+          "Property": "AgeGroup"
+        }
+      }
+    }
+  ]
+}

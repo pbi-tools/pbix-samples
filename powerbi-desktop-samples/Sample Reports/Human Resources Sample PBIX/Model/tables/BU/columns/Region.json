@@ -1,0 +1,22 @@
+{
+  "type": "calculated",
+  "name": "Region",
+  "dataType": "string",
+  "isDataTypeInferred": true,
+  "sortByColumn": "RegionSeq",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"Text\" />"
+    },
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "String#####not a type"
+    },
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

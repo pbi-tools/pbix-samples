@@ -1,0 +1,310 @@
+<LocalPackageMetadataFile>
+  <Items>
+    <Item>
+      <ItemLocation>
+        <ItemType>AllFormulas</ItemType>
+        <ItemPath />
+      </ItemLocation>
+      <StableEntries>
+        <Entry Type="RunBackgroundAnalysis" Value="sFalse" />
+      </StableEntries>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/BU</ItemPath>
+      </ItemLocation>
+      <StableEntries>
+        <Entry Type="IsPrivate" Value="l0" />
+        <Entry Type="LastAnalysisServicesFormulaText" Value="s{&quot;IncludesReferencedQueries&quot;:true,&quot;RootFormulaText&quot;:&quot;let\r\n    Source = Sql.Database(\&quot;.\&quot;, \&quot;IP\&quot;, [Query=\&quot;select distinct market BU,#(lf)  REGIONTITLE Region,#(lf)  MARKETDIRECTOR VP#(lf)from hr.bu\&quot;]),\r\n    #\&quot;Renamed Columns\&quot; = Table.RenameColumns(Source, {{\&quot;BU\&quot;, \&quot;BU\&quot;}, {\&quot;Region\&quot;, \&quot;RegionSeq\&quot;}, {\&quot;VP\&quot;, \&quot;VP\&quot;}}),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(#\&quot;Renamed Columns\&quot;, {{\&quot;BU\&quot;, type text}, {\&quot;RegionSeq\&quot;, type text}, {\&quot;VP\&quot;, type text}})\r\nin\r\n    #\&quot;Changed Type\&quot;&quot;,&quot;ReferencedQueriesFormulaText&quot;:{}}" />
+        <Entry Type="IsLastAnalysisServicesFormulaTextCollection" Value="l1" />
+        <Entry Type="LoadedToAnalysisServices" Value="l1" />
+      </StableEntries>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/BU/Source</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/BU/Renamed%20Columns</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/BU/Changed%20Type</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/FP</ItemPath>
+      </ItemLocation>
+      <StableEntries>
+        <Entry Type="IsPrivate" Value="l0" />
+        <Entry Type="LastAnalysisServicesFormulaText" Value="s{&quot;IncludesReferencedQueries&quot;:true,&quot;RootFormulaText&quot;:&quot;let\r\n    Source = Sql.Database(\&quot;.\&quot;, \&quot;IP\&quot;, [Query=\&quot;SELECT [HR].[FP].*   FROM [HR].[FP]\&quot;]),\r\n    #\&quot;Renamed Columns\&quot; = Table.RenameColumns(Source, {{\&quot;FP\&quot;, \&quot;FP\&quot;}, {\&quot;FPDesc\&quot;, \&quot;FPDesc\&quot;}}),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(#\&quot;Renamed Columns\&quot;, {{\&quot;FP\&quot;, type text}, {\&quot;FPDesc\&quot;, type text}})\r\nin\r\n    #\&quot;Changed Type\&quot;&quot;,&quot;ReferencedQueriesFormulaText&quot;:{}}" />
+        <Entry Type="IsLastAnalysisServicesFormulaTextCollection" Value="l1" />
+        <Entry Type="LoadedToAnalysisServices" Value="l1" />
+      </StableEntries>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/FP/Source</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/FP/Renamed%20Columns</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/FP/Changed%20Type</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/PayType</ItemPath>
+      </ItemLocation>
+      <StableEntries>
+        <Entry Type="IsPrivate" Value="l0" />
+        <Entry Type="LastAnalysisServicesFormulaText" Value="s{&quot;IncludesReferencedQueries&quot;:true,&quot;RootFormulaText&quot;:&quot;let\r\n    Source = Sql.Database(\&quot;.\&quot;, \&quot;IP\&quot;, [Query=\&quot;select distinct PayTypeID, [Hrly-Salaried] PayType#(lf)from [HR].[PayGroup]\&quot;]),\r\n    #\&quot;Renamed Columns\&quot; = Table.RenameColumns(Source, {{\&quot;PayTypeID\&quot;, \&quot;PayTypeID\&quot;}, {\&quot;PayType\&quot;, \&quot;PayType\&quot;}}),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(#\&quot;Renamed Columns\&quot;, {{\&quot;PayTypeID\&quot;, type text}, {\&quot;PayType\&quot;, type text}})\r\nin\r\n    #\&quot;Changed Type\&quot;&quot;,&quot;ReferencedQueriesFormulaText&quot;:{}}" />
+        <Entry Type="IsLastAnalysisServicesFormulaTextCollection" Value="l1" />
+        <Entry Type="LoadedToAnalysisServices" Value="l1" />
+      </StableEntries>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/PayType/Source</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/PayType/Renamed%20Columns</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/PayType/Changed%20Type</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/SeparationReason</ItemPath>
+      </ItemLocation>
+      <StableEntries>
+        <Entry Type="IsPrivate" Value="l0" />
+        <Entry Type="LastAnalysisServicesFormulaText" Value="s{&quot;IncludesReferencedQueries&quot;:true,&quot;RootFormulaText&quot;:&quot;let\r\n    Source = Sql.Database(\&quot;.\&quot;, \&quot;IP\&quot;, [Query=\&quot;SELECT distinct SeparationTypeID, [Vol-Invol] SeparationReason#(lf)  FROM [IP].[HR].[TermReason]\&quot;]),\r\n    #\&quot;Renamed Columns\&quot; = Table.RenameColumns(Source, {{\&quot;SeparationTypeID\&quot;, \&quot;SeparationTypeID\&quot;}, {\&quot;SeparationReason\&quot;, \&quot;SeparationReason\&quot;}}),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(#\&quot;Renamed Columns\&quot;, {{\&quot;SeparationTypeID\&quot;, type text}, {\&quot;SeparationReason\&quot;, type text}})\r\nin\r\n    #\&quot;Changed Type\&quot;&quot;,&quot;ReferencedQueriesFormulaText&quot;:{}}" />
+        <Entry Type="IsLastAnalysisServicesFormulaTextCollection" Value="l1" />
+        <Entry Type="LoadedToAnalysisServices" Value="l1" />
+      </StableEntries>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/SeparationReason/Source</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/SeparationReason/Renamed%20Columns</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/SeparationReason/Changed%20Type</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Date</ItemPath>
+      </ItemLocation>
+      <StableEntries>
+        <Entry Type="IsPrivate" Value="l0" />
+        <Entry Type="LastAnalysisServicesFormulaText" Value="s{&quot;IncludesReferencedQueries&quot;:true,&quot;RootFormulaText&quot;:&quot;let\r\n    Source = Sql.Database(\&quot;.\&quot;, \&quot;IP\&quot;, [Query=\&quot;SELECT [HR].[Date].*   FROM [HR].[Date]\&quot;]),\r\n    #\&quot;Renamed Columns\&quot; = Table.RenameColumns(Source, {{\&quot;Date\&quot;, \&quot;Date\&quot;}, {\&quot;Month\&quot;, \&quot;Month\&quot;}, {\&quot;MonthNumber\&quot;, \&quot;MonthNumber\&quot;}, {\&quot;Period\&quot;, \&quot;Period\&quot;}, {\&quot;PeriodNumber\&quot;, \&quot;PeriodNumber\&quot;}, {\&quot;Qtr\&quot;, \&quot;Qtr\&quot;}, {\&quot;QtrNumber\&quot;, \&quot;QtrNumber\&quot;}, {\&quot;Year\&quot;, \&quot;Year\&quot;}, {\&quot;Day\&quot;, \&quot;Day\&quot;}, {\&quot;MonthStartDate\&quot;, \&quot;MonthStartDate\&quot;}, {\&quot;MonthEndDate\&quot;, \&quot;MonthEndDate\&quot;}}),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(#\&quot;Renamed Columns\&quot;, {{\&quot;Date\&quot;, type datetime}, {\&quot;Month\&quot;, type text}, {\&quot;MonthNumber\&quot;, Int64.Type}, {\&quot;Period\&quot;, type text}, {\&quot;PeriodNumber\&quot;, Int64.Type}, {\&quot;Qtr\&quot;, Int64.Type}, {\&quot;QtrNumber\&quot;, type text}, {\&quot;Year\&quot;, Int64.Type}, {\&quot;Day\&quot;, Int64.Type}, {\&quot;MonthStartDate\&quot;, type datetime}, {\&quot;MonthEndDate\&quot;, type datetime}})\r\nin\r\n    #\&quot;Changed Type\&quot;&quot;,&quot;ReferencedQueriesFormulaText&quot;:{}}" />
+        <Entry Type="IsLastAnalysisServicesFormulaTextCollection" Value="l1" />
+        <Entry Type="LoadedToAnalysisServices" Value="l1" />
+      </StableEntries>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Date/Source</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Date/Renamed%20Columns</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Date/Changed%20Type</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Employee</ItemPath>
+      </ItemLocation>
+      <StableEntries>
+        <Entry Type="IsPrivate" Value="l0" />
+        <Entry Type="LastAnalysisServicesFormulaText" Value="s{&quot;IncludesReferencedQueries&quot;:true,&quot;RootFormulaText&quot;:&quot;let\r\n    Source = Sql.Database(\&quot;.\&quot;, \&quot;IP\&quot;, [Query=\&quot;SELECT dateadd(year, 1, d.date) Date#(lf)  ,Market BU#(lf)  ,[EmplID]#(lf)  ,iif([Gender]=\u0027M\u0027, \u0027C\u0027, \u0027D\u0027) Gender --  ,iif([Gender]=\u0027M\u0027, \u0027F\u0027, \u0027M\u0027) Gender#(lf)  ,[Age] - (2013 - year(d.date)) Age#(lf)  ,[EthnicGroup]#(lf)  ,[FP]#(lf)  ,dateadd(year, 1, [SenDate]) HireDate#(lf)  ,p.PayTypeID#(lf)  ,null [TermDate]#(lf)  ,null [TermReason]#(lf) FROM [IP].[HR].[AllEmps] E , [HR].[Date] d , [HR].[BU] b , hr.PayGroup p --, hr.TermReason t#(lf) where d.day = 1 and e.SenDate \u003c= d.MonthEndDate and isnull(e.termdate, \u00279999-01-01\u0027) \u003e= d.MonthEndDate and d.Date \u003c \u00272014-01-01\u0027#(lf)  and p.PayGroup = e.PayGroup#(lf)  and b.UNIT = e.Unit and [EmplID] % 2 = 0#(lf)union all#(lf)--seps#(lf)SELECT dateadd(year, 1, d.date) Date#(lf)    ,Market BU#(lf)      ,[EmplID]#(lf)      ,iif([Gender]=\u0027M\u0027, \u0027C\u0027, \u0027D\u0027) Gender#(lf)      ,[Age] - (2013 - year(d.date)) Age#(lf)      ,[EthnicGroup]#(lf)      ,[FP]#(lf)      ,dateadd(year, 1,[SenDate]) HireDate#(lf)      ,p.PayTypeID#(lf)      ,dateadd(year, 1, [TermDate]) [TermDate]#(lf)      ,t.[SeparationTypeID] [TermReason]#(lf)  FROM [IP].[HR].[AllEmps] E, [HR].[Date] d , [HR].[BU] b, hr.PayGroup p , hr.TermReason t#(lf) where d.day = 1 and e.TermDate \u003c= d.MonthEndDate and e.TermDate \u003e= d.MonthStartDate and d.Date \u003c \u00272014-01-01\u0027#(lf)  and p.PayGroup = e.PayGroup #(lf)  and t.[Term-Discharge]= e.[Term-Discharge]#(lf)  and b.UNIT = e.Unit and [EmplID] % 2 = 0\&quot;]),\r\n    #\&quot;Renamed Columns\&quot; = Table.RenameColumns(Source, {{\&quot;date\&quot;, \&quot;date\&quot;}, {\&quot;EmplID\&quot;, \&quot;EmplID\&quot;}, {\&quot;Gender\&quot;, \&quot;Gender\&quot;}, {\&quot;Age\&quot;, \&quot;Age\&quot;}, {\&quot;EthnicGroup\&quot;, \&quot;EthnicGroup\&quot;}, {\&quot;FP\&quot;, \&quot;FP\&quot;}, {\&quot;TermDate\&quot;, \&quot;TermDate\&quot;}, {\&quot;BU\&quot;, \&quot;BU\&quot;}, {\&quot;HireDate\&quot;, \&quot;HireDate\&quot;}, {\&quot;PayTypeID\&quot;, \&quot;PayTypeID\&quot;}, {\&quot;TermReason\&quot;, \&quot;TermReason\&quot;}}),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(#\&quot;Renamed Columns\&quot;, {{\&quot;date\&quot;, type datetime}, {\&quot;EmplID\&quot;, Int64.Type}, {\&quot;Gender\&quot;, type text}, {\&quot;Age\&quot;, Int64.Type}, {\&quot;EthnicGroup\&quot;, type text}, {\&quot;FP\&quot;, type text}, {\&quot;TermDate\&quot;, type datetime}, {\&quot;BU\&quot;, type text}, {\&quot;HireDate\&quot;, type datetime}, {\&quot;PayTypeID\&quot;, type text}, {\&quot;TermReason\&quot;, type text}})\r\nin\r\n    #\&quot;Changed Type\&quot;&quot;,&quot;ReferencedQueriesFormulaText&quot;:{}}" />
+        <Entry Type="IsLastAnalysisServicesFormulaTextCollection" Value="l1" />
+        <Entry Type="LoadedToAnalysisServices" Value="l1" />
+      </StableEntries>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Employee/Source</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Employee/Renamed%20Columns</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Employee/Changed%20Type</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Ethnicity</ItemPath>
+      </ItemLocation>
+      <StableEntries>
+        <Entry Type="IsPrivate" Value="l0" />
+        <Entry Type="LastAnalysisServicesFormulaText" Value="s{&quot;IncludesReferencedQueries&quot;:true,&quot;RootFormulaText&quot;:&quot;let\r\n    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\&quot;i45WMlTSUXIvyi8tUHBUitWJVjKC853AfGM43xnMN4HzXcB8UzjfFcw3g/PdwHxzON9dKTYWAA==\&quot;, BinaryEncoding.Base64), Compression.Deflate))),\r\n    #\&quot;Renamed Columns\&quot; = Table.RenameColumns(Source, {{\&quot;Column1\&quot;, \&quot;Ethnic Group\&quot;}, {\&quot;Column2\&quot;, \&quot;Ethnicity\&quot;}}),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(#\&quot;Renamed Columns\&quot;, {{\&quot;Ethnic Group\&quot;, type text}, {\&quot;Ethnicity\&quot;, type text}})\r\n in\r\n    #\&quot;Changed Type\&quot;&quot;,&quot;ReferencedQueriesFormulaText&quot;:{}}" />
+        <Entry Type="IsLastAnalysisServicesFormulaTextCollection" Value="l1" />
+        <Entry Type="LoadedToAnalysisServices" Value="l1" />
+      </StableEntries>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Ethnicity/Source</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Ethnicity/Renamed%20Columns</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Ethnicity/Changed%20Type</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Gender</ItemPath>
+      </ItemLocation>
+      <StableEntries>
+        <Entry Type="IsPrivate" Value="l0" />
+        <Entry Type="LastAnalysisServicesFormulaText" Value="s{&quot;IncludesReferencedQueries&quot;:true,&quot;RootFormulaText&quot;:&quot;let\r\n    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\&quot;i45WclHSUfJNzEkFUoZKsTrRSs5AlltqLkTISCk2FgA=\&quot;, BinaryEncoding.Base64), Compression.Deflate))),\r\n    #\&quot;Renamed Columns\&quot; = Table.RenameColumns(Source, {{\&quot;Column1\&quot;, \&quot;ID\&quot;}, {\&quot;Column2\&quot;, \&quot;Gender\&quot;}, {\&quot;Column3\&quot;, \&quot;Sort\&quot;}}),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(#\&quot;Renamed Columns\&quot;, {{\&quot;ID\&quot;, type text}, {\&quot;Gender\&quot;, type text}, {\&quot;Sort\&quot;, Int64.Type}})\r\n in\r\n    #\&quot;Changed Type\&quot;&quot;,&quot;ReferencedQueriesFormulaText&quot;:{}}" />
+        <Entry Type="IsLastAnalysisServicesFormulaTextCollection" Value="l1" />
+        <Entry Type="LoadedToAnalysisServices" Value="l1" />
+      </StableEntries>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Gender/Source</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Gender/Renamed%20Columns</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/Gender/Changed%20Type</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/AgeGroup</ItemPath>
+      </ItemLocation>
+      <StableEntries>
+        <Entry Type="IsPrivate" Value="l0" />
+        <Entry Type="LastAnalysisServicesFormulaText" Value="s{&quot;IncludesReferencedQueries&quot;:true,&quot;RootFormulaText&quot;:&quot;let\r\n    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText(\&quot;i45WMlTSUYopNTAwTjY2UIrViVYyAgoYG+iaWIJ5xkCeqYG2UmwsAA==\&quot;, BinaryEncoding.Base64), Compression.Deflate))),\r\n    #\&quot;Renamed Columns\&quot; = Table.RenameColumns(Source, {{\&quot;Column1\&quot;, \&quot;AgeGroupID\&quot;}, {\&quot;Column2\&quot;, \&quot;AgeGroup\&quot;}}),\r\n    #\&quot;Changed Type\&quot; = Table.TransformColumnTypes(#\&quot;Renamed Columns\&quot;, {{\&quot;AgeGroupID\&quot;, Int64.Type}, {\&quot;AgeGroup\&quot;, type text}})\r\n in\r\n    #\&quot;Changed Type\&quot;&quot;,&quot;ReferencedQueriesFormulaText&quot;:{}}" />
+        <Entry Type="IsLastAnalysisServicesFormulaTextCollection" Value="l1" />
+        <Entry Type="LoadedToAnalysisServices" Value="l1" />
+      </StableEntries>
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/AgeGroup/Source</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/AgeGroup/Renamed%20Columns</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+    <Item>
+      <ItemLocation>
+        <ItemType>Formula</ItemType>
+        <ItemPath>Section1/AgeGroup/Changed%20Type</ItemPath>
+      </ItemLocation>
+      <StableEntries />
+    </Item>
+  </Items>
+</LocalPackageMetadataFile>

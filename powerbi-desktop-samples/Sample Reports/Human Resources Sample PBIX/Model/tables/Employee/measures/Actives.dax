@@ -1,0 +1,1 @@
+CALCULATE([EmpCount], FILTER(Employee, ISBLANK(Employee[TermDate])))

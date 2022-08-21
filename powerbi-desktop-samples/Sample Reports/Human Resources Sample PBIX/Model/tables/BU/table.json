@@ -1,0 +1,23 @@
+{
+  "name": "BU",
+  "partitions": [
+    {
+      "name": "BU",
+      "source": {
+        "type": "query",
+        "query": "SELECT [BU].* FROM [BU]",
+        "dataSource": "f1baaec0-4b1b-4ff0-a70a-8a434a666c02"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "8c11f5cc-edd7-4da8-a5f9-625dfaa5f0db"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "BU"
+    }
+  ]
+}

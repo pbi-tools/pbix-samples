@@ -1,0 +1,111 @@
+{
+  "name": "Human Resources Sample PBIX",
+  "compatibilityLevel": 1200,
+  "model": {
+    "culture": "en-US",
+    "relationships": [
+      {
+        "name": "7ddd41c5-a1f5-477b-9712-84fdc7313c7d",
+        "fromTable": "Employee",
+        "fromColumn": "date",
+        "toTable": "Date",
+        "toColumn": "Date"
+      },
+      {
+        "name": "497871a2-f5e1-40ff-90d7-6f980ca1119a",
+        "fromTable": "Employee",
+        "fromColumn": "FP",
+        "toTable": "FP",
+        "toColumn": "FP"
+      },
+      {
+        "name": "20c07ef2-2c50-4fd4-ad56-8b0e0e36ddc4",
+        "fromTable": "Employee",
+        "fromColumn": "EthnicGroup",
+        "toTable": "Ethnicity",
+        "toColumn": "Ethnic Group"
+      },
+      {
+        "name": "539493ca-f3e3-4c1f-b14e-54cba661f036",
+        "fromTable": "Employee",
+        "fromColumn": "Gender",
+        "toTable": "Gender",
+        "toColumn": "ID"
+      },
+      {
+        "name": "7c262a8a-d56f-4c97-95db-c0f56177e4cd",
+        "fromTable": "Employee",
+        "fromColumn": "PayTypeID",
+        "toTable": "PayType",
+        "toColumn": "PayTypeID"
+      },
+      {
+        "name": "edfe54b9-43d8-4c14-a29d-f17ddb0dd421",
+        "fromTable": "Employee",
+        "fromColumn": "BU",
+        "toTable": "BU",
+        "toColumn": "BU"
+      },
+      {
+        "name": "35cbfa94-d30d-4da9-8fb6-e7d469edb9bb",
+        "fromTable": "Employee",
+        "fromColumn": "AgeGroupID",
+        "toTable": "AgeGroup",
+        "toColumn": "AgeGroupID"
+      },
+      {
+        "name": "1c53ee81-f20a-40a6-a5bd-97e57652fc88",
+        "fromTable": "Employee",
+        "fromColumn": "TermReason",
+        "toTable": "SeparationReason",
+        "toColumn": "SeparationTypeID"
+      },
+      {
+        "name": "0f809af4-d31b-4977-a214-8f13fa42f41d",
+        "fromTable": "Date",
+        "fromColumn": "Date",
+        "toTable": "LocalDateTable_6f19fed3-1fc0-4f7a-878d-34aca93d6782",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "f496f9ad-5665-4785-a30e-b1bbcf7be215",
+        "fromTable": "Date",
+        "fromColumn": "MonthStartDate",
+        "toTable": "LocalDateTable_d2ea5b26-668d-4c17-b228-695669b066a6",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "b2a9d346-0212-432d-a1a9-57680b4a73ea",
+        "fromTable": "Date",
+        "fromColumn": "MonthEndDate",
+        "toTable": "LocalDateTable_c9dde99e-7ac1-4e8e-a5f2-c5ffc41d9cac",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "e020e64e-e74a-4b8f-bed8-e879143ea6d8",
+        "fromTable": "Employee",
+        "fromColumn": "TermDate",
+        "toTable": "LocalDateTable_cc28ef26-f63a-4bc3-b357-93ab34cd6d9b",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "3e454a13-2d74-4769-b44d-91ce492acf1a",
+        "fromTable": "Employee",
+        "fromColumn": "HireDate",
+        "toTable": "LocalDateTable_c04ce649-6e25-466f-9bbc-faabfec0fe29",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      }
+    ]
+  }
+}

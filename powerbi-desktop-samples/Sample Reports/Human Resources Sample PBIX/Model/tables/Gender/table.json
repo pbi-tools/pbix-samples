@@ -1,0 +1,24 @@
+{
+  "name": "Gender",
+  "partitions": [
+    {
+      "name": "Gender",
+      "mode": "import",
+      "source": {
+        "type": "query",
+        "query": "SELECT [Gender].* FROM [Gender]",
+        "dataSource": "7bbfc22e-f8b5-4f03-90aa-3090fe9ec636"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "db5d68ef-43bb-44ea-be57-08d5dfbc2585"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "Gender"
+    }
+  ]
+}

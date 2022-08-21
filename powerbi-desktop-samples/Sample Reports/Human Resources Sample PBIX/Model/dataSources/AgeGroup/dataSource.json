@@ -1,0 +1,5 @@
+{
+  "name": "6a34130a-374a-4696-a28f-ea5ff620f7c9",
+  "connectionString": "provider=Microsoft.PowerBI.OleDb;location=AgeGroup",
+  "impersonationMode": "impersonateCurrentUser"
+}

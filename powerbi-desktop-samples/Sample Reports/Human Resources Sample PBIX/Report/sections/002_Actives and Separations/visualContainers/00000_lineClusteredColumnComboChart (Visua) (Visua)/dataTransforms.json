@@ -1,0 +1,314 @@
+{
+  "objects": {
+    "categoryAxis": [
+      {
+        "properties": {
+          "axisType": {
+            "expr": {
+              "Literal": {
+                "Value": "'Categorical'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "labels": [
+      {
+        "properties": {
+          "show": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "legend": [
+      {
+        "properties": {
+          "position": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          },
+          "show": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Category": [
+      0,
+      1,
+      2
+    ],
+    "Y": [
+      3,
+      4
+    ],
+    "Y2": [
+      5
+    ]
+  },
+  "projectionActiveItems": {
+    "Category": [
+      {
+        "queryRef": "select",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "splits": [
+    {
+      "selects": {
+        "0": true,
+        "1": true,
+        "2": true,
+        "3": true,
+        "4": true
+      }
+    },
+    {
+      "selects": {
+        "0": true,
+        "1": true,
+        "2": true,
+        "5": true
+      }
+    }
+  ],
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Month",
+        "Name": "select",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Region",
+        "Name": "select1",
+        "Type": 2048
+      },
+      {
+        "Restatement": "VP",
+        "Name": "select2",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Seps",
+        "Name": "Employee.Seps",
+        "Type": 3,
+        "Format": "#,0"
+      },
+      {
+        "Restatement": "Seps SPLY",
+        "Name": "Employee.Seps SPLY",
+        "Type": 3,
+        "Format": "#,0"
+      },
+      {
+        "Restatement": "Actives YoY % Change",
+        "Name": "Employee.Actives YoY % Change",
+        "Type": 1,
+        "Format": "#,0.0 %;-#,0.0 %;#,0.0 %"
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Category",
+          "Projection": 0,
+          "isActive": true
+        },
+        {
+          "Name": "Category",
+          "Projection": 1,
+          "isActive": false
+        },
+        {
+          "Name": "Category",
+          "Projection": 2,
+          "isActive": false
+        },
+        {
+          "Name": "Y",
+          "Projection": 3,
+          "isActive": false
+        },
+        {
+          "Name": "Y",
+          "Projection": 4,
+          "isActive": false
+        }
+      ]
+    },
+    {
+      "DataRoles": [
+        {
+          "Name": "Category",
+          "Projection": 0,
+          "isActive": true
+        },
+        {
+          "Name": "Category",
+          "Projection": 1,
+          "isActive": false
+        },
+        {
+          "Name": "Category",
+          "Projection": 2,
+          "isActive": false
+        },
+        {
+          "Name": "Y2",
+          "Projection": 5,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Month",
+      "queryName": "select",
+      "roles": {
+        "Category": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Date"
+            }
+          },
+          "Property": "Month"
+        }
+      }
+    },
+    {
+      "displayName": "Region",
+      "queryName": "select1",
+      "roles": {
+        "Category": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "BU"
+            }
+          },
+          "Property": "Region"
+        }
+      }
+    },
+    {
+      "displayName": "VP",
+      "queryName": "select2",
+      "roles": {
+        "Category": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "BU"
+            }
+          },
+          "Property": "VP"
+        }
+      }
+    },
+    {
+      "displayName": "Seps",
+      "format": "#,0",
+      "queryName": "Employee.Seps",
+      "roles": {
+        "Y": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Employee"
+            }
+          },
+          "Property": "Seps"
+        }
+      }
+    },
+    {
+      "displayName": "Seps SPLY",
+      "format": "#,0",
+      "queryName": "Employee.Seps SPLY",
+      "roles": {
+        "Y": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Employee"
+            }
+          },
+          "Property": "Seps SPLY"
+        }
+      }
+    },
+    {
+      "displayName": "Actives YoY % Change",
+      "format": "#,0.0 %;-#,0.0 %;#,0.0 %",
+      "queryName": "Employee.Actives YoY % Change",
+      "roles": {
+        "Y2": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Employee"
+            }
+          },
+          "Property": "Actives YoY % Change"
+        }
+      }
+    }
+  ]
+}

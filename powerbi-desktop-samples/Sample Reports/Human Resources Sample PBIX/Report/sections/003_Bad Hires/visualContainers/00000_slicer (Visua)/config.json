@@ -1,0 +1,62 @@
+{
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 19.508021390374331,
+        "y": 117.93103448275862,
+        "z": 7,
+        "width": 263.8716577540107,
+        "height": 88.965517241379317
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "slicer",
+    "projections": {
+      "Values": [
+        {
+          "queryRef": "BU.Region"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "b",
+          "Entity": "BU"
+        }
+      ],
+      "Select": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "b"
+              }
+            },
+            "Property": "Region"
+          },
+          "Name": "BU.Region"
+        }
+      ]
+    },
+    "objects": {
+      "data": [
+        {
+          "properties": {
+            "mode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Dropdown'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "name": "VisualContainer6"
+}

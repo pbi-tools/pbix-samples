@@ -1,0 +1,145 @@
+{
+  "projectionOrdering": {
+    "Y": [
+      0,
+      1
+    ],
+    "Category": [
+      2
+    ]
+  },
+  "projectionActiveItems": {
+    "Category": [
+      {
+        "queryRef": "Date.Month",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Seps",
+        "Name": "Employee.Seps",
+        "Type": 3,
+        "Format": "#,0"
+      },
+      {
+        "Restatement": "Seps SPLY",
+        "Name": "Employee.Seps SPLY",
+        "Type": 3,
+        "Format": "#,0"
+      },
+      {
+        "Restatement": "Month",
+        "Name": "Date.Month",
+        "Type": 2048
+      }
+    ],
+    "Filters": [
+      {
+        "type": 0,
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "SeparationReason"
+              }
+            },
+            "Property": "SeparationReason"
+          }
+        }
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Y",
+          "Projection": 0,
+          "isActive": false
+        },
+        {
+          "Name": "Y",
+          "Projection": 1,
+          "isActive": false
+        },
+        {
+          "Name": "Category",
+          "Projection": 2,
+          "isActive": true
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Seps",
+      "format": "#,0",
+      "queryName": "Employee.Seps",
+      "roles": {
+        "Y": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Employee"
+            }
+          },
+          "Property": "Seps"
+        }
+      }
+    },
+    {
+      "displayName": "Seps SPLY",
+      "format": "#,0",
+      "queryName": "Employee.Seps SPLY",
+      "roles": {
+        "Y": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Employee"
+            }
+          },
+          "Property": "Seps SPLY"
+        }
+      }
+    },
+    {
+      "displayName": "Month",
+      "queryName": "Date.Month",
+      "roles": {
+        "Category": true
+      },
+      "sort": 1,
+      "sortOrder": 0,
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Date"
+            }
+          },
+          "Property": "Month"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+{
+  "type": "calculated",
+  "name": "TenureDays",
+  "dataType": "double",
+  "isHidden": true,
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"General\" />"
+    },
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "Double#####not a type"
+    },
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

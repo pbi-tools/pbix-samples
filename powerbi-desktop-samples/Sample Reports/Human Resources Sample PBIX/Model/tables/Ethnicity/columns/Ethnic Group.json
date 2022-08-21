@@ -1,0 +1,21 @@
+{
+  "name": "Ethnic Group",
+  "dataType": "string",
+  "isHidden": true,
+  "sourceColumn": "Ethnic Group",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"Text\" />"
+    },
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "String#####not a type"
+    },
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

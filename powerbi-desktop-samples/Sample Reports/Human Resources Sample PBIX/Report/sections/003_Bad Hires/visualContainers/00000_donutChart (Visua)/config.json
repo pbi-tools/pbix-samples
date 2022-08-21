@@ -1,0 +1,110 @@
+{
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 17.454545454545453,
+        "y": 228.62068965517241,
+        "z": 1,
+        "width": 278.24598930481284,
+        "height": 216.20689655172413
+      }
+    }
+  ],
+  "singleVisual": {
+    "title": {
+      "show": true
+    },
+    "visualType": "donutChart",
+    "projections": {
+      "Series": [
+        {
+          "queryRef": "Gender.Gender"
+        }
+      ],
+      "Y": [
+        {
+          "queryRef": "Sum(Employee.BadHires)"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "g",
+          "Entity": "Gender"
+        },
+        {
+          "Name": "e",
+          "Entity": "Employee"
+        }
+      ],
+      "Select": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "g"
+              }
+            },
+            "Property": "Gender"
+          },
+          "Name": "Gender.Gender"
+        },
+        {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "e"
+                  }
+                },
+                "Property": "BadHires"
+              }
+            },
+            "Function": 0
+          },
+          "Name": "Sum(Employee.BadHires)"
+        }
+      ]
+    },
+    "objects": {
+      "labels": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "legend": [
+        {
+          "properties": {
+            "position": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Right'"
+                }
+              }
+            },
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "name": "VisualContainer1"
+}

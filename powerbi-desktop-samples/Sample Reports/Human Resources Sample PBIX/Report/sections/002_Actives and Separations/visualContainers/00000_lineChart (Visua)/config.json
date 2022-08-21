@@ -1,0 +1,97 @@
+{
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 536.84210526315792,
+        "y": 447.15789473684214,
+        "z": 11,
+        "width": 336,
+        "height": 237.47368421052633
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "lineChart",
+    "projections": {
+      "Y": [
+        {
+          "queryRef": "Employee.Seps"
+        },
+        {
+          "queryRef": "Employee.Seps SPLY"
+        }
+      ],
+      "Category": [
+        {
+          "queryRef": "Date.Month",
+          "active": true
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "e",
+          "Entity": "Employee"
+        },
+        {
+          "Name": "d",
+          "Entity": "Date"
+        }
+      ],
+      "Select": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "e"
+              }
+            },
+            "Property": "Seps"
+          },
+          "Name": "Employee.Seps"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "e"
+              }
+            },
+            "Property": "Seps SPLY"
+          },
+          "Name": "Employee.Seps SPLY"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "d"
+              }
+            },
+            "Property": "Month"
+          },
+          "Name": "Date.Month"
+        }
+      ],
+      "OrderBy": [
+        {
+          "Direction": 1,
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Source": "d"
+                }
+              },
+              "Property": "Month"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "name": "VisualContainer9"
+}

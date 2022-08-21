@@ -1,0 +1,17 @@
+{
+  "name": "SeparationTypeID",
+  "dataType": "string",
+  "isHidden": true,
+  "sourceColumn": "SeparationTypeID",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "String#####not a type"
+    },
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

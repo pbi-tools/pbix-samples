@@ -1,0 +1,16 @@
+{
+  "name": "SeparationReason",
+  "dataType": "string",
+  "sourceColumn": "SeparationReason",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "String#####not a type"
+    },
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

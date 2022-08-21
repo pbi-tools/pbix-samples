@@ -1,0 +1,207 @@
+[
+  {
+    "name": "Filter",
+    "expression": {
+      "Column": {
+        "Expression": {
+          "SourceRef": {
+            "Entity": "Date"
+          }
+        },
+        "Property": "Year"
+      }
+    },
+    "filter": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "d",
+          "Entity": "Date"
+        }
+      ],
+      "Where": [
+        {
+          "Condition": {
+            "Comparison": {
+              "ComparisonKind": 0,
+              "Left": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Source": "d"
+                    }
+                  },
+                  "Property": "Year"
+                }
+              },
+              "Right": {
+                "Literal": {
+                  "Value": "2014L"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "type": "Advanced",
+    "howCreated": 1
+  },
+  {
+    "name": "Filter1",
+    "expression": {
+      "Column": {
+        "Expression": {
+          "SourceRef": {
+            "Entity": "Date"
+          }
+        },
+        "Property": "Month"
+      }
+    },
+    "filter": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "d",
+          "Entity": "Date"
+        }
+      ],
+      "Where": [
+        {
+          "Condition": {
+            "Not": {
+              "Expression": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Source": "d"
+                        }
+                      },
+                      "Property": "Month"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Dec'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "type": "Categorical",
+    "howCreated": 1
+  },
+  {
+    "name": "Filter2",
+    "expression": {
+      "Column": {
+        "Expression": {
+          "SourceRef": {
+            "Entity": "AgeGroup"
+          }
+        },
+        "Property": "AgeGroup"
+      }
+    },
+    "type": "Categorical",
+    "howCreated": 1
+  },
+  {
+    "name": "Filter3",
+    "expression": {
+      "Column": {
+        "Expression": {
+          "SourceRef": {
+            "Entity": "BU"
+          }
+        },
+        "Property": "Region"
+      }
+    },
+    "type": "Categorical",
+    "howCreated": 1
+  },
+  {
+    "name": "Filter4",
+    "expression": {
+      "Column": {
+        "Expression": {
+          "SourceRef": {
+            "Entity": "Ethnicity"
+          }
+        },
+        "Property": "Ethnicity"
+      }
+    },
+    "type": "Categorical",
+    "howCreated": 1
+  },
+  {
+    "name": "Filter5",
+    "expression": {
+      "Column": {
+        "Expression": {
+          "SourceRef": {
+            "Entity": "FP"
+          }
+        },
+        "Property": "FPDesc"
+      }
+    },
+    "type": "Categorical",
+    "howCreated": 1
+  },
+  {
+    "name": "Filter6",
+    "expression": {
+      "Column": {
+        "Expression": {
+          "SourceRef": {
+            "Entity": "Gender"
+          }
+        },
+        "Property": "Gender"
+      }
+    },
+    "type": "Categorical",
+    "howCreated": 1
+  },
+  {
+    "name": "Filter7",
+    "expression": {
+      "Column": {
+        "Expression": {
+          "SourceRef": {
+            "Entity": "SeparationReason"
+          }
+        },
+        "Property": "SeparationReason"
+      }
+    },
+    "type": "Categorical",
+    "howCreated": 1
+  },
+  {
+    "name": "Filter8",
+    "expression": {
+      "Column": {
+        "Expression": {
+          "SourceRef": {
+            "Entity": "BU"
+          }
+        },
+        "Property": "VP"
+      }
+    },
+    "type": "Categorical",
+    "howCreated": 1
+  }
+]

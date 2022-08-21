@@ -1,0 +1,28 @@
+{
+  "name": "HireDate",
+  "dataType": "dateTime",
+  "isHidden": true,
+  "sourceColumn": "HireDate",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "3e454a13-2d74-4769-b44d-91ce492acf1a",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_c04ce649-6e25-466f-9bbc-faabfec0fe29",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "DateTime#####not a type"
+    },
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

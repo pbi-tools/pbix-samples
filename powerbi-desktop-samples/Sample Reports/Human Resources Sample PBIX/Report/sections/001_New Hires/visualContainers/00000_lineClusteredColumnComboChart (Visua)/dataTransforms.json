@@ -1,0 +1,236 @@
+{
+  "objects": {
+    "categoryAxis": [
+      {
+        "properties": {
+          "axisType": {
+            "expr": {
+              "Literal": {
+                "Value": "'Categorical'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "labels": [
+      {
+        "properties": {
+          "show": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "legend": [
+      {
+        "properties": {
+          "position": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          },
+          "show": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Category": [
+      0
+    ],
+    "Y": [
+      1,
+      2
+    ],
+    "Y2": [
+      3
+    ]
+  },
+  "projectionActiveItems": {
+    "Category": [
+      {
+        "queryRef": "select",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "splits": [
+    {
+      "selects": {
+        "0": true,
+        "1": true,
+        "2": true
+      }
+    },
+    {
+      "selects": {
+        "0": true,
+        "3": true
+      }
+    }
+  ],
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Month",
+        "Name": "select",
+        "Type": 2048
+      },
+      {
+        "Restatement": "New Hires",
+        "Name": "Employee.New Hires",
+        "Type": 3,
+        "Format": "#,0"
+      },
+      {
+        "Restatement": "New Hires SPLY",
+        "Name": "Employee.New Hires SPLY",
+        "Type": 3,
+        "Format": "#,0"
+      },
+      {
+        "Restatement": "Actives YoY % Change",
+        "Name": "Employee.Actives YoY % Change",
+        "Type": 1,
+        "Format": "#,0.0 %;-#,0.0 %;#,0.0 %"
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Category",
+          "Projection": 0,
+          "isActive": true
+        },
+        {
+          "Name": "Y",
+          "Projection": 1,
+          "isActive": false
+        },
+        {
+          "Name": "Y",
+          "Projection": 2,
+          "isActive": false
+        }
+      ]
+    },
+    {
+      "DataRoles": [
+        {
+          "Name": "Category",
+          "Projection": 0,
+          "isActive": true
+        },
+        {
+          "Name": "Y2",
+          "Projection": 3,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Month",
+      "queryName": "select",
+      "roles": {
+        "Category": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Date"
+            }
+          },
+          "Property": "Month"
+        }
+      }
+    },
+    {
+      "displayName": "New Hires",
+      "format": "#,0",
+      "queryName": "Employee.New Hires",
+      "roles": {
+        "Y": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Employee"
+            }
+          },
+          "Property": "New Hires"
+        }
+      }
+    },
+    {
+      "displayName": "New Hires SPLY",
+      "format": "#,0",
+      "queryName": "Employee.New Hires SPLY",
+      "roles": {
+        "Y": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Employee"
+            }
+          },
+          "Property": "New Hires SPLY"
+        }
+      }
+    },
+    {
+      "displayName": "Actives YoY % Change",
+      "format": "#,0.0 %;-#,0.0 %;#,0.0 %",
+      "queryName": "Employee.Actives YoY % Change",
+      "roles": {
+        "Y2": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Employee"
+            }
+          },
+          "Property": "Actives YoY % Change"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "_queryNameToKeyMapping": [
+    {
+      "key": "BU",
+      "value": "8c11f5cc-edd7-4da8-a5f9-625dfaa5f0db"
+    },
+    {
+      "key": "FP",
+      "value": "521f2c2d-6773-496d-ba4e-e6c676ca87fa"
+    },
+    {
+      "key": "PayType",
+      "value": "4dffb944-534f-4ad4-aac8-c4c23e41ff1b"
+    },
+    {
+      "key": "SeparationReason",
+      "value": "af1bb3c4-c305-467a-ac53-a70a447626a2"
+    },
+    {
+      "key": "Date",
+      "value": "fe877417-f25c-431b-a9e9-7f5b60625a51"
+    },
+    {
+      "key": "Employee",
+      "value": "1a98b2d6-b968-4f9b-9e37-5d7b31f7ae37"
+    },
+    {
+      "key": "Ethnicity",
+      "value": "eace0d55-7fe9-4b68-b619-be7097adbe01"
+    },
+    {
+      "key": "Gender",
+      "value": "db5d68ef-43bb-44ea-be57-08d5dfbc2585"
+    },
+    {
+      "key": "AgeGroup",
+      "value": "9eb435a8-80ea-469e-91b2-55cde3892d95"
+    }
+  ],
+  "version": 2,
+  "autoCreatedRelationships": [],
+  "fileDescription": "",
+  "createdFromRelease": "Unknown"
+}

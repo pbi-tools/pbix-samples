@@ -1,0 +1,68 @@
+{
+  "Version": 0,
+  "Data": [
+    {
+      "TableKey": "Tables\\8c11f5cc-edd7-4da8-a5f9-625dfaa5f0db",
+      "Height": 150,
+      "Width": 200,
+      "Left": 398.78501638884518,
+      "Top": 695.24353715546033
+    },
+    {
+      "TableKey": "Tables\\521f2c2d-6773-496d-ba4e-e6c676ca87fa",
+      "Height": 150,
+      "Width": 200,
+      "Left": 629.60437139747683,
+      "Top": 557.25095525504321
+    },
+    {
+      "TableKey": "Tables\\4dffb944-534f-4ad4-aac8-c4c23e41ff1b",
+      "Height": 150,
+      "Width": 200,
+      "Left": 557.24994915212824,
+      "Top": 65.638167260769649
+    },
+    {
+      "TableKey": "Tables\\af1bb3c4-c305-467a-ac53-a70a447626a2",
+      "Height": 150,
+      "Width": 200,
+      "Left": 296.45684153476157,
+      "Top": 0
+    },
+    {
+      "TableKey": "Tables\\fe877417-f25c-431b-a9e9-7f5b60625a51",
+      "Height": 150,
+      "Width": 200,
+      "Left": 0,
+      "Top": 398.78859464139009
+    },
+    {
+      "TableKey": "Tables\\1a98b2d6-b968-4f9b-9e37-5d7b31f7ae37",
+      "Height": 150,
+      "Width": 200,
+      "Left": 347.62155707119166,
+      "Top": 347.62168877661207
+    },
+    {
+      "TableKey": "Tables\\eace0d55-7fe9-4b68-b619-be7097adbe01",
+      "Height": 150,
+      "Width": 200,
+      "Left": 137.99515349902151,
+      "Top": 629.60690386523208
+    },
+    {
+      "TableKey": "Tables\\db5d68ef-43bb-44ea-be57-08d5dfbc2585",
+      "Height": 150,
+      "Width": 200,
+      "Left": 695.24375621707077,
+      "Top": 296.45989567030369
+    },
+    {
+      "TableKey": "Tables\\9eb435a8-80ea-469e-91b2-55cde3892d95",
+      "Height": 150,
+      "Width": 200,
+      "Left": 65.6364326173811,
+      "Top": 137.99560610326648
+    }
+  ]
+}

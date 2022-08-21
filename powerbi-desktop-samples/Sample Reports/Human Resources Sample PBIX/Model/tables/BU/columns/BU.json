@@ -1,0 +1,16 @@
+{
+  "name": "BU",
+  "dataType": "string",
+  "sourceColumn": "BU",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "String#####not a type"
+    },
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    }
+  ]
+}

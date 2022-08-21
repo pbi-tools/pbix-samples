@@ -1,0 +1,275 @@
+{
+  "objects": {
+    "categoryAxis": [
+      {
+        "properties": {
+          "axisType": {
+            "expr": {
+              "Literal": {
+                "Value": "'Categorical'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "labels": [
+      {
+        "properties": {
+          "show": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "legend": [
+      {
+        "properties": {
+          "position": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          },
+          "show": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Category": [
+      0,
+      1
+    ],
+    "Series": [
+      2
+    ],
+    "Y": [
+      3
+    ],
+    "Y2": [
+      4
+    ]
+  },
+  "projectionActiveItems": {
+    "Category": [
+      {
+        "queryRef": "select",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "splits": [
+    {
+      "selects": {
+        "0": true,
+        "1": true,
+        "2": true,
+        "3": true
+      }
+    },
+    {
+      "selects": {
+        "0": true,
+        "1": true,
+        "4": true
+      }
+    }
+  ],
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Region",
+        "Name": "select",
+        "Type": 2048
+      },
+      {
+        "Restatement": "VP",
+        "Name": "select1",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Ethnicity",
+        "Name": "Ethnicity.Ethnicity",
+        "Type": 2048
+      },
+      {
+        "Restatement": "New Hires",
+        "Name": "Employee.New Hires",
+        "Type": 3,
+        "Format": "#,0"
+      },
+      {
+        "Restatement": "Actives",
+        "Name": "Employee.Actives",
+        "Type": 3,
+        "Format": "#,0"
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Category",
+          "Projection": 0,
+          "isActive": true
+        },
+        {
+          "Name": "Category",
+          "Projection": 1,
+          "isActive": false
+        },
+        {
+          "Name": "Series",
+          "Projection": 2,
+          "isActive": false
+        },
+        {
+          "Name": "Y",
+          "Projection": 3,
+          "isActive": false
+        }
+      ]
+    },
+    {
+      "DataRoles": [
+        {
+          "Name": "Category",
+          "Projection": 0,
+          "isActive": true
+        },
+        {
+          "Name": "Category",
+          "Projection": 1,
+          "isActive": false
+        },
+        {
+          "Name": "Y2",
+          "Projection": 4,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Region",
+      "queryName": "select",
+      "roles": {
+        "Category": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "BU"
+            }
+          },
+          "Property": "Region"
+        }
+      }
+    },
+    {
+      "displayName": "VP",
+      "queryName": "select1",
+      "roles": {
+        "Category": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "BU"
+            }
+          },
+          "Property": "VP"
+        }
+      }
+    },
+    {
+      "displayName": "Ethnicity",
+      "queryName": "Ethnicity.Ethnicity",
+      "roles": {
+        "Series": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Ethnicity"
+            }
+          },
+          "Property": "Ethnicity"
+        }
+      }
+    },
+    {
+      "displayName": "New Hires",
+      "format": "#,0",
+      "queryName": "Employee.New Hires",
+      "roles": {
+        "Y": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Employee"
+            }
+          },
+          "Property": "New Hires"
+        }
+      }
+    },
+    {
+      "displayName": "Actives",
+      "format": "#,0",
+      "queryName": "Employee.Actives",
+      "roles": {
+        "Y2": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Employee"
+            }
+          },
+          "Property": "Actives"
+        }
+      }
+    }
+  ]
+}

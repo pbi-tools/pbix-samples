@@ -1,0 +1,10 @@
+{
+  "name": "AVG Tenure Months",
+  "formatString": "0",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"NumberWhole\" />"
+    }
+  ]
+}

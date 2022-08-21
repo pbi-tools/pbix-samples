@@ -1,0 +1,53 @@
+{
+  "version": "5.15",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY20SU09",
+      "version": "5.17",
+      "type": 2
+    },
+    "customTheme": {
+      "name": "NewExecutive",
+      "version": "5.17",
+      "type": 2
+    }
+  },
+  "activeSectionIndex": 0,
+  "defaultDrillFilterOtherVisuals": true,
+  "linguisticSchemaSyncVersion": 0,
+  "settings": {
+    "useNewFilterPaneExperience": true,
+    "allowChangeFilterTypes": true,
+    "useStylableVisualContainerHeader": true,
+    "exportDataMode": 1,
+    "allowDataPointLassoSelect": true
+  },
+  "objects": {
+    "section": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

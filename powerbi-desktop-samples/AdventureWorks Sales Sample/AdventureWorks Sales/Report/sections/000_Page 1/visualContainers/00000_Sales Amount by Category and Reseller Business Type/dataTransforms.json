@@ -1,0 +1,224 @@
+{
+  "objects": {
+    "columnFormatting": [
+      {
+        "properties": {
+          "dataBars": {
+            "positiveColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#c4d3e9'"
+                    }
+                  }
+                }
+              }
+            },
+            "negativeColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'minColor'"
+                    }
+                  }
+                }
+              }
+            },
+            "axisColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'foreground'"
+                    }
+                  }
+                }
+              }
+            },
+            "reverseDirection": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "hideText": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        },
+        "selector": {
+          "metadata": "Sum(Sales.Sales Amount)"
+        }
+      }
+    ],
+    "columnWidth": [
+      {
+        "properties": {
+          "value": {
+            "expr": {
+              "Literal": {
+                "Value": "893.5191749529135D"
+              }
+            }
+          }
+        },
+        "selector": {
+          "metadata": "Sum(Sales.Sales Amount)"
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Rows": [
+      0,
+      1
+    ],
+    "Values": [
+      2
+    ]
+  },
+  "projectionActiveItems": {
+    "Rows": [
+      {
+        "queryRef": "Product.Category",
+        "suppressConcat": false
+      },
+      {
+        "queryRef": "Reseller.Business Type",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Category",
+        "Name": "Product.Category",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Business Type",
+        "Name": "Reseller.Business Type",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Sales Amount",
+        "Name": "Sum(Sales.Sales Amount)",
+        "Type": 1
+      }
+    ],
+    "Filters": [
+      {
+        "type": 0,
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Reseller"
+              }
+            },
+            "Property": "Business Type"
+          }
+        }
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Rows",
+          "Projection": 0,
+          "isActive": true
+        },
+        {
+          "Name": "Rows",
+          "Projection": 1,
+          "isActive": true
+        },
+        {
+          "Name": "Values",
+          "Projection": 2,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Category",
+      "queryName": "Product.Category",
+      "roles": {
+        "Rows": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Product"
+            }
+          },
+          "Property": "Category"
+        }
+      }
+    },
+    {
+      "displayName": "Business Type",
+      "queryName": "Reseller.Business Type",
+      "roles": {
+        "Rows": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Reseller"
+            }
+          },
+          "Property": "Business Type"
+        }
+      }
+    },
+    {
+      "displayName": "Sales Amount",
+      "queryName": "Sum(Sales.Sales Amount)",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Sales"
+                }
+              },
+              "Property": "Sales Amount"
+            }
+          },
+          "Function": 0
+        }
+      }
+    }
+  ]
+}

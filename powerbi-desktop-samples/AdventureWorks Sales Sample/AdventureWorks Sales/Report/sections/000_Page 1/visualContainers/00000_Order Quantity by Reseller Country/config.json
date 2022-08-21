@@ -1,0 +1,126 @@
+{
+  "name": "43718bfbc9b53930dbee",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 819.57585644371943,
+        "y": 73.083197389885811,
+        "z": 1000,
+        "width": 446.85154975530179,
+        "height": 247.43882544861339
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "map",
+    "projections": {
+      "Size": [
+        {
+          "queryRef": "Sum(Sales.Order Quantity)"
+        }
+      ],
+      "Category": [
+        {
+          "queryRef": "Reseller.Country-Region",
+          "active": true
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "s",
+          "Entity": "Sales",
+          "Type": 0
+        },
+        {
+          "Name": "r",
+          "Entity": "Reseller",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "s"
+                  }
+                },
+                "Property": "Order Quantity"
+              }
+            },
+            "Function": 0
+          },
+          "Name": "Sum(Sales.Order Quantity)"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "r"
+              }
+            },
+            "Property": "Country-Region"
+          },
+          "Name": "Reseller.Country-Region"
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "mapStyles": [
+        {
+          "properties": {
+            "mapTheme": {
+              "expr": {
+                "Literal": {
+                  "Value": "'grayscale'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Order Quantity by Reseller Country'"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "16D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dropShadow": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

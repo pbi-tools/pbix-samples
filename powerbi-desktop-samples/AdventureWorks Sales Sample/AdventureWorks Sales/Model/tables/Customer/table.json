@@ -1,0 +1,25 @@
+{
+  "name": "Customer",
+  "partitions": [
+    {
+      "name": "Customer-5e0a19ff-5ad0-45e6-83f8-6e59f2bcd03f",
+      "mode": "import",
+      "source": {
+        "type": "m"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_DescriptionAtRefresh"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Sales Territory",
+  "partitions": [
+    {
+      "name": "Sales Territory-a4203ded-5d49-4ccd-bdb0-31895b6aacbd",
+      "mode": "import",
+      "source": {
+        "type": "m"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_DescriptionAtRefresh"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

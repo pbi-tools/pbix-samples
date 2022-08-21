@@ -1,0 +1,10 @@
+{
+  "Version": 2,
+  "ReportSettings": {},
+  "QueriesSettings": {
+    "TypeDetectionEnabled": true,
+    "RelationshipImportEnabled": true,
+    "RunBackgroundAnalysis": true,
+    "Version": "2.88.0.0"
+  }
+}

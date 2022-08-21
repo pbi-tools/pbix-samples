@@ -1,0 +1,26 @@
+{
+  "id": 0,
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY20SU09",
+            "path": "BaseThemes/CY20SU09.json",
+            "type": 202
+          },
+          {
+            "name": "NewExecutive",
+            "path": "BuiltInThemes/NewExecutive.json",
+            "type": 201
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "theme": "NewExecutive"
+}

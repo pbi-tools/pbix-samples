@@ -1,0 +1,120 @@
+{
+  "name": "AdventureWorks Sales",
+  "compatibilityLevel": 1520,
+  "model": {
+    "culture": "en-US",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-US",
+    "relationships": [
+      {
+        "name": "88371ba8-2389-41b4-a22f-bcb756732d3b",
+        "fromTable": "Date",
+        "fromColumn": "Date",
+        "toTable": "LocalDateTable_1635aca9-f5cf-4673-8bd0-6cbe59eca959",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "586c9eeb-fe2f-431d-a8c4-9723ce217f20",
+        "fromTable": "Date",
+        "fromColumn": "Month",
+        "toTable": "LocalDateTable_d1146ef7-6f90-4647-b97e-2ffae90ba854",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "401217e9-9553-4835-a527-fd574f68046d",
+        "fromTable": "Date",
+        "fromColumn": "Full Date",
+        "toTable": "LocalDateTable_dc06deb5-c3da-486c-acde-3111d75ed696",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "e3030baf-8c61-408d-a80e-04714277dcd3",
+        "fromTable": "Sales",
+        "fromColumn": "CustomerKey",
+        "toTable": "Customer",
+        "toColumn": "CustomerKey"
+      },
+      {
+        "name": "a0a78efb-3ce3-472a-993a-b92e31c0e3cd",
+        "fromTable": "Sales",
+        "fromColumn": "ProductKey",
+        "toTable": "Product",
+        "toColumn": "ProductKey"
+      },
+      {
+        "name": "0ef2b150-bb90-4b8f-8537-fc236873591c",
+        "fromTable": "Sales",
+        "fromColumn": "ResellerKey",
+        "toTable": "Reseller",
+        "toColumn": "ResellerKey"
+      },
+      {
+        "name": "29b21f6a-77ef-4b3b-a0c0-e4111f87627b",
+        "fromCardinality": "one",
+        "fromTable": "Sales Order",
+        "fromColumn": "SalesOrderLineKey",
+        "toTable": "Sales",
+        "toColumn": "SalesOrderLineKey",
+        "crossFilteringBehavior": "bothDirections"
+      },
+      {
+        "name": "cecf591c-1f02-44a6-bff1-1c753a0b4835",
+        "fromTable": "Sales",
+        "fromColumn": "SalesTerritoryKey",
+        "toTable": "Sales Territory",
+        "toColumn": "SalesTerritoryKey"
+      },
+      {
+        "name": "8e31fd7b-1e63-43a9-8a47-33876ae8aed6",
+        "fromTable": "Sales",
+        "fromColumn": "OrderDateKey",
+        "toTable": "Date",
+        "toColumn": "DateKey"
+      },
+      {
+        "name": "dfb7bf63-667c-4abb-b494-7424c4e34b60",
+        "fromTable": "Sales",
+        "fromColumn": "DueDateKey",
+        "toTable": "Date",
+        "toColumn": "DateKey",
+        "isActive": false
+      },
+      {
+        "name": "6a63bfea-7b52-4e05-85f4-63a0f9b8991f",
+        "fromTable": "Sales",
+        "fromColumn": "ShipDateKey",
+        "toTable": "Date",
+        "toColumn": "DateKey",
+        "isActive": false
+      },
+      {
+        "name": "93a2e7c9-4a15-47be-93c0-06eceb139103",
+        "fromTable": "Product",
+        "fromColumn": "Category",
+        "toTable": "Table",
+        "toColumn": "Category"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"Customer\",\"Date\",\"Product\",\"Reseller\",\"Sales\",\"Sales Order\",\"Sales Territory\",\"Table\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.88.0.0 (Main)"
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "name": "Sales Order",
+  "partitions": [
+    {
+      "name": "Sales Order-29c8461f-8ea7-4acf-8676-6ade54d1e2a0",
+      "mode": "import",
+      "source": {
+        "type": "m"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_DescriptionAtRefresh"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

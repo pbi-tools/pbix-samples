@@ -1,0 +1,159 @@
+{
+  "objects": {
+    "dataPoint": [
+      {
+        "properties": {
+          "fill": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "ThemeDataColor": {
+                    "ColorId": 5,
+                    "Percent": 0
+                  }
+                }
+              }
+            }
+          }
+        },
+        "selector": {
+          "metadata": "Sales.Sales Amount by Due Date"
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Category": [
+      2
+    ],
+    "Y": [
+      0,
+      1
+    ]
+  },
+  "projectionActiveItems": {
+    "Category": [
+      {
+        "queryRef": "Date.Fiscal.Month",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Sales Amount",
+        "Name": "Sum(Sales.Sales Amount)",
+        "Type": 1
+      },
+      {
+        "Restatement": "Sales Amount by Due Date",
+        "Name": "Sales.Sales Amount by Due Date",
+        "Type": 1
+      },
+      {
+        "Restatement": "Month",
+        "Name": "Date.Fiscal.Month",
+        "Type": 4,
+        "Format": "dddd\\, MMMM %d\\, yyyy"
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Category",
+          "Projection": 2,
+          "isActive": true
+        },
+        {
+          "Name": "Y",
+          "Projection": 0,
+          "isActive": false
+        },
+        {
+          "Name": "Y",
+          "Projection": 1,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Sales Amount",
+      "queryName": "Sum(Sales.Sales Amount)",
+      "roles": {
+        "Y": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Sales"
+                }
+              },
+              "Property": "Sales Amount"
+            }
+          },
+          "Function": 0
+        }
+      }
+    },
+    {
+      "displayName": "Sales Amount by Due Date",
+      "queryName": "Sales.Sales Amount by Due Date",
+      "roles": {
+        "Y": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Sales"
+            }
+          },
+          "Property": "Sales Amount by Due Date"
+        }
+      }
+    },
+    {
+      "displayName": "Month",
+      "format": "dddd\\, MMMM %d\\, yyyy",
+      "queryName": "Date.Fiscal.Month",
+      "roles": {
+        "Category": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 519
+      },
+      "expr": {
+        "HierarchyLevel": {
+          "Expression": {
+            "Hierarchy": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Date"
+                }
+              },
+              "Hierarchy": "Fiscal"
+            }
+          },
+          "Level": "Month"
+        }
+      }
+    }
+  ]
+}

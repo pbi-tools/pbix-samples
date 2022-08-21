@@ -1,0 +1,28 @@
+{
+  "name": "Subcategory",
+  "dataType": "string",
+  "sourceColumn": "Subcategory",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "Format",
+      "value": "<Format Format=\"Text\" />"
+    },
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "String#####not a type"
+    },
+    {
+      "name": "PBI_NameAtRefresh",
+      "value": "Subcategory"
+    },
+    {
+      "name": "PBI_WasHiddenAtRefresh",
+      "value": "False"
+    }
+  ]
+}

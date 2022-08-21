@@ -1,0 +1,21 @@
+{
+  "name": "Product",
+  "partitions": [
+    {
+      "name": "Product-d33e3d12-242f-473c-8a01-fdc35a2ea693",
+      "mode": "import",
+      "source": {
+        "type": "m"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_DescriptionAtRefresh"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

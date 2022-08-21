@@ -1,0 +1,37 @@
+{
+  "name": "78f7cd0eff706383245e",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 649.67032967032969,
+        "y": 254.94505494505495,
+        "z": 21000,
+        "width": 254.94505494505495,
+        "height": 28.131868131868131,
+        "tabOrder": 21000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Click a feature below to see example"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,450 @@
+{
+  "Commands": [
+    {
+      "SemanticQueryDataShapeCommand": {
+        "Query": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "o",
+              "Entity": "Online Sales",
+              "Type": 0
+            },
+            {
+              "Name": "d",
+              "Entity": "Date",
+              "Type": 0
+            }
+          ],
+          "Select": [
+            {
+              "Column": {
+                "Expression": {
+                  "TransformTableRef": {
+                    "Source": "output0"
+                  }
+                },
+                "Property": "Online Sales.Purchasing Date"
+              },
+              "Name": "Online Sales.Purchasing Date"
+            },
+            {
+              "Column": {
+                "Expression": {
+                  "TransformTableRef": {
+                    "Source": "output0"
+                  }
+                },
+                "Property": "Online Sales.Revenue"
+              },
+              "Name": "Online Sales.Revenue"
+            },
+            {
+              "Column": {
+                "Expression": {
+                  "TransformTableRef": {
+                    "Source": "output0"
+                  }
+                },
+                "Property": "ExpectedValue"
+              },
+              "Name": "ExpectedValue"
+            },
+            {
+              "Column": {
+                "Expression": {
+                  "TransformTableRef": {
+                    "Source": "output0"
+                  }
+                },
+                "Property": "ExpectedLow"
+              },
+              "Name": "ExpectedLow"
+            },
+            {
+              "Column": {
+                "Expression": {
+                  "TransformTableRef": {
+                    "Source": "output0"
+                  }
+                },
+                "Property": "ExpectedHigh"
+              },
+              "Name": "ExpectedHigh"
+            },
+            {
+              "Column": {
+                "Expression": {
+                  "TransformTableRef": {
+                    "Source": "output0"
+                  }
+                },
+                "Property": "RawScore"
+              },
+              "Name": "RawScore"
+            },
+            {
+              "Column": {
+                "Expression": {
+                  "TransformTableRef": {
+                    "Source": "output0"
+                  }
+                },
+                "Property": "Anomaly"
+              },
+              "Name": "Anomaly"
+            },
+            {
+              "Column": {
+                "Expression": {
+                  "TransformTableRef": {
+                    "Source": "output0"
+                  }
+                },
+                "Property": "BatchStart"
+              },
+              "Name": "BatchStart"
+            },
+            {
+              "Column": {
+                "Expression": {
+                  "TransformTableRef": {
+                    "Source": "output0"
+                  }
+                },
+                "Property": "BatchEnd"
+              },
+              "Name": "BatchEnd"
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "o"
+                              }
+                            },
+                            "Property": "Product"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "null"
+                            }
+                          }
+                        ],
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'Action Figure'"
+                            }
+                          }
+                        ],
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'Dolls'"
+                            }
+                          }
+                        ],
+                        [
+                          {
+                            "Literal": {
+                              "Value": "'Lego'"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Condition": {
+                "And": {
+                  "Left": {
+                    "Comparison": {
+                      "ComparisonKind": 2,
+                      "Left": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "o"
+                            }
+                          },
+                          "Property": "Purchasing Date"
+                        }
+                      },
+                      "Right": {
+                        "DateSpan": {
+                          "Expression": {
+                            "Literal": {
+                              "Value": "datetime'2019-01-01T00:00:00'"
+                            }
+                          },
+                          "TimeUnit": 5
+                        }
+                      }
+                    }
+                  },
+                  "Right": {
+                    "Comparison": {
+                      "ComparisonKind": 4,
+                      "Left": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "o"
+                            }
+                          },
+                          "Property": "Purchasing Date"
+                        }
+                      },
+                      "Right": {
+                        "DateSpan": {
+                          "Expression": {
+                            "Literal": {
+                              "Value": "datetime'2019-12-31T00:00:00'"
+                            }
+                          },
+                          "TimeUnit": 5
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "Condition": {
+                "In": {
+                  "Expressions": [
+                    {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Source": "d"
+                          }
+                        },
+                        "Property": "Fiscal Year"
+                      }
+                    }
+                  ],
+                  "Values": [
+                    [
+                      {
+                        "Literal": {
+                          "Value": "'FY2020'"
+                        }
+                      }
+                    ]
+                  ]
+                }
+              }
+            }
+          ],
+          "Transform": [
+            {
+              "Name": "SampleAndDetectAnomaly",
+              "Algorithm": "SampleAndDetectAnomaly",
+              "Input": {
+                "Parameters": [
+                  {
+                    "Literal": {
+                      "Value": "0.69D"
+                    },
+                    "Name": "Sensitivity"
+                  },
+                  {
+                    "Literal": {
+                      "Value": "3500L"
+                    },
+                    "Name": "SampleSizePerSeries"
+                  }
+                ],
+                "Table": {
+                  "Name": "input0",
+                  "Columns": [
+                    {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "o"
+                            }
+                          },
+                          "Property": "Purchasing Date"
+                        },
+                        "Name": "Online Sales.Purchasing Date"
+                      },
+                      "Role": "TimeSeriesColumnRole"
+                    },
+                    {
+                      "Expression": {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "o"
+                            }
+                          },
+                          "Property": "Revenue"
+                        },
+                        "Name": "Online Sales.Revenue"
+                      },
+                      "Role": "ValueColumnRole"
+                    }
+                  ]
+                }
+              },
+              "Output": {
+                "Table": {
+                  "Name": "output0",
+                  "Columns": [
+                    {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "TransformTableRef": {
+                              "Source": "input0"
+                            }
+                          },
+                          "Property": "Online Sales.Purchasing Date"
+                        },
+                        "Name": "Online Sales.Purchasing Date"
+                      }
+                    },
+                    {
+                      "Expression": {
+                        "Column": {
+                          "Expression": {
+                            "TransformTableRef": {
+                              "Source": "input0"
+                            }
+                          },
+                          "Property": "Online Sales.Revenue"
+                        },
+                        "Name": "Online Sales.Revenue"
+                      }
+                    },
+                    {
+                      "Expression": {
+                        "TransformOutputRoleRef": {
+                          "Role": "ExpectedValueRole"
+                        },
+                        "Name": "ExpectedValue"
+                      },
+                      "Role": "anomalyDetection.ExpectedValue"
+                    },
+                    {
+                      "Expression": {
+                        "TransformOutputRoleRef": {
+                          "Role": "ExpectedLowRole"
+                        },
+                        "Name": "ExpectedLow"
+                      },
+                      "Role": "anomalyDetection.ExpectedLow"
+                    },
+                    {
+                      "Expression": {
+                        "TransformOutputRoleRef": {
+                          "Role": "ExpectedHighRole"
+                        },
+                        "Name": "ExpectedHigh"
+                      },
+                      "Role": "anomalyDetection.ExpectedHigh"
+                    },
+                    {
+                      "Expression": {
+                        "TransformOutputRoleRef": {
+                          "Role": "RawScoreRole"
+                        },
+                        "Name": "RawScore"
+                      },
+                      "Role": "anomalyDetection.RawScore"
+                    },
+                    {
+                      "Expression": {
+                        "TransformOutputRoleRef": {
+                          "Role": "AnomalyRole"
+                        },
+                        "Name": "Anomaly"
+                      },
+                      "Role": "anomalyDetection.Anomaly"
+                    },
+                    {
+                      "Expression": {
+                        "TransformOutputRoleRef": {
+                          "Role": "BatchStartRole"
+                        },
+                        "Name": "BatchStart"
+                      },
+                      "Role": "anomalyDetection.BatchStart"
+                    },
+                    {
+                      "Expression": {
+                        "TransformOutputRoleRef": {
+                          "Role": "BatchEndRole"
+                        },
+                        "Name": "BatchEnd"
+                      },
+                      "Role": "anomalyDetection.BatchEnd"
+                    }
+                  ]
+                }
+              }
+            }
+          ]
+        },
+        "Binding": {
+          "Primary": {
+            "Groupings": [
+              {
+                "Projections": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8
+                ]
+              }
+            ]
+          },
+          "DataReduction": {
+            "DataVolume": 4,
+            "Primary": {
+              "BinnedLineSample": {
+                "Count": 4900,
+                "WarningCount": 3500
+              }
+            }
+          },
+          "SuppressedJoinPredicates": [
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "Version": 1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Sales",
+  "partitions": [
+    {
+      "name": "Sales-1c496a38-f0f4-4d25-b987-657177c38553",
+      "mode": "import",
+      "source": {
+        "type": "m"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

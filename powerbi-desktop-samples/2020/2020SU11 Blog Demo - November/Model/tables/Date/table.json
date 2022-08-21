@@ -1,0 +1,24 @@
+{
+  "name": "Date",
+  "description": "Filters the Sales table using sales order date",
+  "dataCategory": "Time",
+  "partitions": [
+    {
+      "name": "Date-6302b3e1-4d31-40e4-b909-ba364d21aa87",
+      "mode": "import",
+      "source": {
+        "type": "m"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

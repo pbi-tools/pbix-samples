@@ -1,0 +1,41 @@
+{
+  "name": "dbb7aa4447e4690db31e",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 25.494505494505496,
+        "y": 49.230769230769234,
+        "z": 0,
+        "width": 724.39560439560444,
+        "height": 70.329670329670336,
+        "tabOrder": 13000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "This is the accompanying sample file for the [month] [year] of release of Power BI Desktop",
+                    "textStyle": {
+                      "fontSize": "12pt",
+                      "color": "#ffffff"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

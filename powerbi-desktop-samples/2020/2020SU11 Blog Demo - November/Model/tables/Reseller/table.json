@@ -1,0 +1,22 @@
+{
+  "name": "Reseller",
+  "partitions": [
+    {
+      "name": "Reseller-e44d0a71-e144-4c32-b1af-2f758a686c3c",
+      "mode": "import",
+      "source": {
+        "type": "m"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

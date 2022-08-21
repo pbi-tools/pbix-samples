@@ -1,0 +1,427 @@
+{
+  "name": "e2e8aafad378cb2cc807",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 34.042553191489361,
+        "y": 177.99392097264439,
+        "z": 5000,
+        "width": 590.39513677811556,
+        "height": 452.27963525835867,
+        "tabOrder": 8000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Reporting",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "color": "#000000"
+                    },
+                    "url": "https://powerbi.microsoft.com/en-us/blog/12026/preview/#_Toc55467052"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "New Field List (Preview)",
+                    "textStyle": {
+                      "color": "#000000"
+                    },
+                    "url": "https://powerbi.microsoft.com/en-us/blog/12026/preview/#_Toc55467053"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "New Model View (Preview)",
+                    "textStyle": {
+                      "color": "#000000"
+                    },
+                    "url": "https://powerbi.microsoft.com/en-us/blog/12026/preview/#_Toc55467054"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Apply all filters is now generally available",
+                    "textStyle": {
+                      "color": "#000000"
+                    },
+                    "url": "https://powerbi.microsoft.com/en-us/blog/12026/preview/#_Toc55467055"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Visual Zoom Slider",
+                    "textStyle": {
+                      "color": "#000000"
+                    },
+                    "url": "https://powerbi.microsoft.com/en-us/blog/12026/preview/#_Toc55467056"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Data point rectangle select extended to Map visual",
+                    "textStyle": {
+                      "color": "#000000"
+                    },
+                    "url": "https://powerbi.microsoft.com/en-us/blog/12026/preview/#_Toc55467057"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Certificate revocation check for web connections",
+                    "textStyle": {
+                      "color": "#000000"
+                    },
+                    "url": "https://powerbi.microsoft.com/en-us/blog/12026/preview/#_Toc55467058"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Paginated Reports Updates",
+                    "textStyle": {
+                      "color": "#000000"
+                    },
+                    "url": "https://powerbi.microsoft.com/en-us/blog/12026/preview/#_Toc55467059"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Crediting total labels for stacked visuals (Sept 2020)",
+                    "textStyle": {
+                      "color": "#000000"
+                    },
+                    "url": "https://powerbi.microsoft.com/en-us/blog/12026/preview/#total_labels"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Analytics",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "color": "#000000"
+                    },
+                    "url": "https://powerbi.microsoft.com/en-us/blog/12026/preview/#_Toc55467060"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Anomaly Detection (Preview)",
+                    "textStyle": {
+                      "color": "#000000"
+                    },
+                    "url": "https://powerbi.microsoft.com/en-us/blog/12026/preview/#_Toc55467061"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Q&A now supports partial matching data values",
+                    "textStyle": {
+                      "color": "#000000"
+                    },
+                    "url": "https://powerbi.microsoft.com/en-us/blog/12026/preview/#_Toc55467062"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Data connectivity",
+                    "textStyle": {
+                      "color": "#000000"
+                    },
+                    "url": "https://powerbi.microsoft.com/en-us/blog/12026/preview/#_Toc55467063"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Hive LLAP connector generally available",
+                    "textStyle": {
+                      "color": "#000000"
+                    },
+                    "url": "https://powerbi.microsoft.com/en-us/blog/12026/preview/#_Toc55467064"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "New connectors: Actian, Anaplan, Starburst Presto",
+                    "textStyle": {
+                      "color": "#000000"
+                    },
+                    "url": "https://powerbi.microsoft.com/en-us/blog/12026/preview/#_Toc55467065"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Service",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "color": "#000000"
+                    },
+                    "url": "https://powerbi.microsoft.com/en-us/blog/12026/preview/#_Toc55467066"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Certified and Promoted reports and apps",
+                    "textStyle": {
+                      "color": "#000000"
+                    },
+                    "url": "https://powerbi.microsoft.com/en-us/blog/12026/preview/#_Toc55467067"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "The ‘new look’ of the Power BI service is live",
+                    "textStyle": {
+                      "color": "#000000"
+                    },
+                    "url": "https://powerbi.microsoft.com/en-us/blog/12026/preview/#_Toc55467068"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Embedded",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "color": "#000000"
+                    },
+                    "url": "https://powerbi.microsoft.com/en-us/blog/12026/preview/#_Toc55467069"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Power BI Automation and APIs",
+                    "textStyle": {
+                      "color": "#000000"
+                    },
+                    "url": "https://powerbi.microsoft.com/en-us/blog/12026/preview/#_Toc55467070"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Power BI Embedded Analytics",
+                    "textStyle": {
+                      "color": "#000000"
+                    },
+                    "url": "https://powerbi.microsoft.com/en-us/blog/12026/preview/#_Toc55467071"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Visualizations",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "color": "#000000"
+                    },
+                    "url": "https://powerbi.microsoft.com/en-us/blog/12026/preview/#_Toc55467072"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "New Visualizations",
+                    "textStyle": {
+                      "color": "#000000"
+                    },
+                    "url": "https://powerbi.microsoft.com/en-us/blog/12026/preview/#_Toc55467073"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Zebra BI 4.4",
+                    "textStyle": {
+                      "color": "#000000"
+                    },
+                    "url": "https://powerbi.microsoft.com/en-us/blog/12026/preview/#_Toc55467074"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "New Visual by ZoomCharts: Drill Down Map PRO",
+                    "textStyle": {
+                      "color": "#000000"
+                    },
+                    "url": "https://powerbi.microsoft.com/en-us/blog/12026/preview/#_Toc55467075"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "xViz Scatter/ Bubble chart",
+                    "textStyle": {
+                      "color": "#000000"
+                    },
+                    "url": "https://powerbi.microsoft.com/en-us/blog/12026/preview/#_Toc55467076"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Editor’s picks",
+                    "textStyle": {
+                      "color": "#000000"
+                    },
+                    "url": "https://powerbi.microsoft.com/en-us/blog/12026/preview/#_Toc55467077"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Developers",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "color": "#000000"
+                    },
+                    "url": "https://powerbi.microsoft.com/en-us/blog/12026/preview/#_Toc55467078"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Fetch more data API 3.4",
+                    "textStyle": {
+                      "color": "#000000"
+                    },
+                    "url": "https://powerbi.microsoft.com/en-us/blog/12026/preview/#_Toc55467079"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Enhanced testing of your developed custom visual",
+                    "textStyle": {
+                      "color": "#000000"
+                    },
+                    "url": "https://powerbi.microsoft.com/en-us/blog/12026/preview/#_Toc55467080"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Coming Soon",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "color": "#000000"
+                    },
+                    "url": "https://powerbi.microsoft.com/en-us/blog/12026/preview/#coming_soon"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

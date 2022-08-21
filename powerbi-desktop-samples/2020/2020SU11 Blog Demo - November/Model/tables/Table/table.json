@@ -1,0 +1,18 @@
+{
+  "name": "Table",
+  "partitions": [
+    {
+      "name": "Table-8e8a7986-fead-4f8f-83a7-a231b09bcb8f",
+      "mode": "import",
+      "source": {
+        "type": "m"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

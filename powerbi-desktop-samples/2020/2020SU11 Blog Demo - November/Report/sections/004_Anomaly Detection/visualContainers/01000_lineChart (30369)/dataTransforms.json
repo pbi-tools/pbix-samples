@@ -1,0 +1,401 @@
+{
+  "objects": {
+    "lineStyles": [
+      {
+        "properties": {
+          "strokeWidth": {
+            "expr": {
+              "Literal": {
+                "Value": "2D"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "anomalyDetection": [
+      {
+        "properties": {
+          "show": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          },
+          "transform": {
+            "algorithm": "SampleAndDetectAnomaly",
+            "parameters": [
+              {
+                "Literal": {
+                  "Value": "0.69D"
+                },
+                "Name": "Sensitivity"
+              },
+              {
+                "Literal": {
+                  "Value": "3500L"
+                },
+                "Name": "SampleSizePerSeries"
+              }
+            ]
+          },
+          "explainBy": {
+            "exprs": [
+              {
+                "expr": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "Online Sales"
+                      }
+                    },
+                    "Property": "City"
+                  }
+                }
+              },
+              {
+                "expr": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "Online Sales"
+                      }
+                    },
+                    "Property": "Seller"
+                  }
+                }
+              }
+            ],
+            "kind": "ExprList"
+          },
+          "displayName": {
+            "expr": {
+              "Literal": {
+                "Value": "'Find anomalies 1'"
+              }
+            }
+          },
+          "markerShape": {
+            "expr": {
+              "Literal": {
+                "Value": "'triangle'"
+              }
+            }
+          },
+          "markerColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#12239E'"
+                  }
+                }
+              }
+            }
+          },
+          "transparency": {
+            "expr": {
+              "Literal": {
+                "Value": "60D"
+              }
+            }
+          },
+          "confidenceBandColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#717BC5'"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "selector": {
+          "metadata": "Online Sales.Revenue",
+          "id": "1"
+        }
+      }
+    ],
+    "dataPoint": [
+      {
+        "properties": {
+          "fill": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#E044A7'"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "selector": {
+          "metadata": "Online Sales.Revenue"
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Category": [
+      0
+    ],
+    "Y": [
+      1
+    ],
+    "anomalyDetection.ExpectedValue": [
+      2
+    ],
+    "anomalyDetection.ExpectedLow": [
+      3
+    ],
+    "anomalyDetection.ExpectedHigh": [
+      4
+    ],
+    "anomalyDetection.RawScore": [
+      5
+    ],
+    "anomalyDetection.Anomaly": [
+      6
+    ],
+    "anomalyDetection.BatchStart": [
+      7
+    ],
+    "anomalyDetection.BatchEnd": [
+      8
+    ]
+  },
+  "projectionActiveItems": {
+    "Category": [
+      {
+        "queryRef": "Online Sales.Purchasing Date",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "splits": [
+    {
+      "selects": {
+        "0": true,
+        "1": true
+      }
+    },
+    {
+      "selects": {
+        "0": true,
+        "2": true,
+        "3": true,
+        "4": true,
+        "5": true,
+        "6": true,
+        "7": true,
+        "8": true
+      }
+    }
+  ],
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Purchasing Date",
+        "Name": "Online Sales.Purchasing Date",
+        "Type": 4,
+        "Format": "dddd\\, MMMM %d\\, yyyy"
+      },
+      {
+        "Restatement": "Revenue",
+        "Name": "Online Sales.Revenue",
+        "Type": 1
+      }
+    ],
+    "Filters": [
+      {
+        "type": 0,
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Online Sales"
+              }
+            },
+            "Property": "Product"
+          }
+        }
+      },
+      {
+        "type": 0,
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Online Sales"
+              }
+            },
+            "Property": "Purchasing Date"
+          }
+        }
+      },
+      {
+        "type": 2,
+        "expression": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Online Sales"
+              }
+            },
+            "Property": "Revenue"
+          }
+        }
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Category",
+          "Projection": 0,
+          "isActive": true
+        },
+        {
+          "Name": "Y",
+          "Projection": 1,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Purchasing Date",
+      "format": "dddd\\, MMMM %d\\, yyyy",
+      "queryName": "Online Sales.Purchasing Date",
+      "roles": {
+        "Category": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 519
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Online Sales"
+            }
+          },
+          "Property": "Purchasing Date"
+        }
+      }
+    },
+    {
+      "displayName": "Revenue",
+      "queryName": "Online Sales.Revenue",
+      "roles": {
+        "Y": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Online Sales"
+            }
+          },
+          "Property": "Revenue"
+        }
+      }
+    },
+    {
+      "displayName": "ExpectedValue",
+      "queryName": "ExpectedValue",
+      "roles": {
+        "anomalyDetection.ExpectedValue": true
+      },
+      "expr": {
+        "TransformOutputRoleRef": {
+          "Role": "ExpectedValueRole"
+        }
+      }
+    },
+    {
+      "displayName": "ExpectedLow",
+      "queryName": "ExpectedLow",
+      "roles": {
+        "anomalyDetection.ExpectedLow": true
+      },
+      "expr": {
+        "TransformOutputRoleRef": {
+          "Role": "ExpectedLowRole"
+        }
+      }
+    },
+    {
+      "displayName": "ExpectedHigh",
+      "queryName": "ExpectedHigh",
+      "roles": {
+        "anomalyDetection.ExpectedHigh": true
+      },
+      "expr": {
+        "TransformOutputRoleRef": {
+          "Role": "ExpectedHighRole"
+        }
+      }
+    },
+    {
+      "displayName": "RawScore",
+      "queryName": "RawScore",
+      "roles": {
+        "anomalyDetection.RawScore": true
+      },
+      "expr": {
+        "TransformOutputRoleRef": {
+          "Role": "RawScoreRole"
+        }
+      }
+    },
+    {
+      "displayName": "Anomaly",
+      "queryName": "Anomaly",
+      "roles": {
+        "anomalyDetection.Anomaly": true
+      },
+      "expr": {
+        "TransformOutputRoleRef": {
+          "Role": "AnomalyRole"
+        }
+      }
+    },
+    {
+      "displayName": "BatchStart",
+      "queryName": "BatchStart",
+      "roles": {
+        "anomalyDetection.BatchStart": true
+      },
+      "expr": {
+        "TransformOutputRoleRef": {
+          "Role": "BatchStartRole"
+        }
+      }
+    },
+    {
+      "displayName": "BatchEnd",
+      "queryName": "BatchEnd",
+      "roles": {
+        "anomalyDetection.BatchEnd": true
+      },
+      "expr": {
+        "TransformOutputRoleRef": {
+          "Role": "BatchEndRole"
+        }
+      }
+    }
+  ]
+}

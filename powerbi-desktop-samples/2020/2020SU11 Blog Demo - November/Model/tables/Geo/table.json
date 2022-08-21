@@ -1,0 +1,25 @@
+{
+  "name": "Geo",
+  "partitions": [
+    {
+      "name": "Geo-c996b1c8-a4f5-4261-b8c1-924b30c4719d",
+      "mode": "import",
+      "source": {
+        "type": "m"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_DescriptionAtRefresh"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

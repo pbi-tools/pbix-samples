@@ -1,0 +1,41 @@
+{
+  "name": "7ca0031585ce6c3b2c8f",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 649.67032967032969,
+        "y": 210.989010989011,
+        "z": 15000,
+        "width": 204.83516483516485,
+        "height": 40.439560439560438,
+        "tabOrder": 15000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Highlighted Features",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "14pt"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

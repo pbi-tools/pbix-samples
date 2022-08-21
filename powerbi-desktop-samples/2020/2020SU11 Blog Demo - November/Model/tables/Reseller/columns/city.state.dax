@@ -1,0 +1,1 @@
+CONCATENATE(Reseller[City], CONCATENATE( ", ", Reseller[State-Province]))

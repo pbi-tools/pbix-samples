@@ -1,0 +1,109 @@
+{
+  "id": 0,
+  "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "ReportSection9ee213e84602241d02c7",
+      "config": "{}",
+      "name": "Pod",
+      "parameters": "[{\"name\":\"Param_Filter3f5cc53796ba19d095d6\",\"boundFilter\":\"Filter3f5cc53796ba19d095d6\",\"fieldExpr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Reseller\"}},\"Property\":\"Reseller\"}}}]",
+      "type": 1
+    }
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY19SU12",
+            "path": "BaseThemes/CY19SU12.json",
+            "type": 202
+          },
+          {
+            "name": "usa.states.topo",
+            "path": "Shapemaps/usa.states.topo.json",
+            "type": 200
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "BG118746382800265105.png",
+            "path": "BG118746382800265105.png",
+            "type": 100
+          },
+          {
+            "name": "Germany31125696735990527.json",
+            "path": "Germany31125696735990527.json",
+            "type": 200
+          },
+          {
+            "name": "Toggle_Right6245131934985184.png",
+            "path": "Toggle_Right6245131934985184.png",
+            "type": 100
+          },
+          {
+            "name": "Toggle_Left8813323637656998.png",
+            "path": "Toggle_Left8813323637656998.png",
+            "type": 100
+          },
+          {
+            "name": "BG28567678370954159.png",
+            "path": "BG28567678370954159.png",
+            "type": 100
+          },
+          {
+            "name": "theme_created_by_powerbi.tips_6070493101607699.json",
+            "path": "theme_created_by_powerbi.tips_6070493101607699.json",
+            "type": 201
+          },
+          {
+            "name": "yt_icon_rgb08714862345531071.png",
+            "path": "yt_icon_rgb08714862345531071.png",
+            "type": 100
+          },
+          {
+            "name": "Twitter_logo_bird_transparent_7317884242831463.png",
+            "path": "Twitter_logo_bird_transparent_7317884242831463.png",
+            "type": 100
+          },
+          {
+            "name": "Intro_bg9408604446064535.png",
+            "path": "Intro_bg9408604446064535.png",
+            "type": 100
+          },
+          {
+            "name": "Git45075676782317164.png",
+            "path": "Git45075676782317164.png",
+            "type": 100
+          },
+          {
+            "name": "light5256578793074274.png",
+            "path": "light5256578793074274.png",
+            "type": 100
+          },
+          {
+            "name": "Help5136743113067681.png",
+            "path": "Help5136743113067681.png",
+            "type": 100
+          },
+          {
+            "name": "Frame0809173390669149.PNG",
+            "path": "Frame0809173390669149.PNG",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "theme": "theme_created_by_powerbi.tips_6070493101607699.json"
+}

@@ -1,0 +1,56 @@
+{
+  "name": "ba990a2c69c5a0ee4635",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 39.9679743795036,
+        "y": 79.9359487590072,
+        "z": 5000,
+        "width": 248.00640512409927,
+        "height": 50.216172938350681,
+        "tabOrder": 10125
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Reseller Information",
+                    "textStyle": {
+                      "fontSize": "14pt"
+                    }
+                  }
+                ],
+                "horizontalTextAlignment": "center"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

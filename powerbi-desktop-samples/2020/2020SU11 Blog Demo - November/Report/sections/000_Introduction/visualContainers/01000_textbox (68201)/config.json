@@ -1,0 +1,194 @@
+{
+  "name": "68201c87cbe9c88668e5",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 975.82417582417588,
+        "y": 269.010989010989,
+        "z": 7000,
+        "width": 185.49450549450549,
+        "height": 321.75824175824175,
+        "tabOrder": 1000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Roadmap",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "color": "#000000"
+                    },
+                    "url": "https://powerbi.microsoft.com/en-us/roadmap/"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Blog",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "color": "#000000"
+                    },
+                    "url": "https://powerbi.microsoft.com/en-us/blog/"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Documentation",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "color": "#000000"
+                    },
+                    "url": "https://docs.microsoft.com/en-us/power-bi/"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Getting started",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "color": "#000000"
+                    },
+                    "url": "https://docs.microsoft.com/en-us/power-bi/fundamentals/desktop-getting-started"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Guided Learning",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "color": "#000000"
+                    },
+                    "url": "https://docs.microsoft.com/en-us/learn/powerplatform/power-bi?WT.mc_id=powerbi_landingpage-marketing-page"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Collaborate in Teams",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "color": "#000000"
+                    },
+                    "url": "https://docs.microsoft.com/en-us/power-bi/collaborate-share/service-collaborate-microsoft-teams"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Guidance documentation",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "color": "#000000"
+                    },
+                    "url": "https://docs.microsoft.com/en-us/power-bi/guidance/"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Webinars",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "color": "#000000"
+                    },
+                    "url": "https://docs.microsoft.com/en-us/power-bi/fundamentals/webinars"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Data Stories Gallery",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "color": "#000000"
+                    },
+                    "url": "https://community.powerbi.com/t5/Data-Stories-Gallery/bd-p/DataStoriesGallery"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

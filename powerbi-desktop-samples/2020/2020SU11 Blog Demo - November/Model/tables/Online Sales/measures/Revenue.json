@@ -1,0 +1,9 @@
+{
+  "name": "Revenue",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"General\" />"
+    }
+  ]
+}

@@ -1,0 +1,352 @@
+{
+  "name": "f2c340b0489b10546a4c",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 23.570856685348279,
+        "y": 74.811849479583657,
+        "z": 1000,
+        "width": 332.04163330664528,
+        "height": 342.28983186549237,
+        "tabOrder": 10062
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "pivotTable",
+    "projections": {
+      "Values": [
+        {
+          "queryRef": "Min(Reseller.Reseller)"
+        },
+        {
+          "queryRef": "Min(Reseller.Reseller ID)"
+        },
+        {
+          "queryRef": "Min(Reseller.Business Type)"
+        },
+        {
+          "queryRef": "Min(Reseller.Postal Code)"
+        },
+        {
+          "queryRef": "Min(Reseller.city.state)"
+        },
+        {
+          "queryRef": "Min(Reseller.Country-Region)"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "r",
+          "Entity": "Reseller",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "r"
+                  }
+                },
+                "Property": "Reseller"
+              }
+            },
+            "Function": 3
+          },
+          "Name": "Min(Reseller.Reseller)"
+        },
+        {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "r"
+                  }
+                },
+                "Property": "Business Type"
+              }
+            },
+            "Function": 3
+          },
+          "Name": "Min(Reseller.Business Type)"
+        },
+        {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "r"
+                  }
+                },
+                "Property": "city.state"
+              }
+            },
+            "Function": 3
+          },
+          "Name": "Min(Reseller.city.state)"
+        },
+        {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "r"
+                  }
+                },
+                "Property": "Country-Region"
+              }
+            },
+            "Function": 3
+          },
+          "Name": "Min(Reseller.Country-Region)"
+        },
+        {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "r"
+                  }
+                },
+                "Property": "Reseller ID"
+              }
+            },
+            "Function": 3
+          },
+          "Name": "Min(Reseller.Reseller ID)"
+        },
+        {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "r"
+                  }
+                },
+                "Property": "Postal Code"
+              }
+            },
+            "Function": 3
+          },
+          "Name": "Min(Reseller.Postal Code)"
+        }
+      ]
+    },
+    "columnProperties": {
+      "Min(Reseller.Reseller)": {
+        "displayName": "Name:"
+      },
+      "Min(Reseller.Reseller ID)": {
+        "displayName": "ID:"
+      },
+      "Min(Reseller.Business Type)": {
+        "displayName": "Business type:"
+      },
+      "Min(Reseller.Postal Code)": {
+        "displayName": "Postal Code:"
+      },
+      "Min(Reseller.city.state)": {
+        "displayName": "City, State:"
+      },
+      "Min(Reseller.Country-Region)": {
+        "displayName": "Country:"
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "values": [
+        {
+          "properties": {
+            "valuesOnRow": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "fontSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "grid": [
+        {
+          "properties": {
+            "rowPadding": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "168.0992804737948D"
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "99.30827101572996D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Min(Reseller.Reseller)"
+          }
+        }
+      ],
+      "columnHeaders": [
+        {
+          "properties": {
+            "outline": {
+              "expr": {
+                "Literal": {
+                  "Value": "'None'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "rowHeaders": [
+        {
+          "properties": {
+            "outline": {
+              "expr": {
+                "Literal": {
+                  "Value": "'None'"
+                }
+              }
+            },
+            "wordWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "fontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 2,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "alignment": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Right'"
+                }
+              }
+            },
+            "fontFamily": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''Segoe UI Bold'', wf_segoe-ui_bold, helvetica, arial, sans-serif'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "''"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "stylePreset": [
+        {
+          "properties": {
+            "name": {
+              "expr": {
+                "Literal": {
+                  "Value": "'None'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "general": [
+        {
+          "properties": {
+            "keepLayerOrder": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

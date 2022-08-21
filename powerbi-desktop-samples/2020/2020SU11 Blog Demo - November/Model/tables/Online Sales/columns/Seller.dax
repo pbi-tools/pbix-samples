@@ -1,0 +1,1 @@
+SWITCH('Online Sales'[Reserved room type code], "A", "Contoso", "B", "AdventureWorks", "C", "Northwind Traders", "D", "ProseWare Inc.", "E", "Wide World Importers", "F", "A. Datum Corporation", "G", "Reskit", "H", "Fabrikam, Inc.", "L","Litware Inc.", "P", "Terra Firm ")

@@ -1,0 +1,21 @@
+{
+  "name": "Customer",
+  "partitions": [
+    {
+      "name": "Customer-01f41322-c19c-4b65-a4cb-85a8045da233",
+      "mode": "import",
+      "source": {
+        "type": "m"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Exception"
+    },
+    {
+      "name": "PBI_DescriptionAtRefresh"
+    }
+  ]
+}

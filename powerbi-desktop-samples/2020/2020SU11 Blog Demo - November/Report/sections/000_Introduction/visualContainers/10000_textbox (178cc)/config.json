@@ -1,0 +1,41 @@
+{
+  "name": "178cc2db26b78abdfce1",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 34.042553191489361,
+        "y": 128.38905775075989,
+        "z": 3000,
+        "width": 322.91793313069911,
+        "height": 39.878419452887542,
+        "tabOrder": 10000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "What's New this month?",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "14pt"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

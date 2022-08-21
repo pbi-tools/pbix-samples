@@ -1,0 +1,11 @@
+{
+  "Version": 2,
+  "ReportSettings": {
+    "IsQnaEnabledForLiveConnect": true
+  },
+  "QueriesSettings": {
+    "RelationshipImportEnabled": true,
+    "RunBackgroundAnalysis": true,
+    "Version": "2.81.5831.821"
+  }
+}

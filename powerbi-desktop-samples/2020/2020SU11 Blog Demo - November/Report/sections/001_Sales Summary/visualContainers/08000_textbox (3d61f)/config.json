@@ -1,0 +1,41 @@
+{
+  "name": "3d61f5f56a9e0a3d114e",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 1006.9893355209188,
+        "y": 678.326497128794,
+        "z": 8000,
+        "width": 259.36013125512716,
+        "height": 42.001640689089413,
+        "tabOrder": 8000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Last updated: 9/30/20 10:17 AM",
+                    "textStyle": {
+                      "fontSize": "12pt"
+                    }
+                  }
+                ],
+                "horizontalTextAlignment": "right"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1 @@
+IF(FIRSTNONBLANK(Reseller[Country-Region],0)="Germany", 1, 0)

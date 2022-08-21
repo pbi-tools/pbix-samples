@@ -1,0 +1,30 @@
+{
+  "displayName": "Low Risk",
+  "name": "Bookmark2b987ba50a7b4ad7c857",
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "ReportSection0805d6522ced0b422d38",
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "options": {
+    "targetVisualNames": [
+      "5649b3e28d77b8aee842"
+    ]
+  }
+}

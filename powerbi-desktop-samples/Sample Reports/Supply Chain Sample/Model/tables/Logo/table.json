@@ -1,0 +1,31 @@
+{
+  "name": "Logo",
+  "isHidden": true,
+  "partitions": [
+    {
+      "name": "Logo-b7177523-7710-4cca-bfce-da4107d111c5",
+      "mode": "import",
+      "source": {
+        "type": "m"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "e6401689-3f49-423f-bd1a-f05e55c1ccec"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "Logo"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

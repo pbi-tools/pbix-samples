@@ -1,0 +1,136 @@
+{
+  "id": 6331786,
+  "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "ReportSection",
+      "config": "{\"acceptsFilterContext\":1}",
+      "id": 39615523,
+      "name": "Pod"
+    },
+    {
+      "boundSection": "ReportSectiond48f10a3d83531ea24b4",
+      "config": "{\"acceptsFilterContext\":1}",
+      "name": "Pod3"
+    },
+    {
+      "boundSection": "ReportSection0805d6522ced0b422d38",
+      "config": "{}",
+      "name": "Pod4"
+    },
+    {
+      "boundSection": "ReportSectionaeffc6c2512def112cfa",
+      "config": "{}",
+      "name": "Pod2"
+    }
+  ],
+  "reportId": 2864383,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "id": 55835427,
+        "items": [
+          {
+            "id": 114881420,
+            "path": "htmlViewerB24A1AEC2B4F4998B8E9A380662CAA2A.pbiviz.json",
+            "resourcePackageId": 55835427,
+            "resourcePackageItemBlobInfoId": 3798448,
+            "type": 5
+          }
+        ],
+        "name": "htmlViewerB24A1AEC2B4F4998B8E9A380662CAA2A",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "id": 55835428,
+        "items": [
+          {
+            "id": 114881421,
+            "path": "PBI_CV_EB3A4088_75C5_4746_9D8B_255A7B7ECD6C.pbiviz.json",
+            "resourcePackageId": 55835428,
+            "resourcePackageItemBlobInfoId": 3798450,
+            "type": 5
+          }
+        ],
+        "name": "PBI_CV_EB3A4088_75C5_4746_9D8B_255A7B7ECD6C",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "id": 55835429,
+        "items": [
+          {
+            "id": 114881422,
+            "name": "PowerApps_PBI_CV_C29F1DCC_81F5_4973_94AD_0517D44CC06A",
+            "path": "PowerApps_PBI_CV_C29F1DCC_81F5_4973_94AD_0517D44CC06A.pbiviz.json",
+            "resourcePackageId": 55835429,
+            "resourcePackageItemBlobInfoId": 3798452,
+            "type": 5
+          }
+        ],
+        "name": "PowerApps_PBI_CV_C29F1DCC_81F5_4973_94AD_0517D44CC06A",
+        "type": 0
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "id": 55835430,
+        "items": [
+          {
+            "name": "Frame_(68)9504140396970442.png",
+            "path": "Frame_(68)9504140396970442.png",
+            "type": 100
+          },
+          {
+            "name": "Frame_(68)5548494022540642.png",
+            "path": "Frame_(68)5548494022540642.png",
+            "type": 100
+          },
+          {
+            "name": "Frame_(68)23192369259761159.png",
+            "path": "Frame_(68)23192369259761159.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "id": 55848311,
+        "items": [
+          {
+            "name": "CY19SU06",
+            "path": "BaseThemes/CY19SU06.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "PBI_CV_FC22EF20_6A7C_4F30_B29B_144CD82E5279.pbiviz.json",
+            "path": "PBI_CV_FC22EF20_6A7C_4F30_B29B_144CD82E5279.pbiviz.json",
+            "type": 5
+          }
+        ],
+        "name": "PBI_CV_FC22EF20_6A7C_4F30_B29B_144CD82E5279",
+        "type": 0
+      }
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "displayName": "High Risk",
+  "name": "Bookmark059d00b3108c13a919c9",
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "ReportSection0805d6522ced0b422d38",
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "options": {
+    "targetVisualNames": [
+      "cc83889ee3c0277d6686"
+    ]
+  }
+}

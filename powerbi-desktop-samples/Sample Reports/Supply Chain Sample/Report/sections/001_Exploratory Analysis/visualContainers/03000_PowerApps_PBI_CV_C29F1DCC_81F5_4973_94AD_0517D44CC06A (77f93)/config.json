@@ -1,0 +1,81 @@
+{
+  "name": "77f9305cd13f3320304c",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 25.36936936936937,
+        "y": 103.78378378378379,
+        "z": 0,
+        "width": 274.45045045045043,
+        "height": 530.45045045045049,
+        "tabOrder": 3000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "PowerApps_PBI_CV_C29F1DCC_81F5_4973_94AD_0517D44CC06A",
+    "projections": {
+      "table": [
+        {
+          "queryRef": "Backorder Percentage.Plant"
+        },
+        {
+          "queryRef": "Backorder Percentage.Product Type"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "b",
+          "Entity": "Backorder Percentage"
+        }
+      ],
+      "Select": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "b"
+              }
+            },
+            "Property": "Plant"
+          },
+          "Name": "Backorder Percentage.Plant"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "b"
+              }
+            },
+            "Property": "Product Type"
+          },
+          "Name": "Backorder Percentage.Product Type"
+        }
+      ]
+    },
+    "display": {
+      "mode": "hidden"
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "appId": {
+              "expr": {
+                "Literal": {
+                  "Value": "'/providers/Microsoft.PowerApps/apps/ae3ef6ac-693a-42be-bbf9-7a322b7df227'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

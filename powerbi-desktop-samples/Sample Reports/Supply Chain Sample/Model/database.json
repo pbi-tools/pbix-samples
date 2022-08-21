@@ -1,0 +1,43 @@
+{
+  "name": "Supply Chain Sample",
+  "compatibilityLevel": 1520,
+  "model": {
+    "culture": "en-US",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-US",
+    "relationships": [
+      {
+        "name": "f1f4dec2-922f-4ec6-8dc1-49554a10a01c",
+        "fromTable": "Explanations",
+        "fromColumn": "Product ID",
+        "toTable": "Risk",
+        "toColumn": "Product ID"
+      },
+      {
+        "name": "9ed0ec75-78b2-4f82-bffb-1dce5fda3499",
+        "fromTable": "Backorder Percentage",
+        "fromColumn": "Month",
+        "toTable": "Month",
+        "toColumn": "Month"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.82.0.0 (Main)"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "Supply Analytics.Risk.Explanations.Logo.Month.Backorder Percentage"
+      }
+    ]
+  }
+}

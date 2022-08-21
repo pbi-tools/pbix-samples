@@ -1,0 +1,30 @@
+{
+  "name": "Supply Analytics",
+  "partitions": [
+    {
+      "name": "Supply Analytics-b415f3eb-76cb-4172-90fb-8e97ed3589f0",
+      "mode": "import",
+      "source": {
+        "type": "m"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "6a570876-50cb-4351-a1c2-3b1ea0291c67"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "Supply Analytics"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Exception"
+    }
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "Month",
+  "isHidden": true,
+  "partitions": [
+    {
+      "name": "Month-18692bd2-081e-439c-860a-48a4b29964ea",
+      "mode": "import",
+      "source": {
+        "type": "m"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "c98ab75f-c83d-44a1-a4bf-4e032768be40"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "Month"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

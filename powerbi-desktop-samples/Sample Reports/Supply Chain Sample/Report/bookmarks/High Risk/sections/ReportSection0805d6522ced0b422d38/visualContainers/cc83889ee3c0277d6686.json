@@ -1,0 +1,419 @@
+{
+  "filters": {
+    "byExpr": [
+      {
+        "type": "Categorical",
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Backorder Percentage"
+              }
+            },
+            "Property": "Forecast Bias"
+          }
+        },
+        "howCreated": 0
+      },
+      {
+        "type": "Categorical",
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Backorder Percentage"
+              }
+            },
+            "Property": "Plant"
+          }
+        },
+        "howCreated": 0
+      },
+      {
+        "type": "Categorical",
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Backorder Percentage"
+              }
+            },
+            "Property": "Product Type"
+          }
+        },
+        "howCreated": 0
+      },
+      {
+        "type": "Categorical",
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Backorder Percentage"
+              }
+            },
+            "Property": "Shipment Destination"
+          }
+        },
+        "howCreated": 0
+      },
+      {
+        "type": "Categorical",
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Backorder Percentage"
+              }
+            },
+            "Property": "Shipment Type"
+          }
+        },
+        "howCreated": 0
+      },
+      {
+        "type": "Categorical",
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Backorder Percentage"
+              }
+            },
+            "Property": "Region"
+          }
+        },
+        "howCreated": 0
+      },
+      {
+        "type": "Categorical",
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Backorder Percentage"
+              }
+            },
+            "Property": "Distribution Center"
+          }
+        },
+        "howCreated": 0
+      },
+      {
+        "type": "Categorical",
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Backorder Percentage"
+              }
+            },
+            "Property": "Demand Type"
+          }
+        },
+        "howCreated": 0
+      },
+      {
+        "type": "Categorical",
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Backorder Percentage"
+              }
+            },
+            "Property": "Forecast Accuracy"
+          }
+        },
+        "howCreated": 0
+      },
+      {
+        "type": "Categorical",
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Backorder Percentage"
+              }
+            },
+            "Property": "Brand"
+          }
+        },
+        "howCreated": 0
+      },
+      {
+        "type": "Categorical",
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Backorder Percentage"
+              }
+            },
+            "Property": "Buyer Type"
+          }
+        },
+        "howCreated": 0
+      }
+    ]
+  },
+  "singleVisual": {
+    "visualType": "decompositionTreeVisual",
+    "objects": {},
+    "orderBy": [
+      {
+        "Direction": 2,
+        "Expression": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Backorder Percentage"
+              }
+            },
+            "Property": "% on backorder"
+          }
+        }
+      }
+    ],
+    "activeProjections": {
+      "ExplainBy": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Backorder Percentage"
+              }
+            },
+            "Property": "Forecast Bias"
+          }
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Backorder Percentage"
+              }
+            },
+            "Property": "Demand Type"
+          }
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Backorder Percentage"
+              }
+            },
+            "Property": "Product Type"
+          }
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Backorder Percentage"
+              }
+            },
+            "Property": "Plant"
+          }
+        }
+      ]
+    },
+    "expansionStates": [
+      {
+        "roles": [
+          "ExplainBy"
+        ],
+        "levels": [
+          {
+            "queryRefs": [
+              "Backorder Percentage.Forecast Bias"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Backorder Percentage"
+                    }
+                  },
+                  "Property": "Forecast Bias"
+                }
+              }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "Backorder Percentage.Demand Type"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Backorder Percentage"
+                    }
+                  },
+                  "Property": "Demand Type"
+                }
+              }
+            ],
+            "isPinned": true
+          },
+          {
+            "queryRefs": [
+              "Backorder Percentage.Product Type"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Backorder Percentage"
+                    }
+                  },
+                  "Property": "Product Type"
+                }
+              }
+            ],
+            "isPinned": true,
+            "AIInformation": {
+              "method": "MaxSplit"
+            }
+          },
+          {
+            "queryRefs": [
+              "Backorder Percentage.Plant"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Backorder Percentage"
+                    }
+                  },
+                  "Property": "Plant"
+                }
+              }
+            ],
+            "isPinned": true,
+            "AIInformation": {
+              "method": "MaxSplit"
+            }
+          },
+          {
+            "queryRefs": [
+              "Backorder Percentage.Distribution Center"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Backorder Percentage"
+                    }
+                  },
+                  "Property": "Distribution Center"
+                }
+              }
+            ]
+          },
+          {
+            "queryRefs": [
+              "Backorder Percentage.Brand"
+            ],
+            "isCollapsed": true
+          },
+          {
+            "queryRefs": [
+              "Backorder Percentage.Region"
+            ],
+            "isCollapsed": true,
+            "identityKeys": [
+              {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Backorder Percentage"
+                    }
+                  },
+                  "Property": "Region"
+                }
+              }
+            ]
+          },
+          {
+            "queryRefs": [
+              "Backorder Percentage.Shipment Destination"
+            ],
+            "isCollapsed": true
+          },
+          {
+            "queryRefs": [
+              "Backorder Percentage.Shipment Type"
+            ],
+            "isCollapsed": true
+          },
+          {
+            "queryRefs": [
+              "Backorder Percentage.Buyer Type"
+            ],
+            "isCollapsed": true
+          },
+          {
+            "queryRefs": [
+              "Backorder Percentage.Forecast Accuracy"
+            ],
+            "isCollapsed": true
+          }
+        ],
+        "root": {
+          "identityValues": null,
+          "children": [
+            {
+              "identityValues": [
+                {
+                  "Literal": {
+                    "Value": "'Accurate (5% to -5%)'"
+                  }
+                }
+              ],
+              "isToggled": true,
+              "children": [
+                {
+                  "identityValues": [
+                    {
+                      "Literal": {
+                        "Value": "'Intermittent'"
+                      }
+                    }
+                  ],
+                  "isToggled": true,
+                  "children": [
+                    {
+                      "identityValues": [
+                        {
+                          "Literal": {
+                            "Value": "'Patient Monitoring'"
+                          }
+                        }
+                      ],
+                      "isToggled": true
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

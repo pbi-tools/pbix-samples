@@ -1,0 +1,53 @@
+{
+  "name": "44b1eb99372df10740c4",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 23.162863886703384,
+        "y": 87.616050354051936,
+        "z": 3000,
+        "width": 642.51770259638079,
+        "height": 623.3831628638867,
+        "tabOrder": 3000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "qnaVisual",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "suggestions": [
+        {
+          "properties": {
+            "cardBackground": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 3,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "hiddenProperties": [
+        {
+          "properties": {
+            "savedUtterance": {
+              "expr": {
+                "Literal": {
+                  "Value": "''"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

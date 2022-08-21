@@ -1,0 +1,9 @@
+{
+  "name": "% on time orders",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"General\" />"
+    }
+  ]
+}

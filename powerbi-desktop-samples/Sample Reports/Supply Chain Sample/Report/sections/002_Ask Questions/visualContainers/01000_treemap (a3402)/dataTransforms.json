@@ -1,0 +1,173 @@
+{
+  "objects": {
+    "dataPoint": [
+      {
+        "properties": {
+          "fill": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "FillRule": {
+                    "Input": {
+                      "Measure": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Backorder Percentage"
+                          }
+                        },
+                        "Property": "% on backorder"
+                      }
+                    },
+                    "FillRule": {
+                      "linearGradient2": {
+                        "min": {
+                          "color": {
+                            "Literal": {
+                              "Value": "'#12239E'"
+                            }
+                          }
+                        },
+                        "max": {
+                          "color": {
+                            "Literal": {
+                              "Value": "'#D64550'"
+                            }
+                          }
+                        },
+                        "nullColoringStrategy": {
+                          "strategy": {
+                            "Literal": {
+                              "Value": "'asZero'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "selector": {
+          "data": [
+            {
+              "dataViewWildcard": {
+                "matchingOption": 1
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Group": [
+      1
+    ],
+    "Values": [
+      0
+    ]
+  },
+  "projectionActiveItems": {
+    "Group": [
+      {
+        "queryRef": "Backorder Percentage.Demand Type",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "% on backorder",
+        "Name": "Backorder Percentage.% on backorder",
+        "Type": 1,
+        "Format": "0.00%;-0.00%;0.00%"
+      },
+      {
+        "Restatement": "Segment",
+        "Name": "Backorder Percentage.Demand Type",
+        "Type": 2048
+      }
+    ],
+    "Filters": [
+      {
+        "type": 0,
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Supply Analytics"
+              }
+            },
+            "Property": "Category"
+          }
+        }
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Group",
+          "Projection": 1,
+          "isActive": true
+        },
+        {
+          "Name": "Values",
+          "Projection": 0,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "% on backorder",
+      "format": "0.00%;-0.00%;0.00%",
+      "queryName": "Backorder Percentage.% on backorder",
+      "roles": {
+        "Values": true
+      },
+      "sort": 2,
+      "sortOrder": 0,
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Backorder Percentage"
+            }
+          },
+          "Property": "% on backorder"
+        }
+      }
+    },
+    {
+      "displayName": "Segment",
+      "queryName": "Backorder Percentage.Demand Type",
+      "roles": {
+        "Group": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Backorder Percentage"
+            }
+          },
+          "Property": "Demand Type"
+        }
+      }
+    }
+  ]
+}

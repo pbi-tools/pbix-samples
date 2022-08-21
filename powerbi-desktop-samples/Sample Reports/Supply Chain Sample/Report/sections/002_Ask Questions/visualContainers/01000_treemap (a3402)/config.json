@@ -1,0 +1,135 @@
+{
+  "name": "a3402b31dd4040b1942a",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 677.95148247978432,
+        "y": 87.11590296495956,
+        "z": 0,
+        "width": 550.29649595687329,
+        "height": 289.811320754717,
+        "tabOrder": 1000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "treemap",
+    "projections": {
+      "Group": [
+        {
+          "queryRef": "Backorder Percentage.Demand Type",
+          "active": true
+        }
+      ],
+      "Values": [
+        {
+          "queryRef": "Backorder Percentage.% on backorder"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "b1",
+          "Entity": "Backorder Percentage"
+        }
+      ],
+      "Select": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "b1"
+              }
+            },
+            "Property": "% on backorder"
+          },
+          "Name": "Backorder Percentage.% on backorder"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "b1"
+              }
+            },
+            "Property": "Demand Type"
+          },
+          "Name": "Backorder Percentage.Demand Type"
+        }
+      ]
+    },
+    "columnProperties": {
+      "Backorder Percentage.Demand Type": {
+        "displayName": "Segment"
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "hasDefaultSort": true,
+    "objects": {
+      "dataPoint": [
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "FillRule": {
+                      "Input": {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Backorder Percentage"
+                            }
+                          },
+                          "Property": "% on backorder"
+                        }
+                      },
+                      "FillRule": {
+                        "linearGradient2": {
+                          "min": {
+                            "color": {
+                              "Literal": {
+                                "Value": "'#12239E'"
+                              }
+                            }
+                          },
+                          "max": {
+                            "color": {
+                              "Literal": {
+                                "Value": "'#D64550'"
+                              }
+                            }
+                          },
+                          "nullColoringStrategy": {
+                            "strategy": {
+                              "Literal": {
+                                "Value": "'asZero'"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 1
+                }
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "vcObjects": {}
+  }
+}

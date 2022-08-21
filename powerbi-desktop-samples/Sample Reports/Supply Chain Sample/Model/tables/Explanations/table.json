@@ -1,0 +1,35 @@
+{
+  "name": "Explanations",
+  "isHidden": true,
+  "partitions": [
+    {
+      "name": "Explanations-da57eca1-da42-4086-8190-eab8106fff57",
+      "mode": "import",
+      "source": {
+        "type": "m"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "545aed8a-9467-4e7a-ba70-0d4936a7b9dc"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "Explanations"
+    },
+    {
+      "name": "PBI_QueryRelationships",
+      "value": "{\"columnCount\":4,\"keyColumnNames\":[],\"queryRelationships\":[],\"columnIdentities\":[\"Section1/Explanations/Changed Type.{Product ID,0}\",\"Section1/Explanations/Changed Type.{Location,1}\",\"Section1/Explanations/Changed Type.{Factor,2}\",\"Section1/Explanations/Changed Type.{Risk,3}\"],\"ColumnCount\":4,\"KeyColumnNames\":[],\"ColumnIdentities\":[\"Section1/Explanations/Changed Type.{Product ID,0}\",\"Section1/Explanations/Changed Type.{Location,1}\",\"Section1/Explanations/Changed Type.{Factor,2}\",\"Section1/Explanations/Changed Type.{Risk,3}\"],\"RelationshipInfo\":[]}"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

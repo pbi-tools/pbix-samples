@@ -1,0 +1,31 @@
+{
+  "name": "Risk",
+  "isHidden": true,
+  "partitions": [
+    {
+      "name": "Risk-d9078ef0-04f1-4c0d-a009-616523a3fc04",
+      "mode": "import",
+      "source": {
+        "type": "m"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "8ecb34a8-a096-4d03-924c-c1a91b337e28"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "Risk"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

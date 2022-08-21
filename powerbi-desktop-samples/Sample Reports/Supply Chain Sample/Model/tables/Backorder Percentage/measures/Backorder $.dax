@@ -1,0 +1,1 @@
+sum('Backorder Percentage'[Backorder %]) * 10000

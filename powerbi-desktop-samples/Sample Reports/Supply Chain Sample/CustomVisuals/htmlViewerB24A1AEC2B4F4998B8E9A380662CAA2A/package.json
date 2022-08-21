@@ -1,0 +1,29 @@
+{
+  "version": "1.0.2",
+  "author": {
+    "name": "Hitachi Solutions",
+    "email": "rchan@hitachi-solutions.com"
+  },
+  "resources": [
+    {
+      "resourceId": "rId0",
+      "sourceType": 5,
+      "file": "resources/htmlViewerB24A1AEC2B4F4998B8E9A380662CAA2A.pbiviz.json"
+    }
+  ],
+  "visual": {
+    "guid": "htmlViewerB24A1AEC2B4F4998B8E9A380662CAA2A",
+    "name": "htmlViewer",
+    "displayName": "htmlViewer",
+    "version": "1.0.2",
+    "description": "Visualize your data in HTML with automatic text wrapping and formatting options",
+    "supportUrl": "https://us.hitachi-solutions.com/",
+    "gitHubUrl": "",
+    "visualClassName": "Visual"
+  },
+  "metadata": {
+    "pbivizjson": {
+      "resourceId": "rId0"
+    }
+  }
+}

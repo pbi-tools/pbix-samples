@@ -1,0 +1,128 @@
+{
+  "name": "ca1930b86620637c9caa",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 499.51219512195127,
+        "y": 31.219512195121954,
+        "z": 3000,
+        "width": 770.41699449252565,
+        "height": 664.67348544453193
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "keyDriversVisual",
+    "projections": {
+      "Target": [
+        {
+          "queryRef": "Supply Analytics.Product "
+        }
+      ],
+      "ExplainBy": [
+        {
+          "queryRef": "Supply Analytics.Demand Type"
+        },
+        {
+          "queryRef": "Supply Analytics.Forecast Accuracy"
+        },
+        {
+          "queryRef": "Supply Analytics.Forecast Bias"
+        },
+        {
+          "queryRef": "Supply Analytics.Manufactured Goods"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "s",
+          "Entity": "Supply Analytics"
+        }
+      ],
+      "Select": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "s"
+              }
+            },
+            "Property": "Product "
+          },
+          "Name": "Supply Analytics.Product "
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "s"
+              }
+            },
+            "Property": "Demand Type"
+          },
+          "Name": "Supply Analytics.Demand Type"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "s"
+              }
+            },
+            "Property": "Forecast Accuracy"
+          },
+          "Name": "Supply Analytics.Forecast Accuracy"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "s"
+              }
+            },
+            "Property": "Forecast Bias"
+          },
+          "Name": "Supply Analytics.Forecast Bias"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "s"
+              }
+            },
+            "Property": "Manufactured Goods"
+          },
+          "Name": "Supply Analytics.Manufactured Goods"
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "keyDrivers": [
+        {
+          "properties": {
+            "targetValue": {
+              "expr": {
+                "Literal": {
+                  "Value": "'''on backorder'''"
+                }
+              }
+            },
+            "selectedAnalysis": {
+              "expr": {
+                "Literal": {
+                  "Value": "'keyInfluencers'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

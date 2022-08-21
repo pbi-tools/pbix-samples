@@ -1,0 +1,24 @@
+<LinguisticSchema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Language="en-US" DynamicImprovement="Full" xmlns="http://schemas.microsoft.com/sqlserver/2016/01/linguisticschema">
+  <Entities>
+    <Entity ConceptualEntity="Pod" Source="Generated" Name="Ask_Questions">
+      <Words>
+        <Word>Ask Questions</Word>
+      </Words>
+    </Entity>
+    <Entity ConceptualEntity="Pod3" Source="Generated" Name="Supply_Chain_Analytics1">
+      <Words>
+        <Word>Supply Chain Analytics</Word>
+      </Words>
+    </Entity>
+    <Entity ConceptualEntity="Pod4" Source="Generated" Name="Exploratory_Analysis">
+      <Words>
+        <Word>Exploratory Analysis</Word>
+      </Words>
+    </Entity>
+    <Entity ConceptualEntity="Pod2" Source="Generated" Name="Risk_Analytics">
+      <Words>
+        <Word>Risk Analytics</Word>
+      </Words>
+    </Entity>
+  </Entities>
+</LinguisticSchema>

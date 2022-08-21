@@ -1,0 +1,398 @@
+{
+  "name": "cc83889ee3c0277d6686",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 379.66955153422504,
+        "y": 87.616050354051936,
+        "z": 4000,
+        "width": 880.18882769472862,
+        "height": 610.29110936270661,
+        "tabOrder": 4000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "decompositionTreeVisual",
+    "projections": {
+      "Analyze": [
+        {
+          "queryRef": "Backorder Percentage.% on backorder"
+        }
+      ],
+      "ExplainBy": [
+        {
+          "queryRef": "Backorder Percentage.Region"
+        },
+        {
+          "queryRef": "Backorder Percentage.Product Type"
+        },
+        {
+          "queryRef": "Backorder Percentage.Brand"
+        },
+        {
+          "queryRef": "Backorder Percentage.Distribution Center"
+        },
+        {
+          "queryRef": "Backorder Percentage.Buyer Type"
+        },
+        {
+          "queryRef": "Backorder Percentage.Shipment Destination"
+        },
+        {
+          "queryRef": "Backorder Percentage.Shipment Type"
+        },
+        {
+          "queryRef": "Backorder Percentage.Forecast Accuracy"
+        },
+        {
+          "queryRef": "Backorder Percentage.Forecast Bias"
+        },
+        {
+          "queryRef": "Backorder Percentage.Demand Type"
+        },
+        {
+          "queryRef": "Backorder Percentage.Plant"
+        }
+      ],
+      "Tooltips": [
+        {
+          "queryRef": "Backorder Percentage.Backorder $"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "b",
+          "Entity": "Backorder Percentage"
+        }
+      ],
+      "Select": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "b"
+              }
+            },
+            "Property": "% on backorder"
+          },
+          "Name": "Backorder Percentage.% on backorder"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "b"
+              }
+            },
+            "Property": "Forecast Bias"
+          },
+          "Name": "Backorder Percentage.Forecast Bias"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "b"
+              }
+            },
+            "Property": "Plant"
+          },
+          "Name": "Backorder Percentage.Plant"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "b"
+              }
+            },
+            "Property": "Product Type"
+          },
+          "Name": "Backorder Percentage.Product Type"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "b"
+              }
+            },
+            "Property": "Shipment Destination"
+          },
+          "Name": "Backorder Percentage.Shipment Destination"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "b"
+              }
+            },
+            "Property": "Shipment Type"
+          },
+          "Name": "Backorder Percentage.Shipment Type"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "b"
+              }
+            },
+            "Property": "Region"
+          },
+          "Name": "Backorder Percentage.Region"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "b"
+              }
+            },
+            "Property": "Distribution Center"
+          },
+          "Name": "Backorder Percentage.Distribution Center"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "b"
+              }
+            },
+            "Property": "Demand Type"
+          },
+          "Name": "Backorder Percentage.Demand Type"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "b"
+              }
+            },
+            "Property": "Forecast Accuracy"
+          },
+          "Name": "Backorder Percentage.Forecast Accuracy"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "b"
+              }
+            },
+            "Property": "Brand"
+          },
+          "Name": "Backorder Percentage.Brand"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "b"
+              }
+            },
+            "Property": "Buyer Type"
+          },
+          "Name": "Backorder Percentage.Buyer Type"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "b"
+              }
+            },
+            "Property": "Backorder $"
+          },
+          "Name": "Backorder Percentage.Backorder $"
+        }
+      ],
+      "OrderBy": [
+        {
+          "Direction": 2,
+          "Expression": {
+            "Measure": {
+              "Expression": {
+                "SourceRef": {
+                  "Source": "b"
+                }
+              },
+              "Property": "% on backorder"
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "hasDefaultSort": true,
+    "objects": {
+      "analysis": [
+        {
+          "properties": {
+            "aiEnabled": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "aiMode": {
+              "expr": {
+                "Literal": {
+                  "Value": "'relative'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "tree": [
+        {
+          "properties": {
+            "barsPerLevel": {
+              "expr": {
+                "Literal": {
+                  "Value": "8L"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dataBars": [
+        {
+          "properties": {
+            "positiveBarColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 3,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "properties": {
+            "dataBarColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "FillRule": {
+                      "Input": {
+                        "Measure": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Entity": "Backorder Percentage"
+                            }
+                          },
+                          "Property": "Backorder $"
+                        }
+                      },
+                      "FillRule": {
+                        "linearGradient2": {
+                          "min": {
+                            "color": {
+                              "Literal": {
+                                "Value": "'#12239E'"
+                              }
+                            },
+                            "value": {
+                              "Literal": {
+                                "Value": "0D"
+                              }
+                            }
+                          },
+                          "max": {
+                            "color": {
+                              "Literal": {
+                                "Value": "'#D64550'"
+                              }
+                            },
+                            "value": {
+                              "Literal": {
+                                "Value": "5000D"
+                              }
+                            }
+                          },
+                          "nullColoringStrategy": {
+                            "strategy": {
+                              "Literal": {
+                                "Value": "'asZero'"
+                              }
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "dataViewWildcard": {
+                  "matchingOption": 0
+                }
+              }
+            ],
+            "metadata": "Backorder Percentage.% on backorder"
+          }
+        }
+      ],
+      "insights": [
+        {
+          "properties": {
+            "isAINode": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          },
+          "selector": {
+            "data": [
+              {
+                "scopeId": {
+                  "Comparison": {
+                    "ComparisonKind": 0,
+                    "Left": {
+                      "Column": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Backorder Percentage"
+                          }
+                        },
+                        "Property": "Plant"
+                      }
+                    },
+                    "Right": {
+                      "Literal": {
+                        "Value": "'#0288'"
+                      }
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

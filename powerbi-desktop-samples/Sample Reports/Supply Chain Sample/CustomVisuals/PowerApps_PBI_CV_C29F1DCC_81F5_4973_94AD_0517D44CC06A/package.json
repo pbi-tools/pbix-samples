@@ -1,0 +1,29 @@
+{
+  "version": "2.0.6",
+  "author": {
+    "name": "Microsoft",
+    "email": "pbicvsupport@microsoft.com"
+  },
+  "resources": [
+    {
+      "resourceId": "rId0",
+      "sourceType": 5,
+      "file": "resources/PowerApps_PBI_CV_C29F1DCC_81F5_4973_94AD_0517D44CC06A.pbiviz.json"
+    }
+  ],
+  "visual": {
+    "guid": "PowerApps_PBI_CV_C29F1DCC_81F5_4973_94AD_0517D44CC06A",
+    "name": "PowerApps",
+    "displayName": "PowerApps 2.0.6",
+    "version": "2.0.6",
+    "description": "PowerApps Visual empowers integration your PowerApps applications into Power BI reports.",
+    "supportUrl": "http://community.powerbi.com",
+    "gitHubUrl": "https://github.com/Microsoft/powerbi-visuals-powerapps",
+    "visualClassName": "Visual"
+  },
+  "metadata": {
+    "pbivizjson": {
+      "resourceId": "rId0"
+    }
+  }
+}

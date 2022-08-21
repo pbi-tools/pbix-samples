@@ -1,0 +1,19 @@
+{
+  "Version": 1,
+  "ReportSettings": {
+    "ShowHiddenFields": true,
+    "IsRelationshipAutodetectionEnabled": true,
+    "IsParallelQueryLoadingEnabled": true,
+    "IsAutoRecoveryEnabledForThisFile": true,
+    "IsQnaEnabledForThisFile": true,
+    "UserConsentsToCompositeModels": false,
+    "UserConsentsToQnaForLiveConnect": false
+  },
+  "QueriesSettings": {
+    "TypeDetectionEnabled": true,
+    "RelationshipImportEnabled": true,
+    "RelationshipRefreshEnabled": false,
+    "RunBackgroundAnalysis": true,
+    "Version": "2.69.0.0"
+  }
+}

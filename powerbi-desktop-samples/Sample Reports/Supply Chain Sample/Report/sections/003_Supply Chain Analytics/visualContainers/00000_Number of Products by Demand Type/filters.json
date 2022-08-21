@@ -1,0 +1,17 @@
+[
+  {
+    "expression": {
+      "Column": {
+        "Expression": {
+          "SourceRef": {
+            "Entity": "Supply Analytics"
+          }
+        },
+        "Property": "Category"
+      }
+    },
+    "type": "Categorical",
+    "howCreated": 1,
+    "isHiddenInViewMode": false
+  }
+]

@@ -1,0 +1,171 @@
+{
+  "name": "4a9898755b7be14b5605",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 15.401069518716577,
+        "y": 105.49732620320856,
+        "z": 6001,
+        "width": 592.94117647058818,
+        "height": 592.17112299465236,
+        "tabOrder": 6001
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "esriVisual",
+    "projections": {
+      "Location": [
+        {
+          "queryRef": "Risk.Location"
+        }
+      ],
+      "Size": [
+        {
+          "queryRef": "CountNonNull(Risk.Product ID)"
+        }
+      ],
+      "Color": [
+        {
+          "queryRef": "CountNonNull(Risk.Product ID)"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "r",
+          "Entity": "Risk"
+        }
+      ],
+      "Select": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "r"
+              }
+            },
+            "Property": "Location"
+          },
+          "Name": "Risk.Location"
+        },
+        {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "r"
+                  }
+                },
+                "Property": "Product ID"
+              }
+            },
+            "Function": 5
+          },
+          "Name": "CountNonNull(Risk.Product ID)"
+        }
+      ],
+      "OrderBy": [
+        {
+          "Direction": 2,
+          "Expression": {
+            "Aggregation": {
+              "Expression": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Source": "r"
+                    }
+                  },
+                  "Property": "Product ID"
+                }
+              },
+              "Function": 5
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "hasDefaultSort": true,
+    "objects": {
+      "mapObject": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "'{\"version\":\"1.2\",\"minRequiredVersion\":\"1.0.0.85\",\"portalUrl\":\"https://www.arcgis.com\",\"tocLayerSettings\":{\"MyLayer\":{\"layerCollapse\":false}},\"plusRemovedVersion\":\"1.0.0.102\",\"map\":{\"webmap\":{\"item\":{\"extent\":[[12.729512954632465,48.04343099794136],[25.539571548379065,55.660739190673596]]},\"itemData\":{\"operationalLayers\":[],\"baseMap\":{\"baseMapLayers\":[{\"url\":\"https://www.arcgis.com/sharing/rest/content/items/291da5eab3a0412593b66d384379f89f/resources/styles/root.json\",\"id\":\"VectorTile_8363\",\"visibility\":true,\"opacity\":1,\"title\":\"Light Gray Canvas Base\",\"minScale\":0,\"maxScale\":0,\"refreshInterval\":0,\"type\":\"VectorTileLayer\",\"layerType\":\"VectorTileLayer\",\"styleUrl\":\"https://www.arcgis.com/sharing/rest/content/items/291da5eab3a0412593b66d384379f89f/resources/styles/root.json\"},{\"url\":\"https://www.arcgis.com/sharing/rest/content/items/1768e8369a214dfab4e2167d5c5f2454/resources/styles/root.json\",\"id\":\"VectorTile_9931\",\"visibility\":true,\"opacity\":1,\"title\":\"Light Gray Canvas Reference\",\"minScale\":0,\"maxScale\":0,\"refreshInterval\":0,\"isReference\":true,\"type\":\"VectorTileLayer\",\"layerType\":\"VectorTileLayer\",\"styleUrl\":\"https://www.arcgis.com/sharing/rest/content/items/1768e8369a214dfab4e2167d5c5f2454/resources/styles/root.json\"}],\"title\":\"Light Gray Canvas\",\"itemId\":\"979c6cc89af9449cbeb5342a439c6a76\"},\"version\":\"1.8\"}},\"webmapExtensions\":{\"mapSettings\":{\"title\":\"ArcGIS\",\"selectionColor\":\"#ffff00\",\"autoZoomOnAdd\":true,\"percentageDecimals\":2,\"currencyDecimals\":2,\"currencySymbol\":\"USD\",\"decimal\":2,\"dateFormat\":\"shortDate\"},\"infographics\":{\"cards\":[]},\"operationalLayers\":\"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\"}},\"allCompressionKeys\":[[\"map\",\"webmapExtensions\",\"operationalLayers\"]],\"compressionMethod\":[\"pako\"]}'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "layers": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "title": [
+        {
+          "properties": {
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Products by Country'"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 0,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "51D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

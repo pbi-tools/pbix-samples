@@ -1,0 +1,34 @@
+{
+  "name": "Backorder Percentage",
+  "partitions": [
+    {
+      "name": "Backorder Percentage-82de19c2-556d-430b-b59c-abf5ede0122a",
+      "mode": "import",
+      "source": {
+        "type": "m"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "35f96540-460a-4ca8-8839-8caefc199959"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "Backorder Percentage"
+    },
+    {
+      "name": "PBI_QueryRelationships",
+      "value": "{\"columnCount\":14,\"keyColumnNames\":[],\"queryRelationships\":[],\"columnIdentities\":[\"Section1/Backorder Percentage/Changed Type.{Month,0}\",\"Section1/Backorder Percentage/Changed Type.{Region,1}\",\"Section1/Backorder Percentage/Changed Type.{Plant,2}\",\"Section1/Backorder Percentage/Changed Type.{Product Type,3}\",\"Section1/Backorder Percentage/Changed Type.{Forecast Bias,4}\",\"Section1/Backorder Percentage/Changed Type.{Buyer Type,5}\",\"Section1/Backorder Percentage/Changed Type.{Shipment Destination,6}\",\"Section1/Backorder Percentage/Changed Type.{Shipment Type,7}\",\"Section1/Backorder Percentage/Changed Type.{Product ID,8}\",\"Section1/Backorder Percentage/Changed Type.{Forecast Accuracy,9}\",\"Section1/Backorder Percentage/Changed Type.{Brand,10}\",\"Section1/Backorder Percentage/Changed Type.{Backorder %,11}\",\"Section1/Backorder Percentage/Changed Type.{Distribution Center,12}\",\"Section1/Backorder Percentage/Changed Type.{Demand Type,13}\"],\"ColumnCount\":14,\"KeyColumnNames\":[],\"ColumnIdentities\":[\"Section1/Backorder Percentage/Changed Type.{Month,0}\",\"Section1/Backorder Percentage/Changed Type.{Region,1}\",\"Section1/Backorder Percentage/Changed Type.{Plant,2}\",\"Section1/Backorder Percentage/Changed Type.{Product Type,3}\",\"Section1/Backorder Percentage/Changed Type.{Forecast Bias,4}\",\"Section1/Backorder Percentage/Changed Type.{Buyer Type,5}\",\"Section1/Backorder Percentage/Changed Type.{Shipment Destination,6}\",\"Section1/Backorder Percentage/Changed Type.{Shipment Type,7}\",\"Section1/Backorder Percentage/Changed Type.{Product ID,8}\",\"Section1/Backorder Percentage/Changed Type.{Forecast Accuracy,9}\",\"Section1/Backorder Percentage/Changed Type.{Brand,10}\",\"Section1/Backorder Percentage/Changed Type.{Backorder %,11}\",\"Section1/Backorder Percentage/Changed Type.{Distribution Center,12}\",\"Section1/Backorder Percentage/Changed Type.{Demand Type,13}\"],\"RelationshipInfo\":[]}"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

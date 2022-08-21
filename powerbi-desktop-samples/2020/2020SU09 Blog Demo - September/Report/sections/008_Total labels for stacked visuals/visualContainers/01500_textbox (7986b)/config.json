@@ -1,0 +1,74 @@
+{
+  "name": "7986b8a3e096f01034f1",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "width": 1280,
+        "height": 208.77005347593581,
+        "tabOrder": 1500
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Total labels for stacked visuals",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "You can now turn on total labels for your stacked bar/column, stacked area, and line and stacked column charts, allowing you to see the aggregates of your data at a glance."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "If your chart has a field in the Legend (for stacked bar/column) or Column Series (for combo) field well, you can enable total labels in its card in the formatting pane.",
+                    "textStyle": {
+                      "color": "#000000"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "You will also be able to format the text of the labels, show a background color around them (for example, to provide contrast with the visual background), adjust their transparency, and decide if you would like to sum the positive and negative values of your columns separately.",
+                    "textStyle": {
+                      "color": "#000000"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

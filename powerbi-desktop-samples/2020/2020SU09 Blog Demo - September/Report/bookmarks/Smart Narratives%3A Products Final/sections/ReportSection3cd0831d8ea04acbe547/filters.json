@@ -1,0 +1,69 @@
+{
+  "byExpr": [
+    {
+      "name": "Filter",
+      "type": "Categorical",
+      "filter": {
+        "Version": 2,
+        "From": [
+          {
+            "Name": "o",
+            "Entity": "Online Sales",
+            "Type": 0
+          }
+        ],
+        "Where": [
+          {
+            "Condition": {
+              "Not": {
+                "Expression": {
+                  "In": {
+                    "Expressions": [
+                      {
+                        "Column": {
+                          "Expression": {
+                            "SourceRef": {
+                              "Source": "o"
+                            }
+                          },
+                          "Property": "Product"
+                        }
+                      }
+                    ],
+                    "Values": [
+                      [
+                        {
+                          "Literal": {
+                            "Value": "'Action Figure'"
+                          }
+                        }
+                      ],
+                      [
+                        {
+                          "Literal": {
+                            "Value": "'Dolls'"
+                          }
+                        }
+                      ]
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        ]
+      },
+      "expression": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Online Sales"
+            }
+          },
+          "Property": "Product"
+        }
+      },
+      "howCreated": 1
+    }
+  ]
+}

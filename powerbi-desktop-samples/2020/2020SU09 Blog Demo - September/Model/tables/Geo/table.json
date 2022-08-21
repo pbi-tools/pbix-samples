@@ -1,0 +1,22 @@
+{
+  "name": "Geo",
+  "partitions": [
+    {
+      "name": "Geo-a9793f85-fb22-41cc-8fb9-a8c6b0362fac",
+      "mode": "import",
+      "source": {
+        "type": "m"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "Geo"
+    }
+  ]
+}

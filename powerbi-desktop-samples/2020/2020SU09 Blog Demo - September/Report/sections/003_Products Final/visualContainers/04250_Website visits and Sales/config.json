@@ -1,0 +1,220 @@
+{
+  "name": "8351ca279ab4c50dd841",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 456.25668449197855,
+        "y": 147.27272727272725,
+        "z": 3000,
+        "width": 434.11764705882348,
+        "height": 263.7433155080214,
+        "tabOrder": 4250
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "lineChart",
+    "projections": {
+      "Y": [
+        {
+          "queryRef": "Hotel bookings.Total bookings"
+        },
+        {
+          "queryRef": "Online Sales.Average Revenue"
+        }
+      ],
+      "Category": [
+        {
+          "queryRef": "Online Sales.Purchasing Date.Variation.Date Hierarchy.Year",
+          "active": true
+        },
+        {
+          "queryRef": "Online Sales.Purchasing Date.Variation.Date Hierarchy.Quarter",
+          "active": true
+        },
+        {
+          "queryRef": "Online Sales.Purchasing Date.Variation.Date Hierarchy.Month",
+          "active": true
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "h",
+          "Entity": "Online Sales",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "h"
+              }
+            },
+            "Property": "Visits"
+          },
+          "Name": "Hotel bookings.Total bookings"
+        },
+        {
+          "HierarchyLevel": {
+            "Expression": {
+              "Hierarchy": {
+                "Expression": {
+                  "PropertyVariationSource": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Source": "h"
+                      }
+                    },
+                    "Name": "Variation",
+                    "Property": "Purchasing Date"
+                  }
+                },
+                "Hierarchy": "Date Hierarchy"
+              }
+            },
+            "Level": "Year"
+          },
+          "Name": "Online Sales.Purchasing Date.Variation.Date Hierarchy.Year"
+        },
+        {
+          "HierarchyLevel": {
+            "Expression": {
+              "Hierarchy": {
+                "Expression": {
+                  "PropertyVariationSource": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Source": "h"
+                      }
+                    },
+                    "Name": "Variation",
+                    "Property": "Purchasing Date"
+                  }
+                },
+                "Hierarchy": "Date Hierarchy"
+              }
+            },
+            "Level": "Quarter"
+          },
+          "Name": "Online Sales.Purchasing Date.Variation.Date Hierarchy.Quarter"
+        },
+        {
+          "HierarchyLevel": {
+            "Expression": {
+              "Hierarchy": {
+                "Expression": {
+                  "PropertyVariationSource": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Source": "h"
+                      }
+                    },
+                    "Name": "Variation",
+                    "Property": "Purchasing Date"
+                  }
+                },
+                "Hierarchy": "Date Hierarchy"
+              }
+            },
+            "Level": "Month"
+          },
+          "Name": "Online Sales.Purchasing Date.Variation.Date Hierarchy.Month"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "h"
+              }
+            },
+            "Property": "Revenue"
+          },
+          "Name": "Online Sales.Average Revenue"
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "valueAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "dataPoint": [
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#280df9'"
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Hotel bookings.Total bookings"
+          }
+        },
+        {
+          "properties": {
+            "fill": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "ThemeDataColor": {
+                      "ColorId": 6,
+                      "Percent": 0
+                    }
+                  }
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Online Sales.Average Revenue"
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "text": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Website visits and Sales'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

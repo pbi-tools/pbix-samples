@@ -1,0 +1,10 @@
+{
+  "name": "Measure",
+  "isHidden": true,
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"Text\" />"
+    }
+  ]
+}

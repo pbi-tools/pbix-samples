@@ -1,0 +1,59 @@
+{
+  "name": "56912b6976c14a823654",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 80.217983651226163,
+        "y": 30.227066303360584,
+        "z": 2000,
+        "width": 1171.8801089918256,
+        "height": 58.128973660308816,
+        "tabOrder": 9500
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "The examples in this file have been built to show the features listed below and as a result might not be the best example of how to generally do things in Power BI."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "If a preview feature does not work, be sure to enable it in settings."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'The examples in this file have been built to show the features listed below and as a result might not be the best example of how to generally do things in Power BI.\n\nIf a preview feature does not work, be sure to enable it in settings.'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

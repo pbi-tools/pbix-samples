@@ -1,0 +1,52 @@
+{
+  "name": "f3f9a8d46a22a60e2188",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 135.66801674545414,
+        "y": 135.88385994876174,
+        "z": 7000,
+        "width": 268.07856532877884,
+        "height": 33.202391118701961,
+        "tabOrder": 9125
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Smart Narratives (preview)"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Smart Narratives (preview)'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

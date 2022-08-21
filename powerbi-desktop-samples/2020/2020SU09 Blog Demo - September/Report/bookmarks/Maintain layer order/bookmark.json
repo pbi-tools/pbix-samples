@@ -1,0 +1,28 @@
+{
+  "displayName": "Maintain layer order",
+  "name": "Bookmarkf9997fe4c6b3081d0253",
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "ReportSectiona84bf20e2b4417f0c8b5",
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "options": {
+    "targetVisualNames": []
+  }
+}

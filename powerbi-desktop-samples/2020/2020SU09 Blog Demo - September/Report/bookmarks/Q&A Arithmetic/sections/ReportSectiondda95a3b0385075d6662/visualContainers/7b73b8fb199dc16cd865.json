@@ -1,0 +1,22 @@
+{
+  "singleVisual": {
+    "visualType": "qnaVisual",
+    "objects": {
+      "merge": {
+        "hiddenProperties": [
+          {
+            "properties": {
+              "savedUtterance": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'Sales  / nights booked / 20'"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

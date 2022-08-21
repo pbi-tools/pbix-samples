@@ -1,0 +1,52 @@
+{
+  "name": "14272940720785bb1043",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 729.85739750445646,
+        "y": 341.97860962566858,
+        "z": 2000,
+        "width": 199.6434937611408,
+        "height": 198.50267379679144,
+        "tabOrder": 4000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "image",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "imageUrl": {
+              "expr": {
+                "ResourcePackageItem": {
+                  "PackageName": "RegisteredResources",
+                  "PackageType": 1,
+                  "ItemName": "powerbi_logo6587923036499095.jpg"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "general": [
+        {
+          "properties": {
+            "keepLayerOrder": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

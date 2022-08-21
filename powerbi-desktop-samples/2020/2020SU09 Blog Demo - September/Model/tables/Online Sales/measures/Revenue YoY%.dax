@@ -1,0 +1,12 @@
+
+IF(
+	ISFILTERED('Online Sales'[Purchase date]),
+	ERROR("Time intelligence quick measures can only be grouped or filtered by the Power BI-provided date hierarchy or primary date column."),
+	VAR __PREV_YEAR =
+		CALCULATE(
+			[Sales],
+			DATEADD('Online Sales'[Purchase date].[Date], -1, YEAR)
+		)
+	RETURN
+		DIVIDE([Sales] - __PREV_YEAR, __PREV_YEAR)
+)

@@ -1,0 +1,155 @@
+{
+  "projectionOrdering": {
+    "Y": [
+      0
+    ],
+    "Y2": [
+      1
+    ],
+    "Category": [
+      2
+    ]
+  },
+  "projectionActiveItems": {
+    "Category": [
+      {
+        "queryRef": "Online Sales.Purchasing Date",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "splits": [
+    {
+      "selects": {
+        "0": true,
+        "2": true
+      }
+    },
+    {
+      "selects": {
+        "1": true,
+        "2": true
+      }
+    }
+  ],
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Cancellations",
+        "Name": "Online Sales.Cancellations",
+        "Type": 3,
+        "Format": "0"
+      },
+      {
+        "Restatement": "Nights booked",
+        "Name": "Online Sales.Nights booked",
+        "Type": 3,
+        "Format": "0"
+      },
+      {
+        "Restatement": "Purchasing Date",
+        "Name": "Online Sales.Purchasing Date",
+        "Type": 4,
+        "Format": "dddd\\, MMMM %d\\, yyyy"
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Y",
+          "Projection": 0,
+          "isActive": false
+        },
+        {
+          "Name": "Category",
+          "Projection": 2,
+          "isActive": true
+        }
+      ]
+    },
+    {
+      "DataRoles": [
+        {
+          "Name": "Y2",
+          "Projection": 1,
+          "isActive": false
+        },
+        {
+          "Name": "Category",
+          "Projection": 2,
+          "isActive": true
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Cancellations",
+      "format": "0",
+      "queryName": "Online Sales.Cancellations",
+      "roles": {
+        "Y": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Online Sales"
+            }
+          },
+          "Property": "Cancellations"
+        }
+      }
+    },
+    {
+      "displayName": "Nights booked",
+      "format": "0",
+      "queryName": "Online Sales.Nights booked",
+      "roles": {
+        "Y2": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Online Sales"
+            }
+          },
+          "Property": "Nights booked"
+        }
+      }
+    },
+    {
+      "displayName": "Purchasing Date",
+      "format": "dddd\\, MMMM %d\\, yyyy",
+      "queryName": "Online Sales.Purchasing Date",
+      "roles": {
+        "Category": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 519
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Online Sales"
+            }
+          },
+          "Property": "Purchasing Date"
+        }
+      }
+    }
+  ]
+}

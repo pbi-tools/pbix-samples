@@ -1,0 +1,35 @@
+{
+  "name": "111cc8e2372797ac3d85",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 697.04099821746877,
+        "y": 39.928698752228165,
+        "z": 0,
+        "width": 528.19964349376107,
+        "height": 257.825311942959,
+        "tabOrder": 2500
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "qnaVisual",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "hiddenProperties": [
+        {
+          "properties": {
+            "savedUtterance": {
+              "expr": {
+                "Literal": {
+                  "Value": "'nights booked + cancellations'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

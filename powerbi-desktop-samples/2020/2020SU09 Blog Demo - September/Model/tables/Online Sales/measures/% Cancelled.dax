@@ -1,0 +1,1 @@
+CALCULATE(DISTINCTCOUNT('Online Sales'[Customer]),'Online Sales'[Status]="Cancelled")/DISTINCTCOUNT('Online Sales'[Customer])/10

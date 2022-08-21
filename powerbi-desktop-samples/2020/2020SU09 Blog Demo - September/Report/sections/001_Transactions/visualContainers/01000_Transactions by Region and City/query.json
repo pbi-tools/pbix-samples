@@ -1,0 +1,106 @@
+{
+  "Commands": [
+    {
+      "SemanticQueryDataShapeCommand": {
+        "Query": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "g",
+              "Entity": "Geo",
+              "Type": 0
+            }
+          ],
+          "Select": [
+            {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "g"
+                  }
+                },
+                "Property": "City"
+              },
+              "Name": "Geo.City"
+            },
+            {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "g"
+                  }
+                },
+                "Property": "Region"
+              },
+              "Name": "Geo.Region"
+            },
+            {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Source": "g"
+                      }
+                    },
+                    "Property": "Revenue per transaction"
+                  }
+                },
+                "Function": 0
+              },
+              "Name": "Sum(Geo.Revenue per transaction)"
+            },
+            {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Source": "g"
+                      }
+                    },
+                    "Property": "Transactions"
+                  }
+                },
+                "Function": 0
+              },
+              "Name": "Sum(Geo.Transactions)"
+            }
+          ]
+        },
+        "Binding": {
+          "Primary": {
+            "Groupings": [
+              {
+                "Projections": [
+                  1
+                ]
+              },
+              {
+                "Projections": [
+                  0,
+                  2,
+                  3
+                ]
+              }
+            ]
+          },
+          "DataReduction": {
+            "DataVolume": 4,
+            "Primary": {
+              "OverlappingPointsSample": {
+                "X": {
+                  "Index": 2
+                },
+                "Y": {
+                  "Index": 3
+                }
+              }
+            }
+          },
+          "Version": 1
+        }
+      }
+    }
+  ]
+}

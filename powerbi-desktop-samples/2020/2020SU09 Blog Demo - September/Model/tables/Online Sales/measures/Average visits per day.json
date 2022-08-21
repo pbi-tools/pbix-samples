@@ -1,0 +1,9 @@
+{
+  "name": "Average visits per day",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"General\" />"
+    }
+  ]
+}

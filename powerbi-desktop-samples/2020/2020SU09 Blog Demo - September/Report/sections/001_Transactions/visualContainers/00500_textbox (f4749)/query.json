@@ -1,0 +1,1202 @@
+{
+  "Commands": [
+    {
+      "SemanticQueryDataShapeCommand": {
+        "Query": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "q",
+              "Expression": {
+                "Subquery": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "g",
+                        "Entity": "Geo",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Column": {
+                          "Expression": {
+                            "TransformTableRef": {
+                              "Source": "TopRightHandCornerOutput"
+                            }
+                          },
+                          "Property": "V1"
+                        },
+                        "Name": "V1"
+                      },
+                      {
+                        "Column": {
+                          "Expression": {
+                            "TransformTableRef": {
+                              "Source": "TopRightHandCornerOutput"
+                            }
+                          },
+                          "Property": "V2"
+                        },
+                        "Name": "V2"
+                      },
+                      {
+                        "Column": {
+                          "Expression": {
+                            "TransformTableRef": {
+                              "Source": "TopRightHandCornerOutput"
+                            }
+                          },
+                          "Property": "V3"
+                        },
+                        "Name": "V3"
+                      },
+                      {
+                        "Column": {
+                          "Expression": {
+                            "TransformTableRef": {
+                              "Source": "TopRightHandCornerOutput"
+                            }
+                          },
+                          "Property": "V4"
+                        },
+                        "Name": "V4"
+                      },
+                      {
+                        "Column": {
+                          "Expression": {
+                            "TransformTableRef": {
+                              "Source": "TopRightHandCornerOutput"
+                            }
+                          },
+                          "Property": "V5"
+                        },
+                        "Name": "V5"
+                      },
+                      {
+                        "Column": {
+                          "Expression": {
+                            "TransformTableRef": {
+                              "Source": "TopRightHandCornerOutput"
+                            }
+                          },
+                          "Property": "V6"
+                        },
+                        "Name": "V6"
+                      },
+                      {
+                        "Column": {
+                          "Expression": {
+                            "TransformTableRef": {
+                              "Source": "TopRightHandCornerOutput"
+                            }
+                          },
+                          "Property": "V7"
+                        },
+                        "Name": "V7"
+                      },
+                      {
+                        "Column": {
+                          "Expression": {
+                            "TransformTableRef": {
+                              "Source": "TopRightHandCornerOutput"
+                            }
+                          },
+                          "Property": "V8"
+                        },
+                        "Name": "V8"
+                      },
+                      {
+                        "Column": {
+                          "Expression": {
+                            "TransformTableRef": {
+                              "Source": "TopRightHandCornerOutput"
+                            }
+                          },
+                          "Property": "V9"
+                        },
+                        "Name": "V9"
+                      },
+                      {
+                        "Column": {
+                          "Expression": {
+                            "TransformTableRef": {
+                              "Source": "TopRightHandCornerOutput"
+                            }
+                          },
+                          "Property": "V10"
+                        },
+                        "Name": "V10"
+                      },
+                      {
+                        "Column": {
+                          "Expression": {
+                            "TransformTableRef": {
+                              "Source": "TopRightHandCornerOutput"
+                            }
+                          },
+                          "Property": "V11"
+                        },
+                        "Name": "V11"
+                      },
+                      {
+                        "Column": {
+                          "Expression": {
+                            "TransformTableRef": {
+                              "Source": "TopRightHandCornerOutput"
+                            }
+                          },
+                          "Property": "DSEPassThruColumn"
+                        },
+                        "Name": "expr.DSEPassThruColumn"
+                      },
+                      {
+                        "Column": {
+                          "Expression": {
+                            "TransformTableRef": {
+                              "Source": "TopRightHandCornerOutput"
+                            }
+                          },
+                          "Property": "TemplateIdColumnRole"
+                        },
+                        "Name": "TemplateIdColumnRole"
+                      }
+                    ],
+                    "Transform": [
+                      {
+                        "Name": "TopRightHandCorner",
+                        "Algorithm": "TopRightHandCornerSummary",
+                        "Input": {
+                          "Parameters": [
+                            {
+                              "Literal": {
+                                "Value": "30000L"
+                              },
+                              "Name": "initialTemplateId"
+                            }
+                          ],
+                          "Table": {
+                            "Name": "TopRightHandCornerInput",
+                            "Columns": [
+                              {
+                                "Expression": {
+                                  "Aggregation": {
+                                    "Expression": {
+                                      "Column": {
+                                        "Expression": {
+                                          "SourceRef": {
+                                            "Source": "g"
+                                          }
+                                        },
+                                        "Property": "Revenue per transaction"
+                                      }
+                                    },
+                                    "Function": 0
+                                  },
+                                  "Name": "d1"
+                                },
+                                "Role": "PrimaryValueColumnRole"
+                              },
+                              {
+                                "Expression": {
+                                  "Aggregation": {
+                                    "Expression": {
+                                      "Column": {
+                                        "Expression": {
+                                          "SourceRef": {
+                                            "Source": "g"
+                                          }
+                                        },
+                                        "Property": "Transactions"
+                                      }
+                                    },
+                                    "Function": 0
+                                  },
+                                  "Name": "d2"
+                                },
+                                "Role": "SecondaryValueColumnRole"
+                              },
+                              {
+                                "Expression": {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "g"
+                                      }
+                                    },
+                                    "Property": "City"
+                                  },
+                                  "Name": "d3"
+                                },
+                                "Role": "PrimarySeriesColumnRole"
+                              },
+                              {
+                                "Expression": {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "g"
+                                      }
+                                    },
+                                    "Property": "Region"
+                                  },
+                                  "Name": "d4"
+                                },
+                                "Role": "SecondarySeriesColumnRole"
+                              }
+                            ]
+                          }
+                        },
+                        "Output": {
+                          "Table": {
+                            "Name": "TopRightHandCornerOutput",
+                            "Columns": [
+                              {
+                                "Expression": {
+                                  "TransformOutputRoleRef": {
+                                    "Role": "V1"
+                                  },
+                                  "Name": "V1"
+                                },
+                                "Role": "V1"
+                              },
+                              {
+                                "Expression": {
+                                  "TransformOutputRoleRef": {
+                                    "Role": "V2"
+                                  },
+                                  "Name": "V2"
+                                },
+                                "Role": "V2"
+                              },
+                              {
+                                "Expression": {
+                                  "TransformOutputRoleRef": {
+                                    "Role": "V3"
+                                  },
+                                  "Name": "V3"
+                                },
+                                "Role": "V3"
+                              },
+                              {
+                                "Expression": {
+                                  "TransformOutputRoleRef": {
+                                    "Role": "V4"
+                                  },
+                                  "Name": "V4"
+                                },
+                                "Role": "V4"
+                              },
+                              {
+                                "Expression": {
+                                  "TransformOutputRoleRef": {
+                                    "Role": "V5"
+                                  },
+                                  "Name": "V5"
+                                },
+                                "Role": "V5"
+                              },
+                              {
+                                "Expression": {
+                                  "TransformOutputRoleRef": {
+                                    "Role": "V6"
+                                  },
+                                  "Name": "V6"
+                                },
+                                "Role": "V6"
+                              },
+                              {
+                                "Expression": {
+                                  "TransformOutputRoleRef": {
+                                    "Role": "V7"
+                                  },
+                                  "Name": "V7"
+                                },
+                                "Role": "V7"
+                              },
+                              {
+                                "Expression": {
+                                  "TransformOutputRoleRef": {
+                                    "Role": "V8"
+                                  },
+                                  "Name": "V8"
+                                },
+                                "Role": "V8"
+                              },
+                              {
+                                "Expression": {
+                                  "TransformOutputRoleRef": {
+                                    "Role": "V9"
+                                  },
+                                  "Name": "V9"
+                                },
+                                "Role": "V9"
+                              },
+                              {
+                                "Expression": {
+                                  "TransformOutputRoleRef": {
+                                    "Role": "V10"
+                                  },
+                                  "Name": "V10"
+                                },
+                                "Role": "V10"
+                              },
+                              {
+                                "Expression": {
+                                  "TransformOutputRoleRef": {
+                                    "Role": "V11"
+                                  },
+                                  "Name": "V11"
+                                },
+                                "Role": "V11"
+                              },
+                              {
+                                "Expression": {
+                                  "Column": {
+                                    "Expression": {
+                                      "TransformTableRef": {
+                                        "Source": "TopRightHandCornerInput"
+                                      }
+                                    },
+                                    "Property": "d3"
+                                  },
+                                  "Name": "DSEPassThruColumn"
+                                }
+                              },
+                              {
+                                "Expression": {
+                                  "TransformOutputRoleRef": {
+                                    "Role": "TemplateIdColumnRole"
+                                  },
+                                  "Name": "TemplateIdColumnRole"
+                                },
+                                "Role": "TemplateIdColumnRole"
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              "Type": 2
+            },
+            {
+              "Name": "q1",
+              "Expression": {
+                "Subquery": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "g1",
+                        "Entity": "Geo",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Column": {
+                          "Expression": {
+                            "TransformTableRef": {
+                              "Source": "RegionWithMostPointsOutput"
+                            }
+                          },
+                          "Property": "V1"
+                        },
+                        "Name": "V1"
+                      },
+                      {
+                        "Column": {
+                          "Expression": {
+                            "TransformTableRef": {
+                              "Source": "RegionWithMostPointsOutput"
+                            }
+                          },
+                          "Property": "V2"
+                        },
+                        "Name": "V2"
+                      },
+                      {
+                        "Column": {
+                          "Expression": {
+                            "TransformTableRef": {
+                              "Source": "RegionWithMostPointsOutput"
+                            }
+                          },
+                          "Property": "DSEPassThruColumn"
+                        },
+                        "Name": "expr.DSEPassThruColumn"
+                      },
+                      {
+                        "Column": {
+                          "Expression": {
+                            "TransformTableRef": {
+                              "Source": "RegionWithMostPointsOutput"
+                            }
+                          },
+                          "Property": "TemplateIdColumnRole"
+                        },
+                        "Name": "TemplateIdColumnRole"
+                      }
+                    ],
+                    "Transform": [
+                      {
+                        "Name": "RegionWithMostPoints",
+                        "Algorithm": "RegionWithMostPointsSummary",
+                        "Input": {
+                          "Parameters": [
+                            {
+                              "Literal": {
+                                "Value": "32000L"
+                              },
+                              "Name": "initialTemplateId"
+                            }
+                          ],
+                          "Table": {
+                            "Name": "RegionWithMostPointsInput",
+                            "Columns": [
+                              {
+                                "Expression": {
+                                  "Aggregation": {
+                                    "Expression": {
+                                      "Column": {
+                                        "Expression": {
+                                          "SourceRef": {
+                                            "Source": "g1"
+                                          }
+                                        },
+                                        "Property": "Revenue per transaction"
+                                      }
+                                    },
+                                    "Function": 0
+                                  },
+                                  "Name": "d1"
+                                },
+                                "Role": "PrimaryValueColumnRole"
+                              },
+                              {
+                                "Expression": {
+                                  "Aggregation": {
+                                    "Expression": {
+                                      "Column": {
+                                        "Expression": {
+                                          "SourceRef": {
+                                            "Source": "g1"
+                                          }
+                                        },
+                                        "Property": "Transactions"
+                                      }
+                                    },
+                                    "Function": 0
+                                  },
+                                  "Name": "d2"
+                                },
+                                "Role": "SecondaryValueColumnRole"
+                              },
+                              {
+                                "Expression": {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "g1"
+                                      }
+                                    },
+                                    "Property": "City"
+                                  },
+                                  "Name": "d3"
+                                },
+                                "Role": "PrimarySeriesColumnRole"
+                              },
+                              {
+                                "Expression": {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "g1"
+                                      }
+                                    },
+                                    "Property": "Region"
+                                  },
+                                  "Name": "d4"
+                                },
+                                "Role": "SecondarySeriesColumnRole"
+                              }
+                            ]
+                          }
+                        },
+                        "Output": {
+                          "Table": {
+                            "Name": "RegionWithMostPointsOutput",
+                            "Columns": [
+                              {
+                                "Expression": {
+                                  "TransformOutputRoleRef": {
+                                    "Role": "V1"
+                                  },
+                                  "Name": "V1"
+                                },
+                                "Role": "V1"
+                              },
+                              {
+                                "Expression": {
+                                  "TransformOutputRoleRef": {
+                                    "Role": "V2"
+                                  },
+                                  "Name": "V2"
+                                },
+                                "Role": "V2"
+                              },
+                              {
+                                "Expression": {
+                                  "Column": {
+                                    "Expression": {
+                                      "TransformTableRef": {
+                                        "Source": "RegionWithMostPointsInput"
+                                      }
+                                    },
+                                    "Property": "d3"
+                                  },
+                                  "Name": "DSEPassThruColumn"
+                                }
+                              },
+                              {
+                                "Expression": {
+                                  "TransformOutputRoleRef": {
+                                    "Role": "TemplateIdColumnRole"
+                                  },
+                                  "Name": "TemplateIdColumnRole"
+                                },
+                                "Role": "TemplateIdColumnRole"
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              "Type": 2
+            },
+            {
+              "Name": "q2",
+              "Expression": {
+                "Subquery": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "g2",
+                        "Entity": "Geo",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Column": {
+                          "Expression": {
+                            "TransformTableRef": {
+                              "Source": "RegionWithMostPointsOutput"
+                            }
+                          },
+                          "Property": "V1"
+                        },
+                        "Name": "V1"
+                      },
+                      {
+                        "Column": {
+                          "Expression": {
+                            "TransformTableRef": {
+                              "Source": "RegionWithMostPointsOutput"
+                            }
+                          },
+                          "Property": "V2"
+                        },
+                        "Name": "V2"
+                      },
+                      {
+                        "Column": {
+                          "Expression": {
+                            "TransformTableRef": {
+                              "Source": "RegionWithMostPointsOutput"
+                            }
+                          },
+                          "Property": "DSEPassThruColumn"
+                        },
+                        "Name": "expr.DSEPassThruColumn"
+                      },
+                      {
+                        "Column": {
+                          "Expression": {
+                            "TransformTableRef": {
+                              "Source": "RegionWithMostPointsOutput"
+                            }
+                          },
+                          "Property": "TemplateIdColumnRole"
+                        },
+                        "Name": "TemplateIdColumnRole"
+                      }
+                    ],
+                    "Transform": [
+                      {
+                        "Name": "RegionWithMostPoints",
+                        "Algorithm": "RegionWithMostPointsSummary",
+                        "Input": {
+                          "Parameters": [
+                            {
+                              "Literal": {
+                                "Value": "32000L"
+                              },
+                              "Name": "initialTemplateId"
+                            }
+                          ],
+                          "Table": {
+                            "Name": "RegionWithMostPointsInput",
+                            "Columns": [
+                              {
+                                "Expression": {
+                                  "Aggregation": {
+                                    "Expression": {
+                                      "Column": {
+                                        "Expression": {
+                                          "SourceRef": {
+                                            "Source": "g2"
+                                          }
+                                        },
+                                        "Property": "Revenue per transaction"
+                                      }
+                                    },
+                                    "Function": 0
+                                  },
+                                  "Name": "d1"
+                                },
+                                "Role": "PrimaryValueColumnRole"
+                              },
+                              {
+                                "Expression": {
+                                  "Aggregation": {
+                                    "Expression": {
+                                      "Column": {
+                                        "Expression": {
+                                          "SourceRef": {
+                                            "Source": "g2"
+                                          }
+                                        },
+                                        "Property": "Transactions"
+                                      }
+                                    },
+                                    "Function": 0
+                                  },
+                                  "Name": "d2"
+                                },
+                                "Role": "SecondaryValueColumnRole"
+                              },
+                              {
+                                "Expression": {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "g2"
+                                      }
+                                    },
+                                    "Property": "City"
+                                  },
+                                  "Name": "d3"
+                                },
+                                "Role": "PrimarySeriesColumnRole"
+                              },
+                              {
+                                "Expression": {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "g2"
+                                      }
+                                    },
+                                    "Property": "Region"
+                                  },
+                                  "Name": "d4"
+                                },
+                                "Role": "SecondarySeriesColumnRole"
+                              }
+                            ]
+                          }
+                        },
+                        "Output": {
+                          "Table": {
+                            "Name": "RegionWithMostPointsOutput",
+                            "Columns": [
+                              {
+                                "Expression": {
+                                  "TransformOutputRoleRef": {
+                                    "Role": "V1"
+                                  },
+                                  "Name": "V1"
+                                },
+                                "Role": "V1"
+                              },
+                              {
+                                "Expression": {
+                                  "TransformOutputRoleRef": {
+                                    "Role": "V2"
+                                  },
+                                  "Name": "V2"
+                                },
+                                "Role": "V2"
+                              },
+                              {
+                                "Expression": {
+                                  "Column": {
+                                    "Expression": {
+                                      "TransformTableRef": {
+                                        "Source": "RegionWithMostPointsInput"
+                                      }
+                                    },
+                                    "Property": "d3"
+                                  },
+                                  "Name": "DSEPassThruColumn"
+                                }
+                              },
+                              {
+                                "Expression": {
+                                  "TransformOutputRoleRef": {
+                                    "Role": "TemplateIdColumnRole"
+                                  },
+                                  "Name": "TemplateIdColumnRole"
+                                },
+                                "Role": "TemplateIdColumnRole"
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              "Type": 2
+            },
+            {
+              "Name": "q3",
+              "Expression": {
+                "Subquery": {
+                  "Query": {
+                    "Version": 2,
+                    "From": [
+                      {
+                        "Name": "g3",
+                        "Entity": "Geo",
+                        "Type": 0
+                      }
+                    ],
+                    "Select": [
+                      {
+                        "Column": {
+                          "Expression": {
+                            "TransformTableRef": {
+                              "Source": "RegionWithMostPointsOutput"
+                            }
+                          },
+                          "Property": "V1"
+                        },
+                        "Name": "V1"
+                      },
+                      {
+                        "Column": {
+                          "Expression": {
+                            "TransformTableRef": {
+                              "Source": "RegionWithMostPointsOutput"
+                            }
+                          },
+                          "Property": "V2"
+                        },
+                        "Name": "V2"
+                      },
+                      {
+                        "Column": {
+                          "Expression": {
+                            "TransformTableRef": {
+                              "Source": "RegionWithMostPointsOutput"
+                            }
+                          },
+                          "Property": "DSEPassThruColumn"
+                        },
+                        "Name": "expr.DSEPassThruColumn"
+                      },
+                      {
+                        "Column": {
+                          "Expression": {
+                            "TransformTableRef": {
+                              "Source": "RegionWithMostPointsOutput"
+                            }
+                          },
+                          "Property": "TemplateIdColumnRole"
+                        },
+                        "Name": "TemplateIdColumnRole"
+                      }
+                    ],
+                    "Transform": [
+                      {
+                        "Name": "RegionWithMostPoints",
+                        "Algorithm": "RegionWithMostPointsSummary",
+                        "Input": {
+                          "Parameters": [
+                            {
+                              "Literal": {
+                                "Value": "32000L"
+                              },
+                              "Name": "initialTemplateId"
+                            }
+                          ],
+                          "Table": {
+                            "Name": "RegionWithMostPointsInput",
+                            "Columns": [
+                              {
+                                "Expression": {
+                                  "Aggregation": {
+                                    "Expression": {
+                                      "Column": {
+                                        "Expression": {
+                                          "SourceRef": {
+                                            "Source": "g3"
+                                          }
+                                        },
+                                        "Property": "Revenue per transaction"
+                                      }
+                                    },
+                                    "Function": 0
+                                  },
+                                  "Name": "d1"
+                                },
+                                "Role": "PrimaryValueColumnRole"
+                              },
+                              {
+                                "Expression": {
+                                  "Aggregation": {
+                                    "Expression": {
+                                      "Column": {
+                                        "Expression": {
+                                          "SourceRef": {
+                                            "Source": "g3"
+                                          }
+                                        },
+                                        "Property": "Transactions"
+                                      }
+                                    },
+                                    "Function": 0
+                                  },
+                                  "Name": "d2"
+                                },
+                                "Role": "SecondaryValueColumnRole"
+                              },
+                              {
+                                "Expression": {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "g3"
+                                      }
+                                    },
+                                    "Property": "City"
+                                  },
+                                  "Name": "d3"
+                                },
+                                "Role": "PrimarySeriesColumnRole"
+                              },
+                              {
+                                "Expression": {
+                                  "Column": {
+                                    "Expression": {
+                                      "SourceRef": {
+                                        "Source": "g3"
+                                      }
+                                    },
+                                    "Property": "Region"
+                                  },
+                                  "Name": "d4"
+                                },
+                                "Role": "SecondarySeriesColumnRole"
+                              }
+                            ]
+                          }
+                        },
+                        "Output": {
+                          "Table": {
+                            "Name": "RegionWithMostPointsOutput",
+                            "Columns": [
+                              {
+                                "Expression": {
+                                  "TransformOutputRoleRef": {
+                                    "Role": "V1"
+                                  },
+                                  "Name": "V1"
+                                },
+                                "Role": "V1"
+                              },
+                              {
+                                "Expression": {
+                                  "TransformOutputRoleRef": {
+                                    "Role": "V2"
+                                  },
+                                  "Name": "V2"
+                                },
+                                "Role": "V2"
+                              },
+                              {
+                                "Expression": {
+                                  "Column": {
+                                    "Expression": {
+                                      "TransformTableRef": {
+                                        "Source": "RegionWithMostPointsInput"
+                                      }
+                                    },
+                                    "Property": "d3"
+                                  },
+                                  "Name": "DSEPassThruColumn"
+                                }
+                              },
+                              {
+                                "Expression": {
+                                  "TransformOutputRoleRef": {
+                                    "Role": "TemplateIdColumnRole"
+                                  },
+                                  "Name": "TemplateIdColumnRole"
+                                },
+                                "Role": "TemplateIdColumnRole"
+                              }
+                            ]
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              "Type": 2
+            }
+          ],
+          "Select": [
+            {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Source": "q"
+                      }
+                    },
+                    "Property": "V1"
+                  }
+                },
+                "Function": 3
+              },
+              "Name": "Min(expr.V1)"
+            },
+            {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Source": "q"
+                      }
+                    },
+                    "Property": "V2"
+                  }
+                },
+                "Function": 3
+              },
+              "Name": "Min(expr.V2)"
+            },
+            {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Source": "q"
+                      }
+                    },
+                    "Property": "V3"
+                  }
+                },
+                "Function": 3
+              },
+              "Name": "Min(expr.V3)"
+            },
+            {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Source": "q"
+                      }
+                    },
+                    "Property": "V4"
+                  }
+                },
+                "Function": 3
+              },
+              "Name": "Min(expr.V4)"
+            },
+            {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Source": "q"
+                      }
+                    },
+                    "Property": "V7"
+                  }
+                },
+                "Function": 3
+              },
+              "Name": "Min(expr.V7)"
+            },
+            {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Source": "q"
+                      }
+                    },
+                    "Property": "V8"
+                  }
+                },
+                "Function": 3
+              },
+              "Name": "Min(expr.V8)"
+            },
+            {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Source": "q"
+                      }
+                    },
+                    "Property": "V5"
+                  }
+                },
+                "Function": 3
+              },
+              "Name": "Min(expr.V5)"
+            },
+            {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Source": "q"
+                      }
+                    },
+                    "Property": "V6"
+                  }
+                },
+                "Function": 3
+              },
+              "Name": "Min(expr.V6)"
+            },
+            {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Source": "q"
+                      }
+                    },
+                    "Property": "TemplateIdColumnRole"
+                  }
+                },
+                "Function": 3
+              },
+              "Name": "Min(expr.TemplateIdColumnRole)"
+            },
+            {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Source": "q1"
+                      }
+                    },
+                    "Property": "V1"
+                  }
+                },
+                "Function": 3
+              },
+              "Name": "Min(expr.V1)1"
+            },
+            {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Source": "q2"
+                      }
+                    },
+                    "Property": "V2"
+                  }
+                },
+                "Function": 3
+              },
+              "Name": "Min(expr.V2)1"
+            },
+            {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Source": "q3"
+                      }
+                    },
+                    "Property": "TemplateIdColumnRole"
+                  }
+                },
+                "Function": 3
+              },
+              "Name": "Min(expr.TemplateIdColumnRole)1"
+            }
+          ]
+        },
+        "Binding": {
+          "Primary": {
+            "Groupings": [
+              {
+                "Projections": [
+                  0,
+                  1,
+                  2,
+                  3,
+                  4,
+                  5,
+                  6,
+                  7,
+                  8,
+                  9,
+                  10,
+                  11
+                ]
+              }
+            ]
+          },
+          "Version": 1
+        }
+      }
+    }
+  ]
+}

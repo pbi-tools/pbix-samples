@@ -1,0 +1,9 @@
+{
+  "name": "Visits",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"General\" />"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "name": "738bc627782096c8755b",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 4000,
+        "width": 528.19964349376107,
+        "height": 257.825311942959,
+        "tabOrder": 4000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Q&A now supports arithmetic operations",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Q&A now supports the following arithmetic operations:"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "- Addition (+)"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "- Subtraction (-)"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "- Division (/)"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "- Multiplication (*)"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "This page shows some examples of this new feature."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

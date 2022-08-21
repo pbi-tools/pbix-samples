@@ -1,0 +1,28 @@
+{
+  "displayName": "Q&A Arithmetic",
+  "name": "Bookmark669b0dd8c43fa5fe5203",
+  "explorationState": {
+    "version": "1.3",
+    "activeSection": "ReportSectiondda95a3b0385075d6662",
+    "objects": {
+      "merge": {
+        "outspacePane": [
+          {
+            "properties": {
+              "expanded": {
+                "expr": {
+                  "Literal": {
+                    "Value": "false"
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    }
+  },
+  "options": {
+    "targetVisualNames": []
+  }
+}

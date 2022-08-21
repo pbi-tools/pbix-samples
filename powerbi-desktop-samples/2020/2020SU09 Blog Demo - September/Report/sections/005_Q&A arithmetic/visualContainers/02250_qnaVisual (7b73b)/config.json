@@ -1,0 +1,35 @@
+{
+  "name": "7b73b8fb199dc16cd865",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 36.506238859180037,
+        "y": 387.87878787878788,
+        "z": 1000,
+        "width": 529.34046345811055,
+        "height": 256.68449197860963,
+        "tabOrder": 2250
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "qnaVisual",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "hiddenProperties": [
+        {
+          "properties": {
+            "savedUtterance": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Sales  / nights booked / 20'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

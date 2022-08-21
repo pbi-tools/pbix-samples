@@ -1,0 +1,52 @@
+{
+  "name": "bbd7824c7941e58a9a35",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 903.351691581432,
+        "y": 90.6372934697089,
+        "z": 7000,
+        "width": 314.20928402832419,
+        "height": 58.410700236034621,
+        "tabOrder": 4187
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "image",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "imageUrl": {
+              "expr": {
+                "ResourcePackageItem": {
+                  "PackageName": "RegisteredResources",
+                  "PackageType": 1,
+                  "ItemName": "Background53473173065514512366259493608922.png"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Product summary'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

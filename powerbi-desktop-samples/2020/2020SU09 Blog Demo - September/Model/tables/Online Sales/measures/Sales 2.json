@@ -1,0 +1,10 @@
+{
+  "name": "Sales 2",
+  "isHidden": true,
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"General\" />"
+    }
+  ]
+}

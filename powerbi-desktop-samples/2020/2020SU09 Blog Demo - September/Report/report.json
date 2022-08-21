@@ -1,0 +1,77 @@
+{
+  "id": 0,
+  "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "ReportSection3ebe98ae4e9188e79a4d",
+      "config": "{}",
+      "name": "Pod4"
+    },
+    {
+      "boundSection": "ReportSection3cd0831d8ea04acbe547",
+      "config": "{}",
+      "name": "Pod6"
+    },
+    {
+      "boundSection": "ReportSection42c2f82b6ec644ba7542",
+      "config": "{}",
+      "name": "Pod1"
+    }
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY19SU06",
+            "path": "BaseThemes/CY19SU06.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "Frame_(6)20959816734194958.png",
+            "path": "Frame_(6)20959816734194958.png",
+            "type": 100
+          },
+          {
+            "name": "Frame_(6)8198902728288895.png",
+            "path": "Frame_(6)8198902728288895.png",
+            "type": 100
+          },
+          {
+            "name": "Background53473173065514512366259493608922.png",
+            "path": "Background53473173065514512366259493608922.png",
+            "type": 100
+          },
+          {
+            "name": "Frame_(6)6991727798349763.png",
+            "path": "Frame_(6)6991727798349763.png",
+            "type": 100
+          },
+          {
+            "name": "Custom8580449617585688.json",
+            "path": "Custom8580449617585688.json",
+            "type": 201
+          },
+          {
+            "name": "powerbi_logo6587923036499095.jpg",
+            "path": "powerbi_logo6587923036499095.jpg",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    }
+  ],
+  "theme": "Custom8580449617585688.json"
+}

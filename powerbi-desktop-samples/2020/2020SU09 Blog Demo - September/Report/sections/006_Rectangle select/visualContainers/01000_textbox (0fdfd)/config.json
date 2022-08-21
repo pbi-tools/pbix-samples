@@ -1,0 +1,82 @@
+{
+  "name": "0fdfd910cd6f8cd90fbe",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 1000,
+        "width": 1280,
+        "height": 208.77005347593581,
+        "tabOrder": 1000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Data point rectangle select for additional charts",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Last month, we released the preview version of data point rectangle select, making it available for line, area, and scatter charts. This month, we are extending it to the bar and combo charts. Now you can draw a rectangle to select data points on the stacked bar/column, clustered bar/column, 100% stacked bar/column, line and stacked column, and line and clustered column charts as well."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Remember to enable this preview feature in the Preview features section of the Options menu and please continue to send feedback on the feature!"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Below is a chart that you can use to try this feature - just hold down the Ctrl key and click and click and drag within the visual to select the points."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

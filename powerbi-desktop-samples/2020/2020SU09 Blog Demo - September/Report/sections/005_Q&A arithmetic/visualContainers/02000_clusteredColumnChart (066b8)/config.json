@@ -1,0 +1,50 @@
+{
+  "name": "066b8802b255e2e0fe98",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 697.04099821746877,
+        "y": 387.87878787878788,
+        "z": 2000,
+        "width": 528.19964349376107,
+        "height": 256.68449197860963,
+        "tabOrder": 2000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "clusteredColumnChart",
+    "projections": {
+      "Y": [
+        {
+          "queryRef": "Online Sales.Revenue per transaction"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "o",
+          "Entity": "Online Sales",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "o"
+              }
+            },
+            "Property": "Revenue per transaction"
+          },
+          "Name": "Online Sales.Revenue per transaction"
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

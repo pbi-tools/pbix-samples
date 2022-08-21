@@ -1,0 +1,1 @@
+Calendar(Date(Year(MIN('Online Sales'[Purchase date])), 1, 1), Date(Year(MAX('Online Sales'[Purchase date])), 12, 31))

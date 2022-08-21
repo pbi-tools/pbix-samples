@@ -1,0 +1,55 @@
+{
+  "name": "741b691d524208eec81a",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 79.875195007800315,
+        "y": 4.99219968798752,
+        "z": 1000,
+        "width": 299.53198127925117,
+        "height": 34.945397815912642,
+        "tabOrder": 10000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Power BI update September 2020",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "general": [
+        {
+          "properties": {
+            "altText": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Power BI update September 2020'"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

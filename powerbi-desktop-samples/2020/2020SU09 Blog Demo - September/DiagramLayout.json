@@ -1,0 +1,40 @@
+{
+  "version": "1.0.0",
+  "diagrams": [
+    {
+      "name": "All tables",
+      "zoomValue": 94.577553593947044,
+      "isDefault": true,
+      "tables": [
+        "Online Sales",
+        "Geo"
+      ],
+      "layout": {
+        "boundingBoxWidth": 482.19999999999993,
+        "boundingBoxHeight": 693,
+        "boundingBoxPosition": {
+          "x": 634.9,
+          "y": 0
+        },
+        "nodes": [
+          {
+            "height": 693,
+            "layedOut": true,
+            "left": 634.9,
+            "nodeIndex": "Online Sales",
+            "top": 0,
+            "width": 184
+          },
+          {
+            "height": 138,
+            "layedOut": true,
+            "left": 937.1,
+            "nodeIndex": "Geo",
+            "top": 0,
+            "width": 180
+          }
+        ]
+      }
+    }
+  ]
+}

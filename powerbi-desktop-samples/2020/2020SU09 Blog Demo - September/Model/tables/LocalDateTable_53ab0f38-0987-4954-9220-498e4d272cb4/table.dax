@@ -1,0 +1,1 @@
+Calendar(Date(Year(MIN('Online Sales'[Reservation status date])), 1, 1), Date(Year(MAX('Online Sales'[Reservation status date])), 12, 31))

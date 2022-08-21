@@ -1,0 +1,67 @@
+{
+  "version": "5.15",
+  "themeCollection": {
+    "baseTheme": {
+      "name": "CY19SU06",
+      "version": "5.5",
+      "type": 2
+    },
+    "customTheme": {
+      "name": "Custom8580449617585688.json",
+      "version": "5.11",
+      "type": 1
+    }
+  },
+  "activeSectionIndex": 0,
+  "defaultDrillFilterOtherVisuals": true,
+  "slowDataSourceSettings": {
+    "isCrossHighlightingDisabled": false,
+    "isSlicerSelectionsButtonEnabled": false,
+    "isFilterSelectionsButtonEnabled": false,
+    "isFieldWellButtonEnabled": false,
+    "isApplyAllButtonEnabled": false
+  },
+  "linguisticSchemaSyncVersion": 2,
+  "settings": {
+    "isPersistentUserStateDisabled": false,
+    "hideVisualContainerHeader": false,
+    "useStylableVisualContainerHeader": true,
+    "exportDataMode": 1,
+    "useNewFilterPaneExperience": true,
+    "optOutNewFilterPaneExperience": false,
+    "defaultFilterActionIsDataFilter": true,
+    "useCrossReportDrillthrough": false,
+    "allowChangeFilterTypes": true,
+    "allowInlineExploration": true,
+    "disableFilterPaneSearch": false,
+    "allowDataPointLassoSelect": true
+  },
+  "objects": {
+    "section": [
+      {
+        "properties": {
+          "verticalAlignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Top'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "outspacePane": [
+      {
+        "properties": {
+          "expanded": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  }
+}

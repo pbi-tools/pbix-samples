@@ -1,0 +1,30 @@
+{
+  "name": "Online Sales",
+  "partitions": [
+    {
+      "name": "Online Sales-f9874040-ad54-454b-a557-5df642e9421d",
+      "mode": "import",
+      "source": {
+        "type": "m"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "d9807880-ec9b-4457-b9c1-2a04e0868cf8"
+    },
+    {
+      "name": "LinkedQueryName",
+      "value": "Online Sales"
+    },
+    {
+      "name": "PBI_QueryRelationships",
+      "value": "{\"columnCount\":34,\"keyColumnNames\":[],\"queryRelationships\":[],\"columnIdentities\":[\"Section1/Hotel bookings/Removed Errors.{Hotel,0}\",\"Section1/Hotel bookings/Removed Errors.{Status,1}\",\"Section1/Hotel bookings/Removed Errors.{Lead time,2}\",\"Section1/Hotel bookings/Removed Errors.{Arrival year,3}\",\"Section1/Hotel bookings/Removed Errors.{Arrival month name,4}\",\"Section1/Hotel bookings/Removed Errors.{Arrival week number,5}\",\"Section1/Hotel bookings/Removed Errors.{Arrival day of month,6}\",\"Section1/Hotel bookings/Removed Errors.{Stays in weekend nights,7}\",\"Section1/Hotel bookings/Removed Errors.{Stays in week nights,8}\",\"Section1/Hotel bookings/Removed Errors.{Adults,9}\",\"Section1/Hotel bookings/Removed Errors.{Children,10}\",\"Section1/Hotel bookings/Removed Errors.{Babies,11}\",\"Section1/Hotel bookings/Removed Errors.{Meal,12}\",\"Section1/Hotel bookings/Removed Errors.{Country of origin,13}\",\"Section1/Hotel bookings/Removed Errors.{Market segment,14}\",\"Section1/Hotel bookings/Removed Errors.{Distribution channel,15}\",\"Section1/Hotel bookings/Removed Errors.{Is repeated guest,16}\",\"Section1/Hotel bookings/Removed Errors.{Previous cancelations,17}\",\"Section1/Hotel bookings/Removed Errors.{Previous bookings not canceled,18}\",\"Section1/Hotel bookings/Removed Errors.{Reserved room type,19}\",\"Section1/Hotel bookings/Removed Errors.{Assigned room type,20}\",\"Section1/Hotel bookings/Removed Errors.{Booking changes,21}\",\"Section1/Hotel bookings/Removed Errors.{Deposit type,22}\",\"Section1/Hotel bookings/Removed Errors.{Agent,23}\",\"Section1/Hotel bookings/Removed Errors.{Company,24}\",\"Section1/Hotel bookings/Removed Errors.{Days in waiting list,25}\",\"Section1/Hotel bookings/Removed Errors.{Customer type,26}\",\"Section1/Hotel bookings/Removed Errors.{Average Daily Rate,27}\",\"Section1/Hotel bookings/Removed Errors.{Required parking spaces,28}\",\"Section1/Hotel bookings/Removed Errors.{Total of special requests,29}\",\"Section1/Hotel bookings/Removed Errors.{Reservation status,30}\",\"Section1/Hotel bookings/Removed Errors.{Reservation status date,31}\",\"Section1/Hotel bookings/Removed Errors.{Arrival month,32}\",\"Section1/Hotel bookings/Removed Errors.{Arrival date,33}\"],\"ColumnCount\":34,\"KeyColumnNames\":[],\"ColumnIdentities\":[\"Section1/Hotel bookings/Removed Errors.{Hotel,0}\",\"Section1/Hotel bookings/Removed Errors.{Status,1}\",\"Section1/Hotel bookings/Removed Errors.{Lead time,2}\",\"Section1/Hotel bookings/Removed Errors.{Arrival year,3}\",\"Section1/Hotel bookings/Removed Errors.{Arrival month name,4}\",\"Section1/Hotel bookings/Removed Errors.{Arrival week number,5}\",\"Section1/Hotel bookings/Removed Errors.{Arrival day of month,6}\",\"Section1/Hotel bookings/Removed Errors.{Stays in weekend nights,7}\",\"Section1/Hotel bookings/Removed Errors.{Stays in week nights,8}\",\"Section1/Hotel bookings/Removed Errors.{Adults,9}\",\"Section1/Hotel bookings/Removed Errors.{Children,10}\",\"Section1/Hotel bookings/Removed Errors.{Babies,11}\",\"Section1/Hotel bookings/Removed Errors.{Meal,12}\",\"Section1/Hotel bookings/Removed Errors.{Country of origin,13}\",\"Section1/Hotel bookings/Removed Errors.{Market segment,14}\",\"Section1/Hotel bookings/Removed Errors.{Distribution channel,15}\",\"Section1/Hotel bookings/Removed Errors.{Is repeated guest,16}\",\"Section1/Hotel bookings/Removed Errors.{Previous cancelations,17}\",\"Section1/Hotel bookings/Removed Errors.{Previous bookings not canceled,18}\",\"Section1/Hotel bookings/Removed Errors.{Reserved room type,19}\",\"Section1/Hotel bookings/Removed Errors.{Assigned room type,20}\",\"Section1/Hotel bookings/Removed Errors.{Booking changes,21}\",\"Section1/Hotel bookings/Removed Errors.{Deposit type,22}\",\"Section1/Hotel bookings/Removed Errors.{Agent,23}\",\"Section1/Hotel bookings/Removed Errors.{Company,24}\",\"Section1/Hotel bookings/Removed Errors.{Days in waiting list,25}\",\"Section1/Hotel bookings/Removed Errors.{Customer type,26}\",\"Section1/Hotel bookings/Removed Errors.{Average Daily Rate,27}\",\"Section1/Hotel bookings/Removed Errors.{Required parking spaces,28}\",\"Section1/Hotel bookings/Removed Errors.{Total of special requests,29}\",\"Section1/Hotel bookings/Removed Errors.{Reservation status,30}\",\"Section1/Hotel bookings/Removed Errors.{Reservation status date,31}\",\"Section1/Hotel bookings/Removed Errors.{Arrival month,32}\",\"Section1/Hotel bookings/Removed Errors.{Arrival date,33}\"],\"RelationshipInfo\":[]}"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

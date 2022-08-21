@@ -1,0 +1,99 @@
+{
+  "name": "acf990bc08b4c21bf722",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 108.37789661319073,
+        "y": 208.77005347593581,
+        "z": 0,
+        "width": 990.23172905525848,
+        "height": 489.41176470588232,
+        "tabOrder": 0
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "lineStackedColumnComboChart",
+    "projections": {
+      "Y": [
+        {
+          "queryRef": "Online Sales.Cancellations"
+        }
+      ],
+      "Y2": [
+        {
+          "queryRef": "Online Sales.Nights booked"
+        }
+      ],
+      "Category": [
+        {
+          "queryRef": "Online Sales.Purchasing Date",
+          "active": true
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "o",
+          "Entity": "Online Sales",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "o"
+              }
+            },
+            "Property": "Cancellations"
+          },
+          "Name": "Online Sales.Cancellations"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "o"
+              }
+            },
+            "Property": "Nights booked"
+          },
+          "Name": "Online Sales.Nights booked"
+        },
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "o"
+              }
+            },
+            "Property": "Purchasing Date"
+          },
+          "Name": "Online Sales.Purchasing Date"
+        }
+      ],
+      "OrderBy": [
+        {
+          "Direction": 1,
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Source": "o"
+                }
+              },
+              "Property": "Purchasing Date"
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "hasDefaultSort": true
+  }
+}

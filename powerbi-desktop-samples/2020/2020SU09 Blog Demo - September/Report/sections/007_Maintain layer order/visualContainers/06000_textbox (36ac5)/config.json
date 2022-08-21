@@ -1,0 +1,52 @@
+{
+  "name": "36ac5221acd4b8e13fa8",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 730.12477718360071,
+        "y": 293.19073083778966,
+        "z": 8000,
+        "width": 225.88235294117646,
+        "height": 49.055258467023172,
+        "tabOrder": 6000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Maintain layer order: on"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "general": [
+        {
+          "properties": {
+            "keepLayerOrder": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,1 @@
+CALCULATE(COUNTROWS('Online Sales'),'Online Sales'[Status]="Cancelled")

@@ -1,0 +1,61 @@
+{
+  "name": "d5e00ac910be3aa4664e",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 0,
+        "y": 0,
+        "z": 3000,
+        "width": 1280,
+        "height": 208.77005347593581,
+        "tabOrder": 8500
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "textbox",
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Added general visual option to maintain layer order",
+                    "textStyle": {
+                      "fontWeight": "bold"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Typically, when you select an object on the canvas, it will be automatically brought to the front, above other overlapping visuals. Clicking away from it will return it to its original position. While this behavior is intended and necessary (for example, to allow access to header menus), sometimes you would like an object, like a shape or background image, to stay in the background even when you accidentally click on them while viewing a report."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Now you can set any visual to stay in place rather than being brought to front upon selection: just turn on the Maintain layer order toggle for that visual in the General card of the formatting pane."
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Note that this setting only takes effect when viewing a report in the Service, not in Desktop."
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

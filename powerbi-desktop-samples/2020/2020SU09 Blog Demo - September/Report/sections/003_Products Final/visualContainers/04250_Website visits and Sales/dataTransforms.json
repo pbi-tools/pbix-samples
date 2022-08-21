@@ -1,0 +1,359 @@
+{
+  "objects": {
+    "valueAxis": [
+      {
+        "properties": {
+          "showAxisTitle": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "dataPoint": [
+      {
+        "properties": {
+          "fill": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#280df9'"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "selector": {
+          "metadata": "Hotel bookings.Total bookings"
+        }
+      },
+      {
+        "properties": {
+          "fill": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "ThemeDataColor": {
+                    "ColorId": 6,
+                    "Percent": 0
+                  }
+                }
+              }
+            }
+          }
+        },
+        "selector": {
+          "metadata": "Online Sales.Average Revenue"
+        }
+      }
+    ],
+    "scalarKey": [
+      {
+        "properties": {
+          "min": {
+            "expr": {
+              "Aggregation": {
+                "Expression": {
+                  "Column": {
+                    "Expression": {
+                      "SourceRef": {
+                        "Entity": "LocalDateTable_12549ca7-792e-4421-aa7a-f90bf6ab314f"
+                      }
+                    },
+                    "Property": "Date"
+                  }
+                },
+                "Function": 3
+              }
+            }
+          }
+        },
+        "selector": {
+          "data": [
+            {
+              "roles": [
+                "Category"
+              ]
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Y": [
+      0,
+      4
+    ],
+    "Category": [
+      1,
+      2,
+      3
+    ]
+  },
+  "projectionActiveItems": {
+    "Category": [
+      {
+        "queryRef": "Online Sales.Purchasing Date.Variation.Date Hierarchy.Year",
+        "suppressConcat": false
+      },
+      {
+        "queryRef": "Online Sales.Purchasing Date.Variation.Date Hierarchy.Quarter",
+        "suppressConcat": false
+      },
+      {
+        "queryRef": "Online Sales.Purchasing Date.Variation.Date Hierarchy.Month",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Visits",
+        "Name": "Hotel bookings.Total bookings",
+        "Type": 3
+      },
+      {
+        "Restatement": "Year",
+        "Name": "Online Sales.Purchasing Date.Variation.Date Hierarchy.Year",
+        "Type": 3
+      },
+      {
+        "Restatement": "Quarter",
+        "Name": "Online Sales.Purchasing Date.Variation.Date Hierarchy.Quarter",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Month",
+        "Name": "Online Sales.Purchasing Date.Variation.Date Hierarchy.Month",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Revenue",
+        "Name": "Online Sales.Average Revenue",
+        "Type": 1
+      }
+    ],
+    "Filters": [
+      {
+        "type": 2,
+        "expression": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Online Sales"
+                  }
+                },
+                "Property": "Spending"
+              }
+            },
+            "Function": 1
+          }
+        }
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Y",
+          "Projection": 0,
+          "isActive": false
+        },
+        {
+          "Name": "Y",
+          "Projection": 4,
+          "isActive": false
+        },
+        {
+          "Name": "Category",
+          "Projection": 1,
+          "isActive": true
+        },
+        {
+          "Name": "Category",
+          "Projection": 2,
+          "isActive": true
+        },
+        {
+          "Name": "Category",
+          "Projection": 3,
+          "isActive": true
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Visits",
+      "queryName": "Hotel bookings.Total bookings",
+      "roles": {
+        "Y": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Online Sales"
+            }
+          },
+          "Property": "Visits"
+        }
+      }
+    },
+    {
+      "displayName": "Year",
+      "queryName": "Online Sales.Purchasing Date.Variation.Date Hierarchy.Year",
+      "roles": {
+        "Category": true
+      },
+      "type": {
+        "category": "Years",
+        "underlyingType": 66308
+      },
+      "expr": {
+        "HierarchyLevel": {
+          "Expression": {
+            "Hierarchy": {
+              "Expression": {
+                "PropertyVariationSource": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Online Sales"
+                    }
+                  },
+                  "Name": "Variation",
+                  "Property": "Purchasing Date"
+                }
+              },
+              "Hierarchy": "Date Hierarchy"
+            }
+          },
+          "Level": "Year"
+        }
+      }
+    },
+    {
+      "displayName": "Quarter",
+      "queryName": "Online Sales.Purchasing Date.Variation.Date Hierarchy.Quarter",
+      "roles": {
+        "Category": true
+      },
+      "type": {
+        "category": "Quarters",
+        "underlyingType": 262657
+      },
+      "expr": {
+        "HierarchyLevel": {
+          "Expression": {
+            "Hierarchy": {
+              "Expression": {
+                "PropertyVariationSource": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Online Sales"
+                    }
+                  },
+                  "Name": "Variation",
+                  "Property": "Purchasing Date"
+                }
+              },
+              "Hierarchy": "Date Hierarchy"
+            }
+          },
+          "Level": "Quarter"
+        }
+      }
+    },
+    {
+      "displayName": "Month",
+      "queryName": "Online Sales.Purchasing Date.Variation.Date Hierarchy.Month",
+      "roles": {
+        "Category": true
+      },
+      "type": {
+        "category": "Months",
+        "underlyingType": 131585
+      },
+      "expr": {
+        "HierarchyLevel": {
+          "Expression": {
+            "Hierarchy": {
+              "Expression": {
+                "PropertyVariationSource": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Online Sales"
+                    }
+                  },
+                  "Name": "Variation",
+                  "Property": "Purchasing Date"
+                }
+              },
+              "Hierarchy": "Date Hierarchy"
+            }
+          },
+          "Level": "Month"
+        }
+      }
+    },
+    {
+      "displayName": "Revenue",
+      "queryName": "Online Sales.Average Revenue",
+      "roles": {
+        "Y": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Online Sales"
+            }
+          },
+          "Property": "Revenue"
+        }
+      }
+    },
+    {
+      "displayName": "Earliest Date",
+      "queryName": "Min(LocalDateTable_12549ca7-792e-4421-aa7a-f90bf6ab314f.Date)",
+      "roles": {},
+      "type": {
+        "category": "PaddedDateTableDates",
+        "underlyingType": 197127
+      },
+      "expr": {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "LocalDateTable_12549ca7-792e-4421-aa7a-f90bf6ab314f"
+                }
+              },
+              "Property": "Date"
+            }
+          },
+          "Function": 3
+        }
+      }
+    }
+  ]
+}

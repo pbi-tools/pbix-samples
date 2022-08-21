@@ -1,0 +1,53 @@
+{
+  "name": "2020SU09 Blog Demo - September",
+  "compatibilityLevel": 1520,
+  "model": {
+    "culture": "en-US",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-US",
+    "relationships": [
+      {
+        "name": "ebd94b8b-f818-4e90-902d-332e0102136d",
+        "fromTable": "Online Sales",
+        "fromColumn": "Reservation status date",
+        "toTable": "LocalDateTable_53ab0f38-0987-4954-9220-498e4d272cb4",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "61f16798-9c9e-44d0-bac3-eed49df60ab7",
+        "fromTable": "Online Sales",
+        "fromColumn": "Purchase date",
+        "toTable": "LocalDateTable_85ba34a4-eea6-403e-b88e-5c37a1780d69",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "8052707c-389e-49b7-b009-f0bf3cca5b86",
+        "fromTable": "Online Sales",
+        "fromColumn": "Purchasing Date",
+        "toTable": "LocalDateTable_12549ca7-792e-4421-aa7a-f90bf6ab314f",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      }
+    ],
+    "annotations": [
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      },
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.85.643.0 (20.09)"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"Online Sales\",\"Geo\"]"
+      }
+    ]
+  }
+}

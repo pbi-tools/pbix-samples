@@ -1,0 +1,12 @@
+{
+  "Version": 2,
+  "ReportSettings": {
+    "ShowHiddenFields": true
+  },
+  "QueriesSettings": {
+    "TypeDetectionEnabled": true,
+    "RelationshipImportEnabled": true,
+    "RunBackgroundAnalysis": true,
+    "Version": "2.91.522.0"
+  }
+}

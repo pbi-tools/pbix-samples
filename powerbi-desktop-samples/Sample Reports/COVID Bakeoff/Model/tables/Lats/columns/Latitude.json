@@ -1,0 +1,29 @@
+{
+  "name": "Latitude",
+  "dataType": "double",
+  "isHidden": true,
+  "sourceColumn": "Latitude",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "Format",
+      "value": "<Format Format=\"General\" />"
+    },
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "Double#####not a type"
+    },
+    {
+      "name": "PBI_NameAtRefresh",
+      "value": "Latitude"
+    },
+    {
+      "name": "PBI_WasHiddenAtRefresh",
+      "value": "False"
+    }
+  ]
+}

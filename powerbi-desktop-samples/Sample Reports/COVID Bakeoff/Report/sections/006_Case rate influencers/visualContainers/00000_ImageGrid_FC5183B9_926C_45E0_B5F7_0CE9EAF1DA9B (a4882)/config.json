@@ -1,0 +1,133 @@
+{
+  "name": "a4882d869e5c72190851",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 818.55462184873954,
+        "y": 491.56302521008405,
+        "z": 0,
+        "width": 424.87394957983196,
+        "height": 171.0252100840336,
+        "tabOrder": 0
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "ImageGrid_FC5183B9_926C_45E0_B5F7_0CE9EAF1DA9B",
+    "projections": {
+      "ImageURL": [
+        {
+          "queryRef": "Countries.Flag"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "c",
+          "Entity": "Countries",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "c"
+              }
+            },
+            "Property": "Flag"
+          },
+          "Name": "Countries.Flag"
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "settings": [
+        {
+          "properties": {
+            "pRenderType": {
+              "expr": {
+                "Literal": {
+                  "Value": "'GRID'"
+                }
+              }
+            },
+            "pHQMinWidth": {
+              "expr": {
+                "Literal": {
+                  "Value": "500D"
+                }
+              }
+            },
+            "pMaxColumns": {
+              "expr": {
+                "Literal": {
+                  "Value": "8D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "vcObjects": {
+      "title": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

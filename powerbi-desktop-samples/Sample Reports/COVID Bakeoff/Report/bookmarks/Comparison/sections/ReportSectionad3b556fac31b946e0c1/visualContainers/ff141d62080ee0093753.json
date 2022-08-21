@@ -1,0 +1,150 @@
+{
+  "filters": {
+    "byExpr": [
+      {
+        "name": "Filter6d89e4d0b4ac066a5d73",
+        "type": "Categorical",
+        "filter": {
+          "Version": 2,
+          "From": [
+            {
+              "Name": "s",
+              "Entity": "States",
+              "Type": 0
+            }
+          ],
+          "Where": [
+            {
+              "Condition": {
+                "Not": {
+                  "Expression": {
+                    "In": {
+                      "Expressions": [
+                        {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Source": "s"
+                              }
+                            },
+                            "Property": "State"
+                          }
+                        }
+                      ],
+                      "Values": [
+                        [
+                          {
+                            "Literal": {
+                              "Value": "null"
+                            }
+                          }
+                        ]
+                      ]
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "States"
+              }
+            },
+            "Property": "State"
+          }
+        },
+        "howCreated": 0
+      },
+      {
+        "name": "Filterc460313ab8bcec789040",
+        "type": "Advanced",
+        "expression": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "us_state_vaccinations"
+                  }
+                },
+                "Property": "people_fully_vaccinated_per_hundred"
+              }
+            },
+            "Function": 0
+          }
+        },
+        "howCreated": 1
+      },
+      {
+        "type": "Categorical",
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "States"
+              }
+            },
+            "Property": "Flag"
+          }
+        },
+        "howCreated": 0
+      },
+      {
+        "type": "Advanced",
+        "expression": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "States"
+                  }
+                },
+                "Property": "Average Temperature "
+              }
+            },
+            "Function": 1
+          }
+        },
+        "howCreated": 0
+      },
+      {
+        "type": "Advanced",
+        "expression": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Cases per US State"
+              }
+            },
+            "Property": "% Fully Vacc'd"
+          }
+        },
+        "howCreated": 0
+      }
+    ]
+  },
+  "singleVisual": {
+    "visualType": "tableEx",
+    "objects": {},
+    "orderBy": [
+      {
+        "Direction": 2,
+        "Expression": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Cases per US State"
+              }
+            },
+            "Property": "Ratio fully vaccinated"
+          }
+        }
+      }
+    ]
+  }
+}

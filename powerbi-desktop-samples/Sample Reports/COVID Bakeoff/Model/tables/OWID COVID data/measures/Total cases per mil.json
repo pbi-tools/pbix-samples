@@ -1,0 +1,10 @@
+{
+  "name": "Total cases per mil",
+  "displayFolder": "1. Health metrics",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"General\" />"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "States",
+  "partitions": [
+    {
+      "name": "States-804c4345-52f7-4135-9b8d-5f44ba337c33",
+      "mode": "import",
+      "source": {
+        "type": "m"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    },
+    {
+      "name": "PBI_DescriptionAtRefresh"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    }
+  ]
+}

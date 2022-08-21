@@ -1,0 +1,98 @@
+{
+  "id": 0,
+  "layoutOptimization": 0,
+  "pods": [
+    {
+      "boundSection": "ReportSectiond98e33c37b4b84be4c71",
+      "config": "{}",
+      "name": "Pod3",
+      "parameters": "[{\"name\":\"Param_Filter2e9285e275a8d5bee683\",\"boundFilter\":\"Filter2e9285e275a8d5bee683\",\"fieldExpr\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"Countries\"}},\"Property\":\"Country\"}}}]",
+      "type": 1
+    },
+    {
+      "boundSection": "ReportSectionad3b556fac31b946e0c1",
+      "config": "{}",
+      "name": "Pod4"
+    }
+  ],
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY18SU07",
+            "path": "BaseThemes/CY18SU07.json",
+            "type": 202
+          },
+          {
+            "name": "usa.states.topo",
+            "path": "Shapemaps/usa.states.topo.json",
+            "type": 200
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "Will_BG136916218480952057.png",
+            "path": "Will_BG136916218480952057.png",
+            "type": 100
+          },
+          {
+            "name": "Will_BG27015982030649137.png",
+            "path": "Will_BG27015982030649137.png",
+            "type": 100
+          },
+          {
+            "name": "Will_BG39647051031911995.png",
+            "path": "Will_BG39647051031911995.png",
+            "type": 100
+          },
+          {
+            "name": "Classroom451796065246306.json",
+            "path": "Classroom451796065246306.json",
+            "type": 201
+          },
+          {
+            "name": "Will_BG49134875867930754.png",
+            "path": "Will_BG49134875867930754.png",
+            "type": 100
+          },
+          {
+            "name": "Will_BG5059560424950864777.png",
+            "path": "Will_BG5059560424950864777.png",
+            "type": 100
+          },
+          {
+            "name": "Will_BG622481850998146813.png",
+            "path": "Will_BG622481850998146813.png",
+            "type": 100
+          }
+        ],
+        "name": "RegisteredResources",
+        "type": 1
+      }
+    },
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "ImageGrid_FC5183B9_926C_45E0_B5F7_0CE9EAF1DA9B.pbiviz.json",
+            "path": "ImageGrid_FC5183B9_926C_45E0_B5F7_0CE9EAF1DA9B.pbiviz.json",
+            "type": 5
+          }
+        ],
+        "name": "ImageGrid_FC5183B9_926C_45E0_B5F7_0CE9EAF1DA9B",
+        "type": 0
+      }
+    }
+  ],
+  "theme": "Classroom451796065246306.json"
+}

@@ -1,0 +1,403 @@
+{
+  "objects": {
+    "values": [
+      {
+        "properties": {
+          "fontSize": {
+            "expr": {
+              "Literal": {
+                "Value": "10D"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "columnWidth": [
+      {
+        "properties": {
+          "value": {
+            "expr": {
+              "Literal": {
+                "Value": "54.49486571132164D"
+              }
+            }
+          }
+        },
+        "selector": {
+          "metadata": "Countries.FlagURL"
+        }
+      },
+      {
+        "properties": {
+          "value": {
+            "expr": {
+              "Literal": {
+                "Value": "120.83192640972024D"
+              }
+            }
+          }
+        },
+        "selector": {
+          "metadata": "Countries.GDP % chg 2020"
+        }
+      },
+      {
+        "properties": {
+          "value": {
+            "expr": {
+              "Literal": {
+                "Value": "159.6638528194405D"
+              }
+            }
+          }
+        },
+        "selector": {
+          "metadata": "Countries.COUNTRY"
+        }
+      }
+    ],
+    "grid": [
+      {
+        "properties": {
+          "imageHeight": {
+            "expr": {
+              "Literal": {
+                "Value": "35D"
+              }
+            }
+          },
+          "textSize": {
+            "expr": {
+              "Literal": {
+                "Value": "10D"
+              }
+            }
+          },
+          "rowPadding": {
+            "expr": {
+              "Literal": {
+                "Value": "5D"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "columnFormatting": [
+      {
+        "properties": {
+          "dataBars": {
+            "positiveColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#3D3C42'"
+                    }
+                  }
+                }
+              }
+            },
+            "negativeColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#3D3C42'"
+                    }
+                  }
+                }
+              }
+            },
+            "axisColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'foreground'"
+                    }
+                  }
+                }
+              }
+            },
+            "reverseDirection": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "hideText": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          },
+          "styleHeader": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          },
+          "styleValues": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          },
+          "fontColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#F4F4F4'"
+                  }
+                }
+              }
+            }
+          }
+        },
+        "selector": {
+          "metadata": "Countries.GDP % chg 2020"
+        }
+      }
+    ],
+    "total": [
+      {
+        "properties": {
+          "totals": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "columnHeaders": [
+      {
+        "properties": {
+          "fontColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "ThemeDataColor": {
+                    "ColorId": 3,
+                    "Percent": 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Values": [
+      1,
+      0,
+      3,
+      2
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Flag",
+        "Name": "Countries.FlagURL",
+        "Type": 2048,
+        "DataCategory": 9
+      },
+      {
+        "Restatement": "Country",
+        "Name": "Countries.COUNTRY",
+        "Type": 2048
+      },
+      {
+        "Restatement": "-",
+        "Name": "Countries.GDP % chg 2020",
+        "Type": 1
+      },
+      {
+        "Restatement": "GDP Chg",
+        "Name": "Countries.GDP Chg",
+        "Type": 1
+      }
+    ],
+    "Filters": [
+      {
+        "type": 0,
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Countries"
+              }
+            },
+            "Property": "Flag"
+          }
+        }
+      },
+      {
+        "type": 0,
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Countries"
+              }
+            },
+            "Property": "Country"
+          }
+        }
+      },
+      {
+        "type": 2,
+        "expression": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Countries"
+              }
+            },
+            "Property": "GDP % chg 2020"
+          }
+        }
+      },
+      {
+        "type": 2,
+        "expression": {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Countries"
+              }
+            },
+            "Property": "GDP Chg"
+          }
+        }
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Values",
+          "Projection": 1,
+          "isActive": false
+        },
+        {
+          "Name": "Values",
+          "Projection": 0,
+          "isActive": false
+        },
+        {
+          "Name": "Values",
+          "Projection": 3,
+          "isActive": false
+        },
+        {
+          "Name": "Values",
+          "Projection": 2,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Flag",
+      "queryName": "Countries.FlagURL",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": "ImageUrl",
+        "underlyingType": 13174785
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Countries"
+            }
+          },
+          "Property": "Flag"
+        }
+      }
+    },
+    {
+      "displayName": "Country",
+      "queryName": "Countries.COUNTRY",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Countries"
+            }
+          },
+          "Property": "Country"
+        }
+      }
+    },
+    {
+      "displayName": "-",
+      "queryName": "Countries.GDP % chg 2020",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Countries"
+            }
+          },
+          "Property": "GDP % chg 2020"
+        }
+      }
+    },
+    {
+      "displayName": "GDP Chg",
+      "queryName": "Countries.GDP Chg",
+      "roles": {
+        "Values": true
+      },
+      "sort": 1,
+      "sortOrder": 0,
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Countries"
+            }
+          },
+          "Property": "GDP Chg"
+        }
+      }
+    }
+  ]
+}

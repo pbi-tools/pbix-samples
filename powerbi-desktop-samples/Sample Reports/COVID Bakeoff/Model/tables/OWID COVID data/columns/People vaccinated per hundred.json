@@ -1,0 +1,24 @@
+{
+  "name": "People vaccinated per hundred",
+  "dataType": "double",
+  "sourceColumn": "People vaccinated per hundred",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "Format",
+      "value": "<Format Format=\"General\" />"
+    },
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "Double#####not a type"
+    },
+    {
+      "name": "PBI_NameAtRefresh",
+      "value": "People vaccinated per hundred"
+    }
+  ]
+}

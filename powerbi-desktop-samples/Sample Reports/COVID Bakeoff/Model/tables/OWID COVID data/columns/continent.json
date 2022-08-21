@@ -1,0 +1,21 @@
+{
+  "name": "continent",
+  "dataType": "string",
+  "isHidden": true,
+  "sourceColumn": "continent",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "Format",
+      "value": "<Format Format=\"Text\" />"
+    },
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "String#####not a type"
+    }
+  ]
+}

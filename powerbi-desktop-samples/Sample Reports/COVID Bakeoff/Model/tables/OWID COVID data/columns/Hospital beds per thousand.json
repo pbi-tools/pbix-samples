@@ -1,0 +1,24 @@
+{
+  "name": "Hospital beds per thousand",
+  "dataType": "double",
+  "sourceColumn": "Hospital beds per thousand",
+  "summarizeBy": "average",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "User"
+    },
+    {
+      "name": "Format",
+      "value": "<Format Format=\"General\" />"
+    },
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "Double#####not a type"
+    },
+    {
+      "name": "PBI_NameAtRefresh",
+      "value": "Hospital beds per thousand"
+    }
+  ]
+}

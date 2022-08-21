@@ -1,0 +1,165 @@
+{
+  "version": "1.1.0",
+  "diagrams": [
+    {
+      "ordinal": 0,
+      "scrollPosition": {
+        "x": 0,
+        "y": 0
+      },
+      "nodes": [
+        {
+          "location": {
+            "x": 734.54271000336155,
+            "y": 0
+          },
+          "nodeIndex": "Govt Measures",
+          "size": {
+            "height": 478.82190861301092,
+            "width": 234
+          },
+          "zIndex": 9
+        },
+        {
+          "location": {
+            "x": 508.60225160984237,
+            "y": 587.32682473268244
+          },
+          "nodeIndex": "Countries",
+          "size": {
+            "height": 339.28297781197233,
+            "width": 234
+          },
+          "zIndex": 8
+        },
+        {
+          "location": {
+            "x": 1959.1598079719442,
+            "y": 93.283547157122
+          },
+          "nodeIndex": "States",
+          "size": {
+            "height": 304.66618540885685,
+            "width": 234
+          },
+          "zIndex": 7
+        },
+        {
+          "location": {
+            "x": 935.599539374364,
+            "y": 570.93439815400882
+          },
+          "nodeIndex": "Cases per country",
+          "size": {
+            "height": 280,
+            "width": 234
+          },
+          "zIndex": 11
+        },
+        {
+          "location": {
+            "x": 1615.3205675231038,
+            "y": 5.5103707351126161
+          },
+          "nodeIndex": "Cases per US State",
+          "size": {
+            "height": 554.8056408436762,
+            "width": 234
+          },
+          "zIndex": 10
+        },
+        {
+          "location": {
+            "x": 1219.1920217715735,
+            "y": 112.68479776847977
+          },
+          "nodeIndex": "Dates",
+          "size": {
+            "height": 208,
+            "width": 234
+          },
+          "zIndex": 12
+        },
+        {
+          "location": {
+            "x": 346.43742445374261,
+            "y": 0
+          },
+          "nodeIndex": "CGRT Mandates",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 4
+        },
+        {
+          "location": {
+            "x": 0,
+            "y": 0
+          },
+          "nodeIndex": "Days with restrictions",
+          "size": {
+            "height": 300,
+            "width": 234
+          },
+          "zIndex": 5
+        },
+        {
+          "location": {
+            "x": 47.633147373314856,
+            "y": 983.43096234309644
+          },
+          "nodeIndex": "Days with restrictions grouped",
+          "size": {
+            "height": 208,
+            "width": 234
+          },
+          "zIndex": 6
+        },
+        {
+          "location": {
+            "x": 42.82277059084079,
+            "y": 628.604461792559
+          },
+          "nodeIndex": "GDP History",
+          "size": {
+            "height": 208,
+            "width": 234
+          },
+          "zIndex": 2
+        },
+        {
+          "location": {
+            "x": 1246.1440978804276,
+            "y": 583.91213389121344
+          },
+          "nodeIndex": "OWID COVID data",
+          "size": {
+            "height": 748.78530613200792,
+            "width": 234
+          },
+          "zIndex": 3
+        },
+        {
+          "location": {
+            "x": 2349.4600185960016,
+            "y": 143.41701534170153
+          },
+          "nodeIndex": "Lats",
+          "size": {
+            "height": 184,
+            "width": 234
+          },
+          "zIndex": 1
+        }
+      ],
+      "name": "All tables",
+      "zoomValue": 58.570456092579981,
+      "pinKeyFieldsToTop": false,
+      "showExtraHeaderInfo": false,
+      "hideKeyFieldsWhenCollapsed": false
+    }
+  ],
+  "selectedDiagram": "All tables",
+  "defaultDiagram": "All tables"
+}

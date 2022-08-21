@@ -1,0 +1,22 @@
+{
+  "name": "CGRT Mandates",
+  "isHidden": true,
+  "partitions": [
+    {
+      "name": "CGRT Mandates-e9a35d17-7524-4b34-8e1a-2602619c548f",
+      "mode": "import",
+      "source": {
+        "type": "m"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_DescriptionAtRefresh"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

@@ -1,0 +1,8 @@
+
+CALCULATE(
+	SUM('Cases per US State'[daily_vaccinations]),
+	FILTER(
+		ALLSELECTED('Dates'[Date]),
+		ISONORAFTER('Dates'[Date], MAX('Dates'[Date]), DESC)
+	)
+)

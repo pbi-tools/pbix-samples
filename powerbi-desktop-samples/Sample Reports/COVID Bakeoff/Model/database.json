@@ -1,0 +1,299 @@
+{
+  "name": "COVID Bakeoff",
+  "compatibilityLevel": 1550,
+  "model": {
+    "culture": "en-US",
+    "dataAccessOptions": {
+      "legacyRedirects": true,
+      "returnErrorValuesAsNull": true,
+      "fastCombine": true
+    },
+    "defaultPowerBIDataSourceVersion": "powerBI_V3",
+    "sourceQueryCulture": "en-US",
+    "relationships": [
+      {
+        "name": "e1e86f08-cc1c-48f2-9aba-4fddf579fca6",
+        "fromTable": "Govt Measures",
+        "fromColumn": "Entry date",
+        "toTable": "LocalDateTable_88205f4b-f7a1-45b0-926f-f9aeda622848",
+        "toColumn": "Date",
+        "joinOnDateBehavior": "datePartOnly"
+      },
+      {
+        "name": "21e6f44d-7bfc-44b6-90f5-c5b12555f93c",
+        "fromTable": "Govt Measures",
+        "fromColumn": "ISO",
+        "toTable": "Countries",
+        "toColumn": "ISO"
+      },
+      {
+        "name": "372580c9-5cdd-42e1-b7df-a310955cfc7f",
+        "fromTable": "Cases per country",
+        "fromColumn": "Country",
+        "toTable": "Countries",
+        "toColumn": "Country"
+      },
+      {
+        "name": "c14fb59b-c328-4d1c-a16f-3a6785d951ee",
+        "fromTable": "Cases per US State",
+        "fromColumn": "State",
+        "toTable": "States",
+        "toColumn": "State"
+      },
+      {
+        "name": "11823667-7f2f-429a-b8ac-6dcac9e557f6",
+        "fromTable": "Cases per US State",
+        "fromColumn": "Date",
+        "toTable": "Dates",
+        "toColumn": "Date"
+      },
+      {
+        "name": "86a185cb-34f7-4885-84cf-00e80c51d513",
+        "fromTable": "Cases per country",
+        "fromColumn": "Date",
+        "toTable": "Dates",
+        "toColumn": "Date"
+      },
+      {
+        "name": "7b9dc434-4b9a-44b4-a37e-9c1070c8f7aa",
+        "fromTable": "Govt Measures",
+        "fromColumn": "Date implemented",
+        "toTable": "Dates",
+        "toColumn": "Date"
+      },
+      {
+        "name": "1957136d-e5f3-41f9-882f-43cf3fee2558",
+        "fromTable": "OWID COVID data",
+        "fromColumn": "date",
+        "toTable": "Dates",
+        "toColumn": "Date"
+      },
+      {
+        "name": "01f08640-cf1f-411c-a63c-59944b68ec84",
+        "fromTable": "OWID COVID data",
+        "fromColumn": "iso_code",
+        "toTable": "Countries",
+        "toColumn": "ISO"
+      },
+      {
+        "name": "9472a507-8991-430e-83d6-a8656c4d63f0",
+        "fromTable": "CGRT Mandates",
+        "fromColumn": "CountryName",
+        "toTable": "Countries",
+        "toColumn": "Country"
+      },
+      {
+        "name": "522630e3-279d-4eb5-84b0-619f26212b0c",
+        "fromTable": "Days with restrictions",
+        "fromColumn": "CountryCode",
+        "toTable": "Countries",
+        "toColumn": "ISO",
+        "crossFilteringBehavior": "bothDirections"
+      },
+      {
+        "name": "e784db96-1975-42e1-ba75-bd9bea95df5b",
+        "fromTable": "GDP History",
+        "fromColumn": "ISO",
+        "toTable": "Countries",
+        "toColumn": "ISO"
+      },
+      {
+        "name": "c6a5f2eb-1ee1-418e-b460-a95554874641",
+        "fromTable": "Days with restrictions grouped",
+        "fromColumn": "CountryCode",
+        "toTable": "Countries",
+        "toColumn": "ISO",
+        "crossFilteringBehavior": "bothDirections"
+      },
+      {
+        "name": "865d7d72-6b99-4118-8e48-dc22864cd6c5",
+        "fromCardinality": "one",
+        "fromTable": "Lats",
+        "fromColumn": "State",
+        "toTable": "States",
+        "toColumn": "State",
+        "crossFilteringBehavior": "bothDirections"
+      }
+    ],
+    "expressions": [
+      {
+        "name": "state population",
+        "kind": "m",
+        "queryGroup": "Unused",
+        "annotations": [
+          {
+            "name": "PBI_DescriptionAtRefresh"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "Table 3",
+        "kind": "m",
+        "queryGroup": "Unused",
+        "annotations": [
+          {
+            "name": "PBI_DescriptionAtRefresh"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "us_state_vaccinations",
+        "kind": "m",
+        "queryGroup": "Unused",
+        "annotations": [
+          {
+            "name": "PBI_DescriptionAtRefresh"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "Vaccine Types",
+        "kind": "m",
+        "queryGroup": "Unused",
+        "annotations": [
+          {
+            "name": "PBI_DescriptionAtRefresh"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "covid-vaccine-willingness",
+        "kind": "m",
+        "queryGroup": "Unused",
+        "annotations": [
+          {
+            "name": "PBI_DescriptionAtRefresh"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "OxCGRT_US States",
+        "kind": "m",
+        "queryGroup": "Unused",
+        "annotations": [
+          {
+            "name": "PBI_DescriptionAtRefresh"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "Global_Mobility_Report",
+        "kind": "m",
+        "queryGroup": "Unused",
+        "annotations": [
+          {
+            "name": "PBI_DescriptionAtRefresh"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Table"
+          }
+        ]
+      },
+      {
+        "name": "OxCGRT_latest",
+        "kind": "m",
+        "annotations": [
+          {
+            "name": "PBI_DescriptionAtRefresh"
+          },
+          {
+            "name": "PBI_NavigationStepName",
+            "value": "Navigation"
+          },
+          {
+            "name": "PBI_ResultType",
+            "value": "Exception"
+          }
+        ]
+      }
+    ],
+    "queryGroups": [
+      {
+        "folder": "Query Errors - 4/13/2021 12:33:02 PM",
+        "description": "Errors in queries that were loaded on 4/13/2021 12:33:02 PM.",
+        "annotations": [
+          {
+            "name": "PBI_QueryGroupOrder",
+            "value": "0"
+          }
+        ]
+      },
+      {
+        "folder": "Unused",
+        "annotations": [
+          {
+            "name": "PBI_QueryGroupOrder",
+            "value": "1"
+          }
+        ]
+      }
+    ],
+    "annotations": [
+      {
+        "name": "PBIDesktopVersion",
+        "value": "2.93.384.0 (21.05)"
+      },
+      {
+        "name": "PBI_QueryOrder",
+        "value": "[\"Vaccine Types\",\"OxCGRT_latest\",\"Govt Measures\",\"Countries\",\"us_state_vaccinations\",\"States\",\"Cases per country\",\"covid-vaccine-willingness\",\"Cases per US State\",\"OxCGRT_US States\",\"OWID COVID data\",\"state population\",\"Table 3\",\"Global_Mobility_Report\",\"CGRT Mandates\",\"GDP History\",\"Lats\"]"
+      },
+      {
+        "name": "__PBI_TimeIntelligenceEnabled",
+        "value": "1"
+      }
+    ]
+  }
+}

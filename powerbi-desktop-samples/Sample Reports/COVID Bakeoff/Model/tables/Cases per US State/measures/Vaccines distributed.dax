@@ -1,0 +1,5 @@
+
+var totalDistributed = SUM('Cases per US State'[total_distributed])
+var latestDate = MAX('OWID COVID data'[date])
+var latestVaccineTotal = CALCULATE(AVERAGE('Cases per US State'[total_distributed]), 'Cases per US State'[Date] = latestDate)
+return if(HASONEVALUE(Dates[Date]), totalDistributed, latestVaccineTotal)

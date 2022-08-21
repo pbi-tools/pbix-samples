@@ -1,0 +1,22 @@
+{
+  "name": "Cases per country",
+  "isHidden": true,
+  "partitions": [
+    {
+      "name": "Cases per country-e8e5bc31-3b74-4805-9363-ece154c8bafc",
+      "mode": "import",
+      "source": {
+        "type": "m"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    },
+    {
+      "name": "PBI_DescriptionAtRefresh"
+    }
+  ]
+}

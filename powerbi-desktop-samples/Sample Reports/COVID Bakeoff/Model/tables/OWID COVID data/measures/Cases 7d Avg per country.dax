@@ -1,0 +1,12 @@
+
+var sevenDayPeriod = DATESINPERIOD (
+        'Dates'[Date],
+        min('Dates'[Date] ),
+        -7,
+        DAY
+    )
+return CALCULATE (
+    SUM( 'Cases per country'[IncrementalCases] )/7,
+    sevenDayPeriod
+    )
+

@@ -1,0 +1,9 @@
+let
+    Source = Csv.Document(Web.Contents("https://raw.githubusercontent.com/owid/covid-19-data/master/public/data/vaccinations/us_state_vaccinations.csv"),[Delimiter=",", Columns=14, Encoding=65001, QuoteStyle=QuoteStyle.None]),
+    #"Promoted Headers" = Table.PromoteHeaders(Source, [PromoteAllScalars=true]),
+    #"Changed Type" = Table.TransformColumnTypes(#"Promoted Headers",{{"date", type date}, {"location", type text}, {"total_vaccinations", Int64.Type}, {"total_distributed", Int64.Type}, {"people_vaccinated", Int64.Type}, {"people_fully_vaccinated_per_hundred", type number}, {"total_vaccinations_per_hundred", type number}, {"people_fully_vaccinated", Int64.Type}, {"people_vaccinated_per_hundred", type number}, {"distributed_per_hundred", type number}, {"daily_vaccinations_raw", type number}, {"daily_vaccinations", Int64.Type}, {"daily_vaccinations_per_million", Int64.Type}, {"share_doses_used", type number}}),
+    #"Filled Down" = Table.FillDown(#"Changed Type",{"total_vaccinations", "total_distributed", "people_vaccinated", "people_fully_vaccinated_per_hundred", "total_vaccinations_per_hundred", "people_fully_vaccinated", "people_vaccinated_per_hundred", "distributed_per_hundred", "daily_vaccinations_raw", "daily_vaccinations", "daily_vaccinations_per_million", "share_doses_used"}),
+    #"Replaced Value" = Table.ReplaceValue(#"Filled Down","New York State","New York",Replacer.ReplaceText,{"location"}),
+    #"Filtered Rows" = Table.SelectRows(#"Replaced Value", each ([date] <> #date(2021, 1, 12) and [date] <> #date(2021, 1, 13) and [date] <> #date(2021, 1, 14)))
+in
+    #"Filtered Rows"

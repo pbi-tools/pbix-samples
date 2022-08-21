@@ -1,0 +1,34 @@
+{
+  "name": "bb138ed8833603195536",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 36.506238859180037,
+        "y": 93.547237076648841,
+        "z": 8000,
+        "width": 773.475935828877,
+        "height": 580.67736185383239
+      }
+    }
+  ],
+  "singleVisualGroup": {
+    "displayName": "Group 1",
+    "groupMode": 0,
+    "objects": {
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

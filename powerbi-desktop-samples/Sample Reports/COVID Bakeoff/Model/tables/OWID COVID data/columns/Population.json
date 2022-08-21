@@ -1,0 +1,25 @@
+{
+  "name": "Population",
+  "dataType": "int64",
+  "sourceColumn": "Population",
+  "formatString": "0",
+  "summarizeBy": "average",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "User"
+    },
+    {
+      "name": "Format",
+      "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+    },
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "Int64#####not a type"
+    },
+    {
+      "name": "PBI_NameAtRefresh",
+      "value": "Population"
+    }
+  ]
+}

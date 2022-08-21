@@ -1,0 +1,3 @@
+
+var datePlus = SELECTEDVALUE(Dates[Date])+1
+return CALCULATE(AVERAGE('Cases per country'[IncrementalCases]), FILTER(Dates, Dates[Date] = datePlus))

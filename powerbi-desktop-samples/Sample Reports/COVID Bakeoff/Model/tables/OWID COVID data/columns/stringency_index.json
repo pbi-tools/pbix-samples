@@ -1,0 +1,20 @@
+{
+  "name": "stringency_index",
+  "dataType": "double",
+  "sourceColumn": "stringency_index",
+  "summarizeBy": "average",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "User"
+    },
+    {
+      "name": "Format",
+      "value": "<Format Format=\"General\" />"
+    },
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "Double#####not a type"
+    }
+  ]
+}

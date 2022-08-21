@@ -1,0 +1,9 @@
+{
+  "name": "Full vaccinations per hundred",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"General\" />"
+    }
+  ]
+}

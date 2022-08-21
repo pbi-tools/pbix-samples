@@ -1,0 +1,9 @@
+{
+  "name": "DailyVaccinations Mvg Avg",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"General\" />"
+    }
+  ]
+}

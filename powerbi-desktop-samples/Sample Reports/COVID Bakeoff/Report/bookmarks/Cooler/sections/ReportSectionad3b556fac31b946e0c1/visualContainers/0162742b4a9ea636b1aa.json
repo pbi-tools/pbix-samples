@@ -1,0 +1,1863 @@
+{
+  "filters": {
+    "byExpr": [
+      {
+        "type": "Categorical",
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "States"
+              }
+            },
+            "Property": "State"
+          }
+        },
+        "howCreated": 0
+      },
+      {
+        "type": "Advanced",
+        "expression": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "States"
+                  }
+                },
+                "Property": "Average Temperature "
+              }
+            },
+            "Function": 1
+          }
+        },
+        "howCreated": 0
+      }
+    ]
+  },
+  "singleVisual": {
+    "visualType": "shapeMap",
+    "objects": {}
+  },
+  "highlight": {
+    "selection": [
+      {
+        "dataMap": {
+          "States.State": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Alaska'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "metadata": [
+          "CountNonNull(States.Average Temperature )"
+        ]
+      },
+      {
+        "dataMap": {
+          "States.State": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Washington'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "metadata": [
+          "CountNonNull(States.Average Temperature )"
+        ]
+      },
+      {
+        "dataMap": {
+          "States.State": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Oregon'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "metadata": [
+          "CountNonNull(States.Average Temperature )"
+        ]
+      },
+      {
+        "dataMap": {
+          "States.State": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Idaho'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "metadata": [
+          "CountNonNull(States.Average Temperature )"
+        ]
+      },
+      {
+        "dataMap": {
+          "States.State": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Montana'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "metadata": [
+          "CountNonNull(States.Average Temperature )"
+        ]
+      },
+      {
+        "dataMap": {
+          "States.State": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Wyoming'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "metadata": [
+          "CountNonNull(States.Average Temperature )"
+        ]
+      },
+      {
+        "dataMap": {
+          "States.State": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Nebraska'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "metadata": [
+          "CountNonNull(States.Average Temperature )"
+        ]
+      },
+      {
+        "dataMap": {
+          "States.State": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'South Dakota'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "metadata": [
+          "CountNonNull(States.Average Temperature )"
+        ]
+      },
+      {
+        "dataMap": {
+          "States.State": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'North Dakota'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "metadata": [
+          "CountNonNull(States.Average Temperature )"
+        ]
+      },
+      {
+        "dataMap": {
+          "States.State": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Minnesota'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "metadata": [
+          "CountNonNull(States.Average Temperature )"
+        ]
+      },
+      {
+        "dataMap": {
+          "States.State": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Iowa'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "metadata": [
+          "CountNonNull(States.Average Temperature )"
+        ]
+      },
+      {
+        "dataMap": {
+          "States.State": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Wisconsin'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "metadata": [
+          "CountNonNull(States.Average Temperature )"
+        ]
+      },
+      {
+        "dataMap": {
+          "States.State": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Illinois'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "metadata": [
+          "CountNonNull(States.Average Temperature )"
+        ]
+      },
+      {
+        "dataMap": {
+          "States.State": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Indiana'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "metadata": [
+          "CountNonNull(States.Average Temperature )"
+        ]
+      },
+      {
+        "dataMap": {
+          "States.State": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Michigan'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "metadata": [
+          "CountNonNull(States.Average Temperature )"
+        ]
+      },
+      {
+        "dataMap": {
+          "States.State": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Ohio'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "metadata": [
+          "CountNonNull(States.Average Temperature )"
+        ]
+      },
+      {
+        "dataMap": {
+          "States.State": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Pennsylvania'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "metadata": [
+          "CountNonNull(States.Average Temperature )"
+        ]
+      },
+      {
+        "dataMap": {
+          "States.State": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'New York'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "metadata": [
+          "CountNonNull(States.Average Temperature )"
+        ]
+      },
+      {
+        "dataMap": {
+          "States.State": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Vermont'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "metadata": [
+          "CountNonNull(States.Average Temperature )"
+        ]
+      },
+      {
+        "dataMap": {
+          "States.State": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'New Hampshire'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "metadata": [
+          "CountNonNull(States.Average Temperature )"
+        ]
+      },
+      {
+        "dataMap": {
+          "States.State": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Maine'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "metadata": [
+          "CountNonNull(States.Average Temperature )"
+        ]
+      },
+      {
+        "dataMap": {
+          "States.State": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Massachusetts'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "metadata": [
+          "CountNonNull(States.Average Temperature )"
+        ]
+      },
+      {
+        "dataMap": {
+          "States.State": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Connecticut'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "metadata": [
+          "CountNonNull(States.Average Temperature )"
+        ]
+      },
+      {
+        "dataMap": {
+          "States.State": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'New Jersey'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "metadata": [
+          "CountNonNull(States.Average Temperature )"
+        ]
+      },
+      {
+        "dataMap": {
+          "States.State": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Rhode Island'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "metadata": [
+          "CountNonNull(States.Average Temperature )"
+        ]
+      },
+      {
+        "dataMap": {
+          "States.State": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'West Virginia'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "metadata": [
+          "CountNonNull(States.Average Temperature )"
+        ]
+      },
+      {
+        "dataMap": {
+          "States.State": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Virginia'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "metadata": [
+          "CountNonNull(States.Average Temperature )"
+        ]
+      },
+      {
+        "dataMap": {
+          "States.State": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Maryland'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "metadata": [
+          "CountNonNull(States.Average Temperature )"
+        ]
+      },
+      {
+        "dataMap": {
+          "States.State": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Delaware'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "metadata": [
+          "CountNonNull(States.Average Temperature )"
+        ]
+      },
+      {
+        "dataMap": {
+          "States.State": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Colorado'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        },
+        "metadata": [
+          "CountNonNull(States.Average Temperature )"
+        ]
+      }
+    ],
+    "filterExpressionMetadata": {
+      "expressions": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "States"
+              }
+            },
+            "Property": "State"
+          }
+        }
+      ],
+      "cachedValueItems": [
+        {
+          "identities": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Alaska'"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "valueMap": [
+            "Alaska"
+          ]
+        },
+        {
+          "identities": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Washington'"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "valueMap": [
+            "Washington"
+          ]
+        },
+        {
+          "identities": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Oregon'"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "valueMap": [
+            "Oregon"
+          ]
+        },
+        {
+          "identities": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Idaho'"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "valueMap": [
+            "Idaho"
+          ]
+        },
+        {
+          "identities": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Montana'"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "valueMap": [
+            "Montana"
+          ]
+        },
+        {
+          "identities": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Wyoming'"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "valueMap": [
+            "Wyoming"
+          ]
+        },
+        {
+          "identities": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Nebraska'"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "valueMap": [
+            "Nebraska"
+          ]
+        },
+        {
+          "identities": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'South Dakota'"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "valueMap": [
+            "South Dakota"
+          ]
+        },
+        {
+          "identities": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'North Dakota'"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "valueMap": [
+            "North Dakota"
+          ]
+        },
+        {
+          "identities": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Minnesota'"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "valueMap": [
+            "Minnesota"
+          ]
+        },
+        {
+          "identities": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Iowa'"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "valueMap": [
+            "Iowa"
+          ]
+        },
+        {
+          "identities": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Wisconsin'"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "valueMap": [
+            "Wisconsin"
+          ]
+        },
+        {
+          "identities": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Illinois'"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "valueMap": [
+            "Illinois"
+          ]
+        },
+        {
+          "identities": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Indiana'"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "valueMap": [
+            "Indiana"
+          ]
+        },
+        {
+          "identities": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Michigan'"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "valueMap": [
+            "Michigan"
+          ]
+        },
+        {
+          "identities": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Ohio'"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "valueMap": [
+            "Ohio"
+          ]
+        },
+        {
+          "identities": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Pennsylvania'"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "valueMap": [
+            "Pennsylvania"
+          ]
+        },
+        {
+          "identities": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'New York'"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "valueMap": [
+            "New York"
+          ]
+        },
+        {
+          "identities": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Vermont'"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "valueMap": [
+            "Vermont"
+          ]
+        },
+        {
+          "identities": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'New Hampshire'"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "valueMap": [
+            "New Hampshire"
+          ]
+        },
+        {
+          "identities": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Maine'"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "valueMap": [
+            "Maine"
+          ]
+        },
+        {
+          "identities": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Massachusetts'"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "valueMap": [
+            "Massachusetts"
+          ]
+        },
+        {
+          "identities": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Connecticut'"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "valueMap": [
+            "Connecticut"
+          ]
+        },
+        {
+          "identities": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'New Jersey'"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "valueMap": [
+            "New Jersey"
+          ]
+        },
+        {
+          "identities": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Rhode Island'"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "valueMap": [
+            "Rhode Island"
+          ]
+        },
+        {
+          "identities": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'West Virginia'"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "valueMap": [
+            "West Virginia"
+          ]
+        },
+        {
+          "identities": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Virginia'"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "valueMap": [
+            "Virginia"
+          ]
+        },
+        {
+          "identities": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Maryland'"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "valueMap": [
+            "Maryland"
+          ]
+        },
+        {
+          "identities": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Delaware'"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "valueMap": [
+            "Delaware"
+          ]
+        },
+        {
+          "identities": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "States"
+                        }
+                      },
+                      "Property": "State"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Colorado'"
+                    }
+                  }
+                }
+              }
+            }
+          ],
+          "valueMap": [
+            "Colorado"
+          ]
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "name": "3fac96590354093397a3",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "height": 248.69875222816404,
+        "width": 378.28224709697668,
+        "x": 395.19368873190035,
+        "y": 44.491978609625669,
+        "z": 2000,
+        "tabOrder": 10000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "lineChart",
+    "projections": {
+      "Y": [
+        {
+          "queryRef": "Sum(Cases per US State.distributed_per_hundred)"
+        }
+      ],
+      "Category": [
+        {
+          "queryRef": "Dates.Date",
+          "active": true
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "c",
+          "Entity": "Cases per US State",
+          "Type": 0
+        },
+        {
+          "Name": "d",
+          "Entity": "Dates",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "d"
+              }
+            },
+            "Property": "Date"
+          },
+          "Name": "Dates.Date"
+        },
+        {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "c"
+                  }
+                },
+                "Property": "distributed_per_hundred"
+              }
+            },
+            "Function": 1
+          },
+          "Name": "Sum(Cases per US State.distributed_per_hundred)"
+        }
+      ],
+      "OrderBy": [
+        {
+          "Direction": 1,
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Source": "d"
+                }
+              },
+              "Property": "Date"
+            }
+          }
+        }
+      ]
+    },
+    "columnProperties": {
+      "Sum(Cases per US State.distributed_per_hundred)": {
+        "displayName": "Vaccines distributed per hundred"
+      }
+    },
+    "drillFilterOtherVisuals": true,
+    "hasDefaultSort": true,
+    "objects": {
+      "categoryAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
+            "start": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "end": {
+              "expr": {
+                "Literal": {
+                  "Value": "100D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "forecast": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "transform": {
+              "algorithm": "Forecast",
+              "parameters": [
+                {
+                  "Literal": {
+                    "Value": "7D"
+                  },
+                  "Name": "Unit"
+                },
+                {
+                  "Literal": {
+                    "Value": "40D"
+                  },
+                  "Name": "ForecastLength"
+                },
+                {
+                  "Literal": {
+                    "Value": "0D"
+                  },
+                  "Name": "IgnoreLast"
+                },
+                {
+                  "Literal": {
+                    "Value": "0.95D"
+                  },
+                  "Name": "ConfidenceLevel"
+                }
+              ]
+            },
+            "displayName": {
+              "expr": {
+                "Literal": {
+                  "Value": "'Forecast 1'"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Sum(Cases per US State.distributed_per_hundred)",
+            "id": "1"
+          }
+        }
+      ]
+    }
+  },
+  "parentGroupName": "bb138ed8833603195536"
+}

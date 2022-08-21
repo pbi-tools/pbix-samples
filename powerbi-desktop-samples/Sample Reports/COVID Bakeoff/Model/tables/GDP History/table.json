@@ -1,0 +1,21 @@
+{
+  "name": "GDP History",
+  "partitions": [
+    {
+      "name": "GDP History-2adb6ab2-96d9-47a6-9ec0-2c01e124b4c6",
+      "mode": "import",
+      "source": {
+        "type": "m"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_DescriptionAtRefresh"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "name": "c730b80a021077ea39c0",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "height": 250.98039215686279,
+        "width": 381.84255059906587,
+        "x": 0,
+        "y": 44.491978609625669,
+        "z": 4000,
+        "tabOrder": 12000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "lineChart",
+    "projections": {
+      "Category": [
+        {
+          "queryRef": "Dates.Date",
+          "active": true
+        }
+      ],
+      "Y": [
+        {
+          "queryRef": "Sum(Cases per US State.Incremental cases)"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "d",
+          "Entity": "Dates",
+          "Type": 0
+        },
+        {
+          "Name": "c",
+          "Entity": "Cases per US State",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "d"
+              }
+            },
+            "Property": "Date"
+          },
+          "Name": "Dates.Date"
+        },
+        {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "c"
+                  }
+                },
+                "Property": "Incremental cases"
+              }
+            },
+            "Function": 0
+          },
+          "Name": "Sum(Cases per US State.Incremental cases)"
+        }
+      ],
+      "OrderBy": [
+        {
+          "Direction": 1,
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Source": "d"
+                }
+              },
+              "Property": "Date"
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {
+      "categoryAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "showAxisTitle": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "parentGroupName": "bb138ed8833603195536"
+}

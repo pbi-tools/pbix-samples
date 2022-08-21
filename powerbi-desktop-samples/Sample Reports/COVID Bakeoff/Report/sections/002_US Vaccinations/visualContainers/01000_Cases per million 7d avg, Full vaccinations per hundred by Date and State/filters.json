@@ -1,0 +1,76 @@
+[
+  {
+    "expression": {
+      "Aggregation": {
+        "Expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "us_state_vaccinations"
+              }
+            },
+            "Property": "people_fully_vaccinated_per_hundred"
+          }
+        },
+        "Function": 4
+      }
+    },
+    "type": "Advanced",
+    "howCreated": 1,
+    "isHiddenInViewMode": false
+  },
+  {
+    "expression": {
+      "Column": {
+        "Expression": {
+          "SourceRef": {
+            "Entity": "Dates"
+          }
+        },
+        "Property": "Date"
+      }
+    },
+    "filter": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "d",
+          "Entity": "Dates",
+          "Type": 0
+        }
+      ],
+      "Where": [
+        {
+          "Condition": {
+            "Comparison": {
+              "ComparisonKind": 2,
+              "Left": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Source": "d"
+                    }
+                  },
+                  "Property": "Date"
+                }
+              },
+              "Right": {
+                "DateSpan": {
+                  "Expression": {
+                    "Literal": {
+                      "Value": "datetime'2020-12-01T00:00:00'"
+                    }
+                  },
+                  "TimeUnit": 5
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "type": "Advanced",
+    "howCreated": 0,
+    "isHiddenInViewMode": false
+  }
+]

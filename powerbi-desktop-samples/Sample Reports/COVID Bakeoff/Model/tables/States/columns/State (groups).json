@@ -1,0 +1,47 @@
+{
+  "type": "calculated",
+  "name": "State (groups)",
+  "dataType": "string",
+  "isDataTypeInferred": true,
+  "isHidden": true,
+  "summarizeBy": "none",
+  "extendedProperties": [
+    {
+      "type": "json",
+      "name": "GroupingMetadata",
+      "value": {
+        "version": 0,
+        "groupedColumns": [
+          {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "States"
+                }
+              },
+              "Property": "State"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "GroupingDesignState",
+      "value": "{\"Version\":0,\"Sources\":[{\"Name\":\"s\",\"Entity\":\"States\"}],\"GroupedColumns\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"State\"}}],\"GroupItems\":[{\"DisplayName\":\"(Blank)\",\"BlankDefaultPlaceholder\":true},{\"DisplayName\":\"Islands and Territories\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"State\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'American Samoa'\"}}],[{\"Literal\":{\"Value\":\"'Guam'\"}}],[{\"Literal\":{\"Value\":\"'Marshall Islands'\"}}],[{\"Literal\":{\"Value\":\"'Puerto Rico'\"}}],[{\"Literal\":{\"Value\":\"'Virgin Islands'\"}}]]}}},{\"DisplayName\":\"Main states\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"State\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Alabama'\"}}],[{\"Literal\":{\"Value\":\"'Alaska'\"}}],[{\"Literal\":{\"Value\":\"'Arizona'\"}}],[{\"Literal\":{\"Value\":\"'Arkansas'\"}}],[{\"Literal\":{\"Value\":\"'California'\"}}],[{\"Literal\":{\"Value\":\"'Colorado'\"}}],[{\"Literal\":{\"Value\":\"'Connecticut'\"}}],[{\"Literal\":{\"Value\":\"'Delaware'\"}}],[{\"Literal\":{\"Value\":\"'District of Columbia'\"}}],[{\"Literal\":{\"Value\":\"'Florida'\"}}],[{\"Literal\":{\"Value\":\"'Georgia'\"}}],[{\"Literal\":{\"Value\":\"'Hawaii'\"}}],[{\"Literal\":{\"Value\":\"'Idaho'\"}}],[{\"Literal\":{\"Value\":\"'Illinois'\"}}],[{\"Literal\":{\"Value\":\"'Indiana'\"}}],[{\"Literal\":{\"Value\":\"'Iowa'\"}}],[{\"Literal\":{\"Value\":\"'Kansas'\"}}],[{\"Literal\":{\"Value\":\"'Kentucky'\"}}],[{\"Literal\":{\"Value\":\"'Louisiana'\"}}],[{\"Literal\":{\"Value\":\"'Maine'\"}}],[{\"Literal\":{\"Value\":\"'Maryland'\"}}],[{\"Literal\":{\"Value\":\"'Massachusetts'\"}}],[{\"Literal\":{\"Value\":\"'Michigan'\"}}],[{\"Literal\":{\"Value\":\"'Minnesota'\"}}],[{\"Literal\":{\"Value\":\"'Mississippi'\"}}],[{\"Literal\":{\"Value\":\"'Missouri'\"}}],[{\"Literal\":{\"Value\":\"'Montana'\"}}],[{\"Literal\":{\"Value\":\"'Nebraska'\"}}],[{\"Literal\":{\"Value\":\"'Nevada'\"}}],[{\"Literal\":{\"Value\":\"'New Hampshire'\"}}],[{\"Literal\":{\"Value\":\"'New Jersey'\"}}],[{\"Literal\":{\"Value\":\"'New Mexico'\"}}],[{\"Literal\":{\"Value\":\"'New York'\"}}],[{\"Literal\":{\"Value\":\"'North Carolina'\"}}],[{\"Literal\":{\"Value\":\"'North Dakota'\"}}],[{\"Literal\":{\"Value\":\"'Ohio'\"}}],[{\"Literal\":{\"Value\":\"'Oklahoma'\"}}],[{\"Literal\":{\"Value\":\"'Oregon'\"}}],[{\"Literal\":{\"Value\":\"'Pennsylvania'\"}}],[{\"Literal\":{\"Value\":\"'Rhode Island'\"}}],[{\"Literal\":{\"Value\":\"'South Carolina'\"}}],[{\"Literal\":{\"Value\":\"'South Dakota'\"}}],[{\"Literal\":{\"Value\":\"'Tennessee'\"}}],[{\"Literal\":{\"Value\":\"'Texas'\"}}],[{\"Literal\":{\"Value\":\"'Utah'\"}}],[{\"Literal\":{\"Value\":\"'Vermont'\"}}],[{\"Literal\":{\"Value\":\"'Virginia'\"}}],[{\"Literal\":{\"Value\":\"'Washington'\"}}],[{\"Literal\":{\"Value\":\"'West Virginia'\"}}],[{\"Literal\":{\"Value\":\"'Wisconsin'\"}}],[{\"Literal\":{\"Value\":\"'Wyoming'\"}}]]}}}]}"
+    },
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "Format",
+      "value": "<Format Format=\"Text\" />"
+    },
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "String#####not a type"
+    }
+  ]
+}

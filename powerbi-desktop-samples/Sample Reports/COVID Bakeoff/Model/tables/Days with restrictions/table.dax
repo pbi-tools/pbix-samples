@@ -1,0 +1,15 @@
+
+var daysRecorded =  COUNTROWS(VALUES('CGRT Mandates'[Date]))
+return SUMMARIZECOLUMNS('CGRT Mandates'[CountryCode], 
+"Days with School closures",                  daysRecorded - COUNTROWS(FILTER('CGRT Mandates', 'CGRT Mandates'[School closures] = "No measures"              )),
+"Days with Workplace closures",               daysRecorded - COUNTROWS(FILTER('CGRT Mandates', 'CGRT Mandates'[Workplace closures] = "No measures"           )),
+"Days with Cancelling public events",         daysRecorded - COUNTROWS(FILTER('CGRT Mandates', 'CGRT Mandates'[Cancelling public events] = "No measures"     )),
+"Days with Restrictions on gathering",        daysRecorded - COUNTROWS(FILTER('CGRT Mandates', 'CGRT Mandates'[Restrictions on gathering] = "No measures"    )),
+"Days with Public transport closures",        daysRecorded - COUNTROWS(FILTER('CGRT Mandates', 'CGRT Mandates'[Public transport closures] = "No measures"    )),
+"Days with Stay at home requirements",        daysRecorded - COUNTROWS(FILTER('CGRT Mandates', 'CGRT Mandates'[Stay at home requirements] = "No measures"    )),
+"Days with Internal mov't restrictions",      daysRecorded - COUNTROWS(FILTER('CGRT Mandates', 'CGRT Mandates'[Internal mov't restrictions] = "No measures"  )),
+"Days with International travel controls",    daysRecorded - COUNTROWS(FILTER('CGRT Mandates', 'CGRT Mandates'[International travel controls] = "No measures")),
+"Days with Face coverings required",          daysRecorded - COUNTROWS(FILTER('CGRT Mandates', 'CGRT Mandates'[Face coverings] = "No measures"               )),
+"Days with Vaccinations available",           daysRecorded - COUNTROWS(FILTER('CGRT Mandates', 'CGRT Mandates'[Vaccination policy] = "No availability"       ))
+
+)

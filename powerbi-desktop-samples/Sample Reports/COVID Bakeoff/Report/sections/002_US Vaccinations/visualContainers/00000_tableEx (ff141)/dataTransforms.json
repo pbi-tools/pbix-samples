@@ -1,0 +1,462 @@
+{
+  "objects": {
+    "columnWidth": [
+      {
+        "properties": {
+          "value": {
+            "expr": {
+              "Literal": {
+                "Value": "120.91629479011954D"
+              }
+            }
+          }
+        },
+        "selector": {
+          "metadata": "States.State"
+        }
+      },
+      {
+        "properties": {
+          "value": {
+            "expr": {
+              "Literal": {
+                "Value": "66.5470178578376D"
+              }
+            }
+          }
+        },
+        "selector": {
+          "metadata": "States.Flag"
+        }
+      },
+      {
+        "properties": {
+          "value": {
+            "expr": {
+              "Literal": {
+                "Value": "143.38920569515471D"
+              }
+            }
+          }
+        },
+        "selector": {
+          "metadata": "Cases per US State.% Fully Vacc'd"
+        }
+      }
+    ],
+    "grid": [
+      {
+        "properties": {
+          "rowPadding": {
+            "expr": {
+              "Literal": {
+                "Value": "4D"
+              }
+            }
+          },
+          "imageHeight": {
+            "expr": {
+              "Literal": {
+                "Value": "48D"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "columnHeaders": [
+      {
+        "properties": {
+          "outline": {
+            "expr": {
+              "Literal": {
+                "Value": "'BottomOnly'"
+              }
+            }
+          },
+          "fontColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#3D3C42'"
+                  }
+                }
+              }
+            }
+          },
+          "fontSize": {
+            "expr": {
+              "Literal": {
+                "Value": "11D"
+              }
+            }
+          },
+          "wordWrap": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "values": [
+      {
+        "properties": {
+          "fontSize": {
+            "expr": {
+              "Literal": {
+                "Value": "12D"
+              }
+            }
+          }
+        }
+      },
+      {
+        "properties": {
+          "fontColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "FillRule": {
+                    "Input": {
+                      "Aggregation": {
+                        "Expression": {
+                          "Column": {
+                            "Expression": {
+                              "SourceRef": {
+                                "Entity": "States"
+                              }
+                            },
+                            "Property": "Average Temperature "
+                          }
+                        },
+                        "Function": 1
+                      }
+                    },
+                    "FillRule": {
+                      "linearGradient2": {
+                        "min": {
+                          "color": {
+                            "Literal": {
+                              "Value": "'#6883DE'"
+                            }
+                          }
+                        },
+                        "max": {
+                          "color": {
+                            "Literal": {
+                              "Value": "'#DC5B57'"
+                            }
+                          }
+                        },
+                        "nullColoringStrategy": {
+                          "strategy": {
+                            "Literal": {
+                              "Value": "'asZero'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "selector": {
+          "data": [
+            {
+              "dataViewWildcard": {
+                "matchingOption": 1
+              }
+            }
+          ],
+          "metadata": "Avg(States.Average Temperature )"
+        }
+      }
+    ],
+    "columnFormatting": [
+      {
+        "properties": {
+          "fontColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#3D3C42'"
+                  }
+                }
+              }
+            }
+          },
+          "backColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#3D3C42'"
+                  }
+                }
+              }
+            }
+          },
+          "alignment": {
+            "expr": {
+              "Literal": {
+                "Value": "'Center'"
+              }
+            }
+          },
+          "styleHeader": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          },
+          "styleValues": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        },
+        "selector": {
+          "metadata": "States.Flag"
+        }
+      },
+      {
+        "properties": {
+          "backColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "ThemeDataColor": {
+                    "ColorId": 0,
+                    "Percent": 0
+                  }
+                }
+              }
+            }
+          },
+          "styleValues": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        },
+        "selector": {
+          "metadata": "States.State"
+        }
+      }
+    ],
+    "total": [
+      {
+        "properties": {
+          "totals": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Values": [
+      0,
+      1,
+      3,
+      2
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "State",
+        "Name": "States.State",
+        "Type": 2048,
+        "DataCategory": 16
+      },
+      {
+        "Restatement": "Flag",
+        "Name": "States.Flag",
+        "Type": 2048,
+        "DataCategory": 9
+      },
+      {
+        "Restatement": "Average Temperature ",
+        "Name": "Avg(States.Average Temperature )",
+        "Type": 1,
+        "Format": "#.#\\ \\°\\F"
+      },
+      {
+        "Restatement": "% Fully Vacc'd",
+        "Name": "Cases per US State.% Fully Vacc'd",
+        "Type": 1,
+        "Format": "0.00%;-0.00%;0.00%"
+      }
+    ],
+    "Filters": [
+      {
+        "type": 0,
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "States"
+              }
+            },
+            "Property": "State"
+          }
+        }
+      },
+      {
+        "type": 2,
+        "expression": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "us_state_vaccinations"
+                  }
+                },
+                "Property": "people_fully_vaccinated_per_hundred"
+              }
+            },
+            "Function": 0
+          }
+        }
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Values",
+          "Projection": 0,
+          "isActive": false
+        },
+        {
+          "Name": "Values",
+          "Projection": 1,
+          "isActive": false
+        },
+        {
+          "Name": "Values",
+          "Projection": 3,
+          "isActive": false
+        },
+        {
+          "Name": "Values",
+          "Projection": 2,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "State",
+      "queryName": "States.State",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": "StateOrProvince",
+        "underlyingType": 7013377
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "States"
+            }
+          },
+          "Property": "State"
+        }
+      }
+    },
+    {
+      "displayName": "Flag",
+      "queryName": "States.Flag",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": "ImageUrl",
+        "underlyingType": 13174785
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "States"
+            }
+          },
+          "Property": "Flag"
+        }
+      }
+    },
+    {
+      "displayName": "Average Temperature ",
+      "format": "#.#\\ \\°\\F",
+      "queryName": "Avg(States.Average Temperature )",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "States"
+                }
+              },
+              "Property": "Average Temperature "
+            }
+          },
+          "Function": 1
+        }
+      }
+    },
+    {
+      "displayName": "% Fully Vacc'd",
+      "format": "0.00%;-0.00%;0.00%",
+      "queryName": "Cases per US State.% Fully Vacc'd",
+      "roles": {
+        "Values": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Cases per US State"
+            }
+          },
+          "Property": "% Fully Vacc'd"
+        }
+      }
+    }
+  ]
+}

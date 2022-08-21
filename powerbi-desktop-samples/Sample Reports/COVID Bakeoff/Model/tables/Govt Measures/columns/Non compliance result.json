@@ -1,0 +1,47 @@
+{
+  "type": "calculated",
+  "name": "Non compliance result",
+  "dataType": "string",
+  "isDataTypeInferred": true,
+  "isHidden": true,
+  "summarizeBy": "none",
+  "extendedProperties": [
+    {
+      "type": "json",
+      "name": "GroupingMetadata",
+      "value": {
+        "version": 0,
+        "groupedColumns": [
+          {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Govt Measures"
+                }
+              },
+              "Property": "NON_COMPLIANCE"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "GroupingDesignState",
+      "value": "{\"Version\":0,\"Sources\":[{\"Name\":\"g\",\"Entity\":\"Govt Measures\"}],\"GroupedColumns\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"NON_COMPLIANCE\"}}],\"GroupItems\":[{\"DisplayName\":\"(Blank)\",\"BlankDefaultPlaceholder\":true},{\"DisplayName\":\"Arrest\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"NON_COMPLIANCE\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Arrest/Detention'\"}}],[{\"Literal\":{\"Value\":\"'Up to detention'\"}}]]}}},{\"DisplayName\":\"Deportation/entry refused\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"NON_COMPLIANCE\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Deportation'\"}}],[{\"Literal\":{\"Value\":\"'Refusal to enter the country'\"}}]]}}},{\"DisplayName\":\"Fines\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"NON_COMPLIANCE\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Fines'\"}}]]}}},{\"DisplayName\":\"Legal\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"NON_COMPLIANCE\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Legal'\"}}],[{\"Literal\":{\"Value\":\"'Legal action'\"}}]]}}},{\"DisplayName\":\"Not applicable\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"g\"}},\"Property\":\"NON_COMPLIANCE\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Not applicable'\"}}],[{\"Literal\":{\"Value\":\"'Not Available'\"}}]]}}}]}"
+    },
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "Format",
+      "value": "<Format Format=\"Text\" />"
+    },
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "String#####not a type"
+    }
+  ]
+}

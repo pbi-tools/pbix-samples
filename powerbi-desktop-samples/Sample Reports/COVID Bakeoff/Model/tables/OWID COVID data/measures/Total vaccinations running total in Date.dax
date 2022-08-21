@@ -1,0 +1,8 @@
+
+CALCULATE(
+	[Total vaccinations],
+	FILTER(
+		ALLSELECTED('Dates'[Date]),
+		ISONORAFTER('Dates'[Date], MAX('Dates'[Date]), DESC)
+	)
+)

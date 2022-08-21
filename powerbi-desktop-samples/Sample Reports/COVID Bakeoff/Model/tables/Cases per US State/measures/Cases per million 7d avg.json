@@ -1,0 +1,9 @@
+{
+  "name": "Cases per million 7d avg",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"General\" />"
+    }
+  ]
+}

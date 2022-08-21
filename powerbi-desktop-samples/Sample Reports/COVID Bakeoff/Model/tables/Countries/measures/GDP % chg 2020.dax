@@ -1,0 +1,1 @@
+CALCULATE(AVERAGE('GDP History'[% change]), 'GDP History'[Year] = 2020)

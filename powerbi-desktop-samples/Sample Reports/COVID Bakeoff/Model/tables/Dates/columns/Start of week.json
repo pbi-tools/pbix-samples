@@ -1,0 +1,23 @@
+{
+  "type": "calculated",
+  "name": "Start of week",
+  "dataType": "dateTime",
+  "isDataTypeInferred": true,
+  "isHidden": true,
+  "formatString": "m/dd",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "Format",
+      "value": "<Format Format=\"Custom\" Custom=\"M/dd\" />"
+    },
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "DateTime#####not a type"
+    }
+  ]
+}

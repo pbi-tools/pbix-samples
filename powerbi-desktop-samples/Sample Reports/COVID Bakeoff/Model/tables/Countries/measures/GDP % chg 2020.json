@@ -1,0 +1,9 @@
+{
+  "name": "GDP % chg 2020",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"General\" />"
+    }
+  ]
+}

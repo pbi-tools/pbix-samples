@@ -1,0 +1,20 @@
+{
+  "name": "daily_vaccinations running total in Date",
+  "formatString": "0",
+  "extendedProperties": [
+    {
+      "type": "json",
+      "name": "MeasureTemplate",
+      "value": {
+        "version": 0,
+        "daxTemplateName": "RunningTotal"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+    }
+  ]
+}

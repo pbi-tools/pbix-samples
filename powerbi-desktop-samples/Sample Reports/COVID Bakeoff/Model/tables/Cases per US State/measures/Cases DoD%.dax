@@ -1,0 +1,11 @@
+
+VAR __PREV_DAY =
+	CALCULATE(
+		SUM('Cases per US State'[Incremental cases]),
+		DATEADD('Dates'[Date], -1, DAY)
+	)
+RETURN
+	DIVIDE(
+		SUM('Cases per US State'[Incremental cases]) - __PREV_DAY,
+		__PREV_DAY
+	)

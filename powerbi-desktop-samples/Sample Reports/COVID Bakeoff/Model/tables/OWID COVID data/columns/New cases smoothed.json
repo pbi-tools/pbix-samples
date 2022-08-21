@@ -1,0 +1,25 @@
+{
+  "name": "New cases smoothed",
+  "dataType": "double",
+  "isHidden": true,
+  "sourceColumn": "New cases smoothed",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "Format",
+      "value": "<Format Format=\"General\" />"
+    },
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "Double#####not a type"
+    },
+    {
+      "name": "PBI_NameAtRefresh",
+      "value": "New cases smoothed"
+    }
+  ]
+}

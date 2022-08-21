@@ -1,0 +1,30 @@
+{
+  "name": "Average Temperature ",
+  "dataType": "double",
+  "isHidden": true,
+  "sourceColumn": "Average Temperature ",
+  "formatString": "#.#\\ \\°\\F",
+  "summarizeBy": "average",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "User"
+    },
+    {
+      "name": "Format",
+      "value": "<Format Format=\"Custom\" Custom=\"#.# \\°\\F\" />"
+    },
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "Double#####not a type"
+    },
+    {
+      "name": "PBI_NameAtRefresh",
+      "value": "Average Temperature "
+    },
+    {
+      "name": "PBI_WasHiddenAtRefresh",
+      "value": "False"
+    }
+  ]
+}

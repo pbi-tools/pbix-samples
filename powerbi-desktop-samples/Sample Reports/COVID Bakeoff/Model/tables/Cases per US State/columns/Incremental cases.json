@@ -1,0 +1,29 @@
+{
+  "name": "Incremental cases",
+  "dataType": "int64",
+  "sourceColumn": "Incremental cases",
+  "formatString": "0",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "Format",
+      "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+    },
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "String#####not a type"
+    },
+    {
+      "name": "PBI_NameAtRefresh",
+      "value": "Incremental cases"
+    },
+    {
+      "name": "PBI_WasHiddenAtRefresh",
+      "value": "False"
+    }
+  ]
+}

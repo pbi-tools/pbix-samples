@@ -1,0 +1,1 @@
+SWITCH(States[State], "New Hampshire", 1, "New Mexico", 2, "Connecticut", 3, "Rhode Island", 4, "Massachusetts", 5, 7)

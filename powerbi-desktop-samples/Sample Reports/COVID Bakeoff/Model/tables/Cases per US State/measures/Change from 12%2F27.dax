@@ -1,0 +1,14 @@
+
+VAR __BASELINE_VALUE =
+	CALCULATE(
+		[IncrementalCases Mvg Avg] //AVERAGE('Cases per US State'[Incremental Cases]),
+        ,ALLSELECTED(Dates[Start of week]),
+		'Dates'[Start of week] = DATE(2020, 12, 27)
+	)
+VAR __MEASURE_VALUE = [IncrementalCases Mvg Avg] //AVERAGE('Cases per US State'[Incremental Cases])
+VAR __PCT_Diff =
+	IF(
+		NOT ISBLANK(__MEASURE_VALUE),
+		DIVIDE(__MEASURE_VALUE - __BASELINE_VALUE, __BASELINE_VALUE)
+	)
+return __PCT_Diff

@@ -1,0 +1,28 @@
+{
+  "name": "ISO",
+  "dataType": "string",
+  "sourceColumn": "ISO",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "Format",
+      "value": "<Format Format=\"Text\" />"
+    },
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "String#####not a type"
+    },
+    {
+      "name": "PBI_NameAtRefresh",
+      "value": "ISO"
+    },
+    {
+      "name": "PBI_WasHiddenAtRefresh",
+      "value": "False"
+    }
+  ]
+}

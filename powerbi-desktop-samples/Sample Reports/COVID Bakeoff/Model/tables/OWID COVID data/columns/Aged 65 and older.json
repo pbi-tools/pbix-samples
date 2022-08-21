@@ -1,0 +1,30 @@
+{
+  "name": "Aged 65 and older",
+  "dataType": "double",
+  "isHidden": true,
+  "sourceColumn": "Aged 65 and older",
+  "displayFolder": "1. Health metrics",
+  "summarizeBy": "average",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "User"
+    },
+    {
+      "name": "Format",
+      "value": "<Format Format=\"General\" />"
+    },
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "Double#####not a type"
+    },
+    {
+      "name": "PBI_NameAtRefresh",
+      "value": "Aged 65 and older"
+    },
+    {
+      "name": "PBI_WasHiddenAtRefresh",
+      "value": "False"
+    }
+  ]
+}

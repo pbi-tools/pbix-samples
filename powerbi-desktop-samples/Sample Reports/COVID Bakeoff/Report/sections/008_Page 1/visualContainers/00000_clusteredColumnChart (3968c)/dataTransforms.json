@@ -1,0 +1,77 @@
+{
+  "projectionOrdering": {
+    "Y": [
+      0
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Population",
+        "Name": "Sum(Countries.Population)",
+        "Type": 3,
+        "Format": "#,0"
+      }
+    ],
+    "Filters": [
+      {
+        "type": 2,
+        "expression": {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Countries"
+                  }
+                },
+                "Property": "Population"
+              }
+            },
+            "Function": 0
+          }
+        }
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Y",
+          "Projection": 0,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Population",
+      "format": "#,0",
+      "queryName": "Sum(Countries.Population)",
+      "roles": {
+        "Y": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Countries"
+                }
+              },
+              "Property": "Population"
+            }
+          },
+          "Function": 0
+        }
+      }
+    }
+  ]
+}

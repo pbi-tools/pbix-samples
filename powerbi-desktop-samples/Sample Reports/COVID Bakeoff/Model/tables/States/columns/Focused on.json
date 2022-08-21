@@ -1,0 +1,47 @@
+{
+  "type": "calculated",
+  "name": "Focused on",
+  "dataType": "string",
+  "isDataTypeInferred": true,
+  "isHidden": true,
+  "summarizeBy": "none",
+  "extendedProperties": [
+    {
+      "type": "json",
+      "name": "GroupingMetadata",
+      "value": {
+        "version": 0,
+        "groupedColumns": [
+          {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "States"
+                }
+              },
+              "Property": "State"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "GroupingDesignState",
+      "value": "{\"Version\":0,\"Sources\":[{\"Name\":\"s\",\"Entity\":\"States\"}],\"GroupedColumns\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"State\"}}],\"GroupItems\":[{\"DisplayName\":\"(Blank)\",\"BlankDefaultPlaceholder\":true},{\"DisplayName\":\"Fully vaccinated\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"State\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'New Mexico'\"}}],[{\"Literal\":{\"Value\":\"'Rhode Island'\"}}],[{\"Literal\":{\"Value\":\"'South Dakota'\"}}]]}}},{\"DisplayName\":\"One dose\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"State\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Connecticut'\"}}],[{\"Literal\":{\"Value\":\"'Massachusetts'\"}}],[{\"Literal\":{\"Value\":\"'New Hampshire'\"}}]]}}},{\"DisplayName\":\"Other\"}]}"
+    },
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "Format",
+      "value": "<Format Format=\"Text\" />"
+    },
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "String#####not a type"
+    }
+  ]
+}

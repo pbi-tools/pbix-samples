@@ -1,0 +1,95 @@
+{
+  "objects": {
+    "settings": [
+      {
+        "properties": {
+          "pRenderType": {
+            "expr": {
+              "Literal": {
+                "Value": "'GRID'"
+              }
+            }
+          },
+          "pHQMinWidth": {
+            "expr": {
+              "Literal": {
+                "Value": "500D"
+              }
+            }
+          },
+          "pMaxColumns": {
+            "expr": {
+              "Literal": {
+                "Value": "8D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "ImageURL": [
+      0
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Flag",
+        "Name": "Countries.Flag",
+        "Type": 2048,
+        "DataCategory": 9
+      }
+    ],
+    "Filters": [
+      {
+        "type": 0,
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Countries"
+              }
+            },
+            "Property": "Flag"
+          }
+        }
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "ImageURL",
+          "Projection": 0,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Flag",
+      "queryName": "Countries.Flag",
+      "roles": {
+        "ImageURL": true
+      },
+      "type": {
+        "category": "ImageUrl",
+        "underlyingType": 13174785
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Countries"
+            }
+          },
+          "Property": "Flag"
+        }
+      }
+    }
+  ]
+}

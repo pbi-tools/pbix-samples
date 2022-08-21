@@ -1,0 +1,97 @@
+{
+  "projectionOrdering": {
+    "Category": [
+      0
+    ],
+    "Y": [
+      1
+    ]
+  },
+  "projectionActiveItems": {
+    "Category": [
+      {
+        "queryRef": "States.State",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "State",
+        "Name": "States.State",
+        "Type": 2048,
+        "DataCategory": 16
+      },
+      {
+        "Restatement": "Vaccines distributed",
+        "Name": "Cases per US State.Vaccines distributed",
+        "Type": 1,
+        "Format": "#,0"
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Category",
+          "Projection": 0,
+          "isActive": true
+        },
+        {
+          "Name": "Y",
+          "Projection": 1,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "State",
+      "queryName": "States.State",
+      "roles": {
+        "Category": true
+      },
+      "type": {
+        "category": "StateOrProvince",
+        "underlyingType": 7013377
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "States"
+            }
+          },
+          "Property": "State"
+        }
+      }
+    },
+    {
+      "displayName": "Vaccines distributed",
+      "format": "#,0",
+      "queryName": "Cases per US State.Vaccines distributed",
+      "roles": {
+        "Y": true
+      },
+      "sort": 2,
+      "sortOrder": 0,
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Cases per US State"
+            }
+          },
+          "Property": "Vaccines distributed"
+        }
+      }
+    }
+  ]
+}

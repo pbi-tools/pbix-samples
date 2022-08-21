@@ -1,0 +1,1 @@
+MAX('Cases per US State'[People fully vaccinated per hundred]) / MAX('Cases per US State'[people_vaccinated_per_hundred])

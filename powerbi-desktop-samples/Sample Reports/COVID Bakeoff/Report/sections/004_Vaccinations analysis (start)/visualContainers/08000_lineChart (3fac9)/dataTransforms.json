@@ -1,0 +1,148 @@
+{
+  "objects": {
+    "categoryAxis": [
+      {
+        "properties": {
+          "showAxisTitle": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "valueAxis": [
+      {
+        "properties": {
+          "showAxisTitle": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          },
+          "labelDisplayUnits": {
+            "expr": {
+              "Literal": {
+                "Value": "1D"
+              }
+            }
+          },
+          "start": {
+            "expr": {
+              "Literal": {
+                "Value": "0D"
+              }
+            }
+          },
+          "end": {
+            "expr": {
+              "Literal": {
+                "Value": "100D"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Y": [
+      1
+    ],
+    "Category": [
+      0
+    ]
+  },
+  "projectionActiveItems": {
+    "Category": [
+      {
+        "queryRef": "Dates.Date",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Date",
+        "Name": "Dates.Date",
+        "Type": 4,
+        "Format": "%M/%d/yyyy"
+      },
+      {
+        "Restatement": "Vaccines distributed per hundred",
+        "Name": "Sum(Cases per US State.distributed_per_hundred)",
+        "Type": 1
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Y",
+          "Projection": 1,
+          "isActive": false
+        },
+        {
+          "Name": "Category",
+          "Projection": 0,
+          "isActive": true
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Date",
+      "format": "%M/%d/yyyy",
+      "queryName": "Dates.Date",
+      "roles": {
+        "Category": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 519
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Dates"
+            }
+          },
+          "Property": "Date"
+        }
+      }
+    },
+    {
+      "displayName": "Vaccines distributed per hundred",
+      "queryName": "Sum(Cases per US State.distributed_per_hundred)",
+      "roles": {
+        "Y": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Cases per US State"
+                }
+              },
+              "Property": "distributed_per_hundred"
+            }
+          },
+          "Function": 1
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "name": "Days with restrictions grouped",
+  "partitions": [
+    {
+      "name": "Days with restrictions grouped-16d629a3-7a23-4ca4-aa56-bbd64b93e353",
+      "mode": "import",
+      "source": {
+        "type": "calculated"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "828dc673a6d04fbc93d417ded9572b9c"
+    }
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "type": "calculated",
+  "name": "Daily Cases When Implemented",
+  "dataType": "double",
+  "isDataTypeInferred": true,
+  "isHidden": true,
+  "formatString": "0",
+  "displayFolder": "3. Influencers",
+  "summarizeBy": "sum",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "Format",
+      "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+    },
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "Double#####not a type"
+    }
+  ]
+}

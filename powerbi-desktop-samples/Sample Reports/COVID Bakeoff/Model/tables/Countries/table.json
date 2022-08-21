@@ -1,0 +1,21 @@
+{
+  "name": "Countries",
+  "partitions": [
+    {
+      "name": "Countries-cb321b1c-c134-41e6-80e1-174829998ed1",
+      "mode": "import",
+      "source": {
+        "type": "m"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    },
+    {
+      "name": "PBI_DescriptionAtRefresh"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "type": "calculated",
+  "name": "Total cases",
+  "dataType": "int64",
+  "isDataTypeInferred": true,
+  "isHidden": true,
+  "formatString": "0",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "Format",
+      "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+    },
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "Int64#####not a type"
+    }
+  ]
+}

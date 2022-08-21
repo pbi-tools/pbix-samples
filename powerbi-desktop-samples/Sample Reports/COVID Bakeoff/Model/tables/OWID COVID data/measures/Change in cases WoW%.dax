@@ -1,0 +1,11 @@
+
+VAR __PREV_WEEK =
+	CALCULATE(
+		[Cases 7d Avg per country],
+		DATEADD('Dates'[Date], -7, DAY)
+	)
+RETURN 
+	min(DIVIDE(
+		[Cases 7d Avg per country] - __PREV_WEEK,
+		__PREV_WEEK
+	), 5)

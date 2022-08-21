@@ -1,0 +1,681 @@
+{
+  "objects": {
+    "tree": [
+      {
+        "properties": {
+          "barsPerLevel": {
+            "expr": {
+              "Literal": {
+                "Value": "7L"
+              }
+            }
+          },
+          "density": {
+            "expr": {
+              "Literal": {
+                "Value": "'default'"
+              }
+            }
+          },
+          "connectorType": {
+            "expr": {
+              "Literal": {
+                "Value": "'curve'"
+              }
+            }
+          },
+          "accentColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "ThemeDataColor": {
+                    "ColorId": 3,
+                    "Percent": 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "analysis": [
+      {
+        "properties": {
+          "aiMode": {
+            "expr": {
+              "Literal": {
+                "Value": "'relative'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "dataBars": [
+      {
+        "properties": {
+          "dataBarWidthPercent": {
+            "expr": {
+              "Literal": {
+                "Value": "100L"
+              }
+            }
+          },
+          "positiveBarColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "ThemeDataColor": {
+                    "ColorId": 2,
+                    "Percent": 0
+                  }
+                }
+              }
+            }
+          },
+          "negativeBarColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "ThemeDataColor": {
+                    "ColorId": 3,
+                    "Percent": 0
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      {
+        "properties": {
+          "dataBarColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "FillRule": {
+                    "Input": {
+                      "Measure": {
+                        "Expression": {
+                          "SourceRef": {
+                            "Entity": "Countries"
+                          }
+                        },
+                        "Property": "GDP % chg 2020"
+                      }
+                    },
+                    "FillRule": {
+                      "linearGradient2": {
+                        "min": {
+                          "color": {
+                            "Literal": {
+                              "Value": "'#F25022'"
+                            }
+                          },
+                          "value": {
+                            "Literal": {
+                              "Value": "-8D"
+                            }
+                          }
+                        },
+                        "max": {
+                          "color": {
+                            "Literal": {
+                              "Value": "'#F2C811'"
+                            }
+                          },
+                          "value": {
+                            "Literal": {
+                              "Value": "-3D"
+                            }
+                          }
+                        },
+                        "nullColoringStrategy": {
+                          "strategy": {
+                            "Literal": {
+                              "Value": "'asZero'"
+                            }
+                          }
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        },
+        "selector": {
+          "data": [
+            {
+              "dataViewWildcard": {
+                "matchingOption": 0
+              }
+            }
+          ],
+          "metadata": "Countries.GDP % chg 2020"
+        }
+      }
+    ],
+    "levelHeader": [
+      {
+        "properties": {
+          "levelTitleFontFamily": {
+            "expr": {
+              "Literal": {
+                "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
+              }
+            }
+          },
+          "levelTitleFontSize": {
+            "expr": {
+              "Literal": {
+                "Value": "10D"
+              }
+            }
+          },
+          "showSubtitles": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          },
+          "levelTitleFontColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "ThemeDataColor": {
+                    "ColorId": 3,
+                    "Percent": 0
+                  }
+                }
+              }
+            }
+          },
+          "levelSubtitleFontColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "ThemeDataColor": {
+                    "ColorId": 3,
+                    "Percent": 0
+                  }
+                }
+              }
+            }
+          },
+          "levelSubtitleFontSize": {
+            "expr": {
+              "Literal": {
+                "Value": "8D"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "insights": [
+      {
+        "properties": {
+          "isAINode": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          }
+        },
+        "selector": {
+          "data": [
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Countries"
+                        }
+                      },
+                      "Property": "Continent"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'Central and South America'"
+                    }
+                  }
+                }
+              }
+            },
+            {
+              "scopeId": {
+                "Comparison": {
+                  "ComparisonKind": 0,
+                  "Left": {
+                    "Column": {
+                      "Expression": {
+                        "SourceRef": {
+                          "Entity": "Days with restrictions grouped"
+                        }
+                      },
+                      "Property": "Domestic travel restrictions"
+                    }
+                  },
+                  "Right": {
+                    "Literal": {
+                      "Value": "'200-300 days'"
+                    }
+                  }
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "ExplainBy": [
+      10,
+      6,
+      1,
+      9,
+      4,
+      2,
+      5,
+      3,
+      8,
+      0
+    ],
+    "Analyze": [
+      7
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Continent",
+        "Name": "Countries.Custom",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Cancelling public events",
+        "Name": "Days with restrictions grouped.Cancelling public events",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Face coverings required",
+        "Name": "Days with restrictions grouped.Face coverings required",
+        "Type": 2048
+      },
+      {
+        "Restatement": "International travel controls",
+        "Name": "Days with restrictions grouped.International travel controls",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Public transport closures",
+        "Name": "Days with restrictions grouped.Public transport closures",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Stay at home requirements",
+        "Name": "Days with restrictions grouped.Stay at home requirements",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Workplace closures",
+        "Name": "Days with restrictions grouped.Workplace closures",
+        "Type": 2048
+      },
+      {
+        "Restatement": "GDP % chg 2020",
+        "Name": "Countries.GDP % chg 2020",
+        "Type": 1
+      },
+      {
+        "Restatement": "Domestic travel restrictions",
+        "Name": "Days with restrictions grouped.Domestic travel restrictions",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Restrictions on gathering",
+        "Name": "Days with restrictions grouped.Restrictions on gathering",
+        "Type": 2048
+      },
+      {
+        "Restatement": "School closures",
+        "Name": "Days with restrictions grouped.School closures",
+        "Type": 2048
+      }
+    ],
+    "Filters": [
+      {
+        "type": 0,
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Countries"
+              }
+            },
+            "Property": "REGION"
+          }
+        }
+      },
+      {
+        "type": 0,
+        "expression": {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Entity": "Days with restrictions grouped"
+              }
+            },
+            "Property": "Internal mov't restrictions"
+          }
+        }
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "ExplainBy",
+          "Projection": 10,
+          "isActive": false
+        },
+        {
+          "Name": "ExplainBy",
+          "Projection": 6,
+          "isActive": false
+        },
+        {
+          "Name": "ExplainBy",
+          "Projection": 1,
+          "isActive": false
+        },
+        {
+          "Name": "ExplainBy",
+          "Projection": 9,
+          "isActive": false
+        },
+        {
+          "Name": "ExplainBy",
+          "Projection": 4,
+          "isActive": false
+        },
+        {
+          "Name": "ExplainBy",
+          "Projection": 2,
+          "isActive": false
+        },
+        {
+          "Name": "ExplainBy",
+          "Projection": 5,
+          "isActive": false
+        },
+        {
+          "Name": "ExplainBy",
+          "Projection": 3,
+          "isActive": false
+        },
+        {
+          "Name": "ExplainBy",
+          "Projection": 8,
+          "isActive": false
+        },
+        {
+          "Name": "ExplainBy",
+          "Projection": 0,
+          "isActive": false
+        },
+        {
+          "Name": "Analyze",
+          "Projection": 7,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Continent",
+      "queryName": "Countries.Custom",
+      "roles": {
+        "ExplainBy": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Countries"
+            }
+          },
+          "Property": "Continent"
+        }
+      }
+    },
+    {
+      "displayName": "Cancelling public events",
+      "queryName": "Days with restrictions grouped.Cancelling public events",
+      "roles": {
+        "ExplainBy": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Days with restrictions grouped"
+            }
+          },
+          "Property": "Cancelling public events"
+        }
+      }
+    },
+    {
+      "displayName": "Face coverings required",
+      "queryName": "Days with restrictions grouped.Face coverings required",
+      "roles": {
+        "ExplainBy": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Days with restrictions grouped"
+            }
+          },
+          "Property": "Face coverings required"
+        }
+      }
+    },
+    {
+      "displayName": "International travel controls",
+      "queryName": "Days with restrictions grouped.International travel controls",
+      "roles": {
+        "ExplainBy": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Days with restrictions grouped"
+            }
+          },
+          "Property": "International travel controls"
+        }
+      }
+    },
+    {
+      "displayName": "Public transport closures",
+      "queryName": "Days with restrictions grouped.Public transport closures",
+      "roles": {
+        "ExplainBy": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Days with restrictions grouped"
+            }
+          },
+          "Property": "Public transport closures"
+        }
+      }
+    },
+    {
+      "displayName": "Stay at home requirements",
+      "queryName": "Days with restrictions grouped.Stay at home requirements",
+      "roles": {
+        "ExplainBy": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Days with restrictions grouped"
+            }
+          },
+          "Property": "Stay at home requirements"
+        }
+      }
+    },
+    {
+      "displayName": "Workplace closures",
+      "queryName": "Days with restrictions grouped.Workplace closures",
+      "roles": {
+        "ExplainBy": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Days with restrictions grouped"
+            }
+          },
+          "Property": "Workplace closures"
+        }
+      }
+    },
+    {
+      "displayName": "GDP % chg 2020",
+      "queryName": "Countries.GDP % chg 2020",
+      "roles": {
+        "Analyze": true
+      },
+      "sort": 2,
+      "sortOrder": 0,
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Countries"
+            }
+          },
+          "Property": "GDP % chg 2020"
+        }
+      }
+    },
+    {
+      "displayName": "Domestic travel restrictions",
+      "queryName": "Days with restrictions grouped.Domestic travel restrictions",
+      "roles": {
+        "ExplainBy": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Days with restrictions grouped"
+            }
+          },
+          "Property": "Domestic travel restrictions"
+        }
+      }
+    },
+    {
+      "displayName": "Restrictions on gathering",
+      "queryName": "Days with restrictions grouped.Restrictions on gathering",
+      "roles": {
+        "ExplainBy": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Days with restrictions grouped"
+            }
+          },
+          "Property": "Restrictions on gathering"
+        }
+      }
+    },
+    {
+      "displayName": "School closures",
+      "queryName": "Days with restrictions grouped.School closures",
+      "roles": {
+        "ExplainBy": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Days with restrictions grouped"
+            }
+          },
+          "Property": "School closures"
+        }
+      }
+    }
+  ]
+}

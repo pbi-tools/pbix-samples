@@ -1,0 +1,20 @@
+{
+  "name": "Daily Change (for formatting)",
+  "formatString": "0.00%;-0.00%;0.00%",
+  "extendedProperties": [
+    {
+      "type": "json",
+      "name": "MeasureTemplate",
+      "value": {
+        "version": 0,
+        "daxTemplateName": "MonthOverMonth"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"Percentage\" Accuracy=\"2\" />"
+    }
+  ]
+}

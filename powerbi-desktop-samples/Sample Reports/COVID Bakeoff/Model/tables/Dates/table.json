@@ -1,0 +1,19 @@
+{
+  "name": "Dates",
+  "dataCategory": "Time",
+  "partitions": [
+    {
+      "name": "Dates-90053d3d-0bc2-49e0-9c29-aa836f7d789f",
+      "mode": "import",
+      "source": {
+        "type": "calculated"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_Id",
+      "value": "132fe9645f484436947d1daa9b89a2a3"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "expression": {
+      "Column": {
+        "Expression": {
+          "SourceRef": {
+            "Entity": "Dates"
+          }
+        },
+        "Property": "Date"
+      }
+    },
+    "filter": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "d",
+          "Entity": "Dates",
+          "Type": 0
+        }
+      ],
+      "Where": [
+        {
+          "Condition": {
+            "Comparison": {
+              "ComparisonKind": 4,
+              "Left": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Source": "d"
+                    }
+                  },
+                  "Property": "Date"
+                }
+              },
+              "Right": {
+                "DateSpan": {
+                  "Expression": {
+                    "Literal": {
+                      "Value": "datetime'2021-03-30T00:00:00'"
+                    }
+                  },
+                  "TimeUnit": 5
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "type": "Advanced",
+    "howCreated": 0,
+    "isHiddenInViewMode": false
+  }
+]

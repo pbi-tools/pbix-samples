@@ -1,0 +1,46 @@
+{
+  "type": "calculated",
+  "name": "March Temperatures",
+  "dataType": "string",
+  "isDataTypeInferred": true,
+  "summarizeBy": "none",
+  "extendedProperties": [
+    {
+      "type": "json",
+      "name": "GroupingMetadata",
+      "value": {
+        "version": 0,
+        "groupedColumns": [
+          {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "States"
+                }
+              },
+              "Property": "State"
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "GroupingDesignState",
+      "value": "{\"Version\":0,\"Sources\":[{\"Name\":\"s\",\"Entity\":\"States\"}],\"GroupedColumns\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"State\"}}],\"GroupItems\":[{\"DisplayName\":\"(Blank)\",\"BlankDefaultPlaceholder\":true},{\"DisplayName\":\"Cooler\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"State\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Alaska'\"}}],[{\"Literal\":{\"Value\":\"'Colorado'\"}}],[{\"Literal\":{\"Value\":\"'Connecticut'\"}}],[{\"Literal\":{\"Value\":\"'Delaware'\"}}],[{\"Literal\":{\"Value\":\"'District of Columbia'\"}}],[{\"Literal\":{\"Value\":\"'Idaho'\"}}],[{\"Literal\":{\"Value\":\"'Illinois'\"}}],[{\"Literal\":{\"Value\":\"'Indiana'\"}}],[{\"Literal\":{\"Value\":\"'Iowa'\"}}],[{\"Literal\":{\"Value\":\"'Maine'\"}}],[{\"Literal\":{\"Value\":\"'Marshall Islands'\"}}],[{\"Literal\":{\"Value\":\"'Maryland'\"}}],[{\"Literal\":{\"Value\":\"'Massachusetts'\"}}],[{\"Literal\":{\"Value\":\"'Michigan'\"}}],[{\"Literal\":{\"Value\":\"'Minnesota'\"}}],[{\"Literal\":{\"Value\":\"'Missouri'\"}}],[{\"Literal\":{\"Value\":\"'Montana'\"}}],[{\"Literal\":{\"Value\":\"'Nebraska'\"}}],[{\"Literal\":{\"Value\":\"'New Hampshire'\"}}],[{\"Literal\":{\"Value\":\"'New Jersey'\"}}],[{\"Literal\":{\"Value\":\"'New York'\"}}],[{\"Literal\":{\"Value\":\"'North Dakota'\"}}],[{\"Literal\":{\"Value\":\"'Ohio'\"}}],[{\"Literal\":{\"Value\":\"'Oklahoma'\"}}],[{\"Literal\":{\"Value\":\"'Oregon'\"}}],[{\"Literal\":{\"Value\":\"'Pennsylvania'\"}}],[{\"Literal\":{\"Value\":\"'Puerto Rico'\"}}],[{\"Literal\":{\"Value\":\"'Rhode Island'\"}}],[{\"Literal\":{\"Value\":\"'South Dakota'\"}}],[{\"Literal\":{\"Value\":\"'Vermont'\"}}],[{\"Literal\":{\"Value\":\"'Virgin Islands'\"}}],[{\"Literal\":{\"Value\":\"'Virginia'\"}}],[{\"Literal\":{\"Value\":\"'Washington'\"}}],[{\"Literal\":{\"Value\":\"'West Virginia'\"}}],[{\"Literal\":{\"Value\":\"'Wisconsin'\"}}],[{\"Literal\":{\"Value\":\"'Wyoming'\"}}]]}}},{\"DisplayName\":\"Hotter\",\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"s\"}},\"Property\":\"State\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"'Alabama'\"}}],[{\"Literal\":{\"Value\":\"'American Samoa'\"}}],[{\"Literal\":{\"Value\":\"'Arizona'\"}}],[{\"Literal\":{\"Value\":\"'Arkansas'\"}}],[{\"Literal\":{\"Value\":\"'California'\"}}],[{\"Literal\":{\"Value\":\"'Florida'\"}}],[{\"Literal\":{\"Value\":\"'Georgia'\"}}],[{\"Literal\":{\"Value\":\"'Guam'\"}}],[{\"Literal\":{\"Value\":\"'Hawaii'\"}}],[{\"Literal\":{\"Value\":\"'Kansas'\"}}],[{\"Literal\":{\"Value\":\"'Kentucky'\"}}],[{\"Literal\":{\"Value\":\"'Louisiana'\"}}],[{\"Literal\":{\"Value\":\"'Mississippi'\"}}],[{\"Literal\":{\"Value\":\"'Nevada'\"}}],[{\"Literal\":{\"Value\":\"'New Mexico'\"}}],[{\"Literal\":{\"Value\":\"'North Carolina'\"}}],[{\"Literal\":{\"Value\":\"'South Carolina'\"}}],[{\"Literal\":{\"Value\":\"'Tennessee'\"}}],[{\"Literal\":{\"Value\":\"'Texas'\"}}],[{\"Literal\":{\"Value\":\"'Utah'\"}}]]}}}]}"
+    },
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "Format",
+      "value": "<Format Format=\"Text\" />"
+    },
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "String#####not a type"
+    }
+  ]
+}

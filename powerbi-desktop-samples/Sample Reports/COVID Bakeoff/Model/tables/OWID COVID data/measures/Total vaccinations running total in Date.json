@@ -1,0 +1,19 @@
+{
+  "name": "Total vaccinations running total in Date",
+  "extendedProperties": [
+    {
+      "type": "json",
+      "name": "MeasureTemplate",
+      "value": {
+        "version": 0,
+        "daxTemplateName": "RunningTotal"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"General\" />"
+    }
+  ]
+}

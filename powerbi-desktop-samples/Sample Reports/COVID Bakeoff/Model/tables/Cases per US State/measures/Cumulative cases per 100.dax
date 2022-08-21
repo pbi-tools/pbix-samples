@@ -1,0 +1,1 @@
+AVERAGE('Cases per US State'[CumulativeCases]) / AVERAGE(States[Population]) * 100

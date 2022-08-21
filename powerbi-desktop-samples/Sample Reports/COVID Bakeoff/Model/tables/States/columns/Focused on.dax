@@ -1,0 +1,14 @@
+SWITCH(
+  TRUE,
+  ISBLANK('States'[State]),
+  "(Blank)",
+  'States'[State] IN {"New Mexico",
+    "Rhode Island",
+    "South Dakota"},
+  "Fully vaccinated",
+  'States'[State] IN {"Connecticut",
+    "Massachusetts",
+    "New Hampshire"},
+  "One dose",
+  "Other"
+)

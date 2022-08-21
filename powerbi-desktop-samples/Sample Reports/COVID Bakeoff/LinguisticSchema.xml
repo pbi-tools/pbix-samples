@@ -1,0 +1,14 @@
+<LinguisticSchema xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Language="en-US" DynamicImprovement="Default" xmlns="http://schemas.microsoft.com/sqlserver/2016/01/linguisticschema">
+  <Entities>
+    <Entity ConceptualEntity="Pod3" Source="Generated" Name="Cases_Vaccines_animation">
+      <Words>
+        <Word>Cases/Vaccines animation</Word>
+      </Words>
+    </Entity>
+    <Entity ConceptualEntity="Pod4" Source="Generated" Name="US_Vaccinations">
+      <Words>
+        <Word>US Vaccinations</Word>
+      </Words>
+    </Entity>
+  </Entities>
+</LinguisticSchema>

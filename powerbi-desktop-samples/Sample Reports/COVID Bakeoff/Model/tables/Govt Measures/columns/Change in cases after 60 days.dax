@@ -1,0 +1,1 @@
+CALCULATE(AVERAGE('Cases per country'[IncrementalCases]), FILTER(Dates, Dates[Date] = 'Govt Measures'[Date implemented]+60)) - 'Govt Measures'[Daily Cases When Implemented]

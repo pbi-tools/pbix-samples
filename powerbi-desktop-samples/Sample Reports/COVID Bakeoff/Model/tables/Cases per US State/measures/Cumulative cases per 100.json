@@ -1,0 +1,9 @@
+{
+  "name": "Cumulative cases per 100",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"General\" />"
+    }
+  ]
+}

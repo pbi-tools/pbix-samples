@@ -1,0 +1,54 @@
+{
+  "name": "3968ccbce331cc920617",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "x": 823.33333333333326,
+        "y": 157.07070707070704,
+        "width": 300,
+        "height": 300,
+        "z": 0
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "clusteredColumnChart",
+    "projections": {
+      "Y": [
+        {
+          "queryRef": "Sum(Countries.Population)"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "c",
+          "Entity": "Countries",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "c"
+                  }
+                },
+                "Property": "Population"
+              }
+            },
+            "Function": 0
+          },
+          "Name": "Sum(Countries.Population)"
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

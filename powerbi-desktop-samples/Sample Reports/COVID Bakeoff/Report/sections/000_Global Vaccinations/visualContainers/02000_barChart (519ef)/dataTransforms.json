@@ -1,0 +1,288 @@
+{
+  "objects": {
+    "dataPoint": [
+      {
+        "properties": {},
+        "selector": {
+          "data": [
+            {
+              "dataViewWildcard": {
+                "matchingOption": 1
+              }
+            }
+          ]
+        }
+      },
+      {
+        "properties": {
+          "fill": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#3D3C42'"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ],
+    "labels": [
+      {
+        "properties": {
+          "show": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          },
+          "fontFamily": {
+            "expr": {
+              "Literal": {
+                "Value": "'''Segoe UI'', wf_segoe-ui_normal, helvetica, arial, sans-serif'"
+              }
+            }
+          },
+          "labelPosition": {
+            "expr": {
+              "Literal": {
+                "Value": "'InsideEnd'"
+              }
+            }
+          },
+          "fontSize": {
+            "expr": {
+              "Literal": {
+                "Value": "8D"
+              }
+            }
+          },
+          "labelPrecision": {
+            "expr": {
+              "Literal": {
+                "Value": "0L"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "valueAxis": [
+      {
+        "properties": {
+          "show": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          },
+          "invertAxis": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          },
+          "gridlineShow": {
+            "expr": {
+              "Literal": {
+                "Value": "true"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "categoryAxis": [
+      {
+        "properties": {
+          "innerPadding": {
+            "expr": {
+              "Literal": {
+                "Value": "11L"
+              }
+            }
+          },
+          "labelColor": {
+            "solid": {
+              "color": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'#3D3C42'"
+                  }
+                }
+              }
+            }
+          },
+          "preferredCategoryWidth": {
+            "expr": {
+              "Literal": {
+                "Value": "20D"
+              }
+            }
+          },
+          "maxMarginFactor": {
+            "expr": {
+              "Literal": {
+                "Value": "50L"
+              }
+            }
+          },
+          "showAxisTitle": {
+            "expr": {
+              "Literal": {
+                "Value": "false"
+              }
+            }
+          },
+          "position": {
+            "expr": {
+              "Literal": {
+                "Value": "'Left'"
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Y": [
+      2
+    ],
+    "Category": [
+      0
+    ],
+    "Tooltips": [
+      1
+    ]
+  },
+  "projectionActiveItems": {
+    "Category": [
+      {
+        "queryRef": "Countries.COUNTRY",
+        "suppressConcat": false
+      }
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "Country",
+        "Name": "Countries.COUNTRY",
+        "Type": 2048
+      },
+      {
+        "Restatement": "Population",
+        "Name": "Sum(Countries.Population)",
+        "Type": 3,
+        "Format": "#,0"
+      },
+      {
+        "Restatement": "% of Population Vaccinated",
+        "Name": "owid-covid-data.Measure",
+        "Type": 1,
+        "Format": "0.0%;-0.0%;0.0%"
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Y",
+          "Projection": 2,
+          "isActive": false
+        },
+        {
+          "Name": "Category",
+          "Projection": 0,
+          "isActive": true
+        },
+        {
+          "Name": "Tooltips",
+          "Projection": 1,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "Country",
+      "queryName": "Countries.COUNTRY",
+      "roles": {
+        "Category": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 1
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "Countries"
+            }
+          },
+          "Property": "Country"
+        }
+      }
+    },
+    {
+      "displayName": "Population",
+      "format": "#,0",
+      "queryName": "Sum(Countries.Population)",
+      "roles": {
+        "Tooltips": true
+      },
+      "type": {
+        "category": null,
+        "underlyingType": 260
+      },
+      "expr": {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "Countries"
+                }
+              },
+              "Property": "Population"
+            }
+          },
+          "Function": 0
+        }
+      }
+    },
+    {
+      "displayName": "% of Population Vaccinated",
+      "format": "0.0%;-0.0%;0.0%",
+      "queryName": "owid-covid-data.Measure",
+      "roles": {
+        "Y": true
+      },
+      "sort": 2,
+      "sortOrder": 0,
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Measure": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "OWID COVID data"
+            }
+          },
+          "Property": "% of Population Vaccinated"
+        }
+      }
+    }
+  ]
+}

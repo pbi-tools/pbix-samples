@@ -1,0 +1,26 @@
+{
+  "name": "Lats",
+  "isHidden": true,
+  "partitions": [
+    {
+      "name": "Lats-aefbb908-048c-44ad-9243-d59ff23ed2b1",
+      "mode": "import",
+      "source": {
+        "type": "m"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_DescriptionAtRefresh"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    },
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    }
+  ]
+}

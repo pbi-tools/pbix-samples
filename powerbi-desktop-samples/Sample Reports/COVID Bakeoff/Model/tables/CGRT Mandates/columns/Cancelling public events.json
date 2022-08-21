@@ -1,0 +1,29 @@
+{
+  "name": "Cancelling public events",
+  "dataType": "string",
+  "isHidden": true,
+  "sourceColumn": "Cancelling public events",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "Format",
+      "value": "<Format Format=\"Text\" />"
+    },
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "String#####not a type"
+    },
+    {
+      "name": "PBI_NameAtRefresh",
+      "value": "Cancelling public events"
+    },
+    {
+      "name": "PBI_WasHiddenAtRefresh",
+      "value": "False"
+    }
+  ]
+}

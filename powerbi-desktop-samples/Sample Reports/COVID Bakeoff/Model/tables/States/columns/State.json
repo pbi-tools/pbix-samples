@@ -1,0 +1,25 @@
+{
+  "name": "State",
+  "dataType": "string",
+  "sourceColumn": "State",
+  "dataCategory": "StateOrProvince",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "Format",
+      "value": "<Format Format=\"Text\" />"
+    },
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "String#####not a type"
+    },
+    {
+      "name": "__PBI_SemanticLinks",
+      "value": "[{\"LinkTarget\":{\"TableName\":\"States\",\"TableItemName\":\"State (groups)\",\"ObjectType\":4},\"LinkType\":\"UsedInGroup\"},{\"LinkTarget\":{\"TableName\":\"States\",\"TableItemName\":\"Focused on\",\"ObjectType\":4},\"LinkType\":\"UsedInGroup\"},{\"LinkTarget\":{\"TableName\":\"States\",\"TableItemName\":\"March Temperatures\",\"ObjectType\":4},\"LinkType\":\"UsedInGroup\"}]"
+    }
+  ]
+}

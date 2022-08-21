@@ -1,0 +1,2 @@
+
+if(HASONEVALUE(Countries[Country]), max('OWID COVID data'[People vaccinated per hundred]), [Total vaccinations running total in Date]/SUM(Countries[Population])*100)/100

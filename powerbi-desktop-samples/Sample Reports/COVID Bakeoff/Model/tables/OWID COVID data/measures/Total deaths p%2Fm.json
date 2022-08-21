@@ -1,0 +1,9 @@
+{
+  "name": "Total deaths p/m",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"General\" />"
+    }
+  ]
+}

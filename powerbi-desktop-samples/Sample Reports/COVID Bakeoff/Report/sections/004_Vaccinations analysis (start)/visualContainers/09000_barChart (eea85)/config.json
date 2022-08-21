@@ -1,0 +1,88 @@
+{
+  "name": "eea85a81620bbc38e636",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "height": 269.23351158645272,
+        "width": 485.40032591020372,
+        "x": 542.47846196858393,
+        "y": 404.99108734402847,
+        "z": 6000,
+        "tabOrder": 9000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "barChart",
+    "projections": {
+      "Category": [
+        {
+          "queryRef": "States.State",
+          "active": true
+        }
+      ],
+      "Y": [
+        {
+          "queryRef": "Cases per US State.Vaccines distributed"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "s",
+          "Entity": "States",
+          "Type": 0
+        },
+        {
+          "Name": "c",
+          "Entity": "Cases per US State",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "s"
+              }
+            },
+            "Property": "State"
+          },
+          "Name": "States.State"
+        },
+        {
+          "Measure": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "c"
+              }
+            },
+            "Property": "Vaccines distributed"
+          },
+          "Name": "Cases per US State.Vaccines distributed"
+        }
+      ],
+      "OrderBy": [
+        {
+          "Direction": 2,
+          "Expression": {
+            "Measure": {
+              "Expression": {
+                "SourceRef": {
+                  "Source": "c"
+                }
+              },
+              "Property": "Vaccines distributed"
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "hasDefaultSort": true
+  }
+}

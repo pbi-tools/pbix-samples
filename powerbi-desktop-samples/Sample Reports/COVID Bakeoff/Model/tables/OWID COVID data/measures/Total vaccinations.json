@@ -1,0 +1,9 @@
+{
+  "name": "Total vaccinations",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"General\" />"
+    }
+  ]
+}

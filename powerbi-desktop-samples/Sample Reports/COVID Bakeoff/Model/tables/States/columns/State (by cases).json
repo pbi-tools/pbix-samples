@@ -1,0 +1,27 @@
+{
+  "type": "calculated",
+  "name": "State (by cases)",
+  "dataType": "string",
+  "isDataTypeInferred": true,
+  "isHidden": true,
+  "sortByColumn": "Total cases",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "Format",
+      "value": "<Format Format=\"Text\" />"
+    },
+    {
+      "name": "PBI_ChangedProperties",
+      "value": "[\"SortByColumn\"]"
+    },
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "String#####not a type"
+    }
+  ]
+}

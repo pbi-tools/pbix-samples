@@ -1,0 +1,9 @@
+{
+  "name": "Daily Change US (for formatting)",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"General\" />"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "Aged 70 and old",
+  "dataType": "double",
+  "sourceColumn": "Aged 70 and old",
+  "displayFolder": "1. Health metrics",
+  "summarizeBy": "average",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "User"
+    },
+    {
+      "name": "Format",
+      "value": "<Format Format=\"General\" />"
+    },
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "Double#####not a type"
+    },
+    {
+      "name": "PBI_NameAtRefresh",
+      "value": "Aged 70 and old"
+    }
+  ]
+}

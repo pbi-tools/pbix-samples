@@ -1,0 +1,24 @@
+{
+  "name": "ICU patients per million",
+  "dataType": "double",
+  "sourceColumn": "ICU patients per million",
+  "summarizeBy": "average",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "User"
+    },
+    {
+      "name": "Format",
+      "value": "<Format Format=\"General\" />"
+    },
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "Double#####not a type"
+    },
+    {
+      "name": "PBI_NameAtRefresh",
+      "value": "ICU patients per million"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+SWITCH(
+  TRUE,
+  ISBLANK('Govt Measures'[NON_COMPLIANCE]),
+  "(Blank)",
+  'Govt Measures'[NON_COMPLIANCE] IN {"Arrest/Detention",
+    "Up to detention"},
+  "Arrest",
+  'Govt Measures'[NON_COMPLIANCE] IN {"Deportation",
+    "Refusal to enter the country"},
+  "Deportation/entry refused",
+  'Govt Measures'[NON_COMPLIANCE] IN {"Fines"},
+  "Fines",
+  'Govt Measures'[NON_COMPLIANCE] IN {"Legal",
+    "Legal action"},
+  "Legal",
+  'Govt Measures'[NON_COMPLIANCE] IN {"Not applicable",
+    "Not Available"},
+  "Not applicable",
+  'Govt Measures'[NON_COMPLIANCE]
+)

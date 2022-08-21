@@ -1,0 +1,41 @@
+{
+  "name": "Entry date",
+  "dataType": "dateTime",
+  "isHidden": true,
+  "sourceColumn": "Entry date",
+  "formatString": "dddd\\, mmmm d\\, yyyy",
+  "summarizeBy": "none",
+  "variations": [
+    {
+      "name": "Variation",
+      "relationship": "e1e86f08-cc1c-48f2-9aba-4fddf579fca6",
+      "defaultHierarchy": {
+        "table": "LocalDateTable_88205f4b-f7a1-45b0-926f-f9aeda622848",
+        "hierarchy": "Date Hierarchy"
+      },
+      "isDefault": true
+    }
+  ],
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "UnderlyingDateTimeDataType",
+      "value": "Date"
+    },
+    {
+      "name": "Format",
+      "value": "<Format Format=\"DateTimeGeneralPattern\"><DateTimes><DateTime LCID=\"1033\" Group=\"LongDate\" FormatString=\"dddd, MMMM d, yyyy\" /></DateTimes></Format>"
+    },
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "DateTime#####Date"
+    },
+    {
+      "name": "PBI_NameAtRefresh",
+      "value": "Entry date"
+    }
+  ]
+}

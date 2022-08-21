@@ -1,0 +1,25 @@
+{
+  "name": "NON_COMPLIANCE",
+  "dataType": "string",
+  "isHidden": true,
+  "sourceColumn": "NON_COMPLIANCE",
+  "summarizeBy": "none",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "Automatic"
+    },
+    {
+      "name": "Format",
+      "value": "<Format Format=\"Text\" />"
+    },
+    {
+      "name": "__PBI_SemanticLinks",
+      "value": "[{\"LinkTarget\":{\"TableName\":\"Govt Measures\",\"TableItemName\":\"Non compliance result\",\"ObjectType\":4},\"LinkType\":\"UsedInGroup\"}]"
+    },
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "String#####not a type"
+    }
+  ]
+}

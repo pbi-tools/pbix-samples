@@ -1,0 +1,79 @@
+{
+  "name": "f85a91f1b042b0069d6d",
+  "layouts": [
+    {
+      "id": 0,
+      "position": {
+        "height": 269.23351158645278,
+        "width": 381.84255059906587,
+        "x": 0,
+        "y": 311.44385026737967,
+        "z": 5000,
+        "tabOrder": 13000
+      }
+    }
+  ],
+  "singleVisual": {
+    "visualType": "map",
+    "projections": {
+      "Category": [
+        {
+          "queryRef": "States.State",
+          "active": true
+        }
+      ],
+      "Size": [
+        {
+          "queryRef": "Sum(Cases per US State.Incremental cases)"
+        }
+      ]
+    },
+    "prototypeQuery": {
+      "Version": 2,
+      "From": [
+        {
+          "Name": "s",
+          "Entity": "States",
+          "Type": 0
+        },
+        {
+          "Name": "c",
+          "Entity": "Cases per US State",
+          "Type": 0
+        }
+      ],
+      "Select": [
+        {
+          "Column": {
+            "Expression": {
+              "SourceRef": {
+                "Source": "s"
+              }
+            },
+            "Property": "State"
+          },
+          "Name": "States.State"
+        },
+        {
+          "Aggregation": {
+            "Expression": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Source": "c"
+                  }
+                },
+                "Property": "Incremental cases"
+              }
+            },
+            "Function": 0
+          },
+          "Name": "Sum(Cases per US State.Incremental cases)"
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true,
+    "objects": {}
+  },
+  "parentGroupName": "bb138ed8833603195536"
+}

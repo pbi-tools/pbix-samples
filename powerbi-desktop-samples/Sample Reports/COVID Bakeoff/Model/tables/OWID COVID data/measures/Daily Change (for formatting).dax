@@ -1,0 +1,12 @@
+
+VAR __PREV_DAY =
+	CALCULATE(
+		[Cases 7d Mvg Avg per million],
+		DATEADD('Dates'[Date], -2, DAY)
+	)
+var changeFromPrevDay = DIVIDE([Cases 7d Mvg Avg per million] - __PREV_DAY, __PREV_DAY)
+
+    RETURN changeFromPrevDay
+	
+
+    

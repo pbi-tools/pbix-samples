@@ -1,0 +1,25 @@
+{
+  "name": "Cardiovascular death rate",
+  "dataType": "double",
+  "sourceColumn": "Cardiovascular death rate",
+  "displayFolder": "1. Health metrics",
+  "summarizeBy": "average",
+  "annotations": [
+    {
+      "name": "SummarizationSetBy",
+      "value": "User"
+    },
+    {
+      "name": "Format",
+      "value": "<Format Format=\"General\" />"
+    },
+    {
+      "name": "DataTypeAtRefresh",
+      "value": "Double#####not a type"
+    },
+    {
+      "name": "PBI_NameAtRefresh",
+      "value": "Cardiovascular death rate"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+CALCULATE(MAX('Cases per US State'[CumulativeCases]))

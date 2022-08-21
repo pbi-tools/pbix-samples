@@ -1,0 +1,9 @@
+{
+  "name": "Ratio fully vaccinated",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"General\" />"
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+CALCULATE(MAX('OWID COVID data'[New vaccinations smoothed per million]), RELATEDTABLE('OWID COVID data'))

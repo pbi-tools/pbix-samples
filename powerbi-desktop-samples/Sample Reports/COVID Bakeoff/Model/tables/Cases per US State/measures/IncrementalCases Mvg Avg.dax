@@ -1,0 +1,9 @@
+
+CALCULATE (
+    SUM( 'Cases per US State'[Incremental cases] )/7,
+    DATESINPERIOD (
+        'Dates'[Date],
+        min('Dates'[Date] ),
+        -7,
+        DAY
+    ))

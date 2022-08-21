@@ -1,0 +1,1 @@
+IF(States[Average Temperature ] < 67.7, "Below", "Above")

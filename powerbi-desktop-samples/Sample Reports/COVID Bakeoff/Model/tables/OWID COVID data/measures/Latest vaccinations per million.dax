@@ -1,0 +1,3 @@
+
+var latestDate = MAX('OWID COVID data'[date])
+return CALCULATE(AVERAGE('OWID COVID data'[New vaccinations smoothed per million]), 'OWID COVID data'[Date] = latestDate)

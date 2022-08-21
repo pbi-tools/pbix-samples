@@ -1,0 +1,11 @@
+{
+  "name": "Cases DoD%",
+  "formatString": "0.00%;-0.00%;0.00%",
+  "isHidden": true,
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"Percentage\" Accuracy=\"2\" />"
+    }
+  ]
+}

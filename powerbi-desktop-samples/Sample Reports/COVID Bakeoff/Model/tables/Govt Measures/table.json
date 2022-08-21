@@ -1,0 +1,22 @@
+{
+  "name": "Govt Measures",
+  "isHidden": true,
+  "partitions": [
+    {
+      "name": "Govt Measures-aba05957-e948-4230-a317-fb78e7c40716",
+      "mode": "import",
+      "source": {
+        "type": "m"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    },
+    {
+      "name": "PBI_DescriptionAtRefresh"
+    }
+  ]
+}

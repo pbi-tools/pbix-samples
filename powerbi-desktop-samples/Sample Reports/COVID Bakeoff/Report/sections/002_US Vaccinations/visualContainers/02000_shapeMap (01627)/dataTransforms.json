@@ -1,0 +1,173 @@
+{
+  "objects": {
+    "shape": [
+      {
+        "properties": {
+          "map": {
+            "geoJson": {
+              "type": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'shared'"
+                  }
+                }
+              },
+              "name": {
+                "expr": {
+                  "Literal": {
+                    "Value": "'usa.states.topo'"
+                  }
+                }
+              },
+              "content": {
+                "expr": {
+                  "ResourcePackageItem": {
+                    "PackageName": "SharedResources",
+                    "PackageType": 2,
+                    "ItemName": "usa.states.topo"
+                  }
+                }
+              }
+            }
+          },
+          "projectionEnum": {
+            "expr": {
+              "Literal": {
+                "Value": "'albersUsa'"
+              }
+            }
+          }
+        }
+      }
+    ],
+    "dataPoint": [
+      {
+        "properties": {
+          "fillRule": {
+            "linearGradient2": {
+              "min": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#4A8DDC'"
+                    }
+                  }
+                }
+              },
+              "max": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#DC5B57'"
+                    }
+                  }
+                }
+              },
+              "nullColoringStrategy": {
+                "strategy": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'asZero'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    ]
+  },
+  "projectionOrdering": {
+    "Category": [
+      0
+    ],
+    "Value": [
+      1
+    ]
+  },
+  "queryMetadata": {
+    "Select": [
+      {
+        "Restatement": "State",
+        "Name": "States.State",
+        "Type": 2048,
+        "DataCategory": 16
+      },
+      {
+        "Restatement": "Average Temperature ",
+        "Name": "CountNonNull(States.Average Temperature )",
+        "Type": 1,
+        "Format": "#.#\\ \\°\\F"
+      }
+    ]
+  },
+  "visualElements": [
+    {
+      "DataRoles": [
+        {
+          "Name": "Category",
+          "Projection": 0,
+          "isActive": false
+        },
+        {
+          "Name": "Value",
+          "Projection": 1,
+          "isActive": false
+        }
+      ]
+    }
+  ],
+  "selects": [
+    {
+      "displayName": "State",
+      "queryName": "States.State",
+      "roles": {
+        "Category": true
+      },
+      "type": {
+        "category": "StateOrProvince",
+        "underlyingType": 7013377
+      },
+      "expr": {
+        "Column": {
+          "Expression": {
+            "SourceRef": {
+              "Entity": "States"
+            }
+          },
+          "Property": "State"
+        }
+      }
+    },
+    {
+      "displayName": "Average Temperature ",
+      "format": "#.#\\ \\°\\F",
+      "queryName": "CountNonNull(States.Average Temperature )",
+      "roles": {
+        "Value": true
+      },
+      "sort": 2,
+      "sortOrder": 0,
+      "type": {
+        "category": null,
+        "underlyingType": 259
+      },
+      "expr": {
+        "Aggregation": {
+          "Expression": {
+            "Column": {
+              "Expression": {
+                "SourceRef": {
+                  "Entity": "States"
+                }
+              },
+              "Property": "Average Temperature "
+            }
+          },
+          "Function": 1
+        }
+      }
+    }
+  ]
+}

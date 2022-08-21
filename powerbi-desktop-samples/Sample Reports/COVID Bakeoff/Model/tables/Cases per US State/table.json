@@ -1,0 +1,25 @@
+{
+  "name": "Cases per US State",
+  "partitions": [
+    {
+      "name": "Cases per US State-bb7db7f9-5922-49a8-9cff-73daedaae272",
+      "mode": "import",
+      "source": {
+        "type": "m"
+      }
+    }
+  ],
+  "annotations": [
+    {
+      "name": "PBI_ResultType",
+      "value": "Table"
+    },
+    {
+      "name": "PBI_DescriptionAtRefresh"
+    },
+    {
+      "name": "PBI_NavigationStepName",
+      "value": "Navigation"
+    }
+  ]
+}

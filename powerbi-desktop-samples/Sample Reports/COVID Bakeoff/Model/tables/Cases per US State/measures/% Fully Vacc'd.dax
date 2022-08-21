@@ -1,0 +1,4 @@
+
+CALCULATE(
+    MAX('Cases per US State'[People fully vaccinated per hundred])/100
+    ,ALLSELECTED(Dates[Start of week]),'Dates'[Start of week] = DATE(2021, 4, 11))

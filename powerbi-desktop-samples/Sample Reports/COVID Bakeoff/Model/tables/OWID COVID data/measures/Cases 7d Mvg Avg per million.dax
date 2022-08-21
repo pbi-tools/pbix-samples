@@ -1,0 +1,11 @@
+
+var mvgAvgCases = CALCULATE (
+    SUM( 'OWID COVID data'[New cases] )/7,
+    DATESINPERIOD (
+        'Dates'[Date],
+        min('Dates'[Date] ),
+        -7,
+        DAY
+    ))
+var population = SUM(Countries[Population])
+return  DIVIDE(mvgAvgCases, population)  *1000000 

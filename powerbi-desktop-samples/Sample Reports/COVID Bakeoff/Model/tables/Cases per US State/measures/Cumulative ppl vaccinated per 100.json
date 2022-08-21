@@ -1,0 +1,10 @@
+{
+  "name": "Cumulative ppl vaccinated per 100",
+  "formatString": "0",
+  "annotations": [
+    {
+      "name": "Format",
+      "value": "<Format Format=\"NumberWhole\" Accuracy=\"0\" />"
+    }
+  ]
+}
